@@ -316,6 +316,5 @@ AI is a collaborator, not a substitute.
 ---
 
 **Document Owner:**  
-Lajin M. J  
-Software Architect & Technical Account Manager  
+Team CoE
 Techversant InfoTech Pvt. Ltd.
