@@ -1,5 +1,3 @@
-# ColdFusion Style Guide (Techversant CoE)
-
 **Version:** 1.0  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
