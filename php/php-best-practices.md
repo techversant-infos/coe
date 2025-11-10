@@ -2,16 +2,14 @@
 **Version:** 1.0  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
-**Prepared by:** Lajin M. J — Software Architect & Technical Account Manager  
+**Prepared by:** Vishnu Soman, Lajin M. J.
 
----
 
 ## 1. Overview
 
 This document outlines **recommended best practices for all PHP-based applications** at Techversant to ensure maintainability, security, and scalability.  
 All **developers, leads, and DevOps engineers** are expected to adhere to these guidelines across all PHP and Laravel projects.
 
----
 
 ## 2. Clean Code Principles
 
@@ -47,7 +45,6 @@ function process($user) {
 }
 ```
 
----
 
 ## 3. Dependency Management
 
@@ -70,7 +67,6 @@ composer require guzzlehttp/guzzle
 composer update guzzlehttp/guzzle
 ```
 
----
 
 ## 4. Environment Configuration
 
@@ -104,7 +100,6 @@ DB_PASSWORD=secret
 ],
 ```
 
----
 
 ## 5. Secure Development
 
@@ -125,7 +120,6 @@ echo $_GET['name'];
 echo htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');
 ```
 
----
 
 ## 6. Database Best Practices
 
@@ -150,7 +144,6 @@ $users = DB::table('users')->where('role', $_GET['role'])->get();
 $users = User::paginate(25);
 ```
 
----
 
 ## 7. Performance Optimization
 
@@ -175,7 +168,6 @@ foreach ($users as $user) {
 }
 ```
 
----
 
 ## 8. Logging & Monitoring
 
@@ -195,7 +187,6 @@ Log::info('Order processed', [
 ]);
 ```
 
----
 
 ## 9. DevOps & CI/CD
 
@@ -230,7 +221,6 @@ jobs:
         run: php artisan test
 ```
 
----
 
 ## 10. Summary
 
@@ -241,9 +231,6 @@ By following these best practices, we ensure that every PHP project at Techversa
 
 > **Quality is not an act, but a habit — especially in code.**
 
----
 
 **Document Owner:**  
-Lajin M. J  
-Software Architect & Technical Account Manager  
-Techversant InfoTech Pvt. Ltd.
+CoE, Techversant InfoTech Pvt. Ltd.

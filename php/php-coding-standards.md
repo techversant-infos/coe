@@ -2,9 +2,9 @@
 **Version:** 1.0  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
-**Prepared by:** Lajin M. J — Software Architect & Technical Account Manager  
+**Prepared by:** Vishnu Soman, Lajin M. J.
 
----
+
 
 ## 1. Introduction
 
@@ -12,7 +12,7 @@ This document defines coding conventions for all PHP applications developed at T
 It ensures **consistency, readability, and maintainability** across all projects.  
 It applies to **developers, reviewers, and QA engineers** involved in code validation.
 
----
+
 
 ## 2. Project Structure
 
@@ -39,7 +39,7 @@ class UserService
 }
 ```
 
----
+
 
 ## 3. Naming Conventions
 
@@ -67,7 +67,7 @@ Filename must match the class name exactly, with `.php` extension.
 - Interfaces: suffix with **Interface** → `PaymentGatewayInterface`  
 - Abstract classes: prefix with **Abstract** → `AbstractLogger`
 
----
+
 
 ## 4. Formatting and Style
 
@@ -102,7 +102,7 @@ class MathHelper
 }
 ```
 
----
+
 
 ## 5. Commenting and Documentation
 
@@ -126,7 +126,7 @@ public function getUser(int $id): ?User
 - Use `/** */` for multi-line comments.  
 - Avoid redundant or outdated comments.
 
----
+
 
 ## 6. Security Best Practices
 
@@ -146,7 +146,7 @@ $stmt = $pdo->prepare('SELECT * FROM users WHERE email = :email');
 $stmt->execute(['email' => $_POST['email']]);
 ```
 
----
+
 
 ## 7. Error Handling
 
@@ -164,7 +164,7 @@ try {
 }
 ```
 
----
+
 
 ## 8. Version Control & Branching
 
@@ -180,7 +180,7 @@ try {
 
 - Code must **pass review** before merging to `main`.
 
----
+
 
 ## 9. Testing & Quality
 
@@ -203,7 +203,7 @@ vendor/bin/phpunit --coverage-text
   - Linting
   - Code quality enforcement
 
----
+
 
 ## 10. Summary
 
@@ -215,9 +215,7 @@ Adhering to these coding standards ensures:
 
 > “Readable code is reliable code — consistency is our culture.”
 
----
+
 
 **Document Owner:**  
-Lajin M. J  
-Software Architect & Technical Account Manager  
-Techversant InfoTech Pvt. Ltd.
+CoE, Techversant InfoTech Pvt. Ltd.

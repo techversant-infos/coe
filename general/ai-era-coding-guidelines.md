@@ -3,7 +3,7 @@
 **Effective Date:** November 2025  
 **Prepared by:** Lajin M. J — Software Architect & Technical Account Manager  
 
----
+
 
 ## 1. Purpose
 
@@ -14,7 +14,7 @@ This document ensures that every AI-assisted contribution is **secure**, **maint
 
 > **AI can suggest — only humans decide.**
 
----
+
 
 ## 2. Core Principle: Human Accountability
 
@@ -35,7 +35,7 @@ Example (good practice):
 $user = DB::table('users')->where('email', $email)->first();
 ```
 
----
+
 
 ## 3. Code Review & Ownership Standards
 
@@ -88,7 +88,7 @@ if (!empty($amount) && isset($balance) && $limit > 10) {
 }
 ```
 
----
+
 
 ## 4. Maintainability & Documentation
 
@@ -146,7 +146,7 @@ public function store(Request $request, OrderService $service)
 }
 ```
 
----
+
 
 ## 5. Security & Compliance
 
@@ -181,7 +181,7 @@ Check AI-suggested packages:
 - Don’t paste proprietary code into public models.  
 - Validate AI-suggested snippets for potential license conflicts.
 
----
+
 
 ## 6. Testing & Quality Assurance
 
@@ -237,7 +237,7 @@ foreach (User::all() as $user) {
 $users = User::withCount('orders')->get();
 ```
 
----
+
 
 ## 7. AI Prompting & Knowledge Retention
 
@@ -266,7 +266,7 @@ Engineer Review:
 Simplified error handling, added role-based access, removed unused imports.
 ```
 
----
+
 
 ## 8. Continuous Learning & Team Sharing
 
@@ -287,7 +287,7 @@ Mandatory workshops every quarter:
 - “Debugging AI-Generated Code”
 - “Responsible AI Usage & Licensing”
 
----
+
 
 ## 9. Summary
 
@@ -297,7 +297,7 @@ AI is a collaborator, not a substitute.
 
 > 🧩 **AI can write code. Engineers build systems.**
 
----
+
 
 ## Appendix: AI Code Review Checklist ✅
 
@@ -313,7 +313,7 @@ AI is a collaborator, not a substitute.
 | AI Disclosure | Commit/PR note added | ☐ |
 | Prompt Stored | Relevant prompt saved under `/docs/ai_prompts.md` | ☐ |
 
----
+
 
 **Document Owner:**  
 Team CoE
