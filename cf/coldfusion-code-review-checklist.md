@@ -1,11 +1,8 @@
----
-title: "ColdFusion Code Review Checklist"
-version: "1.0"
-issued_by: "Techversant Center of Excellence (CoE)"
-effective_date: "November 2025"
-prepared_by: "Techversant CoE Team"
-tags: ["ColdFusion", "Code Review", "Checklist", "CFML", "Best Practices"]
----
+
+**Version:** 1.0  
+**Issued by:** Techversant Center of Excellence (CoE)  
+**Effective Date:** November 2025  
+**Contributers:** Nandu S 
 
 # ColdFusion Code Review Checklist
 

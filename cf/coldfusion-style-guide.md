@@ -249,7 +249,3 @@ try {
 This guide defines the **Techversant ColdFusion Code Standard** — a living reference designed to keep our CFML projects modern, maintainable, and secure.  
 > 🧠 *Code is read far more often than it is written. Write for clarity — for your teammates and your future self.*  
 
-**Document Owner:**  
-Lajin M. J  
-Software Architect & Technical Account Manager  
-Techversant InfoTech Pvt. Ltd.
