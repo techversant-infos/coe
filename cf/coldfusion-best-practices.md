@@ -208,12 +208,17 @@ component {
 
 ### Dependency Injection
 ```coldfusion
-component {
-  function init(userService, logger) {
+component accessors="true" {
+  property name="userService";
+  property name="logger";
+
+  function init(required any userService, required any logger) {
     variables.userService = arguments.userService;
     variables.logger = arguments.logger;
+    return this;
   }
 }
+
 ```
 
 💡 *Use WireBox or DI/1 for larger apps.*
