@@ -209,15 +209,14 @@ component {
 ### Dependency Injection
 ```coldfusion
 component accessors="true" {
-  property name="userService";
-  property name="logger";
+  property name="userService" inject="UserService";
+  property name="logger" inject="Logger";
 
-  function init(required any userService, required any logger) {
-    variables.userService = arguments.userService;
-    variables.logger = arguments.logger;
-    return this;
+  function getUser(id) {
+    return userService.getUserById(id);
   }
 }
+
 
 ```
 
