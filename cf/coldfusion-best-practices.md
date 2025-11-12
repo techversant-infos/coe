@@ -357,16 +357,53 @@ Checklist:
 ## 🚀 Deployment & CI/CD
 
 ```yaml
+# ----------------------------------------------------------
+# Workflow name (appears in GitHub Actions tab)
+# ----------------------------------------------------------
 name: Deploy
+
+# ----------------------------------------------------------
+# Trigger: when this workflow should run
+# Here, it runs on every 'push' event to any branch.
+# You can change this to 'on: [push, pull_request]' or specify branches.
+# ----------------------------------------------------------
 on: [push]
+
+# ----------------------------------------------------------
+# Jobs define the sequence of tasks to run.
+# ----------------------------------------------------------
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
+  deploy:                       # Job name
+    runs-on: ubuntu-latest      # Use the latest Ubuntu runner provided by GitHub
+
+    steps:                      # Each step runs a command or an action
+      # ----------------------------------------------------------
+      # Step 1: Check out the repository code
+      # This downloads your repository files into the runner
+      # so the workflow can access and execute them.
+      # ----------------------------------------------------------
       - uses: actions/checkout@v2
+
+      # ----------------------------------------------------------
+      # Step 2: Run your test script
+      # './run_tests.sh' should exist in your repo and define how to test your code.
+      # If this step fails (non-zero exit code), the next step will be skipped.
+      # ----------------------------------------------------------
       - run: ./run_tests.sh
+
+      # ----------------------------------------------------------
+      # Step 3: Conditional deployment
+      # 'if: success() && github.ref == 'refs/heads/main'' means:
+      #   → Only run this step if all previous steps succeeded AND
+      #   → The push was made to the 'main' branch.
+      #
+      # './deploy_to_prod.sh' is your custom deployment script.
+      # It will typically push code to production servers, build artifacts,
+      # or trigger deployment pipelines.
+      # ----------------------------------------------------------
       - if: success() && github.ref == 'refs/heads/main'
         run: ./deploy_to_prod.sh
+
 ```
 
 ✅ **Checklist**
