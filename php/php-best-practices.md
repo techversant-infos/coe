@@ -1,5 +1,5 @@
 # PHP Best Practices & Modern Development Standards  
-**Version:** 2.0 (Reviewed)  
+**Version:** 1.1
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
 **Prepared by:** Vishnu Soman, Lajin M. J.
@@ -16,7 +16,7 @@ Modern PHP development standards for all Techversant projects, aligned to **Clea
 
 ---
 
-## 2. Clean Code Principles (Modernized)
+## 2. Clean Code Principles 
 - Follow **SOLID** and **DRY**; keep functions cohesive and short.
 - Enforce **PSR‑12** style via PHP_CodeSniffer/Rector.
 - Put `declare(strict_types=1);` at the top of **every** PHP file.
@@ -83,7 +83,7 @@ return [
 
 ---
 
-## 5. Advanced Security Practices (2025 Edition)
+## 5. Advanced Security Practices 
 - Enforce **HTTPS + HSTS**. Add **CSP** headers and enable **SameSite, Secure, HttpOnly** cookies.
 - Use **rate limiting** and **brute‑force** guards on auth and sensitive endpoints.
 - Use **Sanctum/Passport/JWT** for APIs; rotate and revoke tokens.
@@ -204,7 +204,7 @@ jobs:
 
 ---
 
-## 10. AI‑Assisted Development (New in 2025)
+## 10. AI‑Assisted Development 
 - Use **Copilot/Cursor/ChatGPT Enterprise** for scaffolding, refactors, and test generation **with human review**.
 - Never paste secrets or proprietary logic into prompts.
 - Tag commits that include generated code: `[AI-Assisted]`.

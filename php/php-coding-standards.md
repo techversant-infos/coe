@@ -1,5 +1,5 @@
 # PHP Coding Standards  
-**Version:** 2.0 (Reviewed)  
+**Version:** 1.1  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
 **Prepared by:** Vishnu Soman, Lajin M. J.
@@ -119,7 +119,7 @@ public function getUser(int $id): ?User
 
 ---
 
-## 6. Security Standards (DevSecOps Aligned)
+## 6. Security Standards 
 - Validate & sanitize all inputs; escape HTML outputs with `htmlspecialchars($data, ENT_QUOTES, 'UTF-8')`.
 - Use **prepared statements**/ORM bindings; never concatenate SQL.  
 - Passwords: `password_hash()` + `password_verify()`; use modern algos (Argon2id/Bcrypt).  
