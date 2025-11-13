@@ -1,117 +1,112 @@
-# PHP Coding Standards
-**Version:** 1.0  
+# PHP Coding Standards  
+**Version:** 2.0 (Reviewed)  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
 **Prepared by:** Vishnu Soman, Lajin M. J.
 
+> “Consistency is the soul of software — when every line speaks the same language, your system sings in harmony.”  
+> — Techversant CoE, 2025
 
+---
 
 ## 1. Introduction
+Modern PHP coding conventions for clarity, consistency, security, and scalability across Techversant teams. Applies to **developers, leads, reviewers, QA, and DevOps**.
 
-This document defines coding conventions for all PHP applications developed at Techversant.  
-It ensures **consistency, readability, and maintainability** across all projects.  
-It applies to **developers, reviewers, and QA engineers** involved in code validation.
+> “Code is more often read than written — write it for the next person, not just the compiler.”
 
-
+---
 
 ## 2. Project Structure
-
-**Standard Folder Layout**
 ```
-/app      - Core application/business logic (Controllers, Models, Services)
-/config   - Configuration files
-/public   - Publicly accessible directory (index.php, assets)
-/tests    - Unit and integration tests
-/vendor   - Composer dependencies (auto-managed)
+/app       - Core business logic (Controllers, Models, Services)
+/bootstrap - Application bootstrap files
+/config    - Configuration settings
+/database  - Migrations, seeders, factories
+/public    - Web root (index.php, assets)
+/resources - Views, translations, frontend assets
+/routes    - Route definitions
+/tests     - Unit and feature tests
+/vendor    - Composer-managed dependencies
 ```
-
-- Maintain a clean, logical folder structure.  
-- **Autoloading:** All classes must follow **PSR-4 autoloading** (via Composer).  
-- **Namespaces** should reflect folder structure starting from `/app`.
+- Use **PSR‑4 autoloading** (Composer).  
+- Keep controllers slim; move domain logic to **Services**/**Actions**.  
+- Prefer feature‑oriented folders (`/app/Services/Orders`, `/app/Repositories/Users`).  
+- Avoid dumping logic into `/Helpers`; create proper classes.
 
 ### 💡 Example
 ```php
-namespace App\Services;
-
-class UserService
-{
-    // ...
-}
-```
-
-
-
-## 3. Naming Conventions
-
-### 3.1 Classes  
-Use **PascalCase**  
-**Example:** `UserService`, `OrderRepository`
-
-### 3.2 Functions / Methods  
-Use **camelCase**  
-**Example:** `getUserData()`, `calculateTaxAmount()`
-
-### 3.3 Variables  
-Use descriptive **camelCase**  
-**Example:** `$userEmail`, `$orderTotal`
-
-### 3.4 Constants  
-Use **UPPER_CASE** with underscores  
-**Example:** `MAX_RETRY_COUNT`, `DEFAULT_TIMEOUT`
-
-### 3.5 Filenames  
-Filename must match the class name exactly, with `.php` extension.  
-**Example:** `UserController.php`
-
-### 3.6 Interfaces & Abstract Classes  
-- Interfaces: suffix with **Interface** → `PaymentGatewayInterface`  
-- Abstract classes: prefix with **Abstract** → `AbstractLogger`
-
-
-
-## 4. Formatting and Style
-
-- Use **4 spaces** for indentation (no tabs).  
-- Maximum **line length = 120 characters**.  
-- **Opening braces** must be on the same line.
-
-### 💡 Example
-```php
-if ($condition) {
-    // ...
-}
-```
-
-- One statement per line.  
-- Include `declare(strict_types=1);` at the top of every file.  
-- No closing `?>` tag in pure PHP files.  
-- Use **short array syntax**: `$arr = ['a', 'b'];`  
-- Include a single blank line between methods.  
-- Use **type hints** and **return types** wherever possible.
-
-### 💡 Example
-```php
+<?php
 declare(strict_types=1);
 
-class MathHelper
+namespace App\Services\User;
+
+use App\Models\User;
+
+final class UserService
 {
-    public function add(int $a, int $b): int
+    public function getProfile(int $id): ?User
+    {
+        return User::find($id);
+    }
+}
+```
+
+---
+
+## 3. Naming Conventions
+| Type | Convention | Example |
+|------|------------|---------|
+| Classes | PascalCase | `UserService`, `OrderRepository` |
+| Methods/Functions | camelCase | `getUserOrders()`, `calculateTotal()` |
+| Variables | camelCase | `$orderTotal`, `$userEmail` |
+| Constants | UPPER_CASE | `MAX_RETRY_COUNT`, `CACHE_TTL_MINUTES` |
+| Interfaces | Suffix `Interface` | `PaymentGatewayInterface` |
+| Abstract Classes | Prefix `Abstract` | `AbstractLogger` |
+| Filenames | Match class name | `UserController.php` |
+
+> “Naming is a contract with your future self — make it one you’ll gladly sign again.”
+
+---
+
+## 4. Formatting & Style
+- **Indentation:** 4 spaces (no tabs).  
+- **Line length:** 120 chars max.  
+- **Braces:** same line.  
+- Add `declare(strict_types=1);` at the top of every file.  
+- No closing `?>` in pure PHP files.  
+- Short arrays: `['a', 'b']`.  
+- One blank line between methods.  
+- Type all parameters, returns, and properties. Enforce **PSR‑12** with PHP_CodeSniffer/Rector.
+
+### 💡 Example
+```php
+<?php
+declare(strict_types=1);
+
+namespace App\Utils;
+
+final class MathHelper
+{
+    public function add(float $a, float $b): float
     {
         return $a + $b;
     }
 }
 ```
 
+> “Formatting is the grammar of code — break it, and even good logic sounds wrong.”
 
+---
 
-## 5. Commenting and Documentation
-
-Use **PHPDoc** for classes, properties, and methods.
+## 5. Commenting & Documentation
+- Document **public** classes/methods/properties with PHPDoc.  
+- Explain **why**, not **what**; keep comments current.  
+- Use PHPDoc for generics and complex types to help static analysis.
 
 ### 💡 Example
 ```php
 /**
- * Get user data by ID.
+ * Retrieve a user by ID.
  *
  * @param int $id
  * @return User|null
@@ -122,19 +117,16 @@ public function getUser(int $id): ?User
 }
 ```
 
-- Use inline comments (`//`) to explain **why**, not **what**.  
-- Use `/** */` for multi-line comments.  
-- Avoid redundant or outdated comments.
+---
 
-
-
-## 6. Security Best Practices
-
-- Validate and sanitize **all user inputs**.  
-- Escape **all outputs** using `htmlspecialchars()` or equivalent.  
-- Always use **prepared statements** or **ORM bindings** to prevent SQL injection.  
-- Store passwords using **password_hash()** and **password_verify()**.  
-- Disable `display_errors` in production and enable `error_log`.
+## 6. Security Standards (DevSecOps Aligned)
+- Validate & sanitize all inputs; escape HTML outputs with `htmlspecialchars($data, ENT_QUOTES, 'UTF-8')`.
+- Use **prepared statements**/ORM bindings; never concatenate SQL.  
+- Passwords: `password_hash()` + `password_verify()`; use modern algos (Argon2id/Bcrypt).  
+- Disable `display_errors` in prod; log to file/stack (Monolog).  
+- Enable **CSRF tokens**, **CSP**, **SameSite/HttpOnly/Secure** cookies, **rate limiting**.  
+- Keep secrets out of code; use `.env` (local) and **Secrets Manager** (staging/prod).  
+- Validate uploads (MIME/size/ext); store outside `/public` with random names.
 
 ### 💡 Example
 ```php
@@ -146,76 +138,93 @@ $stmt = $pdo->prepare('SELECT * FROM users WHERE email = :email');
 $stmt->execute(['email' => $_POST['email']]);
 ```
 
+> “Security isn’t a checkbox — it’s a mindset you code with.”
 
+---
 
-## 7. Error Handling
-
-- Use **exceptions** and **try-catch** blocks.  
-- Never suppress errors using `@`.  
-- Use **Monolog** or equivalent for error logging.  
-- Avoid displaying sensitive stack traces in production.
+## 7. Error Handling & Logging
+- Use **Exceptions** and domain‑specific exception types.  
+- Never suppress with `@`.  
+- Log critical errors with **Monolog** (structured JSON preferred).  
+- Don’t expose stack traces in prod.
 
 ### 💡 Example
 ```php
 try {
-    $result = $db->query($sql);
-} catch (PDOException $e) {
-    Log::error('Database query failed', ['error' => $e->getMessage()]);
+    $orderService->process($orderId);
+} catch (OrderException $e) {
+    \Log::error('Order processing failed', [
+        'order_id' => $orderId,
+        'error' => $e->getMessage(),
+    ]);
 }
 ```
 
+> “Logs are the black box of your application — the truth is always in there.”
 
+---
 
 ## 8. Version Control & Branching
-
-- Use **Git** with the following branches:
-  - `main` → Production-ready code
-  - `develop` → Integration branch
-  - `feature/*` → Individual feature branches
-
-- Follow **Conventional Commit** messages:
-  - `feature: add user login`
-  - `fix: correct email validation`
+- Branches: `main` (prod), `develop` (integration), `feature/*` (work), `hotfix/*` (urgent).  
+- **Conventional Commits**:  
+  - `feat: add user login flow`  
+  - `fix: correct email validation`  
   - `refactor: optimize query performance`
+- Require PR reviews and green CI to merge. Tag releases (`v1.2.0`).
 
-- Code must **pass review** before merging to `main`.
+> “A good Git history reads like a story — clear, intentional, and complete.”
 
+---
 
-
-## 9. Testing & Quality
-
-- All code must include **unit and integration tests** (use PHPUnit).  
-- Maintain **minimum 80% test coverage**.  
-- Use **static analysis tools**:
-  - PHPStan (level 8 recommended)
-  - Psalm
-- Use **PHP_CodeSniffer** with PSR-12 standard.
+## 9. Testing & Quality Assurance
+- Minimum **80% coverage**; unit + feature + integration tests (PHPUnit/Pest).  
+- CI must run: PHP_CodeSniffer (PSR‑12), PHPStan (level 8+), Psalm (as applicable), and tests.  
+- Consider **InfectionPHP** for mutation tests on critical modules.
 
 ### 💡 Example
 ```bash
-phpcs --standard=PSR12 app/
+vendor/bin/phpcs --standard=PSR12 app/
 vendor/bin/phpstan analyse app/ --level=8
 vendor/bin/phpunit --coverage-text
 ```
 
-- Integrate **CI/CD pipelines** (GitHub Actions, GitLab CI) for:
-  - Automated testing
-  - Linting
-  - Code quality enforcement
+> “Testing is not about proving you’re right; it’s about proving you’re not wrong.”
+
+---
+
+## 10. AI‑Assisted Development Standards
+- Use **Copilot/Cursor/ChatGPT** for scaffolding and refactors, but **always review**.  
+- Never include secrets or proprietary logic in prompts.  
+- Tag AI‑assisted commits `[AI-Assisted]`.
+
+### 💡 Example
+```bash
+git commit -m "[AI-Assisted] Refactor CartService for SOLID compliance"
+```
+
+> “AI won’t replace developers — but developers using AI will replace those who don’t.”
+
+---
+
+## 11. Tooling & PHP Runtime
+- PHP **8.3+** required; align local, CI, and production versions.  
+- Composer 2.x; enable OPcache in production.  
+- Use Docker for consistent environments; keep images minimal and pinned.
+
+---
+
+## 12. Summary
+- 🧩 **Consistency** across teams  
+- 🔒 **Security** by default  
+- ⚙️ **Scalability** built‑in  
+- 🧠 **AI‑assisted** productivity  
+- ❤️ **Readable** and maintainable code
+
+> “Discipline in style leads to freedom in design.”
+
+---
+
+**Document Owner:** Techversant CoE  
 
 
-
-## 10. Summary
-
-Adhering to these coding standards ensures:
-- Consistent code quality across all PHP projects.  
-- Reduced technical debt.  
-- Better collaboration among team members.  
-- Faster onboarding and smoother code reviews.
-
-> “Readable code is reliable code — consistency is our culture.”
-
-
-
-**Document Owner:**  
-CoE, Techversant InfoTech Pvt. Ltd.
+> “Code like someone will maintain it after you — because someone always will.”
