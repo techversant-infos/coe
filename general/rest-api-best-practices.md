@@ -1,34 +1,39 @@
-# REST API Best Practices & Style Guide
-**Version:** 2.0  
+# REST API Best Practices & Style Guide  
+**Version:** 3.0  
 **Audience:** Backend Developers, Architects, QA  
-**Scope:** Company-wide (Framework-agnostic)
+**Scope:** Company-wide (Framework-agnostic, reusable across all teams)**
 
----
 
-## 1. Core Principles
 
-- **Resource-oriented:** APIs should model nouns, not verbs.  
-  - Good: `/customers`, `/customers/{id}/orders`  
-  - Bad: `/getCustomer`, `/createOrderNow`
-- **Consistency:** Naming, HTTP semantics, and error formatting must be uniform.
-- **Predictability:** Endpoints should be guessable based on domain logic.
-- **Statelessness:** Each request is independent; no server-side session state.
+# 1. Core Principles
 
----
+- **Resource-oriented:** APIs should expose nouns, not verbs.  
+- **Consistency over cleverness:** Every team should follow the same naming, structure, and behavior patterns.
+- **Predictable responses:** All success and error responses follow the same envelope.  
+- **Stateless:** Server stores no client-specific session state.
+- **Discoverability:** Endpoints should be guessable by developers.
 
-## 2. URL Design & Naming
 
-### 2.1 Base URL & Versioning
-Use prefix-based versioning:
+
+# 2. URL Design & Naming
+
+## 2.1 Versioning Strategy (Mandatory)
+Use version prefix in every endpoint:
+
 ```
 https://api.company.com/v1/
+https://api.company.com/v2/
 ```
 
-### 2.2 Naming Conventions
-- Use **kebab-case** or **snake_case**.
-- Use **plural nouns**.
+## 2.2 Naming Conventions
+- **Plural nouns** for resources  
+  `/customers`, `/orders`, `/transactions`
+- **kebab-case** OR **snake_case** in URLs (choose org-wide)
+- Resources never end with verbs  
+  ❌ `/createCustomer`  
+  ✔ `/customers`
 
-### 2.3 Resource Structure
+## 2.3 Standard Resource Structure
 ```
 GET    /customers
 POST   /customers
@@ -37,90 +42,112 @@ PATCH  /customers/{id}
 DELETE /customers/{id}
 ```
 
-### 2.4 Sub-resources (Max depth: 2)
+## 2.4 Nested Resources (Max Depth = 2)
 ```
 GET /customers/{id}/orders
 POST /customers/{id}/addresses
 ```
 
-### 2.5 Non-CRUD Actions
+## 2.5 Action Endpoints (Non-CRUD)
 ```
 POST /customers/{id}/activate
-POST /orders/{id}/cancel
+POST /orders/{id}/refund
 POST /auth/login
+POST /auth/logout
 ```
 
----
 
-## 3. HTTP Methods & Idempotency
 
-| Method | Usage | Idempotent |
-|--------|--------|------------|
-| GET | Retrieve resource | Yes |
-| POST | Create / Non-idempotent | No |
-| PUT | Replace entire resource | Yes |
-| PATCH | Partial update | Should be |
+# 3. HTTP Methods & Idempotency
+
+| Method | Purpose | Idempotent |
+|--------|---------|------------|
+| GET    | Retrieve resources | Yes |
+| POST   | Create resource / action | No |
+| PUT    | Replace entire resource | Yes |
+| PATCH  | Partial update | Ideally yes |
 | DELETE | Remove resource | Yes |
 
-Idempotency keys for critical POST:
+## 3.1 Idempotency for POST  
+For payment, loyalty redemption, coupon usage, etc.
+
 ```
 Idempotency-Key: <uuid>
 ```
 
----
+If duplicate POST arrives with same key → return **same response**, not duplicate action.
 
-## 4. Request Payload Standards
 
-### 4.1 JSON Naming Convention
-Choose one: **camelCase** (preferred) or **snake_case**.
 
-### 4.2 Boolean Naming Convention
+# 4. Request Payload Standards
+
+## 4.1 JSON Naming Convention (Strict)
+Use **camelCase** for JSON keys:
+
+```
+firstName
+lastName
+dateOfBirth
+phoneNumber
+```
+
+Avoid mixing different conventions.
+
+## 4.2 Boolean Naming Convention (MANDATORY)
 Booleans MUST use prefixes:
+
 ```
 isActive
 hasSubscription
 canRedeem
 shouldNotify
+isVerified
 ```
 
-Not recommended:
+❌ Avoid ambiguous:  
 ```
 active
 enabled
 verified
 ```
 
-### 4.3 Dates (ISO 8601)
+## 4.3 Date Format (ISO 8601 Only)
 ```
-1990-12-24
-2025-01-20T14:30:00Z
-2025-01-20T14:30:00+05:30
-```
-
-### 4.4 Numbers
-Use numeric JSON values:
-```
-{ "quantity": 3, "amount": 1249.75 }
+"birthDate": "1990-12-24"
+"createdAt": "2025-01-20T14:30:00Z"
+"updatedAt": "2025-01-20T14:30:00+05:30"
 ```
 
-### 4.5 Null Handling
-- Use `null` purposely.
-- Omit optional fields when not required.
+## 4.4 Numeric Format
+```
+"salary": 45000.50
+"quantity": 3
+```
 
----
+## 4.5 Null vs Missing Fields
+- Use `null` only when intentional.
+- Prefer omission for optional fields.
 
-## 5. Response Structure
 
-### Success Example
+
+# 5. Success & Error Responses
+
+## 5.1 Success Response Format
 ```json
 {
   "success": true,
-  "data": {},
-  "meta": {}
+  "data": {
+    "id": "U123",
+    "firstName": "Lajin",
+    "tier": "GOLD"
+  },
+  "meta": {
+    "traceId": "abc123"
+  }
 }
 ```
 
-### Error Example
+## 5.2 Error Response Format
 ```json
 {
   "success": false,
@@ -128,39 +155,56 @@ Use numeric JSON values:
     "code": "VALIDATION_ERROR",
     "message": "Validation failed.",
     "details": {},
-    "traceId": "abc123"
+    "traceId": "req-55493"
   }
 }
 ```
 
----
+## 5.3 Should we include HTTP Status Code inside JSON?
+Optional for debugging:
+```json
+{
+  "error": {
+    "httpStatus": 422,
+    "code": "VALIDATION_ERROR"
+  }
+}
+```
 
-## 6. HTTP Status Codes (Detailed)
+
+
+# 6. HTTP Status Codes (Descriptive)
 
 ### 2xx Success
-- 200 OK
-- 201 Created
-- 202 Accepted
-- 204 No Content
+| Code | Meaning | Example |
+|------|---------|---------|
+| **200** | Successful response | GET /customers |
+| **201** | Resource created | POST /customers |
+| **202** | Accepted for async processing | Long-running tasks |
+| **204** | No content | DELETE success |
 
 ### 4xx Client Errors
-- 400 Bad Request
-- 401 Unauthorized
-- 403 Forbidden
-- 404 Not Found
-- 409 Conflict
-- 422 Unprocessable Entity
-- 429 Rate Limit Exceeded
+| Code | Meaning | Example |
+|------|----------|---------|
+| **400** | Bad request | Malformed JSON |
+| **401** | Unauthorized | Invalid/expired token |
+| **403** | Forbidden | Role lacks permissions |
+| **404** | Not found | Unknown customer ID |
+| **409** | Conflict | Duplicate record, version mismatch |
+| **422** | Validation failed | Missing or invalid fields |
+| **429** | Rate limit exceeded | Too many requests |
 
 ### 5xx Server Errors
-- 500 Internal Server Error
-- 503 Service Unavailable
+| Code | Meaning |
+|------|---------|
+| **500** | Unexpected server failure |
+| **503** | Upstream service unavailable |
 
----
 
-## 7. Validation Error Examples
 
-### Single Error
+# 7. Validation Error Examples
+
+## 7.1 Single Error
 ```json
 {
   "error": {
@@ -171,93 +215,138 @@ Use numeric JSON values:
 }
 ```
 
-### Multiple Errors
+## 7.2 Multiple Errors
 ```json
 {
   "error": {
     "details": {
       "email": ["Invalid email format."],
-      "password": ["Too short."]
+      "password": [
+        "Must be at least 8 characters.",
+        "Must contain one uppercase letter."
+      ]
     }
   }
 }
 ```
 
-### Nested Errors
+## 7.3 Nested Object Errors
 ```json
 {
   "error": {
     "details": {
-      "address.line1": ["Required"],
-      "address.city": ["Invalid"]
+      "address.line1": ["Line1 is required."],
+      "address.city": ["Invalid city."]
     }
   }
 }
 ```
 
-### Array Errors
+## 7.4 Array Errors
 ```json
 {
   "error": {
     "details": {
-      "items[0].productId": ["Invalid"],
-      "items[1].quantity": ["Must be >= 1"]
+      "items[0].productId": ["Product does not exist."],
+      "items[1].quantity": ["Quantity must be > 0."]
     }
   }
 }
 ```
 
----
 
-## 8. Filtering, Sorting, Pagination
 
-### Pagination
+# 8. Filtering, Sorting & Pagination
+
+## 8.1 Pagination
 ```
 GET /customers?page=1&pageSize=20
 ```
 
-### Basic Filtering
+## 8.2 Basic Filters
 ```
-GET /customers?tier=gold&status=active
-```
-
-### Advanced Filtering
-```
-GET /transactions?filter[tier]=gold&filter[minAmount]=5000
+GET /customers?tier=gold&isActive=true
 ```
 
-### Sorting
-```
-GET /transactions?sort=-createdAt
-```
-
----
 
 
-### 8.5 Advanced Filtering Operators
+# 8.3 Advanced Filters (Descriptive)
 
-Recommended operator-suffix pattern:
+We use **suffix-based operator naming**, because it is:
+
+✔ Easy to read  
+✔ Easy to parse  
+✔ Matches Stripe, Shopify standards  
+
+### Supported Operators
 
 | Operator | Meaning | Example |
 |----------|---------|---------|
-| _gt | Greater than | filter[salary_gt]=2000 |
-| _gte | Greater than or equal | filter[amount_gte]=500 |
-| _lt | Less than | filter[age_lt]=60 |
-| _lte | Less than or equal | filter[qty_lte]=10 |
-| _ne | Not equal | filter[status_ne]=inactive |
-| _in | In list | filter[tierIn]=gold,silver |
-| _between | Range | filter[amountBetween]=500,5000 |
+| `_gt` | Greater than | `filter[salary_gt]=20000` |
+| `_gte` | Greater or equal | `filter[amount_gte]=5000` |
+| `_lt` | Less than | `filter[age_lt]=60` |
+| `_lte` | Less or equal | `filter[quantity_lte]=5` |
+| `_ne` | Not equal | `filter[status_ne]=inactive` |
+| `_in` | In list | `filter[tier_in]=gold,silver,platinum` |
+| `_between` | Value in range | `filter[amount_between]=500,5000` |
 
-Examples:
+### Examples
 
+#### **1. Salary > 2000**
 ```
 GET /employees?filter[salary_gt]=2000
-GET /transactions?filter[amount_gte]=5000&filter[tier]=gold
-GET /products?filter[discountBetween]=10,25
-GET /customers?filter[cityIn]=Kochi,Bangalore,Chennai
-GET /transactions?filter[createdAt_gte]=2025-02-01&filter[createdAt_lte]=2025-02-28
 ```
-## 9. Security & Rate Limiting
+
+#### **2. Created between 1 Jan and 31 Jan**
+```
+GET /transactions?filter[createdAt_gte]=2025-01-01&filter[createdAt_lte]=2025-01-31
+```
+
+#### **3. Tier in (Gold, Silver)**
+```
+GET /customers?filter[tier_in]=gold,silver
+```
+
+#### **4. Discount between 10% and 25%**
+```
+GET /products?filter[discount_between]=10,25
+```
+
+#### **5. Multiple filters combined**
+```
+GET /transactions?filter[amount_gt]=5000&filter[city_in]=Kochi,Bangalore&filter[isActive]=true
+```
+
+
+
+# 8.4 Sorting (Detailed Examples)
+
+### Format:
+```
+sort=fieldName
+sort=-fieldName  // descending
+```
+
+### Examples:
+
+#### Sort customers by creation date (latest first)
+```
+GET /customers?sort=-createdAt
+```
+
+#### Sort transactions by amount ASC, then date DESC
+```
+GET /transactions?sort=amount,-createdAt
+```
+
+#### Sort employees by salary ASC
+```
+GET /employees?sort=salary
+```
+
+
+
+# 9. Security
 
 ### Authorization Header
 ```
@@ -266,111 +355,119 @@ Authorization: Bearer <token>
 
 ### Sensitive Data Never Returned
 - Passwords  
+- OTP  
+- API keys  
 - Tokens  
-- OTPs  
 - Secrets  
 
-### Rate-Limit Headers
+
+
+# 10. Rate Limiting
+
+### Response Headers
 ```
 X-RateLimit-Limit: 1000
 X-RateLimit-Remaining: 755
 X-RateLimit-Reset: 1737480912
 ```
 
-429 Response:
+### 429 Error Example
 ```json
 {
   "error": {
     "code": "RATE_LIMIT_EXCEEDED",
-    "message": "Too many requests."
+    "message": "Too many requests. Retry after 60 seconds."
   }
 }
 ```
 
----
 
-## 10. Concurrency & ETags
 
-```
-GET /tiers/123
-ETag: "v5"
-```
+# 11. Concurrency & ETags
 
+### Example:
 ```
-PUT /tiers/123
-If-Match: "v5"
+GET /customers/123
+ETag: "v7"
 ```
 
-Response if mismatch:
+```
+PUT /customers/123
+If-Match: "v7"
+```
+
+If mismatch:
 ```
 409 Conflict
 ```
 
----
 
-## 11. Versioning Strategy
 
-### URL Versioning
+# 12. Versioning (Detailed)
+
+### 12.1 URL Versioning (Preferred)
 ```
-/v1/resource
-/v2/resource
+/v1/customers
+/v2/customers
 ```
 
-### Handling Versions in Code
+### 12.2 Handling Versions in Code
 - Separate controllers/modules per version.
-- Keep core domain logic version-agnostic.
-- Avoid logic like `if version == ...`.
+- Domain logic stays version-agnostic.
+- No branching logic:  
+  ❌ `if version == 1`  
 
----
 
-## 12. Logging & Observability
+
+# 13. Logging & Observability
 
 Log:
-- HTTP method  
+- Method  
 - Path  
 - Status code  
-- Execution time  
+- Latency  
 - traceId  
 
-Never log:
-- Passwords  
+Never Log:
+- Password  
+- OTP  
 - Tokens  
-- Sensitive PII  
+- Secrets  
 
----
 
-## 13. Testing Requirements
+
+# 14. Testing Requirements
 
 - Unit tests  
 - Integration tests  
 - Contract tests  
 - Smoke tests  
 
----
 
-## 14. Deprecation Policy
 
-Use headers:
+# 15. Deprecation Policy
+
+Include:
 ```
 Deprecation: true
 Sunset: 2026-01-31
 ```
 
----
 
-## 15. API Review Checklist
 
-- [ ] Endpoint naming consistent  
-- [ ] Correct HTTP method  
-- [ ] JSON naming consistent  
+# 16. API Review Checklist
+
+- [ ] Naming conventions followed  
 - [ ] Boolean naming correct  
-- [ ] Success & error envelope correct  
-- [ ] Pagination & filtering correct  
-- [ ] No sensitive data leaked  
-- [ ] Versioning respected  
+- [ ] Pagination & filters implemented  
+- [ ] Sorting works with multiple fields  
+- [ ] Advanced filtering rules applied  
+- [ ] Error envelope consistent  
+- [ ] No sensitive data exposed  
+- [ ] Versioning correct  
+- [ ] Rate limits applied  
 - [ ] OpenAPI updated  
-- [ ] Tests added  
+- [ ] Tests complete  
 
----
 
-## End of Document
+
