@@ -233,6 +233,30 @@ GET /transactions?sort=-createdAt
 
 ---
 
+
+### 8.5 Advanced Filtering Operators
+
+Recommended operator-suffix pattern:
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| _gt | Greater than | filter[salary_gt]=2000 |
+| _gte | Greater than or equal | filter[amount_gte]=500 |
+| _lt | Less than | filter[age_lt]=60 |
+| _lte | Less than or equal | filter[qty_lte]=10 |
+| _ne | Not equal | filter[status_ne]=inactive |
+| _in | In list | filter[tierIn]=gold,silver |
+| _between | Range | filter[amountBetween]=500,5000 |
+
+Examples:
+
+```
+GET /employees?filter[salary_gt]=2000
+GET /transactions?filter[amount_gte]=5000&filter[tier]=gold
+GET /products?filter[discountBetween]=10,25
+GET /customers?filter[cityIn]=Kochi,Bangalore,Chennai
+GET /transactions?filter[createdAt_gte]=2025-02-01&filter[createdAt_lte]=2025-02-28
+```
 ## 9. Security & Rate Limiting
 
 ### Authorization Header
