@@ -1,0 +1,51 @@
+name: Lint Markdown
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - '.github/workflows/lint-markdown.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**.md'
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdown Lint
+        uses: DavidAnson/vscode-markdown-lint-action@v2
+        with:
+          configuration: >
+            {
+              "MD013": { "line_length": 120, "_tables": false },
+              "MD024": { "siblings_only": true },
+              "MD033": { "allowed_elements": ["details", "summary"] }
+            }
+
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check spelling in Markdown
+        uses: streetsidesoftware/cspell-action@v3
+        with:
+          files: '**/*.md'
+          config: './cspell.json'
+          check_only_new_files: ${{ github.event_name == 'pull_request' }}
+
+  links-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lychee Link Check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress '**/*.md'
+          fail: true

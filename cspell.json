@@ -1,0 +1,32 @@
+# cSpell configuration for CoE documents
+
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "CoE",
+    "Techversant",
+    "PSR",
+    "CFML",
+    "IDOR",
+    "XXE",
+    "SSRF",
+    "OWASP",
+    "RBAC",
+    "SAST",
+    "DAST",
+    "SBOM",
+    "HttpOnly",
+    "SameSite",
+    "cfscript",
+    "cfqueryparam",
+    "Zod",
+    "Pino",
+    "Argon2",
+    "PBKDF2"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/.git/**"
+  ]
+}
