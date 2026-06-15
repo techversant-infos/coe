@@ -47,7 +47,19 @@
     "USE",
     "academind",
     "t3.gg",
-    "tkdodo"
+    "tkdodo",
+    "MSW",
+    "Vitest",
+    "Jest",
+    "lint",
+    "formatter",
+    "linter",
+    "bundler",
+    "pre-commit",
+    "WIP",
+    "TODO",
+    "DRAFT",
+    "Bitbucket"
   ],
   "ignorePaths": [
     "**/node_modules/**",

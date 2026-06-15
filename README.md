@@ -19,7 +19,9 @@ coe/
 ├── README.md              ← You are here
 ├── CLAUDE.md              ← Claude Code guidance (AI tools read this)
 ├── learning-paths/        ← Structured onboarding tracks by technology
-│   └── nextjs/
+│   ├── nextjs/
+│   │   └── intermediate.md
+│   └── react/
 │       └── intermediate.md
 ├── audit/                 ← Compliance & audit materials
 │   ├── coe-audit-framework.md
