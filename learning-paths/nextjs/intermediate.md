@@ -34,8 +34,6 @@ By the end of this 8-week plan, every developer on the team should be able to:
 
 ### Team-Level Metrics of Success
 
-### Team-Level Metrics of Success
-
 Beyond individual outcomes, we measure whether the path actually moved the team's velocity:
 
 - **% of new frontend tickets completed without senior blocking** — track per quarter, target a meaningful rise from baseline
