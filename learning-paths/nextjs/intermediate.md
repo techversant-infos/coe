@@ -1,8 +1,9 @@
-**Version:** 0.3
+**Version:** 0.5
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
 **Audience:** Web Dev Team — backend/PHP/Laravel-leaning engineers who need to ship modern Next.js frontends
 **Length:** 10 phases over 8 weeks (~5 hours/week, pair-friendly)
+**Status:** **Draft for Pilot Batch** — run with 3–5 developers first, revisit after Week 2 feedback
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
 
 # Next.js Learning Path — For the Web Dev Team
@@ -29,6 +30,10 @@ By the end of this 8-week plan, every developer on the team should be able to:
 7. Ship a feature with unit, component, and E2E tests; pass Lighthouse and a basic accessibility audit.
 8. Deploy to Vercel (or a self-hosted Node target) with logs, traces, env management, and a rollback plan.
 
+> **Realistic scope:** ~40 hours is enough for **orientation and supervised contribution**, not full independence. After week 8, expect each developer to be able to take a small Next.js ticket end-to-end with a senior reviewer in the loop — not to lead a frontend architecture decision. Build the rest of the confidence on the job, in code review, and on real tickets.
+
+### Team-Level Metrics of Success
+
 ### Team-Level Metrics of Success
 
 Beyond individual outcomes, we measure whether the path actually moved the team's velocity:
@@ -42,7 +47,24 @@ Re-baseline these at the end of week 8. If they're not moving, the path needs a 
 
 ---
 
+## Prerequisites (complete before Week 1)
+
+The path assumes you have these technical basics. If not, spend 1–2 days top up before starting:
+
+| Skill | Minimum bar | Refresher resource |
+|---|---|---|
+| **Git & PR workflow** | Branch, PR, rebase, resolve conflict review | [git/Techversant_Git_Workflow.md](../../git/Techversant_Git_Workflow.md) |
+| **Node.js & pnpm** | Install, run `pnpm dev`, read `.env` | nodejs.dev/learn/getting-started |
+| **HTML & CSS** | Semantic HTML, Flexbox, Grid, responsive design | web.dev — Learn CSS |
+| **API basics** | HTTP methods/status codes, JSON, auth headers/cookies | MDN — HTTP overview |
+| **Basic TypeScript** | `interface`, `type`, generic types — enough to read Zod schemas | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
+
+**Next.js experience bonus** but **not required:** touched React Router, has(n't) used `useState`, has(n't) used `useEffect`. The path assumes no React fluency.
+
+---
+
 ## 📚 Table of Contents
+- [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
 - [Suggested 8-Week Plan](#suggested-8-week-plan)
 - [Phase 1 — JavaScript + TypeScript Refresh](#phase-1--javascript--typescript-refresh)
 - [Phase 2 — React Fundamentals](#phase-2--react-fundamentals)
@@ -80,6 +102,22 @@ Re-baseline these at the end of week 8. If they're not moving, the path needs a 
 > **Buffer:** treat Weeks 7–8 as flexible. If the team is behind, fold the production work into a follow-up sprint rather than rushing. The point of the path is the **8 weekly deliverables**, not hitting 8 weeks exactly.
 
 > **Working agreement:** the deliverable at the end of each week is what gets reviewed on Friday. Pair on the harder phases (4, 5, 7). Open a PR for the deliverable even if it's small — it builds the habit.
+
+### Weekly PR Assessment Rubric
+
+Each week's deliverable PR is reviewed on this rubric. Score 0–2 per row (0 = missing, 1 = partial, 2 = solid). Aim for 12/14+ before moving on. The goal isn't perfection — it's catching the same gap three weeks in a row.
+
+| Dimension | What good looks like |
+|---|---|
+| **Code correctness** | Feature works end-to-end against the mock or real Laravel API |
+| **Type safety** | No `any` unless justified; Zod-validated inputs; response types are explicit |
+| **Component structure** | Small, single-purpose components; proper use of `components/` vs. `features/` (from Phase 8 onward) |
+| **Server/Client boundary** | `"use client"` only where needed; serializable props only; minimum JS shipped |
+| **Error handling** | Laravel errors mapped to the CoE error envelope; UI shows useful messages; no swallowed exceptions |
+| **Tests** | At least one Vitest test and (for E2E phases) one Playwright test for the new code |
+| **Accessibility basics** | Semantic HTML, keyboard reachable, labelled form inputs, color contrast not broken |
+
+A 0 in any row blocks the next phase until it's addressed.
 
 ---
 
@@ -178,7 +216,7 @@ Build an **admin dashboard shell**:
 
 ## Phase 4 — Server Components vs. Client Components
 
-**Why this phase exists:** **this is the biggest mental shift for PHP developers.** In Laravel, "render a page" usually means SSR or a Blade view. In Next.js App Router, every component is a **Server Component** by default — it runs on the server, can read the DB / call an API directly, and ships **zero JavaScript** to the browser. Client Components are the **opt-in exception**, not the default.
+**Why this phase exists:** **this is the biggest mental shift for PHP developers.** In Laravel, "render a page" usually means SSR or a Blade view. In Next.js App Router, every component is a **Server Component** by default — it runs on the server, can call **server-side APIs** securely (including our Laravel API), and ships **zero JavaScript** to the browser. Client Components are the **opt-in exception**, not the default.
 
 **Learn:**
 - Server Components (default)
@@ -187,8 +225,9 @@ Build an **admin dashboard shell**:
 - Passing props between server and client components (serialization rules)
 - Avoiding unnecessary client-side JavaScript
 - The "server island" pattern: keep data on the server, push only the interactive bit to the client
-- **Partial Prerendering (PPR)** — pre-render the static shell, stream the dynamic parts (opt-in via `next.config.js` in current Next.js releases)
 - **Caching & dynamic flags:** when to set `dynamic = 'force-dynamic'`, `revalidate = 0`, or `cache: 'no-store'` on a `fetch`
+
+> **Advanced — come back to this later:** **Partial Prerendering (PPR)** pre-renders a static shell and streams the dynamic parts. It's a powerful optimization but not needed to ship the team's first features. Revisit after Week 8 once the basics are solid.
 
 **Mental model to internalize:**
 > "Start as a server component. Add `"use client"` only when you need state, effects, or browser APIs. Push the boundary as far toward the leaves of the tree as possible."
@@ -267,7 +306,7 @@ Connect the dashboard shell to an existing Laravel API:
 - Form handling (controlled vs. `FormData` / Server Actions)
 - **React Hook Form** for client-side forms
 - **Zod** for schema validation (matches our Node.js standard)
-- **Server Actions / Server Functions** for mutations from Server Components
+- **Server Actions** (also referred to as **React Server Functions** in the current Next.js docs — same thing, two names) for mutations from Server Components
 - Optimistic UI
 - Error display in the CoE standard error envelope
 - Toast notifications
@@ -318,7 +357,7 @@ Build a **customer add / edit form** with:
 - Calling Laravel with the session cookie attached
 - Reading the httpOnly cookie in Server Components / Server Actions via `cookies()` from `next/headers` (the **only** safe way to read it on the server)
 
-**Architecture call:** for PHP/Laravel products, **Laravel owns the session**. Next.js is a client of the Laravel API. Do not roll your own JWT in Next.js; do not store tokens in `localStorage`. Use **httpOnly cookies** set by Laravel, forwarded by Next.js.
+**Architecture call:** for PHP/Laravel products, **Laravel owns the session**. Next.js is a client of the Laravel API. Do not roll your own JWT in Next.js; do not store tokens in `localStorage`. Use **httpOnly cookies** set by Laravel, forwarded by Next.js. **Never expose Laravel session cookies/tokens to client JavaScript.**
 
 **Sanctum cookies vs. JWT — when to use which:**
 
@@ -585,18 +624,22 @@ For engineers who want depth beyond the docs.
 
 ## How to Use This Path
 
-1. **Start on Monday.** Pick a phase. Work in pairs where the phase has a `*` in the 8-week plan.
-2. **Deliver on Friday.** The weekly deliverable is what gets reviewed. It can be small.
-3. **Open a PR for every deliverable.** Even tiny ones. The habit is the point.
-4. **Use AI carefully.** Per [CoE AI guidelines](../../general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code — but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
-5. **Track progress.** Use a shared Notion/Kanban or a simple spreadsheet: one row per developer, one column per phase, check off self-checks as you go. Review in the team meeting each Friday.
-6. **Update this doc.** Broken link? Better course? Found a gap? PR it. This is a living document.
-7. **Cross-link with our existing standards:**
-   - Code review: [nodejs-typescript-code-review-checklist.md](../../nodejs/nodejs-typescript-code-review-checklist.md)
-   - API design: [rest-api-best-practices.md](../../general/rest-api-best-practices.md)
-   - AI policy: [ai-era-coding-guidelines.md](../../general/ai-era-coding-guidelines.md)
-   - Git workflow: [git/Techversant_Git_Workflow.md](../../git/Techversant_Git_Workflow.md)
-8. **Starter template.** When the path is running, the first team to finish Phase 8 should publish a minimal **Laravel + Next.js + shadcn** starter repo and link it from this document. Until then, scaffold from `create-next-app`.
+**This is v0.5 Draft for Pilot Batch.** Run it with 3–5 developers first. Collect feedback after Week 2 and revise before rolling out to the full team.
+
+1. **Complete the Prerequisites** (above) before Week 1. If you can't, talk to a tech lead.
+2. **Start on Monday.** Pick a phase. Work in pairs where the phase has a `*` in the 8-week plan.
+3. **Deliver on Friday.** The weekly deliverable is what gets reviewed. It can be small.
+4. **Open a PR for every deliverable.** Even tiny ones. The habit is the point.
+5. **Use AI carefully.** Per [CoE AI guidelines](../../general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code — but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
+6. **Track progress.** Use a shared Notion/Kanban or a simple spreadsheet: one row per developer, one column per phase, check off self-checks as you go. Review in the team meeting each Friday.
+7. **Publish the starter template.** When the pilot batch reaches Phase 8, the first team to finish should publish a minimal **Laravel + Next.js + shadcn** starter repo and link it here (see [Starter Templates](#starter-templates) in Tutorial & Reference Links). Until then, scaffold from `npx create-next-app@latest`.
+8. **Feedback loop.** After Week 2 of the pilot, open a feedback PR against this doc with: what was too hard, what was skipped, what was missing, what should be cut. Revise for the full-team rollout.
+9. **Update this doc.** Broken link? Better course? Found a gap? PR it. This is a living document.
+10. **Cross-link with our existing standards:**
+    - Code review: [nodejs-typescript-code-review-checklist.md](../../nodejs/nodejs-typescript-code-review-checklist.md)
+    - API design: [rest-api-best-practices.md](../../general/rest-api-best-practices.md)
+    - AI policy: [ai-era-coding-guidelines.md](../../general/ai-era-coding-guidelines.md)
+    - Git workflow: [git/Techversant_Git_Workflow.md](../../git/Techversant_Git_Workflow.md)
 
 ---
 
@@ -605,7 +648,7 @@ For engineers who want depth beyond the docs.
 | Field | Value |
 |---|---|
 | Document | Next.js Learning Path — For the Web Dev Team |
-| Version | 0.4 (resources pass: courses, channels, starter templates) |
+| Version | 0.5 (pilot-batch: prerequisites, rubric, scope realism, Laravel-DB reword, PPR demoted) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — first PR open |
