@@ -2,6 +2,10 @@
 
 This folder contains the team's React learning resources. Start with the path document. Use the roadmap image as a visual reference. The gap analysis is reviewer-only and lives in its own file.
 
+![React Developer Roadmap](./roadmap.png)
+
+*The community [React Developer Roadmap by adam-golab](https://github.com/adam-golab/react-developer-roadmap). The full React ecosystem at a glance — used as a visual completeness check against our [intermediate path](./intermediate.md), not as a curriculum.*
+
 ---
 
 ## 📂 What's in this folder
@@ -52,7 +56,7 @@ For the full model, see [general/ai-era-coding-guidelines.md](../../general/ai-e
 | Field | Value |
 |---|---|
 | Document | React Learning Path — Folder Index |
-| Version | 0.2 (gap analysis extracted to a separate file) |
+| Version | 0.3 (roadmap image embedded in README header) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — pilot batch |
