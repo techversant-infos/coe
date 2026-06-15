@@ -474,12 +474,18 @@ Take the admin panel MVP and ship it to staging:
 
 ## Recommended Courses
 
+**Reading order:** official sources first — they are the most current and the least likely to mislead. Treat third-party tutorials and courses as supplements, not replacements.
+
+> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources — paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
+
 Pick **one primary** source and treat the rest as references.
 
 | Level | Course | Why | Cost |
 |---|---|---|---|
 | **Primary — React** | [react.dev/learn](https://react.dev/learn) — official React docs (Quick Start, Thinking in React, Managing State) | Official, current, project-based | Free |
 | **Primary — Next.js** | [Next.js Learn course](https://nextjs.org/learn) — official Vercel tutorial | Builds a dashboard with login + CRUD, closest to what we ship | Free |
+| **Supplement — interactive** | [Scrimba: Learn Next.js](https://scrimba.com/learn/nextjs) — video + embedded code editor, pause-and-edit format | Best for visual / kinesthetic learners who want to type along without setting up a project | Free (Scrimba account) |
+| **Supplement — full video build** | *Modern Next.js Full Course 2026* — ByteGrad or freeCodeCamp on YouTube (search for the latest) | Single sitting, full build from zero to deploy; pick a 2025/2026 release so it covers App Router and Server Components | Free |
 | Deep dive — Next.js | *Next.js & React — The Complete Guide* — Academind (Udemy) | Long-form, covers edge cases, good for first project | Paid |
 | Server Components | *React Server Components Deep Dive* — Dan Abramov talks on YouTube | Mental model for Phase 4 | Free |
 | TypeScript | *Total TypeScript* — Matt Pocock | Best-in-class for the kind of typing we do | Paid |
@@ -499,6 +505,9 @@ Curated, low-noise, high-signal. Subscribe to 2–3 — more than that and you'l
 - [Theo – t3.gg](https://www.youtube.com/@t3dotgg) — opinionated, fast-moving, useful counterpoints
 - [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) — fundamentals refresher
 - [Jack Herrington](https://www.youtube.com/@jherr) — React, RSC, advanced patterns
+- [Traversy Media](https://www.youtube.com/@TraversyMedia) — solid crash courses and full-project walkthroughs
+- [freeCodeCamp](https://www.youtube.com/@freecodecamp) — long-form full courses (React, Next.js, TypeScript)
+- [Codevolution](https://www.youtube.com/@Codevolution) — structured series if you like learning one concept per video
 
 **Podcasts**
 - *Syntax.fm* — weekly, broad web dev with regular Next.js episodes
@@ -540,6 +549,10 @@ Bookmark these; you'll return to them often.
 **Recipes & cookbooks**
 - [Next.js Examples repo](https://github.com/vercel/next.js/tree/canary/examples) — 200+ official examples
 - [Vercel templates](https://vercel.com/templates) — production-ready starters
+
+**Starter templates**
+- [Vercel — Next.js + shadcn/ui + Tailwind starter](https://vercel.com/templates/next.js/nextjs-boilerplate) — closest to our standard stack
+- *Laravel + Next.js + shadcn (internal)* — **TODO:** publish a minimal CoE starter as the first deliverable of Phase 8 (see [How to Use This Path](#how-to-use-this-path)). Until it exists, scaffold with `npx create-next-app@latest` and add shadcn with `npx shadcn@latest init`.
 
 ---
 
@@ -592,7 +605,7 @@ For engineers who want depth beyond the docs.
 | Field | Value |
 |---|---|
 | Document | Next.js Learning Path — For the Web Dev Team |
-| Version | 0.3 (review-pass: Phases 4/5/7/8/9/10 expanded) |
+| Version | 0.4 (resources pass: courses, channels, starter templates) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — first PR open |
