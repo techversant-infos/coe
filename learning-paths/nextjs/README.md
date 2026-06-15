@@ -32,7 +32,7 @@ This folder contains the team's Next.js learning resources. Start with the path 
 | Path | Audience | Length | Status |
 |---|---|---|---|
 | [React](../react/intermediate.md) | Backend engineers new to React — **prerequisite** | 6 weeks, 8 phases | v0.3 pilot |
-| [**Next.js** (this folder)](./intermediate.md) | Engineers who finished the React path | 8 weeks, 10 phases | v0.5 pilot |
+| [**Next.js** (this folder)](./intermediate.md) | Engineers who finished the React path | 8 weeks, 10 phases | v0.6 pilot |
 
 **Order of study:** React first → Next.js second. The Next.js path assumes the React fundamentals in the [React folder](../react/).
 
@@ -56,7 +56,7 @@ For the full model, see [general/ai-era-coding-guidelines.md](../../general/ai-e
 | Field | Value |
 |---|---|
 | Document | Next.js Learning Path — Folder Index |
-| Version | 0.1 (folder index created — mirrors the React folder structure) |
+| Version | 0.2 (next-pilot-review: paired with intermediate.md v0.6) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — pilot batch |
