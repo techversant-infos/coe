@@ -1,4 +1,4 @@
-**Version:** 0.1 (draft)
+**Version:** 0.2 (draft)
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
 **Audience:** Web Dev Team — backend/PHP/Laravel-leaning engineers who need to build production React frontends
@@ -109,8 +109,7 @@ Each week's deliverable PR is reviewed on this rubric. Score 0–2 per row (0 = 
 | **Effect hygiene** | `useEffect` has correct dependencies; no infinite loops; cleanup where needed |
 | **Error handling** | API errors surfaced to the user; no swallowed exceptions; CoE error envelope used |
 | **Accessibility basics** | Semantic HTML, keyboard reachable, labelled form inputs, color contrast not broken |
-
-A 0 in any row blocks the next phase until it's addressed.
+| **AI-assisted disclosure** | PR description declares what was AI-generated; no AI code in Red Zone areas (auth, payment, prod DB) |
 
 ---
 
@@ -124,6 +123,7 @@ A 0 in any row blocks the next phase until it's addressed.
   - `async` / `await` and Promises
   - Destructuring, spread / rest
   - `map`, `filter`, `reduce`
+  - **Optional chaining** (`?.`) and **nullish coalescing** (`??`) — used everywhere in React props
   - `fetch` API
   - `npm` and `pnpm`
 - **TypeScript basics**
@@ -138,6 +138,7 @@ Build a small script or page that calls a Laravel API with `fetch()`, types the 
 - [ ] I can `await` a `fetch` and narrow the response to a typed shape.
 - [ ] I can explain why we never trust the API response to be the shape we asked for.
 - [ ] I can run `pnpm dev` on a colleague's project without breaking it.
+- [ ] I can read `user?.profile?.name ?? 'Anonymous'` and explain both operators.
 
 ---
 
@@ -178,11 +179,13 @@ Build a **product card + product list**:
 
 **Learn:**
 - `useState` — the state primitive
+- `useReducer` — when state logic gets complex (next-action reducer, form reducer)
 - **State updates are asynchronous and batched** — don't read state immediately after setting it
 - **Lifting state up** — when siblings need to share state, move it to their nearest common parent
 - **Controlled components** — form inputs whose value is driven by React state
 - Events: `onClick`, `onChange`, `onSubmit`, `onKeyDown`
 - **Conditional rendering patterns:** ternary, `&&`, early return, map-to-null for filtered lists
+- **`useContext`** — the API for shared state without prop drilling (we'll use it properly in Phase 6)
 
 **Mini task:**
 Extend the product list from Phase 2 into a **product listing page**:
@@ -210,10 +213,17 @@ Extend the product list from Phase 2 into a **product listing page**:
 - **Common effect patterns:** fetch on mount, subscribe to events, sync with external state
 - **Effect anti-patterns:** infinite loops, stale closures, fetching in the wrong place
 - `useRef` — persisting a value across renders without re-triggering render, accessing DOM nodes
-- **`useCallback` and `useMemo`** — when to use them, when they don't matter
+- **`useCallback` and `useMemo`** — when to use them, when they don't matter (the React 19 Compiler reduces the need for manual memoization — see Phase 8)
+
+**React 19 improvements worth knowing:**
+- **`use()` hook** — read resources (Promises, Context) inside render, without `useEffect`. Cleaner than the old `useState + useEffect` pattern for simple async data.
+- **Better async transitions** — `useTransition` and `useDeferredValue` mark state updates as non-urgent, keeping the UI responsive while a heavy update runs.
+- **Improved error reporting** — error boundaries now give you better error info in dev.
 
 **Mental model for effects:**
 > "Use `useEffect` when you need to synchronize React with something outside of React. If it's a one-time setup, clean it up. If it reacts to a change, list the dependency."
+
+> **"Effect vs. event handler" rule of thumb:** If the side effect is caused by the **user** (button click, form submit), put it in the **event handler** — not in `useEffect`. If it's caused by the component **mounting** or **state changing**, use `useEffect`. In real apps, you'll often use a data library (TanStack Query) instead of `useEffect` for fetching — we'll cover that in the Next.js path.
 
 **Mini task:**
 Wire the product listing to a **real Laravel API**:
@@ -221,11 +231,13 @@ Wire the product listing to a **real Laravel API**:
 - Handle loading state (show a spinner), error state (show the CoE error envelope), and success state
 - Add **debounced search** — wait 300ms after the user stops typing before fetching (use `setTimeout` in a `useEffect` cleanup)
 - Add a **click-outside ref** on the search input that closes a dropdown
+- **Stretch:** refactor the initial fetch to use the `use()` hook instead of `useState` + `useEffect` and compare the code
 
 **Self-check:**
 - [ ] I can explain what a "stale closure" is and how cleanup functions prevent it.
 - [ ] I can choose between `useEffect` for data fetching vs. fetching in an event handler.
 - [ ] I can explain when `useCallback` actually helps performance and when it's premature optimization.
+- [ ] I can name one thing the React 19 `use()` hook does that the older `useState + useEffect` pattern doesn't.
 
 ---
 
@@ -240,6 +252,7 @@ Wire the product listing to a **real Laravel API**:
 - **API integration patterns:** where to fetch, where to mutate, how to handle errors
 - **Optimistic updates** — update the UI before the server confirms; roll back on error
 - **Toast notifications** for success/error feedback
+- *(Forward-looking)* React 19's `useActionState` and **Server Actions** are the natural extension of the React Hook Form + Zod pattern when you move to Next.js — covered in the [Next.js Learning Path](../nextjs/intermediate.md#phase-6--forms-validation-and-mutations). For pure React (Vite, CRA, etc.), stick with React Hook Form.
 
 **Standard pattern (use this for new work):**
 
@@ -331,6 +344,7 @@ Take the customer feature from Phase 5 and refactor it:
 - RTL test for `<CustomerForm />` — renders, submits empty form, shows validation errors
 - MSW handler returning a fake Laravel response for the customer list
 - One test for the `useCustomers()` custom hook (no component needed)
+- *Stretch:* a pure unit test for a `useReducer` reducer (no React, no RTL — just `expect(reducer(state, action)).toEqual(newState)`)
 
 **Self-check:**
 - [ ] I can test a component without knowing its internal state variable names.
@@ -362,9 +376,12 @@ Take the customer feature from Phase 5 and refactor it:
     main.tsx
   ```
 - **`React.memo`, `useMemo`, `useCallback`** — when they help, when they don't
+- **React 19 Compiler (auto-memoization):** the experimental/stable compiler can automatically memoize components and hooks, reducing the need for `useMemo` and `useCallback` boilerplate. **Don't add manual memoization "just in case"** — measure first with the Profiler, then optimize. The Compiler is an opt-in config; ask a tech lead before enabling in a production project.
 - **Code splitting and lazy loading** — `React.lazy` + `Suspense` for route-level splitting
 - **Error boundaries** — catching render errors without crashing the whole app
 - **Accessibility basics** — semantic HTML, ARIA when needed, keyboard navigation, focus management, color contrast
+- **Accessibility linting** — `eslint-plugin-jsx-a11y` catches missing alt text, broken ARIA, label/input mismatches, and other a11y mistakes at lint time. Add it to the project from day one.
+- **Bundle analysis** — `vite-bundle-visualizer` (or `rollup-plugin-visualizer`) gives you a treemap of what's in your JS bundle. Run it on every release; the first time you do, you'll find a surprise.
 - **Performance awareness** — why re-renders happen, the React DevTools Profiler, avoiding unnecessary re-renders
 - **Build process** — `vite build` outputs, what's in `dist/`
 
@@ -376,11 +393,14 @@ Take the customer feature and prepare it for production review:
 4. Run the React DevTools Profiler — identify and fix one unnecessary re-render
 5. Run an accessibility check (axe DevTools or Lighthouse) — fix the top issue
 6. Run `vite build` — review the bundle size
+7. Run `vite-bundle-visualizer` — note the three largest chunks and decide if any are worth lazy-loading
+8. Add `eslint-plugin-jsx-a11y` and fix the warnings it surfaces
 
 **Self-check:**
 - [ ] I can explain why a component re-rendered and how to prevent it.
 - [ ] I can describe the folder structure and where a new feature would go.
 - [ ] I can run a Lighthouse audit and explain its top 3 findings.
+- [ ] I can read a bundle treemap and identify a candidate for code splitting.
 
 ---
 
@@ -495,11 +515,11 @@ There is **no first-party React certification** from Meta or the React team. Adj
 | Field | Value |
 |---|---|
 | Document | React Learning Path — For the Web Dev Team |
-| Version | 0.1 (draft for pilot batch) |
+| Version | 0.2 (React 19 updates: use(), useActionState teaser, React 19 Compiler, bundle analyzer, a11y linter, AI-disclosure rubric row) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — pilot batch |
-| Supersedes | — (new document) |
+| Supersedes | v0.1 |
 | Related | [Next.js Learning Path](../nextjs/intermediate.md), [Node.js TypeScript Best Practices](../../nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) |
 
 ---
