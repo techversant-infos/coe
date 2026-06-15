@@ -1,4 +1,4 @@
-**Version:** 0.2 (draft)
+**Version:** 0.3 (draft)
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
 **Audience:** Web Dev Team — backend/PHP/Laravel-leaning engineers who need to build production React frontends
@@ -358,6 +358,15 @@ Take the customer feature from Phase 5 and refactor it:
 **Why this phase exists:** "works on my machine" is not shipped. Production React has different constraints: bundle size, accessibility, error boundaries, and a folder structure that scales beyond one developer.
 
 **Learn:**
+- **Styling:** **Tailwind CSS** is the team default (per the [Next.js path Phase 8](../nextjs/intermediate.md#phase-8--ui-system-and-frontend-architecture)). For pure-React SPAs, set up Tailwind on day one. **shadcn/ui** for primitives — same "owned by us" framing as the Next.js path. If a project already uses CSS Modules, follow the existing convention.
+- **Routing (pure-React only):** if you're building a Vite-React SPA — not a Next.js app — add **React Router v6+**. Pattern: `<BrowserRouter>` → `<Routes>` → `<Route path="…" element={…} />`. Skip this if the app is going inside Next.js (file-based routing handles it).
+- **State management at scale:** Context + `useReducer` cover 90% of state. Reach for **Redux Toolkit** only when (a) many components need the same data, (b) you need time-travel debugging or middleware (sagas, polling), or (c) the team already standardized on it. **Zustand** is the lighter alternative — pick one if Context is painful, not before. Don't reach for state-management libraries "just in case."
+- **Design tokens:** colors, spacing, type scale — never hardcode hex values. Use CSS custom properties or a Tailwind theme extension.
+- **Web security basics:** render untrusted user input as text (`{user.bio}` in JSX, never `dangerouslySetInnerHTML`), and rely on Laravel Sanctum for CSRF (covered in the [Next.js path Phase 7](../nextjs/intermediate.md#phase-7--authentication-and-authorization)). If the app is browser-only and consumes a public API, validate inputs on the client with Zod and on the server.
+- **Core Web Vitals (LCP, INP, CLS):** recognize them in Lighthouse. LCP = largest contentful paint (target < 2.5s). INP = interaction to next paint (target < 200ms). CLS = cumulative layout shift (target < 0.1). All three are why we lazy-load, `next/image`-style sizing, and avoid layout-thrashing animations.
+- **Utility libraries (team default):** `clsx` for class composition, `date-fns` for dates, native `fetch` over axios. Don't add lodash, moment, or rxjs to a new project.
+- **PWAs / offline:** out of scope for this path. If a product needs install-to-homescreen or offline support, see the CoE PWA guide (TODO).
+- **i18n:** out of scope for this path. If the product supports multiple languages, see the CoE i18n policy (TODO).
 - **Folder structure for a React project:**
   ```
   src/
@@ -401,6 +410,8 @@ Take the customer feature and prepare it for production review:
 - [ ] I can describe the folder structure and where a new feature would go.
 - [ ] I can run a Lighthouse audit and explain its top 3 findings.
 - [ ] I can read a bundle treemap and identify a candidate for code splitting.
+- [ ] I can name the three Core Web Vitals and roughly what targets they should hit.
+- [ ] I can explain when I'd reach for Context, Redux Toolkit, or Zustand — and when none of them.
 
 ---
 
@@ -515,11 +526,11 @@ There is **no first-party React certification** from Meta or the React team. Adj
 | Field | Value |
 |---|---|
 | Document | React Learning Path — For the Web Dev Team |
-| Version | 0.2 (React 19 updates: use(), useActionState teaser, React 19 Compiler, bundle analyzer, a11y linter, AI-disclosure rubric row) |
+| Version | 0.3 (roadmap gap closure: Tailwind/shadcn call, React Router, state-mgmt rule, design tokens, security basics, Core Web Vitals, utility-lib defaults, PWA/i18n pointers) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — pilot batch |
-| Supersedes | v0.1 |
+| Supersedes | v0.2 |
 | Related | [Next.js Learning Path](../nextjs/intermediate.md), [Node.js TypeScript Best Practices](../../nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) |
 
 ---
