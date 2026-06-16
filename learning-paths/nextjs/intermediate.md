@@ -1,10 +1,11 @@
-**Version:** 0.5
+**Version:** 0.6
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
 **Audience:** Web Dev Team — backend/PHP/Laravel-leaning engineers who need to ship modern Next.js frontends
 **Length:** 10 phases over 8 weeks (~5 hours/week, pair-friendly)
 **Status:** **Draft for Pilot Batch** — run with 3–5 developers first, revisit after Week 2 feedback
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
+**v0.6 changes:** added Phase 3 sub-section "Streaming with `<Suspense>`"; added Phase 5 sub-section "Cache Components (the new model)" covering the Next.js 15+/16 "opt-in caching" shift with `"use cache"`. Both additions in response to team review.
 
 # Next.js Learning Path — For the Web Dev Team
 *From PHP/Laravel backend to confident Next.js frontend engineer.*
@@ -194,6 +195,12 @@ Use a local mock JSON file — no API yet. Get code reviewed before moving on.
 - Dynamic routes: `[slug]`, `[...catchAll]`
 - Metadata and SEO basics (`generateMetadata`, `metadata` export)
 - Styling: **Tailwind CSS** (our standard) — or CSS Modules if a project predates Tailwind
+- **Streaming with `<Suspense>`** (Next.js 16 standard)
+  - `loading.tsx` is the route-level fallback; `<Suspense>` is the component-level fallback. They're the same streaming primitive, scoped differently.
+  - Wrap a slow Server Component in `<Suspense fallback={…}>` and the rest of the page streams first, the slow part streams when it's ready. The user sees the page earlier.
+  - **Granular vs. coarse:** one big `loading.tsx` for the whole page shows a single skeleton; multiple `<Suspense>` boundaries show progressive shells (e.g. header → sidebar → list → detail). Prefer granular for anything that has a slow tail.
+  - **Request waterfalls to avoid:** don't put a slow fetch in a parent that blocks a fast fetch in a child. Move the slow fetch into its own component so the parent streams without it.
+  - **Pair with caching:** a Suspense boundary streams the *first* response; cache + revalidation (Phase 5) stream the *subsequent* responses instantly. Both go together.
 
 **Primary course:** the **official Next.js Learn course** at [nextjs.org/learn](https://nextjs.org/learn). It builds a dashboard with login, protected pages, and CRUD — close to what we actually ship.
 
@@ -209,6 +216,8 @@ Build an **admin dashboard shell**:
 - [ ] I can add a new route by creating a single file.
 - [ ] I can explain when `layout.tsx` re-renders vs. `page.tsx`.
 - [ ] I can write `generateMetadata` for a dynamic route.
+- [ ] I can wrap a slow Server Component in `<Suspense>` so the rest of the page streams first.
+- [ ] I can explain the difference between `loading.tsx` and `<Suspense>` and when to use each.
 
 ---
 
@@ -265,6 +274,12 @@ Build a **products page** where:
 - Server-side data fetching in Server Components (using `fetch`, `axios`, or an SDK)
 - Client-side data fetching — **we standardize on TanStack Query** (formerly React Query). Use it for any data the client needs to refetch, mutate, or share across components. Avoid duplicating server cache in client state.
 - Caching: Next.js `fetch` cache, `revalidatePath`, `revalidateTag`
+- **Cache Components (the new model, Next.js 15+/16 standard)**
+  - The old model: every `fetch` is cached by default unless you say otherwise. The new model: nothing is cached unless you opt in.
+  - The opt-in is the `"use cache"` directive at the top of a Server Component or a function — that component/function is then cached across requests, with cache tags + revalidation rules declared inline.
+  - **Why it changed:** "cached by default" produced subtle bugs (stale data, accidental data leaks between users) and required every team to learn the `fetch` cache semantics. "Opt-in + explicit" matches the principle: cache is a *performance tool* you apply where it pays off, not a *default* you have to remember to opt out of.
+  - **For new code:** use `"use cache"` deliberately on the components that need it (e.g. the product list, the navigation chrome), leave the rest uncached. The path's mental model: "if the data is user-specific or changes per request, don't cache it."
+  - **For projects still on the old model:** opt in per-fetch with `cache: 'force-cache'` and revalidation flags; don't mix the two styles in the same file. Plan a v0.7 of this path to flip the default to the new model.
 - Loading and error states
 - Environment variables: `NEXT_PUBLIC_*` for client-safe values, server-only for secrets
 - **Route handlers** (`app/api/.../route.ts`) for webhooks, callbacks, and **proxying sensitive calls** to Laravel (so API keys never reach the browser)
@@ -293,6 +308,8 @@ Connect the dashboard shell to an existing Laravel API:
 - [ ] I can choose between caching, revalidating, or no-store for a given fetch.
 - [ ] I can return a Laravel error to the UI in our [standard error envelope](../../general/rest-api-best-practices.md).
 - [ ] I can decide whether a feature needs Server Component data, TanStack Query, or a route handler.
+- [ ] I can write a Server Component with `"use cache"` and explain why I'm opting in.
+- [ ] I can name one thing the old "cached by default" model got wrong, and why the new opt-in model fixes it.
 
 ---
 
@@ -646,11 +663,11 @@ For engineers who want depth beyond the docs.
 | Field | Value |
 |---|---|
 | Document | Next.js Learning Path — For the Web Dev Team |
-| Version | 0.5 (pilot-batch: prerequisites, rubric, scope realism, Laravel-DB reword, PPR demoted) |
+| Version | 0.6 (pilot-review: added Streaming sub-section to Phase 3, added Cache Components sub-section to Phase 5) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — first PR open |
-| Supersedes | v0.2 |
+| Supersedes | v0.5 |
 | Related | [Node.js TypeScript Best Practices](../../nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) |
 
 ---

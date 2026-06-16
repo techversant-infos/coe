@@ -65,7 +65,8 @@ The Next.js ecosystem is smaller and more focused than the React one. The major 
 | **i18n routing** (`/[locale]/...` route group) | ❌ | Out of scope. Pairs with the i18n policy gap above. |
 | **Edge runtime vs. Node runtime** | ⚠️ partial | [Phase 4](./intermediate.md#phase-4--server-components-vs-client-components) — not explicitly named, but the server/client guidance implicitly keeps us on the Node runtime. Worth a one-liner: "Stay on the Node runtime unless you have a specific edge case." |
 | **ISR / on-demand revalidation** | ✅ | [Phase 5](./intermediate.md#phase-5--data-fetching-apis-and-backend-integration) + [Phase 10](./intermediate.md#phase-10--production-readiness) — `revalidatePath`, `revalidateTag` are the on-demand revalidation primitives |
-| **`use cache` directive (React 19 / Next.js 15)** | ❌ | **GAP.** New in Next.js 15. Worth a "read the docs when you need it" pointer. |
+| **Streaming with `<Suspense>` and `loading.tsx`** | ✅ | [Phase 3](./intermediate.md#phase-3--nextjs-basics-with-the-app-router) — "Streaming with `<Suspense>`" sub-section. Route-level `loading.tsx` vs. component-level `<Suspense>`, granular vs. coarse, request waterfalls, pair-with-caching note. |
+| **`use cache` directive (Cache Components — React 19 / Next.js 15+/16 standard)** | ✅ | [Phase 5](./intermediate.md#phase-5--data-fetching-apis-and-backend-integration) — "Cache Components (the new model)" sub-section. The "cached by default → opt-in" shift, when to use `"use cache"`, why the old default caused subtle bugs. |
 | **Turbopack** (default bundler in Next.js 15+) | ❌ | **GAP.** New in Next.js 15. Worth a one-liner: "Turbopack is the default bundler in Next.js 15+. Don't add Webpack config unless you have a specific reason." |
 | **App Router → Pages Router migration** | ❌ | Out of scope — we don't migrate legacy Pages Router apps. New projects are App Router only. |
 | **International SEO** (`hreflang`, locale-specific sitemaps) | ❌ | Out of scope. Pairs with the i18n policy gap above. |
@@ -98,10 +99,11 @@ These are the items the gap analysis surfaced as **missing but worth adding** �
 
 1. **i18n** — one-line pointer in Phase 5 or 8, with a TODO for the CoE i18n policy
 2. **React 19 Compiler note** — same wording as the [React path](../react/intermediate.md#phase-8--production-patterns-and-project-structure): opt-in, "don't add manual memoization 'just in case'"
-3. **Turbopack / `use cache` directive** — one-line "Next.js 15+ updates" pointer in Phase 10
-4. **Real-time** — one-line "escalate to a tech lead; don't roll your own" pointer in Phase 5
-5. **Edge runtime vs. Node runtime** — one-line "stay on Node unless you have a specific edge case" in Phase 4
-6. **Storybook** — defer; mention only when the second team reaches Phase 8
+3. **✅ `use cache` directive / Cache Components** — closed in v0.6 (Phase 5 sub-section "Cache Components (the new model)"). Streaming also added in v0.6 as a Phase 3 sub-section.
+4. **Turbopack** — one-line "Next.js 15+ updates" pointer in Phase 10
+5. **Real-time** — one-line "escalate to a tech lead; don't roll your own" pointer in Phase 5
+6. **Edge runtime vs. Node runtime** — one-line "stay on Node unless you have a specific edge case" in Phase 4
+7. **Storybook** — defer; mention only when the second team reaches Phase 8
 
 ---
 
@@ -116,7 +118,7 @@ When reviewing this gap analysis, ask:
    - Real-time — has a new product appeared that needs WebSockets / fan-out?
    - PWAs — has a new product appeared that needs offline / install-to-homescreen?
 3. For every **✅ covered** row: *is the depth right, or are we teaching too much / too little?*
-4. **Pre-full-team rollout:** the six items in "Gaps that should probably be closed" — can we land them in v0.6 before the full-team rollout, or are they OK to defer to v0.7?
+4. **Pre-full-team rollout:** the items in "Gaps that should probably be closed" — can we land the open ones in v0.7 before the full-team rollout, or are they OK to defer to v0.8?
 
 ---
 
@@ -125,7 +127,7 @@ When reviewing this gap analysis, ask:
 | Field | Value |
 |---|---|
 | Document | Next.js — Gap Analysis |
-| Version | 0.1 |
+| Version | 0.2 (Streaming row added; `use cache` row moved from ❌ GAP to ✅ Phase 5; "Gaps to close" item 3 closed) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Internal review document |
