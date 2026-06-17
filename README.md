@@ -19,10 +19,20 @@ coe/
 ├── README.md              ← You are here
 ├── CLAUDE.md              ← Claude Code guidance (AI tools read this)
 ├── learning-paths/        ← Structured onboarding tracks by technology
+│   ├── dev-excellence/   ← Cross-cutting developer discipline (all teams)
+│   │   ├── README.md
+│   │   ├── curriculum.md
+│   │   └── gap-analysis.md
 │   ├── nextjs/
-│   │   └── intermediate.md
+│   │   ├── README.md
+│   │   ├── intermediate.md
+│   │   ├── nextjs-gap-analysis.md
+│   │   └── nextjs-learning-path.png
 │   └── react/
-│       └── intermediate.md
+│       ├── README.md
+│       ├── intermediate.md
+│       ├── roadmap-gap-analysis.md
+│       └── roadmap.png
 ├── audit/                 ← Compliance & audit materials
 │   ├── coe-audit-framework.md
 │   └── security-audit-checklist.md
@@ -119,8 +129,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose changes, update standa
 | CFML Standards | 1.0 | CoE | Quarterly |
 | Audit Framework | 1.0 | Audit Team | Quarterly |
 | Security Checklist | 1.0 | Security Team | Quarterly |
+| React Learning Path | v0.3 | CoE Web WG | Quarterly |
+| Next.js Learning Path | v0.6 | CoE Web WG | Quarterly |
+| Developer Excellence Curriculum | v0.1 | CoE Web WG (cross-team) | Quarterly |
 
 ---
 
 **Maintained by:** Techversant CoE
-**Last Updated:** May 2026
+**Last Updated:** June 2026
