@@ -11,9 +11,15 @@
 ```
 learning-paths/
 ├── dev-excellence/   ← You are here
-│   ├── README.md           (this file)
-│   ├── curriculum.md       (the curriculum — 7 phases, 20 topics)
-│   └── gap-analysis.md     (reviewer-only — coverage matrix)
+│   ├── README.md                  (this file)
+│   ├── curriculum.md              (the curriculum — 7 phases, 20 topics, tech-agnostic)
+│   ├── gap-analysis.md            (reviewer-only — coverage matrix)
+│   └── stack-translations/        (per-stack translations of every topic)
+│       ├── webdev/
+│       │   ├── frontend.md        (web frontend)
+│       │   └── backend.md         (server-side)
+│       └── mobile/
+│           └── stacks.md          (iOS, Android)
 ├── nextjs/                  (tech path: web frontend)
 └── react/                   (tech path: React core)
 ```
@@ -36,7 +42,10 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 | File | What's in it | When to open it |
 |---|---|---|
 | [README.md](./README.md) | This index | First time you land in the folder |
-| [**curriculum.md**](./curriculum.md) | The 7 phases, 20 topics, code-review questions, mini-tasks, teaching guide | When you want to learn, teach, or run a pilot batch |
+| [**curriculum.md**](./curriculum.md) | The 7 phases, 20 topics, code-review questions, mini-tasks, teaching guide — *tech-agnostic* | When you want to learn, teach, or run a pilot batch |
+| [**stack-translations/webdev/frontend.md**](./stack-translations/webdev/frontend.md) | Stack-specific translation — web frontend | Pair with `curriculum.md` for every web frontend developer |
+| [**stack-translations/webdev/backend.md**](./stack-translations/webdev/backend.md) | Stack-specific translation — server-side | Pair with `curriculum.md` for every backend developer |
+| [**stack-translations/mobile/stacks.md**](./stack-translations/mobile/stacks.md) | Stack-specific translation — mobile | Pair with `curriculum.md` for every mobile developer |
 | [**gap-analysis.md**](./gap-analysis.md) | Reviewer-only — what the curriculum covers, partially covers, and deliberately skips | When you're reviewing scope (tech lead, CoE review) |
 
 ## 🚦 Where to start
@@ -74,18 +83,18 @@ The [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) apply.
 | Suggested run length | 6–8 weeks (one topic per session, with mini-task follow-up) |
 | Effort per week | 3–5 hours (1.5h session + 2–3h mini-task) |
 | Pair-friendly | Yes — the [How to teach this effectively](./curriculum.md#how-to-teach-this-effectively) section is built for two |
-| Pre-requisite | Comfortable shipping features in at least one of: React, Next.js, Laravel, Node.js, iOS, Android |
+| Pre-requisite | Comfortable shipping features in at least one production codebase (in whatever stack the team uses — web, backend, or mobile) |
 
 ## 📊 Document control
 
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum — Folder Index |
-| Version | 0.1 (folder index created — first pilot-batch content) |
+| Version | 0.2 (added stack-translations/ subfolder with webdev/{frontend,backend}.md + mobile/stacks.md) |
 | Owner | CoE Web Working Group (with cross-team feedback from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft — first cross-team review open |
-| Related | [curriculum.md](./curriculum.md), [gap-analysis.md](./gap-analysis.md), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md) |
+| Related | [curriculum.md](./curriculum.md), [stack-translations/](./stack-translations/), [gap-analysis.md](./gap-analysis.md), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md) |
 
 ---
 

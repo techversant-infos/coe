@@ -48,7 +48,7 @@ The developer-discipline landscape is large. The major branches a 2026 Techversa
 | **DDD Strategic Patterns** (bounded contexts, context mapping, aggregates) | ⚠️ partial | [Phase 3, Topic 11](./curriculum.md#11-domain-modeling-basics) covers *tactical* patterns (entity vs. value object) but not *strategic* (bounded contexts). **Defer to a v0.2 add-on or a dedicated DDD deep-dive.** |
 | **Refactoring Catalog (Fowler's full list)** | ⚠️ partial | [Phase 5, Topic 17](./curriculum.md#17-refactoring-techniques) names the smells and gives the decision rule. The full Fowler catalog is the recommended reading; not in the curriculum itself. |
 | **Architecture Patterns** (microservices, event-driven, CQRS) | ❌ | **Deliberately omitted** — these are *architecture* topics, not *developer-discipline* topics. They belong in the lead-track reading (Phase 7) and in a future architecture curriculum. |
-| **Specific frameworks / language idioms** (React hooks, Laravel Eloquent, SwiftUI, Kotlin coroutines) | ❌ | **Deliberately omitted** — these belong in the [tech-specific paths](../nextjs/intermediate.md), not in this cross-cutting curriculum. The curriculum is tech-agnostic on purpose. |
+| **Specific frameworks / language idioms** (UI framework hooks, backend framework patterns, mobile framework APIs) | ✅ | The master curriculum is tech-agnostic on purpose. Stack-specific translations live in the [stack-translations/](./stack-translations/) subfolder: [webdev/frontend](./stack-translations/webdev/frontend.md), [webdev/backend](./stack-translations/webdev/backend.md), [mobile/stacks](./stack-translations/mobile/stacks.md). Each topic in the master has a corresponding translation + stack-specific mini-task variant in those docs. |
 | **Team-process topics** (standups, retros, planning) | ❌ | **Deliberately omitted** — these are *process* topics, not *developer-discipline* topics. Pair with a future process / agile curriculum if the team needs it. |
 | **Soft skills** (public speaking, conflict resolution) | ❌ | **Deliberately omitted** — out of scope for a developer-discipline curriculum. Pair with a future soft-skills curriculum. |
 | **Vendor / cloud-specific content** (AWS, Azure, Vercel, Netlify) | ❌ | **Deliberately omitted** — covered in the stack-specific paths where they're used (e.g. [Vercel in Next.js path Phase 10](../nextjs/intermediate.md#phase-10-production-readiness)). |
@@ -114,8 +114,8 @@ When reviewing this gap analysis, ask:
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum — Gap Analysis |
-| Version | 0.1 (initial — coverage matrix, deliberately-skipped, gaps-to-close, reviewer questions) |
+| Version | 0.2 (added stack-translations/ subfolder; updated the "framework idioms" row from ❌ to ✅; cleaned master to be tech-agnostic) |
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Internal review document |
-| Related | [curriculum.md](./curriculum.md), [README.md](./README.md), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [Security Audit Checklist](../../audit/security-audit-checklist.md) |
+| Related | [curriculum.md](./curriculum.md), [README.md](./README.md), [stack-translations/](./stack-translations/), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [Security Audit Checklist](../../audit/security-audit-checklist.md) |
