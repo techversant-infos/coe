@@ -90,7 +90,7 @@ The [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) apply.
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum — Folder Index |
-| Version | 0.2 (added stack-translations/ subfolder with webdev/{frontend,backend}.md + mobile/stacks.md) |
+| Version | 0.3 (translation docs restructured to 'What changes + Mini-task + Watch' format; unverified YouTube links replaced with search hints pending tech-lead verification) |
 | Owner | CoE Web Working Group (with cross-team feedback from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft — first cross-team review open |

@@ -114,7 +114,7 @@ When reviewing this gap analysis, ask:
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum — Gap Analysis |
-| Version | 0.2 (added stack-translations/ subfolder; updated the "framework idioms" row from ❌ to ✅; cleaned master to be tech-agnostic) |
+| Version | 0.3 (translation docs restructured to 'What changes + Mini-task + Watch' format; unverified YouTube links replaced with search hints pending tech-lead verification) |
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Internal review document |
