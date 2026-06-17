@@ -11,7 +11,7 @@
 **Length:** 7 phases, 20 topics, 6–8 weeks (3–5 hours/week, pair-friendly)
 **Status:** **Draft for cross-team review** — run with 3–5 developers from at least two teams first
 **Contributors:** Compiled by CoE Web Working Group; pending cross-team review from Mobile + Backend leads
-**Pre-requisite:** Comfortable shipping features in at least one of: React, Next.js, Laravel, Node.js, iOS, Android. The curriculum assumes you have something to *apply* the discipline to.
+**Pre-requisite:** Comfortable shipping features in at least one production codebase (in whatever stack the team uses — web, backend, or mobile). The curriculum assumes you have something to *apply* the discipline to.
 
 ---
 
@@ -75,12 +75,28 @@ We will measure these by tagging PRs with the topic number from this curriculum 
 
 ---
 
+## Stack-specific guidance
+
+The 20 topics below are written so they apply to **any** stack — web frontend, backend, or mobile. The principles (naming, SOLID, DRY, testing, code review) are universal; the application depends on the stack.
+
+For stack-specific translations — what each topic means *in your stack*, with mini-task variants you can apply directly to your codebase — see the companion docs:
+
+- **Web development**
+  - [Frontend](./stack-translations/webdev/frontend.md)
+  - [Backend](./stack-translations/webdev/backend.md)
+- **Mobile development**
+  - [Stacks](./stack-translations/mobile/stacks.md)
+
+A new joiner in a web frontend codebase reads this curriculum **plus** [frontend.md](./stack-translations/webdev/frontend.md). A backend dev reads it **plus** [backend.md](./stack-translations/webdev/backend.md). A mobile dev reads it **plus** [stacks.md](./stack-translations/mobile/stacks.md). The master never has to change to support a new stack — just add a new file in `stack-translations/`.
+
+---
+
 ## Prerequisites (complete before Week 1)
 
 Before the first session, the developer should:
 
 - **Have one production codebase they actively work on.** This curriculum teaches by evolving real code, not by abstract exercises. If the developer is between projects, run this with a sample codebase from the team's recent PRs.
-- **Have completed a stack path** (React, Next.js, Laravel, or equivalent) OR be paired with a senior developer who can mentor. The curriculum *teaches* you to read and write good code; it does not teach you a language.
+- **Have completed a stack path** (whichever stack the team uses) OR be paired with a senior developer who can mentor. The curriculum *teaches* you to read and write good code; it does not teach you a language.
 - **Have PR review experience** (even if reviewing seniors is the developer's only current experience). Topic 18 in Phase 6 assumes you can articulate a code review comment.
 - **Have a code editor with a real linter + formatter installed.** The "formatting & consistency" topic in Phase 1 is the first session; if the developer's editor doesn't run Prettier/Black/equivalent on save, set that up before starting.
 
@@ -120,7 +136,7 @@ Pair the developer with a senior who has **already run the curriculum** — the 
 - Meaningful vs. misleading names — `User[] activeUsers` is meaningful; `User[] list` is misleading (a list of what?)
 - Function size & clarity — aim for one screen, one job. A function that does two things should be two functions.
 - Avoiding magic numbers and magic strings — `MAX_LOGIN_ATTEMPTS = 5` is named; `if (attempts > 5)` is magic
-- Code formatting & consistency — defer to the team's formatter (Prettier, Black, clang-format, SwiftLint). Don't argue formatting in PRs; argue intent.
+- Code formatting & consistency — defer to the team's formatter (whichever one the team uses — Prettier, Black, clang-format, etc., depending on the stack). Don't argue formatting in PRs; argue intent.
 
 **Code-review focus:**
 - "Can I understand this code without context?"
@@ -283,11 +299,6 @@ Pick the *worst-designed* class in your codebase. Apply the five SOLID principle
   - **Repository** — owns the data access
 - Fat controller → thin controller — if your controller has more than ~20 lines of business logic, the logic belongs in a service
 - Avoiding "God classes" — a class that knows about HTTP, database, business rules, and logging is a god class. The cure is layering.
-- Stack-specific guidance:
-  - **Laravel** — controllers, services, repositories, resources
-  - **Next.js / React** — Server Actions / route handlers, services, data-access layer (the "thin server component" pattern)
-  - **iOS** — view controllers, view models, services
-  - **Android** — fragments / composables, view models, repositories
 
 **Code-review focus:**
 - "Is this controller doing business logic, or just orchestrating?"
@@ -316,8 +327,8 @@ Find a controller in your codebase with more than 20 lines. Extract the business
 - Why DI improves testing — in tests, pass a `MockUserRepository` that returns canned data; in production, pass the real one. The class is the same.
 - Real-life refactoring example — start with a hard-coded dependency, then refactor in three steps:
   1. Extract the constructor of the dependency as a constructor parameter
-  2. Define an interface (TypeScript, PHP interface, Swift protocol, Kotlin interface) for the dependency
-  3. Register a binding (Laravel service container, Spring `Bean`, Swift composition root) so production code passes the real impl
+  2. Define an interface (the language's interface / protocol / type for "a contract") for the dependency
+  3. Register a binding in the language's DI container (or composition root) so production code passes the real implementation
 - Composition root — the one place in the app where everything is wired together. *Don't* sprinkle `new` calls across the codebase.
 
 **Code-review focus:**
@@ -505,7 +516,7 @@ Pick one API in your codebase. Review it for the five points above. Open a doc P
 **Learn:**
 - Input validation:
   - Validate at the **boundary** — controller, route handler, API endpoint
-  - Use the same schema on client and server (Zod in TypeScript, Form Request in Laravel, etc.)
+  - Use the same schema on client and server (whichever validation library the stack uses)
   - Re-validate on the server; never trust the client
 - Defensive programming — assume the input is wrong; verify, then act
 - Trust boundaries:
@@ -549,7 +560,7 @@ Pick one controller / route handler in your codebase. Audit the inputs: are they
   - The function is called 10x per request, and the profiler says it's 2% of total time
   - The fix: don't optimize. Write the readable version. Move on.
 - Measuring before optimizing:
-  - Use the team's standard tool (Blackfire, Xdebug + PHP, Chrome DevTools, Lighthouse, etc.)
+  - Use the team's standard tool (profiler / DevTools / Lighthouse / whichever the stack uses)
   - The number on the screen, not the gut feeling, drives the decision
 
 **Code-review focus:**
@@ -687,7 +698,7 @@ Take a code smell from your codebase (long method, large class, primitive obsess
 **Learn:**
 - What to review vs. what to ignore:
   - **Review** — intent, correctness, readability, the SOLID principles, test coverage, security
-  - **Defer to the formatter** — indentation, quote style, line length. The team's formatter (Prettier, Black, etc.) is the source of truth; don't argue in PRs
+  - **Defer to the formatter** — indentation, quote style, line length. The team's formatter (whichever it uses) is the source of truth; don't argue in PRs
 - Objective vs. subjective feedback:
   - **Objective** — "this function is doing two things; the second should be a helper" (verifiable from the diff)
   - **Subjective** — "I would have written this differently" (a personal preference, not a review comment)
