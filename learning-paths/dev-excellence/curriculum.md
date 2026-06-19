@@ -4,7 +4,7 @@
 
 ---
 
-**Version:** 0.1
+**Version:** 0.4
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
 **Audience:** All developers — web frontend, backend, mobile (iOS + Android). Tech-agnostic.
@@ -26,15 +26,7 @@ After completing this curriculum, a developer will:
 - Design APIs and systems with **users and change scenarios** in mind
 - Mentor juniors using the same rubric the team uses for code review
 
-### Team-Level Metrics of Success
-
-- **PR cycle time** decreases for senior developers (because code lands cleaner on the first review)
-- **Defect escape rate** decreases (because testable, refactored code is easier to verify)
-- **Code-review comment quality** improves (objective questions, not "this is bad")
-- **Tech-debt awareness** increases (developers flag the debt *they* create, not just inherit it)
-- **Mentoring hours** become a tracked activity, not an undocumented one
-
-We will measure these by tagging PRs with the topic number from this curriculum (e.g. `refactor/clean-code-1`) and reviewing them at Week 2 and Week 6.
+> **Facilitators** measuring pilot success: see the *How to measure pilot success* section in [how-to-teach.md](./how-to-teach.md).
 
 ---
 
@@ -69,7 +61,6 @@ We will measure these by tagging PRs with the topic number from this curriculum 
   - [19. Code Review Checklist (Standardized)](#19-code-review-checklist-standardized)
   - [20. Engineering Ethics & Ownership](#20-engineering-ethics--ownership)
 - [Phase 7 — Senior Developer Mindset (Optional / Lead Track)](#phase-7--senior-developer-mindset-optional--lead-track)
-- [How to Teach This Effectively](#how-to-teach-this-effectively)
 - [Recommended Resources](#recommended-resources)
 - [Document Control](#document-control)
 
@@ -816,50 +807,15 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 - **Risk-based decision making** — for a real upcoming decision, write down: the options, the risks, the mitigations, the reversibility. Discuss with a tech lead.
 - **Mentoring juniors effectively** — pair with a junior for 4 weeks. Run one of the topics from this curriculum *with* them. Reflect on what worked and what didn't.
 
-**Suggested reading:**
-
-- *Designing Data-Intensive Applications* by Martin Kleppmann (the canonical book for the "designing for scale" topic)
-- *Clean Architecture* by Robert C. Martin (the canonical book for the SOLID + layering topics in Phases 2 and 3)
-- *Refactoring* by Martin Fowler (the canonical book for Phase 5, Topic 17)
-- The team's [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md) (for the ADR format and the "risk-based decision" framing)
+**Suggested reading:** see the [Recommended Resources](#recommended-resources) at the bottom of this document.
 
 **Outcome:** A developer who has finished Phase 7 has a portfolio — 3 ADRs, 1 architecture note, 1 backward-compat plan, 1 risk analysis, 1 mentoring reflection. They are *ready* to be a tech lead, not just "in line" for one.
 
 ---
 
-## How to Teach This Effectively
-
-> This section is for the *facilitator* — the senior developer or tech lead who runs the pilot batch. The topics above are the *content*. The format below is what makes the content land.
-
-**✔ Use one simple codebase and evolve it step by step.**
-Pick one codebase the team knows. Don't teach SOLID with five toy examples — teach SOLID by evolving *their* `PaymentProcessor`. Don't teach REST with a fresh project — review an existing API and refactor it.
-
-**✔ Refactor live during sessions.**
-The "before" is a real class in the repo. The "after" is the refactor in real time. The team sees the *decisions* — why the developer chose to extract a service *here*, not *there*. Pre-record the refactor only if the team is remote; live is always better.
-
-**✔ Show before vs. after.**
-Every topic has a "before" and an "after." The "before" is the smell. The "after" is the fix. The team's habit, after enough topics, is to *see the smell first* — to recognize the pattern in their own PRs.
-
-**✔ Tie every concept to:**
-- **Real production bugs** — "this exact pattern caused incident #2143 in production. Here's the postmortem."
-- **Real code review comments** — "this exact comment is on PR #1827. The author pushed back; here's the resolution."
-- **Real maintenance pain points** — "this exact abstraction slowed us down in the Q3 migration. Here's why."
-
-**✔ Run in pairs.**
-The pair format is the single biggest predictor of pilot success. A solo developer reads the topic; a pair *discusses* the topic. The discussion is where the discipline lands.
-
-**✔ Time-box the topics.**
-One session, one topic, one mini-task. Don't combine two topics. The mini-task is the *transfer* — if the developer can't apply it to a real PR, the session didn't land.
-
-**✔ Review the mini-task.**
-The mini-task is the assignment; the review is the feedback. The senior developer who runs the pilot also reviews the mini-task PRs. The review is the teaching moment, not the session.
-
-**✔ Document the run.**
-After the pilot, write 1 page: what worked, what didn't, what to change for v0.2. Feed it back into this curriculum via a PR.
-
----
-
 ## Recommended Resources
+
+> **Facilitators** (running a pilot batch): see [how-to-teach.md](./how-to-teach.md) for the format that makes these topics land.
 
 ### Books (foundational)
 
@@ -868,14 +824,6 @@ After the pilot, write 1 page: what worked, what didn't, what to change for v0.2
 - *Refactoring* by Martin Fowler — the canonical book for Phase 5
 - *Designing Data-Intensive Applications* by Martin Kleppmann — for the Phase 7 "designing for scale" topic
 - *The Pragmatic Programmer* by Andrew Hunt & David Thomas — the canonical book for the trade-off analysis mindset
-
-### Online courses (one per phase)
-
-- **Phase 1–2:** [ArjanCodes](https://www.youtube.com/@ArjanCodes) on YouTube (clean code + design principles in Python, but the patterns transfer)
-- **Phase 3:** [Domain-Driven Design by Vladimir Khorikov](https://www.pluralsight.com/courses/domain-driven-design-fundamentals) (Pluralsight, paid)
-- **Phase 4:** the [REST API Best Practices](../../general/rest-api-best-practices.md) CoE standard (no need for a course — read the doc)
-- **Phase 5:** [Testing JavaScript by Kent C. Dodds](https://testingjavascript.com/) (paid, but the de-facto reference)
-- **Phase 6:** [Code Review from the Book Club](https://google.github.io/eng-practices/review/) (Google's eng practices, public)
 
 ### CoE documents to pair with this curriculum
 
@@ -893,11 +841,11 @@ After the pilot, write 1 page: what worked, what didn't, what to change for v0.2
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum |
-| Version | 0.1 (initial draft — 7 phases, 20 topics) |
+| Version | 0.4 (v0.3 split out 'How to Teach' to sibling how-to-teach.md; dropped Team-Level Metrics, Online courses subsection, and duplicate Phase 7 book list — ~50 lines trimmed) |
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft for cross-team review |
-| Supersedes | — (initial version) |
+| Supersedes | v0.3 (translation-docs restructure) |
 
 ---
 

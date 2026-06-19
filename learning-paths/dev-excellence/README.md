@@ -13,6 +13,7 @@ learning-paths/
 ├── dev-excellence/   ← You are here
 │   ├── README.md                  (this file)
 │   ├── curriculum.md              (the curriculum — 7 phases, 20 topics, tech-agnostic)
+│   ├── how-to-teach.md            (facilitator-only — how to run a pilot batch)
 │   ├── gap-analysis.md            (reviewer-only — coverage matrix)
 │   └── stack-translations/        (per-stack translations of every topic)
 │       ├── webdev/
@@ -42,7 +43,8 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 | File | What's in it | When to open it |
 |---|---|---|
 | [README.md](./README.md) | This index | First time you land in the folder |
-| [**curriculum.md**](./curriculum.md) | The 7 phases, 20 topics, code-review questions, mini-tasks, teaching guide — *tech-agnostic* | When you want to learn, teach, or run a pilot batch |
+| [**curriculum.md**](./curriculum.md) | The 7 phases, 20 topics, code-review questions, mini-tasks — *tech-agnostic* | When you want to learn or apply the discipline |
+| [**how-to-teach.md**](./how-to-teach.md) | Facilitator-only — how to run a pilot batch | When you're planning or running a pilot |
 | [**stack-translations/webdev/frontend.md**](./stack-translations/webdev/frontend.md) | Stack-specific translation — web frontend | Pair with `curriculum.md` for every web frontend developer |
 | [**stack-translations/webdev/backend.md**](./stack-translations/webdev/backend.md) | Stack-specific translation — server-side | Pair with `curriculum.md` for every backend developer |
 | [**stack-translations/mobile/stacks.md**](./stack-translations/mobile/stacks.md) | Stack-specific translation — mobile | Pair with `curriculum.md` for every mobile developer |
@@ -51,9 +53,9 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 ## 🚦 Where to start
 
 - **🆕 New joiner (1–3 months in)** — start at [Phase 1](./curriculum.md#phase-1-foundational-coding-discipline-beginner). Don't try to read it all at once. Pick *one* topic per week, apply it to your real PRs, and ask for code review on the change.
-- **👀 Pilot batch planner** — start with the [How to teach this effectively](./curriculum.md#how-to-teach-this-effectively) section. It defines the format (one evolving codebase, live refactor, before/after). Pick 3–5 developers, run for 6–8 weeks, revisit at Week 2.
+- **👀 Pilot batch planner** — start with [how-to-teach.md](./how-to-teach.md). It defines the format (one evolving codebase, live refactor, before/after). Pick 3–5 developers, run for 6–8 weeks, revisit at Week 2.
 - **🧑‍🏫 Senior developer / tech lead** — start at the [gap analysis](./gap-analysis.md). Use it to challenge scope ("is *this* in the curriculum? if not, why not?"), and to feed the Week-2 review back into v0.2.
-- **🤖 Reviewer (CoE audit)** — start at the [Document Control](./curriculum.md#document-control) and the [Reviewer questions](./gap-analysis.md#reviewer-questions) section. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
+- **🤖 Reviewer (CoE audit)** — start at the [Document Control](./curriculum.md#document-control) and the [gap analysis](./gap-analysis.md) coverage table. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
 
 ## 🔗 Related paths
 
@@ -82,7 +84,7 @@ The [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) apply.
 | Topics | 20 |
 | Suggested run length | 6–8 weeks (one topic per session, with mini-task follow-up) |
 | Effort per week | 3–5 hours (1.5h session + 2–3h mini-task) |
-| Pair-friendly | Yes — the [How to teach this effectively](./curriculum.md#how-to-teach-this-effectively) section is built for two |
+| Pair-friendly | Yes — [how-to-teach.md](./how-to-teach.md) is built for two |
 | Pre-requisite | Comfortable shipping features in at least one production codebase (in whatever stack the team uses — web, backend, or mobile) |
 
 ## 📊 Document control
