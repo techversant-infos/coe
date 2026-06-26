@@ -5,19 +5,11 @@
 
 ---
 
-## How to read this document
-
-- **✅ covered in depth** — the curriculum explicitly teaches this with a mini-task and self-check
-- **⚠️ covered lightly** — the curriculum names the concept but does not have a full topic; a sibling document, a future version, or a stack-specific path covers the rest
-- **❌ not covered (with reason)** — the curriculum deliberately skips this; the reason is given so a reviewer can challenge the call
-
-A reviewer should walk this table top-to-bottom in roughly 10 minutes, then ask: *for any ⚠️ row, is the depth enough for our pilot batch?* and *for any ❌ row, is the reason still valid in 2026?*
-
----
-
 ## Gap analysis: our curriculum vs. the full developer-discipline landscape
 
 The developer-discipline landscape is large. The major branches a 2026 Techversant team needs to think about are: **clean code**, **design principles**, **design thinking**, **API & architecture**, **testing**, **code review**, **ethics & ownership**, and **lead-track**.
+
+Legend: ✅ covered in depth · ⚠️ covered lightly · ❌ not covered (reason in third column)
 
 | Topic / branch | Status | Where / Why |
 |---|---|---|
@@ -25,7 +17,7 @@ The developer-discipline landscape is large. The major branches a 2026 Techversa
 | **Control Flow & Logic Clarity** (nesting, early returns, guard clauses) | ✅ | [Phase 1, Topic 2](./curriculum.md#2-control-flow-logic-clarity) — full topic with the "deepest-nested function" mini-task |
 | **DRY vs. WET** (Rule of Three, over-abstraction) | ✅ | [Phase 1, Topic 3](./curriculum.md#3-dry-vs-wet) — full topic; explicitly covers "wrong abstraction is worse than duplication" |
 | **Basic Error Handling** (exceptions vs. return codes, fail-fast, logging) | ✅ | [Phase 1, Topic 4](./curriculum.md#4-basic-error-handling) — full topic; pairs with the [REST API Best Practices](../../general/rest-api-best-practices.md) error envelope |
-| **SOLID Principles** (all five, with one evolving example) | ✅ | [Phase 2, Topic 5](./curriculum.md#5-solid-principles-core) — full topic; "one evolving codebase" format per the [How to teach this effectively](./curriculum.md#how-to-teach-this-effectively) section |
+| **SOLID Principles** (all five, with one evolving example) | ✅ | [Phase 2, Topic 5](./curriculum.md#5-solid-principles-core) — full topic; "one evolving codebase" format per [how-to-teach.md](./how-to-teach.md) |
 | **Separation of Concerns** (controllers/services/repositories) | ✅ | [Phase 2, Topic 6](./curriculum.md#6-separation-of-concerns-soc) — full topic; stack-specific guidance for Laravel, Next.js, iOS, Android |
 | **Dependency Injection & IoC** (constructor injection, composition root) | ✅ | [Phase 2, Topic 7](./curriculum.md#7-dependency-injection-inversion-of-control) — full topic; includes the three-step refactor |
 | **Reusability & Extensibility** (composition over inheritance, feature flags) | ✅ | [Phase 2, Topic 8](./curriculum.md#8-reusability-extensibility) — full topic |
@@ -57,55 +49,30 @@ The developer-discipline landscape is large. The major branches a 2026 Techversa
 
 ## What we deliberately skipped (and why)
 
-These developer-discipline topics don't appear in the curriculum. Listing them so a reviewer can challenge the decision:
+The ❌ rows in the table above capture each decision in one line. This section expands the rationale for the trickier ones — the cases a reviewer is most likely to push back on. If the table's third column is enough, skip this section.
 
-- **Architecture patterns** (microservices, event-driven, CQRS, serverless) — these are *architecture* topics, not developer-discipline topics. They belong in a tech-lead-track curriculum (Phase 7) and in the architecture review process, not in a developer on-boarding curriculum. The risk of including them is that the curriculum becomes a 200-page book instead of a 6-week run.
-
+- **Architecture patterns** (microservices, event-driven, CQRS, serverless) — these are *architecture* topics, not developer-discipline topics. The risk of including them is that the curriculum becomes a 200-page book instead of a 6-week run. Pair with a future architecture curriculum.
 - **Specific frameworks / language idioms** — the curriculum is *tech-agnostic on purpose*. A PHP developer and a React developer should both finish the curriculum with the same vocabulary (SOLID, DRY, idempotency, ADR). Framework-specific content lives in the [tech-specific paths](../react/intermediate.md), which layer *on top* of this curriculum.
-
 - **Team-process topics** (standups, retros, sprint planning) — these belong in a *process* curriculum, not a *developer-discipline* curriculum. The two often get conflated; the curriculum's stance is to keep them separate.
-
 - **Soft skills** (public speaking, conflict resolution, time management) — out of scope. These are real skills; they're not developer-discipline skills. Pair with a future soft-skills curriculum.
-
 - **Full DDD strategic patterns** (bounded contexts, context mapping, aggregates) — covered at the *tactical* level (entity vs. value object, ubiquitous language) in [Topic 11](./curriculum.md#11-domain-modeling-basics). The strategic level is a separate discipline; a developer who has finished Topic 11 is *ready* to read a DDD book, not *done* with DDD.
-
-- **Refactoring Catalog (Fowler's full 70+ smells)** — the curriculum names the *categories* and gives the *decision rule* (refactor vs. rewrite, the "names vs. bodies" test). The full catalog is a recommended-reading item, not a topic.
-
-- **Concurrency & threading** — a real discipline, but *highly* stack-specific (JavaScript's event loop is not Java's threads is not Swift's actors). The right place is in the [tech-specific paths](../react/intermediate.md) where the language forces a specific model. Adding it to the cross-cutting curriculum would force a choice that doesn't apply to half the developers.
-
-- **Observability & monitoring as a stand-alone topic** — touched in [Topic 4](./curriculum.md#4-basic-error-handling) and [Topic 14](./curriculum.md#14-performance-awareness). Full coverage lives in the stack-specific paths (Node.js + Next.js Phase 10) and in the [REST API Best Practices](../../general/rest-api-best-practices.md) (the requestId, error envelope, and logging standards). The right level of detail depends on the stack.
-
-- **Security as a stand-alone topic** — security is a *cross-cutting* discipline, but the curriculum's stance is that it doesn't *teach* security; it *cites* security. The security row in the [Topic 19 checklist](./curriculum.md#19-code-review-checklist-standardized) is the entry point; the [Security Audit Checklist](../../audit/security-audit-checklist.md) is the depth; the [Auth/AuthZ phases in the stack paths](../nextjs/intermediate.md#phase-7-authentication-and-authorization) are the implementation. Splitting the discipline into a separate topic would risk the "we taught security in the curriculum" trap; the curriculum's framing is "security lives in the security doc and the stack paths; the developer's job in this curriculum is to *recognize* it during code review and escalate to the right doc."
+- **Refactoring Catalog (Fowler's full 70+ smells)** — the curriculum names the *categories* and gives the *decision rule*. The full catalog is a recommended-reading item, not a topic.
+- **Concurrency & threading** — *highly* stack-specific (JavaScript's event loop is not Java's threads is not Swift's actors). The right place is in the tech-specific paths where the language forces a specific model. Adding it to the cross-cutting curriculum would force a choice that doesn't apply to half the developers.
+- **Observability & monitoring as a stand-alone topic** — touched in [Topic 4](./curriculum.md#4-basic-error-handling) and [Topic 14](./curriculum.md#14-performance-awareness). Full coverage lives in the stack-specific paths and in the [REST API Best Practices](../../general/rest-api-best-practices.md). The right level of detail depends on the stack.
+- **Security as a stand-alone topic** — the curriculum's stance is that it doesn't *teach* security; it *cites* security. The security row in [Topic 19's checklist](./curriculum.md#19-code-review-checklist-standardized) is the entry point; the [Security Audit Checklist](../../audit/security-audit-checklist.md) is the depth; the [Auth/AuthZ phases in the stack paths](../nextjs/intermediate.md#phase-7-authentication-and-authorization) are the implementation. Splitting the discipline into a separate topic would risk the "we taught security in the curriculum" trap.
 
 ---
 
 ## Gaps that should probably be closed before full-team rollout
 
-These are the items the gap analysis surfaced as **missing but worth adding** — small, targeted additions to a future v0.2 or v0.3:
+Six small, targeted additions to a future v0.2 or v0.3:
 
-1. **Concurrency & threading** — one or two paragraphs in [Topic 14](./curriculum.md#14-performance-awareness) covering the "what is a thread / event loop / actor" mental model and a pointer to the stack-specific path for the implementation. Defer to a v0.2 add-on if a team needs it.
-2. **Observability & monitoring one-pager** — a one-paragraph pointer in [Topic 4](./curriculum.md#4-basic-error-handling) that links to the [Node.js standards](../../nodejs/nodejs-typescript-best-practices.md) and the [Next.js Phase 10](../nextjs/intermediate.md#phase-10-production-readiness). The "what to log" mini-task in Topic 4 already covers most of the basics.
-3. **Security one-pager** — a "When you see a security issue in code review, here's the escalation path" one-liner in [Topic 19](./curriculum.md#19-code-review-checklist-standardized). Links to the [Security Audit Checklist](../../audit/security-audit-checklist.md) and the [Red Zone in the AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md).
+1. **Concurrency & threading** — one or two paragraphs in [Topic 14](./curriculum.md#14-performance-awareness) covering the "what is a thread / event loop / actor" mental model. Defer to v0.2 if a team needs it.
+2. **Observability & monitoring one-pager** — a one-paragraph pointer in [Topic 4](./curriculum.md#4-basic-error-handling) linking to the [Node.js standards](../../nodejs/nodejs-typescript-best-practices.md) and [Next.js Phase 10](../nextjs/intermediate.md#phase-10-production-readiness). Topic 4's "what to log" mini-task covers most of the basics.
+3. **Security one-pager** — a "when you see a security issue in code review, here's the escalation path" one-liner in [Topic 19](./curriculum.md#19-code-review-checklist-standardized). Links to the [Security Audit Checklist](../../audit/security-audit-checklist.md) and the [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) Red Zone.
 4. **DDD strategic patterns pointer** — a one-line "if the codebase is large enough to have bounded contexts, see the team's DDD reading list" in [Topic 11](./curriculum.md#11-domain-modeling-basics). Defer to v0.2.
-5. **Architecture patterns pointer** — a one-line "for microservices / event-driven / CQRS, see Phase 7's reading list" in [Phase 7](./curriculum.md#phase-7-senior-developer-mindset-optional-lead-track). Already implicit in the suggested reading; could be made explicit.
+5. **Architecture patterns pointer** — a one-line "for microservices / event-driven / CQRS, see Phase 7's reading list" in [Phase 7](./curriculum.md#phase-7-senior-developer-mindset-optional-lead-track). Already implicit; could be made explicit.
 6. **Refactoring Catalog reference** — a one-line "for the full smell catalog, see Fowler's *Refactoring* (recommended reading)" in [Topic 17](./curriculum.md#17-refactoring-techniques). Already implicit; could be made explicit.
-
----
-
-## Reviewer questions
-
-When reviewing this gap analysis, ask:
-
-1. For every **⚠️ partial** row: *is the depth enough for our pilot batch, or does it block Week-1 delivery?*
-   - Concurrency: does the pilot batch include any concurrent code? If yes, add a topic. If no, defer.
-   - Security: is the developer going to be reviewing auth / payment / migration code in Week 1? If yes, the one-liner pointer is essential. If no, defer.
-   - Observability: is the developer going to be writing structured logs in Week 1? If yes, the one-pager helps. If no, defer.
-2. For every **❌ not covered** row: *is the reason still valid in 2026?* Especially:
-   - Architecture patterns — has a new product appeared that's microservice-based?
-   - Soft skills — has the team asked for a soft-skills curriculum? If yes, this curriculum should *not* be the answer; spin up a separate one.
-   - Framework-specific content — has the team started to use a new framework (e.g. Svelte, Kotlin Multiplatform) that needs a tech-specific path?
-3. For every **✅ covered** row: *is the depth right, or are we teaching too much / too little?*
-4. **Pre-full-team rollout:** the items in "Gaps that should probably be closed" — can we land them in v0.2 before the full-team rollout, or are they OK to defer to v0.3?
 
 ---
 
@@ -114,8 +81,8 @@ When reviewing this gap analysis, ask:
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum — Gap Analysis |
-| Version | 0.2 (added stack-translations/ subfolder; updated the "framework idioms" row from ❌ to ✅; cleaned master to be tech-agnostic) |
+| Version | 0.4 (v0.3 trimmed the "What we deliberately skipped" expansion to one-liners, dropped the generic "Reviewer questions" section; ~25 lines trimmed) |
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Internal review document |
-| Related | [curriculum.md](./curriculum.md), [README.md](./README.md), [stack-translations/](./stack-translations/), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [Security Audit Checklist](../../audit/security-audit-checklist.md) |
+| Related | [curriculum.md](./curriculum.md), [README.md](./README.md), [how-to-teach.md](./how-to-teach.md), [stack-translations/](./stack-translations/), [React Learning Path](../react/intermediate.md), [Next.js Learning Path](../nextjs/intermediate.md), [REST API Best Practices](../../general/rest-api-best-practices.md), [Security Audit Checklist](../../audit/security-audit-checklist.md) |

@@ -1,21 +1,21 @@
-# Developer Excellence Curriculum
+﻿# Developer Excellence Curriculum
 
-> **Objective:** Build developers who write **clean, maintainable, testable, and scalable code** using industry best practices and standards — across web, mobile, and backend.
+> **Objective:** Build developers who write **clean, maintainable, testable, and scalable code** using industry best practices and standards â€” across web, mobile, and backend.
 
 ---
 
 **Version:** 0.4
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
-**Audience:** All developers — web frontend, backend, mobile (iOS + Android). Tech-agnostic.
-**Length:** 7 phases, 20 topics, 6–8 weeks (3–5 hours/week, pair-friendly)
-**Status:** **Draft for cross-team review** — run with 3–5 developers from at least two teams first
+**Audience:** All developers â€” web frontend, backend, mobile (iOS + Android). Tech-agnostic.
+**Length:** 7 phases, 20 topics, 6â€“8 weeks (3â€“5 hours/week, pair-friendly)
+**Status:** **Draft for cross-team review** â€” run with 3â€“5 developers from at least two teams first
 **Contributors:** Compiled by CoE Web Working Group; pending cross-team review from Mobile + Backend leads
-**Pre-requisite:** Comfortable shipping features in at least one production codebase (in whatever stack the team uses — web, backend, or mobile). The curriculum assumes you have something to *apply* the discipline to.
+**Pre-requisite:** Comfortable shipping features in at least one production codebase (in whatever stack the team uses â€” web, backend, or mobile). The curriculum assumes you have something to *apply* the discipline to.
 
 ---
 
-## 🎯 Learning Outcomes
+## ðŸŽ¯ Learning Outcomes
 
 After completing this curriculum, a developer will:
 
@@ -30,37 +30,37 @@ After completing this curriculum, a developer will:
 
 ---
 
-## 📚 Table of Contents
+## ðŸ“š Table of Contents
 
 - [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
-- [Suggested 6–8 Week Plan](#suggested-6-8-week-plan)
-- [Phase 1 — Foundational Coding Discipline (Beginner)](#phase-1--foundational-coding-discipline-beginner)
+- [Suggested 6â€“8 Week Plan](#suggested-6-8-week-plan)
+- [Phase 1 â€” Foundational Coding Discipline (Beginner)](#phase-1--foundational-coding-discipline-beginner)
   - [1. Clean Code Fundamentals](#1-clean-code-fundamentals)
   - [2. Control Flow & Logic Clarity](#2-control-flow--logic-clarity)
   - [3. DRY vs. WET](#3-dry-vs-wet)
   - [4. Basic Error Handling](#4-basic-error-handling)
-- [Phase 2 — Core Design Principles (Intermediate)](#phase-2--core-design-principles-intermediate)
+- [Phase 2 â€” Core Design Principles (Intermediate)](#phase-2--core-design-principles-intermediate)
   - [5. SOLID Principles (Core)](#5-solid-principles-core)
   - [6. Separation of Concerns (SoC)](#6-separation-of-concerns-soc)
   - [7. Dependency Injection & Inversion of Control](#7-dependency-injection--inversion-of-control)
   - [8. Reusability & Extensibility](#8-reusability--extensibility)
-- [Phase 3 — Design Thinking for Developers (Intermediate → Advanced)](#phase-3--design-thinking-for-developers-intermediate--advanced)
+- [Phase 3 â€” Design Thinking for Developers (Intermediate â†’ Advanced)](#phase-3--design-thinking-for-developers-intermediate--advanced)
   - [9. Design Thinking for Engineering](#9-design-thinking-for-engineering)
   - [10. Trade-off Analysis](#10-trade-off-analysis)
   - [11. Domain Modeling Basics](#11-domain-modeling-basics)
-- [Phase 4 — API & Architectural Thinking (Advanced)](#phase-4--api--architectural-thinking-advanced)
+- [Phase 4 â€” API & Architectural Thinking (Advanced)](#phase-4--api--architectural-thinking-advanced)
   - [12. RESTful API Design Principles](#12-restful-api-design-principles)
   - [13. Validation & Boundary Protection](#13-validation--boundary-protection)
   - [14. Performance Awareness](#14-performance-awareness)
-- [Phase 5 — Testing & Quality Engineering (Advanced)](#phase-5--testing--quality-engineering-advanced)
+- [Phase 5 â€” Testing & Quality Engineering (Advanced)](#phase-5--testing--quality-engineering-advanced)
   - [15. Testing Fundamentals](#15-testing-fundamentals)
   - [16. Writing Testable Code](#16-writing-testable-code)
   - [17. Refactoring Techniques](#17-refactoring-techniques)
-- [Phase 6 — Code Review Excellence (Advanced)](#phase-6--code-review-excellence-advanced)
+- [Phase 6 â€” Code Review Excellence (Advanced)](#phase-6--code-review-excellence-advanced)
   - [18. Effective Code Review Practices](#18-effective-code-review-practices)
   - [19. Code Review Checklist (Standardized)](#19-code-review-checklist-standardized)
   - [20. Engineering Ethics & Ownership](#20-engineering-ethics--ownership)
-- [Phase 7 — Senior Developer Mindset (Optional / Lead Track)](#phase-7--senior-developer-mindset-optional--lead-track)
+- [Phase 7 â€” Senior Developer Mindset (Optional / Lead Track)](#phase-7--senior-developer-mindset-optional--lead-track)
 - [Recommended Resources](#recommended-resources)
 - [Document Control](#document-control)
 
@@ -68,9 +68,9 @@ After completing this curriculum, a developer will:
 
 ## Stack-specific guidance
 
-The 20 topics below are written so they apply to **any** stack — web frontend, backend, or mobile. The principles (naming, SOLID, DRY, testing, code review) are universal; the application depends on the stack.
+The 20 topics below are written so they apply to **any** stack â€” web frontend, backend, or mobile. The principles (naming, SOLID, DRY, testing, code review) are universal; the application depends on the stack.
 
-For stack-specific translations — what each topic means *in your stack*, with mini-task variants you can apply directly to your codebase — see the companion docs:
+For stack-specific translations â€” what each topic means *in your stack*, with mini-task variants you can apply directly to your codebase â€” see the companion docs:
 
 - **Web development**
   - [Frontend](./stack-translations/webdev/frontend.md)
@@ -78,7 +78,7 @@ For stack-specific translations — what each topic means *in your stack*, with 
 - **Mobile development**
   - [Stacks](./stack-translations/mobile/stacks.md)
 
-A new joiner in a web frontend codebase reads this curriculum **plus** [frontend.md](./stack-translations/webdev/frontend.md). A backend dev reads it **plus** [backend.md](./stack-translations/webdev/backend.md). A mobile dev reads it **plus** [stacks.md](./stack-translations/mobile/stacks.md). The master never has to change to support a new stack — just add a new file in `stack-translations/`.
+A new joiner in a web frontend codebase reads this curriculum **plus** [frontend.md](./stack-translations/webdev/frontend.md). A backend dev reads it **plus** [backend.md](./stack-translations/webdev/backend.md). A mobile dev reads it **plus** [stacks.md](./stack-translations/mobile/stacks.md). The master never has to change to support a new stack â€” just add a new file in `stack-translations/`.
 
 ---
 
@@ -93,9 +93,9 @@ Before the first session, the developer should:
 
 ---
 
-## Suggested 6–8 Week Plan
+## Suggested 6â€“8 Week Plan
 
-The curriculum is designed for **one topic per session, with a mini-task follow-up**. A full pilot run covers all 6 core phases in 6–8 weeks (one session per week, 1.5h session + 2–3h mini-task).
+The curriculum is designed for **one topic per session, with a mini-task follow-up**. A full pilot run covers all 6 core phases in 6â€“8 weeks (one session per week, 1.5h session + 2â€“3h mini-task).
 
 | Week | Phase | Topics | Format |
 |---|---|---|---|
@@ -109,9 +109,9 @@ The curriculum is designed for **one topic per session, with a mini-task follow-
 | 8 | Phase 6 | Topics 18, 19, 20 | Session 2h + mini-task: 5 code reviews using the standardized checklist |
 | Optional | Phase 7 | Lead track | Async reading + mentoring hours; not a session |
 
-Pair the developer with a senior who has **already run the curriculum** — the pair format is the single biggest predictor of pilot success.
+Pair the developer with a senior who has **already run the curriculum** â€” the pair format is the single biggest predictor of pilot success.
 
-### Phase 1 — Foundational Coding Discipline (Beginner)
+### Phase 1 â€” Foundational Coding Discipline (Beginner)
 
 **Goal:** Eliminate bad habits, improve readability, and create a shared coding baseline.
 
@@ -121,13 +121,13 @@ Pair the developer with a senior who has **already run the curriculum** — the 
 
 **Learn:**
 - Naming conventions:
-  - Variables — nouns, no abbreviations, no type encoding (`customerName`, not `custNm` or `strCustName`)
-  - Methods — verbs, single intent (`calculateTotal`, not `processStuff`)
-  - Classes — nouns, single concept (`Invoice`, not `InvoiceProcessorHelper`)
-- Meaningful vs. misleading names — `User[] activeUsers` is meaningful; `User[] list` is misleading (a list of what?)
-- Function size & clarity — aim for one screen, one job. A function that does two things should be two functions.
-- Avoiding magic numbers and magic strings — `MAX_LOGIN_ATTEMPTS = 5` is named; `if (attempts > 5)` is magic
-- Code formatting & consistency — defer to the team's formatter (whichever one the team uses — Prettier, Black, clang-format, etc., depending on the stack). Don't argue formatting in PRs; argue intent.
+  - Variables â€” nouns, no abbreviations, no type encoding (`customerName`, not `custNm` or `strCustName`)
+  - Methods â€” verbs, single intent (`calculateTotal`, not `processStuff`)
+  - Classes â€” nouns, single concept (`Invoice`, not `InvoiceProcessorHelper`)
+- Meaningful vs. misleading names â€” `User[] activeUsers` is meaningful; `User[] list` is misleading (a list of what?)
+- Function size & clarity â€” aim for one screen, one job. A function that does two things should be two functions.
+- Avoiding magic numbers and magic strings â€” `MAX_LOGIN_ATTEMPTS = 5` is named; `if (attempts > 5)` is magic
+- Code formatting & consistency â€” defer to the team's formatter (whichever one the team uses â€” Prettier, Black, clang-format, etc., depending on the stack). Don't argue formatting in PRs; argue intent.
 
 **Code-review focus:**
 - "Can I understand this code without context?"
@@ -149,10 +149,10 @@ Pick one open PR of yours. Re-read the diff with the focus question: *can I unde
 **Why this topic exists:** Deeply nested conditionals are a leading indicator of bugs (each level of nesting multiplies the cognitive load). This topic gives the developer a default style that flattens the tree.
 
 **Learn:**
-- Avoiding deeply nested if-else — three levels of nesting is the alarm bell
-- Early returns — flip the condition, return early, keep the happy path at the top indentation level
-- Guard clauses — handle the exceptional case first (`if (user is null) return;`), keep the main path flat
-- Happy-path-first coding — write the success case first, then add the error/edge-case branches as guards
+- Avoiding deeply nested if-else â€” three levels of nesting is the alarm bell
+- Early returns â€” flip the condition, return early, keep the happy path at the top indentation level
+- Guard clauses â€” handle the exceptional case first (`if (user is null) return;`), keep the main path flat
+- Happy-path-first coding â€” write the success case first, then add the error/edge-case branches as guards
 - Why it matters:
   - Reduces cognitive load (the reader doesn't have to track state through 4 levels)
   - Easier debugging (errors live at the top, not buried)
@@ -167,7 +167,7 @@ Pick one open PR of yours. Re-read the diff with the focus question: *can I unde
 Take the most deeply nested function in your current codebase (the one you've been avoiding). Refactor it using early returns + guard clauses. Commit the before/after in a single PR. Tag the reviewer and ask: *is the happy path at the top indentation now?*
 
 **Self-check:**
-- [ ] I can refactor a 4-level nested function to ≤2 levels using guard clauses
+- [ ] I can refactor a 4-level nested function to â‰¤2 levels using guard clauses
 - [ ] I can name the *happy path* in any function I read
 - [ ] I can write a new function with the success case at the top, edges as guards
 
@@ -178,13 +178,13 @@ Take the most deeply nested function in your current codebase (the one you've be
 **Why this topic exists:** "DRY" is one of the most over-applied principles in software. Repeated code is sometimes a smell, sometimes a sign of a premature abstraction. This topic teaches the developer to *recognize the difference*.
 
 **Learn:**
-- Don't Repeat Yourself (DRY) — the *intent*: every piece of knowledge has a single, authoritative representation
-- When repetition is acceptable (WET — Write Everything Twice) — *three* times is the rule of thumb: copy once (acceptable), copy twice (acceptable), copy three times (extract)
+- Don't Repeat Yourself (DRY) â€” the *intent*: every piece of knowledge has a single, authoritative representation
+- When repetition is acceptable (WET â€” Write Everything Twice) â€” *three* times is the rule of thumb: copy once (acceptable), copy twice (acceptable), copy three times (extract)
 - Over-abstraction dangers:
-  - The wrong abstraction is **worse than duplication** — it makes the code harder to read, not easier
+  - The wrong abstraction is **worse than duplication** â€” it makes the code harder to read, not easier
   - A premature abstraction guesses at the commonality; the guess is often wrong
   - Once the wrong abstraction is in place, every consumer inherits its mistakes
-- The principle of "Rule of Three" — duplicate on the first two occurrences; extract on the third (or when the second copy needs to change differently from the first)
+- The principle of "Rule of Three" â€” duplicate on the first two occurrences; extract on the third (or when the second copy needs to change differently from the first)
 
 **Code-review focus:**
 - "Is this abstraction adding clarity or complexity?"
@@ -192,7 +192,7 @@ Take the most deeply nested function in your current codebase (the one you've be
 - "If I read the abstracted version, do I need to scroll back to the call site to understand it?"
 
 **Mini-task:**
-Find a piece of code in your codebase that you suspect is *over-abstracted* — a helper that has only one or two callers, with a signature that's harder to read than inlining. Inline it back. Commit and tag `refactor(clean-code-3): inline-over-abstraction`. If the helper has a third caller, write an ADR (Topic 9) explaining why you're keeping the abstraction.
+Find a piece of code in your codebase that you suspect is *over-abstracted* â€” a helper that has only one or two callers, with a signature that's harder to read than inlining. Inline it back. Commit and tag `refactor(clean-code-3): inline-over-abstraction`. If the helper has a third caller, write an ADR (Topic 9) explaining why you're keeping the abstraction.
 
 **Self-check:**
 - [ ] I can name a real abstraction in my codebase that *should* be inlined
@@ -207,21 +207,21 @@ Find a piece of code in your codebase that you suspect is *over-abstracted* — 
 
 **Learn:**
 - Exceptions vs. return codes:
-  - **Exceptions** for *exceptional* conditions (network down, file missing, auth failed) — they unwind the call stack and force the caller to handle
-  - **Return codes / Result types** for *expected* conditions (validation failed, user not found) — they're part of the API
+  - **Exceptions** for *exceptional* conditions (network down, file missing, auth failed) â€” they unwind the call stack and force the caller to handle
+  - **Return codes / Result types** for *expected* conditions (validation failed, user not found) â€” they're part of the API
   - Mix them only with a clear rule for which is which
-- Fail-fast principle — detect the error as close to the cause as possible; don't let bad data flow through three layers before failing
+- Fail-fast principle â€” detect the error as close to the cause as possible; don't let bad data flow through three layers before failing
 - User-friendly vs. developer-friendly errors:
   - User sees: "We couldn't save your changes. Please try again." (or whatever your UX standard is)
-  - Developer logs: `Failed to write invoice 12345: database connection timeout after 5s (requestId=...)` — with enough context to debug, never leaking internals to the user
-- Logging basics — what to log:
+  - Developer logs: `Failed to write invoice 12345: database connection timeout after 5s (requestId=...)` â€” with enough context to debug, never leaking internals to the user
+- Logging basics â€” what to log:
   - **Always:** the operation that failed, a stable identifier (requestId, userId, resourceId), the time
   - **Never:** passwords, tokens, PII, full credit-card numbers
-  - Use structured logging (the team's standard — see [REST API Best Practices](../../general/rest-api-best-practices.md))
+  - Use structured logging (the team's standard â€” see [REST API Best Practices](../../general/rest-api-best-practices.md))
 
 **Code-review focus:**
 - "If this fails in production at 2am, will the on-call engineer know what happened?"
-- "Is the error surfaced at the right level — at the cause, or three layers down?"
+- "Is the error surfaced at the right level â€” at the cause, or three layers down?"
 - "Are we logging the *right* amount? (Not too much, not too little, never secrets)"
 
 **Mini-task:**
@@ -231,7 +231,7 @@ Pick one error path in your current codebase. Verify it:
 3. Logs enough context for an on-call engineer to debug
 4. Does NOT log any PII, token, or secret
 
-Fix any of the four that are missing. Open a PR tagged `refactor(clean-code-4): error-handling`. If you find a secret being logged, treat that as a security issue and raise it separately — see the [Security Audit Checklist](../../audit/security-audit-checklist.md).
+Fix any of the four that are missing. Open a PR tagged `refactor(clean-code-4): error-handling`. If you find a secret being logged, treat that as a security issue and raise it separately â€” see the [Security Audit Checklist](../../audit/security-audit-checklist.md).
 
 **Self-check:**
 - [ ] I can choose between an exception and a return code based on whether the condition is *exceptional* or *expected*
@@ -240,28 +240,28 @@ Fix any of the four that are missing. Open a PR tagged `refactor(clean-code-4): 
 
 ---
 
-### Phase 2 — Core Design Principles (Intermediate)
+### Phase 2 â€” Core Design Principles (Intermediate)
 
 **Goal:** Move from "working code" to "well-designed code."
 
 #### 5. SOLID Principles (Core)
 
-**Why this topic exists:** SOLID is the most-cited design vocabulary in our industry. Every developer on the team should know the names and the *why* — even when they don't strictly follow one of them. This is the topic that turns a senior reviewer's "this feels wrong" into "this violates LSP, here's why."
+**Why this topic exists:** SOLID is the most-cited design vocabulary in our industry. Every developer on the team should know the names and the *why* â€” even when they don't strictly follow one of them. This is the topic that turns a senior reviewer's "this feels wrong" into "this violates LSP, here's why."
 
 **Learn (using a single evolving example, not theory):**
 
-> Pick a small but real example from your team's codebase — say, a `PaymentProcessor`. Build it once naively. Then evolve it through the five principles. Each principle is one refactor.
+> Pick a small but real example from your team's codebase â€” say, a `PaymentProcessor`. Build it once naively. Then evolve it through the five principles. Each principle is one refactor.
 
-- **S — Single Responsibility Principle** — A class has *one* reason to change. If "save to DB" and "send email" are in the same class, that class has two reasons to change. (Refactor: split the `send` out.)
-- **O — Open/Closed Principle** — Open to extension, closed to modification. Add a new payment type *without* editing `PaymentProcessor`. (Refactor: introduce a `PaymentMethod` interface, dispatch on type.)
-- **L — Liskov Substitution Principle** — Subtypes must be substitutable for their base type. If `SquarePayment extends Payment` and calling `square.charge()` returns a different shape than `paypal.charge()`, you've violated LSP. (Refactor: tighten the contract — every `charge()` returns the same shape.)
-- **I — Interface Segregation Principle** — Many small interfaces beat one big one. If a class implements 12 methods but only 3 are used, split the interface. (Refactor: split `PaymentService` into `Chargeable`, `Refundable`, `Reportable`.)
-- **D — Dependency Inversion Principle** — High-level modules depend on *abstractions*, not concretions. `OrderProcessor` depends on `PaymentGateway` (interface), not `StripeGateway` (concrete). (Refactor: inject the gateway as a constructor parameter.)
+- **S â€” Single Responsibility Principle** â€” A class has *one* reason to change. If "save to DB" and "send email" are in the same class, that class has two reasons to change. (Refactor: split the `send` out.)
+- **O â€” Open/Closed Principle** â€” Open to extension, closed to modification. Add a new payment type *without* editing `PaymentProcessor`. (Refactor: introduce a `PaymentMethod` interface, dispatch on type.)
+- **L â€” Liskov Substitution Principle** â€” Subtypes must be substitutable for their base type. If `SquarePayment extends Payment` and calling `square.charge()` returns a different shape than `paypal.charge()`, you've violated LSP. (Refactor: tighten the contract â€” every `charge()` returns the same shape.)
+- **I â€” Interface Segregation Principle** â€” Many small interfaces beat one big one. If a class implements 12 methods but only 3 are used, split the interface. (Refactor: split `PaymentService` into `Chargeable`, `Refundable`, `Reportable`.)
+- **D â€” Dependency Inversion Principle** â€” High-level modules depend on *abstractions*, not concretions. `OrderProcessor` depends on `PaymentGateway` (interface), not `StripeGateway` (concrete). (Refactor: inject the gateway as a constructor parameter.)
 
 **Outcome:**
 - Easier feature changes (adding a payment type doesn't edit `PaymentProcessor`)
 - Safer refactoring (the contract is explicit, so the breaking changes are visible)
-- Better testability (mocked dependencies replace real ones — see Topic 7)
+- Better testability (mocked dependencies replace real ones â€” see Topic 7)
 
 **Code-review focus:**
 - "Does this class have one reason to change, or two?"
@@ -283,13 +283,13 @@ Pick the *worst-designed* class in your codebase. Apply the five SOLID principle
 **Why this topic exists:** The "fat controller" is the most common architecture smell in web backends. The fix is layering: presentation knows about business logic, business logic knows about data, data knows about the database. Each layer has *one* concern.
 
 **Learn:**
-- Business logic vs. presentation — the same business rule ("an order can't be shipped if it's not paid") shouldn't live in the controller *and* the model. Pick one (the model / service layer) and let the controller call it.
+- Business logic vs. presentation â€” the same business rule ("an order can't be shipped if it's not paid") shouldn't live in the controller *and* the model. Pick one (the model / service layer) and let the controller call it.
 - Controllers vs. services vs. repositories:
-  - **Controller** — receives the request, calls the service, returns the response
-  - **Service** — orchestrates the business rules
-  - **Repository** — owns the data access
-- Fat controller → thin controller — if your controller has more than ~20 lines of business logic, the logic belongs in a service
-- Avoiding "God classes" — a class that knows about HTTP, database, business rules, and logging is a god class. The cure is layering.
+  - **Controller** â€” receives the request, calls the service, returns the response
+  - **Service** â€” orchestrates the business rules
+  - **Repository** â€” owns the data access
+- Fat controller â†’ thin controller â€” if your controller has more than ~20 lines of business logic, the logic belongs in a service
+- Avoiding "God classes" â€” a class that knows about HTTP, database, business rules, and logging is a god class. The cure is layering.
 
 **Code-review focus:**
 - "Is this controller doing business logic, or just orchestrating?"
@@ -308,19 +308,19 @@ Find a controller in your codebase with more than 20 lines. Extract the business
 
 #### 7. Dependency Injection & Inversion of Control
 
-**Why this topic exists:** Hard-coded dependencies make code untestable. Injected dependencies make code replaceable — for tests, for environments, for future implementations. This topic gives the developer the mechanical skill of injecting.
+**Why this topic exists:** Hard-coded dependencies make code untestable. Injected dependencies make code replaceable â€” for tests, for environments, for future implementations. This topic gives the developer the mechanical skill of injecting.
 
 **Learn:**
 - Hard dependencies vs. injected dependencies:
-  - **Hard:** `const repo = new PostgresUserRepository();` — the class is married to Postgres
-  - **Injected:** `constructor(private repo: UserRepository) {}` — the class knows the *interface*, not the implementation
-- Constructor injection — pass the dependency in the constructor; the class never calls `new` for its own dependencies
-- Why DI improves testing — in tests, pass a `MockUserRepository` that returns canned data; in production, pass the real one. The class is the same.
-- Real-life refactoring example — start with a hard-coded dependency, then refactor in three steps:
+  - **Hard:** `const repo = new PostgresUserRepository();` â€” the class is married to Postgres
+  - **Injected:** `constructor(private repo: UserRepository) {}` â€” the class knows the *interface*, not the implementation
+- Constructor injection â€” pass the dependency in the constructor; the class never calls `new` for its own dependencies
+- Why DI improves testing â€” in tests, pass a `MockUserRepository` that returns canned data; in production, pass the real one. The class is the same.
+- Real-life refactoring example â€” start with a hard-coded dependency, then refactor in three steps:
   1. Extract the constructor of the dependency as a constructor parameter
   2. Define an interface (the language's interface / protocol / type for "a contract") for the dependency
   3. Register a binding in the language's DI container (or composition root) so production code passes the real implementation
-- Composition root — the one place in the app where everything is wired together. *Don't* sprinkle `new` calls across the codebase.
+- Composition root â€” the one place in the app where everything is wired together. *Don't* sprinkle `new` calls across the codebase.
 
 **Code-review focus:**
 - "Is this class easy to test?"
@@ -343,15 +343,15 @@ Find a class in your codebase that constructs its own dependencies. Inject them 
 
 **Learn:**
 - Composition over inheritance:
-  - Inheritance creates *is-a* relationships (`Square is-a Rectangle` — and that's where the math breaks down)
-  - Composition creates *has-a* relationships (`Square has-a Shape` — and the math stays correct)
+  - Inheritance creates *is-a* relationships (`Square is-a Rectangle` â€” and that's where the math breaks down)
+  - Composition creates *has-a* relationships (`Square has-a Shape` â€” and the math stays correct)
   - Default to composition. Use inheritance only when the *is-a* relationship is genuinely correct AND the LSP (Topic 5) is satisfied
 - Config-driven behavior:
-  - Make the variation *data*, not code — feature flags, config values, database lookups
+  - Make the variation *data*, not code â€” feature flags, config values, database lookups
   - Resist the urge to add a subclass for every new variation; that's the inheritance tax
 - Feature flags vs. conditionals:
-  - **Feature flag** — toggle a feature on/off at runtime, for a cohort, for a region
-  - **Conditional** — branch on a runtime value that's part of the input
+  - **Feature flag** â€” toggle a feature on/off at runtime, for a cohort, for a region
+  - **Conditional** â€” branch on a runtime value that's part of the input
   - Don't conflate: feature flags belong in a flag service, not in `if (user.role === 'admin')` scattered across the codebase
 
 **Code-review focus:**
@@ -369,7 +369,7 @@ Find a class hierarchy in your codebase with 3+ subclasses that share 80% of the
 
 ---
 
-### Phase 3 — Design Thinking for Developers (Intermediate → Advanced)
+### Phase 3 â€” Design Thinking for Developers (Intermediate â†’ Advanced)
 
 **Goal:** Teach developers to think before they code.
 
@@ -378,11 +378,11 @@ Find a class hierarchy in your codebase with 3+ subclasses that share 80% of the
 **Why this topic exists:** Most engineering mistakes happen *before* the first line of code. The developer needs to spend time on the problem, not the syntax. This topic installs the habit.
 
 **Learn:**
-- Understand the problem, not just the ticket — the ticket says "add export-to-CSV"; the problem is "users need to take their data out of the system when they leave." The latter is what you design for.
-- Who is the user? — internal user, external user, admin, support engineer, auditor. The "user" isn't always a customer.
-- What can change in the future? — change scenarios: "If we add a new tenant, what breaks?" "If we move from Stripe to Adyen, what breaks?" "If the user uploads 10x more data, what breaks?"
-- Identify variability points — the things that *will* change, separated from the things that *won't*. Build for the stable parts; isolate the variable parts.
-- Practical exercise — rewrite requirements as "change scenarios":
+- Understand the problem, not just the ticket â€” the ticket says "add export-to-CSV"; the problem is "users need to take their data out of the system when they leave." The latter is what you design for.
+- Who is the user? â€” internal user, external user, admin, support engineer, auditor. The "user" isn't always a customer.
+- What can change in the future? â€” change scenarios: "If we add a new tenant, what breaks?" "If we move from Stripe to Adyen, what breaks?" "If the user uploads 10x more data, what breaks?"
+- Identify variability points â€” the things that *will* change, separated from the things that *won't*. Build for the stable parts; isolate the variable parts.
+- Practical exercise â€” rewrite requirements as "change scenarios":
   - "If [future change] happens, the system [should/should not] have to change."
   - This is the foundation of an Architecture Decision Record (Topic in Phase 7).
 
@@ -406,9 +406,9 @@ Take your current ticket. Write 3 change scenarios (in the form "if X, then Y") 
 **Why this topic exists:** There is no perfect solution. Every design decision is a trade-off. The senior developer makes the trade-off *consciously* and documents it. This topic installs the habit.
 
 **Learn:**
-- Readability vs. performance — a 3x faster function that's impossible to read is usually the wrong choice. Measure the performance first.
-- Speed of delivery vs. long-term cost — the "we'll fix it later" tax. The later is real, the now is concrete. Pick consciously.
-- Simplicity vs. flexibility — a flexible abstraction that's never used is over-engineering. A simple solution that breaks on the third variant is under-engineering. Look for the *third* variant (Topic 3, Rule of Three).
+- Readability vs. performance â€” a 3x faster function that's impossible to read is usually the wrong choice. Measure the performance first.
+- Speed of delivery vs. long-term cost â€” the "we'll fix it later" tax. The later is real, the now is concrete. Pick consciously.
+- Simplicity vs. flexibility â€” a flexible abstraction that's never used is over-engineering. A simple solution that breaks on the third variant is under-engineering. Look for the *third* variant (Topic 3, Rule of Three).
 - Common trade-offs in our domain:
   | Trade-off | Lean toward | When to flip |
   |---|---|---|
@@ -416,7 +416,7 @@ Take your current ticket. Write 3 change scenarios (in the form "if X, then Y") 
   | Consistency > novelty | consistency | a measured business need |
   | Explicit > implicit | explicit | high-frequency code where the explicitness becomes noise |
   | Simple > flexible | simple | the third variant of a feature |
-- The mindset — *"There is no perfect solution — only informed trade-offs."* The job of a senior developer is to make the trade-off, document it, and be able to defend it.
+- The mindset â€” *"There is no perfect solution â€” only informed trade-offs."* The job of a senior developer is to make the trade-off, document it, and be able to defend it.
 
 **Code-review focus:**
 - "Is the trade-off conscious or accidental?"
@@ -427,7 +427,7 @@ Take your current ticket. Write 3 change scenarios (in the form "if X, then Y") 
 Take the design decision in Topic 9's ADR. Add a "Trade-offs" section that names what you gave up. Push the PR; ask your reviewer to challenge any trade-off they think is wrong. If you can't defend it, change the design.
 
 **Self-check:**
-- [ ] I can name a real trade-off in my current design — and what I gave up
+- [ ] I can name a real trade-off in my current design â€” and what I gave up
 - [ ] I can defend the trade-off in 2 minutes
 - [ ] I can flip the trade-off when the third variant appears (or the performance number proves the cost)
 
@@ -438,17 +438,17 @@ Take the design decision in Topic 9's ADR. Add a "Trade-offs" section that names
 **Why this topic exists:** Domain-Driven Design is its own discipline; this topic gives the developer the *minimum* vocabulary. Knowing "entity vs. value object" lets a developer read the codebase and follow the model.
 
 **Learn:**
-- Understanding domain language — the words in the code should match the words in the business. If the business says "order," the class is `Order`, not `OrderRequestDto`. (This is "ubiquitous language" in DDD.)
+- Understanding domain language â€” the words in the code should match the words in the business. If the business says "order," the class is `Order`, not `OrderRequestDto`. (This is "ubiquitous language" in DDD.)
 - Entities vs. value objects:
-  - **Entity** — has identity, mutable over time (`Order #1234` is the same order even if its total changes)
-  - **Value object** — has no identity, defined by its values (`Address(street, city, zip)` — two `Address` objects with the same values are equal)
-- Avoid anemic models — a class that's just getters and setters, with the business rules in a separate service, has no behavior. Move the rules onto the model.
-- Business rules belong in the domain, not controllers — a rule like "an order can't be shipped if it's not paid" belongs in `Order.ship()`, not in the controller. The controller orchestrates; the domain decides.
+  - **Entity** â€” has identity, mutable over time (`Order #1234` is the same order even if its total changes)
+  - **Value object** â€” has no identity, defined by its values (`Address(street, city, zip)` â€” two `Address` objects with the same values are equal)
+- Avoid anemic models â€” a class that's just getters and setters, with the business rules in a separate service, has no behavior. Move the rules onto the model.
+- Business rules belong in the domain, not controllers â€” a rule like "an order can't be shipped if it's not paid" belongs in `Order.ship()`, not in the controller. The controller orchestrates; the domain decides.
 
 **Code-review focus:**
 - "Is the class name in the business language, or in the framework language?"
 - "Are there value objects hiding in this codebase (e.g. a tuple of three strings)?"
-- "Is the model anemic — all data, no behavior?"
+- "Is the model anemic â€” all data, no behavior?"
 
 **Mini-task:**
 Find a class in your codebase that's anemic (just getters/setters, business rules in services). Move one business rule from the service to the model. Commit `refactor(ddd): move-rule-onto-model`.
@@ -460,7 +460,7 @@ Find a class in your codebase that's anemic (just getters/setters, business rule
 
 ---
 
-### Phase 4 — API & Architectural Thinking (Advanced)
+### Phase 4 â€” API & Architectural Thinking (Advanced)
 
 **Goal:** Make developers system-aware.
 
@@ -469,7 +469,7 @@ Find a class in your codebase that's anemic (just getters/setters, business rule
 **Why this topic exists:** The API is the *contract* with the world. Once it's published, changing it breaks consumers. This topic gives the developer the design vocabulary, paired with the [REST API Best Practices](../../general/rest-api-best-practices.md) CoE standard.
 
 **Learn:**
-- Resource-oriented URLs — `/orders/1234`, not `/getOrder?id=1234`. Nouns, not verbs.
+- Resource-oriented URLs â€” `/orders/1234`, not `/getOrder?id=1234`. Nouns, not verbs.
 - HTTP methods & status codes:
   - `GET` is safe + idempotent
   - `POST` is neither
@@ -477,12 +477,12 @@ Find a class in your codebase that's anemic (just getters/setters, business rule
   - `PATCH` is for partial updates
   - `DELETE` is idempotent
   - Status codes: `200` OK, `201` Created, `204` No Content, `400` Bad Request, `401` Unauthorized, `403` Forbidden, `404` Not Found, `409` Conflict, `422` Unprocessable, `500` Server Error
-- Idempotency — a `POST` that may be retried (payment, account creation) needs an idempotency key. The server recognizes the key and returns the same response.
-- Pagination, filtering, sorting — the CoE standard is `_gt`, `_gte`, `_lt`, `_lte`, `_ne`, `_in`, `_between` for filtering; `sort=field` (asc) and `sort=-field` (desc)
+- Idempotency â€” a `POST` that may be retried (payment, account creation) needs an idempotency key. The server recognizes the key and returns the same response.
+- Pagination, filtering, sorting â€” the CoE standard is `_gt`, `_gte`, `_lt`, `_lte`, `_ne`, `_in`, `_between` for filtering; `sort=field` (asc) and `sort=-field` (desc)
 - Versioning strategies:
-  - **URL path** (`/api/v1/...`) — easy to read, easy to route
-  - **Header** (`Accept: application/vnd.api+json;version=2`) — cleaner URLs, harder to test in a browser
-  - **Subdomain** (`api.v2.example.com`) — different infra, harder to coordinate
+  - **URL path** (`/api/v1/...`) â€” easy to read, easy to route
+  - **Header** (`Accept: application/vnd.api+json;version=2`) â€” cleaner URLs, harder to test in a browser
+  - **Subdomain** (`api.v2.example.com`) â€” different infra, harder to coordinate
   - Default to URL path for our internal APIs; revisit when a public API needs it
 
 **Code-review focus:**
@@ -506,18 +506,18 @@ Pick one API in your codebase. Review it for the five points above. Open a doc P
 
 **Learn:**
 - Input validation:
-  - Validate at the **boundary** — controller, route handler, API endpoint
+  - Validate at the **boundary** â€” controller, route handler, API endpoint
   - Use the same schema on client and server (whichever validation library the stack uses)
   - Re-validate on the server; never trust the client
-- Defensive programming — assume the input is wrong; verify, then act
+- Defensive programming â€” assume the input is wrong; verify, then act
 - Trust boundaries:
-  - **Browser → server** — every parameter is user-controlled
-  - **Server → service** — assume the service receives validated input (because the controller did the validation)
-  - **Service → repository** — assume the repository receives a known entity
+  - **Browser â†’ server** â€” every parameter is user-controlled
+  - **Server â†’ service** â€” assume the service receives validated input (because the controller did the validation)
+  - **Service â†’ repository** â€” assume the repository receives a known entity
   - Don't re-validate at every layer; that's wasted work. Validate *at the boundary*.
 - Data sanitization:
   - HTML escaping for any user content rendered in a browser
-  - Parameterized queries for any database access (no string concatenation — see the [PHP standards](../../php/php-coding-standards.md) and the [Node.js standards](../../nodejs/nodejs-typescript-best-practices.md))
+  - Parameterized queries for any database access (no string concatenation â€” see the [PHP standards](../../php/php-coding-standards.md) and the [Node.js standards](../../nodejs/nodejs-typescript-best-practices.md))
   - Output encoding at the rendering layer
 
 **Code-review focus:**
@@ -541,12 +541,12 @@ Pick one controller / route handler in your codebase. Audit the inputs: are they
 
 **Learn:**
 - N+1 problem:
-  - In a loop, fetching related data one-by-one — `for user in users: user.profile = db.query(profile)` is N+1
+  - In a loop, fetching related data one-by-one â€” `for user in users: user.profile = db.query(profile)` is N+1
   - The fix: eager-load with a join or a `with()` call. Profile before-and-after with the same query count.
 - Caching basics:
   - Cache *expensive* operations, not cheap ones
-  - Cache *invalidation* is the hard part — the answer is usually a TTL + a tag, not "cache forever"
-  - Pair with [Phase 4 of the Next.js path](../nextjs/intermediate.md#phase-4-server-components-vs-client-components) for the Next.js caching model
+  - Cache *invalidation* is the hard part â€” the answer is usually a TTL + a tag, not "cache forever"
+  - Pair with [Phase 4 of the Next.js path](../../01-software-engineering/web-development/frontend/nextjs/intermediate.md#phase-4-server-components-vs-client-components) for the Next.js caching model
 - When optimization is premature:
   - The function is called 10x per request, and the profiler says it's 2% of total time
   - The fix: don't optimize. Write the readable version. Move on.
@@ -569,27 +569,27 @@ Find one N+1 query in your codebase. Eager-load it. Compare the query count befo
 
 ---
 
-### Phase 5 — Testing & Quality Engineering (Advanced)
+### Phase 5 â€” Testing & Quality Engineering (Advanced)
 
 **Goal:** Confidence in change.
 
 #### 15. Testing Fundamentals
 
-**Why this topic exists:** Tests are how we *verify* the discipline from Phases 1–4 actually works. A refactor without tests is a rewrite in disguise. This topic installs the testing vocabulary.
+**Why this topic exists:** Tests are how we *verify* the discipline from Phases 1â€“4 actually works. A refactor without tests is a rewrite in disguise. This topic installs the testing vocabulary.
 
 **Learn:**
 - Unit vs. integration vs. E2E:
-  - **Unit** — tests one function/class in isolation; fast, no IO; thousands of these
-  - **Integration** — tests multiple units together, often with a real DB; dozens of these
-  - **E2E** — tests the full stack from the UI; slow, fragile; a handful of these for the critical path
+  - **Unit** â€” tests one function/class in isolation; fast, no IO; thousands of these
+  - **Integration** â€” tests multiple units together, often with a real DB; dozens of these
+  - **E2E** â€” tests the full stack from the UI; slow, fragile; a handful of these for the critical path
   - The pyramid: many unit, some integration, few E2E
 - What NOT to test:
   - The framework (don't test that React renders a `<div>`; trust it)
   - Trivial getters/setters
   - Pure delegation functions (the only thing they do is call something else)
 - Test naming & structure:
-  - `describe('OrderProcessor', () => { it('returns 0 when no items', ...) })` — name reads as a sentence
-  - Arrange / Act / Assert — three clear sections
+  - `describe('OrderProcessor', () => { it('returns 0 when no items', ...) })` â€” name reads as a sentence
+  - Arrange / Act / Assert â€” three clear sections
 - Test readability:
   - One assertion per test, ideally
   - If you need 5 setup steps, the test is doing too much
@@ -614,15 +614,15 @@ Write one unit test for a function you wrote in the last week. The test name sho
 **Why this topic exists:** Some code is easy to test; some code is hard. The difference is usually *coupling*. This topic gives the developer the patterns that make code testable.
 
 **Learn:**
-- Pure functions — input → output, no side effects, no hidden state. The easiest to test.
+- Pure functions â€” input â†’ output, no side effects, no hidden state. The easiest to test.
 - Mocking vs. stubbing:
-  - **Stub** — returns canned data
-  - **Mock** — verifies behavior (called with the right args, the right number of times)
+  - **Stub** â€” returns canned data
+  - **Mock** â€” verifies behavior (called with the right args, the right number of times)
   - Default to stubs. Mocks are for behavior the test cares about.
 - Avoiding hidden dependencies:
   - Hidden: `new Date()`, `Math.random()`, `console.log`, global state, the filesystem
   - Visible: passed as a parameter, injected via the constructor, or wrapped in a function
-  - If the test depends on `new Date()`, the test is *time-coupled* — and brittle
+  - If the test depends on `new Date()`, the test is *time-coupled* â€” and brittle
 - Designing for testability:
   - Inject the clock (`Clock` interface, not `new Date()`)
   - Inject the random source (`Random` interface, not `Math.random()`)
@@ -650,7 +650,7 @@ Find a function in your codebase that uses `new Date()` or `Math.random()`. Inje
 **Learn:**
 - Safe refactoring:
   - The tests pass *before* the refactor (and stay green *after*)
-  - The behavior is unchanged — only the structure changes
+  - The behavior is unchanged â€” only the structure changes
   - One refactor at a time; don't combine three refactors with a feature
 - Small, incremental changes:
   - If a refactor takes more than 200 lines of diff, it's probably a rewrite. Break it up.
@@ -661,7 +661,7 @@ Find a function in your codebase that uses `new Date()` or `Math.random()`. Inje
   - The test: if the *names* of the classes/modules are right but the *bodies* are wrong, refactor. If the *names* are wrong, rewrite.
 - Code smells recognition:
   - Long method, large class, long parameter list, divergent change, shotgun surgery, feature envy, data clumps, primitive obsession
-  - The Martin Fowler catalog — keep a list, reference it
+  - The Martin Fowler catalog â€” keep a list, reference it
 
 **Code-review focus:**
 - "Is the refactor isolated from the feature change?"
@@ -669,7 +669,7 @@ Find a function in your codebase that uses `new Date()` or `Math.random()`. Inje
 - "Is this a refactor or a rewrite disguised as one?"
 
 **Mini-task:**
-Take a code smell from your codebase (long method, large class, primitive obsession — pick one). Refactor it in a single PR. The PR should be small enough to read in 10 minutes. The tests should be green before and after. Commit `refactor: <smell>`.
+Take a code smell from your codebase (long method, large class, primitive obsession â€” pick one). Refactor it in a single PR. The PR should be small enough to read in 10 minutes. The tests should be green before and after. Commit `refactor: <smell>`.
 
 **Self-check:**
 - [ ] I can name three code smells from the Martin Fowler catalog
@@ -678,7 +678,7 @@ Take a code smell from your codebase (long method, large class, primitive obsess
 
 ---
 
-### Phase 6 — Code Review Excellence (Advanced)
+### Phase 6 â€” Code Review Excellence (Advanced)
 
 **Goal:** Turn code review into a learning engine.
 
@@ -688,12 +688,12 @@ Take a code smell from your codebase (long method, large class, primitive obsess
 
 **Learn:**
 - What to review vs. what to ignore:
-  - **Review** — intent, correctness, readability, the SOLID principles, test coverage, security
-  - **Defer to the formatter** — indentation, quote style, line length. The team's formatter (whichever it uses) is the source of truth; don't argue in PRs
+  - **Review** â€” intent, correctness, readability, the SOLID principles, test coverage, security
+  - **Defer to the formatter** â€” indentation, quote style, line length. The team's formatter (whichever it uses) is the source of truth; don't argue in PRs
 - Objective vs. subjective feedback:
-  - **Objective** — "this function is doing two things; the second should be a helper" (verifiable from the diff)
-  - **Subjective** — "I would have written this differently" (a personal preference, not a review comment)
-  - Default to objective. If you find yourself saying "I would have…", stop and ask: *is this a rule, or a preference?*
+  - **Objective** â€” "this function is doing two things; the second should be a helper" (verifiable from the diff)
+  - **Subjective** â€” "I would have written this differently" (a personal preference, not a review comment)
+  - Default to objective. If you find yourself saying "I would haveâ€¦", stop and ask: *is this a rule, or a preference?*
 - Asking questions instead of giving commands:
   - "Could this be a value object?" (question) vs. "Make this a value object." (command)
   - The question invites the author to think; the command invites them to comply
@@ -721,19 +721,19 @@ Review 5 PRs in the next week using the four points above. For each PR, write at
 
 **Why this topic exists:** A *team-level* checklist turns code review from "what does this reviewer care about" into "what does this team care about." This topic installs the team's checklist.
 
-**Learn — the standardized Techversant checklist:**
+**Learn â€” the standardized Techversant checklist:**
 
 For every PR, the reviewer checks:
 
-- **Readability** — can a new joiner understand this without context?
-- **Maintainability** — would the next person to touch this code thank the author?
-- **SOLID adherence** — does each class have one responsibility? Are dependencies injected?
-- **Error handling** — does the code fail fast at the cause? Are secrets never logged?
-- **Security** — are inputs validated at the boundary? Is the SQL parameterized? Is the user the right user? (See the [Security Audit Checklist](../../audit/security-audit-checklist.md))
-- **Test coverage** — is the new behavior tested? Are the tests at the right layer?
-- **Performance** — was the change measured, or is it a guess?
-- **Documentation** — if the public API changed, does the doc match?
-- **AI disclosure** — if AI helped write this code, is the commit tagged `[ai-assisted]`?
+- **Readability** â€” can a new joiner understand this without context?
+- **Maintainability** â€” would the next person to touch this code thank the author?
+- **SOLID adherence** â€” does each class have one responsibility? Are dependencies injected?
+- **Error handling** â€” does the code fail fast at the cause? Are secrets never logged?
+- **Security** â€” are inputs validated at the boundary? Is the SQL parameterized? Is the user the right user? (See the [Security Audit Checklist](../../audit/security-audit-checklist.md))
+- **Test coverage** â€” is the new behavior tested? Are the tests at the right layer?
+- **Performance** â€” was the change measured, or is it a guess?
+- **Documentation** â€” if the public API changed, does the doc match?
+- **AI disclosure** â€” if AI helped write this code, is the commit tagged `[ai-assisted]`?
 
 The stack-specific checklists layer on top of this baseline:
 
@@ -748,7 +748,7 @@ The stack-specific checklists layer on top of this baseline:
 3. The team's "review-of-reviews" (sampled weekly) checks that the checklist is being applied, not just present
 
 **Code-review focus:**
-- The checklist itself — did the reviewer run it?
+- The checklist itself â€” did the reviewer run it?
 
 **Mini-task:**
 Pick 3 of your open PRs. Self-review them against the 9-point checklist. Open follow-up PRs for any gap. Reflect: which points did you consistently miss? What does that say about your habits?
@@ -762,23 +762,23 @@ Pick 3 of your open PRs. Self-review them against the 9-point checklist. Open fo
 
 #### 20. Engineering Ethics & Ownership
 
-**Why this topic exists:** Code is a *team artifact*. The decisions a developer makes — naming, testing, documenting, leaving debt — affect everyone who comes after. This topic installs the ethical frame.
+**Why this topic exists:** Code is a *team artifact*. The decisions a developer makes â€” naming, testing, documenting, leaving debt â€” affect everyone who comes after. This topic installs the ethical frame.
 
 **Learn:**
 - Writing code for the next developer:
   - The next developer is often *you*, six months from now, with no context
   - The principle: code is read more often than it's written; optimize for the reader
 - Documentation discipline:
-  - The three places documentation lives — in the code (clear names, type annotations), in the commit (the diff is the design), and in the doc (the ADR, the API reference)
+  - The three places documentation lives â€” in the code (clear names, type annotations), in the commit (the diff is the design), and in the doc (the ADR, the API reference)
   - Pick the cheapest one that solves the problem; don't write a 50-page doc for what 5 lines of code can say
 - Technical debt awareness:
   - Technical debt is *not* bad code; it's a *deliberate trade-off* that needs to be tracked
   - If you take on debt, leave a TODO with the date, the reason, and the plan
   - The team's "debt register" (a single doc) tracks the open items and their owners
 - Accountability mindset:
-  - When you ship a bug, you own the fix — not the on-call engineer
-  - When you find debt you didn't create, you flag it — not just inherit it
-  - When you take on a shortcut, you flag the shortcut — at commit time, not at code review time
+  - When you ship a bug, you own the fix â€” not the on-call engineer
+  - When you find debt you didn't create, you flag it â€” not just inherit it
+  - When you take on a shortcut, you flag the shortcut â€” at commit time, not at code review time
 
 **Code-review focus:**
 - "If I were new to this codebase, would I know why this code is the way it is?"
@@ -795,21 +795,21 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 
 ---
 
-### Phase 7 — Senior Developer Mindset (Optional / Lead Track)
+### Phase 7 â€” Senior Developer Mindset (Optional / Lead Track)
 
-**Goal:** Create future tech leads. This phase is not a session; it's an async reading + mentoring track for developers who have finished Phases 1–6 and want to lead.
+**Goal:** Create future tech leads. This phase is not a session; it's an async reading + mentoring track for developers who have finished Phases 1â€“6 and want to lead.
 
 **Topics (self-paced + pair with a tech lead):**
 
-- **Architectural Decision Records (ADRs)** — write 3 ADRs for real decisions in your codebase. Use the format from the [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md). Pair with a tech lead for review.
-- **Designing for scale** — read the team's architecture docs; identify one decision that limits scale and one that doesn't. Write a 1-page note.
-- **Backward compatibility** — pick a public API in your codebase; document the contract; identify what would break a consumer. Propose a versioning strategy.
-- **Risk-based decision making** — for a real upcoming decision, write down: the options, the risks, the mitigations, the reversibility. Discuss with a tech lead.
-- **Mentoring juniors effectively** — pair with a junior for 4 weeks. Run one of the topics from this curriculum *with* them. Reflect on what worked and what didn't.
+- **Architectural Decision Records (ADRs)** â€” write 3 ADRs for real decisions in your codebase. Use the format from the [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md). Pair with a tech lead for review.
+- **Designing for scale** â€” read the team's architecture docs; identify one decision that limits scale and one that doesn't. Write a 1-page note.
+- **Backward compatibility** â€” pick a public API in your codebase; document the contract; identify what would break a consumer. Propose a versioning strategy.
+- **Risk-based decision making** â€” for a real upcoming decision, write down: the options, the risks, the mitigations, the reversibility. Discuss with a tech lead.
+- **Mentoring juniors effectively** â€” pair with a junior for 4 weeks. Run one of the topics from this curriculum *with* them. Reflect on what worked and what didn't.
 
 **Suggested reading:** see the [Recommended Resources](#recommended-resources) at the bottom of this document.
 
-**Outcome:** A developer who has finished Phase 7 has a portfolio — 3 ADRs, 1 architecture note, 1 backward-compat plan, 1 risk analysis, 1 mentoring reflection. They are *ready* to be a tech lead, not just "in line" for one.
+**Outcome:** A developer who has finished Phase 7 has a portfolio â€” 3 ADRs, 1 architecture note, 1 backward-compat plan, 1 risk analysis, 1 mentoring reflection. They are *ready* to be a tech lead, not just "in line" for one.
 
 ---
 
@@ -819,20 +819,20 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 
 ### Books (foundational)
 
-- *Clean Code* by Robert C. Martin — the canonical book for Phases 1 and 6
-- *Clean Architecture* by Robert C. Martin — the canonical book for Phases 2 and 3
-- *Refactoring* by Martin Fowler — the canonical book for Phase 5
-- *Designing Data-Intensive Applications* by Martin Kleppmann — for the Phase 7 "designing for scale" topic
-- *The Pragmatic Programmer* by Andrew Hunt & David Thomas — the canonical book for the trade-off analysis mindset
+- *Clean Code* by Robert C. Martin â€” the canonical book for Phases 1 and 6
+- *Clean Architecture* by Robert C. Martin â€” the canonical book for Phases 2 and 3
+- *Refactoring* by Martin Fowler â€” the canonical book for Phase 5
+- *Designing Data-Intensive Applications* by Martin Kleppmann â€” for the Phase 7 "designing for scale" topic
+- *The Pragmatic Programmer* by Andrew Hunt & David Thomas â€” the canonical book for the trade-off analysis mindset
 
 ### CoE documents to pair with this curriculum
 
-- [REST API Best Practices](../../general/rest-api-best-practices.md) — for Phase 4
-- [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) — for Phase 6 (the two-layer review model)
-- [Security Audit Checklist](../../audit/security-audit-checklist.md) — for the security row in the standardized checklist (Phase 6, Topic 19)
-- [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md) — for the ADR format (Phase 7)
-- [Node.js Code Review Checklist](../../nodejs/nodejs-typescript-code-review-checklist.md) — stack-specific, for the Node.js team
-- [PHP Coding Standards](../../php/php-coding-standards.md) — stack-specific, for the Laravel team
+- [REST API Best Practices](../../general/rest-api-best-practices.md) â€” for Phase 4
+- [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) â€” for Phase 6 (the two-layer review model)
+- [Security Audit Checklist](../../audit/security-audit-checklist.md) â€” for the security row in the standardized checklist (Phase 6, Topic 19)
+- [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md) â€” for the ADR format (Phase 7)
+- [Node.js Code Review Checklist](../../nodejs/nodejs-typescript-code-review-checklist.md) â€” stack-specific, for the Node.js team
+- [PHP Coding Standards](../../php/php-coding-standards.md) â€” stack-specific, for the Laravel team
 
 ---
 
@@ -841,7 +841,7 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 | Field | Value |
 |---|---|
 | Document | Developer Excellence Curriculum |
-| Version | 0.4 (v0.3 split out 'How to Teach' to sibling how-to-teach.md; dropped Team-Level Metrics, Online courses subsection, and duplicate Phase 7 book list — ~50 lines trimmed) |
+| Version | 0.4 (v0.3 split out 'How to Teach' to sibling how-to-teach.md; dropped Team-Level Metrics, Online courses subsection, and duplicate Phase 7 book list â€” ~50 lines trimmed) |
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft for cross-team review |
