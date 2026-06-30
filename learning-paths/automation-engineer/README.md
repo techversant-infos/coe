@@ -1,3 +1,5 @@
+> **Migration notice:** This folder is retained for compatibility during the academy migration. The canonical version now lives in [engineering-academy/](../engineering-academy/). Update your bookmarks.
+
 # Automation Engineer Learning Path
 
 > **Objective:** Transform manual testers into automation engineers who can own end-to-end and API test automation — using Playwright as the CoE standard.

@@ -4,6 +4,8 @@
 **Audience:** Web Dev Team backend/PHP/Laravel-leaning engineers who need to build production React frontends
 **Length:** 8 phases over 6 weeks (~5 hours/week, pair-friendly)
 **Status:** Draft for Pilot Batch
+**Level:** Practitioner
+**Next Level:** [Advanced: Next.js](../nextjs/intermediate.md) — complete React first
 **Prerequisite for:** [Next.js Learning Path](../nextjs/intermediate.md) finish this first
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
 
@@ -47,17 +49,17 @@ Re-baseline these at the end of the path. If they're not moving, the path needs 
 ## Table of Contents
 - [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
 - [Suggested 6-Week Plan](#suggested-6-week-plan)
-- [Phase 1 JavaScript + TypeScript Refresh](#phase-1--javascript--typescript-refresh)
-- [Phase 2 React Core: JSX, Components, and Props](#phase-2--react-core-jsx-components-and-props)
-- [Phase 3 State, Events, and Conditional Rendering](#phase-3--state-events-and-conditional-rendering)
-- [Phase 4 Effects, Refs, and the Component Lifecycle](#phase-4--effects-refs-and-the-component-lifecycle)
-- [Phase 5 Forms, Validation, and API Integration](#phase-5--forms-validation-and-api-integration)
-- [Phase 6 Composition Patterns and Custom Hooks](#phase-6--composition-patterns-and-custom-hooks)
-- [Phase 7 Testing React Components](#phase-7--testing-react-components)
-- [Phase 8 Production Patterns and Project Structure](#phase-8--production-patterns-and-project-structure)
+- [Phase 1 JavaScript + TypeScript Refresh](#phase-1-javascript--typescript-refresh)
+- [Phase 2 React Core: JSX, Components, and Props](#phase-2-react-core-jsx-components-and-props)
+- [Phase 3 State, Events, and Conditional Rendering](#phase-3-state-events-and-conditional-rendering)
+- [Phase 4 Effects, Refs, and the Component Lifecycle](#phase-4-effects-refs-and-the-component-lifecycle)
+- [Phase 5 Forms, Validation, and API Integration](#phase-5-forms-validation-and-api-integration)
+- [Phase 6 Composition Patterns and Custom Hooks](#phase-6-composition-patterns-and-custom-hooks)
+- [Phase 7 Testing React Components](#phase-7-testing-react-components)
+- [Phase 8 Production Patterns and Project Structure](#phase-8-production-patterns-and-project-structure)
 - [Recommended Courses](#recommended-courses)
 - [Channels, Podcasts & Newsletters](#channels-podcasts--newsletters)
-- [Tutorial & Reference Links](#tutorial--reference-links)
+- [Tutorial & Reference Links](#tutorial-reference-links)
 - [Certifications](#certifications)
 - [How to Use This Path](#how-to-use-this-path)
 - [Document Control](#document-control)
@@ -252,7 +254,7 @@ Wire the product listing to a **real Laravel API**:
 - **API integration patterns:** where to fetch, where to mutate, how to handle errors
 - **Optimistic updates** update the UI before the server confirms; roll back on error
 - **Toast notifications** for success/error feedback
-- *(Forward-looking)* React 19's `useActionState` and **Server Actions** are the natural extension of the React Hook Form + Zod pattern when you move to Next.js covered in the [Next.js Learning Path](../nextjs/intermediate.md#phase-6--forms-validation-and-mutations). For pure React (Vite, CRA, etc.), stick with React Hook Form.
+- *(Forward-looking)* React 19's `useActionState` and **Server Actions** are the natural extension of the React Hook Form + Zod pattern when you move to Next.js covered in the [Next.js Learning Path](../nextjs/intermediate.md#phase-6-forms-validation-and-mutations). For pure React (Vite, CRA, etc.), stick with React Hook Form.
 
 **Standard pattern (use this for new work):**
 
@@ -358,11 +360,11 @@ Take the customer feature from Phase 5 and refactor it:
 **Why this phase exists:** "works on my machine" is not shipped. Production React has different constraints: bundle size, accessibility, error boundaries, and a folder structure that scales beyond one developer.
 
 **Learn:**
-- **Styling:** **Tailwind CSS** is the team default (per the [Next.js path Phase 8](../nextjs/intermediate.md#phase-8--ui-system-and-frontend-architecture)). For pure-React SPAs, set up Tailwind on day one. **shadcn/ui** for primitives same "owned by us" framing as the Next.js path. If a project already uses CSS Modules, follow the existing convention.
+- **Styling:** **Tailwind CSS** is the team default (per the [Next.js path Phase 8](../nextjs/intermediate.md#phase-8-ui-system-and-frontend-architecture)). For pure-React SPAs, set up Tailwind on day one. **shadcn/ui** for primitives same "owned by us" framing as the Next.js path. If a project already uses CSS Modules, follow the existing convention.
 - **Routing (pure-React only):** if you're building a Vite-React SPA not a Next.js app add **React Router v6+**. Pattern: `<BrowserRouter>` `<Routes>` `<Route path="" element={} />`. Skip this if the app is going inside Next.js (file-based routing handles it).
 - **State management at scale:** Context + `useReducer` cover 90% of state. Reach for **Redux Toolkit** only when (a) many components need the same data, (b) you need time-travel debugging or middleware (sagas, polling), or (c) the team already standardized on it. **Zustand** is the lighter alternative pick one if Context is painful, not before. Don't reach for state-management libraries "just in case."
 - **Design tokens:** colors, spacing, type scale never hardcode hex values. Use CSS custom properties or a Tailwind theme extension.
-- **Web security basics:** render untrusted user input as text (`{user.bio}` in JSX, never `dangerouslySetInnerHTML`), and rely on Laravel Sanctum for CSRF (covered in the [Next.js path Phase 7](../nextjs/intermediate.md#phase-7--authentication-and-authorization)). If the app is browser-only and consumes a public API, validate inputs on the client with Zod and on the server.
+- **Web security basics:** render untrusted user input as text (`{user.bio}` in JSX, never `dangerouslySetInnerHTML`), and rely on Laravel Sanctum for CSRF (covered in the [Next.js path Phase 7](../nextjs/intermediate.md#phase-7-authentication-and-authorization)). If the app is browser-only and consumes a public API, validate inputs on the client with Zod and on the server.
 - **Core Web Vitals (LCP, INP, CLS):** recognize them in Lighthouse. LCP = largest contentful paint (target < 2.5s). INP = interaction to next paint (target < 200ms). CLS = cumulative layout shift (target < 0.1). All three are why we lazy-load, `next/image`-style sizing, and avoid layout-thrashing animations.
 - **Utility libraries (team default):** `clsx` for class composition, `date-fns` for dates, native `fetch` over axios. Don't add lodash, moment, or rxjs to a new project.
 - **PWAs / offline:** out of scope for this path. If a product needs install-to-homescreen or offline support, see the CoE PWA guide (TODO).

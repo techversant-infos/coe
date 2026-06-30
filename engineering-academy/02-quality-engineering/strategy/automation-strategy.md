@@ -5,6 +5,9 @@ Automation strategy answers a different question from automation scripting.
 - Scripting asks: "How do I automate this?"
 - Strategy asks: "Should this be automated, at which layer, and how will we maintain it?"
 
+**Level:** Advanced
+**Next Level:** [Career Progression: QA Leadership](../../career-progression/lead-to-architect.md)
+
 ## Core Questions
 
 1. What risk does this test reduce?

@@ -14,13 +14,20 @@ This file tracks the migration from standalone learning paths to the Techversant
 
 | Area | Status | Notes |
 |---|---|---|
-| Academy root navigation | In progress | Root README updated to academy model |
-| Engineering foundations | In progress | Dev Excellence copied into academy structure; Git/AI/Security are linked to source standards |
-| Software engineering | In progress | React and Next.js copied into web frontend academy path |
-| Quality engineering | In progress | Playwright path copied and split-track docs added |
-| AI engineering | Skeleton | Placeholder index files added |
-| Learning levels | Draft | Foundation, Practitioner, Advanced, Expert created |
-| Career progression | Not started | Add after academy structure and QA split stabilize |
+| Academy root navigation | Complete | Root README links to all disciplines and guidance layers |
+| Engineering foundations | Complete | Dev Excellence + foundation one-pagers migrated |
+| Software engineering | In progress | React and Next.js pilot-ready; backend/mobile TODO |
+| Quality engineering | In progress | Playwright split-track pilot-ready; manual testing TODO |
+| AI engineering | Skeleton | Placeholder index files only; full curricula needed |
+| Learning levels | Complete | All four levels defined; now connected to content |
+| Career progression | Complete | 4 files: transition-overview, junior-to-senior, senior-to-team-lead, lead-to-architect |
+
+## Polish Phase (v1.0) — Done
+
+- Added **Level** labels (Foundation/Practitioner/Advanced/Expert) to all content files
+- Added **Next Level** links in content file headers
+- Added **Guidance Layers** section to all discipline READMEs (00–06)
+- All disciplines now reference Learning Levels and Career Progression
 
 ## Known Gaps
 

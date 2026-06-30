@@ -22,6 +22,11 @@ The goal is not to duplicate stack-specific guidance. The goal is to make sure e
 4. [Developer Excellence Curriculum](./dev-excellence/curriculum.md)
 5. [Communication](./communication.md)
 
+## Guidance Layers
+
+- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+
 ## Completion Evidence
 
 - You can open a PR that follows the Techversant workflow.

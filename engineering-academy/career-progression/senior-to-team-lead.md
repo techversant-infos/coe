@@ -60,3 +60,9 @@ Choose one with your manager:
 - [Developer Excellence - Code Review Excellence](../00-engineering-foundations/dev-excellence/curriculum.md#phase-6-code-review-excellence-advanced)
 - [Engineering Leadership](../05-engineering-leadership/README.md)
 - [Expert Learning Level](../learning-levels/expert.md)
+
+## Continue Learning
+
+- [All Disciplines](../README.md)
+- [Software Engineering Paths](../01-software-engineering/)
+- [Quality Engineering Paths](../02-quality-engineering/)

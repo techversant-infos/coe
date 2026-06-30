@@ -10,6 +10,8 @@
 **Audience:** All developers web frontend, backend, mobile (iOS + Android). Tech-agnostic.
 **Length:** 7 phases, 20 topics, 68 weeks (35 hours/week, pair-friendly)
 **Status:** **Draft for cross-team review** run with 35 developers from at least two teams first
+**Level:** Foundation
+**Next Level:** [Practitioner: choose your specialization — React, Automation, or backend path](../../01-software-engineering/README.md) or [Senior path through Career Progression](../../career-progression/junior-to-senior.md)
 **Contributors:** Compiled by CoE Web Working Group; pending cross-team review from Mobile + Backend leads
 **Pre-requisite:** Comfortable shipping features in at least one production codebase (in whatever stack the team uses web, backend, or mobile). The curriculum assumes you have something to *apply* the discipline to.
 

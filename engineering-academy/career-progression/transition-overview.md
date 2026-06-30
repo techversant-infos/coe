@@ -30,6 +30,11 @@ Use this section as a capability guide: what to practice, what evidence to colle
 
 ## Related Layers
 
-- [Learning Levels](../learning-levels/foundation.md): demonstrated competence definitions.
-- Discipline paths: what to learn for your role.
-- Career progression: how to grow into broader responsibility.
+- [Learning Levels](../learning-levels/) — demonstrated competence definitions (Foundation / Practitioner / Advanced / Expert)
+- [Engineering Foundations](../00-engineering-foundations/) — shared baseline for all disciplines
+- [Software Engineering](../01-software-engineering/) — web, backend, mobile paths
+- [Quality Engineering](../02-quality-engineering/) — QA and automation paths
+- [Platform Engineering](../03-platform-engineering/) — DevOps, cloud, observability (planned)
+- [Architecture](../04-architecture/) — solution and system design (planned)
+- [Engineering Leadership](../05-engineering-leadership/) — team lead and management (planned)
+- [AI Engineering](../06-ai-engineering/) — AI-assisted development and testing (planned)

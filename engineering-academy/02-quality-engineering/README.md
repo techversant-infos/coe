@@ -12,6 +12,11 @@ The first priority is the Playwright automation path because it gives manual tes
 | Automation | [Playwright Automation](./automation/playwright/README.md) | In progress |
 | Strategy | [Automation Strategy](./strategy/automation-strategy.md) | Draft |
 
+## Guidance Layers
+
+- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+
 ## Recommended Order
 
 1. Manual testing fundamentals, if needed

@@ -61,3 +61,9 @@ Choose one with your mentor:
 - [Advanced Learning Level](../learning-levels/advanced.md)
 - [Engineering Communication](../00-engineering-foundations/communication.md)
 - [Secure Engineering](../00-engineering-foundations/secure-engineering.md)
+
+## Continue Learning
+
+- [All Disciplines](../README.md)
+- [Software Engineering Paths](../01-software-engineering/)
+- [Quality Engineering Paths](../02-quality-engineering/)

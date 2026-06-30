@@ -4,6 +4,8 @@
 **Audience:** Web Dev Team backend/PHP/Laravel-leaning engineers who need to ship modern Next.js frontends
 **Length:** 10 phases over 8 weeks (~5 hours/week, pair-friendly)
 **Status:** **Draft for Pilot Batch** run with 35 developers first, revisit after Week 2 feedback
+**Level:** Advanced
+**Next Level:** [Career Progression: Lead Engineer Path](../../../../career-progression/junior-to-senior.md)
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
 **v0.6 changes:** added Phase 3 sub-section "Streaming with `<Suspense>`"; added Phase 5 sub-section "Cache Components (the new model)" covering the Next.js 15+/16 "opt-in caching" shift with `"use cache"`. Both additions in response to team review.
 
@@ -65,19 +67,19 @@ The path assumes you have these technical basics. If not, spend 12 days top up b
 ## Table of Contents
 - [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
 - [Suggested 8-Week Plan](#suggested-8-week-plan)
-- [Phase 1 JavaScript + TypeScript Refresh](#phase-1--javascript--typescript-refresh)
-- [Phase 2 React Fundamentals](#phase-2--react-fundamentals)
-- [Phase 3 Next.js Basics with the App Router](#phase-3--nextjs-basics-with-the-app-router)
-- [Phase 4 Server Components vs. Client Components](#phase-4--server-components-vs-client-components)
-- [Phase 5 Data Fetching, APIs, and Backend Integration](#phase-5--data-fetching-apis-and-backend-integration)
-- [Phase 6 Forms, Validation, and Mutations](#phase-6--forms-validation-and-mutations)
-- [Phase 7 Authentication and Authorization](#phase-7--authentication-and-authorization)
-- [Phase 8 UI System and Frontend Architecture](#phase-8--ui-system-and-frontend-architecture)
-- [Phase 9 Testing](#phase-9--testing)
-- [Phase 10 Production Readiness](#phase-10--production-readiness)
+- [Phase 1 JavaScript + TypeScript Refresh](#phase-1-javascript--typescript-refresh)
+- [Phase 2 React Fundamentals](#phase-2-react-fundamentals)
+- [Phase 3 Next.js Basics with the App Router](#phase-3-nextjs-basics-with-the-app-router)
+- [Phase 4 Server Components vs. Client Components](#phase-4-server-components-vs-client-components)
+- [Phase 5 Data Fetching, APIs, and Backend Integration](#phase-5-data-fetching-apis-and-backend-integration)
+- [Phase 6 Forms, Validation, and Mutations](#phase-6-forms-validation-and-mutations)
+- [Phase 7 Authentication and Authorization](#phase-7-authentication-and-authorization)
+- [Phase 8 UI System and Frontend Architecture](#phase-8-ui-system-and-frontend-architecture)
+- [Phase 9 Testing](#phase-9-testing)
+- [Phase 10 Production Readiness](#phase-10-production-readiness)
 - [Recommended Courses](#recommended-courses)
 - [Channels, Podcasts & Newsletters](#channels-podcasts--newsletters)
-- [Tutorial & Reference Links](#tutorial--reference-links)
+- [Tutorial & Reference Links](#tutorial-reference-links)
 - [Certifications](#certifications)
 - [Books (Optional Deep Dives)](#books-optional-deep-dives)
 - [How to Use This Path](#how-to-use-this-path)

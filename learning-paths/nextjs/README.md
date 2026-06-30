@@ -1,3 +1,5 @@
+> **Migration notice:** This folder is retained for compatibility during the academy migration. The canonical version now lives in [engineering-academy/](../engineering-academy/). Update your bookmarks.
+
 # Next.js Learning Path — Folder Index
 
 This folder contains the team's Next.js learning resources. Start with the path document. Use the roadmap image as a visual reference. The gap analysis is reviewer-only and lives in its own file.

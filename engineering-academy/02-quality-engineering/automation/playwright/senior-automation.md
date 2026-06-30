@@ -3,6 +3,8 @@
 > **Audience:** Automation engineers with 6+ months of automation experience.
 > **Length:** 8-10 weeks, around 4-5 hours/week.
 > **Goal:** Own automation quality across a project: framework design, API strategy, CI, reporting, flake control, accessibility, performance, AI-assisted workflows, and mentoring.
+> **Level:** Advanced → Expert
+> **Next Level:** [Career Progression: QA Lead Path](../../../career-progression/lead-to-architect.md)
 
 ---
 

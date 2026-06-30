@@ -3,6 +3,8 @@
 > **Audience:** Manual testers with little or no automation experience.
 > **Length:** 8-10 weeks, around 5 hours/week.
 > **Goal:** Become productive writing and maintaining Playwright automation with support from a senior reviewer.
+> **Level:** Foundation → Practitioner
+> **Next Level:** [Senior Automation Engineer](senior-automation.md)
 
 ---
 

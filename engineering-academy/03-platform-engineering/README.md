@@ -17,8 +17,13 @@ Platform Engineering is a TODO academy discipline.
 
 - [Git Workflow](../../git/Techversant_Git_Workflow.md)
 - [Security Audit Checklist](../../audit/security-audit-checklist.md)
-- [Node.js TypeScript Best Practices - Deployment & CI/CD](../../nodejs/nodejs-typescript-best-practices.md#deployment--cicd)
+- [Node.js TypeScript Best Practices - Deployment & CI/CD](../../nodejs/nodejs-typescript-best-practices.md#deployment-cicd)
+
+## Guidance Layers
+
+- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](career-progression/transition-overview.md) — see your upgrade path
 
 ## Status
 
-Draft placeholder. Build after the QA path is completed.
+**Status:** Skeleton — planned. Build after the QA path stabilizes.

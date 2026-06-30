@@ -13,6 +13,11 @@ Start with the shared [Engineering Foundations](../00-engineering-foundations/RE
 | Mobile development | [Mobile Development](./mobile-development/README.md) | TODO |
 | Backend engineering | TODO | Standards currently live in [php](../../php/), [nodejs](../../nodejs/), and [cf](../../cf/) |
 
+## Guidance Layers
+
+- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+
 ## Recommended Web Frontend Order
 
 1. [Developer Excellence Curriculum](../00-engineering-foundations/dev-excellence/curriculum.md)

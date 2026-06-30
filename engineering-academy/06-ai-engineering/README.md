@@ -12,6 +12,11 @@ AI is referenced from every discipline, but it also needs its own space because 
 | AI-assisted testing | [AI Assisted Testing](./ai-assisted-testing/README.md) | TODO |
 | Prompt engineering | [Prompt Engineering](./prompt-engineering/README.md) | TODO |
 
+## Guidance Layers
+
+- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+
 ## Source Standards
 
 - [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md)
