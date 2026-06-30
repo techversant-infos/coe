@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read: all",
+      "Write: all",
+      "Bash: all"
+    ]
+  },
+  "completion": {
+    "showInStatusBar": true
+  }
+}

@@ -4,7 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This is a **Center of Excellence (CoE) standards repository** — not an application. It contains Techversant's engineering guidelines, best practices, and AI-assisted development standards for multiple technology stacks.
+This is a **Center of Excellence (CoE) standards repository** for Techversant Engineering. It contains:
+- Engineering guidelines and best practices for multiple stacks (PHP, ColdFusion, Node.js)
+- AI-assisted development standards and workflows
+- The **Engineering Academy** — structured learning paths for skill development
+- Career progression guidance and learning level definitions
+
+## Repository Structure
+
+```
+coe/
+├── engineering-academy/           # Learning paths and career growth
+│   ├── 00-engineering-foundations/
+│   ├── 01-software-engineering/
+│   ├── 02-quality-engineering/
+│   ├── 03-platform-engineering/
+│   ├── 04-architecture/
+│   ├── 05-engineering-leadership/
+│   ├── 06-ai-engineering/
+│   ├── learning-levels/
+│   └── career-progression/
+├── general/                       # Universal standards (AI era, REST APIs)
+├── git/                           # Git workflow documentation
+├── php/                           # PHP/Laravel standards
+├── cf/                            # ColdFusion/CFML standards
+├── nodejs/                        # Node.js/TypeScript standards
+├── ai/                            # AI tools and prompt templates
+├── audit/                         # Code audit checklists
+├── learning-paths/                # Additional learning content
+└── neural/                        # Neural/network patterns
+```
 
 ## Git Workflow
 
@@ -24,9 +53,37 @@ docs(module): update API guide
 
 **Merge rules:** PR review + CI required. Never force-push to shared branches.
 
-## AI-Assisted Development Standards
+## Engineering Academy (.claude)
 
-These standards apply to all code in this repository:
+The `.claude/` folder contains AI tools for creating and managing learning content:
+
+| Folder | Purpose |
+|--------|---------|
+| `.claude/commands/` | Slash commands for creating learning content |
+| `.claude/agents/` | AI agents for different coaching roles |
+| `.claude/skills/` | Teaching methodologies and standards |
+| `.claude/rules/` | Content quality and writing standards |
+| `.claude/templates/` | Reusable content templates |
+
+### Available Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/create-learning-phase` | Create a new learning phase with lessons, exercises, assessment |
+| `/create-exercise` | Generate hands-on practice activities |
+| `/create-assessment` | Build evaluation rubrics |
+| `/review-learning-phase` | Quality review of learning content |
+| `/update-learning-path-index` | Refresh the learning path catalog |
+
+### Learning Path Structure
+
+Learning paths live in `engineering-academy/` organized by discipline:
+- **00-engineering-foundations** — Git, AI usage, communication, secure engineering
+- **01-software-engineering** — Web, mobile, backend development
+- **02-quality-engineering** — Manual testing, automation, Playwright
+- **06-ai-engineering** — AI-assisted development and testing
+
+## AI-Assisted Development Standards
 
 **Human-in-the-Loop (Mandatory):**
 - Review every line of AI output before committing
@@ -40,73 +97,14 @@ These standards apply to all code in this repository:
 - PII handling & payment processing
 - Production database migrations
 
-**Two-Layer Review:**
-1. AI Pre-Review (logic gaps, edge cases, tests)
-2. Human Review (business logic, security, architecture fit)
-
-## Coding Standards by Stack
-
-### PHP / Laravel
-- PSR-12 compliance (4 spaces, 120 char line limit)
-- Use prepared statements — never concatenate SQL
-- Use `password_hash()` / `password_verify()` for passwords
-- Controllers slim; business logic in Services/Actions
-
-### ColdFusion / CFML
-- CFScript for business logic
-- Always use `<cfqueryparam>`
-- Query results prefixed with `q` (e.g., `qUsers`)
-- Cache long-running queries with `cachedwithin`
-
-### Node.js / TypeScript
-- Use Zod for validation + type inference
-- Pino for structured logging with requestId
-- Follow hexagonal architecture (ports/adapters)
-- Add Zod validation for every public endpoint
-
-## REST API Conventions
-
-**Response format:**
-```json
-{
-  "success": true,
-  "data": { ... },
-  "meta": { "traceId": "abc123" }
-}
-```
-
-**Error format:**
-```json
-{
-  "success": false,
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "...",
-    "details": {}
-  }
-}
-```
-
-**Boolean naming:** Always use `is`/`has`/`can` prefix (`isActive`, `hasPermission`, `canRedeem`)
-
-**Date format:** ISO 8601 only (`2025-01-20T14:30:00Z`)
-
-**Filtering operators:** `_gt`, `_gte`, `_lt`, `_lte`, `_ne`, `_in`, `_between`
-
-**Sorting:** `sort=field` (asc), `sort=-field` (desc)
-
 ## Key Files Reference
 
 | File | Purpose |
 |------|---------|
-| `git/Techversant_Git_Workflow.md` | Full branching, commits, rollback, CI/CD governance |
+| `engineering-academy/README.md` | Engineering Academy overview |
+| `engineering-academy/02-quality-engineering/README.md` | QA/Automation learning paths |
 | `general/ai-era-coding-guidelines.md` | AI-assisted development principles |
-| `general/rest-api-best-practices.md` | API design, naming, error handling, filtering |
-| `php/php-coding-standards.md` | PHP/Laravel standards (PSR-12, security) |
-| `cf/coldfusion-style-guide.md` | CFML conventions (2-space indent, `q` prefix for queries) |
-| `nodejs/nodejs-typescript-best-practices.md` | Node.js service patterns (Zod, Pino, hexagonal) |
-| `ai/claude/claude-dev-cheatsheet.md` | Claude Code prompts, session controls, delegation levels |
-| `ai/prompts/developer_handbook_Full.md` | AI prompt templates for full development lifecycle |
+| `git/Techversant_Git_Workflow.md` | Full branching, commits, rollback, CI/CD |
 
 ## Editor Config
 

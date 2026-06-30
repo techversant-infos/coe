@@ -7,9 +7,9 @@
 
 ## How to read this document
 
-- ** covered in depth** the path explicitly teaches this with a mini-task and self-check
-- ** covered lightly** the path names the concept but does not have a full topic; pairs with a stack path or future version for the rest
-- ** not covered (with reason)** the path deliberately skips this; the reason is given so a reviewer can challenge the call
+- **Covered in depth** the path explicitly teaches this with a mini-task and self-check
+- **Covered lightly** the path names the concept but does not have a full topic; pairs with a stack path or future version for the rest
+- **Not covered (with reason)** the path deliberately skips this; the reason is given so a reviewer can challenge the call
 
 A reviewer should scan this table and ask: *does the depth match the CoE's automation engineering needs for 2026?*
 
@@ -21,25 +21,24 @@ The automation engineering landscape is broad. The major branches a Techversant 
 
 | Branch / topic | Status | Where / Why |
 |---|---|---|
-| **E2E Automation with Playwright** | | Phase 2-3 full coverage of Playwright fundamentals, locators, interactions, assertions |
-| **Locator Strategies** | | Phase 2, Topic 5 prioritization from test IDs to CSS/XPath fallback |
-| **Page Object Model** | | Phase 3, Topic 9 POM pattern with CoE standard application |
-| **Test Parameterization** | | Phase 3, Topic 10 data-driven testing, fixtures, env configs |
-| **API Automation** | | Phase 4 full coverage: request API, auth, data lifecycle, assertions |
-| **CI/CD Integration** | | Phase 5 GitHub Actions, parallel execution, artifact reporting |
-| **Performance Testing** | | Phase 6, Topic 21 Playwright performance profiling |
-| **Accessibility Testing** | | Phase 6, Topic 21 axe-core integration |
-| **Mobile Testing** | covered lightly | Playwright supports mobile emulation (`deviceScaleFactor`), but no dedicated topic. Pairs with the mobile-specific path for device-level testing. |
-| **Visual Regression** | covered lightly | Playwright supports screenshot comparison (`toHaveScreenshot()`), but no dedicated topic. Pairs with a future "visual regression" add-on if needed. |
-| **Contract Testing** | covered lightly | Referenced in passing via REST API testing (Phase 4), but no dedicated topic. Pairs with the API contract testing standards if the team adopts that. |
-| **Security Testing** | covered lightly | Mentioned in Phase 6 as "test what you protect" security testing is its own discipline. Pairs with the Security Audit Checklist. |
-| **Performance Profiling** | | Phase 6, Topic 21 CI thresholds, flaky detection |
-| **Test Reporting & Metrics** | | Phase 6, Topic 20 flaky rates, coverage segmentation |
-| **Mentoring & Leadership** | | Phase 6, Topic 22 career path documentation |
-| **Unit Testing for Test Logic** | deliberately skipped | Test logic (the assertions themselves) should be simple. If your test logic needs unit tests, the test is too complex. Refactor instead. |
-| **BDD/Gherkin Syntax** | deliberately skipped | Not the CoE standard. The CoE uses standard Playwright `test()` / `describe()` syntax. |
-| **Manual Testing Techniques** | deliberately skipped | This is a manual tester *on-ramping* path, not manual technique training. Pairs with the Dev Excellence curriculum for the testing mindset. |
-| **Specific Framework Alternatives** | deliberately skipped | This path teaches Playwright, the CoE standard. Cypress/Selenium/Puppeteer alternatives are not covered. |
+| **E2E Automation with Playwright** | Covered in depth | Phase 2-3 full coverage of Playwright fundamentals, locators, interactions, assertions |
+| **Locator Strategies** | Covered in depth | Phase 2, Topic 5 prioritization from test IDs to CSS/XPath fallback |
+| **Page Object Model** | Covered in depth | Phase 3, Topic 9 POM pattern with CoE standard application |
+| **Test Parameterization** | Covered in depth | Phase 3, Topic 10 data-driven testing, fixtures, env configs |
+| **API Automation** | Covered in depth | Phase 4 full coverage: request API, auth, data lifecycle, assertions |
+| **CI/CD Integration** | Covered in depth | Phase 5 GitHub Actions, parallel execution, artifact reporting |
+| **Performance Testing** | Covered lightly | Senior path covers lightweight performance awareness; dedicated load/performance tooling is not yet standardized |
+| **Accessibility Testing** | Covered lightly | Senior path covers axe-core checks; manual keyboard/screen-reader review needs deeper guidance |
+| **Mobile Testing** | Covered lightly | Playwright supports mobile emulation (`deviceScaleFactor`), but no dedicated topic. Pairs with the mobile-specific path for device-level testing. |
+| **Visual Regression** | Covered lightly | Playwright supports screenshot comparison (`toHaveScreenshot()`), but no dedicated topic. Pairs with a future "visual regression" add-on if needed. |
+| **Contract Testing** | Covered lightly | Referenced in passing via REST API testing, but no dedicated topic. Pairs with API contract testing standards if the team adopts that. |
+| **Security Testing** | Covered lightly | Security testing is its own discipline. Pairs with the Security Audit Checklist. |
+| **Test Reporting & Metrics** | Covered lightly | Senior path covers reports and flake tracking; dashboard templates are still missing |
+| **Mentoring & Leadership** | Covered in depth | Senior automation Phase 10 includes review, mentoring, standards, and team guidance |
+| **Unit Testing for Test Logic** | Not covered (with reason) | Test logic should be simple. If test assertions need unit tests, the test is too complex. Refactor instead. |
+| **BDD/Gherkin Syntax** | Not covered (with reason) | Not the CoE standard. The CoE uses standard Playwright `test()` / `describe()` syntax. |
+| **Manual Testing Techniques** | Covered separately | The manual testing baseline now covers exploratory testing, test design, bug reporting, regression, data, and release sign-off. |
+| **Specific Framework Alternatives** | Not covered (with reason) | This path teaches Playwright, the CoE standard. Cypress/Selenium/Puppeteer alternatives are not covered. |
 
 ---
 
@@ -67,8 +66,8 @@ These topics don't appear in this path. Listing the rationale for reviewer chall
 
 ## Reviewer questions
 
-1. For every ** covered lightly** row: *is the depth enough for our pilot batch, or does it block the transition from manual to automation?*
-2. For every ** not covered** row: *is the reason still valid in 2026?*
+1. For every **Covered lightly** row: *is the depth enough for our pilot batch, or does it block the transition from manual to automation?*
+2. For every **Not covered** row: *is the reason still valid in 2026?*
 3. Does the phase structure align with how your team on-boards manual testers?
 4. **Pre-full-team rollout:** the items in "Gaps that should probably be closed" can we land them in v0.2 before the full-team rollout?
 

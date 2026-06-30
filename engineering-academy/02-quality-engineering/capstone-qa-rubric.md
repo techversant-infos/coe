@@ -40,7 +40,7 @@ This rubric evaluates a QA engineer's capabilities against the academy's progres
 **Capstone Options:**
 1. Build and maintain Playwright automation for one feature area
 2. Create a test strategy for a major feature release
-3. Implement API testing with BDD approach for one service
+3. Implement Playwright API tests for one service, including positive and negative cases
 
 | Criteria | Proficient | Developing | Needs Growth |
 |---|---|---|---|
