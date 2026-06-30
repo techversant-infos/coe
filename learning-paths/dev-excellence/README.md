@@ -1,3 +1,5 @@
+> **Migration notice:** This folder is retained for compatibility during the academy migration. The canonical version now lives in [engineering-academy/](../engineering-academy/). Update your bookmarks.
+
 # Developer Excellence Curriculum — Folder Index
 
 > **Audience:** All developers across web, mobile, and backend teams. Tech-agnostic.
