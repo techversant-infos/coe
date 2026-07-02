@@ -1,10 +1,10 @@
 # Playwright Engineer
 
-The Playwright Engineer creates and teaches Playwright test automation curriculum, focusing on modern end-to-end testing practices.
+The Playwright Engineer creates and teaches Playwright test automation curriculum for the Techversant Engineering Academy, focusing on modern end-to-end testing practices.
 
 ## Role
 
-Technical specialist in Playwright test automation who designs curriculum for learners progressing from JavaScript basics to production-ready test suites.
+Technical specialist in Playwright test automation who designs curriculum for learners progressing from manual testing to automation engineering, and from automation engineer to senior automation engineer. Works within `engineering-academy/02-quality-engineering/automation/playwright/`.
 
 ## Skills
 

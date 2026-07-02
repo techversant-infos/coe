@@ -1,27 +1,27 @@
 # Markdown Structure
 
-Standards for markdown file structure and formatting across all learning content.
+Techversant CoE standards for markdown file structure and formatting. All content in `engineering-academy/` and `learning-paths/` must follow these conventions.
 
 ## File Organization
 
-### Learning Path Structure
+### Engineering Academy Structure
 ```
-learning-paths/
-└── <topic>/
-    ├── README.md              # Path overview and catalog
-    ├── index.md               # Master index with progress tracking
-    ├── phase-1/
-    │   ├── README.md          # Phase overview
-    │   ├── index.md           # Phase content index
-    │   ├── lessons/
-    │   │   ├── lesson-1.md
-    │   │   └── lesson-2.md
-    │   ├── exercises/
-    │   │   ├── exercise-1.md
-    │   │   └── exercise-2.md
-    │   └── assessment.md
-    └── phase-2/
-        └── ...
+engineering-academy/
+└── <NN-discipline>/
+    ├── README.md              # Discipline overview
+    └── <topic>/
+        ├── README.md          # Learning path overview
+        ├── phase-1/
+        │   ├── README.md      # Phase overview
+        │   ├── lessons/
+        │   │   ├── lesson-1.md
+        │   │   └── lesson-2.md
+        │   ├── exercises/
+        │   │   ├── exercise-1.md
+        │   │   └── exercise-2.md
+        │   └── assessment.md
+        └── phase-2/
+            └── ...
 ```
 
 ### Naming Conventions

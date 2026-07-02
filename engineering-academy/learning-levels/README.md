@@ -6,10 +6,10 @@ The Techversant Engineering Academy uses four levels to describe demonstrated co
 
 | Level | Description | Capability |
 |---|---|---|
-| [Foundation](./foundation.md) | Knows the concepts and can apply them with guidance | Works on well-defined tasks with review |
-| [Practitioner](./practitioner.md) | Can work independently on known problems | Owns features and makes standard decisions |
-| [Advanced](./advanced.md) | Can design solutions and lead technical delivery | Owns systems, mentors others, drives decisions |
-| [Expert](./expert.md) | Can mentor and define organizational standards | Sets direction, influences across teams |
+| [Foundation](./01-foundation.md) | Knows the concepts and can apply them with guidance | Works on well-defined tasks with review |
+| [Practitioner](./02-practitioner.md) | Can work independently on known problems | Owns features and makes standard decisions |
+| [Advanced](./03-advanced.md) | Can design solutions and lead technical delivery | Owns systems, mentors others, drives decisions |
+| [Expert](./04-expert.md) | Can mentor and define organizational standards | Sets direction, influences across teams |
 
 ## How to Use
 
@@ -21,10 +21,10 @@ The Techversant Engineering Academy uses four levels to describe demonstrated co
 
 ## Progression Paths
 
-- **Software Engineering:** Foundation → Practitioner → Advanced → Expert
-- **Quality Engineering:** Foundation → Practitioner → Advanced → Expert
-- **Platform Engineering:** Foundation → Practitioner → Advanced
-- **Architecture:** Practitioner → Advanced → Expert
-- **Engineering Leadership:** Advanced → Expert
+- **Software Engineering:** Foundation -> Practitioner -> Advanced -> Expert
+- **Quality Engineering:** Foundation -> Practitioner -> Advanced -> Expert
+- **Platform Engineering:** Foundation -> Practitioner -> Advanced
+- **Architecture:** Practitioner -> Advanced -> Expert
+- **Engineering Leadership:** Advanced -> Expert
 
-Each discipline has its own progression timeline. See [Career Progression](../career-progression/transition-overview.md) for transition guides.
+Each discipline has its own progression timeline. See [Career Progression](../career-progression/01-transition-overview.md) for transition guides.

@@ -20,24 +20,24 @@ The first priority is the Playwright automation path because it gives manual tes
 
 | Area | Path | Status |
 |---|---|---|
-| Manual testing | [Manual Testing](./manual-testing/README.md) | Baseline draft |
-| Automation | [Playwright Automation](./automation/playwright/README.md) | Pilot-ready draft |
-| Strategy | [Automation Strategy](./strategy/automation-strategy.md) | Draft |
-| Assessment | [QA Capstone Rubric](./capstone-qa-rubric.md) | Draft |
+| Manual testing | [Manual Testing](./01-manual-testing/README.md) | Baseline draft |
+| Automation | [Playwright Automation](./02-automation/playwright/README.md) | Pilot-ready draft |
+| Strategy | [Automation Strategy](./03-strategy/01-automation-strategy.md) | Draft |
+| Assessment | [QA Capstone Rubric](./04-capstone-qa-rubric.md) | Draft |
 
 ## Guidance Layers
 
 - [Learning Levels](../learning-levels/) - understand Foundation / Practitioner / Advanced / Expert
-- [Career Progression](../career-progression/transition-overview.md) - see your upgrade path
-- [Developer Excellence Curriculum](../00-engineering-foundations/dev-excellence/curriculum.md) - shared engineering discipline, testing fundamentals, and code review
-- [AI Assisted Testing](../06-ai-engineering/ai-assisted-testing/README.md) - planned AI support path for QA work
+- [Career Progression](../career-progression/01-transition-overview.md) - see your upgrade path
+- [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md) - shared engineering discipline, testing fundamentals, and code review
+- [AI Assisted Testing](../06-ai-engineering/02-ai-assisted-testing/README.md) - planned AI support path for QA work
 
 ## Recommended Order
 
 1. Manual testing fundamentals, if needed
-2. [Manual Tester to Automation Engineer](./automation/playwright/manual-to-automation.md)
-3. [Automation Engineer to Senior Automation Engineer](./automation/playwright/senior-automation.md)
-4. [Automation Strategy](./strategy/automation-strategy.md)
+2. [Manual Tester to Automation Engineer](./02-automation/playwright/01-manual-to-automation.md)
+3. [Automation Engineer to Senior Automation Engineer](./02-automation/playwright/02-senior-automation.md)
+4. [Automation Strategy](./03-strategy/01-automation-strategy.md)
 
 ## Coverage Map
 

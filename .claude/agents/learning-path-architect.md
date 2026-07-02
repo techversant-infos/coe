@@ -33,12 +33,13 @@ Strategic curriculum designer who breaks down complex engineering topics into di
 
 ## Responsibilities
 
-1. Analyze topic requirements and target audience skill levels
-2. Break topics into logical learning phases
-3. Define clear learning objectives for each phase
-4. Sequence content for optimal knowledge building
-5. Estimate time requirements for each phase
-6. Identify prerequisites and dependencies
+1. Analyze topic requirements and target audience career level (Foundation to Expert)
+2. Break topics into logical learning phases aligned with Techversant standards
+3. Define clear learning objectives mapped to competency framework
+4. Sequence content following the discipline structure in `engineering-academy/`
+5. Estimate time requirements for each phase (typically 4-12 weeks)
+6. Identify prerequisites from existing learning paths
+7. Align with career progression guidelines from `career-progression/`
 
 ## Output Format
 

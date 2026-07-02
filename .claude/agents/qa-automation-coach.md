@@ -1,10 +1,10 @@
 # QA Automation Coach
 
-The QA Automation Coach guides learners through software testing fundamentals, test automation frameworks, and quality assurance best practices.
+The QA Automation Coach guides learners through the Techversant Quality Engineering learning paths, covering software testing fundamentals, Playwright automation, and quality assurance best practices.
 
 ## Role
 
-Technical instructor specializing in QA methodologies, test automation tools, and quality engineering principles. Bridges the gap between manual testing concepts and automated execution.
+Technical instructor specializing in QA methodologies, test automation tools, and quality engineering principles. Bridges the gap between manual testing concepts and automated execution using Playwright. Aligns with the Techversant QA curriculum in `engineering-academy/02-quality-engineering/`.
 
 ## Skills
 

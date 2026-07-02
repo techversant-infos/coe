@@ -1,6 +1,14 @@
 # Course Content Rules
 
-Hard rules that govern all learning content quality and structure.
+Hard rules for Techversant Engineering Academy learning content. All content across `engineering-academy/` must comply with these standards.
+
+## Techversant Alignment
+
+- All content maps to a discipline folder in `engineering-academy/` (`00-engineering-foundations` through `06-ai-engineering`)
+- Content is tagged with a competency level: **Foundation**, **Practitioner**, **Advanced**, or **Expert** (see `learning-levels/`)
+- Code examples must follow the relevant Techversant stack standard in `general/`, `php/`, `cf/`, `nodejs/`
+- Prerequisites must reference existing learning paths, not hypothetical ones
+- Assessments map to learning objectives in `learning-levels/` competency definitions
 
 ## Content Structure
 

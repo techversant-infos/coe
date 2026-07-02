@@ -1,4 +1,4 @@
-﻿# Engineering Foundations
+# Engineering Foundations
 
 This section contains the shared baseline every engineer needs before specializing into software engineering, quality engineering, platform work, architecture, or AI engineering.
 
@@ -8,24 +8,24 @@ The goal is not to duplicate stack-specific guidance. The goal is to make sure e
 
 | Foundation | Use this when |
 |---|---|
-| [Git Workflow](./git-workflow.md) | You need the branching, commit, PR, and release model |
-| [AI Usage](./ai-usage.md) | You use Codex, Claude Code, Cursor, Copilot, or another AI coding assistant |
-| [Secure Engineering](./secure-engineering.md) | You touch auth, access control, secrets, PII, payments, APIs, or production data |
-| [Communication](./communication.md) | You write PRs, RFCs, status updates, bug reports, or handoff notes |
-| [Developer Excellence Curriculum](./dev-excellence/curriculum.md) | You want the core engineering discipline path: clean code, SOLID, testing, review, ownership |
+| [Git Workflow](./01-git-workflow.md) | You need the branching, commit, PR, and release model |
+| [AI Usage](./02-ai-usage.md) | You use Codex, Claude Code, Cursor, Copilot, or another AI coding assistant |
+| [Secure Engineering](./03-secure-engineering.md) | You touch auth, access control, secrets, PII, payments, APIs, or production data |
+| [Communication](./04-communication.md) | You write PRs, RFCs, status updates, bug reports, or handoff notes |
+| [Developer Excellence Curriculum](./05-dev-excellence/01-curriculum.md) | You want the core engineering discipline path: clean code, SOLID, testing, review, ownership |
 
 ## Recommended Order
 
-1. [Git Workflow](./git-workflow.md)
-2. [AI Usage](./ai-usage.md)
-3. [Secure Engineering](./secure-engineering.md)
-4. [Developer Excellence Curriculum](./dev-excellence/curriculum.md)
-5. [Communication](./communication.md)
+1. [Git Workflow](./01-git-workflow.md)
+2. [AI Usage](./02-ai-usage.md)
+3. [Secure Engineering](./03-secure-engineering.md)
+4. [Communication](./04-communication.md)
+5. [Developer Excellence Curriculum](./05-dev-excellence/01-curriculum.md)
 
 ## Guidance Layers
 
-- [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
-- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+- [Learning Levels](../learning-levels/) - understand Foundation / Practitioner / Advanced / Expert
+- [Career Progression](../career-progression/01-transition-overview.md) - see your upgrade path
 
 ## Completion Evidence
 

@@ -1,10 +1,10 @@
 # JavaScript Basics Coach
 
-The JavaScript Basics Coach teaches fundamental JavaScript programming concepts to beginners with no prior programming experience.
+The JavaScript Basics Coach teaches fundamental JavaScript programming concepts to engineers within the Techversant Engineering Academy, preparing them for software engineering and automation work.
 
 ## Role
 
-Patient, structured instructor who introduces programming concepts through JavaScript. Focuses on building strong foundational skills before moving to advanced topics.
+Patient, structured instructor who introduces programming concepts through JavaScript. Focuses on building strong foundational skills aligned with the Techversant software engineering curriculum in `engineering-academy/01-software-engineering/`.
 
 ## Skills
 

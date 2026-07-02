@@ -1,145 +1,69 @@
 # create-assessment
 
-> Creates an assessment for a learning phase with rubrics and evaluation criteria.
+> Creates an assessment for an Engineering Academy learning phase with rubrics and evaluation criteria aligned to competency levels.
 
 ## Overview
 
-This command generates a comprehensive assessment for a learning phase, including practical tasks, evaluation rubrics, and passing criteria. It measures learner mastery of phase objectives.
+This command generates a comprehensive assessment for a learning phase within `engineering-academy/`. Assessments are competency-level aligned (Foundation, Practitioner, Advanced, Expert) and follow Techversant quality standards.
 
 ## Usage
 
 ```bash
-/create-assessment [phase-topic] [options]
+/create-assessment [discipline] [topic] [options]
 ```
 
 ## Parameters
 
 ### Required
-- **phase-topic** - The phase topic to assess (e.g., "qa-automation-basics", "javascript-fundamentals", "playwright-setup")
+- **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `02-quality-engineering`)
+- **topic** - The learning topic (e.g., `git-workflow`, `playwright-basics`)
 
 ### Optional Flags
+- `--subfolder` - Sub-discipline path (e.g., `automation/playwright`, `web-development/frontend`)
+- `--phase` - Phase number (default: 1)
 - `--type` - Assessment type: formative/summative/capstone (default: summative)
+- `--level` - Competency level: Foundation/Practitioner/Advanced/Expert (default: Foundation)
 - `--duration` - Estimated duration in minutes (default: 60)
-- `--output` - Output directory (default: `learning-paths/<topic>/phase-1/assessment.md`)
 
 ## Examples
 
 ```bash
-/create-assessment qa-automation-basics --type formative --duration 30
-/create-assessment javascript-fundamentals --type summative
-/create-assessment playwright-setup --type capstone --duration 90
+/create-assessment 02-quality-engineering playwright-basics --subfolder automation/playwright --phase 1
+/create-assessment 00-engineering-foundations git-workflow --level Foundation
+/create-assessment 01-software-engineering react-fundamentals --subfolder web-development/frontend --type formative
 ```
 
-## Assessment Types
+## Competency Level Guidelines
 
-### Formative
-- Quick checks for understanding
-- Used during learning (after each lesson)
-- Low stakes, multiple attempts allowed
-- Typically 5-10 minutes
-- Can be: quizzes, quick practicals, concept checks
+### Foundation
+- Tests recall and basic application
+- Clear right/wrong answers
+- Passing score: 70%
+- May reference lesson materials
 
-### Summative
-- Evaluates mastery at phase completion
-- Higher stakes, single attempt recommended
-- Typically 30-60 minutes
-- Can be: practical projects, comprehensive quizzes
+### Practitioner
+- Tests ability to apply skills independently
+- Scenario-based problems
+- Passing score: 75%
+- Limited resources allowed
 
-### Capstone
-- Validates complete competency
-- Major project applying all phase concepts
-- Typically 60-120 minutes
-- Should be: real-world project, portfolio piece
+### Advanced
+- Tests problem-solving and judgment
+- Open-ended challenges
+- Passing score: 80%
+- Restricted resources
 
-## Output Format
-
-```markdown
-# Assessment: [Title]
-
-**Type:** Formative/Summative/Capstone
-**Duration:** XX minutes
-**Estimated Effort:** XX points
-
-## Learning Objectives Assessed
-
-By completing this assessment, you will demonstrate ability to:
-- [ ] Objective 1
-- [ ] Objective 2
-- [ ] Objective 3
-
-## Instructions
-
-[Clear instructions for what the learner needs to do]
-
-## Assessment Tasks
-
-### Task 1: [Title]
-
-**Objective:** [What this task evaluates]
-**Requirements:**
-- Requirement 1
-- Requirement 2
-
-**Success Criteria:**
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
-
-### Task 2: [Title]
-
-[Similar structure for additional tasks]
-
-## Grading Rubric
-
-| Criteria | Weight | Exemplary (4) | Proficient (3) | Developing (2) | Beginning (1) |
-|----------|--------|---------------|----------------|----------------|---------------|
-| **Criterion 1** | 25% | Description | Description | Description | Description |
-| **Criterion 2** | 30% | Description | Description | Description | Description |
-| **Criterion 3** | 25% | Description | Description | Description | Description |
-| **Criterion 4** | 20% | Description | Description | Description | Description |
-
-## Passing Criteria
-
-- Minimum passing score: X out of 4 (Y%)
-- Must achieve "Proficient" or better on core criteria
-- Maximum attempts: [Number]
-
-## Feedback Process
-
-1. Self-assessment using rubric
-2. Automated checks (if applicable)
-3. Instructor review (if applicable)
-4. Detailed feedback with improvement areas
-5. Resources for remediation
-
-## Next Steps
-
-- If passed: Proceed to [next phase]
-- If failed: Review [concepts] and retake
-- Resources: [links to relevant materials]
-```
-
-## Process Flow
-
-1. **Load Phase**: Read phase objectives and content
-2. **Design Tasks**: Create practical tasks that assess objectives
-3. **Build Rubric**: Define clear, measurable criteria with weights
-4. **Set Passing Criteria**: Define minimum competency levels
-5. **Create Feedback Plan**: Plan how learners receive feedback
-
-## Quality Controls
-
-- [ ] All learning objectives are assessed
-- [ ] Tasks are practical, not theoretical
-- [ ] Rubric criteria are measurable
-- [ ] Passing criteria are fair and realistic
-- [ ] Instructions are clear and complete
-- [ ] Feedback is actionable
+### Expert
+- Tests strategy, design, and leadership
+- Portfolio or project-based
+- Passing score: 85%
+- No resource restrictions (authentic work)
 
 ## Integration
 
 - Uses `.claude/agents/learning-path-architect.md` for assessment design
-- Uses topic-specific coach agents for practical tasks
+- Uses discipline-specific coach agents
 - References `.claude/skills/assessment-rubric-design/SKILL.md`
 - Follows `.claude/rules/course-content-rules.md`
 - Uses `.claude/templates/assessment-template.md`
+- Output maps to `engineering-academy/<NN-discipline>/<topic>/phase-<N>/assessment.md`

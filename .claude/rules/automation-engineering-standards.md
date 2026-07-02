@@ -1,6 +1,6 @@
 # Automation Engineering Standards
 
-Technical standards for automation engineering content, ensuring best practices and industry standards are taught consistently.
+Techversant CoE technical standards for automation engineering content. Covers test automation (Playwright), QA workflows, and coding practices taught within `engineering-academy/02-quality-engineering/`.
 
 ## Code Standards
 

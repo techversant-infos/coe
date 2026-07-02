@@ -1,6 +1,6 @@
 # Beginner-Friendly Writing
 
-Standards for writing content accessible to learners with zero or minimal prior knowledge.
+Standards for Techversant Engineering Academy learning content. Ensures all content is accessible to learners with zero or minimal prior knowledge across all competency levels.
 
 ## Core Principles
 

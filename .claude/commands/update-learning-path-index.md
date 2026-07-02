@@ -1,10 +1,10 @@
 # update-learning-path-index
 
-> Updates the master learning path index with all available phases and progress tracking.
+> Updates the Techversant Engineering Academy catalog with all available learning paths and progress tracking.
 
 ## Overview
 
-This command scans the learning-paths directory, aggregates all available learning phases, and generates a master index file that provides navigation and progress tracking across all learning paths.
+This command scans `engineering-academy/`, aggregates all learning paths across disciplines, and generates a master index file. It maps paths to competency levels (Foundation, Practitioner, Advanced, Expert) and tracks which career progression routes they support.
 
 ## Usage
 
@@ -16,16 +16,16 @@ This command scans the learning-paths directory, aggregates all available learni
 
 ### Optional Flags
 - `--force` - Force update even if no changes detected (default: false)
-- `--include-pending` - Include phases marked as work-in-progress (default: true)
-- `--output` - Output file (default: `learning-paths/index.md`)
-- `--generate-readme` - Also update learning-paths/README.md (default: false)
+- `--include-pending` - Include paths marked as work-in-progress (default: true)
+- `--output` - Output file (default: `engineering-academy/README.md`)
+- `--generate-discipline-readmes` - Also update discipline README files (default: false)
 
 ## Examples
 
 ```bash
 /update-learning-path-index
-/update-learning-path-index --generate-readme
-/update-learning-path-index --force --output learning-paths/catalog.md
+/update-learning-path-index --generate-discipline-readmes
+/update-learning-path-index --force
 ```
 
 ## Output Format
@@ -177,3 +177,6 @@ For issues with navigation, please run `/update-learning-path-index`.
 - Uses `.claude/agents/repo-maintainer.md` for maintenance logic
 - Follows `.claude/rules/markdown-structure.md`
 - Uses `.claude/templates/` for consistent formatting
+- Scans `engineering-academy/` directory
+- References `learning-levels/` for competency definitions
+- References `career-progression/` for career mapping

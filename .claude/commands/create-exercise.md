@@ -1,10 +1,10 @@
 # create-exercise
 
-> Creates a hands-on exercise for a specific concept or lesson.
+> Creates a hands-on exercise for a specific lesson within the Techversant Engineering Academy.
 
 ## Overview
 
-This command generates a complete exercise with step-by-step instructions, hints, and a solution. It creates practical learning activities that reinforce theoretical concepts.
+This command generates a complete exercise within the Engineering Academy structure. Exercises are linked to lessons within `engineering-academy/<NN-discipline>/<topic>/phase-N/exercises/`.
 
 ## Usage
 
@@ -15,23 +15,24 @@ This command generates a complete exercise with step-by-step instructions, hints
 ## Parameters
 
 ### Required
-- **concept** - The concept to practice (e.g., "css-selectors", "array-methods", "playwright-locators")
+- **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `02-quality-engineering`)
+- **concept** - The concept to practice (e.g., `git-commit-messages`, `playwright-locators`, `dev-excellence-review`)
 
 ### Optional Flags
+- `--subfolder` - Sub-discipline path (e.g., `automation/playwright`, `web-development/frontend`)
+- `--phase` - Phase number to attach exercise to (default: 1)
 - `--type` - Exercise type: code-completion/debugging/build-from-scratch/refactor/integration (default: code-completion)
-- `--topic` - Topic category: qa-automation/javascript-basics/playwright-engineering/custom (default: custom)
-- `--duration` - Estimated duration in minutes (default: 45)
-- `--difficulty` - Beginner/Intermediate/Advanced (default: Beginner)
-- `--lesson-ref` - Reference lesson (for linking)
-- `--output` - Output directory (default: `learning-paths/<topic>/exercises/`)
+- `--level` - Competency level: Foundation/Practitioner/Advanced/Expert (default: Foundation)
+- `--duration` - Estimated duration in minutes (default: 30)
+- `--lesson-ref` - Reference lesson number (for linking)
 
 ## Examples
 
 ```bash
-/create-exercise css-selectors --topic javascript-basics --duration 30 --difficulty beginner
-/create-exercise debug-failed-test --type debug --topic qa-automation --difficulty intermediate
-/create-exercise build-login-form --type build --topic javascript-basics --duration 60
-/create-exercise refactor-page-objects --type refactor --topic playwright-engineering
+/create-exercise 00-engineering-foundations git-commit-messages --duration 20
+/create-exercise 02-quality-engineering playwright-locators --subfolder automation/playwright --phase 1
+/create-exercise 00-engineering-foundations dev-excellence-review --level Practitioner
+/create-exercise 01-software-engineering refactor-components --subfolder web-development/frontend
 ```
 
 ## Exercise Types
@@ -129,9 +130,11 @@ Direct assistance without full solution
 
 ## Integration
 
-- Uses `.claude/agents/javascript-basics-coach.md` for JavaScript exercises
+- Uses `.claude/agents/javascript-basics-coach.md` for exercises
 - Uses `.claude/agents/qa-automation-coach.md` for QA exercises
 - Uses `.claude/agents/playwright-engineer.md` for Playwright exercises
 - References `.claude/skills/hands-on-assignment-design/SKILL.md`
 - Follows `.claude/rules/beginner-friendly-writing.md`
+- Follows `.claude/rules/automation-engineering-standards.md`
 - Uses `.claude/templates/exercise-template.md`
+- Output maps to `engineering-academy/<NN-discipline>/<topic>/phase-<N>/exercises/`
