@@ -41,14 +41,14 @@ This section should cover technical leadership and people leadership without con
 
 ## Temporary References
 
-- [Engineering Communication](../00-engineering-foundations/communication.md)
-- [Developer Excellence Curriculum - Code Review Excellence](../00-engineering-foundations/dev-excellence/curriculum.md#phase-6-code-review-excellence-advanced)
-- [Senior to Team Lead Progression](../career-progression/senior-to-team-lead.md)
+- [Engineering Communication](../00-engineering-foundations/04-communication.md)
+- [Developer Excellence Curriculum - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6-code-review-excellence-advanced)
+- [Senior to Team Lead Progression](../career-progression/03-senior-to-team-lead.md)
 
 ## Guidance Layers
 
 - [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
-- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+- [Career Progression](../career-progression/01-transition-overview.md) — see your upgrade path
 
 ## Status
 

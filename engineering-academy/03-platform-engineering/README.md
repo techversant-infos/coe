@@ -53,7 +53,7 @@ This section is not a replacement for project-specific runbooks. It should teach
 ## Guidance Layers
 
 - [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
-- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+- [Career Progression](../career-progression/01-transition-overview.md) — see your upgrade path
 
 ## Status
 

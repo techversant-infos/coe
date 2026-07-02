@@ -43,14 +43,14 @@ This path should stay practical: architecture decisions must connect to implemen
 
 ## Temporary References
 
-- [Developer Excellence Curriculum - Design Thinking](../00-engineering-foundations/dev-excellence/curriculum.md#phase-3-design-thinking-for-developers-intermediate-advanced)
+- [Developer Excellence Curriculum - Design Thinking](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-3-design-thinking-for-developers-intermediate-advanced)
 - [REST API Best Practices](../../general/rest-api-best-practices.md)
-- [Lead to Architect Progression](../career-progression/lead-to-architect.md)
+- [Lead to Architect Progression](../career-progression/04-lead-to-architect.md)
 
 ## Guidance Layers
 
 - [Learning Levels](../learning-levels/) — understand Foundation / Practitioner / Advanced / Expert
-- [Career Progression](../career-progression/transition-overview.md) — see your upgrade path
+- [Career Progression](../career-progression/01-transition-overview.md) — see your upgrade path
 
 ## Status
 
