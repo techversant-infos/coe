@@ -10,6 +10,16 @@ This is a **Center of Excellence (CoE) standards repository** for Techversant En
 - The **Engineering Academy** — structured learning paths for skill development
 - Career progression guidance and learning level definitions
 
+## .claude Kit Reference
+
+For AI-assisted learning content creation, see:
+- `.claude/README.md` - Quick start guide for learning content commands
+- `.claude/commands/` - 5 slash commands for creating and managing learning content
+- `.claude/agents/` - 6 specialized AI agents for different coaching roles
+- `.claude/skills/` - 6 reusable teaching methodologies
+- `.claude/rules/` - 4 content quality and writing standards
+- `.claude/templates/` - 5 standardized content templates
+
 ## Repository Structure
 
 ```

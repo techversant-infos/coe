@@ -4,6 +4,17 @@ The Techversant Engineering Academy organizes CoE learning into disciplines, sha
 
 Use this folder for learning paths and growth roadmaps. Use the repository root folders (`general/`, `git/`, `audit/`, `php/`, `nodejs/`, `cf/`, `ai/`) as source-of-truth standards and references.
 
+## AI-Assisted Content Creation
+
+The `.claude/` kit in the repository root provides AI agents and commands for creating and managing academy content:
+
+- **`.claude/README.md`** — Quick-start guide for learning content commands
+- **Commands** — `/create-learning-phase`, `/create-exercise`, `/create-assessment`, `/review-learning-phase`, `/update-learning-path-index`
+- **Agents** — Learning path architect, coaches (QA, JS, Playwright), curriculum reviewer, repo maintainer
+- **Skills & Rules** — Teaching methodologies and quality standards
+
+For the full kit guide, see [`.claude/README.md`](../../.claude/README.md).
+
 ## Structure
 
 ```text
