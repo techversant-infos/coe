@@ -1,0 +1,7 @@
+# Internal presentation materials - not for repository
+*.pptx
+*.key
+*.pdf
+*.mp4
+*.webm
+recordings/
