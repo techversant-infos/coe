@@ -6,7 +6,7 @@
 
 Presenting well is a multiplier for your technical expertise. This module covers presentation structure, delivery, and handling questions — skills that apply to every client engagement.
 
-> **Generic Foundation:** [General Communication Guide (planned)](../../../../general/communication/) — this module adds CF-specific content and practice scenarios.
+> **Generic Foundation:** Planned: General Communication Guide — this module adds CF-specific content and practice scenarios.
 
 ## Learning Objectives
 
@@ -151,9 +151,9 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 ## Resources
 
-- [General Communication Guide](../../../../general/communication/)
-- [Slide Templates](./resources/slide-templates.md)
-- [Architecture Diagram Examples](./resources/architecture-diagrams.md)
+- Planned: General Communication Guide
+- [Slide Templates](./resources/slide-templates.md) — (planned)
+- [Architecture Diagram Examples](./resources/architecture-diagrams.md) — (planned)
 
 ## Time Estimate
 

@@ -151,7 +151,7 @@ I am ready to contribute by: ________________________________
 - [Readiness Check](consulting-readiness-check.md)
 - [Client Communication Guide](../09-client-consulting/client-communication-guide.md)
 - [Capstone Practice](../capstone/README.md)
-- [Operating Model Reference](10-consulting-operating-model/README.md)
+- [Operating Model Reference](../10-consulting-operating-model/)
 
 ---
 

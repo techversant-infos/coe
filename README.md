@@ -22,11 +22,10 @@ This repository contains Techversant's engineering standards, learning paths, au
 | [nodejs](./nodejs/) | Node.js / TypeScript standards |
 | [cf](./cf/) | ColdFusion / CFML standards |
 | [ai](./ai/) | AI prompts, tools, and productivity material |
-| [learning-paths](./learning-paths/) | Legacy learning-path location retained during migration |
 
-## Current Academy Migration
+## Engineering Academy
 
-The academy structure now lives under [engineering-academy](./engineering-academy/README.md). Legacy `learning-paths/` folders are retained for compatibility until links and users fully migrate.
+The academy structure lives under [engineering-academy](./engineering-academy/README.md).
 
 See [engineering-academy/academy-todo.md](./engineering-academy/academy-todo.md) for migration gaps and next priorities.
 

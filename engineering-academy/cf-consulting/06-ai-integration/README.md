@@ -23,7 +23,7 @@
 
 AI integration is a high-value differentiator. This phase covers practical ways to add AI to legacy ColdFusion applications — from chatbots to document processing to code assistance.
 
-> **Generic Skills:** See [AI Documentation](../../ai/) for AI fundamentals, prompt engineering, and LLM integration patterns. This phase applies those patterns to ColdFusion contexts.
+> **Note:** AI fundamentals are covered in this module. External AI documentation available at Planned: `../../ai/`
 
 ## Learning Objectives
 
@@ -41,7 +41,7 @@ By the end of this phase, you will be able to:
 ## Prerequisites
 
 - [Phase 1: ColdFusion Deep Expertise](../01-coldfusion-deep-expertise/)
-- Basic understanding of [AI concepts](../../ai/)
+- Basic understanding of AI concepts (see Planned: AI fundamentals)
 
 ## Topics
 
@@ -158,7 +158,7 @@ Contribute to the [CF AI Integration Playbook](../DELIVERABLES/cf-ai-integration
 
 ## Resources
 
-- [AI Documentation](../../ai/)
+- Planned: AI fundamentals documentation
 - [Claude API Documentation](https://docs.anthropic.com/)
 - [OpenAI API Documentation](https://platform.openai.com/docs)
 - [RAG Patterns](https://arxiv.org/abs/2005.11401)

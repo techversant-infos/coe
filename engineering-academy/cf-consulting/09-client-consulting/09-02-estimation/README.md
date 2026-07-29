@@ -6,7 +6,7 @@
 
 Accurate estimates build trust. Inaccurate estimates destroy it. This module teaches developers to estimate ColdFusion modernization projects with appropriate confidence levels and risk buffers.
 
-> **Generic Foundation:** [General Estimation Guide (planned)](../../../../general/estimation/) — this module adds CF-specific complexity factors and benchmarks.
+> **Generic Foundation:** Planned: General Estimation Guide — this module adds CF-specific complexity factors and benchmarks.
 
 ## Learning Objectives
 
@@ -178,9 +178,9 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 ## Resources
 
-- [General Estimation Guide](../../../../general/estimation/)
-- [CF Estimation Benchmarks](./resources/cf-estimation-benchmarks.md)
-- [WBS Templates](../../../../general/estimation/wbs-guide.md)
+- Planned: General Estimation Guide
+- [CF Migration Benchmarks](../../DELIVERABLES/estimation-templates/cf-migration-benchmarks.md)
+- [WBS Template](../../DELIVERABLES/estimation-templates/wbs-template.md)
 
 ## Time Estimate
 

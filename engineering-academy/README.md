@@ -13,7 +13,7 @@ The `.claude/` kit in the repository root provides AI agents and commands for cr
 - **Agents** — Learning path architect, coaches (QA, JS, Playwright), curriculum reviewer, repo maintainer
 - **Skills & Rules** — Teaching methodologies and quality standards
 
-For the full kit guide, see [`.claude/README.md`](../../.claude/README.md) in the repository root.
+For the full kit guide, see [`.claude/README.md`](../.claude/README.md) in the repository root.
 
 ## Structure
 

@@ -6,7 +6,7 @@
 
 Every interaction with a client either builds or erodes trust. This module covers communication patterns that project competence, professionalism, and partnership.
 
-> **Generic Foundation:** [General Communication Guide (planned)](../../../../general/communication/) — this module adds CF-specific terminology and client scenarios.
+> **Generic Foundation:** Planned: General Communication Guide — this module adds CF-specific terminology and client scenarios.
 
 ## Learning Objectives
 
@@ -209,9 +209,9 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 ## Resources
 
-- [General Communication Guide](../../../../general/communication/)
-- [Client Email Templates](./resources/email-templates.md)
-- [Conversation Scripts](./resources/conversation-scripts.md)
+- Planned: General Communication Guide
+- [Client Communication Guide](../client-communication-guide.md) — practical guidance
+- Email and conversation templates — covered in exercises
 
 ## Time Estimate
 

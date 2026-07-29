@@ -41,7 +41,6 @@ coe/
 ├── nodejs/                        # Node.js/TypeScript standards
 ├── ai/                            # AI tools and prompt templates
 ├── audit/                         # Code audit checklists
-├── learning-paths/                # Additional learning content
 └── neural/                        # Neural/network patterns
 ```
 

@@ -28,7 +28,7 @@ Scaffolds a complete learning phase within `engineering-academy/<NN-discipline>/
 
 **Examples:**
 ```bash
-/create-learning-phase 02-quality-engineering playwright-basics --subfolder automation/playwright --level Foundation
+/create-learning-phase 02-quality-engineering playwright-basics --subfolder 02-automation/playwright --level Foundation
 /create-learning-phase 00-engineering-foundations git-workflow
 /create-learning-phase 01-software-engineering react-fundamentals --subfolder web-development/frontend --level Practitioner
 ```
@@ -61,7 +61,7 @@ Generates hands-on exercises for specific concepts within an academy discipline.
 **Examples:**
 ```bash
 /create-exercise 00-engineering-foundations git-merge --level Practitioner
-/create-exercise 02-quality-engineering playwright-locators --subfolder automation/playwright
+/create-exercise 02-quality-engineering playwright-locators --subfolder 02-automation/playwright
 /create-exercise 01-software-engineering react-state --subfolder web-development/frontend --phase 2
 ```
 
@@ -194,10 +194,10 @@ Standardized structures for consistent content:
 
 ```bash
 # 1. Create Phase 1
-/create-learning-phase 02-quality-engineering playwright-basics --subfolder automation/playwright --level Foundation
+/create-learning-phase 02-quality-engineering playwright-basics --subfolder 02-automation/playwright --level Foundation
 
 # 2. Add an exercise
-/create-exercise 02-quality-engineering playwright-locators --subfolder automation/playwright
+/create-exercise 02-quality-engineering playwright-locators --subfolder 02-automation/playwright
 
 # 3. Create assessment
 /create-assessment 02-quality-engineering playwright-basics --subfolder automation/playwright

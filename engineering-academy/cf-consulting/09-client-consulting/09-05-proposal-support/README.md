@@ -6,7 +6,7 @@
 
 Proposals are where technical expertise meets business value. This module teaches developers to contribute effective proposal content — scope, architecture, risks, timeline, and technical assumptions.
 
-> **Generic Foundation:** [General Proposals Guide (planned)](../../../../general/proposals/) — this module adds CF-specific proposal content and boilerplates.
+> **Generic Foundation:** Planned: General Proposals Guide — this module adds CF-specific proposal content and boilerplates.
 
 ## Learning Objectives
 
@@ -224,7 +224,7 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 ## Resources
 
-- [General Proposals Guide](../../../../general/proposals/)
+- Planned: General Proposals Guide
 - [Proposal Boilerplates](../../DELIVERABLES/proposal-boilerplates/)
 - [CF Estimation Templates](../../DELIVERABLES/estimation-templates/)
 

@@ -12,7 +12,7 @@ Using the boilerplates in `./DELIVERABLES/proposal-boilerplates/`, write a propo
 
 ## Exercise 2A: Fill in the Boilerplate
 
-Use [proposal-scopes.md](../../DELIVERABLES/proposal-boilerplates/proposal-scopes.md) as a template.
+Use [proposal-scopes.md](../../../DELIVERABLES/proposal-boilerplates/proposal-scopes.md) as a template.
 
 **For Summit Manufacturing:**
 - Company: Summit Manufacturing

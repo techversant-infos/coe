@@ -6,7 +6,7 @@
 
 Discovery is where trust is built and projects are won. This module teaches developers to lead structured discovery workshops that surface requirements, constraints, and opportunities.
 
-> **Generic Foundation:** [General Requirements Gathering (planned)](../../../../general/requirements/workshop-guide.md) — this module adds CF-specific questions and scenarios.
+> **Generic Foundation:** Planned: General Requirements Gathering — this module adds CF-specific questions and scenarios.
 
 ## Learning Objectives
 
@@ -119,9 +119,9 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 ## Resources
 
-- [General Workshop Guide](../../../../general/requirements/workshop-guide.md)
+- Planned: General Workshop Guide
 - [Discovery Workshop Questionnaire Template](../../DELIVERABLES/discovery-workshop-questionnaire.md)
-- [ColdFusion Discovery Questions Cheat Sheet](./resources/cf-discovery-questions.md)
+- ColdFusion Discovery Questions — covered in [capstone exercises](../capstone/exercises/)
 
 ## Time Estimate
 
