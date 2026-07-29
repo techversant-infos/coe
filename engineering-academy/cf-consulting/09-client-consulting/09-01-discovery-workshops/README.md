@@ -121,7 +121,7 @@ Complete all exercises and pass the module assessment with 70% or higher.
 
 - Planned: General Workshop Guide
 - [Discovery Workshop Questionnaire Template](../../DELIVERABLES/discovery-workshop-questionnaire.md)
-- ColdFusion Discovery Questions — covered in [capstone exercises](../capstone/exercises/)
+- ColdFusion Discovery Questions — covered in [capstone exercises](../../../capstone/exercises/)
 
 ## Time Estimate
 

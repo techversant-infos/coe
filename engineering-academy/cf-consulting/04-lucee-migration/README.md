@@ -39,7 +39,7 @@ By the end of this phase, you will be able to:
 
 - [Phase 1: ColdFusion Deep Expertise](../01-coldfusion-deep-expertise/)
 - [Phase 2: Legacy Assessment](../02-legacy-assessment/)
-- Understanding of [Lucee vs Adobe differences](../resources/lucee-vs-adobe.md)
+- Understanding of [Lucee vs Adobe differences](./resources/lucee-vs-adobe.md)
 
 ## Topics
 
