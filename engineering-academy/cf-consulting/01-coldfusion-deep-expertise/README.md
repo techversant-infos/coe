@@ -26,16 +26,16 @@ This phase builds deep technical expertise in ColdFusion — the foundation for 
 
 By the end of this phase, you will be able to:
 
-- [ ] Trace a CFML request from HTTP to response
-- [ ] Explain how ColdFusion interacts with the JVM
-- [ ] Configure and tune JVM settings for ColdFusion
-- [ ] Implement advanced caching strategies
-- [ ] Secure ColdFusion applications against common vulnerabilities
-- [ ] Optimize database interactions and connection pooling
-- [ ] Use built-in diagnostics and debugging tools
-- [ ] Configure session management for clustered environments
-- [ ] Implement REST APIs with proper error handling
-- [ ] Use cfthread for parallel processing safely
+- [ ] [Trace a CFML request from HTTP to response](./coldfusion-deep-expertise-guide.md#1-trace-a-cfml-request-from-http-to-response)
+- [ ] [Explain how ColdFusion interacts with the JVM](./coldfusion-deep-expertise-guide.md#2-explain-how-coldfusion-interacts-with-the-jvm)
+- [ ] [Configure and tune JVM settings for ColdFusion](./coldfusion-deep-expertise-guide.md#3-configure-and-tune-jvm-settings-for-coldfusion)
+- [ ] [Implement advanced caching strategies](./coldfusion-deep-expertise-guide.md#4-implement-advanced-caching-strategies)
+- [ ] [Secure ColdFusion applications against common vulnerabilities](./coldfusion-deep-expertise-guide.md#5-secure-coldfusion-applications-against-common-vulnerabilities)
+- [ ] [Optimize database interactions and connection pooling](./coldfusion-deep-expertise-guide.md#6-optimize-database-interactions-and-connection-pooling)
+- [ ] [Use built-in diagnostics and debugging tools](./coldfusion-deep-expertise-guide.md#7-use-built-in-diagnostics-and-debugging-tools)
+- [ ] [Configure session management for clustered environments](./coldfusion-deep-expertise-guide.md#8-configure-session-management-for-clustered-environments)
+- [ ] [Implement REST APIs with proper error handling](./coldfusion-deep-expertise-guide.md#9-implement-rest-apis-with-proper-error-handling)
+- [ ] [Use cfthread for parallel processing safely](./coldfusion-deep-expertise-guide.md#10-use-cfthread-for-parallel-processing-safely)
 
 ## Prerequisites
 

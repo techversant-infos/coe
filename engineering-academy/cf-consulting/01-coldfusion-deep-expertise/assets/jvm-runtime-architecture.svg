@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">LearnSphere request path from browser to operating system</title>
+  <desc id="desc">Six stacked layers show a browser request flowing through Apache, Tomcat, the ColdFusion engine, the JVM, and the operating system. Each layer lists its main responsibility.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#0f172a}.label{font:700 19px Arial,sans-serif;fill:#0f172a}.body{font:15px Arial,sans-serif;fill:#334155}.arrow{stroke:#334155;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1000" height="650" fill="#f8fafc"/>
+  <text x="500" y="42" text-anchor="middle" class="title">LearnSphere: Where a CFML Request Runs</text>
+  <g>
+    <rect x="180" y="70" width="640" height="62" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="205" y="97" class="label">Browser</text><text x="205" y="119" class="body">Sends HTTPS request; renders HTML or JSON response</text>
+    <line x1="500" y1="134" x2="500" y2="157" class="arrow"/>
+    <rect x="180" y="164" width="640" height="72" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="205" y="193" class="label">Apache HTTP Server</text><text x="205" y="217" class="body">TLS, static files, access logs, reverse proxy</text>
+    <line x1="500" y1="238" x2="500" y2="261" class="arrow"/>
+    <rect x="180" y="268" width="640" height="72" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+    <text x="205" y="297" class="label">Tomcat servlet container</text><text x="205" y="321" class="body">Hosts the ColdFusion Java web application and request threads</text>
+    <line x1="500" y1="342" x2="500" y2="365" class="arrow"/>
+    <rect x="180" y="372" width="640" height="72" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="205" y="401" class="label">ColdFusion engine</text><text x="205" y="425" class="body">Compiles CFML; manages scopes, datasources, caches, and services</text>
+    <line x1="500" y1="446" x2="500" y2="469" class="arrow"/>
+    <rect x="180" y="476" width="640" height="72" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="205" y="505" class="label">Java Virtual Machine (JVM)</text><text x="205" y="529" class="body">Executes bytecode; manages heap, GC, threads, classes, and JIT</text>
+    <line x1="500" y1="550" x2="500" y2="573" class="arrow"/>
+    <rect x="180" y="580" width="640" height="58" rx="12" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+    <text x="205" y="605" class="label">Operating system</text><text x="440" y="605" class="body">CPU, RAM, files, sockets, and scheduling</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">OWASP Top 10 2025 mapped to LearnSphere ColdFusion</title>
+  <desc id="desc">Ten cards list the OWASP Top 10 2025 categories with a short LearnSphere ColdFusion example for each risk.</desc>
+  <defs>
+    <style>.title{font:700 29px Arial,sans-serif;fill:#0f172a}.sub{font:15px Arial,sans-serif;fill:#475569}.code{font:700 17px Arial,sans-serif;fill:#fff}.head{font:700 17px Arial,sans-serif;fill:#0f172a}.body{font:14px Arial,sans-serif;fill:#334155}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.badge{fill:#2563eb}</style>
+  </defs>
+  <rect width="1200" height="760" fill="#f8fafc"/>
+  <text x="600" y="40" text-anchor="middle" class="title">OWASP Top 10:2025 — LearnSphere ColdFusion View</text>
+  <text x="600" y="66" text-anchor="middle" class="sub">The Top 10 is an awareness baseline; use threat modeling and verification for complete coverage.</text>
+  <g transform="translate(55 92)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A01</text><text x="84" y="37" class="head">Broken Access Control</text><text x="22" y="70" class="body">Learner changes a certificate ID; importer reaches an internal URL.</text><text x="22" y="91" class="body">Deny by default; enforce ownership server-side; constrain outbound access.</text>
+  </g>
+  <g transform="translate(625 92)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A02</text><text x="84" y="37" class="head">Security Misconfiguration</text><text x="22" y="70" class="body">Debug output, public CF Administrator, samples, or broad CORS.</text><text x="22" y="91" class="body">Harden every layer and verify configuration continuously.</text>
+  </g>
+  <g transform="translate(55 215)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A03</text><text x="84" y="37" class="head">Software Supply Chain Failures</text><text x="22" y="70" class="body">Unsupported CF/JDK, vulnerable JDBC driver, unverified build artifact.</text><text x="22" y="91" class="body">Inventory, verify, scan, patch, and monitor vendor advisories.</text>
+  </g>
+  <g transform="translate(625 215)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A04</text><text x="84" y="37" class="head">Cryptographic Failures</text><text x="22" y="70" class="body">Passwords use a fast hash; secrets are committed; TLS is optional.</text><text x="22" y="91" class="body">Use approved primitives, managed keys, TLS, and data classification.</text>
+  </g>
+  <g transform="translate(55 338)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A05</text><text x="84" y="37" class="head">Injection</text><text x="22" y="70" class="body">Course filters alter SQL, commands, LDAP, HTML, or expressions.</text><text x="22" y="91" class="body">Parameterize data; allow-list identifiers; encode for output context.</text>
+  </g>
+  <g transform="translate(625 338)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A06</text><text x="84" y="37" class="head">Insecure Design</text><text x="22" y="70" class="body">No abuse limits let bots mass-enroll or issue certificates.</text><text x="22" y="91" class="body">Threat-model workflows; enforce invariants, quotas, and safe defaults.</text>
+  </g>
+  <g transform="translate(55 461)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A07</text><text x="84" y="37" class="head">Authentication Failures</text><text x="22" y="70" class="body">Credential stuffing, weak recovery, session fixation, missing MFA.</text><text x="22" y="91" class="body">Use vetted identity controls, throttling, MFA, and session rotation.</text>
+  </g>
+  <g transform="translate(625 461)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A08</text><text x="84" y="37" class="head">Software or Data Integrity Failures</text><text x="22" y="70" class="body">Unsigned update, untrusted artifact, unsafe native deserialization.</text><text x="22" y="91" class="body">Verify provenance and integrity; validate untrusted structured data.</text>
+  </g>
+  <g transform="translate(55 584)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A09</text><text x="84" y="37" class="head">Security Logging and Alerting Failures</text><text x="22" y="70" class="body">Repeated access denials occur without useful logs or an alert.</text><text x="22" y="91" class="body">Record safe events, protect logs, detect patterns, rehearse response.</text>
+  </g>
+  <g transform="translate(625 584)">
+    <rect width="520" height="105" rx="12" class="card"/><rect x="16" y="16" width="54" height="30" rx="15" class="badge"/><text x="43" y="37" text-anchor="middle" class="code">A10</text><text x="84" y="37" class="head">Mishandling Exceptional Conditions</text><text x="22" y="70" class="body">A timeout exposes a stack trace or accidentally allows enrollment.</text><text x="22" y="91" class="body">Fail closed, centralize safe errors, bound resources, test failures.</text>
+  </g>
+  <text x="600" y="731" text-anchor="middle" class="sub">Source taxonomy: OWASP Top 10:2025</text>
+</svg>
