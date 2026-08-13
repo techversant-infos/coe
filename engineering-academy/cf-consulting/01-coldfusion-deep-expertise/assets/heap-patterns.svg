@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">Healthy and suspicious JVM heap patterns</title>
+  <desc id="desc">The healthy chart has repeated saw-tooth allocation and garbage collection returning to a stable baseline. The suspicious chart has a post-GC baseline that rises over time and requires retained-object investigation.</desc>
+  <defs><style>.title{font:700 27px Arial,sans-serif;fill:#0f172a}.head{font:700 20px Arial,sans-serif;fill:#0f172a}.body{font:14px Arial,sans-serif;fill:#334155}.axis{stroke:#64748b;stroke-width:2}.grid{stroke:#e2e8f0;stroke-width:1}.healthy{fill:none;stroke:#16a34a;stroke-width:5;stroke-linejoin:round}.suspect{fill:none;stroke:#dc2626;stroke-width:5;stroke-linejoin:round}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 7}</style></defs>
+  <rect width="1100" height="500" fill="#f8fafc"/>
+  <text x="550" y="42" text-anchor="middle" class="title">Reading JVM Heap Patterns</text>
+  <g transform="translate(55 80)">
+    <rect width="470" height="350" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="235" y="34" text-anchor="middle" class="head">Healthy allocation and reclamation</text>
+    <line x1="65" y1="65" x2="65" y2="285" class="axis"/><line x1="65" y1="285" x2="430" y2="285" class="axis"/>
+    <line x1="65" y1="230" x2="430" y2="230" class="grid"/><line x1="65" y1="175" x2="430" y2="175" class="grid"/><line x1="65" y1="120" x2="430" y2="120" class="grid"/>
+    <polyline points="65,255 135,105 140,245 230,90 235,250 325,100 330,247 425,88" class="healthy"/>
+    <line x1="65" y1="250" x2="430" y2="250" class="dash"/>
+    <text x="13" y="180" transform="rotate(-90 13 180)" class="body">Heap used</text><text x="250" y="315" class="body">Time</text>
+    <text x="235" y="340" text-anchor="middle" class="body">GC returns usage to a similar post-GC baseline.</text>
+  </g>
+  <g transform="translate(575 80)">
+    <rect width="470" height="350" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="235" y="34" text-anchor="middle" class="head">Suspicious rising post-GC baseline</text>
+    <line x1="65" y1="65" x2="65" y2="285" class="axis"/><line x1="65" y1="285" x2="430" y2="285" class="axis"/>
+    <line x1="65" y1="230" x2="430" y2="230" class="grid"/><line x1="65" y1="175" x2="430" y2="175" class="grid"/><line x1="65" y1="120" x2="430" y2="120" class="grid"/>
+    <polyline points="65,260 130,175 135,235 205,140 210,205 280,105 285,170 355,75 360,130 425,62" class="suspect"/>
+    <polyline points="65,260 135,235 210,205 285,170 360,130" class="dash" fill="none"/>
+    <text x="13" y="180" transform="rotate(-90 13 180)" class="body">Heap used</text><text x="250" y="315" class="body">Time</text>
+    <text x="235" y="340" text-anchor="middle" class="body">Investigate retained references; the graph alone is not proof.</text>
+  </g>
+</svg>
