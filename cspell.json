@@ -182,7 +182,9 @@
     "triaging",
     "parameterized",
     "parameterization",
-    "anonymization"
+    "anonymization",
+    "runtimes",
+    "signup"
   ],
   "ignorePaths": [
     "**/node_modules/**",
