@@ -48,7 +48,7 @@ Non-negotiable on every change. If you read nothing else on this page, read this
 ## A01:2025 — Broken Access Control
 
 Still the #1 risk. **SSRF now lives here**, not in A10.
-· [Reference §3](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §3](./security-audit-reference.md#3-a012025--broken-access-control) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 
 - [ ] **(B)** Every record fetched by ID is verified as belonging to the caller
@@ -61,21 +61,21 @@ Still the #1 risk. **SSRF now lives here**, not in A10.
 ## A02:2025 — Security Misconfiguration
 
 Up from #5 to #2. Give it more attention than you used to.
-· [Reference §4](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §4](./security-audit-reference.md#4-a022025--security-misconfiguration) · [OWASP](https://owasp.org/Top10/2025/)
 
 - [ ] **(B)** Debug mode off outside development
 - [ ] **(B)** Default credentials changed on every component
 - [ ] **(B)** No storage bucket, database, or cache publicly exposed
 - [ ] Admin consoles unreachable from the public internet
 - [ ] Security headers set — HSTS, CSP, `nosniff`, `Referrer-Policy`, `Permissions-Policy`
-      ([full table](./security-audit-reference.md))
+      ([full table](./security-audit-reference.md#42-security-headers))
 - [ ] CORS uses an explicit origin allowlist, never a wildcard on authenticated data
 
 ## A03:2025 — Software Supply Chain Failures
 
 New for 2025 and broader than the old "Vulnerable Components". **Dependency scanning alone no
 longer satisfies this** — how you build and ship is in scope.
-· [Reference §5](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §5](./security-audit-reference.md#5-a032025--software-supply-chain-failures) · [OWASP](https://owasp.org/Top10/2025/)
 
 - [ ] **(B)** No Critical CVE or KEV-listed dependency
 - [ ] **(B)** CI secrets in the platform secret store, never in workflow files
@@ -86,21 +86,23 @@ longer satisfies this** — how you build and ship is in scope.
 
 ## A04:2025 — Cryptographic Failures
 
-· [Reference §6](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §6](./security-audit-reference.md#6-a042025--cryptographic-failures) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 
 - [ ] **(B)** TLS 1.2 minimum, 1.3 preferred; certificate validation never disabled
 - [ ] **(B)** Confidential data encrypted at rest
-- [ ] **(B)** Passwords hashed with Argon2id, scrypt, or bcrypt (cost ≥ 12)
+- [ ] **(B)** Single-factor passwords at least 15 characters; 8 when inside MFA
+      ([NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html))
+- [ ] **(B)** Passwords hashed with Argon2id (preferred), scrypt, or bcrypt, with documented work factors
+      ([parameters](./security-audit-reference.md#64-password-and-credential-storage))
 - [ ] **(B)** Secret scanning in CI, covering git history — not just the working tree
 - [ ] Secrets in a managed store; a leaked secret is **revoked**, not just deleted
-- [ ] No forced password expiry — rotate on evidence of compromise
-      ([NIST 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html))
+- [ ] No forced password expiry and no composition rules — rotate on evidence of compromise
 
 ## A05:2025 — Injection
 
 Down from #3 to #5, but unchanged in what it demands of you.
-· [Reference §7](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §7](./security-audit-reference.md#7-a052025--injection) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)
 
 - [ ] **(B)** Queries parameterized — no concatenation, even for values you believe are safe
@@ -110,11 +112,11 @@ Down from #3 to #5, but unchanged in what it demands of you.
 - [ ] Framework auto-escaping left on; every bypass reviewed
 - [ ] Mass assignment prevented — request fields bound explicitly
 - [ ] Command, LDAP, XPath, template, XML, header, and log injection considered
-      ([context table](./security-audit-reference.md))
+      ([context table](./security-audit-reference.md#74-command-template-and-other-injection-contexts))
 
 ## A06:2025 — Insecure Design
 
-· [Reference §8](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §8](./security-audit-reference.md#8-a062025--insecure-design) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 
 - [ ] **(B)** Authentication endpoints rate-limited with lockout
@@ -126,7 +128,7 @@ Down from #3 to #5, but unchanged in what it demands of you.
 
 ## A07:2025 — Authentication Failures
 
-· [Reference §9](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §9](./security-audit-reference.md#9-a072025--authentication-failures) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
 
 - [ ] **(B)** MFA enforced for administrative and production access
@@ -141,7 +143,7 @@ Down from #3 to #5, but unchanged in what it demands of you.
 ## A08:2025 — Software or Data Integrity Failures
 
 Trusting untrusted code or data **at runtime** — narrower than A03.
-· [Reference §10](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §10](./security-audit-reference.md#10-a082025--software-or-data-integrity-failures) · [OWASP](https://owasp.org/Top10/2025/)
 
 - [ ] **(B)** Native deserialization never applied to untrusted input
 - [ ] **(B)** Inbound webhooks verify a signature, in constant time, with a replay window
@@ -153,7 +155,7 @@ Trusting untrusted code or data **at runtime** — narrower than A03.
 ## A09:2025 — Security Logging and Alerting Failures
 
 Renamed for 2025. **Producing logs is no longer enough — something must alert.**
-· [Reference §11](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §11](./security-audit-reference.md#11-a092025--security-logging-and-alerting-failures) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
 
 - [ ] **(B)** Authentication attempts and authorization failures logged
@@ -167,7 +169,7 @@ Renamed for 2025. **Producing logs is no longer enough — something must alert.
 ## A10:2025 — Mishandling of Exceptional Conditions
 
 **New for 2025.** Error handling is now a named security risk, not a code-quality nicety.
-· [Reference §12](./security-audit-reference.md) · [OWASP](https://owasp.org/Top10/2025/)
+· [Reference §12](./security-audit-reference.md#12-a102025--mishandling-of-exceptional-conditions) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html)
 
 - [ ] **(B)** Client-facing errors are generic — no stack traces, SQL, paths, or hostnames
@@ -186,12 +188,12 @@ Use the [full reference](./security-audit-reference.md) when your change touches
 
 | Area | Reference section |
 |---|---|
-| A public or partner API | [§13 API Security](./security-audit-reference.md) |
-| AI tooling, an LLM feature, or an agent | [§14 AI and LLM Security](./security-audit-reference.md) |
-| A mobile application | [§15 Mobile Application Security](./security-audit-reference.md) |
-| Personal data or GDPR obligations | [§16 Privacy and Data Protection](./security-audit-reference.md) |
-| Cloud, IaC, or container configuration | [§4.4–4.5 Cloud and Containers](./security-audit-reference.md) |
-| Multi-tenant data boundaries | [§3.3 Tenant Isolation](./security-audit-reference.md) |
+| A public or partner API | [§13 API Security](./security-audit-reference.md#13-api-security) |
+| AI tooling, an LLM feature, or an agent | [§14 AI and LLM Security](./security-audit-reference.md#14-ai-and-llm-security) |
+| A mobile application | [§15 Mobile Application Security](./security-audit-reference.md#15-mobile-application-security) |
+| Personal data or GDPR obligations | [§16 Privacy and Data Protection](./security-audit-reference.md#16-privacy-and-data-protection) |
+| Cloud, IaC, or container configuration | [§4.4–4.5 Cloud and Containers](./security-audit-reference.md#44-cloud-and-infrastructure-as-code) |
+| Multi-tenant data boundaries | [§3.3 Tenant Isolation](./security-audit-reference.md#33-multi-tenant-isolation) |
 
 ## Stop and escalate
 
@@ -205,11 +207,21 @@ and the Red Zone rules in [AI Era Coding Guidelines](../general/ai-era-coding-gu
 
 ## Reporting
 
-| Situation | Route |
+**This repository is public.** Route by *what* the finding is about, not by how urgent it feels.
+
+| What you found | Route |
 |---|---|
-| Active incident or live exploitation | Contact the Security Lead directly — do not file a public issue |
-| Non-urgent finding | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
-| Audit finding | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
+| A vulnerability in **any Techversant or client system** | **Security Lead, directly.** Never a GitHub issue |
+| An active incident or live exploitation | **Security Lead, immediately** |
+| A gap in **these standards documents** | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
+| An audit finding against a project | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
+
+When reporting privately, send no exploit detail, reproduction steps, hostnames, or customer data in
+any channel that is not known to be secure. The public templates above are safe for documentation
+gaps only.
+
+If you are unsure which row applies, treat it as the first row and ask the Security Lead. Over-reporting
+privately costs a message; under-reporting publicly cannot be undone.
 
 ---
 

@@ -380,16 +380,46 @@ Reference: [Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/c
 ### 6.4 Password and credential storage
 
 Reference: [Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
-· [NIST SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html)
+· [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html)
 
-- [ ] **(B)** Passwords hashed with Argon2id, scrypt, or bcrypt (cost ≥ 12). Never MD5, SHA-1, or plain SHA-256
+#### Length
+
+Length requirements depend on whether the password stands alone. Both are `SHALL` in
+[SP 800-63B-4 §3.1.1.2](https://pages.nist.gov/800-63-4/sp800-63b.html).
+
+| Use | Minimum |
+|---|---|
+| Password as the **only** authentication factor | **15 characters** |
+| Password as **one factor within MFA** | 8 characters |
+
+- [ ] **(B)** Single-factor passwords are at least 15 characters
+- [ ] Passwords inside an MFA flow are at least 8 characters
+- [ ] Maximum length permits at least 64 characters; long passphrases accepted
+- [ ] All printable ASCII plus space accepted; Unicode accepted, each code point counting as one character
+
+#### Hashing
+
+Naming an algorithm is not a strength claim — the work factor is what makes it strong. Record the
+parameters in use and review them annually.
+
+| Algorithm | Status | Minimum parameters |
+|---|---|---|
+| **Argon2id** | Preferred | 19 MiB memory, 2 iterations, 1 degree of parallelism (or stronger) |
+| **scrypt** | Acceptable | N = 2^17, r = 8, p = 1 (or stronger) |
+| **bcrypt** | Legacy only | cost ≥ 10; **pre-hash inputs over 72 bytes** — bcrypt silently truncates beyond that |
+
+- [ ] **(B)** Passwords hashed with Argon2id, scrypt, or bcrypt. Never MD5, SHA-1, or plain SHA-256
+- [ ] **(B)** Parameters meet or exceed the table above, and the values in use are documented
 - [ ] Per-user salt applied (handled automatically by the algorithms above)
-- [ ] Minimum length at least 12 characters; long passphrases accepted, with no low maximum length
+- [ ] Where bcrypt is retained, long inputs are pre-hashed so nothing is silently truncated
+- [ ] Hashing parameters reviewed annually against current guidance
+
+#### Policy
+
 - [ ] Passwords checked against a breached-password list
 - [ ] **No forced periodic password expiry** — current NIST guidance advises against it. Rotate on evidence of
       compromise instead. *(This reverses the v1.0 guidance in this document.)*
-- [ ] Composition rules not used as a substitute for length and breach checking
-- [ ] Hashing parameters reviewed annually against current guidance
+- [ ] **No composition rules** — SP 800-63B-4 makes this a `SHALL NOT`. Do not require character-type mixes
 
 ---
 
@@ -672,9 +702,8 @@ The 2025 addition. A log nobody reads is not a control.
 - [ ] Post-incident review conducted for every major incident, with actions tracked
 - [ ] A security contact is publicly discoverable for external reporters
       ([security.txt](https://securitytxt.org/))
-- [ ] Internal reporters know to use the
-      [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) for non-urgent concerns, and to
-      contact the Security Lead directly for active incidents
+- [ ] **(B)** Internal reporters know that vulnerabilities in Techversant or client systems go to the
+      Security Lead directly, never to a public tracker, regardless of severity (§18.4)
 
 ---
 
@@ -915,12 +944,18 @@ Severity uses [CVSS v4.0](https://www.first.org/cvss/v4-0/) as the base score, a
 
 ### 18.4 Reporting a vulnerability
 
-| Situation | Route |
+**This repository is public.** Route by *what* the finding is about, not by how urgent it feels.
+
+| What you found | Route |
 |---|---|
-| Active incident or live exploitation | Contact the Security Lead directly — do not file a public issue |
-| Non-urgent internal finding | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
-| Audit finding | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
+| A vulnerability in any Techversant or client system | **Security Lead, directly.** Never a GitHub issue |
+| An active incident or live exploitation | **Security Lead, immediately** |
+| A gap in these standards documents | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
+| An audit finding against a project | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
 | External reporter | Published security contact ([security.txt](https://securitytxt.org/)) |
+
+If unsure which row applies, treat it as the first and ask. Over-reporting privately costs a message;
+under-reporting publicly cannot be undone.
 
 ---
 
