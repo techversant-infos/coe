@@ -150,10 +150,16 @@ Audits trigger immediately when:
 
 ### 5.1 Severity Levels
 
-| Level | Definition | SLA |
+> **Scope: audit findings only** — process, quality and compliance deviations found during a CoE audit.
+> **Security vulnerabilities are not governed by this table.** Those use the CVSS-based deadlines in
+> [Security Audit Reference §18.2](./security-audit-reference.md#182-slas), which are authoritative for
+> vulnerabilities. A finding that is both an audit finding and a vulnerability takes the **stricter** of
+> the two.
+
+| Level | Definition | Remediation SLA |
 |-------|------------|-----|
-| **Critical** | Security breach risk, data leak, non-compliance | 24 hours |
-| **High** | Significant quality/security gap | 1 week |
+| **Critical** | Non-compliance with a mandatory control; audit blocker | 24 hours |
+| **High** | Significant process or quality gap | 1 week |
 | **Medium** | Process deviation, moderate risk | 2 weeks |
 | **Low** | Style deviation, documentation gap | Next sprint |
 
@@ -283,7 +289,10 @@ Open → In Progress → Resolved → (Audit Closed)
 
 ### 10.3 SLA Tracking
 
-| Severity | Target | Escalation at |
+Audit findings only — see the scope note in §5.1. Security vulnerabilities track against
+[Security Audit Reference §18.2](./security-audit-reference.md#182-slas).
+
+| Severity | Remediation target | Escalation at |
 |----------|--------|----------------|
 | Critical | 24 hours | 12 hours |
 | High | 1 week | 3 days |
