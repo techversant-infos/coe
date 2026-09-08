@@ -184,7 +184,8 @@
     "parameterization",
     "anonymization",
     "runtimes",
-    "signup"
+    "signup",
+    "Laravel"
   ],
   "ignorePaths": [
     "**/node_modules/**",

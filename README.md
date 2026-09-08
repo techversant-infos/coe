@@ -8,7 +8,8 @@ This repository contains Techversant's engineering standards, learning paths, au
 - [Git Workflow](./git/Techversant_Git_Workflow.md) - branching, commits, pull requests, releases, rollback
 - [AI Era Coding Guidelines](./general/ai-era-coding-guidelines.md) - AI delegation levels, Red Zone rules, two-layer review
 - [REST API Best Practices](./general/rest-api-best-practices.md) - API design, naming, error envelope, pagination, filtering
-- [Security Audit Checklist](./audit/security-audit-checklist.md) - secure engineering and audit review checklist
+- [CoE Security Checklist](./audit/security-audit-checklist.md) - OWASP Top 10:2025 checklist for every pull request
+- [CoE Security Audit Reference](./audit/security-audit-reference.md) - full control set for release reviews and audits
 
 ## Repository Areas
 
