@@ -1,11 +1,16 @@
 # CoE Security Checklist
 
-**Version:** 2.0
+**Status:** **DRAFT — not yet mandatory policy**
+**Version:** 2.0-draft
 **Issued by:** Techversant Center of Excellence (CoE)
-**Effective Date:** September 2026
 **Audience:** Every engineer, on every pull request
 **Next Review:** December 2026
 
+> **This is a draft circulated for review.** It becomes mandatory policy only on Security Lead
+> sign-off, at which point the status line above changes and an effective date is set. Until then,
+> treat it as strong guidance: follow it, and raise anything that looks wrong
+> ([how to report](#reporting)).
+>
 > The working security checklist for Techversant engineering. Structured against the
 > [OWASP Top 10:2025](https://owasp.org/Top10/2025/).
 >
@@ -51,11 +56,13 @@ Still the #1 risk. **SSRF now lives here**, not in A10.
 · [Reference §3](./security-audit-reference.md#3-a012025--broken-access-control) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 
-- [ ] **(B)** Every record fetched by ID is verified as belonging to the caller
+- [ ] **(B)** The caller is authorized for the requested **action on the requested resource**, including
+      tenant boundaries — ownership alone is the wrong test for shared, delegated, or admin access
 - [ ] **(B)** Deny by default — access needs an explicit grant, not the absence of a denial
 - [ ] **(B)** User-supplied URLs validated against an allowlist; cloud metadata endpoints blocked
 - [ ] Permissions checked, not role name strings
-- [ ] Unauthorized access to someone else's record returns `404`, not `403`
+- [ ] Denied access returns `403`; use `404` **only** where the existence of the resource is itself
+      confidential, such as across tenant boundaries. Apply one rule consistently per resource type
 - [ ] State-changing requests are CSRF-protected; cookies are `SameSite`
 
 ## A02:2025 — Security Misconfiguration
@@ -107,7 +114,9 @@ Down from #3 to #5, but unchanged in what it demands of you.
 
 - [ ] **(B)** Queries parameterized — no concatenation, even for values you believe are safe
 - [ ] **(B)** Output encoded for its context: HTML, attribute, JavaScript, URL, CSS
-- [ ] **(B)** File uploads validated by magic bytes, not extension or client MIME type
+- [ ] **(B)** File uploads validated by **both** an allowed-extension list **and** content inspection —
+      file signatures can be forged; client-supplied MIME type is never trusted
+      ([layers](./security-audit-reference.md#75-file-upload))
 - [ ] Dynamic identifiers (table, column, sort) resolved through an allowlist
 - [ ] Framework auto-escaping left on; every bypass reviewed
 - [ ] Mass assignment prevented — request fields bound explicitly
@@ -119,7 +128,10 @@ Down from #3 to #5, but unchanged in what it demands of you.
 · [Reference §8](./security-audit-reference.md#8-a062025--insecure-design) · [OWASP](https://owasp.org/Top10/2025/)
 · [Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 
-- [ ] **(B)** Authentication endpoints rate-limited with lockout
+- [ ] **(B)** Authentication endpoints throttled with progressive delays. Any lockout is **temporary
+      and self-clearing**, with a recovery path — a permanent lockout on failed attempts lets an
+      attacker lock out legitimate users
+      ([detail](./security-audit-reference.md#83-rate-limiting-and-quotas))
 - [ ] Abuse cases considered, not just use cases — "how would someone misuse this?"
 - [ ] Workflow steps enforced server-side; they cannot be skipped or replayed
 - [ ] Quantity, price, and discount validated server-side, including negative values
