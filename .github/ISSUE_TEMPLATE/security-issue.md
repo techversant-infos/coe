@@ -7,9 +7,18 @@ assignees: ''
 
 ---
 
-## ⚠️ Security Sensitivity
+## ⚠️ This repository is PUBLIC
 
-This template is for **non-urgent** security concerns. For **active incidents**, contact the Security Lead directly immediately — do not file a GitHub issue.
+Anything you type here is world-readable, permanently, including in the edit history if you delete it.
+
+**Use this template only for gaps in the CoE standards documents themselves** — a missing control, an
+out-of-date reference, a compliance gap in the guidance.
+
+**Do NOT use it to report a vulnerability in any Techversant or client system.** That includes
+production services, internal tools, and client codebases. Contact the Security Lead directly instead.
+No exploit details, no reproduction steps, no hostnames, no credentials, no customer data.
+
+For **active incidents**, contact the Security Lead directly and immediately — do not file a GitHub issue.
 
 ---
 
@@ -29,22 +38,24 @@ This template is for **non-urgent** security concerns. For **active incidents**,
 - [ ] Not assessed
 
 ## Description
-Describe the security issue.
+Describe the gap in the standards. Keep it general — no exploit detail, no reproduction steps.
 
-## Affected Area
-- Component/file:
-- Attack vector:
-- Potential impact:
+## Affected Standard
+- Document and section:
+- What the guidance says today:
+- Why it is wrong, missing, or out of date:
 
-## Steps to Reproduce
-If applicable, describe how to reproduce this issue.
+## Recommended Change
+What should the standard say instead? Link the authoritative source (OWASP, NIST, CWE, vendor advisory).
 
-## Recommended Fix
-What should be done to address this?
+## Does this describe a live vulnerability in a running system?
+- [ ] **No** — this is about the standards documents. Safe to discuss here.
+- [ ] **Yes** — **stop. Close this issue and contact the Security Lead directly.**
 
 ---
 
 **Reported by:**
 **Date:**
-**Confidential:** Yes
 **Security Lead notified:** ☐
+
+> This issue is public. It is not a confidential channel, and marking it so does not make it one.
