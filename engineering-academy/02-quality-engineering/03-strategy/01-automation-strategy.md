@@ -38,7 +38,7 @@ Keep manual when the test is exploratory, one-off, highly visual, or based on fa
 | Risk / question | Preferred layer | Notes |
 |---|---|---|
 | Pure business rule | Unit or service test | Fastest feedback; no browser required |
-| API contract, validation, status codes, error shape | API test | Pair with [REST API Best Practices](../../../general/rest-api-best-practices.md) |
+| API contract, validation, status codes, error shape | API test | Pair with [REST API Best Practices](../../../standards/general/rest-api-best-practices.md) |
 | Integration between services or adapters | Integration test | Use realistic dependencies where practical |
 | Critical user journey | UI E2E test | Keep count small; cover only release-critical journeys |
 | Layout, visual polish, exploratory usability | Manual review or visual regression | Automate screenshots only when the UI is stable |
@@ -114,5 +114,5 @@ Every automation plan should answer:
 
 - [Manual Tester to Automation Engineer](../02-automation/playwright/01-manual-to-automation.md)
 - [Automation Engineer to Senior Automation Engineer](../02-automation/playwright/02-senior-automation.md)
-- [REST API Best Practices](../../../general/rest-api-best-practices.md)
+- [REST API Best Practices](../../../standards/general/rest-api-best-practices.md)
 - [Security Audit Checklist](../../../audit/security-audit-checklist.md)

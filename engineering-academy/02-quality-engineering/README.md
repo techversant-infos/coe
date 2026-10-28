@@ -67,4 +67,4 @@ Prefer official documentation first, then use videos/courses to reinforce practi
 | Testing community | [Ministry of Testing YouTube](https://www.youtube.com/@MinistryofTesting), [Ministry of Testing](https://www.ministryoftesting.com/) |
 | Web accessibility | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/), [Deque axe-core Playwright](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/playwright) |
 | Performance basics | [web.dev Core Web Vitals](https://web.dev/vitals/), [Lighthouse docs](https://developer.chrome.com/docs/lighthouse/overview) |
-| API quality | [REST API Best Practices](../../general/rest-api-best-practices.md), [Google Testing Blog: Test Pyramid](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) |
+| API quality | [REST API Best Practices](../../standards/general/rest-api-best-practices.md), [Google Testing Blog: Test Pyramid](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) |

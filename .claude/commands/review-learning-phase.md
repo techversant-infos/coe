@@ -65,7 +65,7 @@ This command runs a comprehensive quality review of a learning phase within `eng
 ### 6. Techversant Standards
 - [ ] Code follows the relevant Techversant coding standards
 - [ ] Stack-specific conventions are applied correctly
-- [ ] REST API patterns follow `general/rest-api-best-practices.md`
+- [ ] REST API patterns follow `standards/general/rest-api-best-practices.md`
 
 ## Process Flow
 

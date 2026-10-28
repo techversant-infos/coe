@@ -47,7 +47,7 @@ When working through the Next.js path with AI assistance:
 - **HUMAN-LED:** designing the server/client boundary, picking the auth flow, code review
 - **NEVER DELEGATE:** auth code, session handling, anything touching tokens, security header config, production database work
 
-For the full model, see [general/ai-era-coding-guidelines.md](../../../../../general/ai-era-coding-guidelines.md).
+For the full model, see [standards/general/ai-era-coding-guidelines.md](../../../../../standards/general/ai-era-coding-guidelines.md).
 
 ---
 

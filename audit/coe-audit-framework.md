@@ -352,10 +352,10 @@ Maintain records per engineer:
 | Document | Purpose |
 |----------|---------|
 | `Techversant_Git_Workflow.md` | Branching, commits, PR process |
-| `general/ai-era-coding-guidelines.md` | AI-assisted development standards |
-| `cf/coldfusion-code-review-checklist.md` | CFML review checklist |
-| `nodejs/nodejs-typescript-code-review-checklist.md` | Node.js review checklist |
-| `general/rest-api-best-practices.md` | API standards |
+| `standards/general/ai-era-coding-guidelines.md` | AI-assisted development standards |
+| `standards/coldfusion/coldfusion-code-review-checklist.md` | CFML review checklist |
+| `standards/nodejs/nodejs-typescript-code-review-checklist.md` | Node.js review checklist |
+| `standards/general/rest-api-best-practices.md` | API standards |
 | `git/secrets.env` | (Template) Secret management |
 
 ---

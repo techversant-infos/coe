@@ -29,7 +29,7 @@ By the end of this 6-week plan, every developer on the team should be able to:
 5. Fetch data from a Laravel API, handle loading/error states, and render it in a list.
 6. Apply component composition patterns: lifting state, render props, compound components.
 7. Test components with React Testing Library, mock API calls with MSW.
-8. Ship a feature that passes a code review against our [Node.js TypeScript Code Review Checklist](../../../../../nodejs/nodejs-typescript-code-review-checklist.md).
+8. Ship a feature that passes a code review against our [Node.js TypeScript Code Review Checklist](../../../../../standards/nodejs/nodejs-typescript-code-review-checklist.md).
 
 > **Realistic scope:** ~30 hours is enough to build a working React frontend and contribute to supervised tickets. The confidence that comes from building things on the job in code review, on real tickets, pair programming is the rest of the journey.
 
@@ -74,7 +74,7 @@ The path assumes you have these technical basics. If not, spend 12 days topping 
 |---|---|---|
 | **JavaScript / ES6+** | `async/await`, modules, destructuring, `map/filter/reduce`, `fetch` API | javascript.info |
 | **TypeScript basics** | `interface`, `type`, generics enough to read Zod schemas and type props | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
-| **Git & PR workflow** | Branch, PR, rebase, resolve conflicts | [git/Techversant_Git_Workflow.md](../../../../../git/Techversant_Git_Workflow.md) |
+| **Git & PR workflow** | Branch, PR, rebase, resolve conflicts | [standards/git/git-workflow.md](../../../../../standards/git/git-workflow.md) |
 | **Node.js & npm/pnpm** | Install, run `npm run dev`, read `.env` | nodejs.dev/learn/getting-started |
 | **HTML & CSS** | Semantic HTML, Flexbox, Grid, responsive design | web.dev Learn CSS |
 | **API basics** | HTTP methods/status codes, JSON, auth headers/cookies | MDN HTTP overview |
@@ -324,7 +324,7 @@ Take the customer feature from Phase 5 and refactor it:
 
 ## Phase 7 Testing React Components
 
-**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../nodejs/nodejs-typescript-best-practices.md)) the React path extends it.
+**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md)) the React path extends it.
 
 **Learn:**
 - **Vitest** unit test runner (or Jest if a project predates it)
@@ -421,7 +421,7 @@ Take the customer feature and prepare it for production review:
 
 **Reading order:** official sources first they are the most current. Treat third-party content as supplements.
 
-> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
+> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
 
 | Level | Course | Why | Cost |
 |---|---|---|---|
@@ -510,16 +510,16 @@ There is **no first-party React certification** from Meta or the React team. Adj
 2. **Start on Monday.** Pick a phase. Work in pairs where the path says to pair.
 3. **Deliver on Friday.** The weekly deliverable is what gets reviewed. It can be small.
 4. **Open a PR for every deliverable.** Even tiny ones. The habit is the point.
-5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 7 especially), and *review* code but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
+5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../standards/general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 7 especially), and *review* code but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
 6. **Track progress.** Use a shared Notion/Kanban or a simple spreadsheet: one row per developer, one column per phase, check off self-checks as you go. Review in the team meeting each Friday.
 7. **Then move to Next.js.** This path feeds directly into [../02-nextjs/01-nextjs-learning-path.md](../02-nextjs/01-nextjs-learning-path.md). Once you've completed this path, the Next.js path will feel like a natural extension not a completely different world.
 8. **Feedback loop.** After Week 3 of the pilot, open a feedback PR against this doc with: what was too hard, what was skipped, what was missing, what should be cut. Revise for the full-team rollout.
 9. **Update this doc.** Broken link? Better course? Found a gap? PR it. This is a living document.
 10. **Cross-link with our existing standards:**
- - Code review: [nodejs-typescript-code-review-checklist.md](../../../../../nodejs/nodejs-typescript-code-review-checklist.md)
- - API design: [rest-api-best-practices.md](../../../../../general/rest-api-best-practices.md)
- - AI policy: [ai-era-coding-guidelines.md](../../../../../general/ai-era-coding-guidelines.md)
- - Git workflow: [git/Techversant_Git_Workflow.md](../../../../../git/Techversant_Git_Workflow.md)
+ - Code review: [nodejs-typescript-code-review-checklist.md](../../../../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
+ - API design: [rest-api-best-practices.md](../../../../../standards/general/rest-api-best-practices.md)
+ - AI policy: [ai-era-coding-guidelines.md](../../../../../standards/general/ai-era-coding-guidelines.md)
+ - Git workflow: [standards/git/git-workflow.md](../../../../../standards/git/git-workflow.md)
 
 ---
 
@@ -533,7 +533,7 @@ There is **no first-party React certification** from Meta or the React team. Adj
 | Review Cycle | Quarterly |
 | Status | Draft pilot batch |
 | Supersedes | v0.2 |
-| Related | [Next.js Learning Path](../02-nextjs/01-nextjs-learning-path.md), [Node.js TypeScript Best Practices](../../../../../nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../../../../general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../../../../general/ai-era-coding-guidelines.md) |
+| Related | [Next.js Learning Path](../02-nextjs/01-nextjs-learning-path.md), [Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md) |
 
 ---
 

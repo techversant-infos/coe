@@ -290,7 +290,7 @@ Reference: [Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/chea
 - [ ] Offboarding revokes all access within 24 hours, including tokens and SSH keys
 - [ ] Shared accounts eliminated, or justified with compensating controls and logged usage
 - [ ] Repository branch protection enforced per
-      [Techversant Git Workflow](../git/Techversant_Git_Workflow.md)
+      [Techversant Git Workflow](../standards/git/git-workflow.md)
 
 ---
 
@@ -537,7 +537,7 @@ Often missed because each individual request is technically valid.
 - [ ] Quantity, price, and discount fields validated server-side; negative and zero values considered
 - [ ] Time-of-check/time-of-use race conditions considered on balance, stock, and quota operations
 - [ ] Idempotency enforced on financially or legally significant writes
-      ([REST API Best Practices](../general/rest-api-best-practices.md))
+      ([REST API Best Practices](../standards/general/rest-api-best-practices.md))
 - [ ] Bulk or automated abuse considered (mass signup, scraping, enumeration, coupon farming)
 - [ ] Account enumeration prevented — login, registration, and reset responses do not reveal account existence
 
@@ -787,7 +787,7 @@ Reference: [Error Handling Cheat Sheet](https://cheatsheetseries.owasp.org/cheat
 Cross-cutting. Applies alongside sections 3 to 12.
 Reference: [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
 · [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-· CoE: [REST API Best Practices](../general/rest-api-best-practices.md)
+· CoE: [REST API Best Practices](../standards/general/rest-api-best-practices.md)
 
 ### 13.1 General API controls
 
@@ -821,7 +821,7 @@ This section is mandatory for any team using AI coding tools; §14.2 and §14.3 
 AI-backed feature.
 
 CoE references: [Neural Security Guidelines](../neural/neural-security-guidelines.md)
-· [AI Era Coding Guidelines](../general/ai-era-coding-guidelines.md)
+· [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md)
 · [AI Team Best Practices](../ai/ai-team-best-practices.md)
 External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
 · [LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html)
@@ -831,7 +831,7 @@ External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10
 - [ ] **(B)** No secrets, credentials, customer data, or PII pasted into AI prompts or tools
 - [ ] **(B)** AI-generated code covering authentication, authorization, cryptography, or personal data is
       reviewed by a senior engineer (Red Zone rule, per
-      [AI Era Coding Guidelines](../general/ai-era-coding-guidelines.md))
+      [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md))
 - [ ] AI usage disclosed on pull requests per the CoE standard
 - [ ] AI-suggested dependencies verified to exist and to be the intended package before installation
       (guards against hallucinated-package typosquatting)
@@ -1118,15 +1118,15 @@ Cache-Control: no-store          (on authenticated responses)
 | [CoE Security Checklist](./security-audit-checklist.md) | **The short version** — 231 lines, for pull-request and sprint review |
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, schedule, severity, evidence, exception process |
 | [Secure Engineering](../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level minimum bar and review triggers |
-| [AI Era Coding Guidelines](../general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
+| [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
 | [AI Team Best Practices](../ai/ai-team-best-practices.md) | Team-level AI working agreements |
 | [Neural Security Guidelines](../neural/neural-security-guidelines.md) | Model, training data, and inference security |
-| [REST API Best Practices](../general/rest-api-best-practices.md) | API contract, envelope, and error standards |
-| [PHP Coding Standards](../php/php-coding-standards.md) · [PHP Best Practices](../php/php-best-practices.md) | PHP security patterns |
-| [ColdFusion Style Guide](../cf/coldfusion-style-guide.md) · [CF Code Review Checklist](../cf/coldfusion-code-review-checklist.md) | CFML security practices |
+| [REST API Best Practices](../standards/general/rest-api-best-practices.md) | API contract, envelope, and error standards |
+| [PHP Coding Standards](../standards/php/php-coding-standards.md) · [PHP Best Practices](../standards/php/php-best-practices.md) | PHP security patterns |
+| [ColdFusion Style Guide](../standards/coldfusion/coldfusion-style-guide.md) · [CF Code Review Checklist](../standards/coldfusion/coldfusion-code-review-checklist.md) | CFML security practices |
 | [CF Security Review Checklist](../engineering-academy/cf-consulting/DELIVERABLES/cf-security-review-checklist.md) | ColdFusion engagement-level review |
-| [Node.js/TypeScript Best Practices](../nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
-| [Techversant Git Workflow](../git/Techversant_Git_Workflow.md) | Branch protection, review, and merge rules |
+| [Node.js/TypeScript Best Practices](../standards/nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
+| [Techversant Git Workflow](../standards/git/git-workflow.md) | Branch protection, review, and merge rules |
 | [Security Engineer skill](../ai/claude/skills/security-engineer/SKILL.md) | Threat modeling and secure review method |
 | [Compliance Auditor skill](../ai/claude/skills/compliance-auditor/SKILL.md) | Gap assessment and evidence collection method |
 | [Contributing](../CONTRIBUTING.md) | How to propose a change to this document |

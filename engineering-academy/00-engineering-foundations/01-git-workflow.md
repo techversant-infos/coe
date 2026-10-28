@@ -3,7 +3,7 @@
 **Level:** Foundation
 **Next:** [AI Usage](./02-ai-usage.md)
 
-The source of truth is [Techversant Git Workflow](../../git/Techversant_Git_Workflow.md).
+The source of truth is [Techversant Git Workflow](../../standards/git/git-workflow.md).
 
 Use it for:
 

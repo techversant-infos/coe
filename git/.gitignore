@@ -1,7 +1,0 @@
-# Ignore logs, env, and cache
-*.log
-.env
-.env.*
-__pycache__/
-node_modules/
-.nocommit

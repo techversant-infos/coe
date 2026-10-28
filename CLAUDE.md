@@ -112,8 +112,8 @@ Learning paths live in `engineering-academy/` organized by discipline:
 |------|---------|
 | `engineering-academy/README.md` | Engineering Academy overview |
 | `engineering-academy/02-quality-engineering/README.md` | QA/Automation learning paths |
-| `general/ai-era-coding-guidelines.md` | AI-assisted development principles |
-| `git/Techversant_Git_Workflow.md` | Full branching, commits, rollback, CI/CD |
+| `standards/general/ai-era-coding-guidelines.md` | AI-assisted development principles |
+| `standards/git/git-workflow.md` | Full branching, commits, rollback, CI/CD |
 
 ## Editor Config
 

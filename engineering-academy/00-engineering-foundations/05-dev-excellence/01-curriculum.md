@@ -219,7 +219,7 @@ Find a piece of code in your codebase that you suspect is *over-abstracted* a he
 - Logging basics what to log:
  - **Always:** the operation that failed, a stable identifier (requestId, userId, resourceId), the time
  - **Never:** passwords, tokens, PII, full credit-card numbers
- - Use structured logging (the team's standard see [REST API Best Practices](../../../general/rest-api-best-practices.md))
+ - Use structured logging (the team's standard see [REST API Best Practices](../../../standards/general/rest-api-best-practices.md))
 
 **Code-review focus:**
 - "If this fails in production at 2am, will the on-call engineer know what happened?"
@@ -468,7 +468,7 @@ Find a class in your codebase that's anemic (just getters/setters, business rule
 
 #### 12. RESTful API Design Principles
 
-**Why this topic exists:** The API is the *contract* with the world. Once it's published, changing it breaks consumers. This topic gives the developer the design vocabulary, paired with the [REST API Best Practices](../../../general/rest-api-best-practices.md) CoE standard.
+**Why this topic exists:** The API is the *contract* with the world. Once it's published, changing it breaks consumers. This topic gives the developer the design vocabulary, paired with the [REST API Best Practices](../../../standards/general/rest-api-best-practices.md) CoE standard.
 
 **Learn:**
 - Resource-oriented URLs `/orders/1234`, not `/getOrder?id=1234`. Nouns, not verbs.
@@ -519,7 +519,7 @@ Pick one API in your codebase. Review it for the five points above. Open a doc P
  - Don't re-validate at every layer; that's wasted work. Validate *at the boundary*.
 - Data sanitization:
  - HTML escaping for any user content rendered in a browser
- - Parameterized queries for any database access (no string concatenation see the [PHP standards](../../../php/php-coding-standards.md) and the [Node.js standards](../../../nodejs/nodejs-typescript-best-practices.md))
+ - Parameterized queries for any database access (no string concatenation see the [PHP standards](../../../standards/php/php-coding-standards.md) and the [Node.js standards](../../../standards/nodejs/nodejs-typescript-best-practices.md))
  - Output encoding at the rendering layer
 
 **Code-review focus:**
@@ -739,9 +739,9 @@ For every PR, the reviewer checks:
 
 The stack-specific checklists layer on top of this baseline:
 
-- [Node.js checklist](../../../nodejs/nodejs-typescript-code-review-checklist.md)
-- [PHP / Laravel checklist](../../../php/php-coding-standards.md)
-- [CFML checklist](../../../cf/coldfusion-code-review-checklist.md)
+- [Node.js checklist](../../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
+- [PHP / Laravel checklist](../../../standards/php/php-coding-standards.md)
+- [CFML checklist](../../../standards/coldfusion/coldfusion-code-review-checklist.md)
 
 **How to use it:**
 
@@ -803,7 +803,7 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 
 **Topics (self-paced + pair with a tech lead):**
 
-- **Architectural Decision Records (ADRs)** write 3 ADRs for real decisions in your codebase. Use the format from the [Techversant Git Workflow](../../../git/Techversant_Git_Workflow.md). Pair with a tech lead for review.
+- **Architectural Decision Records (ADRs)** write 3 ADRs for real decisions in your codebase. Use the format from the [Techversant Git Workflow](../../../standards/git/git-workflow.md). Pair with a tech lead for review.
 - **Designing for scale** read the team's architecture docs; identify one decision that limits scale and one that doesn't. Write a 1-page note.
 - **Backward compatibility** pick a public API in your codebase; document the contract; identify what would break a consumer. Propose a versioning strategy.
 - **Risk-based decision making** for a real upcoming decision, write down: the options, the risks, the mitigations, the reversibility. Discuss with a tech lead.
@@ -829,12 +829,12 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 
 ### CoE documents to pair with this curriculum
 
-- [REST API Best Practices](../../../general/rest-api-best-practices.md) for Phase 4
-- [AI Era Coding Guidelines](../../../general/ai-era-coding-guidelines.md) for Phase 6 (the two-layer review model)
+- [REST API Best Practices](../../../standards/general/rest-api-best-practices.md) for Phase 4
+- [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelines.md) for Phase 6 (the two-layer review model)
 - [Security Audit Checklist](../../../audit/security-audit-checklist.md) for the security row in the standardized checklist (Phase 6, Topic 19)
-- [Techversant Git Workflow](../../../git/Techversant_Git_Workflow.md) for the ADR format (Phase 7)
-- [Node.js Code Review Checklist](../../../nodejs/nodejs-typescript-code-review-checklist.md) stack-specific, for the Node.js team
-- [PHP Coding Standards](../../../php/php-coding-standards.md) stack-specific, for the Laravel team
+- [Techversant Git Workflow](../../../standards/git/git-workflow.md) for the ADR format (Phase 7)
+- [Node.js Code Review Checklist](../../../standards/nodejs/nodejs-typescript-code-review-checklist.md) stack-specific, for the Node.js team
+- [PHP Coding Standards](../../../standards/php/php-coding-standards.md) stack-specific, for the Laravel team
 
 ---
 

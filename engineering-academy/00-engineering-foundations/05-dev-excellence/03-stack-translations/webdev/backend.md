@@ -2,7 +2,7 @@
 
 > **Audience:** Developers working on a **backend** codebase.
 > **Purpose:** Companion to the universal [Developer Excellence Curriculum](../../01-curriculum.md). For each of the 20 topics: *what changes in your stack, and what does the mini-task look like?*
-> **Read alongside:** [01-curriculum.md](../../01-curriculum.md) (the universal master) + your team's stack-specific code-review checklist + the [REST API Best Practices](../../../../../general/rest-api-best-practices.md) CoE standard.
+> **Read alongside:** [01-curriculum.md](../../01-curriculum.md) (the universal master) + your team's stack-specific code-review checklist + the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) CoE standard.
 > **Status:** Draft for pilot-batch review v0.3.
 
 ---
@@ -55,7 +55,7 @@ Find a piece of backend code you suspect is *over-abstracted* a helper with only
 **What changes in this stack:** Two error surfaces the *user* (a friendly API response) and the *developer* (a structured log line with request id, operation, cause). Backend-specific: "fail fast" often means wrap the operation in a transaction so you never half-write to the database. Distinguish offline from server errors in the log (different on-call actions).
 
 **Mini-task variant:**
-Pick one error path in your service. Verify it: (1) fails fast at the cause, (2) returns a user-friendly error response per the [REST API Best Practices](../../../../../general/rest-api-best-practices.md) error envelope, (3) logs enough context for the on-call engineer, (4) does NOT log PII, tokens, or secrets. Fix any of the four that are missing. Commit `refactor(clean-code-4): error-handling`.
+Pick one error path in your service. Verify it: (1) fails fast at the cause, (2) returns a user-friendly error response per the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) error envelope, (3) logs enough context for the on-call engineer, (4) does NOT log PII, tokens, or secrets. Fix any of the four that are missing. Commit `refactor(clean-code-4): error-handling`.
 
 **Watch:** Search YouTube for "structured logging backend production" pick a 1015 min video.
 
@@ -140,7 +140,7 @@ Find a class in your backend that's anemic (just getters/setters, business rules
 
 ## Topic 12 RESTful API Design Principles
 
-**What changes in this stack:** A backend dev *designs* the API (or consumes an external one). The discipline: be predictable, use the right HTTP methods and status codes, support idempotency for retried POSTs, paginate and filter consistently, version deliberately. The master cites the [REST API Best Practices](../../../../../general/rest-api-best-practices.md) that's the source of truth for our internal APIs.
+**What changes in this stack:** A backend dev *designs* the API (or consumes an external one). The discipline: be predictable, use the right HTTP methods and status codes, support idempotency for retried POSTs, paginate and filter consistently, version deliberately. The master cites the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) that's the source of truth for our internal APIs.
 
 **Mini-task variant:**
 Pick one API endpoint you own. Review it for the five points in the master (predictability, methods/status codes, idempotency, pagination/filtering/sort, versioning). Open a doc PR (`docs(api-review): <endpoint>`) that lists each gap. Coordinate with consumers before changing the contract.
@@ -217,7 +217,7 @@ Review 5 PRs in the next week. For each PR, write at least one question (not a c
 
 ## Topic 19 Code Review Checklist (Standardized)
 
-**What changes in this stack:** The master's 9-point checklist applies, with backend-specific rows: **Database access** (parameterized queries, no N+1, proper indexing), **API contract** (the [REST API Best Practices](../../../../../general/rest-api-best-practices.md) standards), **Auth/AuthZ** (the right user is doing the right action see the [Security Audit Checklist](../../../../../audit/security-audit-checklist.md)). Use your framework's static analysis tool (PHPStan, ESLint, etc.) in CI to catch the easy stuff automatically.
+**What changes in this stack:** The master's 9-point checklist applies, with backend-specific rows: **Database access** (parameterized queries, no N+1, proper indexing), **API contract** (the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) standards), **Auth/AuthZ** (the right user is doing the right action see the [Security Audit Checklist](../../../../../audit/security-audit-checklist.md)). Use your framework's static analysis tool (PHPStan, ESLint, etc.) in CI to catch the easy stuff automatically.
 
 **Mini-task variant:**
 Pick 3 of your open PRs. Self-review them against the 9-point master checklist + the database / API / auth rows. Open follow-up PRs for any gap. Reflect: which points did you consistently miss?
@@ -257,4 +257,4 @@ Write one ADR for a real backend architecture decision in your codebase. Use the
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft for pilot-batch review |
-| Related | [01-curriculum.md](../../01-curriculum.md), [frontend.md](./frontend.md), [mobile stacks](../mobile/stacks.md), [REST API Best Practices](../../../../../general/rest-api-best-practices.md), [Security Audit Checklist](../../../../../audit/security-audit-checklist.md) |
+| Related | [01-curriculum.md](../../01-curriculum.md), [frontend.md](./frontend.md), [mobile stacks](../mobile/stacks.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [Security Audit Checklist](../../../../../audit/security-audit-checklist.md) |

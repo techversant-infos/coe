@@ -99,12 +99,12 @@ These standards apply to all code in this repository:
 
 | File | Purpose |
 |------|---------|
-| `git/Techversant_Git_Workflow.md` | Full branching, commits, rollback, CI/CD governance |
-| `general/ai-era-coding-guidelines.md` | AI-assisted development principles |
-| `general/rest-api-best-practices.md` | API design, naming, error handling, filtering |
-| `php/php-coding-standards.md` | PHP/Laravel standards (PSR-12, security) |
-| `cf/coldfusion-style-guide.md` | CFML conventions (2-space indent, `q` prefix for queries) |
-| `nodejs/nodejs-typescript-best-practices.md` | Node.js service patterns (Zod, Pino, hexagonal) |
+| `standards/git/git-workflow.md` | Full branching, commits, rollback, CI/CD governance |
+| `standards/general/ai-era-coding-guidelines.md` | AI-assisted development principles |
+| `standards/general/rest-api-best-practices.md` | API design, naming, error handling, filtering |
+| `standards/php/php-coding-standards.md` | PHP/Laravel standards (PSR-12, security) |
+| `standards/coldfusion/coldfusion-style-guide.md` | CFML conventions (2-space indent, `q` prefix for queries) |
+| `standards/nodejs/nodejs-typescript-best-practices.md` | Node.js service patterns (Zod, Pino, hexagonal) |
 | `ai/Codex/Codex-dev-cheatsheet.md` | Codex prompts, session controls, delegation levels |
 | `ai/prompts/developer_handbook_Full.md` | AI prompt templates for full development lifecycle |
 

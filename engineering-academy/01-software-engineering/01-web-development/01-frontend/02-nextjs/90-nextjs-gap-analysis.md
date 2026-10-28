@@ -54,7 +54,7 @@ The Next.js ecosystem is smaller and more focused than the React one. The major 
 | **Security headers** (CSP, HSTS, X-Frame-Options, Referrer-Policy) | covered | [Phase 10](./01-nextjs-learning-path.md#phase-10-production-readiness) apply via `next.config.js` `headers()` function, not middleware |
 | **Rate limiting** | partial | [Phase 10](./01-nextjs-learning-path.md#phase-10-production-readiness) "typically at the Laravel API layer." Correct we don't want to reinvent this in Next.js. |
 | **CI/CD** (lint typecheck test build preview promote) | covered | [Phase 10](./01-nextjs-learning-path.md#phase-10-production-readiness) + the GitHub Actions mini task |
-| **GraphQL / Apollo / tRPC** | not covered | **Deliberately omitted** we standardize on **REST + Laravel** per the [REST API Best Practices](../../../../../general/rest-api-best-practices.md) CoE standard. Revisit only if a product requires it. |
+| **GraphQL / Apollo / tRPC** | not covered | **Deliberately omitted** we standardize on **REST + Laravel** per the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) CoE standard. Revisit only if a product requires it. |
 | **CMS / headless content** (Sanity, Contentful, Payload) | not covered | Out of scope our products are Laravel-backed, not content-driven. Revisit if a marketing site needs it. |
 | **E-commerce** (Shopify, Stripe Checkout, Medusa) | not covered | Out of scope. Payment + checkout is Red Zone. |
 | **Real-time / WebSockets** (Pusher, Ably, `socket.io`, Next.js `after()`) | not covered | Out of scope. **GAP to add: a one-liner in Phase 5** "If a product needs real-time, escalate to a tech lead. `after()` for post-response work, Pusher/Ably for fan-out. Don't roll your own." |

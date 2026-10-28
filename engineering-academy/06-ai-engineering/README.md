@@ -38,6 +38,6 @@ AI is referenced from every discipline, but it also needs its own space because 
 
 ## Source Standards
 
-- [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md)
+- [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
 - [AI Team Best Practices](../../ai/ai-team-best-practices.md)
 - [Prompt Library](../../ai/prompts/developer_handbook_Full.md)

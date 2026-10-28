@@ -63,14 +63,14 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 |---|---|
 | [React path](../../01-software-engineering/01-web-development/01-frontend/01-react/01-react-learning-path.md) | Before this curriculum gives you a stack to *apply* the discipline to |
 | [Next.js path](../../01-software-engineering/01-web-development/01-frontend/02-nextjs/01-nextjs-learning-path.md) | After the React path, before or alongside this curriculum |
-| [REST API Best Practices](../../../general/rest-api-best-practices.md) | Pairs with [Phase 4](./01-curriculum.md#phase-4-api-architectural-thinking-advanced) (RESTful API Design) |
-| [AI Era Coding Guidelines](../../../general/ai-era-coding-guidelines.md) | Pairs with [Phase 6](./01-curriculum.md#phase-6-code-review-excellence-advanced) (Code Review Excellence) the two-layer review model |
-| [Node.js Code Review Checklist](../../../nodejs/nodejs-typescript-code-review-checklist.md) | Stack-specific pair with Phase 6 if you're on a Node.js product |
-| [PHP Code Review Checklist](../../../php/php-coding-standards.md) | Stack-specific pair with Phase 6 if you're on a Laravel product |
+| [REST API Best Practices](../../../standards/general/rest-api-best-practices.md) | Pairs with [Phase 4](./01-curriculum.md#phase-4-api-architectural-thinking-advanced) (RESTful API Design) |
+| [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelines.md) | Pairs with [Phase 6](./01-curriculum.md#phase-6-code-review-excellence-advanced) (Code Review Excellence) the two-layer review model |
+| [Node.js Code Review Checklist](../../../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Stack-specific pair with Phase 6 if you're on a Node.js product |
+| [PHP Code Review Checklist](../../../standards/php/php-coding-standards.md) | Stack-specific pair with Phase 6 if you're on a Laravel product |
 
 ## AI delegation guidance
 
-The [AI Era Coding Guidelines](../../../general/ai-era-coding-guidelines.md) apply. For this curriculum specifically:
+The [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelines.md) apply. For this curriculum specifically:
 
 - ** COLLABORATE tier (most topics)** AI can draft examples, refactor before/after code blocks, and generate code-review-question variants. Human owns the rubric and the "right answer" to a question.
 - ** HUMAN-LED tier (Phase 7 Senior Developer Mindset)** Architectural Decision Records and mentoring practice are human-led. AI can suggest a structure for an ADR, but the *decision* and the *trade-off analysis* are human.

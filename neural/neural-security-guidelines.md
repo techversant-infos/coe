@@ -328,8 +328,8 @@ When using external APIs (OpenAI, Anthropic, etc.):
 |----------|---------|
 | `audit/coe-audit-framework.md` | General audit process |
 | `audit/security-audit-checklist.md` | General security controls |
-| `general/ai-era-coding-guidelines.md` | AI-assisted development standards |
-| `general/rest-api-best-practices.md` | API security for AI services |
+| `standards/general/ai-era-coding-guidelines.md` | AI-assisted development standards |
+| `standards/general/rest-api-best-practices.md` | API security for AI services |
 
 ---
 

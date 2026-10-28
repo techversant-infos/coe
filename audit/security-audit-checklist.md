@@ -215,7 +215,7 @@ PII, payment data, audit logs, production data, file upload, user-controlled URL
 tenant isolation boundaries.
 
 See [Secure Engineering — Security Review Triggers](../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
-and the Red Zone rules in [AI Era Coding Guidelines](../general/ai-era-coding-guidelines.md).
+and the Red Zone rules in [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md).
 
 ## Reporting
 
@@ -246,8 +246,8 @@ privately costs a message; under-reporting publicly cannot be undone.
 | [OWASP Top 10:2025](https://owasp.org/Top10/2025/) | The source taxonomy |
 | [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) | Implementation guidance per control |
 | [Secure Engineering](../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level training |
-| [PHP](../php/php-coding-standards.md) · [ColdFusion](../cf/coldfusion-style-guide.md) · [Node.js](../nodejs/nodejs-typescript-best-practices.md) | Stack-specific standards |
-| [REST API Best Practices](../general/rest-api-best-practices.md) | API contract and error standards |
+| [PHP](../standards/php/php-coding-standards.md) · [ColdFusion](../standards/coldfusion/coldfusion-style-guide.md) · [Node.js](../standards/nodejs/nodejs-typescript-best-practices.md) | Stack-specific standards |
+| [REST API Best Practices](../standards/general/rest-api-best-practices.md) | API contract and error standards |
 
 ---
 

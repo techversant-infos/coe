@@ -110,7 +110,7 @@ By the end of this path, the engineer should be able to:
 
 **Mini-task:** Add an API test suite for one resource and update one UI test to use API setup instead of slow UI setup.
 
-**Internal standard:** [REST API Best Practices](../../../../general/rest-api-best-practices.md)
+**Internal standard:** [REST API Best Practices](../../../../standards/general/rest-api-best-practices.md)
 
 ---
 

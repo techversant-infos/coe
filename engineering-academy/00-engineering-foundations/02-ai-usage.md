@@ -3,7 +3,7 @@
 **Level:** Foundation
 **Next:** [Secure Engineering](./03-secure-engineering.md)
 
-The source of truth is [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md).
+The source of truth is [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md).
 
 Use it for:
 
@@ -51,5 +51,5 @@ Residual risk:
 
 ## Useful References
 
-- [Techversant AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md)
+- [Techversant AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
 - [AI team best practices](../../ai/ai-team-best-practices.md)

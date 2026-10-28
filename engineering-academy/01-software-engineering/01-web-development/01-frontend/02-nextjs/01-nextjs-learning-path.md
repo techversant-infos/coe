@@ -54,7 +54,7 @@ The path assumes you have these technical basics. If not, spend 12 days top up b
 
 | Skill | Minimum bar | Refresher resource |
 |---|---|---|
-| **Git & PR workflow** | Branch, PR, rebase, resolve conflict review | [git/Techversant_Git_Workflow.md](../../../../../git/Techversant_Git_Workflow.md) |
+| **Git & PR workflow** | Branch, PR, rebase, resolve conflict review | [standards/git/git-workflow.md](../../../../../standards/git/git-workflow.md) |
 | **Node.js & pnpm** | Install, run `pnpm dev`, read `.env` | nodejs.dev/learn/getting-started |
 | **HTML & CSS** | Semantic HTML, Flexbox, Grid, responsive design | web.dev Learn CSS |
 | **API basics** | HTTP methods/status codes, JSON, auth headers/cookies | MDN HTTP overview |
@@ -308,7 +308,7 @@ Connect the dashboard shell to an existing Laravel API:
 **Self-check:**
 - [ ] I can explain where the auth token lives and how it gets to the Laravel API.
 - [ ] I can choose between caching, revalidating, or no-store for a given fetch.
-- [ ] I can return a Laravel error to the UI in our [standard error envelope](../../../../../general/rest-api-best-practices.md).
+- [ ] I can return a Laravel error to the UI in our [standard error envelope](../../../../../standards/general/rest-api-best-practices.md).
 - [ ] I can decide whether a feature needs Server Component data, TanStack Query, or a route handler.
 - [ ] I can write a Server Component with `"use cache"` and explain why I'm opting in.
 - [ ] I can name one thing the old "cached by default" model got wrong, and why the new opt-in model fixes it.
@@ -462,7 +462,7 @@ hooks/ cross-feature React hooks
 
 ## Phase 9 Testing
 
-**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../nodejs/nodejs-typescript-best-practices.md)) the Next.js path extends it.
+**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md)) the Next.js path extends it.
 
 **Learn:**
 - Unit testing with **Vitest** (or Jest if a project predates it)
@@ -506,7 +506,7 @@ hooks/ cross-feature React hooks
 - **Accessibility:** semantic HTML first, ARIA only when needed, keyboard nav, focus management, color contrast test with axe-core in Playwright
 - SEO: metadata, sitemap, robots, Open Graph
 - **Caching strategy** when to use `force-cache`, `no-store`, tagged revalidation
-- **Security headers** CSP, HSTS, X-Frame-Options, Referrer-Policy (see [REST API Best Practices](../../../../../general/rest-api-best-practices.md))
+- **Security headers** CSP, HSTS, X-Frame-Options, Referrer-Policy (see [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md))
 - Rate limiting (typically at the Laravel API layer)
 - **CI/CD** lint typecheck test build preview promote
 
@@ -532,7 +532,7 @@ Take the admin panel MVP and ship it to staging:
 
 **Reading order:** official sources first they are the most current and the least likely to mislead. Treat third-party tutorials and courses as supplements, not replacements.
 
-> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
+> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
 
 Pick **one primary** source and treat the rest as references.
 
@@ -647,16 +647,16 @@ For engineers who want depth beyond the docs.
 2. **Start on Monday.** Pick a phase. Work in pairs where the phase has a `*` in the 8-week plan.
 3. **Deliver on Friday.** The weekly deliverable is what gets reviewed. It can be small.
 4. **Open a PR for every deliverable.** Even tiny ones. The habit is the point.
-5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
+5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../standards/general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
 6. **Track progress.** Use a shared Notion/Kanban or a simple spreadsheet: one row per developer, one column per phase, check off self-checks as you go. Review in the team meeting each Friday.
 7. **Publish the starter template.** When the pilot batch reaches Phase 8, the first team to finish should publish a minimal **Laravel + Next.js + shadcn** starter repo and link it here (see [Starter Templates](#starter-templates) in Tutorial & Reference Links). Until then, scaffold from `npx create-next-app@latest`.
 8. **Feedback loop.** After Week 2 of the pilot, open a feedback PR against this doc with: what was too hard, what was skipped, what was missing, what should be cut. Revise for the full-team rollout.
 9. **Update this doc.** Broken link? Better course? Found a gap? PR it. This is a living document.
 10. **Cross-link with our existing standards:**
- - Code review: [nodejs-typescript-code-review-checklist.md](../../../../../nodejs/nodejs-typescript-code-review-checklist.md)
- - API design: [rest-api-best-practices.md](../../../../../general/rest-api-best-practices.md)
- - AI policy: [ai-era-coding-guidelines.md](../../../../../general/ai-era-coding-guidelines.md)
- - Git workflow: [git/Techversant_Git_Workflow.md](../../../../../git/Techversant_Git_Workflow.md)
+ - Code review: [nodejs-typescript-code-review-checklist.md](../../../../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
+ - API design: [rest-api-best-practices.md](../../../../../standards/general/rest-api-best-practices.md)
+ - AI policy: [ai-era-coding-guidelines.md](../../../../../standards/general/ai-era-coding-guidelines.md)
+ - Git workflow: [standards/git/git-workflow.md](../../../../../standards/git/git-workflow.md)
 
 ---
 
@@ -670,7 +670,7 @@ For engineers who want depth beyond the docs.
 | Review Cycle | Quarterly |
 | Status | Draft first PR open |
 | Supersedes | v0.5 |
-| Related | [Node.js TypeScript Best Practices](../../../../../nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../../../../general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../../../../general/ai-era-coding-guidelines.md) |
+| Related | [Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md) |
 
 ---
 

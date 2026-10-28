@@ -6,9 +6,9 @@ This area contains backend engineering learning paths for different stack techno
 
 | Stack | Path | Status |
 |---|---|---|
-| PHP/Laravel | Standards in [php/](../../../../php/) | Academy path planned |
-| Node.js/TypeScript | Standards in [nodejs/](../../../../nodejs/) | Academy path planned |
-| ColdFusion/CFML | Standards in [cf/](../../../../cf/) | Academy path planned |
+| PHP/Laravel | Standards in [php/](../../../../standards/php/) | Academy path planned |
+| Node.js/TypeScript | Standards in [nodejs/](../../../../standards/nodejs/) | Academy path planned |
+| ColdFusion/CFML | Standards in [cf/](../../../../standards/coldfusion/) | Academy path planned |
 
 ## Recommended Future Order
 

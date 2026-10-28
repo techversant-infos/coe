@@ -5,9 +5,9 @@ This repository contains Techversant's engineering standards, learning paths, au
 ## Start Here
 
 - [Techversant Engineering Academy](./engineering-academy/README.md) - learning paths, learning levels, and career progression guidance
-- [Git Workflow](./git/Techversant_Git_Workflow.md) - branching, commits, pull requests, releases, rollback
-- [AI Era Coding Guidelines](./general/ai-era-coding-guidelines.md) - AI delegation levels, Red Zone rules, two-layer review
-- [REST API Best Practices](./general/rest-api-best-practices.md) - API design, naming, error envelope, pagination, filtering
+- [Git Workflow](./standards/git/git-workflow.md) - branching, commits, pull requests, releases, rollback
+- [AI Era Coding Guidelines](./standards/general/ai-era-coding-guidelines.md) - AI delegation levels, Red Zone rules, two-layer review
+- [REST API Best Practices](./standards/general/rest-api-best-practices.md) - API design, naming, error envelope, pagination, filtering
 - [CoE Security Checklist](./audit/security-audit-checklist.md) - OWASP Top 10:2025 checklist for every pull request
 - [CoE Security Audit Reference](./audit/security-audit-reference.md) - full control set for release reviews and audits
 
@@ -16,12 +16,12 @@ This repository contains Techversant's engineering standards, learning paths, au
 | Area | Purpose |
 |---|---|
 | [engineering-academy](./engineering-academy/README.md) | Structured learning paths and career guidance |
-| [general](./general/) | Cross-stack standards |
-| [git](./git/) | Git workflow and governance |
+| [general](./standards/general/) | Cross-stack standards |
+| [git](./standards/git/) | Git workflow and governance |
 | [audit](./audit/) | Security and compliance review material |
-| [php](./php/) | PHP / Laravel standards |
-| [nodejs](./nodejs/) | Node.js / TypeScript standards |
-| [cf](./cf/) | ColdFusion / CFML standards |
+| [php](./standards/php/) | PHP / Laravel standards |
+| [nodejs](./standards/nodejs/) | Node.js / TypeScript standards |
+| [cf](./standards/coldfusion/) | ColdFusion / CFML standards |
 | [ai](./ai/) | AI prompts, tools, and productivity material |
 
 ## Engineering Academy
