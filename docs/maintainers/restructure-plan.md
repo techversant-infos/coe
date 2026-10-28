@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** In progress (Phases 0, 1 and 2 complete)
+**Status:** In progress (Phases 0 to 3 complete)
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -38,7 +38,7 @@ coe/
 | 0 | Baseline: sync with `origin/main`, park open work, add link checker and inventory | Done |
 | 1 | Safety fixes: untrack `secrets.env`, ignore rules, Claude permissions, file encoding | Done |
 | 2 | Move files with `git mv` and kebab-case names. Fix links in the same change | Done |
-| 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Not started |
+| 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Done (`AGENTS.md` / `CLAUDE.md` moved to Phase 6) |
 | 4 | Cross-links: fix broken links, add folder indexes, add CI checks | Not started |
 | 5 | Status header on every document. Update outdated content in order of risk | Not started |
 | 6 | Rewrite root and academy READMEs, `CONTRIBUTING.md`, academy TODO | Not started |
@@ -67,6 +67,28 @@ stubs that point to the new location. They keep bookmarked GitHub links, Drive l
 - The academy and `ai/` folders have no stubs. Their links are internal.
 - `git/Git & Git workflow.pdf` moved to `standards/git/git-and-git-workflow.pdf` and has no stub.
 
+## Phase 3 Results
+
+A line-level similarity scan of every markdown file outside `archive/` found no whole-file duplicates after
+`ai-team-best-practices.md` was archived in Phase 2.
+
+| Topic | Canonical source | Change |
+|-------|------------------|--------|
+| Delegation levels and Red Zone | `standards/general/ai-era-coding-guidelines.md` sections 2.1 and 2.2 | Added. The standard was cited for these rules but did not define them. The cheatsheet and `ai-team-best-practices.md` now link to it instead of keeping their own tables, which had drifted apart |
+| Developer prompts, sections 4 to 9 | `ai/prompts/section-04-*.md` to `section-09-*.md` | The handbook keeps sections 1 to 3, the checklist and anti-patterns, and summarises 4 to 9 with a link each |
+| ColdFusion standards and consulting deliverables | Both kept | No shared text. Different audiences (developers, client audits). Cross-link in Phase 4 |
+| Stack translation files | All three kept | Overlap is the shared template only |
+| `AGENTS.md` and `CLAUDE.md` | `AGENTS.md` | Done in Phase 6 with the README rewrite |
+
+Conflicts found that need an owner's decision (Phase 5):
+
+- **Red Zone list.** The standard uses the list from `CLAUDE.md`: auth, encryption and keys, PII and payments,
+  production migrations. The old cheatsheet also listed security middleware. The old team guide also listed
+  production incidents and architecture decisions.
+- **Branch naming.** Three conventions disagree. `standards/git/git-workflow.md` uses `feature/fix-<JIRA-ID>-<desc>`
+  and promotes through `dev`. `ai/prompts/section-09-pull-request.md` teaches `bugfix/`, `hotfix/`, `release/` and
+  targets `develop`. `.claude/rules/automation-engineering-standards.md` uses `fix/<description>`.
+
 ## Parked Work
 
 These sit on local branches so they do not mix with the restructure:
@@ -80,4 +102,4 @@ These sit on local branches so they do not mix with the restructure:
 
 - Name an owner for each area (inventory column `owner`).
 - Decide how to reconcile `origin/dev`, which has 8 commits that `main` lacks.
-- Compare `cf/` standards with the `cf-consulting` deliverables for overlap before Phase 3.
+- Confirm the Red Zone list and pick one branch naming convention (see Phase 3 Results).

@@ -56,17 +56,9 @@
 
 ## 3. DELEGATION LEVELS — What to Hand Off
 
-| Level | When to use | Examples |
-|-------|------------|---------|
-| 🟢 **FULL DELEGATE** — hand it off, review output | Low risk, repetitive, easy to verify | Unit test stubs, PR descriptions, commit messages, README/docs, boilerplate, code comments, CRUD scaffolding |
-| 🟡 **COLLABORATE** — AI drafts, you steer & validate | Needs domain judgment to verify | Business logic, API integrations, DB queries, error handling, refactoring, config files |
-| 🟠 **HUMAN-LED** — you drive, AI suggests only | Needs architectural context | System design, complex debugging, performance optimisation, API contracts, critical flows |
-| 🔴 **NEVER DELEGATE** — manual only, always | Sensitive, irreversible, or security-critical | Auth & authorisation, encryption, PII handling, payment processing, production DB migrations, security middleware |
+Every task gets one of four levels: 🟢 Full delegate → 🟡 Collaborate → 🟠 Human-led → 🔴 Never delegate.
 
-### The Delegation Test — Ask Before Every Task
-1. Can the output be verified quickly without deep context? → **higher delegation**
-2. Does it need domain knowledge Claude doesn't have? → **lower delegation**
-3. Could a wrong output silently reach production? → **never delegate**
+Definitions, examples, the three-question delegation test and the Red Zone list live in one place: [AI Era Coding Guidelines, section 2.1](../../standards/general/ai-era-coding-guidelines.md#21-delegation-levels).
 
 > **The rule: Delegate the typing. Never delegate the thinking.**
 

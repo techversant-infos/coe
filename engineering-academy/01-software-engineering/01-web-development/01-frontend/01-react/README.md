@@ -47,7 +47,7 @@ When working through the React path with AI assistance:
 - **HUMAN-LED:** designing the component API, picking the state-management pattern, code review
 - **NEVER DELEGATE:** auth code, session handling, anything touching tokens, production database work
 
-For the full model, see [standards/general/ai-era-coding-guidelines.md](../../../../../standards/general/ai-era-coding-guidelines.md).
+For the full model and the Red Zone list, see [AI Era Coding Guidelines, section 2.1](../../../../../standards/general/ai-era-coding-guidelines.md#21-delegation-levels).
 
 ---
 

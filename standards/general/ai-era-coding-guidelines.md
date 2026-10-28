@@ -1,6 +1,7 @@
 # Techversant Engineering Coding Standards for the AI Era
 **Issued by:** Center of Excellence (CoE)  
 **Effective Date:** November 2025  
+**Last Updated:** 2026-10-28 (added 2.1 Delegation Levels and 2.2 Red Zone as the single source)  
 **Prepared by:** Lajin M. J — Software Architect & Technical Account Manager  
 
 
@@ -34,6 +35,36 @@ Example (good practice):
 // ✅ Reviewed, refactored, and secured by engineer
 $user = DB::table('users')->where('email', $email)->first();
 ```
+
+### 2.1 Delegation Levels
+
+Choose one level for each task before you start. The level sets how much of the work AI does and how closely you review it.
+
+| Level | Use when | Examples |
+|-------|----------|----------|
+| 🟢 **Full delegate** — AI does the work, you review the output | Low risk, repetitive, easy to verify | Unit test stubs, PR descriptions, commit messages, docs, boilerplate, CRUD scaffolding |
+| 🟡 **Collaborate** — AI drafts, you steer and validate | Needs domain judgment to verify | Business logic, API integrations, database queries, error handling, refactoring, config files |
+| 🟠 **Human-led** — you drive, AI only suggests | Needs architectural context | System design, complex debugging, performance tuning, API contracts, critical flows |
+| 🔴 **Never delegate** — manual only | Sensitive, irreversible, or security-critical | Everything in the Red Zone (section 2.2) |
+
+**Delegation test.** Ask these three questions before every task:
+
+1. Can you verify the output quickly and completely? If yes, delegate more.
+2. Does the task need domain knowledge the AI does not have? If yes, delegate less.
+3. Could a wrong output reach production unnoticed? If yes, do not delegate.
+
+> **Delegate the typing. Never delegate the thinking.**
+
+### 2.2 Red Zone (Manual Only)
+
+Write this code by hand. Do not use AI to generate it:
+
+- Authentication and authorization
+- Encryption and key management
+- PII handling and payment processing
+- Production database migrations
+
+A senior engineer reviews every change in the Red Zone.
 
 
 

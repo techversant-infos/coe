@@ -191,17 +191,9 @@ Both gates are mandatory. Gate 2 cannot be skipped because Gate 1 ran.
 
 Use this framework before every AI-assisted task. Levels are colour-coded to match the presentation's delegation scale.
 
-| Level | GPS Label | When | Examples |
-|-------|-----------|------|---------|
-| **Full Delegate** | 🟢 GREEN — Follow GPS | Output is mechanical, verifiable, low-risk | Boilerplate, CRUD scaffolding, test stubs, PR descriptions |
-| **Collaborate** | 🟡 YELLOW — Confirm the route | Needs domain judgment to validate | Business logic, integrations, query optimisation, refactoring |
-| **Human-led** | 🟠 AMBER — You navigate | Requires your architectural context | System design, API contracts, data models, critical flows |
-| **Never Delegate** | 🔴 RED — GPS off | Sensitive, irreversible, or security-critical | Auth, encryption, PII, production incidents, architecture decisions |
+Definitions, examples, the three-question decision test and the Red Zone list live in one place: [AI Era Coding Guidelines, section 2.1](../../standards/general/ai-era-coding-guidelines.md#21-delegation-levels).
 
-**Decision test (run before every task):**
-1. Can the output be verified quickly and completely? → higher delegation acceptable
-2. Does it require domain context that AI doesn't have? → lower delegation required
-3. Could a wrong output reach production without detection? → never delegate
+Presentation labels for the four levels: 🟢 GREEN — Follow GPS · 🟡 YELLOW — Confirm the route · 🟠 AMBER — You navigate · 🔴 RED — GPS off.
 
 **The rule:** Delegate the typing. Never delegate the thinking.
 
