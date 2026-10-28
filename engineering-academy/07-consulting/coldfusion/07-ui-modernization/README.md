@@ -1,5 +1,7 @@
 # Phase 7: UI/API Modernization
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Modernize the front end and APIs of ColdFusion applications without rewriting the back end.
 
 ---

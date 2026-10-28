@@ -1,5 +1,7 @@
 # Phase 1: ColdFusion Deep Expertise
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-08-13 · **Next review:** 2027-02-13
+
 > Master ColdFusion internals to diagnose issues, optimize performance, and consult with authority.
 
 ---

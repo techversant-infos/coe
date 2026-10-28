@@ -38,12 +38,19 @@ Before starting migration, document:
 
 Use tools to identify potential issues:
 
-**Automated Scanning:**
+**Move server settings with CFConfig:**
 
 ```bash
-# CommandBox Lucee migrator
-boxlucee migrate --source=/path/to/app --report
+# Install CFConfig into CommandBox (once)
+box install commandbox-cfconfig
+
+# Export the Adobe ColdFusion server settings (datasources, mail, mappings) to a file
+box cfconfig export from=/path/to/ColdFusion2025/cfusion/ to=adobe-config.json
 ```
+
+CFConfig moves server settings, not code. Import the file into the Lucee test server as the
+[CFConfig usage guide](https://cfconfig.ortusbooks.com/using-the-cli/usage) describes. Find code
+incompatibilities with the search below and by running the test suite on Lucee.
 
 **Common Issues to Look For:**
 

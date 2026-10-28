@@ -1,5 +1,7 @@
 # Phase 5: Cloud Migration
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Move ColdFusion applications to AWS and Azure with confidence.
 
 ---

@@ -1,5 +1,7 @@
 # Quality Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This section contains QA and test automation learning paths.
 
 The first priority is the Playwright automation path because it gives manual testers a practical route into automation engineering.

@@ -1,5 +1,7 @@
 # AI Usage Standards — Techversant Engineering
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+
 **Version:** 1.0
 **Owner:** Engineering CoE
 **Applies to:** All engineering roles using AI-assisted development
@@ -68,7 +70,7 @@ Every prompt must include: **Context + Task + Constraints + Format**
 ### Prompt example (reference)
 
 ```
-Stack: Node.js 20, Express, PostgreSQL 14 (Knex query builder).
+Stack: Node.js 24, Express, PostgreSQL 17 (Knex query builder).
 File: /src/api/users/getUser.js
 Issue: /api/users/:id throws 500 when user ID does not exist.
 Expected: return 404 { error: 'user_not_found', code: 404 }

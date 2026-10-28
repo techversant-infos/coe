@@ -1,5 +1,7 @@
 # Phase 2: Legacy Application Assessment
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Learn to review, score, and report on existing ColdFusion applications for modernization engagements.
 
 ---

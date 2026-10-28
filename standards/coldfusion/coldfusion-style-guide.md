@@ -6,6 +6,8 @@
 
 # ColdFusion Style Guide (Techversant CoE)
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-05-10
+
 ## 📚 Table of Contents
 
 - [1. Purpose](#1-purpose)
@@ -275,7 +277,8 @@ try {
 - **Member Functions:** `array.each(i => process(i))`  
 - **Implicit Structs/Arrays:** `{key: "value"}` and `[1,2,3]`  
 
-> 🎯 Target **Lucee 5+** or **Adobe ColdFusion 2021+** to leverage these capabilities.
+> 🎯 Target **Lucee 6.2+** or **Adobe ColdFusion 2023+** to leverage these capabilities. Both are supported
+> releases. Lucee 5.4 support ended on 2025-12-31 and ColdFusion 2021 extended support ends on 2026-11-10.
 
 ## 12. Final Thoughts
 

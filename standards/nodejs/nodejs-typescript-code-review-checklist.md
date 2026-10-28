@@ -5,6 +5,8 @@
 
 # Node.js TypeScript Code Review Checklist
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-11 · **Next review:** 2026-05-11
+
 Focus on what can be verified in a **diff/PR**. Use this list during every review.
 
 ## 📁 1. Structure & Boundaries

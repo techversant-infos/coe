@@ -1,5 +1,7 @@
 # Web Development
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-06-26 · **Next review:** 2026-12-26
+
 This section groups frontend and backend web learning paths.
 
 ## Frontend

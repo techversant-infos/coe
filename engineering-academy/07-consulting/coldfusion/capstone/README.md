@@ -1,5 +1,7 @@
 # Capstone Application: BlogCFC5
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > A real ColdFusion blogging application used throughout the curriculum.
 
 ---

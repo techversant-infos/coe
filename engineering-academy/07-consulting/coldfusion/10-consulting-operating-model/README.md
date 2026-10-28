@@ -1,5 +1,7 @@
 # Consulting Operating Model
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Internal processes and standards for delivering ColdFusion consulting engagements.
 
 ---

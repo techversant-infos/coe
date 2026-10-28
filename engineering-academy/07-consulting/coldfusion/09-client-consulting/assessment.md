@@ -203,7 +203,7 @@ ___________________________________________________________
 
 **A1 - Suggested Top 10 Questions:**
 
-- What version of CF are you running? (Critical: CF2018 is current)
+- What version of CF are you running? (Critical: the client runs CF2018, which has had no security updates since July 2024)
 - Are you using a framework? (80 files suggests possible structure)
 - How many users? (Performance context)
 - What are the specific performance pain points?

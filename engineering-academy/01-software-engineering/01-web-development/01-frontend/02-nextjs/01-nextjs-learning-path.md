@@ -1,49 +1,49 @@
 **Version:** 0.6
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** June 2026
-**Audience:** Web Dev Team backend/PHP/Laravel-leaning engineers who need to ship modern Next.js frontends
+**Audience:** Web Dev Team — backend/PHP/Laravel-leaning engineers who need to ship modern Next.js frontends
 **Length:** 10 phases over 8 weeks (~5 hours/week, pair-friendly)
-**Status:** **Draft for Pilot Batch** run with 35 developers first, revisit after Week 2 feedback
+**Status:** **Draft for Pilot Batch** — run with 3–5 developers first, revisit after Week 2 feedback
 **Level:** Advanced
 **Next Level:** [Career Progression: Lead Engineer Path](../../../../career-progression/02-junior-to-senior.md)
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
 **v0.6 changes:** added Phase 3 sub-section "Streaming with `<Suspense>`"; added Phase 5 sub-section "Cache Components (the new model)" covering the Next.js 15+/16 "opt-in caching" shift with `"use cache"`. Both additions in response to team review.
 
-# Next.js Learning Path For the Web Dev Team
+# Next.js Learning Path — For the Web Dev Team
 
 *From PHP/Laravel backend to confident Next.js frontend engineer.*
 
-This path is written for **our** team. The team is strong on the backend (PHP, Laravel, REST APIs) and on its way on the frontend. We are not starting from zero we are starting from "I can read JavaScript, I've touched some React, and I want to ship a Next.js app against our Laravel APIs."
+This path is written for **our** team. The team is strong on the backend (PHP, Laravel, REST APIs) and on its way on the frontend. We are not starting from zero — we are starting from "I can read JavaScript, I've touched some React, and I want to ship a Next.js app against our Laravel APIs."
 
-The path moves: **JS/TS refresh React fundamentals Next.js App Router Server/Client model API integration Forms/Auth UI system Testing Production**. Each phase ends with a small team-shaped deliverable that can be reviewed.
+The path moves: **JS/TS refresh → React fundamentals → Next.js App Router → Server/Client model → API integration → Forms/Auth → UI system → Testing → Production**. Each phase ends with a small team-shaped deliverable that can be reviewed.
 
 > **Architecture call (read first):** For our Laravel-based products, we run Next.js as a **frontend** that talks to a Laravel API. We are **not** doing full-stack Next.js with direct DB access for these products. This path reflects that.
 
 ---
 
-## Learning Outcomes
+## 🎯 Learning Outcomes
 
 By the end of this 8-week plan, every developer on the team should be able to:
 
 1. Read and write modern TypeScript and React without slowing the team down.
 2. Scaffold a Next.js App Router project and explain its file-based routing.
 3. Choose the right boundary between Server Components and Client Components in a code review.
-4. Connect a Next.js app to a Laravel API auth, errors, caching, env, the works.
+4. Connect a Next.js app to a Laravel API — auth, errors, caching, env, the works.
 5. Build validated forms with React Hook Form + Zod, submit via Server Actions, render errors in the CoE standard envelope.
-6. Apply role-based access in middleware, server actions, and route handlers server-side every time.
+6. Apply role-based access in middleware, server actions, and route handlers — server-side every time.
 7. Ship a feature with unit, component, and E2E tests; pass Lighthouse and a basic accessibility audit.
 8. Deploy to Vercel (or a self-hosted Node target) with logs, traces, env management, and a rollback plan.
 
-> **Realistic scope:** ~40 hours is enough for **orientation and supervised contribution**, not full independence. After week 8, expect each developer to be able to take a small Next.js ticket end-to-end with a senior reviewer in the loop not to lead a frontend architecture decision. Build the rest of the confidence on the job, in code review, and on real tickets.
+> **Realistic scope:** ~40 hours is enough for **orientation and supervised contribution**, not full independence. After week 8, expect each developer to be able to take a small Next.js ticket end-to-end with a senior reviewer in the loop — not to lead a frontend architecture decision. Build the rest of the confidence on the job, in code review, and on real tickets.
 
 ### Team-Level Metrics of Success
 
 Beyond individual outcomes, we measure whether the path actually moved the team's velocity:
 
-- **% of new frontend tickets completed without senior blocking** track per quarter, target a meaningful rise from baseline
-- **PR review turnaround** on frontend PRs should drop as the team's pattern-recognition grows
-- **Defect rate** on the first 30 days after a feature merges should stay flat or fall
-- **Onboarding time** for a new hire to ship their first frontend PR target: 2 weeks
+- **% of new frontend tickets completed without senior blocking** — track per quarter, target a meaningful rise from baseline
+- **PR review turnaround** on frontend PRs — should drop as the team's pattern-recognition grows
+- **Defect rate** on the first 30 days after a feature merges — should stay flat or fall
+- **Onboarding time** for a new hire to ship their first frontend PR — target: 2 weeks
 
 Re-baseline these at the end of week 8. If they're not moving, the path needs a revision, not a louder announcement.
 
@@ -51,34 +51,34 @@ Re-baseline these at the end of week 8. If they're not moving, the path needs a 
 
 ## Prerequisites (complete before Week 1)
 
-The path assumes you have these technical basics. If not, spend 12 days top up before starting:
+The path assumes you have these technical basics. If not, spend 1–2 days top up before starting:
 
 | Skill | Minimum bar | Refresher resource |
 |---|---|---|
 | **Git & PR workflow** | Branch, PR, rebase, resolve conflict review | [standards/git/git-workflow.md](../../../../../standards/git/git-workflow.md) |
 | **Node.js & pnpm** | Install, run `pnpm dev`, read `.env` | nodejs.dev/learn/getting-started |
-| **HTML & CSS** | Semantic HTML, Flexbox, Grid, responsive design | web.dev Learn CSS |
-| **API basics** | HTTP methods/status codes, JSON, auth headers/cookies | MDN HTTP overview |
-| **Basic TypeScript** | `interface`, `type`, generic types enough to read Zod schemas | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
+| **HTML & CSS** | Semantic HTML, Flexbox, Grid, responsive design | web.dev — Learn CSS |
+| **API basics** | HTTP methods/status codes, JSON, auth headers/cookies | MDN — HTTP overview |
+| **Basic TypeScript** | `interface`, `type`, generic types — enough to read Zod schemas | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
 
 **Next.js experience bonus** but **not required:** touched React Router, has(n't) used `useState`, has(n't) used `useEffect`. The path assumes no React fluency.
 
 ---
 
-## Table of Contents
+## 📚 Table of Contents
 
 - [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
 - [Suggested 8-Week Plan](#suggested-8-week-plan)
-- [Phase 1 JavaScript + TypeScript Refresh](#phase-1-javascript--typescript-refresh)
-- [Phase 2 React Fundamentals](#phase-2-react-fundamentals)
-- [Phase 3 Next.js Basics with the App Router](#phase-3-nextjs-basics-with-the-app-router)
-- [Phase 4 Server Components vs. Client Components](#phase-4-server-components-vs-client-components)
-- [Phase 5 Data Fetching, APIs, and Backend Integration](#phase-5-data-fetching-apis-and-backend-integration)
-- [Phase 6 Forms, Validation, and Mutations](#phase-6-forms-validation-and-mutations)
-- [Phase 7 Authentication and Authorization](#phase-7-authentication-and-authorization)
-- [Phase 8 UI System and Frontend Architecture](#phase-8-ui-system-and-frontend-architecture)
-- [Phase 9 Testing](#phase-9-testing)
-- [Phase 10 Production Readiness](#phase-10-production-readiness)
+- [Phase 1 — JavaScript + TypeScript Refresh](#phase-1--javascript--typescript-refresh)
+- [Phase 2 — React Fundamentals](#phase-2--react-fundamentals)
+- [Phase 3 — Next.js Basics with the App Router](#phase-3--nextjs-basics-with-the-app-router)
+- [Phase 4 — Server Components vs. Client Components](#phase-4--server-components-vs-client-components)
+- [Phase 5 — Data Fetching, APIs, and Backend Integration](#phase-5--data-fetching-apis-and-backend-integration)
+- [Phase 6 — Forms, Validation, and Mutations](#phase-6--forms-validation-and-mutations)
+- [Phase 7 — Authentication and Authorization](#phase-7--authentication-and-authorization)
+- [Phase 8 — UI System and Frontend Architecture](#phase-8--ui-system-and-frontend-architecture)
+- [Phase 9 — Testing](#phase-9--testing)
+- [Phase 10 — Production Readiness](#phase-10--production-readiness)
 - [Recommended Courses](#recommended-courses)
 - [Channels, Podcasts & Newsletters](#channels-podcasts--newsletters)
 - [Tutorial & Reference Links](#tutorial--reference-links)
@@ -96,19 +96,19 @@ The path assumes you have these technical basics. If not, spend 12 days top up b
 | 1 | JS/TS refresh | Consume a Laravel API with `fetch()` and render a typed list |
 | 2 | React basics | Product listing page with search, filter, and form validation |
 | 3 | Next.js routing & layouts | Admin dashboard shell with sidebar, top bar, nested + dynamic routes |
-| 4 | Server/Client components | Hybrid product page server data + client filter/search |
+| 4 | Server/Client components | Hybrid product page — server data + client filter/search |
 | 5 | Data fetching & API integration | Next.js frontend wired to an existing Laravel API with auth tokens |
 | 6 | Forms & auth | Login + protected CRUD page against Laravel |
 | 7 | UI architecture & testing | Reusable component library + tests for the CRUD page |
 | 8 | Production project | Small admin panel MVP: deployed, monitored, rollback-ready |
 
-> **Buffer:** treat Weeks 78 as flexible. If the team is behind, fold the production work into a follow-up sprint rather than rushing. The point of the path is the **8 weekly deliverables**, not hitting 8 weeks exactly.
+> **Buffer:** treat Weeks 7–8 as flexible. If the team is behind, fold the production work into a follow-up sprint rather than rushing. The point of the path is the **8 weekly deliverables**, not hitting 8 weeks exactly.
 
-> **Working agreement:** the deliverable at the end of each week is what gets reviewed on Friday. Pair on the harder phases (4, 5, 7). Open a PR for the deliverable even if it's small it builds the habit.
+> **Working agreement:** the deliverable at the end of each week is what gets reviewed on Friday. Pair on the harder phases (4, 5, 7). Open a PR for the deliverable even if it's small — it builds the habit.
 
 ### Weekly PR Assessment Rubric
 
-Each week's deliverable PR is reviewed on this rubric. Score 02 per row (0 = missing, 1 = partial, 2 = solid). Aim for 12/14+ before moving on. The goal isn't perfection it's catching the same gap three weeks in a row.
+Each week's deliverable PR is reviewed on this rubric. Score 0–2 per row (0 = missing, 1 = partial, 2 = solid). Aim for 12/14+ before moving on. The goal isn't perfection — it's catching the same gap three weeks in a row.
 
 | Dimension | What good looks like |
 |---|---|
@@ -124,7 +124,7 @@ A 0 in any row blocks the next phase until it's addressed.
 
 ---
 
-## Phase 1 JavaScript + TypeScript Refresh
+## Phase 1 — JavaScript + TypeScript Refresh
 
 **Why this phase exists:** the team is comfortable with JavaScript at a basic level, but Next.js and our stack assume fluency with modern syntax and types. One week of refresh prevents a month of small stumbles later.
 
@@ -153,9 +153,9 @@ Build a small page or script that calls a Laravel API with `fetch()`, types the 
 
 ---
 
-## Phase 2 React Fundamentals
+## Phase 2 — React Fundamentals
 
-**Why this phase exists:** Next.js is React. Trying to learn the App Router while learning React doubles the cognitive load. One week of React-first practice pays back ten times in Phases 34.
+**Why this phase exists:** Next.js is React. Trying to learn the App Router while learning React doubles the cognitive load. One week of React-first practice pays back ten times in Phases 3–4.
 
 **Learn:**
 
@@ -168,7 +168,7 @@ Build a small page or script that calls a Laravel API with `fetch()`, types the 
 - Custom hooks
 - Component composition
 
-**Source of truth:** the **official React docs at [react.dev](https://react.dev/learn)**. React is currently in the 19.x line always read the current docs, not a 2022 blog post.
+**Source of truth:** the **official React docs at [react.dev](https://react.dev/learn)**. React is currently in the 19.x line — always read the current docs, not a 2022 blog post.
 
 **Mini task:**
 Build a **product listing page** with:
@@ -178,7 +178,7 @@ Build a **product listing page** with:
 - A "contact seller" form with client-side validation
 - Loading and empty states
 
-Use a local mock JSON file no API yet. Get code reviewed before moving on.
+Use a local mock JSON file — no API yet. Get code reviewed before moving on.
 
 **Self-check:**
 
@@ -188,7 +188,7 @@ Use a local mock JSON file no API yet. Get code reviewed before moving on.
 
 ---
 
-## Phase 3 Next.js Basics with the App Router
+## Phase 3 — Next.js Basics with the App Router
 
 **Why this phase exists:** Next.js is **not** "React with routing bolted on." The App Router introduces file-based routing, layouts, server-rendering, and a new mental model. Get the model right before adding complexity.
 
@@ -196,23 +196,23 @@ Use a local mock JSON file no API yet. Get code reviewed before moving on.
 
 - Project structure (`app/`, `public/`, `next.config.*`)
 - File-based routing:
- - `page.tsx` a route
- - `layout.tsx` shared chrome
- - `loading.tsx` streaming fallback
- - `error.tsx` error boundary
- - `not-found.tsx` 404
+  - `page.tsx` — a route
+  - `layout.tsx` — shared chrome
+  - `loading.tsx` — streaming fallback
+  - `error.tsx` — error boundary
+  - `not-found.tsx` — 404
 - Nested routes and **route groups** `(group)`
 - Dynamic routes: `[slug]`, `[...catchAll]`
 - Metadata and SEO basics (`generateMetadata`, `metadata` export)
-- Styling: **Tailwind CSS** (our standard) or CSS Modules if a project predates Tailwind
+- Styling: **Tailwind CSS** (our standard) — or CSS Modules if a project predates Tailwind
 - **Streaming with `<Suspense>`** (Next.js 16 standard)
  - `loading.tsx` is the route-level fallback; `<Suspense>` is the component-level fallback. They're the same streaming primitive, scoped differently.
- - Wrap a slow Server Component in `<Suspense fallback={}>` and the rest of the page streams first, the slow part streams when it's ready. The user sees the page earlier.
- - **Granular vs. coarse:** one big `loading.tsx` for the whole page shows a single skeleton; multiple `<Suspense>` boundaries show progressive shells (e.g. header sidebar list detail). Prefer granular for anything that has a slow tail.
+  - Wrap a slow Server Component in `<Suspense fallback={…}>` and the rest of the page streams first, the slow part streams when it's ready. The user sees the page earlier.
+  - **Granular vs. coarse:** one big `loading.tsx` for the whole page shows a single skeleton; multiple `<Suspense>` boundaries show progressive shells (e.g. header → sidebar → list → detail). Prefer granular for anything that has a slow tail.
  - **Request waterfalls to avoid:** don't put a slow fetch in a parent that blocks a fast fetch in a child. Move the slow fetch into its own component so the parent streams without it.
  - **Pair with caching:** a Suspense boundary streams the *first* response; cache + revalidation (Phase 5) stream the *subsequent* responses instantly. Both go together.
 
-**Primary course:** the **official Next.js Learn course** at [nextjs.org/learn](https://nextjs.org/learn). It builds a dashboard with login, protected pages, and CRUD close to what we actually ship.
+**Primary course:** the **official Next.js Learn course** at [nextjs.org/learn](https://nextjs.org/learn). It builds a dashboard with login, protected pages, and CRUD — close to what we actually ship.
 
 **Mini task:**
 Build an **admin dashboard shell**:
@@ -233,33 +233,33 @@ Build an **admin dashboard shell**:
 
 ---
 
-## Phase 4 Server Components vs. Client Components
+## Phase 4 — Server Components vs. Client Components
 
-**Why this phase exists:** **this is the biggest mental shift for PHP developers.** In Laravel, "render a page" usually means SSR or a Blade view. In Next.js App Router, every component is a **Server Component** by default it runs on the server, can call **server-side APIs** securely (including our Laravel API), and ships **zero JavaScript** to the browser. Client Components are the **opt-in exception**, not the default.
+**Why this phase exists:** **this is the biggest mental shift for PHP developers.** In Laravel, "render a page" usually means SSR or a Blade view. In Next.js App Router, every component is a **Server Component** by default — it runs on the server, can call **server-side APIs** securely (including our Laravel API), and ships **zero JavaScript** to the browser. Client Components are the **opt-in exception**, not the default.
 
 **Learn:**
 
 - Server Components (default)
-- Client Components and the `"use client"` directive
+- Client Components — and the `"use client"` directive
 - When **not** to use a Client Component
 - Passing props between server and client components (serialization rules)
 - Avoiding unnecessary client-side JavaScript
 - The "server island" pattern: keep data on the server, push only the interactive bit to the client
 - **Caching & dynamic flags:** when to set `dynamic = 'force-dynamic'`, `revalidate = 0`, or `cache: 'no-store'` on a `fetch`
 
-> **Advanced come back to this later:** **Partial Prerendering (PPR)** pre-renders a static shell and streams the dynamic parts. It's a powerful optimization but not needed to ship the team's first features. Revisit after Week 8 once the basics are solid.
+> **Advanced — come back to this later:** **Partial Prerendering (PPR)** pre-renders a static shell and streams the dynamic parts. It's a powerful optimization but not needed to ship the team's first features. Revisit after Week 8 once the basics are solid.
 
 **Mental model to internalize:**
 > "Start as a server component. Add `"use client"` only when you need state, effects, or browser APIs. Push the boundary as far toward the leaves of the tree as possible."
 
 **Server Component gotchas (read these once, refer back often):**
 
-- No hooks (`useState`, `useEffect`, `useContext`, etc.) they run on the server, hooks run on the client.
-- No browser APIs (`window`, `localStorage`, `document`) the server has no browser.
-- **Props are serialized** when crossing the serverclient boundary. You can pass plain objects, arrays, dates, and primitives. You **cannot** pass functions, class instances, or non-serializable things. If a function must be passed, wrap it in a Server Action.
-- Async is fine Server Components can be `async function Page()`. Do all data fetching there.
+- No hooks (`useState`, `useEffect`, `useContext`, etc.) — they run on the server, hooks run on the client.
+- No browser APIs (`window`, `localStorage`, `document`) — the server has no browser.
+- **Props are serialized** when crossing the server→client boundary. You can pass plain objects, arrays, dates, and primitives. You **cannot** pass functions, class instances, or non-serializable things. If a function must be passed, wrap it in a Server Action.
+- Async is fine — Server Components can be `async function Page()`. Do all data fetching there.
 - A Client Component cannot import a Server Component; a Server Component **can** render a Client Component. The boundary flows one way.
-- Marking a component `"use client"` does **not** make it a Client Component in isolation it makes the **subtree** below it client-side. Scope it tightly.
+- Marking a component `"use client"` does **not** make it a Client Component in isolation — it makes the **subtree** below it client-side. Scope it tightly.
 
 **Mini task:**
 Build a **products page** where:
@@ -270,7 +270,7 @@ Build a **products page** where:
 
 **Extended exercise (pair on this):**
 
-1. Open DevTools Network JS. Record the bundle size with the filter on the client.
+1. Open DevTools → Network → JS. Record the bundle size with the filter on the client.
 2. Move the filter to the server (use a Server Action with `revalidatePath`). Compare bundle size and request waterfall.
 3. Write a one-paragraph note in the PR: "Was client-only because of X. Could be server if we change Y."
 
@@ -283,18 +283,18 @@ Build a **products page** where:
 
 ---
 
-## Phase 5 Data Fetching, APIs, and Backend Integration
+## Phase 5 — Data Fetching, APIs, and Backend Integration
 
 **Why this phase exists:** this is where the path pays for itself for our team. We are **not** doing full-stack Next.js with direct DB access for Laravel-backed products. We are calling our own Laravel API from a Next.js frontend. Get this integration right and the rest of the app gets easier.
 
 **Learn:**
 
 - Server-side data fetching in Server Components (using `fetch`, `axios`, or an SDK)
-- Client-side data fetching **we standardize on TanStack Query** (formerly React Query). Use it for any data the client needs to refetch, mutate, or share across components. Avoid duplicating server cache in client state.
+- Client-side data fetching — **we standardize on TanStack Query** (formerly React Query). Use it for any data the client needs to refetch, mutate, or share across components. Avoid duplicating server cache in client state.
 - Caching: Next.js `fetch` cache, `revalidatePath`, `revalidateTag`
 - **Cache Components (the new model, Next.js 15+/16 standard)**
  - The old model: every `fetch` is cached by default unless you say otherwise. The new model: nothing is cached unless you opt in.
- - The opt-in is the `"use cache"` directive at the top of a Server Component or a function that component/function is then cached across requests, with cache tags + revalidation rules declared inline.
+  - The opt-in is the `"use cache"` directive at the top of a Server Component or a function — that component/function is then cached across requests, with cache tags + revalidation rules declared inline.
  - **Why it changed:** "cached by default" produced subtle bugs (stale data, accidental data leaks between users) and required every team to learn the `fetch` cache semantics. "Opt-in + explicit" matches the principle: cache is a *performance tool* you apply where it pays off, not a *default* you have to remember to opt out of.
  - **For new code:** use `"use cache"` deliberately on the components that need it (e.g. the product list, the navigation chrome), leave the rest uncached. The path's mental model: "if the data is user-specific or changes per request, don't cache it."
  - **For projects still on the old model:** opt in per-fetch with `cache: 'force-cache'` and revalidation flags; don't mix the two styles in the same file. Plan a v0.7 of this path to flip the default to the new model.
@@ -303,7 +303,7 @@ Build a **products page** where:
 - **Route handlers** (`app/api/.../route.ts`) for webhooks, callbacks, and **proxying sensitive calls** to Laravel (so API keys never reach the browser)
 - Calling **protected** Laravel APIs: token in `Authorization: Bearer <token>`, refresh on 401
 
-**Decision rule when to use which:**
+**Decision rule — when to use which:**
 
 | Need | Use |
 |---|---|
@@ -334,7 +334,7 @@ Connect the dashboard shell to an existing Laravel API:
 
 ---
 
-## Phase 6 Forms, Validation, and Mutations
+## Phase 6 — Forms, Validation, and Mutations
 
 **Why this phase exists:** every product we ship is, eventually, a form. Forms are where the most bugs live. Get the form story right once and you stop re-learning it per project.
 
@@ -343,7 +343,7 @@ Connect the dashboard shell to an existing Laravel API:
 - Form handling (controlled vs. `FormData` / Server Actions)
 - **React Hook Form** for client-side forms
 - **Zod** for schema validation (matches our Node.js standard)
-- **Server Actions** (also referred to as **React Server Functions** in the current Next.js docs same thing, two names) for mutations from Server Components
+- **Server Actions** (also referred to as **React Server Functions** in the current Next.js docs — same thing, two names) for mutations from Server Components
 - Optimistic UI
 - Error display in the CoE standard error envelope
 - Toast notifications
@@ -353,13 +353,13 @@ Connect the dashboard shell to an existing Laravel API:
 
 ```
 Client form (React Hook Form + Zod)
- submit
+        │  submit
 
 Server Action (re-validates with Zod on the server)
- calls
+        │  calls
 
 Laravel API
- revalidatePath / revalidateTag
+        │  revalidatePath / revalidateTag
 
 UI re-renders
 ```
@@ -381,13 +381,13 @@ Build a **customer add / edit form** with:
 
 ---
 
-## Phase 7 Authentication and Authorization
+## Phase 7 — Authentication and Authorization
 
-**Why this phase exists:** **auth is Red Zone in our CoE AI policy manual code, two-layer review, never fully delegate.** This phase exists to make sure every team member can build an auth flow correctly, not to be clever.
+**Why this phase exists:** **auth is Red Zone in our CoE AI policy — manual code, two-layer review, never fully delegate.** This phase exists to make sure every team member can build an auth flow correctly, not to be clever.
 
 **Learn:**
 
-- Session vs. JWT when to pick which
+- Session vs. JWT — when to pick which
 - Cookie-based auth (our Laravel Sanctum default)
 - Protected routes (middleware + server-side checks in pages and actions)
 - Next.js **middleware** (`middleware.ts`) as a proxy / gate
@@ -399,13 +399,13 @@ Build a **customer add / edit form** with:
 
 **Architecture call:** for PHP/Laravel products, **Laravel owns the session**. Next.js is a client of the Laravel API. Do not roll your own JWT in Next.js; do not store tokens in `localStorage`. Use **httpOnly cookies** set by Laravel, forwarded by Next.js. **Never expose Laravel session cookies/tokens to client JavaScript.**
 
-**Sanctum cookies vs. JWT when to use which:**
+**Sanctum cookies vs. JWT — when to use which:**
 
-| Aspect | Laravel Sanctum (cookies) **our default** | JWT in `Authorization: Bearer` |
+| Aspect | Laravel Sanctum (cookies) — **our default** | JWT in `Authorization: Bearer` |
 |---|---|---|
 | Storage | httpOnly cookie, invisible to JS | Often `localStorage` (XSS risk) or memory (lost on refresh) |
 | CSRF | Mitigated by Sanctum's CSRF cookie + `withCredentials` | Mitigated by short expiry + refresh tokens |
-| Server-side revocation | Trivial delete the session | Hard JWTs are stateless; need a deny-list |
+| Server-side revocation | Trivial — delete the session | Hard — JWTs are stateless; need a deny-list |
 | Best for | First-party web apps on the same domain or a trusted subdomain | Mobile apps, third-party API consumers, cross-domain |
 | Our default for | **Next.js frontends against Laravel** | Mobile apps, public APIs |
 
@@ -429,16 +429,16 @@ Add a **login + protected CRUD page** to the admin shell:
 
 ---
 
-## Phase 8 UI System and Frontend Architecture
+## Phase 8 — UI System and Frontend Architecture
 
-**Why this phase exists:** once we have 23 Next.js projects, copy-pasting components stops working. We need a shared UI system and a folder structure we can copy into a new project.
+**Why this phase exists:** once we have 2–3 Next.js projects, copy-pasting components stops working. We need a shared UI system and a folder structure we can copy into a new project.
 
 **Learn:**
 
 - **Tailwind CSS** (our standard)
-- **shadcn/ui** copy-paste components, **owned by us** (the CLI drops the source into our repo, not `node_modules`). Treat it like our own code: review, refactor, delete, customize. Don't upstream-block on it.
+- **shadcn/ui** — copy-paste components, **owned by us** (the CLI drops the source into our repo, not `node_modules`). Treat it like our own code: review, refactor, delete, customize. Don't upstream-block on it.
 - Reusable component patterns: layout, form, table, dialog, toast
-- Design tokens (colors, spacing, type scale) don't hardcode hex values
+- Design tokens (colors, spacing, type scale) — don't hardcode hex values
 - Folder structure for feature-based architecture
 - **Route groups** `(group)` for separating auth and protected layouts cleanly
 
@@ -446,31 +446,31 @@ Add a **login + protected CRUD page** to the admin shell:
 
 ```
 app/
- (auth)/ public auth pages login, forgot-password
+  (auth)/             ← public auth pages — login, forgot-password
  login/page.tsx
- layout.tsx no sidebar, marketing chrome
- (protected)/ gated by middleware + a server check
- layout.tsx sidebar + top bar
+    layout.tsx        ← no sidebar, marketing chrome
+  (protected)/        ← gated by middleware + a server check
+    layout.tsx        ← sidebar + top bar
  customers/
  page.tsx
  [id]/page.tsx
  orders/page.tsx
- api/ route handlers only (webhooks, proxy)
-components/ shared, generic UI primitives (Button, Input, Dialog)
-features/ vertical slices: customers/, orders/, billing/
+  api/                ← route handlers only (webhooks, proxy)
+components/           ← shared, generic UI primitives (Button, Input, Dialog)
+features/             ← vertical slices: customers/, orders/, billing/
  customers/
  components/
  hooks/
- actions.ts Server Actions
- schemas.ts Zod schemas
+    actions.ts        ← Server Actions
+    schemas.ts        ← Zod schemas
  types.ts
-lib/ framework glue (axios client, env, utils)
-services/ API clients (Laravel SDK wrappers)
-types/ cross-feature types
-hooks/ cross-feature React hooks
+lib/                  ← framework glue (axios client, env, utils)
+services/             ← API clients (Laravel SDK wrappers)
+types/                ← cross-feature types
+hooks/                ← cross-feature React hooks
 ```
 
-**Why route groups matter here:** `app/(protected)/` lets the protected layout own the auth check, so a Server Component in `(protected)/customers/page.tsx` can assume the session is valid and re-check it explicitly. `(auth)/` and `(protected)/` are **organizational only** they don't appear in the URL.
+**Why route groups matter here:** `app/(protected)/` lets the protected layout own the auth check, so a Server Component in `(protected)/customers/page.tsx` can assume the session is valid and re-check it explicitly. `(auth)/` and `(protected)/` are **organizational only** — they don't appear in the URL.
 
 **Mini task:**
 
@@ -488,18 +488,18 @@ hooks/ cross-feature React hooks
 
 ---
 
-## Phase 9 Testing
+## Phase 9 — Testing
 
-**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md)) the Next.js path extends it.
+**Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md)) — the Next.js path extends it.
 
 **Learn:**
 
 - Unit testing with **Vitest** (or Jest if a project predates it)
 - Component testing with **React Testing Library**
 - **Playwright** for E2E
-- **API mocking with MSW** (Mock Service Worker) for unit and component tests same handlers run in Node and the browser, so one definition covers both
-- **Testing Server Actions directly:** a Server Action is just a function import it in a Vitest test, call it, assert. No Next.js runtime needed. Mock the Laravel SDK at the `services/` boundary.
-- **Playwright route interception** for E2E use sparingly; prefer hitting a real staging API
+- **API mocking with MSW** (Mock Service Worker) for unit and component tests — same handlers run in Node and the browser, so one definition covers both
+- **Testing Server Actions directly:** a Server Action is just a function — import it in a Vitest test, call it, assert. No Next.js runtime needed. Mock the Laravel SDK at the `services/` boundary.
+- **Playwright route interception** for E2E — use sparingly; prefer hitting a real staging API
 - Form validation testing (submit invalid data, assert inline errors)
 - Auth flow testing (login, protected page redirect, expired session)
 
@@ -508,9 +508,9 @@ hooks/ cross-feature React hooks
 
 **Mini task:**
 
-- Vitest test for one Server Action (happy path + one Zod failure) import the action, mock the SDK, call it
+- Vitest test for one Server Action (happy path + one Zod failure) — import the action, mock the SDK, call it
 - Vitest + RTL test for the customer form, with **MSW** returning a fake Laravel response
-- One Playwright E2E: login create customer see it in the list
+- One Playwright E2E: login → create customer → see it in the list
 
 **Self-check:**
 
@@ -521,9 +521,9 @@ hooks/ cross-feature React hooks
 
 ---
 
-## Phase 10 Production Readiness
+## Phase 10 — Production Readiness
 
-**Why this phase exists:** "works on my machine" is not shipped. Production is a different problem observability, env, security headers, and the ability to roll back in under 2 minutes.
+**Why this phase exists:** "works on my machine" is not shipped. Production is a different problem — observability, env, security headers, and the ability to roll back in under 2 minutes.
 
 **Learn:**
 
@@ -533,14 +533,14 @@ hooks/ cross-feature React hooks
 - Environment variables: `.env.local`, `.env.example`, secret manager for prod
 - **Structured logging** (Pino per our Node.js standard) with `requestId` in every line
 - **Observability:** enable **Vercel Analytics + Speed Insights** when on Vercel; for self-hosted, OpenTelemetry via `instrumentation.ts` exporting to your tracing backend
-- **Error boundaries** `error.tsx` and `global-error.tsx`
+- **Error boundaries** — `error.tsx` and `global-error.tsx`
 - Performance: **`next/image`** for all images (auto WebP/AVIF, lazy loading, responsive sizes), **`next/font`** for self-hosted fonts, dynamic imports, partial prerendering
-- **Accessibility:** semantic HTML first, ARIA only when needed, keyboard nav, focus management, color contrast test with axe-core in Playwright
+- **Accessibility:** semantic HTML first, ARIA only when needed, keyboard nav, focus management, color contrast — test with axe-core in Playwright
 - SEO: metadata, sitemap, robots, Open Graph
-- **Caching strategy** when to use `force-cache`, `no-store`, tagged revalidation
-- **Security headers** CSP, HSTS, X-Frame-Options, Referrer-Policy (see [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md))
+- **Caching strategy** — when to use `force-cache`, `no-store`, tagged revalidation
+- **Security headers** — CSP, HSTS, X-Frame-Options, Referrer-Policy (see [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md))
 - Rate limiting (typically at the Laravel API layer)
-- **CI/CD** lint typecheck test build preview promote
+- **CI/CD** — lint → typecheck → test → build → preview → promote
 
 **Mini task:**
 Take the admin panel MVP and ship it to staging:
@@ -564,21 +564,21 @@ Take the admin panel MVP and ship it to staging:
 
 ## Recommended Courses
 
-**Reading order:** official sources first they are the most current and the least likely to mislead. Treat third-party tutorials and courses as supplements, not replacements.
+**Reading order:** official sources first — they are the most current and the least likely to mislead. Treat third-party tutorials and courses as supplements, not replacements.
 
-> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
+> **Using AI to accelerate:** tools like Cursor, Claude Code, or Copilot pair well with these resources — paste a doc section and ask for a summary, ask an LLM to explain a concept in your own terms, or have it scaffold the exercise at the end of a doc chapter. This is the **collaborate** tier of the CoE AI delegation model ([AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md)). Keep auth, payments, and prod DB migrations manual.
 
 Pick **one primary** source and treat the rest as references.
 
 | Level | Course | Why | Cost |
 |---|---|---|---|
-| **Primary React** | [react.dev/learn](https://react.dev/learn) official React docs (Quick Start, Thinking in React, Managing State) | Official, current, project-based | Free |
-| **Primary Next.js** | [Next.js Learn course](https://nextjs.org/learn) official Vercel tutorial | Builds a dashboard with login + CRUD, closest to what we ship | Free |
-| **Supplement interactive** | [Scrimba: Learn Next.js](https://scrimba.com/learn-nextjs-c02moisq6a) video + embedded code editor, pause-and-edit format | Best for visual / kinesthetic learners who want to type along without setting up a project | Free (Scrimba account) |
-| **Supplement full video build** | *Modern Next.js Full Course 2026* ByteGrad or freeCodeCamp on YouTube (search for the latest) | Single sitting, full build from zero to deploy; pick a 2025/2026 release so it covers App Router and Server Components | Free |
-| Deep dive Next.js | *Next.js & React The Complete Guide* Academind (Udemy) | Long-form, covers edge cases, good for first project | Paid |
-| Server Components | *React Server Components Deep Dive* Dan Abramov talks on YouTube | Mental model for Phase 4 | Free |
-| TypeScript | *Total TypeScript* Matt Pocock | Best-in-class for the kind of typing we do | Paid |
+| **Primary — React** | [react.dev/learn](https://react.dev/learn) — official React docs (Quick Start, Thinking in React, Managing State) | Official, current, project-based | Free |
+| **Primary — Next.js** | [Next.js Learn course](https://nextjs.org/learn) — official Vercel tutorial | Builds a dashboard with login + CRUD, closest to what we ship | Free |
+| **Supplement — interactive** | [Scrimba: Learn Next.js](https://scrimba.com/learn-nextjs-c02moisq6a) — video + embedded code editor, pause-and-edit format | Best for visual / kinesthetic learners who want to type along without setting up a project | Free (Scrimba account) |
+| **Supplement — full video build** | *Modern Next.js Full Course 2026* — ByteGrad or freeCodeCamp on YouTube (search for the latest) | Single sitting, full build from zero to deploy; pick a 2025/2026 release so it covers App Router and Server Components | Free |
+| Deep dive — Next.js | *Next.js & React — The Complete Guide* — Academind (Udemy) | Long-form, covers edge cases, good for first project | Paid |
+| Server Components | *React Server Components Deep Dive* — Dan Abramov talks on YouTube | Mental model for Phase 4 | Free |
+| TypeScript | *Total TypeScript* — Matt Pocock | Best-in-class for the kind of typing we do | Paid |
 | Auth | [Auth.js (NextAuth) Crash Course](https://authjs.dev/) | Only needed if a project is not Laravel-backed | Free |
 
 > **CoE rule:** Course work is a starting point. Real learning happens in the **weekly deliverable** and in code review on a real codebase.
@@ -587,38 +587,38 @@ Pick **one primary** source and treat the rest as references.
 
 ## Channels, Podcasts & Newsletters
 
-Curated, low-noise, high-signal. Subscribe to 23 more than that and you'll stop reading them.
+Curated, low-noise, high-signal. Subscribe to 2–3 — more than that and you'll stop reading them.
 
 **YouTube channels**
 
-- [Vercel](https://www.youtube.com/@VercelHQ) official framework updates, deep dives
-- [Lee Robinson](https://www.youtube.com/@leerob) Vercel VP, practical Next.js patterns
-- [Theo t3.gg](https://www.youtube.com/@t3dotgg) opinionated, fast-moving, useful counterpoints
-- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) fundamentals refresher
-- [Jack Herrington](https://www.youtube.com/@jherr) React, RSC, advanced patterns
-- [Traversy Media](https://www.youtube.com/@TraversyMedia) solid crash courses and full-project walkthroughs
-- [freeCodeCamp](https://www.youtube.com/@freecodecamp) long-form full courses (React, Next.js, TypeScript)
-- [Codevolution](https://www.youtube.com/@Codevolution) structured series if you like learning one concept per video
+- [Vercel](https://www.youtube.com/@VercelHQ) — official framework updates, deep dives
+- [Lee Robinson](https://www.youtube.com/@leerob) — Vercel VP, practical Next.js patterns
+- [Theo – t3.gg](https://www.youtube.com/@t3dotgg) — opinionated, fast-moving, useful counterpoints
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) — fundamentals refresher
+- [Jack Herrington](https://www.youtube.com/@jherr) — React, RSC, advanced patterns
+- [Traversy Media](https://www.youtube.com/@TraversyMedia) — solid crash courses and full-project walkthroughs
+- [freeCodeCamp](https://www.youtube.com/@freecodecamp) — long-form full courses (React, Next.js, TypeScript)
+- [Codevolution](https://www.youtube.com/@Codevolution) — structured series if you like learning one concept per video
 
 **Podcasts**
 
-- *Syntax.fm* weekly, broad web dev with regular Next.js episodes
-- *JS Party* panel format, good for "what's the consensus on X"
-- *React Round Up* narrower, React-heavy
-- *Changelog* open-source & infra, useful for the deploy/operate track
+- *Syntax.fm* — weekly, broad web dev with regular Next.js episodes
+- *JS Party* — panel format, good for "what's the consensus on X"
+- *React Round Up* — narrower, React-heavy
+- *Changelog* — open-source & infra, useful for the deploy/operate track
 
 **Newsletters**
 
-- [Next.js Weekly](https://nextjsweekly.com/) curated Next.js news
-- [Bytes](https://bytes.dev/) daily, sharp JavaScript news
-- [React Status](https://react.statuscode.com/) React ecosystem
-- [TLDR Web Dev](https://tldr.tech/webdev) broad, 5-minute read
+- [Next.js Weekly](https://nextjsweekly.com/) — curated Next.js news
+- [Bytes](https://bytes.dev/) — daily, sharp JavaScript news
+- [React Status](https://react.statuscode.com/) — React ecosystem
+- [TLDR Web Dev](https://tldr.tech/webdev) — broad, 5-minute read
 
 **Blogs to follow**
 
-- [Next.js Blog](https://nextjs.org/blog) release notes + engineering posts
-- [Vercel Blog](https://vercel.com/blog) RSC, edge, framework internals
-- [Dan Abramov's blog](https://overreacted.io/) long-form React deep dives
+- [Next.js Blog](https://nextjs.org/blog) — release notes + engineering posts
+- [Vercel Blog](https://vercel.com/blog) — RSC, edge, framework internals
+- [Dan Abramov's blog](https://overreacted.io/) — long-form React deep dives
 
 ---
 
@@ -639,18 +639,18 @@ Bookmark these; you'll return to them often.
 
 **Curated tutorials**
 
-- [Next.js Learn (official tutorial)](https://nextjs.org/learn) full guided build
-- [Patterns.dev](https://www.patterns.dev/) modern web app patterns (free book)
+- [Next.js Learn (official tutorial)](https://nextjs.org/learn) — full guided build
+- [Patterns.dev](https://www.patterns.dev/) — modern web app patterns (free book)
 
 **Recipes & cookbooks**
 
-- [Next.js Examples repo](https://github.com/vercel/next.js/tree/canary/examples) 200+ official examples
-- [Vercel templates](https://vercel.com/templates) production-ready starters
+- [Next.js Examples repo](https://github.com/vercel/next.js/tree/canary/examples) — 200+ official examples
+- [Vercel templates](https://vercel.com/templates) — production-ready starters
 
 **Starter templates**
 
-- [Vercel Next.js + shadcn/ui + Tailwind starter](https://vercel.com/templates/next.js/nextjs-boilerplate) closest to our standard stack
-- *Laravel + Next.js + shadcn (internal)* **TODO:** publish a minimal CoE starter as the first deliverable of Phase 8 (see [How to Use This Path](#how-to-use-this-path)). Until it exists, scaffold with `npx create-next-app@latest` and add shadcn with `npx shadcn@latest init`.
+- [Vercel — Next.js + shadcn/ui + Tailwind starter](https://vercel.com/templates/next.js/nextjs-boilerplate) — closest to our standard stack
+- *Laravel + Next.js + shadcn (internal)* — **TODO:** publish a minimal CoE starter as the first deliverable of Phase 8 (see [How to Use This Path](#how-to-use-this-path)). Until it exists, scaffold with `npx create-next-app@latest` and add shadcn with `npx shadcn@latest init`.
 
 ---
 
@@ -662,7 +662,7 @@ There is **no first-party Next.js certification** from Vercel. Adjacent certific
 |---|---|---|---|
 | **Meta Front-End Developer Professional Certificate** | Coursera / Meta | Covers React fundamentals; useful if Phase 2 feels shaky | Paid |
 | **Meta Back-End Developer Professional Certificate** | Coursera / Meta | Useful for the API side and the Laravel integration track | Paid |
-| **AWS Certified Developer Associate** | AWS | Matters once we self-host on AWS | Paid |
+| **AWS Certified Developer – Associate** | AWS | Matters once we self-host on AWS | Paid |
 | **Vercel Solutions Architect** (where available) | Vercel | First-party, directly relevant | Paid |
 
 > **CoE stance:** Certifications are a **floor**, not a ceiling. A working weekly deliverable + code review history on `dev` is worth more than any certificate. Use certs to round out gaps, not to substitute for building.
@@ -673,23 +673,23 @@ There is **no first-party Next.js certification** from Vercel. Adjacent certific
 
 For engineers who want depth beyond the docs.
 
-- *Learning React* Alex Banks & Eve Porcello (O'Reilly) solid React fundamentals
-- *Designing Web APIs* Brenda Jin, Saurabh Sahni, Amir Shevat (O'Reilly) for the API side
-- *Web Performance in Action* Jeremy Wagner for the Lighthouse / Core Web Vitals work
-- *Building Secure & Reliable Systems* Google for the production track (free online)
-- *Refactoring* Martin Fowler for shaping our component library over time
+- *Learning React* — Alex Banks & Eve Porcello (O'Reilly) — solid React fundamentals
+- *Designing Web APIs* — Brenda Jin, Saurabh Sahni, Amir Shevat (O'Reilly) — for the API side
+- *Web Performance in Action* — Jeremy Wagner — for the Lighthouse / Core Web Vitals work
+- *Building Secure & Reliable Systems* — Google — for the production track (free online)
+- *Refactoring* — Martin Fowler — for shaping our component library over time
 
 ---
 
 ## How to Use This Path
 
-**This is v0.5 Draft for Pilot Batch.** Run it with 35 developers first. Collect feedback after Week 2 and revise before rolling out to the full team.
+**This is v0.5 Draft for Pilot Batch.** Run it with 3–5 developers first. Collect feedback after Week 2 and revise before rolling out to the full team.
 
 1. **Complete the Prerequisites** (above) before Week 1. If you can't, talk to a tech lead.
 2. **Start on Monday.** Pick a phase. Work in pairs where the phase has a `*` in the 8-week plan.
 3. **Deliver on Friday.** The weekly deliverable is what gets reviewed. It can be small.
 4. **Open a PR for every deliverable.** Even tiny ones. The habit is the point.
-5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../standards/general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
+5. **Use AI carefully.** Per [CoE AI guidelines](../../../../../standards/general/ai-era-coding-guidelines.md), AI can *explain concepts*, *scaffold tests* (Phase 9 especially), and *review* code — but **auth and DB migration code is Red Zone, manual only.** Tag AI-assisted commits `[ai-assisted: <tool>]`.
 6. **Track progress.** Use a shared Notion/Kanban or a simple spreadsheet: one row per developer, one column per phase, check off self-checks as you go. Review in the team meeting each Friday.
 7. **Publish the starter template.** When the pilot batch reaches Phase 8, the first team to finish should publish a minimal **Laravel + Next.js + shadcn** starter repo and link it here (see *Starter templates* in [Tutorial & Reference Links](#tutorial--reference-links)). Until then, scaffold from `npx create-next-app@latest`.
 8. **Feedback loop.** After Week 2 of the pilot, open a feedback PR against this doc with: what was too hard, what was skipped, what was missing, what should be cut. Revise for the full-team rollout.
@@ -707,11 +707,11 @@ For engineers who want depth beyond the docs.
 
 | Field | Value |
 |---|---|
-| Document | Next.js Learning Path For the Web Dev Team |
+| Document | Next.js Learning Path — For the Web Dev Team |
 | Version | 0.6 (pilot-review: added Streaming sub-section to Phase 3, added Cache Components sub-section to Phase 5) |
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
-| Status | Draft first PR open |
+| Status | Draft — first PR open |
 | Supersedes | v0.5 |
 | Related | [Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [AI Era Coding Guidelines](../../../../../standards/general/ai-era-coding-guidelines.md) |
 

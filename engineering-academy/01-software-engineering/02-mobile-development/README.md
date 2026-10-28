@@ -1,5 +1,7 @@
 # Mobile Development
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 Mobile development learning paths are planned in this academy migration.
 
 For now, use the mobile translation in the Developer Excellence Curriculum:

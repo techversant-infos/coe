@@ -64,15 +64,18 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 
 **Path:** Adobe ColdFusion upgrade → Continue with support
 
-| Version | Status | Recommendation |
-|---------|--------|----------------|
-| CF 10 | EOL | Upgrade immediately |
-| CF 11 | EOL | Upgrade immediately |
-| CF 2016 | EOL | Upgrade immediately |
-| CF 2018 | Extended support | Plan upgrade |
-| CF 2021 | Current | Continue |
-| CF 2023 | Current | Recommended |
-| CF 2025 | Latest | Preferred if starting |
+| Version | Support status (as of 2026-10-28) | Recommendation |
+|---------|-----------------------------------|----------------|
+| CF 10 | Out of support | Upgrade immediately |
+| CF 11 | Out of support since 2021-04-30 | Upgrade immediately |
+| CF 2016 | Out of support since 2022-02-17 | Upgrade immediately |
+| CF 2018 | Out of support since 2024-07-13 | Upgrade immediately |
+| CF 2021 | Extended support only, ends 2026-11-10 | Upgrade now |
+| CF 2023 | Core support until 2028-05-16 | Acceptable target |
+| CF 2025 | Core support until 2030-04-08 | Recommended target |
+
+Dates come from the [Adobe ColdFusion lifecycle on endoflife.date](https://endoflife.date/coldfusion), which tracks
+Adobe's support matrix. Check it again before you quote a date to a client.
 
 ### Option B: Migrate to Lucee
 
@@ -177,10 +180,10 @@ For each option, score 1-5 on:
 
 ### Is CF version current?
 
-- [ ] CF 2018 or newer?
-- [ ] Extended support active?
+- [ ] CF 2023 or newer?
+- [ ] Core support active, not extended support only?
 
-**If no:** Upgrade to CF 2023 minimum first
+**If no:** Upgrade to CF 2025 first (CF 2023 at minimum)
 
 ### What are the main pain points?
 

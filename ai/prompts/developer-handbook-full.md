@@ -1,5 +1,7 @@
 # 🛠️ Developer Prompt Handbook — Employee Module
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+
 > **A complete reference of AI prompts for every stage of building the Employee Management Module.**
 > Sections 4–9 are summaries here. Each one links to its own file, which holds the full prompt and tips.
 > Covers: Technology Setup · Estimation · Planning · Database Schema · Development · Code Review · Pull Request

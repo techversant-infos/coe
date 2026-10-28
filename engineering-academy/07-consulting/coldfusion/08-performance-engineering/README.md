@@ -1,5 +1,7 @@
 # Phase 8: Performance Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Master ColdFusion performance diagnosis and optimization.
 
 ---

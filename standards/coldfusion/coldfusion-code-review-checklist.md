@@ -6,6 +6,8 @@
 
 # ColdFusion Code Review Checklist
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-10 · **Next review:** 2026-05-10
+
 The following checklist focuses on what reviewers can verify directly in a **code diff** or **pull request**.
 
 ## 📁 1. Structure & Organization

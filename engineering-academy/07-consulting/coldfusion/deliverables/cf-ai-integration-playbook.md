@@ -68,26 +68,42 @@ component {
     
     public struct function chat(required string message) {
         
+        // Quoted keys keep their case in serializeJSON on every CFML engine
         local.payload = {
-            model: "claude-3-5-sonnet-20241022",
-            max_tokens: 1024,
-            messages: [{role: "user", content: arguments.message}]
+            "model": "claude-sonnet-5-5",
+            "max_tokens": 1024,
+            "fallbacks": "default",
+            "messages": [{"role": "user", "content": arguments.message}]
         };
-        
-        cfhttp(method="POST", 
-               url=variables.apiEndpoint, 
+
+        cfhttp(method="POST",
+               url=variables.apiEndpoint,
                result="local.result") {
             cfhttpparam(type="header", name="x-api-key", value=variables.apiKey);
             cfhttpparam(type="header", name="anthropic-version", value="2023-06-01");
+            cfhttpparam(type="header", name="anthropic-beta", value="server-side-fallback-2026-07-01");
+            cfhttpparam(type="header", name="content-type", value="application/json");
             cfhttpparam(type="body", value=serializeJSON(local.payload));
         }
-        
+
+        if (local.result.statusCode != "200 OK") {
+            return { success: false, error: "API error: " & local.result.statusCode };
+        }
+
         local.response = deserializeJSON(local.result.fileContent);
-        
-        return {
-            success: true,
-            response: local.response.content[1].text
-        };
+
+        // A refusal still returns HTTP 200, so check stop_reason before reading content
+        if (local.response.stop_reason == "refusal") {
+            return { success: false, error: "The model declined this request" };
+        }
+
+        // The answer is the first "text" block. A "thinking" block can come before it
+        for (local.block in local.response.content) {
+            if (local.block.type == "text") {
+                return { success: true, response: local.block.text };
+            }
+        }
+        return { success: false, error: "The response had no text block" };
     }
 }
 ```

@@ -1,5 +1,7 @@
 # 🚀 Section 7 — Prompt for Starting Development
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Ask all setup and configuration questions before writing a single line of code — preventing mismatched assumptions and expensive rework.
 
@@ -81,7 +83,7 @@ Answer each of these clearly before code generation begins:
 
 | Question | Options / Examples |
 |----------|-------------------|
-| **Programming language & version** | Java 17, Node.js 20, Python 3.11 |
+| **Programming language & version** | Java 17, Node.js 24, Python 3.11 |
 | **Framework & version** | Spring Boot 3.2, Express 4, FastAPI 0.110 |
 | **Database type & version** | MySQL 8.0, PostgreSQL 15, MongoDB 7 |
 | **Authentication** | JWT / OAuth2 / Session / None |

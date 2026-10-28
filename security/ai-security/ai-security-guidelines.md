@@ -1,5 +1,7 @@
 # Neural Security Guidelines
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-05-28 · **Next review:** 2026-11-28
+
 **Version:** 1.0
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** May 2026

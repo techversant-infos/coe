@@ -1,5 +1,7 @@
 # Techversant Engineering Academy
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
 Use this folder for learning paths and growth roadmaps. Use the repository root folders (`general/`, `git/`, `audit/`, `php/`, `nodejs/`, `cf/`, `ai/`) as source-of-truth standards and references.

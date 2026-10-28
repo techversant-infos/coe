@@ -190,9 +190,11 @@ docs: update setup instructions
 
 ### Branch Naming
 
-- feature/feature-name
-- fix/bug-description
-- refactor/refactor-description
+Follow the [Git Workflow standard](../../standards/git/git-workflow.md#-branching-model):
+
+- `feature/add-<JIRA-ID>-<description>` for new work
+- `feature/fix-<JIRA-ID>-<description>` for bug fixes
+- `feature/refactor-<JIRA-ID>-<description>` for refactoring
 
 ## Security Considerations
 

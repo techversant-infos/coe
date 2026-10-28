@@ -1,5 +1,7 @@
 # Assessment Framework
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Measure and track each developer's journey from ColdFusion developer to technical consultant.
 
 ## Purpose

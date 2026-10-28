@@ -1,5 +1,7 @@
 # 📅 Section 5 — Prompt for Planning the Employee Module
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-04-21 · **Next review:** 2026-07-21
+
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Generate an accurate, tailored development plan by asking all clarifying questions first — before producing any output.
 

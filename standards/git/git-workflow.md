@@ -1,6 +1,8 @@
 
 # 🧭 Techversant Git Workflow
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-10 · **Next review:** 2026-05-10
+
 **Version:** 1.3  
 **Maintained by:** Center of Excellence (CoE)  
 *(Updated: October 2025)*  

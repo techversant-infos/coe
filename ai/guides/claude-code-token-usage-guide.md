@@ -1,10 +1,12 @@
 # Claude Code — Token Efficiency & Model Routing Guide
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-08-11
+
 **Techversant CoE Initiative · Shared API Key Usage Standards**
 
 > This guide is for all developers using the shared Claude Code API key under the CoE program.
 > Token usage is pooled across the entire org. Every token you waste is a token someone else can't use.
-> **Claude Opus 4.6 is NOT needed for 90% of your tasks. Use the right model for the right job.**
+> **Claude Opus 5.5 is NOT needed for 90% of your tasks. Use the right model for the right job.**
 > Read this before you start using Claude Code in your workflow.
 
 ---
@@ -34,7 +36,7 @@
 
 ## 3. Use the Right Model — The #1 Cost Lever
 
-> Sending every task to Claude Opus 4.6 is like hiring a senior architect to rename a variable.
+> Sending every task to Claude Opus 5.5 is like hiring a senior architect to rename a variable.
 > Match the model to the complexity of the task.
 > **All tools in this section are free. No paid subscriptions required.**
 
@@ -44,8 +46,9 @@
 |------|------|----------|
 | **Ollama** (local) | Free, runs on your machine | Most coding tasks — the default first stop |
 | **OpenAI Codex** | Free tier available | Code generation, completions, scaffolding |
-| **Claude Sonnet 4.6** | Shared CoE key | Reasoning, debugging, architecture |
-| **Claude Opus 4.6** | Shared CoE key | Complex multi-step problems only (use sparingly) |
+| **Claude Haiku 5.5** | Shared CoE key | Quick lookups and small edits when a local model is not good enough. The cheapest Claude model |
+| **Claude Sonnet 5.5** | Shared CoE key | Reasoning, debugging, architecture |
+| **Claude Opus 5.5** | Shared CoE key | Complex multi-step problems only (use sparingly) |
 
 ### Model Routing Quick Reference
 
@@ -53,13 +56,13 @@
 |------|----------|-----|
 | Boilerplate, CRUD scaffolding, repetitive patterns | **Ollama** — `qwen2.5-coder` | Free, runs locally, fast enough |
 | Simple refactors, renames, extract method | **Ollama** | Zero cost |
-| Syntax help, quick lookups | **Ollama** or **Codex (free)** | No API spend needed |
+| Syntax help, quick lookups | **Ollama**, **Codex (free)** or **Claude Haiku 5.5** | Little or no API spend |
 | Code generation, completions | **Codex (free tier)** | Purpose-built for code generation |
-| Test generation (unit/feature) | **Ollama** or **Claude Sonnet 4.6** | Use Sonnet only if Ollama output quality isn't good enough |
-| Debugging complex logic | **Claude Sonnet 4.6** | Reasoning quality matters here |
-| Architecture decisions, ambiguous specs | **Claude Sonnet 4.6** | This is where it earns its cost |
-| Multi-step reasoning, system design | **Claude Sonnet 4.6** | Justified use of shared key |
-| ~~Everything~~ | ~~Claude Opus 4.6~~ | ❌ Overkill for 90% of tasks — ask yourself first |
+| Test generation (unit/feature) | **Ollama** or **Claude Sonnet 5.5** | Use Sonnet only if Ollama output quality isn't good enough |
+| Debugging complex logic | **Claude Sonnet 5.5** | Reasoning quality matters here |
+| Architecture decisions, ambiguous specs | **Claude Sonnet 5.5** | This is where it earns its cost |
+| Multi-step reasoning, system design | **Claude Sonnet 5.5** | Justified use of shared key |
+| ~~Everything~~ | ~~Claude Opus 5.5~~ | ❌ Overkill for 90% of tasks — ask yourself first |
 
 ### The Decision Rule (Keep It Simple)
 
@@ -68,9 +71,9 @@ Can Ollama handle it? → Use Ollama (always try this first)
   ↓ No / output quality not good enough
 Is it code generation or completion? → Use Codex (free tier)
   ↓ No
-Does it need real reasoning or debugging? → Use Claude Sonnet 4.6
+Does it need real reasoning or debugging? → Use Claude Sonnet 5.5
   ↓ Only if Sonnet genuinely isn't enough
-Is it a truly complex, multi-layered problem? → Claude Opus 4.6 (rare, justify it)
+Is it a truly complex, multi-layered problem? → Claude Opus 5.5 (rare, justify it)
 ```
 
 ### Setting Up Ollama (One-Time, ~10 mins)
@@ -91,10 +94,11 @@ Minimum hardware: **16GB RAM**. Works on most dev machines. Ask the CoE lead if 
 
 ### Setting Up Codex (Free Tier)
 
-- Sign in at [platform.openai.com](https://platform.openai.com) with a personal account
-- Free tier includes access to Codex via the API playground and CLI
+- Sign in to Codex with a personal ChatGPT account. OpenAI includes Codex in the ChatGPT Free plan for a limited
+  time, with tight weekly limits. Check the current plan limits before you rely on it
+- Codex works in the ChatGPT web app, the open-source Codex CLI and the IDE extension
 - Use for: scaffolding, boilerplate, code completions — not for sensitive client code
-- VS Code integration: install the **OpenAI Codex** extension
+- VS Code integration: install OpenAI's **Codex** extension
 
 ### ⚠️ Privacy — What's Safe for Client Code
 
@@ -134,7 +138,7 @@ Minimum hardware: **16GB RAM**. Works on most dev machines. Ask the CoE lead if 
 | Include the error message + the relevant stack trace lines | Paste 200 lines of logs |
 | Share only the method/block where the bug lives | Share the entire service file |
 | State what you've already tried | Start fresh without context, making Claude retrace your steps |
-| Specify framework + version (e.g., Laravel 11, PHP 8.2) | Leave Claude to guess the environment |
+| Specify framework + version (e.g., Laravel 13, PHP 8.4) | Leave Claude to guess the environment |
 
 ---
 
@@ -151,7 +155,7 @@ and check for any bugs and suggest improvements?
 ### Do this (efficient):
 
 ```
-Laravel 11 · UserController.php · Lines 78–112 (store method)
+Laravel 13 · UserController.php · Lines 78–112 (store method)
 
 Issue: Validation logic is mixed with business logic.
 Goal: Extract validation into a Form Request class.
@@ -172,7 +176,7 @@ This isn't working. Can you fix it?
 ### Do this (efficient):
 
 ```
-PHP 8.2 · Laravel 11
+PHP 8.4 · Laravel 13
 
 Error: "Trying to get property of non-object" on line 94
 Method: UserService::assignRole()
@@ -246,4 +250,4 @@ As part of the CoE initiative, token usage will be reviewed periodically. If the
 
 ---
 
-*Last updated: May 2026 · Techversant CoE Initiative*
+*Last updated: October 2026 (Claude 5.5 models, Codex access) · Techversant CoE Initiative*

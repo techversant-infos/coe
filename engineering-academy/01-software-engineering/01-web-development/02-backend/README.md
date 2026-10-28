@@ -1,5 +1,7 @@
 # Backend Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This area contains backend engineering learning paths for different stack technologies.
 
 ## Current Paths

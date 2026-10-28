@@ -1,5 +1,7 @@
 # AI Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This section groups AI-specific learning paths and usage standards.
 
 AI is referenced from every discipline, but it also needs its own space because tools, workflows, and risks change quickly.

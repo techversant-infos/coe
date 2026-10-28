@@ -1,5 +1,7 @@
 # 🔀 Section 9 — Prompts for Pull Request & PR Messages
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-04-21 · **Next review:** 2026-07-21
+
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Get step-by-step Git instructions for creating a branch and raising a PR, and generate a professional PR message ready for team review.
 
@@ -33,13 +35,13 @@ Features completed:
   - Get All Employees with pagination (GET)
 
 Guide me step by step to:
-  1. Create a new feature branch from the main / develop branch
-     - Follow Git branch naming conventions
-     - Suggested format: feature/employee-management-crud
+  1. Create a new feature branch from main
+     - Follow our naming format: feature/<type>-<JIRA-ID>-<description>
+     - Suggested name: feature/add-EMP-101-employee-crud
   2. Stage and commit my changes with a proper commit message
      - Follow conventional commit format
   3. Push the new branch to the remote repository
-  4. Raise a Pull Request targeting the develop branch
+  4. Raise a Pull Request targeting the dev branch
   5. Assign reviewers and add appropriate labels
 
 Format: Numbered step-by-step Git commands, each with a one-line
@@ -60,8 +62,8 @@ description for team code review.
 Write a complete PR message for the following completed work:
 
 Feature: Employee Management Module
-Branch: feature/employee-management-crud
-Target Branch: develop
+Branch: feature/add-EMP-101-employee-crud
+Target Branch: dev
 
 Changes Made:
   - REST APIs: Create, Update, Delete, Get Employee
@@ -92,13 +94,15 @@ Include ALL of these sections in the PR message:
 
 ## Git Branch Naming Quick Reference
 
-| Branch Type | Naming Format | When to Use |
-|-------------|--------------|-------------|
-| New Feature | `feature/employee-management-crud` | Adding new functionality |
-| Bug Fix | `bugfix/fix-employee-delete-null-check` | Fixing a non-critical bug |
-| Hotfix | `hotfix/employee-email-duplicate-error` | Urgent production fix |
-| Refactor | `refactor/employee-service-layer-cleanup` | Code cleanup, no behaviour change |
-| Release | `release/v1.0.0-employee-module` | Preparing a release version |
+Every branch starts from `main` and uses `feature/<type>-<JIRA-ID>-<description>`. Pull requests target `dev`.
+The full table, including hotfixes and the promotion from `dev` to `main`, is in the
+[Git Workflow standard](../../standards/git/git-workflow.md#-branching-model).
+
+| Branch Type | Example |
+|-------------|---------|
+| New feature | `feature/add-EMP-101-employee-crud` |
+| Bug fix | `feature/fix-EMP-114-delete-null-check` |
+| Refactor | `feature/refactor-EMP-120-service-layer` |
 
 ---
 

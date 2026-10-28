@@ -5,6 +5,8 @@
 
 # Node.js TypeScript Style Guide (Techversant CoE)
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-11 · **Next review:** 2026-05-11
+
 ## 📚 Table of Contents
 
 - [1. Purpose](#1-purpose)

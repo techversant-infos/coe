@@ -50,6 +50,10 @@ These benchmarks provide baseline estimates for common ColdFusion tasks. Adjust 
 | CF2018 → CF2023 | 40 | 64 | 96 |
 | CF2021 → CF2023 | 16 | 24 | 40 |
 
+> **Note:** CF2018 and CF2021 are no longer valid upgrade targets. CF2018 is out of support and CF2021 extended
+> support ends on 2026-11-10. Use the CF2023 rows as the closest estimate for a CF2025 upgrade until CF2025
+> benchmarks are recorded.
+
 ### CF → Lucee Migration
 
 | App Size | Low | Medium | High |

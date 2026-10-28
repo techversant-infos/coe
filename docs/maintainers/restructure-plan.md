@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** In progress (Phases 0 to 4 complete)
+**Status:** In progress (Phases 0 to 5 complete)
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -40,7 +40,7 @@ coe/
 | 2 | Move files with `git mv` and kebab-case names. Fix links in the same change | Done |
 | 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Done (`AGENTS.md` / `CLAUDE.md` moved to Phase 6) |
 | 4 | Cross-links: fix broken links, add folder indexes, add CI checks | Done |
-| 5 | Status header on every document. Update outdated content in order of risk | Not started |
+| 5 | Status header on every document. Update outdated content in order of risk | Done |
 | 6 | Rewrite root and academy READMEs, `CONTRIBUTING.md`, academy TODO | Not started |
 
 ## Baseline (origin/main, 2026-10-27)
@@ -113,11 +113,51 @@ Conflicts found that need an owner's decision (Phase 5):
 
 Found during Phase 4 and moved to Phase 5:
 
+<!-- cspell:ignore Enginearden boxlucee -->
+
 - **Unverifiable Lucee content.** The Lucee module refers to "Enginearden licensing" and a `boxlucee migrate` command.
   Neither exists in any source found. Lucee is free under LGPL v2.1, and paid support comes from Lucee Association
   Switzerland members.
 - **Lost characters.** An earlier edit dropped dashes and emoji from some academy files, for example "New joiner
   (13 months in)" where "1-3 months" was meant, and "Suggested 68 Week Plan".
+
+## Phase 5 Results
+
+### Status headers
+
+Every document in `standards/`, `security/` and `ai/` (except the skills library and index READMEs), and every
+README in the academy, starts with one line:
+
+```text
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
+```
+
+- **Next review** is the last content change before this restructure plus 6 months (3 months for `ai/`).
+- **Status** is `Needs review` once that date has passed. 22 documents are overdue, including every stack
+  standard (last changed November 2025) and all AI guides and prompts.
+- 7 documents kept the status they already declared (the two draft security documents and five draft or planned
+  academy paths). Three planned disciplines show `Planned`.
+- **Owner** is `TBD` until the CoE lead names owners.
+
+### Outdated content fixed, highest risk first
+
+| Area | Was | Now |
+|------|-----|-----|
+| ColdFusion support status in client deliverables | CF2021 "Current", CF2018 "Extended support", "CF2018 is end-of-life in December" | Dated table from Adobe's matrix: CF2021 extended support ends 2026-11-10, CF2023 to 2028-05-16, CF2025 to 2030-04-08 |
+| Claude API examples (ColdFusion) | Retired `claude-3-5-sonnet-20241022`, reads `content[1].text`, no refusal check | `claude-sonnet-5-5`, reads the first text block, checks `stop_reason`, quoted JSON keys, server-side fallback |
+| Lucee module | "Enginearden licensing", `boxlucee migrate` command | LGPL licence and Lucee Association Switzerland support; CFConfig commands checked against its docs |
+| Claude Code token guide | Sonnet 4.6 and Opus 4.6, Codex "API playground free tier" | Claude 5.5 models, Haiku 5.5 as the low-cost option, Codex through ChatGPT sign-in |
+| Supported versions | Lucee 5+, ColdFusion 2018+ or 2021+ | Lucee 6.2+, ColdFusion 2023+ |
+| Example stacks in prompts | Node.js 20, PostgreSQL 14, React 18, Laravel 11, PHP 8.2 | Node.js 24, PostgreSQL 17, React 19, Laravel 13, PHP 8.4 |
+| Branch naming | Three conventions | The git standard; the PR prompt and the automation rule link to it |
+
+- **Lost characters restored.** 791 lines in 13 files got their dashes, arrows and emoji back from the intact
+  originals in `learning-paths/` (commit `e4425af^`). About 286 characters stay missing, in lines edited since.
+- **Anchors.** `scripts/check-links.py` now also checks `#heading` links into other files. It found 91 broken ones,
+  all now fixed. Slugs were confirmed against pages GitHub rendered.
+
+Not changed on purpose: Java 17 and Python 3.11 in examples (both still supported), the ColdFusion migration hour
+benchmarks (a note says CF2025 benchmarks are missing), and the Ollama model list.
 
 ## Parked Work
 
@@ -132,4 +172,5 @@ These sit on local branches so they do not mix with the restructure:
 
 - Name an owner for each area (inventory column `owner`).
 - Decide how to reconcile `origin/dev`, which has 8 commits that `main` lacks.
-- Confirm the Red Zone list and pick one branch naming convention (see Phase 3 Results).
+- Confirm the Red Zone list (see Phase 3 Results). Branch naming now follows the git standard.
+- Review the 22 documents marked `Needs review`, starting with the stack standards.

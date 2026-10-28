@@ -8,7 +8,7 @@
 | Skill | Description | Weight | Score |
 |-------|-------------|--------|-------|
 | ColdFusion | CFML syntax, Application.cfc, tags, functions, built-in functions | 20% | __/10 |
-| Lucee | Railo heritage, extensions, Enginearden licensing, compatibility issues | 10% | __/10 |
+| Lucee | Railo heritage, extensions, LGPL licensing and support options, compatibility issues | 10% | __/10 |
 | Java | JVM internals, servlets, debugging tools, stack traces | 10% | __/10 |
 | SQL | Query optimization, indexes, stored procedures, database design | 10% | __/10 |
 | Performance | Profiling, caching strategies, connection pooling, JVM tuning | 10% | __/10 |

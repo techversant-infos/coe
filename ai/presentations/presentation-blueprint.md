@@ -1,5 +1,7 @@
 # AI Productivity Presentation — Blueprint v3
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-22
+
 **Session title:** Don't let AI work for you. Work better with AI.
 **Target:** 15 slides · 35–40 minutes
 **Audience:** Developers · QA · Designers · Tech Leads · Delivery Managers
@@ -483,7 +485,7 @@ project/
 **Minimum CLAUDE.md (show on slide):**
 
 ```
-Stack: Node.js 20, React 18, PostgreSQL, AWS
+Stack: Node.js 24, React 19, PostgreSQL, AWS
 Style: ESLint Airbnb, async/await, no raw SQL
 Tests: Jest + Supertest
 Off-limits: /src/auth/, /src/middleware/security.js

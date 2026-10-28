@@ -72,7 +72,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 
 - Lucee migration project experience
 - Knowledge of Railo compatibility issues
-- Understanding of Enginearden licensing
+- Understanding of Lucee's LGPL licence and where paid support comes from
 
 ### Java (Weight: 10%)
 

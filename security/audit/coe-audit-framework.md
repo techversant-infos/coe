@@ -1,5 +1,7 @@
 # CoE Compliance Audit Framework
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-09-08 · **Next review:** 2027-03-08
+
 **Version:** 1.0
 **Issued by:** Techversant Center of Excellence (CoE)
 **Effective Date:** May 2026

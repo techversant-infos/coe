@@ -1,5 +1,7 @@
 # Claude Cheat Sheet — Developer Edition
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+
 **Techversant Infotech · Engineering CoE**
 *"Don't let AI work for you. Work better with AI."*
 
@@ -227,7 +229,7 @@ your-project/
 
 ```markdown
 # Project Context
-Stack: Node.js 20, Express, PostgreSQL 14, React 18
+Stack: Node.js 24, Express, PostgreSQL 17, React 19
 Style: ESLint Airbnb, async/await only, no raw SQL (use Knex)
 Test framework: Jest + Supertest
 Patterns: logger.info('msg', { context }), Knex for queries

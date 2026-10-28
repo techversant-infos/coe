@@ -8,7 +8,7 @@ Create a complete REST API for a resource (users, products, orders) with proper 
 
 ## Prerequisites
 
-- ColdFusion 2018+ or Lucee 5+
+- Adobe ColdFusion 2023+ or Lucee 6.2+ (supported releases)
 - Understanding of HTTP methods and status codes
 - Basic database knowledge
 

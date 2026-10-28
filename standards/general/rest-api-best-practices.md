@@ -1,5 +1,7 @@
 # REST API Best Practices & Style Guide  
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-20 · **Next review:** 2026-05-20
+
 **Version:** 3.0  
 **Audience:** Backend Developers, Architects, QA  
 **Scope:** Company-wide (Framework-agnostic, reusable across all teams)**

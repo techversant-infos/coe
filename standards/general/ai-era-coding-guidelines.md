@@ -1,5 +1,7 @@
 # Techversant Engineering Coding Standards for the AI Era
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-05-10
+
 **Issued by:** Center of Excellence (CoE)  
 **Effective Date:** November 2025  
 **Last Updated:** 2026-10-28 (added 2.1 Delegation Levels and 2.2 Red Zone as the single source)  

@@ -1,5 +1,7 @@
 # Module 9-03: Presentation Skills
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2027-01-28
+
 > Learn to deliver clear, confident presentations to technical and non-technical audiences.
 
 ## Overview
@@ -60,7 +62,7 @@ By the end of this module, you will be able to:
 | Instead of... | Say... |
 |--------------|--------|
 | "ColdFusion is a CFML runtime on the JVM" | "ColdFusion is a web application platform — like the engine that runs your internal tools" |
-| "CF2018 is end-of-life in December" | "Your current platform will no longer receive security updates after December, which means potential vulnerabilities" |
+| "CF2018 has been end-of-life since July 2024" | "Your current platform has had no security updates since July 2024, so newly found vulnerabilities stay open" |
 | "JVM garbage collection tuning" | "We can make your application faster by optimizing how it uses memory" |
 
 ### Architecture Diagrams for Non-Technical Audiences

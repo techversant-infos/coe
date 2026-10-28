@@ -1,5 +1,7 @@
 # Deliverables
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Reusable assets for ColdFusion consulting engagements.
 
 This folder contains templates, checklists, playbooks, and frameworks that support client engagements.

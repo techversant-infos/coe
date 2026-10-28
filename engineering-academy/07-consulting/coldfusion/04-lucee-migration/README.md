@@ -1,5 +1,7 @@
 # Phase 4: Lucee Migration
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2027-01-28
+
 > Execute safe, successful migrations from Adobe ColdFusion to Lucee.
 
 ---
@@ -33,7 +35,7 @@ By the end of this phase, you will be able to:
 - [ ] Execute migration with zero or minimal downtime
 - [ ] Replace ACF-only extensions with Lucee equivalents
 - [ ] Validate application behavior post-migration
-- [ ] Handle Enginearden licensing and support
+- [ ] Plan support: Lucee is free under LGPL v2.1, and paid support comes from Lucee Association Switzerland members
 
 ## Prerequisites
 
@@ -101,7 +103,7 @@ By the end of this phase, you will be able to:
 
 **Commercial alternatives:**
 
-- Enginearden supported extensions
+- Commercial Lucee extensions and support from Lucee Association Switzerland members
 - Third-party PDF services
 - Cloud-based document services
 
@@ -134,7 +136,7 @@ Document the migration process to contribute to the [CF → Lucee Migration Play
 - [Lucee Documentation](https://docs.lucee.org/)
 - [Lucee vs Adobe Reference](./resources/lucee-vs-adobe.md)
 - [CommandBox Documentation](https://commandbox.ortusbooks.com/)
-- [Enginearden Lucee](https://www.lucee.org/)
+- [Lucee](https://www.lucee.org/) and its [support options](https://www.lucee.org/get-support.html)
 
 ## Time Estimate
 

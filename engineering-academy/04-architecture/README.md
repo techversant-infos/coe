@@ -1,5 +1,7 @@
 # 04. Architecture
 
+**Status:** Planned · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 Architecture is a planned academy discipline for engineers who design systems across services, teams, and long-term change.
 
 This path should stay practical: architecture decisions must connect to implementation, operations, security, cost, and migration risk.
@@ -43,7 +45,7 @@ This path should stay practical: architecture decisions must connect to implemen
 
 ## Temporary References
 
-- [Developer Excellence Curriculum - Design Thinking](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-3-design-thinking-for-developers-intermediate-advanced)
+- [Developer Excellence Curriculum - Design Thinking](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-3--design-thinking-for-developers-intermediate--advanced)
 - [REST API Best Practices](../../standards/general/rest-api-best-practices.md)
 - [Lead to Architect Progression](../career-progression/04-lead-to-architect.md)
 

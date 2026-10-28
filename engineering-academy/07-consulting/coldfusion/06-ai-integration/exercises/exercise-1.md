@@ -21,7 +21,7 @@ Document your configuration:
 // Application configuration
 variables.apiEndpoint = "https://api.anthropic.com/v1/messages";
 variables.apiKey = serverSystem.ENV.CLAUDE_API_KEY;  // Set in environment
-variables.model = "claude-3-5-sonnet-20241022";
+variables.model = "claude-sonnet-5-5";
 ```
 
 ### Part 2: CFHTTP Integration
@@ -33,29 +33,31 @@ component {
     
     variables.apiEndpoint = "https://api.anthropic.com/v1/messages";
     variables.apiKey = "";
-    variables.model = "claude-3-5-sonnet-20241022";
+    variables.model = "claude-sonnet-5-5";
     
     public struct function sendMessage(required string message, array history = []) {
         
         // Build the request payload
+        // Quote the keys: serializeJSON can upper-case unquoted keys, and the API rejects "MODEL"
         local.payload = {
-            model: variables.model,
-            max_tokens: 1024,
-            messages: []
+            "model": variables.model,
+            "max_tokens": 1024,
+            "fallbacks": "default",
+            "messages": []
         };
         
         // Add conversation history
         for (local.item in arguments.history) {
             local.payload.messages.append({
-                role: local.item.role,
-                content: local.item.content
+                "role": local.item.role,
+                "content": local.item.content
             });
         }
         
         // Add current message
         local.payload.messages.append({
-            role: "user",
-            content: arguments.message
+            "role": "user",
+            "content": arguments.message
         });
         
         // Make the API call
@@ -65,15 +67,35 @@ component {
                                   result="local.httpResult") {
                 cfhttpparam(type="header", name="x-api-key", value=variables.apiKey);
                 cfhttpparam(type="header", name="anthropic-version", value="2023-06-01");
+                // Lets "fallbacks": "default" retry some refusals on another model
+                cfhttpparam(type="header", name="anthropic-beta", value="server-side-fallback-2026-07-01");
                 cfhttpparam(type="header", name="content-type", value="application/json");
                 cfhttpparam(type="body", value=serializeJSON(local.payload));
             }
             
             if (local.httpResult.statusCode == "200 OK") {
                 local.response = deserializeJSON(local.httpResult.fileContent);
+
+                // A refusal still returns HTTP 200, so check stop_reason before reading content
+                if (local.response.stop_reason == "refusal") {
+                    return {
+                        success: false,
+                        error: "The model declined this request"
+                    };
+                }
+
+                // The answer is the first "text" block. A "thinking" block can come before it
+                for (local.block in local.response.content) {
+                    if (local.block.type == "text") {
+                        return {
+                            success: true,
+                            message: local.block.text
+                        };
+                    }
+                }
                 return {
-                    success: true,
-                    message: local.response.content[1].text
+                    success: false,
+                    error: "The response had no text block"
                 };
             } else {
                 return {

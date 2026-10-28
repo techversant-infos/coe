@@ -1,5 +1,7 @@
 # Phase 3: Modernization Strategy
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Learn to recommend the right modernization path for each client's situation.
 
 ---

@@ -1,5 +1,7 @@
 # Module 9-04: Communication Skills
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2027-01-28
+
 > Master the day-to-day communication patterns that build client confidence.
 
 ## Overview
@@ -62,7 +64,7 @@ By the end of this module, you will be able to:
 
 You can use full technical terminology but still communicate clearly:
 
-> "The main risk is CF2018 reaching end-of-life in December. We'd need to either upgrade to CF2023 or migrate to Lucee. Both have migration paths, but Lucee eliminates the licensing cost."
+> "The main risk is that CF2018 has had no security updates since July 2024. We'd need to either upgrade to CF2025 or migrate to Lucee. Both have migration paths, but Lucee eliminates the licensing cost."
 
 ## What Never to Say
 

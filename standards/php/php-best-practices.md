@@ -1,5 +1,7 @@
 # PHP Best Practices & Modern Development Standards  
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
+
 **Version:** 1.1
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  

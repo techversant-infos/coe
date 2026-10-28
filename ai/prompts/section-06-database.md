@@ -1,5 +1,7 @@
 # 🗄️ Section 6 — Prompt for Database Schema, Table & Index Creation
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-04-21 · **Next review:** 2026-07-21
+
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Generate a complete, production-ready database setup — schema, table, constraints, and indexes — ready to execute on a fresh database.
 

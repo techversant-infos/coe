@@ -5,6 +5,8 @@
 
 # Node.js TypeScript Best Practices: The Ultimate Survival Guide
 
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-11 · **Next review:** 2026-05-11
+
 *How to build services that are boring to operate (in the best way).*
 
 ## 📚 Table of Contents

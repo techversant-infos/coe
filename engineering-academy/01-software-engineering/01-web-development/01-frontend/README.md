@@ -1,5 +1,7 @@
 # Frontend Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 Frontend engineers should complete the React foundation before moving into framework-specific delivery.
 
 ## Paths

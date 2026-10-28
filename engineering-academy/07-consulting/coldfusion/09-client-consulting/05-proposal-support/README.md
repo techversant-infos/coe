@@ -1,5 +1,7 @@
 # Module 9-05: Proposal Support
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+
 > Learn to write proposal content that wins projects.
 
 ## Overview

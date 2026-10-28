@@ -1,5 +1,7 @@
 # Phase 6: AI Integration
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2027-01-28
+
 > Add modern AI capabilities to existing ColdFusion systems.
 
 ---
@@ -124,6 +126,7 @@ By the end of this phase, you will be able to:
 // Basic Claude integration
 result = cfhttp(method="POST", url="#variables.apiEndpoint#", result="result") {
     cfhttpparam(type="header", name="x-api-key", value="#variables.apiKey#");
+    cfhttpparam(type="header", name="anthropic-version", value="2023-06-01");
     cfhttpparam(type="header", name="Content-Type", value="application/json");
     cfhttpparam(type="body", value=serializeJSON(payload));
 }
