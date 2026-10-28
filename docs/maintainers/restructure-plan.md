@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** In progress (Phases 0 and 1 complete)
+**Status:** In progress (Phases 0, 1 and 2 complete)
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -37,7 +37,7 @@ coe/
 |-------|-------|--------|
 | 0 | Baseline: sync with `origin/main`, park open work, add link checker and inventory | Done |
 | 1 | Safety fixes: untrack `secrets.env`, ignore rules, Claude permissions, file encoding | Done |
-| 2 | Move files with `git mv` and kebab-case names. Fix links in the same change | Not started |
+| 2 | Move files with `git mv` and kebab-case names. Fix links in the same change | Done |
 | 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Not started |
 | 4 | Cross-links: fix broken links, add folder indexes, add CI checks | Not started |
 | 5 | Status header on every document. Update outdated content in order of risk | Not started |
@@ -56,6 +56,16 @@ coe/
 | Files with outdated version or model signals | 12 |
 
 Run `python scripts/check-links.py --orphans` to reproduce.
+
+## Redirect Stubs
+
+Sixteen files at the old `audit/`, `cf/`, `general/`, `git/`, `neural/`, `nodejs/` and `php/` paths are one-line
+stubs that point to the new location. They keep bookmarked GitHub links, Drive links and Slack links working.
+
+- Each stub starts with `<!-- redirect-stub: delete after the next release -->`.
+- Delete them all once the CoE lead confirms that external links are updated.
+- The academy and `ai/` folders have no stubs. Their links are internal.
+- `git/Git & Git workflow.pdf` moved to `standards/git/git-and-git-workflow.pdf` and has no stub.
 
 ## Parked Work
 
