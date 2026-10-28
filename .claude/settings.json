@@ -1,9 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Read: all",
-      "Write: all",
-      "Bash: all"
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(python scripts/check-links.py:*)"
     ]
   },
   "completion": {
