@@ -1,4 +1,4 @@
-﻿# Quality Strategy
+# Quality Strategy
 
 This section contains quality engineering strategy guidance.
 

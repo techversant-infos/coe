@@ -1,4 +1,4 @@
-﻿# Advanced Level
+# Advanced Level
 
 Advanced means the engineer can design solutions, handle ambiguity, and improve team practices.
 

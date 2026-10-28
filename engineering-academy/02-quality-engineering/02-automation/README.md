@@ -1,4 +1,4 @@
-﻿# Test Automation
+# Test Automation
 
 This section contains automation learning paths.
 

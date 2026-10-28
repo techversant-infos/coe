@@ -1,4 +1,4 @@
-﻿# Techversant Center of Excellence (CoE)
+# Techversant Center of Excellence (CoE)
 
 This repository contains Techversant's engineering standards, learning paths, audit references, and AI-assisted development guidance.
 

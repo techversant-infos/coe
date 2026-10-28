@@ -1,4 +1,4 @@
-﻿# Foundation Level
+# Foundation Level
 
 Foundation means the engineer understands the concepts and can complete guided tasks with support.
 

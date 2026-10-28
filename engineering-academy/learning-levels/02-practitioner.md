@@ -1,4 +1,4 @@
-﻿# Practitioner Level
+# Practitioner Level
 
 Practitioner means the engineer can deliver routine work independently with normal review.
 
