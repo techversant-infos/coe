@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** In progress (Phases 0 to 5 complete)
+**Status:** Phases 0 to 6 complete. Waiting for review and merge
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -41,7 +41,7 @@ coe/
 | 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Done (`AGENTS.md` / `CLAUDE.md` moved to Phase 6) |
 | 4 | Cross-links: fix broken links, add folder indexes, add CI checks | Done |
 | 5 | Status header on every document. Update outdated content in order of risk | Done |
-| 6 | Rewrite root and academy READMEs, `CONTRIBUTING.md`, academy TODO | Not started |
+| 6 | Rewrite root and academy READMEs, `CONTRIBUTING.md`, academy TODO | Done |
 
 ## Baseline (origin/main, 2026-10-27)
 
@@ -104,9 +104,10 @@ Conflicts found that need an owner's decision (Phase 5):
   exist. It now uses `DavidAnson/markdownlint-cli2-action`. A fourth job runs `scripts/check-links.py`.
 - **Config files:** `.markdownlint-cli2.jsonc` (rules and ignored folders), `.lycheeignore` (sites that block bots,
   checked by hand), `cspell.json` with `.cspell/project-words.txt`. All three skip `archive/`.
-- **Lint backlog.** 13 markdownlint rules are off because existing content breaks them. The config lists each rule
+- **Lint backlog.** 14 markdownlint rules are off because existing content breaks them. The config lists each rule
   with its count. Turn a rule back on when its count reaches 0. The largest are line length (857), list indentation
-  (387) and code blocks without a language (181).
+  (387) and code blocks without a language (181). MD060 (table pipe spacing, 4,814) was added in Phase 6, after
+  local runs were pinned to the markdownlint-cli2 version CI uses (0.23.2).
 - **Folder indexes added:** `standards/`, `security/`, `ai/`, `docs/maintainers/`.
 - **Rendering bug fixed:** the branch patterns in `standards/git/git-workflow.md` showed as `feature/fix--` on GitHub,
   because `<JIRA-ID>` and `<desc>` were read as HTML tags.
@@ -159,6 +160,19 @@ README in the academy, starts with one line:
 Not changed on purpose: Java 17 and Python 3.11 in examples (both still supported), the ColdFusion migration hour
 benchmarks (a note says CF2025 benchmarks are missing), and the Ollama model list.
 
+## Phase 6 Results
+
+- **Root README** describes the new layout and the status line, and starts with a task-based "Start Here" table.
+- **AGENTS.md** is the one guide for every AI agent. It is tool-neutral, links to the standards instead of repeating
+  stack and REST rules, and no longer points to the non-existent `ai/Codex/` folder.
+- **CLAUDE.md** imports AGENTS.md with `@AGENTS.md` and keeps only Claude Code details: the `.claude` kit and the
+  commit tag.
+- **CONTRIBUTING.md** documents the status line, branch names from the git standard, a consistent versioning
+  table, how to move or retire a document, and the checks to run before a pull request.
+- **Academy README** lists `07-consulting/` and links to the standards, security and AI indexes.
+- **Academy TODO** drops the finished migration items and adds the consulting discipline.
+- Local check commands are pinned to the versions CI uses: markdownlint-cli2 0.23.2 and cspell 10.4.0.
+
 ## Parked Work
 
 These sit on local branches so they do not mix with the restructure:
@@ -170,7 +184,11 @@ These sit on local branches so they do not mix with the restructure:
 
 ## Open Items
 
-- Name an owner for each area (inventory column `owner`).
+- Push `chore/COE-repo-restructure` and open a pull request to `main`. Nothing is pushed yet.
+- Name an owner for each area. Status lines and the inventory say `TBD`.
+- Run the Lychee external link check in CI. It cannot run locally; every URL changed here was checked by hand.
 - Decide how to reconcile `origin/dev`, which has 8 commits that `main` lacks.
 - Confirm the Red Zone list (see Phase 3 Results). Branch naming now follows the git standard.
 - Review the 22 documents marked `Needs review`, starting with the stack standards.
+- Delete the 16 redirect stubs after the next release.
+- Work down the markdownlint backlog in `.markdownlint-cli2.jsonc`, one rule per pull request.

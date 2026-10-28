@@ -22,7 +22,8 @@
     "MD040": false, // 181 code blocks without a language
     "MD041": false, //   9 file does not start with a heading
     "MD024": false, //  40 repeated sibling headings, mostly per-section "Notes" in checklists
-    "MD050": false  //   2 mixed bold style
+    "MD050": false, //   2 mixed bold style
+    "MD060": false  // 4814 table pipe spacing (enforced by markdownlint-cli2 0.23.2, the version CI uses)
   },
   "ignores": [
     "archive/**",

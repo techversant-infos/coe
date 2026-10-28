@@ -1,123 +1,82 @@
 # AGENTS.md
 
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
+Guidance for AI coding agents (Claude Code, Codex, Copilot and others) working in this repository.
+Claude Code also reads [CLAUDE.md](./CLAUDE.md), which imports this file.
 
-## Repository Purpose
+## What This Repository Is
 
-This is a **Center of Excellence (CoE) standards repository** — not an application. It contains Techversant's engineering guidelines, best practices, and AI-assisted development standards for multiple technology stacks.
+A **standards and learning repository**, not an application. It holds Techversant's engineering standards,
+security checklists, AI guidance and the Engineering Academy. Almost every change is to a markdown document.
 
-## Git Workflow
+## Layout
 
-**Multi-Stage Promotion Model:**
-
-```
-feature branch → dev (auto-deploy) → staging (manual) → main (verified) → tag (prod deploy)
-```
-
-**Branch naming:** `feature/<JIRA-ID>-<description>`
-
-**Commit format:** [Conventional Commits](https://www.conventionalcommits.org/)
-
-```
-feat(module): add user login
-fix(module): handle null pointer
-docs(module): update API guide
+```text
+coe/
+|-- standards/            general/  git/  php/  nodejs/  coldfusion/
+|-- security/             audit/  ai-security/
+|-- ai/                   guides/  prompts/  skills-library/  presentations/
+|-- engineering-academy/  00-07 disciplines, learning-levels/, career-progression/
+|-- docs/maintainers/     restructure plan, inventory, academy TODO, gap analyses
+|-- archive/              superseded documents, never linked from live content
+`-- scripts/              check-links.py
 ```
 
-**Merge rules:** PR review + CI required. Never force-push to shared branches.
+Each top-level folder has a README index. Files at the old paths (`audit/`, `cf/`, `general/`, `git/`, `neural/`,
+`nodejs/`, `php/`) are redirect stubs. Do not edit them or add new files there.
 
-## AI-Assisted Development Standards
+## Rules for AI-Assisted Work
 
-These standards apply to all code in this repository:
+The rules live in [AI Era Coding Guidelines](./standards/general/ai-era-coding-guidelines.md). In short:
 
-**Human-in-the-Loop (Mandatory):**
+- Review every line of AI output before committing, and never commit what you cannot explain.
+- Pick a delegation level for each task: Full delegate, Collaborate, Human-led or Never delegate
+  ([section 2.1](./standards/general/ai-era-coding-guidelines.md#21-delegation-levels)).
+- Never generate Red Zone content: authentication and authorization, encryption and key management, PII and payment
+  handling, production database migrations ([section 2.2](./standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only)).
+- Tag AI-assisted commits with `[ai-assisted: <tool>]`, for example `[ai-assisted: claude]`.
 
-- Review every line of AI output before committing
-- Never commit code you cannot explain
-- Tag AI-assisted commits: `[ai-assisted: Codex]`
-- Use delegation levels: 🟢 FULL DELEGATE → 🟡 COLLABORATE → 🟠 HUMAN-LED → 🔴 NEVER DELEGATE
+## Git
 
-**Red Zone (Manual Only — Never Delegate):**
+Follow [Git Workflow](./standards/git/git-workflow.md):
 
-- Authentication & authorization
-- Encryption & key management
-- PII handling & payment processing
-- Production database migrations
+- Branch from `main` as `feature/<type>-<JIRA-ID>-<description>`, for example `feature/fix-AGL-881-rounding`.
+- Write [Conventional Commits](https://www.conventionalcommits.org/): `docs(security): add SSRF checks`.
+- Open pull requests against `dev`. Code moves `dev` → `staging` → `main`, and a tag deploys to production.
+- Never force-push to a shared branch.
 
-**Two-Layer Review:**
+## Writing and Editing Documents
 
-1. AI Pre-Review (logic gaps, edge cases, tests)
-2. Human Review (business logic, security, architecture fit)
+- Keep the status line under each document title up to date
+  (`**Status:** · **Owner:** · **Last updated:** · **Next review:**`). See [CONTRIBUTING.md](./CONTRIBUTING.md).
+- Use kebab-case file names and relative links.
+- Move a superseded document to `archive/` with a banner. Do not delete it.
+- Academy content follows the rules in `.claude/rules/` and the templates in `.claude/templates/`.
+- Files use UTF-8 and LF line endings (`.gitattributes`). Indent with 2 spaces, 4 in PHP code.
 
-## Coding Standards by Stack
+## Checks
 
-### PHP / Laravel
+Run these before you open a pull request. CI runs the same checks.
 
-- PSR-12 compliance (4 spaces, 120 char line limit)
-- Use prepared statements — never concatenate SQL
-- Use `password_hash()` / `password_verify()` for passwords
-- Controllers slim; business logic in Services/Actions
-
-### ColdFusion / CFML
-
-- CFScript for business logic
-- Always use `<cfqueryparam>`
-- Query results prefixed with `q` (e.g., `qUsers`)
-- Cache long-running queries with `cachedwithin`
-
-### Node.js / TypeScript
-
-- Use Zod for validation + type inference
-- Pino for structured logging with requestId
-- Follow hexagonal architecture (ports/adapters)
-- Add Zod validation for every public endpoint
-
-## REST API Conventions
-
-**Response format:**
-
-```json
-{
-  "success": true,
-  "data": { ... },
-  "meta": { "traceId": "abc123" }
-}
+```bash
+python scripts/check-links.py
+npx markdownlint-cli2@0.23.2 "**/*.md"
+npx cspell@10.4.0 --no-progress "**/*.md"
 ```
 
-**Error format:**
+- `check-links.py` finds broken relative links, links to missing headings and references to removed folders.
+- markdownlint rules are in `.markdownlint-cli2.jsonc`. Some rules are off as a backlog; do not turn one on in an
+  unrelated change.
+- Add new technical words to `.cspell/project-words.txt`, not to a document.
 
-```json
-{
-  "success": false,
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "...",
-    "details": {}
-  }
-}
-```
-
-**Boolean naming:** Always use `is`/`has`/`can` prefix (`isActive`, `hasPermission`, `canRedeem`)
-
-**Date format:** ISO 8601 only (`2025-01-20T14:30:00Z`)
-
-**Filtering operators:** `_gt`, `_gte`, `_lt`, `_lte`, `_ne`, `_in`, `_between`
-
-**Sorting:** `sort=field` (asc), `sort=-field` (desc)
-
-## Key Files Reference
+## Key Files
 
 | File | Purpose |
 |------|---------|
-| `standards/git/git-workflow.md` | Full branching, commits, rollback, CI/CD governance |
-| `standards/general/ai-era-coding-guidelines.md` | AI-assisted development principles |
-| `standards/general/rest-api-best-practices.md` | API design, naming, error handling, filtering |
-| `standards/php/php-coding-standards.md` | PHP/Laravel standards (PSR-12, security) |
-| `standards/coldfusion/coldfusion-style-guide.md` | CFML conventions (2-space indent, `q` prefix for queries) |
-| `standards/nodejs/nodejs-typescript-best-practices.md` | Node.js service patterns (Zod, Pino, hexagonal) |
-| `ai/Codex/Codex-dev-cheatsheet.md` | Codex prompts, session controls, delegation levels |
-| `ai/prompts/developer-handbook-full.md` | AI prompt templates for full development lifecycle |
-
-## Editor Config
-
-Uses `.editorconfig`: UTF-8, 2-space indentation (except PHP uses 4), LF line endings.
+| [standards/README.md](./standards/README.md) | Index of every coding standard |
+| [standards/git/git-workflow.md](./standards/git/git-workflow.md) | Branching, commits, promotion, rollback |
+| [standards/general/ai-era-coding-guidelines.md](./standards/general/ai-era-coding-guidelines.md) | AI review rules, delegation levels, Red Zone |
+| [standards/general/rest-api-best-practices.md](./standards/general/rest-api-best-practices.md) | API naming, responses, errors, filtering |
+| [security/audit/security-audit-checklist.md](./security/audit/security-audit-checklist.md) | Security checklist for every pull request |
+| [ai/prompts/developer-handbook-full.md](./ai/prompts/developer-handbook-full.md) | Prompt templates for the development lifecycle |
+| [engineering-academy/README.md](./engineering-academy/README.md) | Academy disciplines and starting points |
+| [docs/maintainers/restructure-plan.md](./docs/maintainers/restructure-plan.md) | Current cleanup decisions and open items |

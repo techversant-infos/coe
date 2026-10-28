@@ -43,7 +43,7 @@ By the end of this phase, you will be able to:
 ## Prerequisites
 
 - [Phase 1: ColdFusion Deep Expertise](../01-coldfusion-deep-expertise/)
-- Basic understanding of cloud fundamentals (see Planned: `general/cloud/`)
+- Basic understanding of cloud fundamentals (see the planned [Platform Engineering discipline](../../../03-platform-engineering/README.md))
 
 ## Topics
 

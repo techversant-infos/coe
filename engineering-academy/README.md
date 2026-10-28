@@ -4,7 +4,8 @@
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
-Use this folder for learning paths and growth roadmaps. Use the repository root folders (`general/`, `git/`, `audit/`, `php/`, `nodejs/`, `cf/`, `ai/`) as source-of-truth standards and references.
+Use this folder for learning paths and growth roadmaps. The rules the paths teach live outside it, in
+[standards](../standards/README.md), [security](../security/README.md) and [ai](../ai/README.md).
 
 ## AI-Assisted Content Creation
 
@@ -28,9 +29,9 @@ engineering-academy/
 |-- 04-architecture/
 |-- 05-engineering-leadership/
 |-- 06-ai-engineering/
+|-- 07-consulting/
 |-- learning-levels/
 |-- career-progression/
-|-- academy-todo.md
 `-- README.md
 ```
 
@@ -45,6 +46,7 @@ engineering-academy/
 | [04. Architecture](./04-architecture/README.md) | Solution architecture, system design, distributed systems - planned curriculum |
 | [05. Engineering Leadership](./05-engineering-leadership/README.md) | Team lead, engineering manager, technical leadership - planned curriculum |
 | [06. AI Engineering](./06-ai-engineering/README.md) | AI-assisted development, AI-assisted testing, prompt engineering |
+| [07. Consulting: ColdFusion](./07-consulting/coldfusion/README.md) | Legacy assessment, modernization, Lucee and cloud migration, client consulting |
 
 ## Guidance Layers
 
@@ -61,8 +63,4 @@ engineering-academy/
 - QA engineer: [Manual Tester to Automation Engineer](./02-quality-engineering/02-automation/playwright/01-manual-to-automation.md)
 - Existing automation engineer: [Automation Engineer to Senior Automation Engineer](./02-quality-engineering/02-automation/playwright/02-senior-automation.md)
 - Manager or mentor: [Career Progression](./career-progression/01-transition-overview.md)
-
----
-
-**Maintained by:** Techversant CoE
-**Last Updated:** June 2026
+- ColdFusion developer moving into consulting: [ColdFusion Consulting Quick Start](./07-consulting/coldfusion/QUICKSTART.md)

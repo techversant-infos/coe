@@ -1,6 +1,7 @@
-# Academy Migration TODO
+# Academy TODO
 
-This file tracks the migration from standalone learning paths to the Techversant Engineering Academy structure.
+Gaps and next priorities for the Techversant Engineering Academy. The migration from the standalone
+`learning-paths/` folder finished in June 2026.
 
 ## Priority Order
 
@@ -8,7 +9,7 @@ This file tracks the migration from standalone learning paths to the Techversant
 2. Pilot the completed Software Engineering and Quality Engineering paths.
 3. Build missing backend and mobile curricula.
 4. Build Platform, Architecture, Leadership, and AI curricula in that order.
-5. Remove compatibility copies only after links are migrated and owners approve deletion.
+5. Review the academy READMEs whose status line says `Needs review`.
 
 ## Current Status
 
@@ -21,7 +22,8 @@ This file tracks the migration from standalone learning paths to the Techversant
 | Platform engineering | Planned | 2/10 | Scope and missing paths defined; full curricula needed |
 | Architecture | Planned | 2/10 | Scope and missing paths defined; full curricula needed |
 | Engineering leadership | Planned | 2/10 | Scope and missing paths defined; full curricula needed |
-| AI engineering | Planned | 2/10 | Scope and missing paths defined; full curricula needed |
+| AI engineering | Planned | 2/10 | Scope and missing paths defined; full curricula needed. AI Architect outline waits on branch `feature/COE-ai-architect-path` |
+| Consulting: ColdFusion | In progress | Not rated | 10 modules, capstone, deliverables and assessment kit. Support dates and Lucee content corrected in October 2026 |
 | Learning levels | Complete | 9/10 | All four levels defined and ordered |
 | Career progression | Complete | 8/10 | Four ordered transition guides |
 
@@ -73,5 +75,5 @@ Do not delete these without owner approval:
 
 | Candidate | Reason to consider removal | Safer alternative |
 |---|---|---|
-| Reviewer-only gap-analysis files | Useful for CoE reviewers, but noisy for learners | Keep with `90-` prefix unless learner navigation becomes cluttered |
+| Reviewer-only gap-analysis files | Done: moved to [gap-analyses/](./gap-analyses/) in October 2026 | Keep the `90-` prefix |
 | Roadmap images | Helpful visual context but may become stale | Keep if source/date is documented; otherwise replace with maintained diagrams |
