@@ -1,5 +1,6 @@
 
 # 🧭 Techversant Git Workflow
+
 **Version:** 1.3  
 **Maintained by:** Center of Excellence (CoE)  
 *(Updated: October 2025)*  
@@ -9,6 +10,7 @@ A unified Git workflow for all engineering teams — Backend, Frontend, Mobile, 
 ---
 
 ## ⚙️ Core Principles
+
 - `main` is always **production-ready** and deployable.  
 - Every change starts in a **short-lived feature branch**.  
 - **PR review + CI validation** are mandatory before merging.  
@@ -26,12 +28,12 @@ A unified Git workflow for all engineering teams — Backend, Frontend, Mobile, 
 
 | Purpose | Naming Convention | Example |
 |----------|-------------------|----------|
-| New feature | feature/add-<JIRA-ID>-<desc> | feature/add-ICF-102-login |
-| Bug fix | feature/fix-<JIRA-ID>-<desc> | feature/fix-AGL-881-rounding |
-| Optimization | feature/optimize-<JIRA-ID>-<desc> | feature/optimize-AI-22-cache |
-| Documentation | feature/doc-<JIRA-ID>-<desc> | feature/doc-PLAT-17-api-guide |
-| Refactor | feature/refactor-<JIRA-ID>-<desc> | feature/refactor-SPARK-221-service |
-| Hotfix | feature/hotfix-<JIRA-ID>-<desc> | feature/hotfix-OPS-999-null-pointer |
+| New feature | `feature/add-<JIRA-ID>-<desc>` | `feature/add-ICF-102-login` |
+| Bug fix | `feature/fix-<JIRA-ID>-<desc>` | `feature/fix-AGL-881-rounding` |
+| Optimization | `feature/optimize-<JIRA-ID>-<desc>` | `feature/optimize-AI-22-cache` |
+| Documentation | `feature/doc-<JIRA-ID>-<desc>` | `feature/doc-PLAT-17-api-guide` |
+| Refactor | `feature/refactor-<JIRA-ID>-<desc>` | `feature/refactor-SPARK-221-service` |
+| Hotfix | `feature/hotfix-<JIRA-ID>-<desc>` | `feature/hotfix-OPS-999-null-pointer` |
 
 **Tips:**  
 ✅ Always branch off `main`.  
@@ -48,6 +50,7 @@ A unified Git workflow for all engineering teams — Backend, Frontend, Mobile, 
 Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).  
 
 **Example:**
+
 ```bash
 feat(auth): add OTP-based login
 
@@ -73,9 +76,11 @@ git add . && git commit -m "feat(auth): add OTP-based login"
 git fetch origin && git rebase origin/main
 git push origin feature/add-ICF-102-login
 ```
+
 → Open PR → CI runs → Review → Merge to **dev**
 
 ### 🔁 Promotion Flow
+
 1. **Merge PR to `dev`** → triggers deployment to **Development environment**.  
 2. **Validate in Dev** → run integration, smoke, and regression tests.  
 3. **Promote to Staging** → run QA/UAT validation.  
@@ -121,18 +126,24 @@ git push origin feature/add-ICF-102-login
 - Use `--force-with-lease` (not `--force`) to prevent overwriting others’ work.  
 - Announce when rebasing if multiple developers are collaborating.  
 - **Before rebase:**
+
   ```bash
   git fetch origin
   git rebase origin/main
   ```
+
 - **If something goes wrong:**
+
   ```bash
   git rebase --abort
   ```
+
 - Enable Git rerere to auto-reuse previous conflict resolutions:
+
   ```bash
   git config --global rerere.enabled true
   ```
+
 - Use rebasing only to **clean up local history**, not rewrite shared history.  
 
 ---
@@ -169,6 +180,7 @@ git push origin feature/add-ICF-102-login
 ---
 
 ### 💡 Optional Enhancements (for future automation)
+
 - **Feature Flags:** Merge early, toggle off until stable.  
 - **Automated Versioning:** Use Semantic Release or standard-version for changelog & tagging.  
 - **CI Guardrails:** Block merges to `main` unless from `staging` or verified commit hash.  

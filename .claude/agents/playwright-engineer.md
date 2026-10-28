@@ -37,6 +37,7 @@ Technical specialist in Playwright test automation who designs curriculum for le
 ## Output Format
 
 Produces:
+
 - Conceptual lessons with annotated code examples
 - Exercises with starter code and solution templates
 - Assessment rubrics emphasizing code quality and test coverage

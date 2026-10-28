@@ -28,6 +28,7 @@ These benchmarks provide baseline estimates for common ColdFusion tasks. Adjust 
 | Enterprise (500+ files) | 120 hours | 180 hours | 300 hours |
 
 **Includes:**
+
 - Code review
 - Architecture documentation
 - Dependency mapping
@@ -59,6 +60,7 @@ These benchmarks provide baseline estimates for common ColdFusion tasks. Adjust 
 | Enterprise (500+ files) | 320 hours | 480 hours | 800 hours |
 
 **Includes:**
+
 - Compatibility scanning
 - Function replacement
 - Extension migration

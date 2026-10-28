@@ -27,6 +27,7 @@
 > "How you participate is up to you."
 >
 > "You might contribute as:
+>
 > - A technical specialist who reviews and advises on architecture
 > - A migration expert who plans and executes Lucee moves
 > - A client-facing consultant who builds relationships and guides decisions
@@ -150,16 +151,21 @@ Walk through the pathway table:
 ## Key Phrases to Use
 
 ### Instead of "Program"
+
 Use: practice, initiative, pathway, contribution
 
 ### Instead of "Assignment"
+
 Use: targeted activity, growth area, one action
 
 ### Instead of "Complete all phases"
+
 Use: choose your pathway, deepen where you want to grow
 
 ### Instead of "Mandatory"
+
 Use: role-aligned, voluntary, self-directed
 
 ### Instead of "Training"
+
 Use: practice, development, capability building

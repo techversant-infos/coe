@@ -37,7 +37,7 @@ A self-directed practice initiative—not a training program. Developers use it 
 | [1. Opportunity](#session-1-the-opportunity) | 15 min | Why this matters |
 | [2. Pathways](#session-2-pathways-and-roles) | 20 min | What you can do |
 | [3. How It Works](#session-3-how-it-works) | 15 min | Getting started |
-| [4. Individual Discussion](#session-4-individual) | 30 min per person | Pathway selection |
+| [4. Individual Discussion](#session-4-individual-discussion) | 30 min per person | Pathway selection |
 
 ---
 

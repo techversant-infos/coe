@@ -46,6 +46,7 @@ By the end of this phase, you will be able to:
 ### 1. Compatibility Assessment
 
 **Functions that need replacement:**
+
 - `cfschedule` differences
 - `cfdocument` PDF handling
 - `cfexchange` (Exchange connector)
@@ -54,6 +55,7 @@ By the end of this phase, you will be able to:
 - `cfimage` operations
 
 **Extensions that need replacement:**
+
 - PDF services
 - Solr integration
 - Exchange integration
@@ -71,11 +73,13 @@ By the end of this phase, you will be able to:
 ### 3. Common Issues
 
 **Railo Compatibility Layer:**
+
 - Functions that worked in Railo but not Lucee
 - Extension incompatibilities
 - Performance differences
 
 **Lucee-Specific Bugs:**
+
 - Known issues and workarounds
 - Version-specific quirks
 - Memory management differences
@@ -90,11 +94,13 @@ By the end of this phase, you will be able to:
 ### 5. Extension Ecosystem
 
 **Free alternatives:**
+
 - PDFtk for PDF manipulation
 - LibreOffice for document conversion
 - Solr alternatives (Elasticsearch, Typesense)
 
 **Commercial alternatives:**
+
 - Enginearden supported extensions
 - Third-party PDF services
 - Cloud-based document services
@@ -126,7 +132,7 @@ Document the migration process to contribute to the [CF → Lucee Migration Play
 ## Resources
 
 - [Lucee Documentation](https://docs.lucee.org/)
-- [Lucee vs Adobe Reference](../resources/lucee-vs-adobe.md)
+- [Lucee vs Adobe Reference](./resources/lucee-vs-adobe.md)
 - [CommandBox Documentation](https://commandbox.ortusbooks.com/)
 - [Enginearden Lucee](https://www.lucee.org/)
 

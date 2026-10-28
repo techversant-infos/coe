@@ -71,6 +71,7 @@ By the end of this module, you will be able to:
 - Show data flow, not implementation details
 
 **Example:**
+
 ```
 ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
 │   Users     │ ───→ │  ColdFusion │ ───→ │  Database   │
@@ -152,8 +153,8 @@ Complete all exercises and pass the module assessment with 70% or higher.
 ## Resources
 
 - Planned: General Communication Guide
-- [Slide Templates](./resources/slide-templates.md) — (planned)
-- [Architecture Diagram Examples](./resources/architecture-diagrams.md) — (planned)
+- Planned: Slide Templates
+- Planned: Architecture Diagram Examples
 
 ## Time Estimate
 

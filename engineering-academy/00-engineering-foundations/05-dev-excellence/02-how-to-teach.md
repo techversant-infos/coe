@@ -18,30 +18,31 @@ Keeping them in one file means the learner skips past 30 lines of facilitator ad
 
 ## What makes the content land
 
-** Use one simple codebase and evolve it step by step.**
+**Use one simple codebase and evolve it step by step.**
 Pick one codebase the team knows. Don't teach SOLID with five toy examples teach SOLID by evolving *their* `PaymentProcessor`. Don't teach REST with a fresh project review an existing API and refactor it.
 
-** Refactor live during sessions.**
+**Refactor live during sessions.**
 The "before" is a real class in the repo. The "after" is the refactor in real time. The team sees the *decisions* why the developer chose to extract a service *here*, not *there*. Pre-record the refactor only if the team is remote; live is always better.
 
-** Show before vs. after.**
+**Show before vs. after.**
 Every topic has a "before" and an "after." The "before" is the smell. The "after" is the fix. The team's habit, after enough topics, is to *see the smell first* to recognize the pattern in their own PRs.
 
-** Tie every concept to:**
+**Tie every concept to:**
+
 - **Real production bugs** "this exact pattern caused incident #2143 in production. Here's the postmortem."
 - **Real code review comments** "this exact comment is on PR #1827. The author pushed back; here's the resolution."
 - **Real maintenance pain points** "this exact abstraction slowed us down in the Q3 migration. Here's why."
 
-** Run in pairs.**
+**Run in pairs.**
 The pair format is the single biggest predictor of pilot success. A solo developer reads the topic; a pair *discusses* the topic. The discussion is where the discipline lands.
 
-** Time-box the topics.**
+**Time-box the topics.**
 One session, one topic, one mini-task. Don't combine two topics. The mini-task is the *transfer* if the developer can't apply it to a real PR, the session didn't land.
 
-** Review the mini-task.**
+**Review the mini-task.**
 The mini-task is the assignment; the review is the feedback. The senior developer who runs the pilot also reviews the mini-task PRs. The review is the teaching moment, not the session.
 
-** Document the run.**
+**Document the run.**
 After the pilot, write 1 page: what worked, what didn't, what to change for v0.2. Feed it back into this curriculum via a PR.
 
 ---

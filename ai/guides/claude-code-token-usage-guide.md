@@ -1,4 +1,5 @@
 # Claude Code — Token Efficiency & Model Routing Guide
+
 **Techversant CoE Initiative · Shared API Key Usage Standards**
 
 > This guide is for all developers using the shared Claude Code API key under the CoE program.
@@ -140,6 +141,7 @@ Minimum hardware: **16GB RAM**. Works on most dev machines. Ask the CoE lead if 
 ## 5. Efficient Prompt Patterns
 
 ### Instead of this (wasteful):
+
 ```
 Here is my entire UserController.php [pastes 400 lines]. 
 Can you review it and refactor it and also add PHPDoc comments 
@@ -147,6 +149,7 @@ and check for any bugs and suggest improvements?
 ```
 
 ### Do this (efficient):
+
 ```
 Laravel 11 · UserController.php · Lines 78–112 (store method)
 
@@ -160,12 +163,14 @@ Constraint: Keep existing error response format.
 ---
 
 ### Instead of this (wasteful):
+
 ```
 This isn't working. Can you fix it?
 [pastes entire file]
 ```
 
 ### Do this (efficient):
+
 ```
 PHP 8.2 · Laravel 11
 

@@ -55,6 +55,7 @@ Slide 7: Next Steps
 Record yourself presenting (use your phone). Time yourself.
 
 **Checklist:**
+
 - [ ] Under 10 minutes
 - [ ] No jargon
 - [ ] Used analogies

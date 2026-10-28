@@ -8,22 +8,21 @@
 
 ## You are here
 
+```text
+engineering-academy/00-engineering-foundations/05-dev-excellence/   <- you are here
+|-- README.md                  this file
+|-- 01-curriculum.md           the curriculum: 7 phases, 20 topics, tech-agnostic
+|-- 02-how-to-teach.md         facilitator only: how to run a pilot batch
+`-- 03-stack-translations/     per-stack translations of every topic
+    |-- webdev/frontend.md     web frontend
+    |-- webdev/backend.md      server-side
+    `-- mobile/stacks.md       iOS, Android
 ```
-learning-paths/
- dev-excellence/ You are here
- README.md (this file)
- 01-curriculum.md (the curriculum 7 phases, 20 topics, tech-agnostic)
- 02-how-to-teach.md (facilitator-only how to run a pilot batch)
- 90-gap-analysis.md (reviewer-only coverage matrix)
- 03-stack-translations/ (per-stack translations of every topic)
- webdev/
- frontend.md (web frontend)
- backend.md (server-side)
- mobile/
- stacks.md (iOS, Android)
- nextjs/ (tech path: web frontend)
- react/ (tech path: React core)
-```
+
+Related tech paths live in `engineering-academy/01-software-engineering/01-web-development/01-frontend/`
+([React](../../01-software-engineering/01-web-development/01-frontend/01-react/) and
+[Next.js](../../01-software-engineering/01-web-development/01-frontend/02-nextjs/)). The reviewer-only coverage
+matrix is in [docs/maintainers/gap-analyses](../../../docs/maintainers/gap-analyses/90-gap-analysis.md).
 
 ## What this curriculum is for
 
@@ -52,10 +51,10 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 
 ## Where to start
 
-- ** New joiner (13 months in)** start at [Phase 1](./01-curriculum.md#phase-1-foundational-coding-discipline-beginner). Don't try to read it all at once. Pick *one* topic per week, apply it to your real PRs, and ask for code review on the change.
-- ** Pilot batch planner** start with [02-how-to-teach.md](./02-how-to-teach.md). It defines the format (one evolving codebase, live refactor, before/after). Pick 35 developers, run for 68 weeks, revisit at Week 2.
-- ** Senior developer / tech lead** start at the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md). Use it to challenge scope ("is *this* in the curriculum? if not, why not?"), and to feed the Week-2 review back into v0.2.
-- ** Reviewer (CoE audit)** start at the [Document Control](./01-curriculum.md#document-control) and the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) coverage table. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
+- **New joiner (13 months in)** start at [Phase 1](./01-curriculum.md#phase-1-foundational-coding-discipline-beginner). Don't try to read it all at once. Pick *one* topic per week, apply it to your real PRs, and ask for code review on the change.
+- **Pilot batch planner** start with [02-how-to-teach.md](./02-how-to-teach.md). It defines the format (one evolving codebase, live refactor, before/after). Pick 35 developers, run for 68 weeks, revisit at Week 2.
+- **Senior developer / tech lead** start at the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md). Use it to challenge scope ("is *this* in the curriculum? if not, why not?"), and to feed the Week-2 review back into v0.2.
+- **Reviewer (CoE audit)** start at the [Document Control](./01-curriculum.md#document-control) and the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) coverage table. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
 
 ## Related paths
 
@@ -72,9 +71,9 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 
 The [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelines.md) apply. For this curriculum specifically:
 
-- ** COLLABORATE tier (most topics)** AI can draft examples, refactor before/after code blocks, and generate code-review-question variants. Human owns the rubric and the "right answer" to a question.
-- ** HUMAN-LED tier (Phase 7 Senior Developer Mindset)** Architectural Decision Records and mentoring practice are human-led. AI can suggest a structure for an ADR, but the *decision* and the *trade-off analysis* are human.
-- ** NEVER DELEGATE tier** none of the curriculum content is in the Red Zone. But code review *of Red Zone code* (auth, payments, prod migrations) absolutely is see the [Code Review Excellence phase](./01-curriculum.md#phase-6-code-review-excellence-advanced) and the AI Era Coding Guidelines for the two-layer model.
+- **COLLABORATE tier (most topics)** AI can draft examples, refactor before/after code blocks, and generate code-review-question variants. Human owns the rubric and the "right answer" to a question.
+- **HUMAN-LED tier (Phase 7 Senior Developer Mindset)** Architectural Decision Records and mentoring practice are human-led. AI can suggest a structure for an ADR, but the *decision* and the *trade-off analysis* are human.
+- **NEVER DELEGATE tier** none of the curriculum content is in the Red Zone. But code review *of Red Zone code* (auth, payments, prod migrations) absolutely is see the [Code Review Excellence phase](./01-curriculum.md#phase-6-code-review-excellence-advanced) and the AI Era Coding Guidelines for the two-layer model.
 
 ## Path length and pacing
 

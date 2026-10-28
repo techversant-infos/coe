@@ -205,7 +205,7 @@ Count your responses:
 Based on your answers:
 
 1. **Select your primary pathway** from the [README](README.md) pathway table
-2. **Create your 90-day plan** using [ASSESSMENT/90-day-plan.md](90-day-plan.md)
+2. **Create your 90-day plan** using [assessment/90-day-plan.md](90-day-plan.md)
 3. **Choose one targeted activity** for this week
 
 No need to complete everything. Start with the gap that matters most for your chosen contribution level.

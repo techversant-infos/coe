@@ -53,6 +53,7 @@ Prepare 15 questions across these categories:
 One person plays consultant, another plays CTO.
 
 **CTO Persona:**
+
 - Concerned about security vulnerabilities
 - Budget is limited ($20K)
 - Doesn't want to rewrite from scratch
@@ -103,5 +104,6 @@ Rate your discovery skills:
 | Closing | | |
 
 **Areas to improve:**
+
 1. _______________________________________
 2. _______________________________________

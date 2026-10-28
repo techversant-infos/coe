@@ -48,6 +48,7 @@ By the end of this phase, you will be able to:
 ### 1. AI Use Cases for ColdFusion
 
 **High-Value Quick Wins:**
+
 - Customer support chatbot
 - Document search and Q&A
 - Email generation and summarization
@@ -55,12 +56,14 @@ By the end of this phase, you will be able to:
 - Code comment generation
 
 **Medium-Effort Projects:**
+
 - Intelligent search
 - Content recommendation
 - Anomaly detection
 - Workflow automation
 
 **Advanced:**
+
 - Custom training
 - Fine-tuned models
 - Agentic workflows
@@ -69,12 +72,14 @@ By the end of this phase, you will be able to:
 ### 2. Integration Architecture
 
 **HTTP-Based Integration:**
+
 - CFHTTP for API calls
 - JSON parsing with DeserializeJSON
 - Streaming responses
 - Error handling patterns
 
 **API Providers:**
+
 - Claude API (Anthropic)
 - OpenAI API (GPT-4, Assistants)
 - Azure OpenAI
@@ -83,24 +88,28 @@ By the end of this phase, you will be able to:
 ### 3. Common Patterns
 
 **Chatbot Implementation:**
+
 - Session management for conversations
 - Context preservation
 - Multi-turn dialogs
 - Fallback strategies
 
 **Document Processing:**
+
 - PDF text extraction (cfpdf + AI)
 - Chunking strategies
 - Summarization
 - Classification
 
 **Semantic Search:**
+
 - Embedding generation
 - Vector database integration
 - Pinecone, Weaviate, Chroma
 - Hybrid search (keyword + vector)
 
 **RAG Pipeline:**
+
 - Document ingestion
 - Chunking and embedding
 - Vector storage
@@ -110,6 +119,7 @@ By the end of this phase, you will be able to:
 ### 4. CF-Specific Implementation
 
 **CfHttp Patterns:**
+
 ```cfml
 // Basic Claude integration
 result = cfhttp(method="POST", url="#variables.apiEndpoint#", result="result") {
@@ -120,6 +130,7 @@ result = cfhttp(method="POST", url="#variables.apiEndpoint#", result="result") {
 ```
 
 **Error Handling:**
+
 - Rate limiting (cfthread + sleep)
 - Timeout handling
 - Retry logic

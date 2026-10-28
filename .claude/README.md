@@ -27,6 +27,7 @@ Scaffolds a complete learning phase within `engineering-academy/<NN-discipline>/
 ```
 
 **Examples:**
+
 ```bash
 /create-learning-phase 02-quality-engineering playwright-basics --subfolder 02-automation/playwright --level Foundation
 /create-learning-phase 00-engineering-foundations git-workflow
@@ -34,6 +35,7 @@ Scaffolds a complete learning phase within `engineering-academy/<NN-discipline>/
 ```
 
 **What it creates:**
+
 ```
 engineering-academy/<NN-discipline>/<topic>/phase-1/
 ├── README.md
@@ -59,6 +61,7 @@ Generates hands-on exercises for specific concepts within an academy discipline.
 ```
 
 **Examples:**
+
 ```bash
 /create-exercise 00-engineering-foundations git-merge --level Practitioner
 /create-exercise 02-quality-engineering playwright-locators --subfolder 02-automation/playwright
@@ -76,6 +79,7 @@ Builds rubric-based evaluations aligned to Techversant competency levels.
 ```
 
 **Examples:**
+
 ```bash
 /create-assessment 02-quality-engineering playwright-basics --subfolder automation/playwright --type summative
 /create-assessment 00-engineering-foundations git-workflow --level Foundation
@@ -102,6 +106,7 @@ Runs a quality review of a learning phase against Techversant standards.
 ```
 
 **Examples:**
+
 ```bash
 /review-learning-phase engineering-academy/02-quality-engineering/automation/playwright/phase-1
 /review-learning-phase engineering-academy/00-engineering-foundations/git-workflow --level Foundation --generate-report
@@ -214,6 +219,7 @@ Standardized structures for consistent content:
 ## Content Structure Rules
 
 Every learning phase must have:
+
 - `READMEME.md` with learning objectives and overview
 - 3–4 lessons with clear, measurable objectives
 - 3–4 hands-on exercises with progressive hints and solutions

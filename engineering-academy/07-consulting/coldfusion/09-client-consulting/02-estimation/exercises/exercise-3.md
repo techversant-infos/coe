@@ -21,6 +21,7 @@ You have completed an estimate for the BlogCFC5 modernization. Now you need to p
 ### Estimate Summary (4 min)
 
 **Present the numbers:**
+
 - Low estimate: X hours
 - Likely estimate: Y hours
 - High estimate: Z hours
@@ -64,6 +65,7 @@ Prepare responses for:
 Record yourself presenting. Review with a peer.
 
 **Checklist:**
+
 - [ ] Stated the range clearly
 - [ ] Explained assumptions
 - [ ] Defended the risk buffer

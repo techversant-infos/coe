@@ -204,6 +204,7 @@ export function ProtectedRoute({ children }) {
 ```
 
 **Usage in App.js:**
+
 ```javascript
 <Routes>
   <Route path="/login" element={<Login />} />

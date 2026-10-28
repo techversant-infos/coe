@@ -68,10 +68,11 @@ Before closing:
 ### Offer Options with Trade-offs
 
 > "We have three approaches:
+>
 > 1. Quick fix — addresses the symptom, lower cost, temporary
 > 2. Structural fix — addresses the root cause, higher cost, permanent
 > 3. Full modernization — reduces future maintenance, highest investment
-> 
+>
 > Each has different implications for timeline and budget."
 
 ---

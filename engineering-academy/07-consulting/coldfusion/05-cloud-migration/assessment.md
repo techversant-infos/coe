@@ -26,6 +26,7 @@ For a high-availability ColdFusion deployment, identify the correct AWS service:
 ### A2: EC2 Sizing (10 points)
 
 ColdFusion app with these requirements:
+
 - 500 concurrent users
 - Average response time: 2 seconds
 - CPU usage: 40% per instance
@@ -134,18 +135,22 @@ What special configuration is needed for ColdFusion connecting to Azure SQL?
 ## Answer Key
 
 ### Section A
+
 - A1: Route53, ALB/NLB, ASG, ElastiCache/Redis, EFS/S3, RDS, ElastiCache/Redis, CloudFront
 - A2: t3.xlarge or similar; 2-3 instances minimum
 
 ### Section B
+
 - B1: Multi-stage build, non-root user, secrets via env vars
 - B2: Distributed across containers, persistence, performance
 
 ### Section C
+
 - C1: c → i → f → g → e → b → a → h → j → d
 - C2: All except single instance failure
 
 ### Section D
+
 - D1: VMs, Blob Storage, SQL Database, Azure Cache for Redis, Azure Front Door, Azure AD
 - D2: SSL/TLS required, firewall rules, connection string format
 

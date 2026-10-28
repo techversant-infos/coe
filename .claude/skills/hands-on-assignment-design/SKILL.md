@@ -5,6 +5,7 @@ Guidelines for creating effective hands-on exercises that reinforce learning con
 ## When to Use This Skill
 
 Use this skill when:
+
 - Designing exercises for any learning path
 - Creating practical assignments to accompany lessons
 - Building coding challenges or lab exercises
@@ -13,13 +14,16 @@ Use this skill when:
 ## Exercise Design Principles
 
 ### Learning Objective Alignment
+
 Every exercise must:
+
 1. Directly support a specific learning objective
 2. Provide appropriate challenge for the learner's level
 3. Include clear success criteria
 4. Offer scaffolding without doing the work
 
 ### Progressive Difficulty
+
 - **Level 1 (Introduction)**: Follow-along, highly guided
 - **Level 2 (Guided Practice)**: Fill in gaps, hints provided
 - **Level 3 (Independent Practice)**: Complete from specification
@@ -28,33 +32,44 @@ Every exercise must:
 ### Exercise Types
 
 #### Code Completion
+
 Provide partially completed code with blanks to fill.
+
 - Best for: Learning syntax and patterns
 - Example: "Complete the function to sort an array"
 
 #### Debugging
+
 Provide broken code and ask learner to fix it.
+
 - Best for: Understanding error patterns
 - Example: "This test has 3 bugs. Find and fix them"
 
 #### Build from Scratch
+
 Provide requirements and ask learner to build.
+
 - Best for: Applying concepts independently
 - Example: "Build a function that validates email addresses"
 
 #### Refactoring
+
 Provide working but poorly written code.
+
 - Best for: Learning best practices
 - Example: "Refactor this test suite to use Page Object Model"
 
 #### Integration
+
 Combine multiple concepts in a larger task.
+
 - Best for: Synthesizing knowledge
 - Example: "Build a test suite that covers login, search, and checkout"
 
 ## Exercise Structure Template
 
 ### Header
+
 ```markdown
 ## Exercise [N]: [Title]
 
@@ -64,11 +79,13 @@ Combine multiple concepts in a larger task.
 ```
 
 ### Objective
+
 ```markdown
 **Objective:** [Single sentence describing what learner will practice]
 ```
 
 ### Prerequisites
+
 ```markdown
 **Prerequisites:**
 - [Concept 1] from [Lesson reference]
@@ -76,6 +93,7 @@ Combine multiple concepts in a larger task.
 ```
 
 ### Instructions
+
 ```markdown
 **Instructions:**
 1. Step-by-step guidance
@@ -84,6 +102,7 @@ Combine multiple concepts in a larger task.
 ```
 
 ### Expected Outcome
+
 ```markdown
 **Expected Outcome:**
 - [Specific result 1]
@@ -92,6 +111,7 @@ Combine multiple concepts in a larger task.
 ```
 
 ### Hints
+
 ```markdown
 <details>
 <summary>Hint 1: [Category]</summary>
@@ -110,6 +130,7 @@ Direct assistance without giving full solution
 ```
 
 ### Solution
+
 ```markdown
 <details>
 <summary>Solution</summary>

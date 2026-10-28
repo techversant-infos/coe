@@ -51,6 +51,7 @@
 **Overall Complexity Score:** ___ / 5
 
 **Complexity Multiplier:**
+
 - Score 1.0-1.5: 0.8x
 - Score 1.5-2.5: 1.0x
 - Score 2.5-3.5: 1.2x

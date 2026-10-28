@@ -36,6 +36,7 @@ Current JVM arguments:
 ### Part 2: Calculate Appropriate Settings
 
 **Server Resources:**
+
 - Total RAM: 16GB
 - OS + other services: 2GB
 - Available for CF: 14GB

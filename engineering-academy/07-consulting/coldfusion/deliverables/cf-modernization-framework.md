@@ -56,6 +56,7 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option A: Stay on ColdFusion
 
 **When this makes sense:**
+
 - Application is stable and meeting needs
 - Limited budget
 - Low modernization urgency
@@ -76,12 +77,14 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option B: Migrate to Lucee
 
 **When this makes sense:**
+
 - Cost reduction priority
 - Adobe licensing cost concern
 - Open-source preference
 - Community support acceptable
 
 **Compatibility considerations:**
+
 - 85-95% compatibility expected
 - Adobe-specific functions need replacement
 - Extensions need alternatives
@@ -89,6 +92,7 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option C: Lift-and-Shift to Cloud
 
 **When this makes sense:**
+
 - Infrastructure costs high
 - On-prem maintenance burden
 - Need better scalability
@@ -99,6 +103,7 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option D: UI Modernization
 
 **When this makes sense:**
+
 - UX is poor
 - Mobile users underserved
 - Branding update needed
@@ -109,6 +114,7 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option E: Strangler Fig Pattern
 
 **When this makes sense:**
+
 - Large, complex application
 - High risk tolerance
 - Long timeline acceptable
@@ -119,6 +125,7 @@ Use this framework when evaluating modernization options for ColdFusion applicat
 ### Option F: Full Rewrite
 
 **When this makes sense:**
+
 - Application is simple enough
 - High budget available
 - Strong modern team

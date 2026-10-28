@@ -6,7 +6,7 @@
 
 ## Step 1: Read the Practice Charter (5 min)
 
-[PRESENTATION/one-pager.md](./presentation/one-pager.md)
+[presentation/one-pager.md](./presentation/one-pager.md)
 
 Understand what the consulting practice is and how participation works.
 
@@ -14,9 +14,10 @@ Understand what the consulting practice is and how participation works.
 
 ## Step 2: Complete the Readiness Check (15 min)
 
-[ASSESSMENT/consulting-readiness-check.md](./assessment/consulting-readiness-check.md)
+[assessment/consulting-readiness-check.md](./assessment/consulting-readiness-check.md)
 
 For each question, select:
+
 - **Ready** — You have evidence
 - **Ready with support** — You can do this with peer review
 - **Build confidence** — One targeted activity will help

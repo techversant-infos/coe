@@ -101,6 +101,7 @@ GO
 ## Expected Results
 
 After optimization:
+
 - Query time: 30+ seconds → < 2 seconds
 - Index recommendations implemented
 - Pagination added

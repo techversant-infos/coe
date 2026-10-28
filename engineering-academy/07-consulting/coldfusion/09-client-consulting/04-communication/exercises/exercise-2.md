@@ -67,6 +67,7 @@ Ask one follow-up question to understand more:
 ## Role-Play
 
 Pair up with a colleague:
+
 - One plays the frustrated client
 - One plays the consultant
 

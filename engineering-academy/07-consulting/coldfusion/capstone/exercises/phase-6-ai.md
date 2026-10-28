@@ -32,6 +32,7 @@ Evaluate these AI opportunities for BlogCFC5:
 Design an AI comment moderation system.
 
 **Architecture:**
+
 ```
 User submits comment
        │
@@ -86,6 +87,7 @@ _______________________________________________________________
 Design an AI-powered SEO assistant for blog authors.
 
 **Features:**
+
 1. _______________________________________________________
 2. _______________________________________________________
 3. _______________________________________________________

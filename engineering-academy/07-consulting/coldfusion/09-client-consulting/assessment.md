@@ -83,6 +83,7 @@ ___________________________________________________________
 ___________________________________________________________
 
 **Assessment (what's the reality?):**
+
 - Risk 1: _________________________________
 - Risk 2: _________________________________
 - Risk 3: _________________________________
@@ -103,6 +104,7 @@ ___________________________________________________________
 For Summit Manufacturing's scenario, provide effort estimates:
 
 **Assessment Phase:**
+
 | Task | Hours (Low) | Hours (High) | Assumptions |
 |------|-------------|--------------|-------------|
 | Code review (80 files) | | | |
@@ -112,6 +114,7 @@ For Summit Manufacturing's scenario, provide effort estimates:
 | **Total Assessment** | | | |
 
 **Migration Phase (if recommended):**
+
 | Task | Hours (Low) | Hours (High) | Assumptions |
 |------|-------------|--------------|-------------|
 | Cloud environment setup | | | |
@@ -129,15 +132,18 @@ For Summit Manufacturing's scenario, provide effort estimates:
 Write a clear scope statement for Summit Manufacturing's engagement:
 
 **In Scope:**
+
 1. ___________________________________________________________
 2. ___________________________________________________________
 3. ___________________________________________________________
 
 **Out of Scope:**
+
 1. ___________________________________________________________
 2. ___________________________________________________________
 
 **Success Criteria:**
+
 1. ___________________________________________________________
 2. ___________________________________________________________
 
@@ -196,6 +202,7 @@ ___________________________________________________________
 ### Section A
 
 **A1 - Suggested Top 10 Questions:**
+
 - What version of CF are you running? (Critical: CF2018 is current)
 - Are you using a framework? (80 files suggests possible structure)
 - How many users? (Performance context)
@@ -208,6 +215,7 @@ ___________________________________________________________
 - Who are the decision makers?
 
 **A2 - Workshop Flow:**
+
 - Opening (15): Introduce, set agenda
 - Current State (30): Technical deep dive
 - Pain Points (30): Performance focus
@@ -220,6 +228,7 @@ ___________________________________________________________
 ### Section B
 
 **B1 - Transformations:**
+
 - "Based on our experience..."
 - "A viable approach would be..."
 - "Let me research that and provide a recommendation..."
@@ -227,6 +236,7 @@ ___________________________________________________________
 - "We've implemented similar solutions. Here's how we might approach yours..."
 
 **B2 - Response Framework:**
+
 - Acknowledge the goal
 - Identify reality (2 weeks is extremely aggressive)
 - Bridge to realistic timeline
@@ -235,6 +245,7 @@ ___________________________________________________________
 ### Section C
 
 **C1 - Estimates:**
+
 - Assessment: 40-80 hours typical
 - Migration: 160-400 hours typical (depending on scope)
 - Buffer: Essential
@@ -243,6 +254,7 @@ ___________________________________________________________
 Should include specific deliverables, timelines, and success criteria.
 
 **C3 - Assumptions:**
+
 - Team availability
 - Environment access
 - Decision-making timeline
@@ -252,6 +264,7 @@ Should include specific deliverables, timelines, and success criteria.
 ### Section D
 
 **D1 - Problems:**
+
 - Vague deliverables
 - No specific scope
 - Undefined timeline

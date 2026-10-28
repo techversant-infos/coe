@@ -1,9 +1,8 @@
 # REST API Best Practices & Style Guide  
+
 **Version:** 3.0  
 **Audience:** Backend Developers, Architects, QA  
 **Scope:** Company-wide (Framework-agnostic, reusable across all teams)**
-
-
 
 # 1. Core Principles
 
@@ -13,11 +12,10 @@
 - **Stateless:** Server stores no client-specific session state.
 - **Discoverability:** Endpoints should be guessable by developers.
 
-
-
 # 2. URL Design & Naming
 
 ## 2.1 Versioning Strategy (Mandatory)
+
 Use version prefix in every endpoint:
 
 ```
@@ -26,6 +24,7 @@ https://api.company.com/v2/
 ```
 
 ## 2.2 Naming Conventions
+
 - **Plural nouns** for resources  
   `/customers`, `/orders`, `/transactions`
 - **kebab-case** OR **snake_case** in URLs (choose org-wide)
@@ -34,6 +33,7 @@ https://api.company.com/v2/
   ✔ `/customers`
 
 ## 2.3 Standard Resource Structure
+
 ```
 GET    /customers
 POST   /customers
@@ -43,20 +43,20 @@ DELETE /customers/{id}
 ```
 
 ## 2.4 Nested Resources (Max Depth = 2)
+
 ```
 GET /customers/{id}/orders
 POST /customers/{id}/addresses
 ```
 
 ## 2.5 Action Endpoints (Non-CRUD)
+
 ```
 POST /customers/{id}/activate
 POST /orders/{id}/refund
 POST /auth/login
 POST /auth/logout
 ```
-
-
 
 # 3. HTTP Methods & Idempotency
 
@@ -69,6 +69,7 @@ POST /auth/logout
 | DELETE | Remove resource | Yes |
 
 ## 3.1 Idempotency for POST  
+
 For payment, loyalty redemption, coupon usage, etc.
 
 ```
@@ -77,11 +78,10 @@ Idempotency-Key: <uuid>
 
 If duplicate POST arrives with same key → return **same response**, not duplicate action.
 
-
-
 # 4. Request Payload Standards
 
 ## 4.1 JSON Naming Convention (Strict)
+
 Use **camelCase** for JSON keys:
 
 ```
@@ -94,6 +94,7 @@ phoneNumber
 Avoid mixing different conventions.
 
 ## 4.2 Boolean Naming Convention (MANDATORY)
+
 Booleans MUST use prefixes:
 
 ```
@@ -105,6 +106,7 @@ isVerified
 ```
 
 ❌ Avoid ambiguous:  
+
 ```
 active
 enabled
@@ -112,6 +114,7 @@ verified
 ```
 
 ## 4.3 Date Format (ISO 8601 Only)
+
 ```
 "birthDate": "1990-12-24"
 "createdAt": "2025-01-20T14:30:00Z"
@@ -119,20 +122,21 @@ verified
 ```
 
 ## 4.4 Numeric Format
+
 ```
 "salary": 45000.50
 "quantity": 3
 ```
 
 ## 4.5 Null vs Missing Fields
+
 - Use `null` only when intentional.
 - Prefer omission for optional fields.
-
-
 
 # 5. Success & Error Responses
 
 ## 5.1 Success Response Format
+
 ```json
 {
   "success": true,
@@ -148,6 +152,7 @@ verified
 ```
 
 ## 5.2 Error Response Format
+
 ```json
 {
   "success": false,
@@ -161,7 +166,9 @@ verified
 ```
 
 ## 5.3 Should we include HTTP Status Code inside JSON?
+
 Optional for debugging:
+
 ```json
 {
   "error": {
@@ -171,11 +178,10 @@ Optional for debugging:
 }
 ```
 
-
-
 # 6. HTTP Status Codes (Descriptive)
 
 ### 2xx Success
+
 | Code | Meaning | Example |
 |------|---------|---------|
 | **200** | Successful response | GET /customers |
@@ -184,6 +190,7 @@ Optional for debugging:
 | **204** | No content | DELETE success |
 
 ### 4xx Client Errors
+
 | Code | Meaning | Example |
 |------|----------|---------|
 | **400** | Bad request | Malformed JSON |
@@ -195,16 +202,16 @@ Optional for debugging:
 | **429** | Rate limit exceeded | Too many requests |
 
 ### 5xx Server Errors
+
 | Code | Meaning |
 |------|---------|
 | **500** | Unexpected server failure |
 | **503** | Upstream service unavailable |
 
-
-
 # 7. Validation Error Examples
 
 ## 7.1 Single Error
+
 ```json
 {
   "error": {
@@ -216,6 +223,7 @@ Optional for debugging:
 ```
 
 ## 7.2 Multiple Errors
+
 ```json
 {
   "error": {
@@ -231,6 +239,7 @@ Optional for debugging:
 ```
 
 ## 7.3 Nested Object Errors
+
 ```json
 {
   "error": {
@@ -243,6 +252,7 @@ Optional for debugging:
 ```
 
 ## 7.4 Array Errors
+
 ```json
 {
   "error": {
@@ -254,21 +264,19 @@ Optional for debugging:
 }
 ```
 
-
-
 # 8. Filtering, Sorting & Pagination
 
 ## 8.1 Pagination
+
 ```
 GET /customers?page=1&pageSize=20
 ```
 
 ## 8.2 Basic Filters
+
 ```
 GET /customers?tier=gold&isActive=true
 ```
-
-
 
 # 8.3 Advanced Filters (Descriptive)
 
@@ -293,35 +301,39 @@ We use **suffix-based operator naming**, because it is:
 ### Examples
 
 #### **1. Salary > 2000**
+
 ```
 GET /employees?filter[salary_gt]=2000
 ```
 
 #### **2. Created between 1 Jan and 31 Jan**
+
 ```
 GET /transactions?filter[createdAt_gte]=2025-01-01&filter[createdAt_lte]=2025-01-31
 ```
 
 #### **3. Tier in (Gold, Silver)**
+
 ```
 GET /customers?filter[tier_in]=gold,silver
 ```
 
 #### **4. Discount between 10% and 25%**
+
 ```
 GET /products?filter[discount_between]=10,25
 ```
 
 #### **5. Multiple filters combined**
+
 ```
 GET /transactions?filter[amount_gt]=5000&filter[city_in]=Kochi,Bangalore&filter[isActive]=true
 ```
 
-
-
 # 8.4 Sorting (Detailed Examples)
 
 ### Format:
+
 ```
 sort=fieldName
 sort=-fieldName  // descending
@@ -330,41 +342,43 @@ sort=-fieldName  // descending
 ### Examples:
 
 #### Sort customers by creation date (latest first)
+
 ```
 GET /customers?sort=-createdAt
 ```
 
 #### Sort transactions by amount ASC, then date DESC
+
 ```
 GET /transactions?sort=amount,-createdAt
 ```
 
 #### Sort employees by salary ASC
+
 ```
 GET /employees?sort=salary
 ```
 
-
-
 # 9. Security
 
 ### Authorization Header
+
 ```
 Authorization: Bearer <token>
 ```
 
 ### Sensitive Data Never Returned
+
 - Passwords  
 - OTP  
 - API keys  
 - Tokens  
 - Secrets  
 
-
-
 # 10. Rate Limiting
 
 ### Response Headers
+
 ```
 X-RateLimit-Limit: 1000
 X-RateLimit-Remaining: 755
@@ -372,6 +386,7 @@ X-RateLimit-Reset: 1737480912
 ```
 
 ### 429 Error Example
+
 ```json
 {
   "error": {
@@ -381,11 +396,10 @@ X-RateLimit-Reset: 1737480912
 }
 ```
 
-
-
 # 11. Concurrency & ETags
 
 ### Example:
+
 ```
 GET /customers/123
 ETag: "v7"
@@ -397,31 +411,31 @@ If-Match: "v7"
 ```
 
 If mismatch:
+
 ```
 409 Conflict
 ```
 
-
-
 # 12. Versioning (Detailed)
 
 ### 12.1 URL Versioning (Preferred)
+
 ```
 /v1/customers
 /v2/customers
 ```
 
 ### 12.2 Handling Versions in Code
+
 - Separate controllers/modules per version.
 - Domain logic stays version-agnostic.
 - No branching logic:  
   ❌ `if version == 1`  
 
-
-
 # 13. Logging & Observability
 
 Log:
+
 - Method  
 - Path  
 - Status code  
@@ -429,12 +443,11 @@ Log:
 - traceId  
 
 Never Log:
+
 - Password  
 - OTP  
 - Tokens  
 - Secrets  
-
-
 
 # 14. Testing Requirements
 
@@ -443,17 +456,14 @@ Never Log:
 - Contract tests  
 - Smoke tests  
 
-
-
 # 15. Deprecation Policy
 
 Include:
+
 ```
 Deprecation: true
 Sunset: 2026-01-31
 ```
-
-
 
 # 16. API Review Checklist
 
@@ -468,6 +478,3 @@ Sunset: 2026-01-31
 - [ ] Rate limits applied  
 - [ ] OpenAPI updated  
 - [ ] Tests complete  
-
-
-

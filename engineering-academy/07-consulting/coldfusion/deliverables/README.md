@@ -21,22 +21,27 @@ This folder contains templates, checklists, playbooks, and frameworks that suppo
 ## Quick Links
 
 ### For Discovery
+
 - [Discovery Workshop Questionnaire](./discovery-workshop-questionnaire.md)
 
 ### For Assessment
+
 - [CF Architecture Review Checklist](./cf-architecture-review-checklist.md)
 - [Legacy Assessment Template](./legacy-assessment-template.md)
 - [CF Security Review Checklist](./cf-security-review-checklist.md)
 
 ### For Migration
+
 - [CF → Lucee Migration Playbook](./cf-lucee-migration-playbook.md)
 - [Estimation Templates](./estimation-templates/)
 
 ### For Modernization
+
 - [CF Modernization Framework](./cf-modernization-framework.md)
 - [Proposal Boilerplates](./proposal-boilerplates/)
 
 ### For AI
+
 - [CF AI Integration Playbook](./cf-ai-integration-playbook.md)
 
 ## Contribution Guidelines

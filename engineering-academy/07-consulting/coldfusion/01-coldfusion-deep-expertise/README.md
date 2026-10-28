@@ -111,7 +111,7 @@ Complete all exercises and pass the [phase assessment](./assessment.md) with 70%
 
 ## Resources
 
-- [Adobe ColdFusion Documentation](https://helpx.adobe.com/coldfusion.html)
+- [Adobe ColdFusion Documentation](https://guides.adobe.com/coldfusion/en/docs.html)
 - [Lucee Documentation](https://docs.lucee.org/)
 - [FusionReactor](https://www.fusion-reactor.com/)
 - [CFML Reference](https://cfdocs.org/)

@@ -1,4 +1,5 @@
 # AI Usage Standards — Techversant Engineering
+
 **Version:** 1.0
 **Owner:** Engineering CoE
 **Applies to:** All engineering roles using AI-assisted development
@@ -212,6 +213,7 @@ Presentation labels for the four levels: 🟢 GREEN — Follow GPS · 🟡 YELLO
 ### What to escalate
 
 Escalate to your tech lead if:
+
 - AI output conflicts with known architecture decisions
 - AI suggests accessing or modifying off-limits files
 - You cannot explain what the AI-generated code does
@@ -294,6 +296,7 @@ Track these four metrics every sprint. They are the primary indicators that AI i
 | Story points per developer | Velocity from sprint board | Track trend |
 
 **Industry benchmarks (for reference):**
+
 - Test writing: AI reduces authoring time by 40–60%
 - PR descriptions: ~10 minutes saved per PR
 - Boilerplate / scaffolding: 50–70% time reduction
@@ -309,6 +312,7 @@ These are industry averages. Track your own numbers. Don't assume these apply au
 Copy, adapt, and use. Add team-specific ones to Confluence.
 
 ### Explain unfamiliar code
+
 ```
 Stack: [Stack]. File: [path]. Explain what [function/block] does.
 Focus on: side effects, dependencies, and anything that could break.
@@ -316,6 +320,7 @@ Format: bullet points, plain language.
 ```
 
 ### Generate tests
+
 ```
 Stack: [Stack]. Test framework: [Jest/PHPUnit/etc].
 File: [path]. Function: [name].
@@ -324,6 +329,7 @@ Format: [describe/it blocks]. Output code only.
 ```
 
 ### Review code before PR
+
 ```
 Stack: [Stack]. Review this code for: logic gaps, edge cases, security issues, pattern violations.
 Our standards: [paste relevant CLAUDE.md section].
@@ -331,6 +337,7 @@ Format: bullet list of issues only. No praise. Flag severity: low / medium / hig
 ```
 
 ### Debug an issue
+
 ```
 Stack: [Stack]. File: [path]. Function: [name].
 Issue: [exact error or behaviour].
@@ -340,6 +347,7 @@ Return: root cause first, then fix. Code only.
 ```
 
 ### Refactor for readability
+
 ```
 Stack: [Stack]. File: [path].
 Refactor [function/section] for readability. Do not change behaviour or external API.

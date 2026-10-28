@@ -43,11 +43,11 @@ Rewrite this unprofessional email:
 
 **Original:**
 > Hi,
-> 
+>
 > I looked at the issue you mentioned. Not sure what happened but I think maybe the server is having problems. We should probably restart it and see if that fixes it. Might take a few hours or maybe tomorrow.
-> 
+>
 > Sorry about that.
-> 
+>
 > Thanks,
 > [Your name]
 

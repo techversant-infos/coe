@@ -21,11 +21,13 @@ Thank you for helping improve Techversant's engineering standards. This guide ex
 ### Step 1: Create an Issue First
 
 Before writing any content, create an issue to:
+
 - Describe what needs to be added/updated
 - Explain why this is needed
 - Get early feedback from CoE team
 
 **Issue Templates:**
+
 - [Standards Update Request](.github/ISSUE_TEMPLATE/standards-update.md)
 - [Audit Finding](.github/ISSUE_TEMPLATE/audit-finding.md)
 - [Security Concern](.github/ISSUE_TEMPLATE/security-issue.md)
@@ -82,7 +84,7 @@ All documents must include:
 ### Formatting Rules
 
 - Use **markdown tables** for comparisons, checklists, and structured data
-- Use **code blocks** with language hints (```php, ```javascript)
+- Use **code blocks** with a language hint on the opening fence (for example `php` or `javascript`)
 - Use **checkboxes** (`- [ ]`) for audit checklists
 - Keep line length under 120 characters
 - Use consistent heading hierarchy: H1 → H2 → H3 (no skipping)
@@ -131,6 +133,7 @@ Maintain a changelog in each major document for significant updates:
 ### Criteria for Inclusion
 
 A new technology standard should be added when:
+
 - [ ] At least two projects actively using the technology
 - [ ] A Technology Lead identified who will maintain the standards
 - [ ] Business need validated (not every tech gets a standard)
@@ -155,12 +158,14 @@ A new technology standard should be added when:
 ## Security Sensitive Changes
 
 If your change involves:
+
 - Authentication mechanisms
 - Encryption standards
 - Data handling (especially PII)
 - API security
 
 **You must:**
+
 1. Get Security Lead review before merge
 2. Include threat analysis in the PR description
 3. Reference related compliance requirements (ISO/GDPR)

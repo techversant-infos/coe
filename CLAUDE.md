@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Purpose
 
 This is a **Center of Excellence (CoE) standards repository** for Techversant Engineering. It contains:
+
 - Engineering guidelines and best practices for multiple stacks (PHP, ColdFusion, Node.js)
 - AI-assisted development standards and workflows
 - The **Engineering Academy** — structured learning paths for skill development
@@ -13,6 +14,7 @@ This is a **Center of Excellence (CoE) standards repository** for Techversant En
 ## .claude Kit Reference
 
 For AI-assisted learning content creation, see:
+
 - `.claude/README.md` - Quick start guide for learning content commands
 - `.claude/commands/` - 5 slash commands for creating and managing learning content
 - `.claude/agents/` - 6 specialized AI agents for different coaching roles
@@ -47,6 +49,7 @@ coe/
 ## Git Workflow
 
 **Multi-Stage Promotion Model:**
+
 ```
 feature branch → dev (auto-deploy) → staging (manual) → main (verified) → tag (prod deploy)
 ```
@@ -54,6 +57,7 @@ feature branch → dev (auto-deploy) → staging (manual) → main (verified) �
 **Branch naming:** `feature/<JIRA-ID>-<description>`
 
 **Commit format:** [Conventional Commits](https://www.conventionalcommits.org/)
+
 ```
 feat(module): add user login
 fix(module): handle null pointer
@@ -87,6 +91,7 @@ The `.claude/` folder contains AI tools for creating and managing learning conte
 ### Learning Path Structure
 
 Learning paths live in `engineering-academy/` organized by discipline:
+
 - **00-engineering-foundations** — Git, AI usage, communication, secure engineering
 - **01-software-engineering** — Web, mobile, backend development
 - **02-quality-engineering** — Manual testing, automation, Playwright
@@ -95,12 +100,14 @@ Learning paths live in `engineering-academy/` organized by discipline:
 ## AI-Assisted Development Standards
 
 **Human-in-the-Loop (Mandatory):**
+
 - Review every line of AI output before committing
 - Never commit code you cannot explain
 - Tag AI-assisted commits: `[ai-assisted: claude]`
 - Use delegation levels: 🟢 FULL DELEGATE → 🟡 COLLABORATE → 🟠 HUMAN-LED → 🔴 NEVER DELEGATE
 
 **Red Zone (Manual Only — Never Delegate):**
+
 - Authentication & authorization
 - Encryption & key management
 - PII handling & payment processing

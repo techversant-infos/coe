@@ -9,6 +9,7 @@ Apply the legacy assessment methodology to a real open-source application. Produ
 ## Scenario
 
 A client is considering modernization of BlogCFC5 (or a similar blog platform they commissioned in 2012). They've asked for a technical assessment to understand:
+
 - Current state and risks
 - Modernization options
 - Effort and investment estimates
@@ -100,6 +101,7 @@ Using the [Legacy Assessment Template](../../deliverables/legacy-assessment-temp
 **Deliverable:** `blogcf5-assessment.md`
 
 Required sections:
+
 1. Executive Summary (1 page)
 2. Technical Environment
 3. Architecture Assessment

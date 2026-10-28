@@ -38,6 +38,7 @@ By the end of this module, you will be able to:
 ### Technical Sections Checklist
 
 **Scope Statement:**
+
 - [ ] Specific deliverables listed
 - [ ] In-scope items clear
 - [ ] Out-of-scope items explicit
@@ -45,6 +46,7 @@ By the end of this module, you will be able to:
 - [ ] Assumptions documented
 
 **Approach Section:**
+
 - [ ] Methodology described
 - [ ] Tools and technologies specified
 - [ ] Key phases outlined
@@ -52,6 +54,7 @@ By the end of this module, you will be able to:
 - [ ] Client involvement defined
 
 **Architecture Section:**
+
 - [ ] Current state described
 - [ ] Proposed architecture explained
 - [ ] Migration strategy outlined
@@ -59,6 +62,7 @@ By the end of this module, you will be able to:
 - [ ] Security considerations addressed
 
 **Timeline:**
+
 - [ ] Phases with durations
 - [ ] Milestones with dates
 - [ ] Dependencies identified
@@ -66,6 +70,7 @@ By the end of this module, you will be able to:
 - [ ] Buffer time included
 
 **Risks:**
+
 - [ ] Technical risks identified
 - [ ] Business risks identified
 - [ ] Mitigation strategies provided
@@ -78,6 +83,7 @@ By the end of this module, you will be able to:
 
 **Good (Specific):**
 > "Phase 1: ColdFusion Assessment
+>
 > - Conduct technical assessment of 150 CFM files across 3 modules
 > - Document current architecture, dependencies, and technical debt
 > - Identify security vulnerabilities using OWASP checklist
@@ -159,6 +165,7 @@ Total: 12-14 weeks
 > - **Technical Debt Analysis:** Scoring across maintainability, scalability, and security
 >
 > Out of scope:
+>
 > - Code changes or refactoring (separate engagement)
 > - Third-party vendor negotiations
 > - User training
@@ -168,12 +175,14 @@ Total: 12-14 weeks
 > **Methodology:** Agile with 2-week sprints
 >
 > **Sprint Structure:**
+>
 > - Sprint planning (Monday)
 > - Development (Tuesday-Thursday)
 > - Testing (Thursday-Friday)
 > - Review with client (Friday)
 >
 > **Tools:**
+>
 > - Source control: Git
 > - CI/CD: [Jenkins/GitHub Actions/Azure DevOps]
 > - Monitoring: [FusionReactor/Other]

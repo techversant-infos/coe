@@ -1,0 +1,32 @@
+// markdownlint-cli2 settings, used by the Lint Markdown workflow and by editors
+{
+  "config": {
+    "MD033": { "allowed_elements": ["details", "summary", "br"] },
+
+    // False positives in this repo: "____" fill-in lines in assessment templates read as rules or emphasis
+    "MD035": false,
+    "MD037": false,
+
+    // Backlog: existing content breaks these rules. Turn each one back on once its count reaches 0.
+    // Counts as of 2026-10-28. Tracked in docs/maintainers/restructure-plan.md.
+    "MD001": false, //   7 heading levels skipped
+    "MD003": false, //  40 mixed heading styles
+    "MD005": false, // 186 inconsistent list indentation
+    "MD007": false, // 201 unordered list indentation
+    "MD013": false, // 857 lines over 120 characters
+    "MD025": false, //  23 more than one top-level heading
+    "MD026": false, //  34 trailing punctuation in headings
+    "MD028": false, //   5 blank line inside a blockquote
+    "MD029": false, //  12 ordered list numbering
+    "MD036": false, //  88 bold text used as a heading
+    "MD040": false, // 181 code blocks without a language
+    "MD041": false, //   9 file does not start with a heading
+    "MD024": false, //  40 repeated sibling headings, mostly per-section "Notes" in checklists
+    "MD050": false  //   2 mixed bold style
+  },
+  "ignores": [
+    "archive/**",
+    ".claude/templates/**",
+    "node_modules/**"
+  ]
+}

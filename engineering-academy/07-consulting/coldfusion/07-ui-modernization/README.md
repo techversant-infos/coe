@@ -46,24 +46,28 @@ By the end of this phase, you will be able to:
 ### 1. UI Modernization Strategies
 
 **Option A: Bootstrap Refresh**
+
 - Quick win for basic modernization
 - Mobile responsiveness
 - Component library
 - Minimal changes to CF code
 
 **Option B: React Integration**
+
 - Modern SPA with CF back end
 - API-first architecture
 - Component reusability
 - State management
 
 **Option C: Vue Integration**
+
 - Lighter alternative to React
 - Progressive adoption
 - Good CF integration stories
 - Template syntax familiarity
 
 **Option D: Next.js (Full Modernization)**
+
 - Full rewrite with CF as API
 - SSR/SSG capabilities
 - Modern development experience
@@ -72,6 +76,7 @@ By the end of this phase, you will be able to:
 ### 2. CF as API Backend
 
 **REST API Development:**
+
 ```cfml
 // Simple REST endpoint
 component {
@@ -88,12 +93,14 @@ component {
 ```
 
 **Authentication:**
+
 - JWT tokens
 - Session management with API keys
 - CORS configuration
 - Rate limiting
 
 **Error Handling:**
+
 - Consistent error responses
 - HTTP status codes
 - Validation errors
@@ -101,12 +108,14 @@ component {
 ### 3. Bootstrap Modernization
 
 **Component Conversion:**
+
 - Forms (cfinput → Bootstrap)
 - Tables (cfgrid → DataTables)
 - Navigation (custom → Bootstrap navbar)
 - Modals (custom → Bootstrap modals)
 
 **Responsive Design:**
+
 - Grid system
 - Breakpoints
 - Mobile-first approach
@@ -114,17 +123,20 @@ component {
 ### 4. React Integration
 
 **Project Setup:**
+
 - Create React App / Vite
 - CFML API endpoints
 - Build configuration
 
 **Component Patterns:**
+
 - Data fetching with fetch/axios
 - Form handling
 - State management
 - Routing
 
 **CF Integration:**
+
 - API calls from React
 - Authentication flow
 - Error handling
@@ -153,7 +165,8 @@ component {
 | [Exercise 1: Bootstrap Refresh](./exercises/exercise-1.md) | Modernize a legacy form | Responsive Bootstrap form |
 | [Exercise 2: CF REST API](./exercises/exercise-2.md) | Build API endpoints | Working REST API |
 | [Exercise 3: React + CF](./exercises/exercise-3.md) | Connect React to CF API | Full CRUD SPA |
-| [Exercise 4: Accessibility Audit](./exercises/exercise-4.md) | Fix accessibility issues | WCAG compliant interface |
+| [Exercise 4: Progressive Enhancement](./exercises/exercise-4.md) | Search that works without JavaScript | Progressively enhanced search |
+| [Exercise 5: Accessibility Audit](./exercises/exercise-5.md) | Fix accessibility issues | WCAG 2.1 AA compliant form |
 
 ## Assessment
 

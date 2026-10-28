@@ -67,6 +67,7 @@ Suggest improvements:
 ## Deliverable
 
 Completed review with:
+
 - Quality ratings
 - Identified gaps
 - Suggested improvements

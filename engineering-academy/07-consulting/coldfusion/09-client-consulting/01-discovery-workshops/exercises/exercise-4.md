@@ -6,7 +6,7 @@
 
 ## Scenario
 
-Using notes from Exercise 3 (or the [capstone scenario](../../capstone/pinnacle-scenario.md)), produce a professional discovery report.
+Using notes from Exercise 3 (or the [capstone scenario](../../../capstone/pinnacle-scenario.md)), produce a professional discovery report.
 
 ---
 
@@ -29,12 +29,14 @@ _One paragraph: What we learned, key decisions, recommended next steps._
 ### Current State Assessment
 
 **Architecture:**
+
 - Frontend: ________________________________
 - Backend: ________________________________
 - Database: ________________________________
 - Hosting: ________________________________
 
 **Key Findings:**
+
 1. ________________________________
 2. ________________________________
 3. ________________________________

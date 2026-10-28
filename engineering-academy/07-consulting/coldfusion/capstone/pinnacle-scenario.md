@@ -67,12 +67,14 @@ Pinnacle operates a legacy Patient Management System built in ColdFusion 10 (201
 **Background:** IT leader, 15 years at Pinnacle, familiar with legacy systems, cautious about change.
 
 **Talking Points:**
+
 - "We can't afford to break patient care"
 - "Our physicians are set in their ways"
 - "We've invested so much in this system"
 - "What happens to our integrations?"
 
 **Questions to Ask:**
+
 - What would happen if the system went down for 4 hours?
 - Which physicians would feel the impact most?
 - What's the cost of a security breach?

@@ -39,6 +39,7 @@ Before starting migration, document:
 Use tools to identify potential issues:
 
 **Automated Scanning:**
+
 ```bash
 # CommandBox Lucee migrator
 boxlucee migrate --source=/path/to/app --report
@@ -72,6 +73,7 @@ Document all ACF extensions in use:
 ### 2.1 Lucee Installation
 
 **Option A: CommandBox (Recommended)**
+
 ```bash
 # Install CommandBox
 brew install commandbox
@@ -81,6 +83,7 @@ box server create name=myapp engine=lucee@5
 ```
 
 **Option B: Docker**
+
 ```dockerfile
 FROM ortussolutions/commandbox:latest
 COPY . /app
@@ -89,7 +92,7 @@ CMD ["server", "start"]
 ```
 
 **Option C: Traditional**
-Download from https://lucee.org/downloads.html
+Download from <https://lucee.org/downloads.html>
 
 ### 2.2 Configuration Mapping
 
@@ -169,6 +172,7 @@ getBaseTemplatePath()                               // Different function
 ### 4.1 Unit Testing
 
 Set up TestBox for unit tests:
+
 ```bash
 box install testbox
 ```
@@ -221,17 +225,20 @@ box install testbox
 ### 5.2 Migration Strategy
 
 **Option A: Blue-Green Deployment**
+
 1. Set up new Lucee environment (green)
 2. Test thoroughly
 3. Switch load balancer
 4. Keep blue environment running for rollback
 
 **Option B: Phased Cutover**
+
 1. Migrate non-critical apps first
 2. Validate
 3. Proceed to critical apps
 
 **Option C: Big Bang**
+
 1. Migrate all at once
 2. Higher risk
 3. Faster completion
@@ -276,6 +283,7 @@ box install testbox
 ### 6.3 Ongoing Monitoring
 
 Monitor for:
+
 - [ ] Performance regressions
 - [ ] Memory leaks
 - [ ] Extension issues

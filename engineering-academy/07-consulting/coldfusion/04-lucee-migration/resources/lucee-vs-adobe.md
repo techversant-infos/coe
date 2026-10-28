@@ -80,6 +80,7 @@
 **Problem:** `<cfpdf>` and `<cfdocument>` require Lucee extensions
 
 **Solution:**
+
 ```cfml
 // Install via Lucee Admin > Extensions > PDF
 // Or use third-party: wkhtmltopdf, Prince XML
@@ -88,11 +89,13 @@
 ### Issue 2: Session Storage
 
 **Adobe syntax:**
+
 ```cfm
 <cfapplication sessionstorage="mysql" ...>
 ```
 
 **Lucee syntax:**
+
 ```cfm
 <cfapplication sessionstorage="redis" ...>
 ```
@@ -100,6 +103,7 @@
 ### Issue 3: Java Integration
 
 Lucee may need different JAR paths:
+
 ```cfm
 // Adobe
 createObject("java", "path.to.Class");

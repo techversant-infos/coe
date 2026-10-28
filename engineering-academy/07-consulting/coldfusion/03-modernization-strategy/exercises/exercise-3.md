@@ -35,6 +35,7 @@ Design a phased approach:
 **Phase 0: Discovery (Weeks 1-2)**
 
 Activities:
+
 - [ ] Automated compatibility scan
 - [ ] Manual code review
 - [ ] Database analysis
@@ -42,6 +43,7 @@ Activities:
 - [ ] Risk assessment
 
 Deliverables:
+
 - Compatibility report
 - Risk register
 - Baseline metrics
@@ -49,6 +51,7 @@ Deliverables:
 **Phase 1: Foundation (Weeks 3-6)**
 
 Activities:
+
 - [ ] Set up Lucee dev environment
 - [ ] Configure CI/CD pipeline
 - [ ] Set up monitoring
@@ -56,6 +59,7 @@ Activities:
 - [ ] Team training on Lucee
 
 Deliverables:
+
 - Working dev environment
 - CI/CD pipeline
 - Training complete
@@ -63,6 +67,7 @@ Deliverables:
 **Phase 2: Core Migration (Weeks 7-14)**
 
 Activities:
+
 - [ ] Migrate authentication
 - [ ] Migrate business logic
 - [ ] Migrate database layer
@@ -70,6 +75,7 @@ Activities:
 - [ ] Regression testing
 
 Deliverables:
+
 - Core application on Lucee
 - All tests passing
 - Performance baseline
@@ -77,6 +83,7 @@ Deliverables:
 **Phase 3: Cloud Migration (Weeks 15-20)**
 
 Activities:
+
 - [ ] Provision cloud infrastructure
 - [ ] Deploy to staging
 - [ ] Configure load balancing
@@ -84,6 +91,7 @@ Activities:
 - [ ] Security hardening
 
 Deliverables:
+
 - Cloud staging environment
 - Performance optimized
 - Security configured

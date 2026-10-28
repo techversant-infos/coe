@@ -1,4 +1,5 @@
 # Claude Cheat Sheet — Developer Edition
+
 **Techversant Infotech · Engineering CoE**
 *"Don't let AI work for you. Work better with AI."*
 
@@ -24,6 +25,7 @@
 | `Review my code` | `Review the following Node.js function for: security issues, missing error handling, and performance problems. Flag only issues — don't rewrite the function.` |
 
 ### 5 Golden Rules
+
 1. **One task per prompt** — chained prompts confuse output and waste tokens
 2. **Name the file and function** — never say "this code"
 3. **State what NOT to change** — Claude will optimise everything otherwise
@@ -35,6 +37,7 @@
 ## 2. DO'S & DON'TS
 
 ### ✅ Always Do
+
 - Review every line of AI output before committing — if you can't explain it, don't commit it
 - Paste only the relevant function + ~10 lines of surrounding context (not the whole file)
 - Use `/compact` when sessions get long — before context fills up, not after
@@ -44,6 +47,7 @@
 - Treat AI-generated code like a PR from a fast junior dev — review it properly
 
 ### ❌ Never Do
+
 - Paste credentials, API keys, `.env` files, or client data into any AI prompt
 - Skip human review because "Claude already checked it"
 - Commit code you cannot explain line by line
@@ -67,6 +71,7 @@ Definitions, examples, the three-question delegation test and the Red Zone list 
 ## 4. COMMANDS & SHORTCUTS
 
 ### In-Session Commands
+
 | Command | When to use |
 |---------|------------|
 | `/compact` | Use before context window fills up. Saves ~60% tokens. Use proactively on long sessions. |
@@ -76,6 +81,7 @@ Definitions, examples, the three-question delegation test and the Red Zone list 
 | `/doc` | (Custom) Triggers your docs-writer agent — writes docs in your project's voice |
 
 ### Model Selection — Right Model = Better Output + Lower Cost
+
 | Model | Use When | Cost |
 |-------|---------|------|
 | **Claude Haiku** | Fast, repetitive tasks: test gen, doc summaries, boilerplate | Low |
@@ -201,6 +207,7 @@ Your prompt or response
 ## 5. PROJECT MEMORY — SET UP ONCE, SAVE HOURS
 
 ### Minimum File Structure (Set This Up Today)
+
 ```
 your-project/
 ├── CLAUDE.md                        ← Claude reads this automatically at session start
@@ -217,6 +224,7 @@ your-project/
 ```
 
 ### CLAUDE.md — Minimum Template (Copy & Fill In)
+
 ```markdown
 # Project Context
 Stack: Node.js 20, Express, PostgreSQL 14, React 18
@@ -254,12 +262,14 @@ PR convention: always include what was changed + why
 ## 7. CONTEXT HYGIENE — DON'T WASTE TOKENS
 
 ### What Burns Tokens
+
 - Pasting entire files for a one-function question
 - Re-explaining context Claude already has in the same session
 - Asking vague questions that need 3 clarifying rounds
 - No `CLAUDE.md` — re-explaining your stack every session
 
 ### What Saves Tokens
+
 - Paste only the relevant function + ~10 lines of surrounding context
 - Reference file names and line numbers: `in /src/routes/users.js line 42`
 - Use `/compact` before context fills — not when it's already full

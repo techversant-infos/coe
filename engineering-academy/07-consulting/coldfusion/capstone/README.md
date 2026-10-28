@@ -32,7 +32,8 @@ This CoE uses two capstone layers:
 | Last Updated | 2019 |
 | Language | ColdFusion (CFML) |
 | Database | SQL Server |
-| Stars | 30 | Forks | 20 |
+| Stars | 30 |
+| Forks | 20 |
 
 ---
 
@@ -41,6 +42,7 @@ This CoE uses two capstone layers:
 BlogCFC5 is a complete ColdFusion blogging platform. It was once "The Number One Blogging Software In The ColdFusion Universe!"
 
 Real features include:
+
 - Blog post creation and management
 - Comment system with moderation
 - Category organization
@@ -65,11 +67,13 @@ Real features include:
 ### Option 1: Adobe ColdFusion
 
 1. **Download the repository**
+
    ```bash
    git clone https://github.com/teamcfadvance/BlogCFC5.git
    ```
 
 2. **Create SQL Server database**
+
    ```sql
    -- Create database
    CREATE DATABASE BlogCFC5;
@@ -90,24 +94,27 @@ Real features include:
 
 4. **Update configuration**
    Edit `blogCFC6/settings.xml.cfm`:
+
    ```cfm
    <cfset setting name="blogname" value="My Blog">
    <cfset setting name="blogurl" value="http://localhost:8500/blogcfc5/client">
    ```
 
 5. **Deploy to ColdFusion**
+
    ```bash
    # Copy to ColdFusion webroot
    cp -r BlogCFC5 /path/to/coldfusion/webroot/
    ```
 
 6. **Access the application**
-   - Frontend: http://localhost:8500/BlogCFC5/client/
-   - Admin: http://localhost:8500/BlogCFC5/client/admin/
+   - Frontend: <http://localhost:8500/BlogCFC5/client/>
+   - Admin: <http://localhost:8500/BlogCFC5/client/admin/>
 
 ### Option 2: Lucee (CommandBox)
 
 1. **Install CommandBox**
+
    ```bash
    # Mac/Linux
    brew install commandbox
@@ -117,18 +124,20 @@ Real features include:
    ```
 
 2. **Download and setup**
+
    ```bash
    git clone https://github.com/teamcfadvance/BlogCFC5.git
    cd BlogCFC5
    ```
 
 3. **Start server with CommandBox**
+
    ```bash
    box server start port=8500
    ```
 
 4. **Create MySQL alternative (optional)**
-   
+
    BlogCFC5 uses SQL Server by default. For MySQL, you'll need to:
    - Convert SQL scripts (field types differ)
    - Update datasource configuration
@@ -236,7 +245,7 @@ Each phase uses this application as the consulting context:
 | 08 | Performance | Optimization plan |
 | 09 | Consulting | Client discovery |
 
-See [exercises/](exercises/) for phase-specific exercises.
+See [the exercise index](./exercises/index.md) for phase-specific exercises.
 
 ---
 

@@ -6,7 +6,7 @@ Usage:
 
 Checks:
   - Relative links and images point to files or folders that exist.
-  - No file references the removed `learning-paths/` folder.
+  - No file references the removed `learning-paths/` folder (docs/maintainers/ is exempt).
 Skips code blocks, inline code, archive/ and .claude/templates/ (templates use placeholder links).
 External URLs are checked by the Lychee job in CI, not here.
 """
@@ -19,6 +19,10 @@ from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP_PREFIXES = ("archive/", ".claude/templates/")
+# redirect stubs at old paths are meant to have no inbound links
+REDIRECT_STUB_MARKER = "<!-- redirect-stub"
+# maintainer records describe the old layout on purpose, so only their links are checked
+LEGACY_EXEMPT_PREFIXES = ("docs/maintainers/",)
 
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 FENCE_RE = re.compile(r"```.*?```", re.S)
@@ -64,6 +68,8 @@ def main():
                     inbound[resolved.rstrip("/") + "/README.md"] += 1
             else:
                 broken.append((source, target))
+        if source.startswith(LEGACY_EXEMPT_PREFIXES):
+            continue
         for number, line in enumerate(text.splitlines(), 1):
             if LEGACY_RE.search(line):
                 legacy.append((source, number, line.strip()[:100]))
@@ -78,9 +84,14 @@ def main():
 
     if show_orphans:
         index_names = {"README.md", "CLAUDE.md", "AGENTS.md"}
+        # tool configuration is loaded by Claude Code and GitHub, not reached through links
+        tooling_prefixes = (".claude/", ".github/")
         orphans = [
             f for f in markdown
-            if inbound[f] == 0 and os.path.basename(f) not in index_names
+            if inbound[f] == 0
+            and os.path.basename(f) not in index_names
+            and not f.startswith(tooling_prefixes)
+            and not read_markdown(f).lstrip().startswith(REDIRECT_STUB_MARKER)
         ]
         print(f"\nMarkdown files with no inbound links: {len(orphans)}")
         for path in sorted(orphans):

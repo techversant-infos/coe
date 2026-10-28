@@ -7,6 +7,7 @@
 ## Setup
 
 Pair up with a colleague:
+
 - One plays the frustrated client
 - One plays the consultant
 
@@ -44,6 +45,7 @@ Pair up with a colleague:
 
 **Offer choices:**
 > "We have a few options:
+>
 > 1. [Option A with trade-offs]
 > 2. [Option B with trade-offs]
 > 3. [Option C with trade-offs]"
@@ -72,6 +74,7 @@ Pair up with a colleague:
 > "I've been hearing from my team that things are taking longer than expected. We've paid for a 6-week project and we're on week 4 and you haven't even started on the database migration yet. What exactly is happening?"
 
 **Consultant (respond using the framework):**
+
 1. Acknowledge the frustration
 2. Explain the context
 3. Show the impact
@@ -83,6 +86,7 @@ Pair up with a colleague:
 ## After the Role-Play
 
 **Self-reflection:**
+
 - Did you acknowledge before defending?
 - Did you stay calm?
 - Did you present options?

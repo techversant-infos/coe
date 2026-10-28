@@ -44,6 +44,7 @@ Strategic curriculum designer who breaks down complex engineering topics into di
 ## Output Format
 
 Produces structured learning path documentation with:
+
 - Phase overview and objectives
 - Lesson breakdowns with estimated durations
 - Exercise specifications

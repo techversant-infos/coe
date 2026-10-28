@@ -9,6 +9,7 @@ Learn to map application architecture from code analysis.
 ## Scenario
 
 **Application:** Healthcare scheduling system
+
 - 200 CFM files
 - Plain CFM with includes
 - MSSQL database
@@ -22,6 +23,7 @@ Learn to map application architecture from code analysis.
 From the codebase, identify:
 
 **Directory Structure:**
+
 ```
 /scheduling
   /admin          # ___ files
@@ -57,6 +59,7 @@ Map the database schema:
 | billing | | | |
 
 **Relationships:**
+
 ```
 patients ───< appointments >─── providers
 patients ───< insurance
@@ -79,6 +82,7 @@ Document external integrations:
 Map the main user flows:
 
 **Flow 1: Patient Schedules Appointment**
+
 ```
 1. Patient logs in
 2. → _______________
@@ -89,6 +93,7 @@ Map the main user flows:
 ```
 
 **Flow 2: Provider Views Schedule**
+
 ```
 1. Provider logs in
 2. → _______________

@@ -1202,7 +1202,7 @@ Unexpected conditions include missing fields, null values, timeouts, pool exhaus
 - [OWASP Server-Side Request Forgery Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html)
 - [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 - [Adobe ColdFusion security bulletins](https://helpx.adobe.com/security/products/coldfusion.html)
-- [Adobe ColdFusion installation and configuration guidance](https://helpx.adobe.com/coldfusion/installation-configuration-user-guide.html)
+- [Adobe ColdFusion installation and configuration guidance](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/install-and-configure-coldfusion-user-guide.html)
 
 **You understand this topic when:** you can identify the asset and trust boundary, classify the risk using the current taxonomy, explain why each control exists, enforce it server-side, test its failure behavior, and name the evidence that proves it works.
 

@@ -19,7 +19,7 @@ Brief description of what this PR changes and why.
 
 ## Checklist
 
-- [ ] Follows [CONTRIBUTING.md](CONTRIBUTING.md) guidelines
+- [ ] Follows [CONTRIBUTING.md](https://github.com/techversant-infos/coe/blob/main/CONTRIBUTING.md) guidelines
 - [ ] Front matter completed (Version, Issued by, Effective Date, Contributors)
 - [ ] Related documents section updated
 - [ ] Markdown renders correctly

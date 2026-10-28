@@ -43,7 +43,6 @@ This file tracks the migration from standalone learning paths to the Techversant
 - AI-assisted development/testing/prompt engineering paths need full curricula with delegation-level guardrails.
 - Frontend add-ons needed: i18n policy, PWA/offline guidance, design-system integration.
 - Quality add-ons needed: contract testing, visual regression, mobile/device testing, accessibility depth, performance/load testing, quality dashboard template.
-- Legacy `learning-paths/` folders remain as compatibility copies until existing links are migrated.
 
 ## Useful External Resources To Curate
 
@@ -76,4 +75,3 @@ Do not delete these without owner approval:
 |---|---|---|
 | Reviewer-only gap-analysis files | Useful for CoE reviewers, but noisy for learners | Keep with `90-` prefix unless learner navigation becomes cluttered |
 | Roadmap images | Helpful visual context but may become stale | Keep if source/date is documented; otherwise replace with maintained diagrams |
-| Legacy `learning-paths/` compatibility folders | Duplicate academy content after migration | Remove only after `rg "learning-paths/"` shows no live references |

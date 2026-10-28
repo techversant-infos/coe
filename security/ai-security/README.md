@@ -6,11 +6,11 @@ This folder contains guidelines for securing AI/ML systems, models, and inferenc
 
 | Document | Description |
 |----------|-------------|
-| `neural-security-guidelines.md` | Comprehensive AI security guidance |
+| [ai-security-guidelines.md](./ai-security-guidelines.md) | Comprehensive AI security guidance |
 
 ## Quick Links
 
-- [Neural Security Guidelines](ai-security-guidelines.md)
+- [AI Security Guidelines](./ai-security-guidelines.md)
 
 ---
 

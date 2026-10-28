@@ -51,6 +51,7 @@ Review the following code and identify vulnerabilities:
 Implement a secure authentication system:
 
 Requirements:
+
 - Password hashing (bcrypt or Argon2)
 - Secure session management
 - Brute force protection

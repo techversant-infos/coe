@@ -9,6 +9,7 @@ Learn to systematically assess and score technical debt in ColdFusion applicatio
 ## Scenario
 
 **Application:** E-commerce platform built in 2010
+
 - ~150 CFM files
 - Plain CFM with includes
 - MSSQL database (40 tables)

@@ -7,6 +7,7 @@
 ## Scenario
 
 A media company has been running BlogCFC5 since 2012. They want to understand their options:
+
 - Upgrade ColdFusion?
 - Migrate to Lucee?
 - Rebuild on a modern stack?
@@ -36,10 +37,12 @@ Evaluate these modernization paths:
 ### Option A: Stay on ColdFusion
 
 **Pros:**
+
 1. Minimal code changes
 2. No content migration
 
 **Cons:**
+
 1. _______________________
 2. _______________________
 3. _______________________
@@ -49,11 +52,13 @@ Evaluate these modernization paths:
 ### Option B: Migrate to Lucee
 
 **Pros:**
+
 1. Open source, no licensing
 2. Active community
 3. Modern features
 
 **Cons:**
+
 1. _______________________
 2. _______________________
 3. _______________________
@@ -63,10 +68,12 @@ Evaluate these modernization paths:
 ### Option C: Rebuild on Modern Stack
 
 **Pros:**
+
 1. Full modernization
 2. Long-term maintainability
 
 **Cons:**
+
 1. _______________________
 2. _______________________
 3. _______________________

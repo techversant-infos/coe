@@ -54,11 +54,13 @@
 _______________________________________
 
 **Users:**
+
 - Internal: _______________
 - External: _______________
 - Total users: _______________
 
 **Business Criticality:**
+
 - [ ] Mission Critical
 - [ ] Business Important
 - [ ] Business Standard
@@ -115,17 +117,20 @@ _______________________________________
 ### 2.3 Data Architecture
 
 **Database Schema:**
+
 | Table Count | Complexity |
 |-------------|------------|
 | | Simple / Moderate / Complex |
 
 **Key Tables:**
+
 | Table | Purpose | Row Count | Foreign Keys |
 |-------|---------|-----------|--------------|
 | | | | |
 | | | | |
 
 **Data Relationships Diagram:**
+
 ```
 [Insert ERD summary or relationship description]
 ```
@@ -288,12 +293,15 @@ _______________________________________________________________
 ## 9. Appendices
 
 ### Appendix A: Files Reviewed
+
 [List of key files analyzed]
 
 ### Appendix B: Interview Notes
+
 [Summary of stakeholder interviews]
 
 ### Appendix C: Screenshots
+
 [Architecture diagrams, code samples, etc.]
 
 ---

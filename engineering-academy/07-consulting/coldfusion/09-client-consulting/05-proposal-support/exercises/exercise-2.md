@@ -15,6 +15,7 @@ Using the boilerplates in `./DELIVERABLES/proposal-boilerplates/`, write a propo
 Use [proposal-scopes.md](../../../deliverables/proposal-boilerplates/proposal-scopes.md) as a template.
 
 **For Summit Manufacturing:**
+
 - Company: Summit Manufacturing
 - Industry: Industrial manufacturing
 - Application: Order Management System
@@ -34,6 +35,7 @@ _______________________________________________________________
 ### Scope of Work
 
 **Deliverables:**
+
 1. _______________________________________________________________
 2. _______________________________________________________________
 3. _______________________________________________________________

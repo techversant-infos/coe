@@ -37,6 +37,7 @@ Patient, structured instructor who introduces programming concepts through JavaS
 ## Output Format
 
 Produces:
+
 - Lesson content with conceptual explanations and practical examples
 - Exercises with step-by-step guidance and hints
 - Assessment rubrics focusing on code correctness and logic

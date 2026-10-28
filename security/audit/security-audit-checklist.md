@@ -24,6 +24,7 @@
 ## How to use this
 
 - **Every pull request** — run the [Minimum Bar](#minimum-bar). Ten items, two minutes.
+<!-- markdownlint-disable-next-line MD051 -- GitHub slug is correct; markdownlint misreads A01:2025 as a URL -->
 - **Every feature** — run the [OWASP blocks](#a012025--broken-access-control) relevant to what you changed.
 - **Release and audit** — use the [full reference](./security-audit-reference.md) instead.
 - Items marked **(B)** are **release-blocking**. Shipping with one open needs a written exception

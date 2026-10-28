@@ -13,6 +13,7 @@
 ### Scope of Work
 
 **Deliverables:**
+
 1. Technical Environment Audit
    - ColdFusion version and configuration
    - Database architecture and health
@@ -86,12 +87,14 @@
 ### Scope of Work
 
 **Phase 1: Discovery & Planning (2 weeks)**
+
 - Compatibility scan
 - Issue identification and remediation planning
 - Environment setup
 - Test plan development
 
 **Phase 2: Core Migration (4-8 weeks, varies by size)**
+
 - Code compatibility fixes
 - Extension replacement
 - Database migration
@@ -100,11 +103,13 @@
 - Regression testing
 
 **Phase 3: Optimization (2 weeks)**
+
 - Performance tuning
 - Caching implementation
 - Monitoring setup
 
 **Phase 4: Deployment (2 weeks)**
+
 - Staging deployment
 - UAT support
 - Production deployment
@@ -163,18 +168,21 @@
 ### Scope of Work
 
 **Phase 1: Assessment (2 weeks)**
+
 - Current infrastructure mapping
 - Cloud readiness assessment
 - Architecture design
 - Cost estimation
 
 **Phase 2: Foundation (3 weeks)**
+
 - Cloud account setup
 - Network architecture
 - Security configuration
 - CI/CD pipeline setup
 
 **Phase 3: Migration (6-10 weeks)**
+
 - Staging environment deployment
 - Data migration
 - Application deployment
@@ -182,6 +190,7 @@
 - Performance optimization
 
 **Phase 4: Cutover (2 weeks)**
+
 - Load testing
 - Dry run
 - Production cutover
@@ -231,23 +240,27 @@
 ### Scope of Work
 
 **Phase 1: Discovery & Design (2 weeks)**
+
 - User research and requirements
 - UI/UX design
 - Component library selection
 - API design for frontend
 
 **Phase 2: Backend Preparation (2 weeks)**
+
 - REST API development
 - Authentication integration
 - Data layer optimization
 
 **Phase 3: Frontend Development (6-10 weeks)**
+
 - Component development
 - Page implementation
 - Integration testing
 - Accessibility compliance
 
 **Phase 4: Deployment (2 weeks)**
+
 - Staging deployment
 - User training
 - Production deployment

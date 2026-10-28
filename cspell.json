@@ -1,8 +1,9 @@
 // cSpell configuration for CoE documents
+// Shared terms go in "words" below; names and one-off product terms go in .cspell/project-words.txt
 
 {
   "version": "0.2",
-  "language": "en",
+  "language": "en,en-GB",
   "words": [
     "CoE",
     "Techversant",
@@ -187,8 +188,19 @@
     "signup",
     "Laravel"
   ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./.cspell/project-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "project-words"
+  ],
   "ignorePaths": [
     "**/node_modules/**",
-    "**/.git/**"
+    "**/.git/**",
+    "archive/**"
   ]
 }

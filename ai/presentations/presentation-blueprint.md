@@ -1,4 +1,5 @@
 # AI Productivity Presentation — Blueprint v3
+
 **Session title:** Don't let AI work for you. Work better with AI.
 **Target:** 15 slides · 35–40 minutes
 **Audience:** Developers · QA · Designers · Tech Leads · Delivery Managers
@@ -21,6 +22,7 @@
 | Code font | Consolas, 13pt |
 
 **Visual language:**
+
 - Navigation pin `◉` replaces bullet points as the icon marker
 - Thin horizontal route line as section divider
 - Signal bars `▂▄▆█` for strength/context indicators
@@ -78,6 +80,7 @@
 ## SLIDE 1 — COVER
 
 ### CONTENT
+
 **Headline:** AI is GPS. Your team is driving.
 
 **Subhead:** Right now, everyone's using a different map.
@@ -85,11 +88,13 @@
 **Session title (bottom):** Don't let AI work for you. Work better with AI.
 
 ### INFOGRAPHIC
+
 **Type:** Minimalist split visual
 **Description:** White background. Left half: clean map interface with one clear route (single colour line, destination pinned). Right half: same map with five chaotic routes going in different directions — same starting point, wildly different paths. No label needed. Visual makes the point instantly.
 **Colours:** Route lines in light grey, one highlighted in black. Destination pins in accent colour (one green, others grey).
 
 ### NOTES
+
 Don't explain the metaphor. Open with the question. Let it sit.
 
 "Every person in this room has Claude, Copilot, or Cursor. Same map. But right now, five different people on the same project are navigating five different ways. No shared route. No agreed destination. Some are taking the expressway. Some are still on the service road. And a few are following GPS into a field."
@@ -105,6 +110,7 @@ TONE NOTE: You're not here to teach. You're here because you've seen what works 
 ## SLIDE 2 — THE PROBLEM
 
 ### CONTENT
+
 **Headline:** Same tools. Same team. Completely different results.
 
 **Two columns (no headers, visual contrast only):**
@@ -124,11 +130,13 @@ Right (same layout, slight visual chaos):
 > "We don't have an AI problem. We have a process problem."
 
 ### INFOGRAPHIC
+
 **Type:** Two-column contrast card + root cause banner
 **Description:** Left column: clean, spaced, ordered — feels structured. Right column: same visual weight but slightly misaligned, overlapping — feels chaotic without being cartoonish. Bottom band: dark (#111111) background, white bold text for the root cause line. Width: full slide.
 **Colours:** Left column text: #111111. Right column: #6B7280. Bottom band: #111111 / #FFFFFF.
 
 ### NOTES
+
 "One developer shipped 3 features cleanly last sprint. Another needed 4 review cycles on 1 feature. Both were using Cursor. Same GPS. Completely different routes."
 
 HUMOUR: "Faster mistakes are still mistakes. They're just harder to debug because you forgot how you made them."
@@ -144,6 +152,7 @@ ENGAGEMENT:
 ## SLIDE 3 — THE SOLUTION
 
 ### CONTENT
+
 **Headline:** One route. Everyone follows it. Everyone arrives.
 
 **Four pillars (2×2 icon grid):**
@@ -159,11 +168,13 @@ PR cycles ↓ · Bug rate ↓ · Onboarding time ↓ · Predictability ↑
 **Punchline:** "Consistency beats individual brilliance."
 
 ### INFOGRAPHIC
+
 **Type:** 2×2 pillar grid + outcome strip
 **Description:** Four equal cards in a 2×2 grid. Each: icon (outlined, not filled) + pillar name bold + one-line description in grey. Below: thin route line divider. Outcome strip: four metric chips in a row, directional arrow + label, light grey background.
 **Colours:** Cards: white with #E5E7EB border. Icons: #111111. Outcome strip: #F3F4F6.
 
 ### NOTES
+
 CRICKET ANALOGY (if F1 vibes linger): "Rohit and Virat are brilliant individually. But they play the same game plan. A team wins on coordination, not individual improvisation."
 
 "The four pillars are simple. Doing all four consistently, across every project — that's what today is about."
@@ -177,6 +188,7 @@ ENGAGEMENT:
 ## SLIDE 4 — YOUR NAVIGATION STACK
 
 ### CONTENT
+
 **Headline:** Right instrument. Right moment.
 
 **Tool matrix (clean table, no thick borders):**
@@ -192,11 +204,13 @@ ENGAGEMENT:
 > One instrument per task. Don't drive staring at three screens simultaneously.
 
 ### INFOGRAPHIC
+
 **Type:** Horizontal spectrum bar below the table
 **Description:** A single horizontal bar from left ("Fast, inline, low context") to right ("Deep, planned, high context"). Each tool positioned as a labelled pin on the spectrum. Copilot far left. Claude far right. Cursor centre-right. ChatGPT centre-left.
 **Colours:** Bar: light grey gradient. Pins: black with tool name below. No tool brand colours.
 
 ### NOTES
+
 "Using Claude for inline autocomplete is like using your long-range GPS planner to navigate a car park. Technically it works. Complete overkill."
 
 COST POINT (for leads): "Claude Opus for simple completions costs 10× more than Copilot for the same output. Tool selection is cost discipline."
@@ -210,6 +224,7 @@ ENGAGEMENT:
 ## SLIDE 5 — THE BLIND DRIVER
 
 ### CONTENT
+
 **Headline:** GPS told someone to drive into a lake. They followed it.
 
 **Two paths (diverging route visual):**
@@ -231,11 +246,13 @@ Smart (right path):
 > "Same AI. Same codebase. One day versus three."
 
 ### INFOGRAPHIC
+
 **Type:** Diverging path from one starting point
 **Description:** Single road splitting into two paths from "Task received." Left path (grey, dotted): winds messily, ends in a wall labelled "PR rejected / prod bug." Right path (black, clean): straight, structured, ends at "Merged ✓." Time labels at the end of each path. No dramatic colours — clean contrast between solid and dotted lines.
 **Colours:** Background white. Blind path: #9CA3AF dashed. Smart path: #111111 solid. Labels: standard text.
 
 ### NOTES
+
 "When you debug AI-generated code you don't understand, you start from zero. No mental model. That's when a 2-hour task becomes a 2-day problem."
 
 FOR JUNIORS: "There's a career-defining difference between 'AI taught me how this works' and 'AI wrote this and I hope it works.' One builds you. The other makes you fragile."
@@ -251,6 +268,7 @@ ENGAGEMENT:
 ## SLIDE 6 — THE STANDARD ROUTE
 
 ### CONTENT
+
 **Headline:** You don't drive without setting the destination first.
 
 **The 7-step route (horizontal pipeline):**
@@ -274,11 +292,13 @@ PLAN → VALIDATE → BUILD → AI CHECK → HUMAN REVIEW → TEST → MERGE
 **Rule:** Never go from task to code without planning first.
 
 ### INFOGRAPHIC
+
 **Type:** 7-node horizontal pipeline with non-negotiable markers
 **Description:** Seven connected rectangular nodes in a flow. Non-negotiable nodes (PLAN, VALIDATE, HUMAN REVIEW, TEST, MERGE) have a bold black border and small lock icon ◉ below. Optional nodes (BUILD, AI CHECK) have grey border. A thin route line runs above the pipeline as the GPS visual thread.
 **Colours:** Required nodes: #111111 border. Optional: #D1D5DB border. Arrow connectors: #9CA3AF.
 
 ### NOTES
+
 "Planning with Claude before writing code takes 10 minutes. Debugging code written without a plan takes 2 hours. The maths is not complicated."
 
 GPS TIE-IN: "You don't start the car and figure out the route as you go. You set the destination, confirm the route, then drive. Same here."
@@ -292,6 +312,7 @@ ENGAGEMENT:
 ## SLIDE 7 — SESSION CONTROLS
 
 ### CONTENT
+
 **Headline:** Recalculating. Five ways to stay on course.
 
 **Control table:**
@@ -307,11 +328,13 @@ ENGAGEMENT:
 **Punchline:** "Re-prompting is not the same as recalculating."
 
 ### INFOGRAPHIC
+
 **Type:** 5-row table with GPS icon column
 **Description:** Clean table. Left column: GPS-icon per control (◉ for continue, ↩ for rewind, ✕ for clear, ⊘ for compact, ⬡ for subagent). Middle: control name bold. Right two: "When" and "What it does" in regular weight. Light alternating rows. No heavy borders.
 **Colours:** Table rows alternating #FFFFFF / #F3F4F6. Control names: #111111 bold. Descriptions: #6B7280.
 
 ### NOTES
+
 CONTINUE: "Claude paused your auth refactor across 6 files after file 3. Type continue — it picks up at file 4, same pattern, no drift. Re-prompting restarts reasoning and can drift from what was established."
 
 REWIND: "Claude spent 3 messages rewriting your DB schema to fix a slow query. You realise it's a JOIN issue. Don't say 'ignore all that' — Claude partially carries it forward. Rewind cuts it cleanly."
@@ -331,6 +354,7 @@ ENGAGEMENT:
 ## SLIDE 8 — SET THE RIGHT DESTINATION
 
 ### CONTENT
+
 **Headline:** Wrong address in. Wrong place out. Every time.
 
 **Formula:**
@@ -339,11 +363,13 @@ ENGAGEMENT:
 **Two prompt examples (side by side):**
 
 Weak:
+
 ```
 Fix this function
 ```
 
 Strong:
+
 ```
 Node.js + Express + PostgreSQL.
 /api/users/:id throws 500 when user doesn't exist.
@@ -360,11 +386,13 @@ signature or JWT middleware. Return code only.
 ◉ Add constraints: what NOT to change
 
 ### INFOGRAPHIC
+
 **Type:** Side-by-side chat mockup
 **Description:** Two chat interface cards. Left (weak): short vague prompt, long wandering AI response. Right (strong): structured prompt with formula components colour-labelled — Context (underlined), Task (bold), Constraints (grey highlight), Format (italic). Clean specific response below. Formula legend strip above both cards.
 **Colours:** Weak card: #F3F4F6 background, no accent. Strong card: white, with light annotation colours for formula components. Label strip: #111111 background, white text.
 
 ### NOTES
+
 "A vague question gets a vague answer. From a human. From Google. From Claude. AI is only as specific as you are."
 
 GPS TIE-IN: "If you type 'coffee shop' into GPS, you might end up anywhere. The more specific your destination — 'Blue Tokai, Indiranagar, Bangalore' — the more useful the route."
@@ -382,6 +410,7 @@ Then reveal the strong version. More memorable than any explanation.
 ## SLIDE 9 — SIGNAL MANAGEMENT
 
 ### CONTENT
+
 **Headline:** Don't let the signal drop mid-journey.
 
 **What kills signal (wastes tokens):**
@@ -405,11 +434,13 @@ Then reveal the strong version. More memorable than any explanation.
 | Opus | Architecture, complex reasoning only | High |
 
 ### INFOGRAPHIC
+
 **Type:** Signal strength split + model cost bar
 **Description:** Left panel: "Low signal" — long prompt, token meter near full, sections of irrelevant content highlighted grey. Right panel: "Strong signal" — short targeted prompt, token meter at 30%, clean output. Below: three model blocks side by side (Haiku / Sonnet / Opus) with task type labels and relative cost indicator (low/mid/high bar).
 **Colours:** Token meter: green (low) to red (high). Model blocks: light grey background, black text, cost bar in neutral grey gradient.
 
 ### NOTES
+
 "If you paste a 500-line file to ask about one function, you're burning context on 490 lines Claude will never reference. It's like giving a taxi driver your entire travel history just to get to the airport."
 
 GPS TIE-IN: "GPS uses less battery when it knows your saved places. CLAUDE.md is your saved places. Set it up once — stop burning context re-explaining every session."
@@ -423,9 +454,11 @@ ENGAGEMENT:
 ## SLIDE 10 — YOUR SAVED PLACES
 
 ### CONTENT
+
 **Headline:** AI knows the route before you say a word.
 
 **Project file structure (code tree):**
+
 ```
 project/
 ├── CLAUDE.md              ← Claude's route preference
@@ -448,6 +481,7 @@ project/
 | commands/ | One-command team standards |
 
 **Minimum CLAUDE.md (show on slide):**
+
 ```
 Stack: Node.js 20, React 18, PostgreSQL, AWS
 Style: ESLint Airbnb, async/await, no raw SQL
@@ -456,11 +490,13 @@ Off-limits: /src/auth/, /src/middleware/security.js
 ```
 
 ### INFOGRAPHIC
+
 **Type:** IDE-style file tree (dark panel) + annotation callouts
 **Description:** Left: dark sidebar panel (VS Code aesthetic, #1E1E1E background) showing the file tree in monospace, colour-coded by tool — Claude files in one tone, Cursor in another, shared in neutral. Right: three callout boxes pointing to key files with one-line explanations. Style: feels like opening your IDE — immediately recognisable.
 **Colours:** Dark tree panel: #1E1E1E background, #D4D4D4 text, files highlighted by tool category. Callout boxes: white with light border.
 
 ### NOTES
+
 "Without this structure, every AI session starts from zero. With it, Claude already knows your stack, your standards, and what not to touch — before you type a word."
 
 "CLAUDE.md is onboarding documentation for your AI. Write it once. Save 10 hours per sprint."
@@ -477,6 +513,7 @@ ENGAGEMENT:
 ## SLIDE 11 — GPS SIGNAL STRENGTH
 
 ### CONTENT
+
 **Headline:** Know exactly what your AI can see — and what it's guessing.
 
 **Context visibility table:**
@@ -497,11 +534,13 @@ ENGAGEMENT:
 **Fix:** CLAUDE.md + .cursorrules remove most of this.
 
 ### INFOGRAPHIC
+
 **Type:** Signal strength grid — 2×2, one panel per tool
 **Description:** Four equal panels. Each panel: tool name bold, a signal bar indicator (▂▄▆█) showing relative visibility strength, a mini file tree with "visible" files solid and "invisible" files greyed out. Below each: "Sees: X | Doesn't see: Y" in two-tone text. Style: clean, technical, like a network dashboard.
 **Colours:** Visible files: #111111. Invisible files: #D1D5DB. Signal bars: filled = #111111, empty = #E5E7EB. Panel borders: #E5E7EB.
 
 ### NOTES
+
 "Cursor with a well-indexed codebase is the most context-aware tool you have. But indexed doesn't mean understood — it means searchable. It still needs guidance on what matters."
 
 "Claude has no memory between sessions unless you use Projects or CLAUDE.md. Every new chat is a blank slate. That's not a bug. It's why CLAUDE.md exists."
@@ -518,6 +557,7 @@ ENGAGEMENT:
 ## SLIDE 12 — EYES ON THE ROAD
 
 ### CONTENT
+
 **Headline:** GPS says turn right. You still look at the road.
 
 **Two-gate review:**
@@ -538,11 +578,13 @@ ENGAGEMENT:
 **Non-negotiable:** Every AI-generated PR gets human review. No exceptions.
 
 ### INFOGRAPHIC
+
 **Type:** Two-gate funnel + cost escalation timeline
 **Description:** Upper: funnel visual — "AI output" flows through Gate 1 (AI review, grey) then Gate 2 (human review, black border) → "Approved." Bypass path from Gate 1 to "Production bug" in dashed line, no dramatisation — just a clear consequence path. Lower: horizontal cost timeline with bug multipliers growing from left (1×) to right (10×). Simple, factual.
 **Colours:** Gate 1: #6B7280. Gate 2: #111111. Bypass path: dashed #9CA3AF. Cost multiplier blocks: gradient from #F3F4F6 (left) to #D1D5DB (right) — no red, just visual weight increase.
 
 ### NOTES
+
 "The biggest risk is reviewers getting lazy because 'the AI already checked it.' AI-generated code needs more scrutiny — not less."
 
 "A spell-checker doesn't know if your email is appropriate. It checks spelling. Claude checking your code doesn't know if the logic fits your business. That's your job."
@@ -556,6 +598,7 @@ FOR QA: "AI removes the mechanical test-writing. The 20% requiring real judgment
 ## SLIDE 13 — WHEN TO OVERRIDE
 
 ### CONTENT
+
 **Headline:** You still drive. GPS is not the driver.
 
 **Delegation scale (4 levels):**
@@ -575,11 +618,13 @@ FOR QA: "AI removes the mechanical test-writing. The 20% requiring real judgment
 **The rule:** "Delegate the typing. Never delegate the thinking."
 
 ### INFOGRAPHIC
+
 **Type:** Vertical scale with gradient + task pills
 **Description:** Vertical bar running left (or top) to bottom — gradient from light (full delegate) to dark (never delegate). Each level sits on the bar as a labelled band: GREEN / YELLOW / AMBER / RED text labels (no emoji — clean). Right side: task example pills for each level (small rounded rectangles). Decision test below as a 3-node flow with yes/no branches.
 **Colours:** Scale gradient: #F3F4F6 → #6B7280 → #374151 → #111111. Level text: white on dark, dark on light. Task pills: #F3F4F6 with #111111 text.
 
 ### NOTES
+
 "AI is like a very fast, very capable junior developer. You'd give them repetitive CRUD tasks without a second thought. You'd review their business logic before merging. You'd write the architecture yourself and have them implement it. And you'd never let them push directly to production without sign-off. AI is exactly this — with one extra catch: it never tells you when it's guessing."
 
 "Teams that fully delegate hard thinking start to lose architectural muscle. The moment you need to debug something novel — nobody can — because they haven't wrestled with a hard problem in months."
@@ -596,9 +641,11 @@ Follow: "What's one task you're fully delegating right now that should probably 
 ## SLIDE 14 — ROAD RULES
 
 ### CONTENT
+
 **Headline:** GPS or not — road rules still apply.
 
 **Non-negotiables (numbered, clean):**
+
 1. All AI-generated code gets human review
 2. No credentials, API keys, or client data in any prompt
 3. Auth, encryption, PII: manual only
@@ -618,11 +665,13 @@ Follow: "What's one task you're fully delegating right now that should probably 
 > AI suggests something → you can't explain it → escalate. Don't commit.
 
 ### INFOGRAPHIC
+
 **Type:** Reference card layout — designed to be printed
 **Description:** Clean two-column card. Left (Do): green header chip, 4 items as compact one-liners. Right (Don't): grey header chip, 4 matching items. Below: dark full-width banner with non-negotiables numbered in white. Bottom: escalation rule in italic, bordered quote box. Entire slide designed as a printable/screenshottable card.
 **Colours:** Do header: #111111 on #F3F4F6. Don't header: #9CA3AF on #F3F4F6. Bottom banner: #111111 background, white text. No red/green — clean, authoritative.
 
 ### NOTES
+
 "Governance has a bad reputation because it usually means slower. Reframe it: road rules don't make you slow — they make it safe to drive fast. A car without brakes isn't faster. It's dangerous."
 
 "This isn't about trust. AI is confident even when it's completely wrong. Human judgment is the only check on that confidence. It doesn't have impostor syndrome."
@@ -638,6 +687,7 @@ TIP: Print this slide as a physical reference card for the team.
 ## SLIDE 15 — TRACK YOUR JOURNEY
 
 ### CONTENT
+
 **Headline:** You can't improve a route you don't measure.
 
 **Sprint metrics (4 cards):**
@@ -659,6 +709,7 @@ TIP: Print this slide as a physical reference card for the team.
 | Architects | Define AI off-limits zones | This week |
 
 **Four things to remember:**
+
 1. AI increases speed — not correctness
 2. Discipline makes the difference — not the tool
 3. Consistency beats individual brilliance
@@ -668,11 +719,13 @@ TIP: Print this slide as a physical reference card for the team.
 > "The best AI workflow is the one your whole team actually follows."
 
 ### INFOGRAPHIC
+
 **Type:** Three-section closing layout
 **Description:** Top third: 4 metric cards in a row (clean, no charts — just label + measure method). Middle third: action table with role/action/when — owner column intentionally blank, filled in live. Bottom third: dark background (#111111), white text — 4 numbered takeaways, closing line in larger italic below. Visual closure with the dark cover slide.
 **Colours:** Metric cards: white, #E5E7EB border. Action table: #F3F4F6 alternating rows. Bottom dark section: #111111 / #FFFFFF.
 
 ### NOTES
+
 "End on action, not inspiration. Teams leave motivated, then don't act because next steps were vague. Fix that right now — one commitment per table, named person, in the next 5 working days."
 
 GPS CLOSING CALLBACK:

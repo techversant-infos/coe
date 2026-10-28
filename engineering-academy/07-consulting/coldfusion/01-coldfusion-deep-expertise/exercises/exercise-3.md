@@ -20,6 +20,7 @@ Learn to implement caching at different levels (query, application, distributed)
 For the given application scenario, identify caching opportunities:
 
 **Scenario:** You have a product catalog application with:
+
 - Product list page (shows 50 products)
 - Product detail page (shows single product)
 - Category listing (shows products by category)

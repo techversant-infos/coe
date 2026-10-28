@@ -64,13 +64,16 @@ Review current JVM arguments and categorize each:
 Based on your analysis, apply these standard ColdFusion tuning recommendations:
 
 1. **Heap Sizing**
+
    ```
    -Xms2g
    -Xmx2g
    ```
+
    (Adjust based on server RAM — never more than 50-75% of available RAM)
 
 2. **G1GC Configuration**
+
    ```
    -XX:+UseG1GC
    -XX:MaxGCPauseMillis=200
@@ -79,6 +82,7 @@ Based on your analysis, apply these standard ColdFusion tuning recommendations:
    ```
 
 3. **Memory and GC Logging**
+
    ```
    -Xlog:gc*:file=gc.log:time,uptime:filecount=5,filesize=10M
    ```

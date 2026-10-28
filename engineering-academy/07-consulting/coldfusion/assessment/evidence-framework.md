@@ -29,6 +29,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### ColdFusion Expertise
 
 **Required Evidence (choose 2):**
+
 - [ ] Assessment report for a legacy CF application (min 20 pages)
 - [ ] Migration plan document (min 10 pages)
 - [ ] Code review of 500+ lines with annotated findings
@@ -41,6 +42,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Security
 
 **Required Evidence (choose 1):**
+
 - [ ] Security review checklist completed for a real or sample application
 - [ ] Vulnerability report with remediation recommendations
 - [ ] Secure coding guidelines document (min 5 pages)
@@ -52,6 +54,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Cloud
 
 **Required Evidence (choose 1):**
+
 - [ ] Cloud architecture diagram for a CF application
 - [ ] Deployment runbook for cloud migration
 - [ ] Cost estimation document
@@ -65,6 +68,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Discovery Leadership
 
 **Required Evidence:**
+
 - [ ] **Recorded discovery session** (min 30 minutes)
 - [ ] Discovery questionnaire completed for a mock client
 - [ ] Follow-up questions documented
@@ -86,6 +90,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Presentation
 
 **Required Evidence:**
+
 - [ ] **Recorded presentation** (min 15 minutes) to mock client
 - [ ] Presentation deck submitted
 - [ ] Feedback incorporated
@@ -107,6 +112,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Estimation
 
 **Required Evidence:**
+
 - [ ] **Estimate document** for a complete project (min 3 pages)
 - [ ] WBS breakdown included
 - [ ] Assumptions documented
@@ -115,6 +121,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 **Verification:** Estimate reviewed by Senior Consultant
 
 **Required Sections:**
+
 1. Scope definition
 2. Work breakdown structure
 3. Effort estimate by task
@@ -131,6 +138,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Client Empathy
 
 **Required Evidence:**
+
 - [ ] Client feedback collected (min 1 real or mock session)
 - [ ] Documented how feedback was incorporated
 - [ ] Self-reflection on communication approach
@@ -142,6 +150,7 @@ To complete the CF Consulting CoE, developers must produce evidence across three
 #### Professionalism
 
 **Required Evidence:**
+
 - [ ] All deliverables submitted on time
 - [ ] Meeting preparation documented
 - [ ] Peer reviews contributed
@@ -221,6 +230,7 @@ Final Score = (Competency % × 0.5) + (Evidence % × 0.5)
 ```
 
 **Where:**
+
 - **Competency %** = (Competency Average / 10) × 100
 - **Evidence %** = Weighted evidence completion (0-100)
 
@@ -233,6 +243,7 @@ Final Score = (Competency % × 0.5) + (Evidence % × 0.5)
 | Reviews | 20% | (Reviews contributed / 3 minimum) × 100 |
 
 **Evidence Score Formula:**
+
 ```
 Evidence % = (Artifacts% × 0.4) + (Demonstrations% × 0.4) + (Reviews% × 0.2)
 ```
@@ -247,11 +258,13 @@ Evidence % = (Artifacts% × 0.4) + (Demonstrations% × 0.4) + (Reviews% × 0.2)
 | Reviews Contributed | 3 of 3 | 100% |
 
 **Evidence %:**
+
 ```
 (80 × 0.4) + (80 × 0.4) + (100 × 0.2) = 32 + 32 + 20 = 84%
 ```
 
 **Final Score:**
+
 ```
 (75 × 0.5) + (84 × 0.5) = 37.5 + 42 = 79.5 → 80%
 ```
@@ -329,6 +342,7 @@ ___________________________________________________________
 ___________________________________________________________
 
 **Overall Recommendation:**
+
 - [ ] Approved
 - [ ] Approved with suggestions
 - [ ] Needs revision

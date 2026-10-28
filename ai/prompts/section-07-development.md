@@ -100,30 +100,39 @@ Answer each of these clearly before code generation begins:
 The AI generates all 9 components in order:
 
 ### 1. 📁 Project Folder Structure
+
 Complete folder tree with layer responsibilities.
 
 ### 2. 🧩 Model / Entity Class
+
 All fields, data types, validations, and ORM annotations.
 
 ### 3. 🗃️ Repository / DAO Layer
+
 Database access layer with CRUD methods and custom queries.
 
 ### 4. ⚙️ Service Layer
+
 Full business logic including validation, error handling, and data transformation.
 
 ### 5. 🌐 Controller
+
 All REST endpoints with correct HTTP methods, request/response mapping, and status codes.
 
 ### 6. 🔧 Configuration File
+
 Database connection, server port, and application settings.
 
 ### 7. ✅ Input Validation
+
 Field-level validation rules with meaningful error messages per field.
 
 ### 8. 🚨 Global Exception Handler
+
 Centralised error handling with consistent response format across all endpoints.
 
 ### 9. 🧪 Sample Unit Test
+
 Unit test for the Service layer covering happy path and key edge cases.
 
 ---

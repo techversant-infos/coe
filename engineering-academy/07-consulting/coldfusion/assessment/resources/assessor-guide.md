@@ -52,6 +52,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Teaches others, writes standards, knows internals |
 
 **Evidence to look for:**
+
 - Code quality in PRs
 - Bug resolution speed and accuracy
 - Ability to explain CF concepts to others
@@ -68,6 +69,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Deep Lucee internals, contributes to community |
 
 **Evidence to look for:**
+
 - Lucee migration project experience
 - Knowledge of Railo compatibility issues
 - Understanding of Enginearden licensing
@@ -83,6 +85,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Can extend CF with custom Java, deep JVM knowledge |
 
 **Evidence to look for:**
+
 - JVM tuning experience
 - Stack trace analysis
 - Java integration projects
@@ -98,6 +101,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Database architecture, partitioning, replication |
 
 **Evidence to look for:**
+
 - Query optimization results
 - Schema design work
 - Index strategy implementation
@@ -113,6 +117,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | System-wide performance architecture |
 
 **Evidence to look for:**
+
 - Performance improvement projects
 - Profiling tools used
 - Benchmarking results
@@ -128,6 +133,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Security architecture, secure code standards |
 
 **Evidence to look for:**
+
 - Security-related PRs
 - OWASP implementation
 - Security audit participation
@@ -143,6 +149,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Cloud architecture, cost optimization |
 
 **Evidence to look for:**
+
 - Cloud migration projects
 - Container experience
 - Infrastructure as code
@@ -168,6 +175,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | GraphQL, gRPC, API strategy |
 
 **Evidence to look for:**
+
 - API design work
 - Documentation authored
 - Integration projects
@@ -195,6 +203,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Can explain to executives, writes clearly |
 
 **Observation opportunities:**
+
 - Team presentations
 - Client calls (with permission)
 - Documentation quality
@@ -210,6 +219,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Projects calm confidence in any situation |
 
 **Observation opportunities:**
+
 - Client calls
 - Technical discussions
 - Decision-making moments
@@ -225,6 +235,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Master of discovery sessions |
 
 **Observation opportunities:**
+
 - Requirement documentation
 - Discovery session participation
 - Scope change frequency
@@ -240,6 +251,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Can present to C-suite |
 
 **Observation opportunities:**
+
 - Team demos
 - Client presentations
 - Training sessions
@@ -255,6 +267,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Near-native fluency |
 
 **Observation opportunities:**
+
 - Client calls
 - Written communication
 - Presentations
@@ -264,7 +277,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | Score | Indicators |
 |-------|------------|
 | 1–2 | Interrupts, doesn't confirm understanding |
-| 3–4 | Listends but doesn't confirm |
+| 3–4 | Listens but doesn't confirm |
 | 5–6 | Summarizes, confirms understanding |
 | 7–8 | Paraphrases effectively, reads between lines |
 | 9–10 | Masterful active listening |
@@ -312,6 +325,7 @@ Each row in the matrix is scored independently. Strong ColdFusion skills don't m
 | 9–10 | Stabilizes others, clear in crisis |
 
 **Observation opportunities:**
+
 - Production incidents
 - Tight deadlines
 - Client escalations

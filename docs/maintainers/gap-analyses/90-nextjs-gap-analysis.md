@@ -99,7 +99,7 @@ These are the items the gap analysis surfaced as **missing but worth adding** sm
 
 1. **i18n** one-line pointer in Phase 5 or 8, with a TODO for the CoE i18n policy
 2. **React 19 Compiler note** same wording as the [React path](../../../engineering-academy/01-software-engineering/01-web-development/01-frontend/01-react/01-react-learning-path.md#phase-8-production-patterns-and-project-structure): opt-in, "don't add manual memoization 'just in case'"
-3. ** `use cache` directive / Cache Components** closed in v0.6 (Phase 5 sub-section "Cache Components (the new model)"). Streaming also added in v0.6 as a Phase 3 sub-section.
+3. **`use cache` directive / Cache Components** closed in v0.6 (Phase 5 sub-section "Cache Components (the new model)"). Streaming also added in v0.6 as a Phase 3 sub-section.
 4. **Turbopack** one-line "Next.js 15+ updates" pointer in Phase 10
 5. **Real-time** one-line "escalate to a tech lead; don't roll your own" pointer in Phase 5
 6. **Edge runtime vs. Node runtime** one-line "stay on Node unless you have a specific edge case" in Phase 4
@@ -111,13 +111,15 @@ These are the items the gap analysis surfaced as **missing but worth adding** sm
 
 When reviewing this gap analysis, ask:
 
-1. For every ** partial** row: *is the depth enough for our pilot batch, or does it block Week-1 delivery?*
-2. For every ** not covered** row: *is the reason still valid in 2026?* Especially:
+1. For every **partial** row: *is the depth enough for our pilot batch, or does it block Week-1 delivery?*
+2. For every **not covered** row: *is the reason still valid in 2026?* Especially:
+
  - GraphQL / tRPC has a new product appeared that needs end-to-end type safety?
  - i18n has a new product appeared that ships with multiple locales?
  - Real-time has a new product appeared that needs WebSockets / fan-out?
  - PWAs has a new product appeared that needs offline / install-to-homescreen?
-3. For every ** covered** row: *is the depth right, or are we teaching too much / too little?*
+
+3. For every **covered** row: *is the depth right, or are we teaching too much / too little?*
 4. **Pre-full-team rollout:** the items in "Gaps that should probably be closed" can we land the open ones in v0.7 before the full-team rollout, or are they OK to defer to v0.8?
 
 ---

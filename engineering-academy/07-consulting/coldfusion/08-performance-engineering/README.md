@@ -46,6 +46,7 @@ By the end of this phase, you will be able to:
 ### 1. Performance Profiling
 
 **Tools:**
+
 - FusionReactor
 - SeeFusion
 - ColdFusion Administrator diagnostics
@@ -53,6 +54,7 @@ By the end of this phase, you will be able to:
 - Query analyzers
 
 **Techniques:**
+
 - Request timeline analysis
 - Slow query identification
 - Memory allocation tracking
@@ -62,12 +64,14 @@ By the end of this phase, you will be able to:
 ### 2. Database Optimization
 
 **Query Analysis:**
+
 - EXPLAIN plans
 - Index usage
 - Query plan reading
 - N+1 query detection
 
 **Optimization Patterns:**
+
 ```cfml
 // BAD: N+1 queries
 for (user in users) {
@@ -81,6 +85,7 @@ result = queryExecute("SELECT u.*, r.role
 ```
 
 **Connection Pooling:**
+
 - Pool sizing
 - Connection validation
 - Timeout configuration
@@ -89,18 +94,21 @@ result = queryExecute("SELECT u.*, r.role
 ### 3. Caching Strategies
 
 **CF Caching:**
+
 - `<cfcache>` variations
 - CacheExecute
 - CachePut/CacheGet
 - Application variable caching
 
 **Distributed Caching:**
+
 - Redis
 - Memcached
 - Ehcache
 - Hazelcast
 
 **HTTP Caching:**
+
 - Browser caching
 - CDN configuration
 - ETags and last-modified
@@ -109,17 +117,20 @@ result = queryExecute("SELECT u.*, r.role
 ### 4. JVM Tuning for ColdFusion
 
 **Heap Sizing:**
+
 - Young vs old generation
 - Sizing guidelines
 - Monitoring heap usage
 
 **Garbage Collection:**
+
 - GC algorithm selection
 - G1GC vs ZGC
 - GC logging
 - Tuning parameters
 
 **Threading:**
+
 - Request thread pool
 - Session thread pool
 - Background task threads
@@ -127,12 +138,14 @@ result = queryExecute("SELECT u.*, r.role
 ### 5. Memory Optimization
 
 **Common Issues:**
+
 - Large session scope
 - Application scope leaks
 - Query result caching
 - File upload handling
 
 **Best Practices:**
+
 ```cfml
 // Limit query results
 queryExecute("SELECT * FROM large_table LIMIT 1000", {}, {maxRows=1000});
@@ -154,16 +167,19 @@ structDelete(application, 'largeData');
 ### 7. ColdFusion-Specific Tuning
 
 **Request Management:**
+
 - Request timeout configuration
 - Simultaneous request limits
 - Orphaned request handling
 
 **Session Performance:**
+
 - Session scope size
 - Cluster session replication
 - Session persistence
 
 **ORM Optimization:**
+
 - Hibernate query caching
 - Lazy loading
 - Batch size configuration
@@ -184,9 +200,9 @@ Complete all exercises and pass the [phase assessment](./assessment.md) with 70%
 
 ## Resources
 
-- [FusionReactor Documentation](https://www.fusion-reactor.com/documentation/)
+- [FusionReactor Documentation](https://docs.fusion-reactor.com/)
 - [JVM Performance Tuning Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/)
-- [ColdFusion Performance Guide](https://helpx.adobe.com/coldfusion/developing-applications/)
+- [ColdFusion Performance Guide](https://guides.adobe.com/coldfusion/en/docs/coldfusion-tools/overview-coldfusion-performance-monitoring-toolset.html)
 
 ## Time Estimate
 

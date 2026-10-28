@@ -140,6 +140,7 @@ document.getElementById('form-status').textContent =
 ## Expected Outcome
 
 An accessible form that:
+
 - [ ] Uses proper label associations
 - [ ] Provides clear hints
 - [ ] Shows accessible error messages

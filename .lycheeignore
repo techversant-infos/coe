@@ -1,0 +1,8 @@
+# URLs the Lychee link check skips. One regular expression per line.
+
+# Local dev servers in exercise instructions
+^https?://localhost
+
+# Sites that reject automated requests. Checked by hand in a browser on 2026-10-28.
+^https://helpx\.adobe\.com/
+^https://platform\.openai\.com/

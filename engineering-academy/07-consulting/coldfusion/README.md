@@ -50,13 +50,13 @@ Specialists and client-facing leads can coexist. A strong specialist does not ne
 
 ### Step 1: Read the Practice Charter
 
-[PRESENTATION/one-pager.md](./presentation/one-pager.md)
+[presentation/one-pager.md](./presentation/one-pager.md)
 
 One page. Three minutes.
 
 ### Step 2: Complete Readiness Check
 
-[ASSESSMENT/consulting-readiness-check.md](./assessment/consulting-readiness-check.md)
+[assessment/consulting-readiness-check.md](./assessment/consulting-readiness-check.md)
 
 Twenty-five questions. Self-assessment in 20 minutes.
 
@@ -66,7 +66,7 @@ Based on your readiness check, choose one or two pathways to focus on.
 
 ### Step 4: Build Your 90-Day Plan
 
-[ASSESSMENT/90-day-plan.md](./assessment/90-day-plan.md)
+[assessment/90-day-plan.md](./assessment/90-day-plan.md)
 
 One to three growth goals. One targeted action per goal.
 
@@ -110,11 +110,18 @@ Short reference for what to say, when to say it, and when to escalate.
 
 | Resource | Purpose |
 |----------|---------|
-| [ASSESSMENT/consulting-readiness-check.md](./assessment/consulting-readiness-check.md) | Self-assessment |
-| [ASSESSMENT/90-day-plan.md](./assessment/90-day-plan.md) | Growth planning |
+| [assessment/consulting-readiness-check.md](./assessment/consulting-readiness-check.md) | Self-assessment |
+| [assessment/90-day-plan.md](./assessment/90-day-plan.md) | Growth planning |
 | [capstone/README.md](./capstone/README.md) | Practice environment |
-| [DELIVERABLES/](./deliverables/) | Reusable templates and checklists |
+| [deliverables/](./deliverables/) | Reusable templates and checklists |
 | [10-consulting-operating-model/README.md](./10-consulting-operating-model/README.md) | Delivery standards |
+| [QUICKSTART.md](./QUICKSTART.md) | 30-minute start for experienced ColdFusion developers |
+| [assessment/evidence-framework.md](./assessment/evidence-framework.md) | What evidence counts towards completion |
+| [capstone/exercises/index.md](./capstone/exercises/index.md) | BlogCFC5 exercises used across the modules |
+| [capstone/technical-reference.md](./capstone/technical-reference.md) | BlogCFC5 technical reference |
+| [presentation/team-rollout.md](./presentation/team-rollout.md) | How to introduce the practice to the team |
+| [presentation/session-scripts.md](./presentation/session-scripts.md) | Scripts for the rollout sessions |
+| [CoE ColdFusion standards](../../../standards/coldfusion/) | Internal coding standards, style guide and review checklist |
 
 ---
 

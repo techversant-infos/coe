@@ -9,6 +9,7 @@ Learn to use automated tools and manual review to identify Lucee migration issue
 ## Scenario
 
 **Application:** E-commerce platform
+
 - ~120 CFM files
 - CF 2018
 - Uses cfpdf, cfchart, cfexchange
@@ -22,6 +23,7 @@ Learn to use automated tools and manual review to identify Lucee migration issue
 Use these tools to scan the codebase:
 
 **CommandBox Lucee Migrator:**
+
 ```bash
 boxlucee migrate --source=/path/to/app --report --verbose
 ```
@@ -89,6 +91,7 @@ Complete the compatibility summary:
 **Estimated Migration Effort:** ___ hours
 
 **Critical Blockers:**
+
 1. ___________________________________________________
 2. ___________________________________________________
 

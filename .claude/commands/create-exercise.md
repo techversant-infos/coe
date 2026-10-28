@@ -15,10 +15,12 @@ This command generates a complete exercise within the Engineering Academy struct
 ## Parameters
 
 ### Required
+
 - **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `02-quality-engineering`)
 - **concept** - The concept to practice (e.g., `git-commit-messages`, `playwright-locators`, `dev-excellence-review`)
 
 ### Optional Flags
+
 - `--subfolder` - Sub-discipline path (e.g., `automation/playwright`, `web-development/frontend`)
 - `--phase` - Phase number to attach exercise to (default: 1)
 - `--type` - Exercise type: code-completion/debugging/build-from-scratch/refactor/integration (default: code-completion)
@@ -38,27 +40,37 @@ This command generates a complete exercise within the Engineering Academy struct
 ## Exercise Types
 
 ### Code Completion
+
 Provide partially completed code with blanks to fill.
+
 - Best for: Learning syntax and API usage
 - Use: `--type code-completion`
 
 ### Debugging
+
 Provide broken code with intentional errors.
+
 - Best for: Understanding error patterns and debugging
 - Use: `--type debug`
 
 ### Build from Scratch
+
 Provide requirements and ask learner to build from scratch.
+
 - Best for: Applying concepts independently
 - Use: `--type build`
 
 ### Refactor
+
 Provide working but poorly written code to improve.
+
 - Best for: Learning best practices and patterns
 - Use: `--type refactor`
 
 ### Integration
+
 Combine multiple concepts in a larger task.
+
 - Best for: Synthesizing knowledge and skills
 - Use: `--type integration`
 

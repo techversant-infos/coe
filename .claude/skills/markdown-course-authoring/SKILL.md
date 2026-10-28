@@ -5,6 +5,7 @@ Standards and patterns for authoring learning content in markdown format.
 ## When to Use This Skill
 
 Use this skill when:
+
 - Writing lessons, exercises, or assessments
 - Creating README files for learning paths
 - Authoring any learning content in markdown
@@ -13,6 +14,7 @@ Use this skill when:
 ## Markdown Structure for Learning Content
 
 ### Lesson Structure
+
 ```markdown
 # Lesson: [Title]
 
@@ -62,28 +64,34 @@ See `exercises/exercise-N.md` for practice activities.
 ```
 
 ### Exercise Structure
+
 See `.claude/skills/hands-on-assignment-design/SKILL.md` for exercise templates.
 
 ### Assessment Structure
+
 See `.claude/skills/assessment-rubric-design/SKILL.md` for assessment templates.
 
 ## Formatting Standards
 
 ### Headings
+
 - `#` - Lesson/exercise/assessment title
 - `##` - Major sections
 - `###` - Sub-sections
 - Use consistent hierarchy
 
 ### Lists
+
 - Use `-` for unordered lists
 - Use `1.` for ordered lists
 - Use `- [ ]` for checkboxes (learning objectives)
 
 ### Code Blocks
+
 - Always specify language for syntax highlighting
 - Use comments to explain code
 - Provide complete, runnable examples
+
 ```javascript
 // Example: Clear, commented code
 function example() {
@@ -93,14 +101,16 @@ function example() {
 ```
 
 ### Callouts and Emphasis
+
 - **Bold** for key terms
 - `Code` for inline code references
 - Blockquotes for tips or warnings
 - Details/summary for hints and solutions
 
 ### Links
+
 - Use relative paths for internal links
-- Use descriptive link text: [Lesson 2](../phase-1/lesson-2.md)
+- Use descriptive link text: `[Lesson 2](../phase-1/lesson-2.md)`
 - Link to prerequisites, exercises, and assessments
 
 ## Accessibility

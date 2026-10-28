@@ -45,6 +45,7 @@ By the end of this phase, you will be able to:
 ### 1. Framework Detection
 
 How to identify:
+
 - Application.cfc vs Application.cfm
 - FW/1 patterns (controllers, views, layouts)
 - ColdBox patterns (wirebox, handlers, models)
@@ -65,6 +66,7 @@ How to identify:
 ### 3. Technical Debt Assessment
 
 Dimensions:
+
 - Code quality (naming, complexity, documentation)
 - Testing coverage
 - Dependency management
@@ -75,6 +77,7 @@ Dimensions:
 ### 4. Security Review
 
 CF-specific vulnerabilities to check:
+
 - SQL injection in cfquery
 - XSS in cfoutput
 - Deprecated cfform with flash
@@ -123,7 +126,7 @@ Produce a complete [Legacy Assessment Template](../deliverables/legacy-assessmen
 
 - [CF Code Review Checklist](../deliverables/cf-architecture-review-checklist.md)
 - [OWASP Top 10](https://owasp.org/Top10/)
-- [ColdFusion Security Guide](https://helpx.adobe.com/coldfusion/developing-applications/securing-applications.html)
+- [ColdFusion Security Guide](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/administering-coldfusion-security.html)
 
 ## Time Estimate
 

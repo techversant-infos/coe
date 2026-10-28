@@ -15,10 +15,12 @@ This command scaffolds a complete learning phase within the Engineering Academy 
 ## Parameters
 
 ### Required
+
 - **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `01-software-engineering`, `02-quality-engineering`)
 - **topic** - The learning topic (e.g., `git-workflow`, `playwright-basics`, `dev-excellence`)
 
 ### Optional Flags
+
 - `--subfolder` - Sub-discipline path (e.g., `automation/playwright`, `web-development/frontend`)
 - `--duration` - Estimated duration in weeks (default: 4)
 - `--level` - Competency level: Foundation/Practitioner/Advanced/Expert (default: Foundation)
@@ -37,6 +39,7 @@ This command scaffolds a complete learning phase within the Engineering Academy 
 ## What It Creates
 
 ### Directory Structure
+
 ```
 engineering-academy/<NN-discipline>/<topic>/
 ├── README.md                    # Learning path overview
@@ -54,6 +57,7 @@ engineering-academy/<NN-discipline>/<topic>/
 ```
 
 ### Content Generated
+
 - **Learning path README**: Overview, prerequisites, phase map
 - **Phase README**: Learning objectives, overview, estimated time, competency level
 - **3 Lessons**: Core concepts with examples, mapped to Techversant standards

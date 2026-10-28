@@ -57,6 +57,7 @@ ___________________________________________________________
 ### B2. Garbage Collection (10 points)
 
 a) Name two GC algorithms suitable for ColdFusion: (2 points)
+
 1. _________________________________
 2. _________________________________
 
@@ -85,6 +86,7 @@ a) What is the vulnerability? (2 points)
 ___________________________________________________________
 
 b) Write the secure version: (6 points)
+
 ```cfml
 <cfquery name="getUser">
     ___________________________________________
@@ -223,11 +225,13 @@ A user's session seems to "reset" occasionally. List 3 possible causes and how t
 ## Answer Key
 
 ### Section A
+
 - A1: d → c → b → a → e (onAppStart, onSessStart, onReqStart, onRequest, onReqEnd)
 - A2: onError catches unhandled exceptions from any scope. cftry/cfcatch catches exceptions in the try block only.
 - A3: cfinclude inherits the calling scope. Component calls have isolated local scope.
 
 ### Section B
+
 - B1a: -Xms2g -Xmx2g (or 50-75% of RAM)
 - B1b: Prevents heap resizing overhead and out-of-memory errors
 - B1c: Garbage collection kicks in, then OutOfMemoryError
@@ -236,22 +240,26 @@ A user's session seems to "reset" occasionally. List 3 possible causes and how t
 - B2c: Longer GC pauses, memory fragmentation
 
 ### Section C
+
 - C1a: SQL injection - user input directly in query
 - C1b: Use cfqueryparam
 - C2: XSS - user input rendered without encoding
 - C3: Cross-Site Request Forgery. Fix: CSRF tokens, SameSite cookies.
 
 ### Section D
+
 - D1: 1-b, 2-a, 3-a
 - D2: cachedWithin with createTimeSpan
 
 ### Section E
+
 - E1a: "Fetching users" - it inherits the log method
 - E1b: super.init()
 - E2a: Related entities loaded only when accessed
 - E2b: N+1 query problem
 
 ### Section F
+
 - F1: Cartesian product without proper joins or WHERE conditions
 - F2: See troubleshooting table template
 

@@ -10,6 +10,7 @@
 **Contributors:** Compiled by CoE Web Working Group, reviewed by Web team leads
 
 # React Learning Path For the Web Dev Team
+
 *From PHP/Laravel backend to confident React frontend engineer.*
 
 This is the **foundation track**. If your team's goal is Next.js (see [../02-nextjs/01-nextjs-learning-path.md](../02-nextjs/01-nextjs-learning-path.md)), this path comes first. It covers React 19.x, JSX, components, state, effects, custom hooks, forms, API integration, testing, and production patterns all written for backend engineers who read JavaScript but haven't built a frontend professionally.
@@ -47,6 +48,7 @@ Re-baseline these at the end of the path. If they're not moving, the path needs 
 ---
 
 ## Table of Contents
+
 - [Prerequisites (complete before Week 1)](#prerequisites-complete-before-week-1)
 - [Suggested 6-Week Plan](#suggested-6-week-plan)
 - [Phase 1 JavaScript + TypeScript Refresh](#phase-1-javascript--typescript-refresh)
@@ -59,7 +61,7 @@ Re-baseline these at the end of the path. If they're not moving, the path needs 
 - [Phase 8 Production Patterns and Project Structure](#phase-8-production-patterns-and-project-structure)
 - [Recommended Courses](#recommended-courses)
 - [Channels, Podcasts & Newsletters](#channels-podcasts--newsletters)
-- [Tutorial & Reference Links](#tutorial-reference-links)
+- [Tutorial & Reference Links](#tutorial--reference-links)
 - [Certifications](#certifications)
 - [How to Use This Path](#how-to-use-this-path)
 - [Document Control](#document-control)
@@ -120,6 +122,7 @@ Each week's deliverable PR is reviewed on this rubric. Score 02 per row (0 = mis
 **Why this phase exists:** the team is comfortable with JavaScript at a basic level, but React and our stack assume fluency with modern syntax and types. One week of refresh prevents a month of small stumbles later.
 
 **Learn:**
+
 - **JavaScript / ES6+**
  - Modules (`import` / `export`)
  - `async` / `await` and Promises
@@ -137,6 +140,7 @@ Each week's deliverable PR is reviewed on this rubric. Score 02 per row (0 = mis
 Build a small script or page that calls a Laravel API with `fetch()`, types the response, and renders a list of items. The point is **typing the wire format**, not building UI.
 
 **Self-check:**
+
 - [ ] I can `await` a `fetch` and narrow the response to a typed shape.
 - [ ] I can explain why we never trust the API response to be the shape we asked for.
 - [ ] I can run `pnpm dev` on a colleague's project without breaking it.
@@ -149,6 +153,7 @@ Build a small script or page that calls a Laravel API with `fetch()`, types the 
 **Why this phase exists:** React is the foundation everything else builds on. Get the mental model right components are functions that return UI before adding state and effects.
 
 **Learn:**
+
 - JSX syntax and rules (one root element, camelCase attributes, expressions in `{}`)
 - Components as functions: function components, arrow components
 - Props: reading, destructuring, default values, type annotations
@@ -163,12 +168,14 @@ Build a small script or page that calls a Laravel API with `fetch()`, types the 
 
 **Mini task:**
 Build a **product card + product list**:
+
 - `<ProductCard />` receives a product object via props, renders name, price, image placeholder, "Add to Cart" button
 - `<ProductList />` receives an array of products, maps to `<ProductCard />`
 - `<App />` holds the product data, renders `<ProductList />`
 - Use TypeScript interfaces for the product shape
 
 **Self-check:**
+
 - [ ] I can explain why JSX looks like HTML but isn't HTML.
 - [ ] I can explain what a `key` is for and what makes a good one.
 - [ ] I can compose components using `children` instead of prop drilling.
@@ -180,6 +187,7 @@ Build a **product card + product list**:
 **Why this phase exists:** static UI is useful, but most apps need to respond to the user. This phase introduces state the mechanism React uses to remember things between renders.
 
 **Learn:**
+
 - `useState` the state primitive
 - `useReducer` when state logic gets complex (next-action reducer, form reducer)
 - **State updates are asynchronous and batched** don't read state immediately after setting it
@@ -191,6 +199,7 @@ Build a **product card + product list**:
 
 **Mini task:**
 Extend the product list from Phase 2 into a **product listing page**:
+
 - **Search** filter products by name as the user types (state: `searchQuery`)
 - **Category filter** filter by category (state: `selectedCategory`)
 - **"Contact seller" form** controlled inputs for name, email, message (state: form fields)
@@ -198,6 +207,7 @@ Extend the product list from Phase 2 into a **product listing page**:
 - Use a local mock JSON file no API yet
 
 **Self-check:**
+
 - [ ] I can explain the difference between a **controlled** and an **uncontrolled** input.
 - [ ] I can lift state up when two siblings need to share it.
 - [ ] I can explain why setting state in a loop doesn't do what I expect.
@@ -209,6 +219,7 @@ Extend the product list from Phase 2 into a **product listing page**:
 **Why this phase exists:** most real apps need to talk to the outside world fetch data, subscribe to events, measure DOM nodes. `useEffect` is React's escape hatch for side effects. `useRef` gives you a persistent value that survives re-renders without triggering them.
 
 **Learn:**
+
 - `useEffect` what it does, when it runs, how the dependency array controls it
 - **Effect dependency arrays:** `[]` (once on mount), `[dep]` (when dep changes), no array (every render) and the consequences of each
 - **Cleanup functions** returning a function from `useEffect` to undo what you did
@@ -218,6 +229,7 @@ Extend the product list from Phase 2 into a **product listing page**:
 - **`useCallback` and `useMemo`** when to use them, when they don't matter (the React 19 Compiler reduces the need for manual memoization see Phase 8)
 
 **React 19 improvements worth knowing:**
+
 - **`use()` hook** read resources (Promises, Context) inside render, without `useEffect`. Cleaner than the old `useState + useEffect` pattern for simple async data.
 - **Better async transitions** `useTransition` and `useDeferredValue` mark state updates as non-urgent, keeping the UI responsive while a heavy update runs.
 - **Improved error reporting** error boundaries now give you better error info in dev.
@@ -229,6 +241,7 @@ Extend the product list from Phase 2 into a **product listing page**:
 
 **Mini task:**
 Wire the product listing to a **real Laravel API**:
+
 - Fetch products from `/api/products` in a `useEffect` on mount
 - Handle loading state (show a spinner), error state (show the CoE error envelope), and success state
 - Add **debounced search** wait 300ms after the user stops typing before fetching (use `setTimeout` in a `useEffect` cleanup)
@@ -236,6 +249,7 @@ Wire the product listing to a **real Laravel API**:
 - **Stretch:** refactor the initial fetch to use the `use()` hook instead of `useState` + `useEffect` and compare the code
 
 **Self-check:**
+
 - [ ] I can explain what a "stale closure" is and how cleanup functions prevent it.
 - [ ] I can choose between `useEffect` for data fetching vs. fetching in an event handler.
 - [ ] I can explain when `useCallback` actually helps performance and when it's premature optimization.
@@ -248,6 +262,7 @@ Wire the product listing to a **real Laravel API**:
 **Why this phase exists:** every product we ship is, eventually, a form. Forms are where the most bugs live. Get the form story right once and you stop re-learning it per project.
 
 **Learn:**
+
 - **Form handling patterns:** controlled inputs vs. `FormData` vs. uncontrolled with refs
 - **React Hook Form** register inputs, handle submission, show errors, reset with minimal re-renders
 - **Zod** for schema validation (matches our Node.js standard) infer TypeScript types from schemas
@@ -276,6 +291,7 @@ show error in CoE standard error envelope
 
 **Mini task:**
 Build a **customer add/edit form**:
+
 - React Hook Form + Zod schema (name required, email must be valid, phone optional)
 - "Add Customer" button POST to a Laravel endpoint (mock or real)
 - Inline field errors (red text below the field)
@@ -283,6 +299,7 @@ Build a **customer add/edit form**:
 - List of customers rendered below the form (adds the new customer optimistically)
 
 **Self-check:**
+
 - [ ] I can explain why we validate on the client *and* on the server.
 - [ ] I can return a Zod error tree to the UI and render it field-by-field.
 - [ ] I can explain the difference between optimistic update and waiting for the server.
@@ -294,6 +311,7 @@ Build a **customer add/edit form**:
 **Why this phase exists:** once you can build a component, the next skill is building a **system** of components that compose well. Custom hooks let you extract and share logic without sharing state.
 
 **Learn:**
+
 - **Component composition deep dive:**
  - **Specialization:** generic component + specific variants via props
  - **Compound components:** `<Select><SelectTrigger /><SelectContent /></Select>` components that share implicit state
@@ -310,12 +328,14 @@ Build a **customer add/edit form**:
 
 **Mini task:**
 Take the customer feature from Phase 5 and refactor it:
+
 1. Extract the customer list fetch into a `useCustomers()` custom hook
 2. Extract the form into a `<CustomerForm />` that accepts an optional `customer` prop (for edit mode)
 3. Wrap the app in an `AuthContext` that provides the current user
 4. Use a `<ProtectedRoute>` compound component to gate the customer page
 
 **Self-check:**
+
 - [ ] I can explain when to extract logic into a custom hook vs. keeping it in the component.
 - [ ] I can explain the difference between composition, render props, and HOCs.
 - [ ] I can describe a scenario where Context is the right tool and one where it's the wrong tool.
@@ -327,6 +347,7 @@ Take the customer feature from Phase 5 and refactor it:
 **Why this phase exists:** we have a Node.js testing standard ([Node.js TypeScript Best Practices](../../../../../standards/nodejs/nodejs-typescript-best-practices.md)) the React path extends it.
 
 **Learn:**
+
 - **Vitest** unit test runner (or Jest if a project predates it)
 - **React Testing Library (RTL)** test components the way users interact with them
  - Query by role, label, text **not** by class name or internal state
@@ -342,6 +363,7 @@ Take the customer feature from Phase 5 and refactor it:
 > Every developer should know how to test **a form, a data-fetching component, an API error state, and at least one user interaction flow**.
 
 **Mini task:**
+
 - RTL test for `<ProductList />` renders products, filters when search input changes, shows loading state
 - RTL test for `<CustomerForm />` renders, submits empty form, shows validation errors
 - MSW handler returning a fake Laravel response for the customer list
@@ -349,6 +371,7 @@ Take the customer feature from Phase 5 and refactor it:
 - *Stretch:* a pure unit test for a `useReducer` reducer (no React, no RTL just `expect(reducer(state, action)).toEqual(newState)`)
 
 **Self-check:**
+
 - [ ] I can test a component without knowing its internal state variable names.
 - [ ] I can mock a Laravel API response with MSW and assert the UI renders the right state.
 - [ ] I can test a custom hook without rendering a component.
@@ -360,6 +383,7 @@ Take the customer feature from Phase 5 and refactor it:
 **Why this phase exists:** "works on my machine" is not shipped. Production React has different constraints: bundle size, accessibility, error boundaries, and a folder structure that scales beyond one developer.
 
 **Learn:**
+
 - **Styling:** **Tailwind CSS** is the team default (per the [Next.js path Phase 8](../02-nextjs/01-nextjs-learning-path.md#phase-8-ui-system-and-frontend-architecture)). For pure-React SPAs, set up Tailwind on day one. **shadcn/ui** for primitives same "owned by us" framing as the Next.js path. If a project already uses CSS Modules, follow the existing convention.
 - **Routing (pure-React only):** if you're building a Vite-React SPA not a Next.js app add **React Router v6+**. Pattern: `<BrowserRouter>` `<Routes>` `<Route path="" element={} />`. Skip this if the app is going inside Next.js (file-based routing handles it).
 - **State management at scale:** Context + `useReducer` cover 90% of state. Reach for **Redux Toolkit** only when (a) many components need the same data, (b) you need time-travel debugging or middleware (sagas, polling), or (c) the team already standardized on it. **Zustand** is the lighter alternative pick one if Context is painful, not before. Don't reach for state-management libraries "just in case."
@@ -370,6 +394,7 @@ Take the customer feature from Phase 5 and refactor it:
 - **PWAs / offline:** out of scope for this path. If a product needs install-to-homescreen or offline support, see the CoE PWA guide (TODO).
 - **i18n:** out of scope for this path. If the product supports multiple languages, see the CoE i18n policy (TODO).
 - **Folder structure for a React project:**
+
  ```
  src/
  components/ shared, generic UI (Button, Input, Modal)
@@ -386,6 +411,7 @@ Take the customer feature from Phase 5 and refactor it:
  App.tsx
  main.tsx
  ```
+
 - **`React.memo`, `useMemo`, `useCallback`** when they help, when they don't
 - **React 19 Compiler (auto-memoization):** the experimental/stable compiler can automatically memoize components and hooks, reducing the need for `useMemo` and `useCallback` boilerplate. **Don't add manual memoization "just in case"** measure first with the Profiler, then optimize. The Compiler is an opt-in config; ask a tech lead before enabling in a production project.
 - **Code splitting and lazy loading** `React.lazy` + `Suspense` for route-level splitting
@@ -398,6 +424,7 @@ Take the customer feature from Phase 5 and refactor it:
 
 **Mini task:**
 Take the customer feature and prepare it for production review:
+
 1. Organize files into the `features/` structure above
 2. Add an error boundary around the customer page
 3. Lazy-load the customer form (`React.lazy` + `Suspense`)
@@ -408,6 +435,7 @@ Take the customer feature and prepare it for production review:
 8. Add `eslint-plugin-jsx-a11y` and fix the warnings it surfaces
 
 **Self-check:**
+
 - [ ] I can explain why a component re-rendered and how to prevent it.
 - [ ] I can describe the folder structure and where a new feature would go.
 - [ ] I can run a Lighthouse audit and explain its top 3 findings.
@@ -440,6 +468,7 @@ Take the customer feature and prepare it for production review:
 Curated, low-noise, high-signal. Subscribe to 23 more than that and you'll stop reading them.
 
 **YouTube channels**
+
 - [React](https://www.youtube.com/@react) official React channel
 - [Lee Robinson](https://www.youtube.com/@leerob) Vercel VP, practical React + Next.js patterns
 - [Jack Herrington](https://www.youtube.com/@jherr) React, RSC, advanced patterns
@@ -447,16 +476,19 @@ Curated, low-noise, high-signal. Subscribe to 23 more than that and you'll stop 
 - [Theo t3.gg](https://www.youtube.com/@t3dotgg) opinionated, fast-moving, useful counterpoints
 
 **Podcasts**
+
 - *Syntax.fm* weekly, broad web dev with regular React episodes
 - *JS Party* panel format, good for "what's the consensus on X"
 - *React Round Up* narrower, React-heavy
 
 **Newsletters**
+
 - [Bytes](https://bytes.dev/) daily, sharp JavaScript news
 - [React Status](https://react.statuscode.com/) React ecosystem
 - [TLDR Web Dev](https://tldr.tech/webdev) broad, 5-minute read
 
 **Blogs to follow**
+
 - [React Blog](https://react.dev/blog) official releases and deep dives
 - [Dan Abramov's blog](https://overreacted.io/) long-form React deep dives
 
@@ -467,6 +499,7 @@ Curated, low-noise, high-signal. Subscribe to 23 more than that and you'll stop 
 Bookmark these; you'll return to them often.
 
 **Official**
+
 - [React Docs (learn)](https://react.dev/learn)
 - [React Docs (reference)](https://react.dev/reference/react)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
@@ -478,12 +511,13 @@ Bookmark these; you'll return to them often.
 - [React Testing Library Docs](https://testing-library.com/react)
 
 **Curated tutorials**
+
 - [Scrimba: Learn React](https://scrimba.com/learn/learnreact) interactive, pause-and-edit
 - [Patterns.dev](https://www.patterns.dev/) modern web app patterns (free book)
 - [The Road to React](https://www.roadtoreact.com/) Robin Wieruch, written for developers
 
 **Recipes & cookbooks**
-- [React Examples repo](https://github.com/facebook/react/tree/main/docs/src/components/examples) official examples
+
 - [useHooks](https://usehooks.com/) collection of curated React hooks with explanations
 
 ---
@@ -516,6 +550,7 @@ There is **no first-party React certification** from Meta or the React team. Adj
 8. **Feedback loop.** After Week 3 of the pilot, open a feedback PR against this doc with: what was too hard, what was skipped, what was missing, what should be cut. Revise for the full-team rollout.
 9. **Update this doc.** Broken link? Better course? Found a gap? PR it. This is a living document.
 10. **Cross-link with our existing standards:**
+
  - Code review: [nodejs-typescript-code-review-checklist.md](../../../../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
  - API design: [rest-api-best-practices.md](../../../../../standards/general/rest-api-best-practices.md)
  - AI policy: [ai-era-coding-guidelines.md](../../../../../standards/general/ai-era-coding-guidelines.md)

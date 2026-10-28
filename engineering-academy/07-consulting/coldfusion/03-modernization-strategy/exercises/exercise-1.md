@@ -10,6 +10,7 @@ Learn to analyze and compare different modernization paths objectively.
 
 **Client:** Metro Logistics
 **Application:** Fleet management system
+
 - CF 10 (released 2012), ~180 CFM files
 - Plain CFM with includes
 - MSSQL (30 tables)
@@ -38,9 +39,11 @@ Analyze these modernization options:
 | **Weighted Score** | |
 
 **Pros:**
+
 1. ___________________________________________________
 
 **Cons:**
+
 1. ___________________________________________________
 
 ---
@@ -57,9 +60,11 @@ Analyze these modernization options:
 | **Weighted Score** | |
 
 **Pros:**
+
 1. ___________________________________________________
 
 **Cons:**
+
 1. ___________________________________________________
 
 ---
@@ -76,9 +81,11 @@ Analyze these modernization options:
 | **Weighted Score** | |
 
 **Pros:**
+
 1. ___________________________________________________
 
 **Cons:**
+
 1. ___________________________________________________
 
 ---
@@ -95,9 +102,11 @@ Analyze these modernization options:
 | **Weighted Score** | |
 
 **Pros:**
+
 1. ___________________________________________________
 
 **Cons:**
+
 1. ___________________________________________________
 
 ---
@@ -116,12 +125,14 @@ Analyze these modernization options:
 ### Part 3: Client-Specific Considerations
 
 **Metro Logistics Context:**
+
 - Growing company → Need scalability
 - GPS integration → Real-time requirements
 - Mobile app → API-first future?
 - 3 developers → Limited capacity for full rewrite
 
 **What matters most to this client?** Rank these:
+
 1. ___ Cost
 2. ___ Timeline
 3. ___ Risk

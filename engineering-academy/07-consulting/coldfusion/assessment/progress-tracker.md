@@ -140,6 +140,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Learning Goals Met:**
+
 - [ ]
 
 **Next Month Focus:**
@@ -159,6 +160,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Learning Goals Met:**
+
 - [ ]
 
 **Next Month Focus:**
@@ -178,6 +180,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Learning Goals Met:**
+
 - [ ]
 
 **Next Month Focus:**
@@ -197,6 +200,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Learning Goals Met:**
+
 - [ ]
 
 **Next Month Focus:**
@@ -216,6 +220,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Learning Goals Met:**
+
 - [ ]
 
 **Next Month Focus:**
@@ -235,6 +240,7 @@ Month 6:  Technical: [████████░░░░░░░░░░░]
 -
 
 **Final Scores:**
+
 - Technical: ___/10
 - Client Skills: ___/10
 - Behaviour: ___/10

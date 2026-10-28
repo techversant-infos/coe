@@ -53,11 +53,13 @@ Learn to quantify the value of modernization in business terms.
 ### Part 4: Calculate ROI
 
 **ROI Formula:**
+
 ```
 ROI = (Total Benefits - Total Investment) / Total Investment × 100
 ```
 
 **Your Calculation:**
+
 ```
 Total Investment: $175,000
 Total Benefits (3 years): $345,000

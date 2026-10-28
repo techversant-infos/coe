@@ -51,6 +51,7 @@ Quality assurance specialist for educational content within the Engineering Acad
 ## Output Format
 
 Produces structured review feedback including:
+
 - Summary of overall quality
 - Specific issues found (with file:line references)
 - Suggested improvements

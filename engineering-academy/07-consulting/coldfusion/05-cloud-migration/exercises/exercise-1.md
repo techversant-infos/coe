@@ -47,6 +47,7 @@ Design the AWS architecture:
 ### Part 2: EC2 Instance Configuration
 
 **Requirements:**
+
 - 4 vCPUs, 16GB RAM
 - Windows Server 2019
 - ColdFusion 2023

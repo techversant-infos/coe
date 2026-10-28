@@ -57,6 +57,7 @@ By the end of this phase, you will be able to:
 ### 2. AWS for ColdFusion
 
 **EC2 Approach:**
+
 - Windows vs Linux CF instances
 - Instance sizing for CF workloads
 - EBS storage configuration
@@ -64,17 +65,20 @@ By the end of this phase, you will be able to:
 - Security groups
 
 **Container Approach (ECS/EKS):**
+
 - Dockerizing ColdFusion
 - Tomcat base images
 - Session affinity considerations
 - Logging and monitoring
 
 **RDS Integration:**
+
 - Connection pooling with RDS
 - SSL connections
 - Performance considerations
 
 **Services:**
+
 - ALB/NLB for load balancing
 - Auto Scaling configuration
 - CloudWatch for monitoring
@@ -85,17 +89,20 @@ By the end of this phase, you will be able to:
 ### 3. Azure for ColdFusion
 
 **VM Approach:**
+
 - Azure VM sizing
 - Windows Server configuration
 - Azure SQL Database
 - Azure Storage
 
 **Container Approach:**
+
 - Azure Container Instances
 - Azure Kubernetes Service
 - Docker deployment
 
 **Azure Services:**
+
 - Azure Load Balancer
 - Azure Monitor
 - Azure Key Vault
@@ -104,16 +111,19 @@ By the end of this phase, you will be able to:
 ### 4. ColdFusion-Specific Considerations
 
 **Session Management:**
+
 - Sticky sessions vs distributed sessions
 - Redis for session sharing
 - Application scope in cloud
 
 **File System:**
+
 - EFS/SMB for shared files
 - S3/Azure Blob for assets
 - NFS for Windows
 
 **Performance Tuning:**
+
 - JVM sizing for cloud instances
 - Connection pool configuration
 - Memory management
@@ -156,7 +166,7 @@ Create a cloud migration checklist using the [CF Cloud Migration Framework](../d
 - Planned: General Cloud Documentation
 - [AWS ColdFusion Best Practices](https://aws.amazon.com/blogs/architecture/)
 - [Azure ColdFusion Guidance](https://learn.microsoft.com/azure/)
-- [ColdFusion Administrator](https://helpx.adobe.com/coldfusion/getting-started.html)
+- [ColdFusion Administrator](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/using-the-coldfusion-administrator.html)
 
 ## Time Estimate
 

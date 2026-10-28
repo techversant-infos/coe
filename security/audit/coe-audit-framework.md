@@ -48,6 +48,7 @@
 ### 2.2 Audit Triggers
 
 Audits trigger immediately when:
+
 - New project onboarded to CoE
 - Major security incident reported
 - Repeated pattern of PR review failures
@@ -101,6 +102,7 @@ Audits trigger immediately when:
 ### 4.2 During Audit
 
 #### Code Review Process
+
 - [ ] PR reviews completed before merge (not after)
 - [ ] At least one reviewer sign-off per PR
 - [ ] No force-pushes to protected branches
@@ -109,12 +111,14 @@ Audits trigger immediately when:
 - [ ] No direct commits to main/develop
 
 #### AI-Assisted Code
+
 - [ ] AI-generated commits tagged `[ai-assisted: claude]`
 - [ ] Human review documented in PR
 - [ ] Red Zone code (auth, encryption, PII) reviewed by senior
 - [ ] No secrets pasted into prompts (incident if found)
 
 #### Security
+
 - [ ] No hardcoded credentials or API keys
 - [ ] All user input validated (sanitization + validation)
 - [ ] SQL uses prepared statements / ORM bindings
@@ -123,6 +127,7 @@ Audits trigger immediately when:
 - [ ] Dependencies scanned for vulnerabilities
 
 #### API Standards
+
 - [ ] Response format matches envelope (success/error)
 - [ ] Boolean fields use `is`/`has`/`can` prefix
 - [ ] Date format is ISO 8601
@@ -131,6 +136,7 @@ Audits trigger immediately when:
 - [ ] Sensitive data not returned in responses
 
 #### Documentation
+
 - [ ] Code comments explain WHY (not WHAT)
 - [ ] Public methods have PHPDoc/JSDoc where required
 - [ ] API endpoints documented (OpenAPI/Swagger)
@@ -234,6 +240,7 @@ Audits trigger immediately when:
 ### 7.2 Evidence Template
 
 For each finding, collect:
+
 1. **Screenshot/URL** of the violation
 2. **PR/Commit reference**
 3. **Policy violated** (document + section)

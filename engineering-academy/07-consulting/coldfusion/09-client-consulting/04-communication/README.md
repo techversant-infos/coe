@@ -175,6 +175,7 @@ Best,
 ### During Meetings
 
 **DO:**
+
 - Listen more than speak
 - Take notes
 - Ask clarifying questions
@@ -182,6 +183,7 @@ Best,
 - Pause before answering difficult questions
 
 **DON'T:**
+
 - Interrupt
 - Argue
 - Go off-topic

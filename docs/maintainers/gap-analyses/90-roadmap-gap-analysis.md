@@ -75,9 +75,11 @@ When reviewing this gap analysis, ask:
 
 1. For every **partial** row: *is the depth enough for our pilot batch, or does it block Week-1 delivery?*
 2. For every **not covered** row: *is the reason still valid in 2026?* Especially:
+
  - GraphQL has a new product appeared that needs it?
  - i18n has a new product appeared that ships with multiple locales?
  - PWAs has a new product appeared that needs offline / install-to-homescreen?
+
 3. For every **covered** row: *is the depth right, or are we teaching too much / too little?*
 
 ---

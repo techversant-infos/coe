@@ -9,6 +9,7 @@ This is a **Center of Excellence (CoE) standards repository** — not an applica
 ## Git Workflow
 
 **Multi-Stage Promotion Model:**
+
 ```
 feature branch → dev (auto-deploy) → staging (manual) → main (verified) → tag (prod deploy)
 ```
@@ -16,6 +17,7 @@ feature branch → dev (auto-deploy) → staging (manual) → main (verified) �
 **Branch naming:** `feature/<JIRA-ID>-<description>`
 
 **Commit format:** [Conventional Commits](https://www.conventionalcommits.org/)
+
 ```
 feat(module): add user login
 fix(module): handle null pointer
@@ -29,36 +31,42 @@ docs(module): update API guide
 These standards apply to all code in this repository:
 
 **Human-in-the-Loop (Mandatory):**
+
 - Review every line of AI output before committing
 - Never commit code you cannot explain
 - Tag AI-assisted commits: `[ai-assisted: Codex]`
 - Use delegation levels: 🟢 FULL DELEGATE → 🟡 COLLABORATE → 🟠 HUMAN-LED → 🔴 NEVER DELEGATE
 
 **Red Zone (Manual Only — Never Delegate):**
+
 - Authentication & authorization
 - Encryption & key management
 - PII handling & payment processing
 - Production database migrations
 
 **Two-Layer Review:**
+
 1. AI Pre-Review (logic gaps, edge cases, tests)
 2. Human Review (business logic, security, architecture fit)
 
 ## Coding Standards by Stack
 
 ### PHP / Laravel
+
 - PSR-12 compliance (4 spaces, 120 char line limit)
 - Use prepared statements — never concatenate SQL
 - Use `password_hash()` / `password_verify()` for passwords
 - Controllers slim; business logic in Services/Actions
 
 ### ColdFusion / CFML
+
 - CFScript for business logic
 - Always use `<cfqueryparam>`
 - Query results prefixed with `q` (e.g., `qUsers`)
 - Cache long-running queries with `cachedwithin`
 
 ### Node.js / TypeScript
+
 - Use Zod for validation + type inference
 - Pino for structured logging with requestId
 - Follow hexagonal architecture (ports/adapters)
@@ -67,6 +75,7 @@ These standards apply to all code in this repository:
 ## REST API Conventions
 
 **Response format:**
+
 ```json
 {
   "success": true,
@@ -76,6 +85,7 @@ These standards apply to all code in this repository:
 ```
 
 **Error format:**
+
 ```json
 {
   "success": false,

@@ -1,4 +1,5 @@
 # PHP Coding Standards  
+
 **Version:** 1.1  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
@@ -10,6 +11,7 @@
 ---
 
 ## 1. Introduction
+
 Modern PHP coding conventions for clarity, consistency, security, and scalability across Techversant teams. Applies to **developers, leads, reviewers, QA, and DevOps**.
 
 > “Code is more often read than written — write it for the next person, not just the compiler.”
@@ -17,6 +19,7 @@ Modern PHP coding conventions for clarity, consistency, security, and scalabilit
 ---
 
 ## 2. Project Structure
+
 ```
 /app       - Core business logic (Controllers, Models, Services)
 /bootstrap - Application bootstrap files
@@ -28,12 +31,14 @@ Modern PHP coding conventions for clarity, consistency, security, and scalabilit
 /tests     - Unit and feature tests
 /vendor    - Composer-managed dependencies
 ```
+
 - Use **PSR‑4 autoloading** (Composer).  
 - Keep controllers slim; move domain logic to **Services**/**Actions**.  
 - Prefer feature‑oriented folders (`/app/Services/Orders`, `/app/Repositories/Users`).  
 - Avoid dumping logic into `/Helpers`; create proper classes.
 
 ### 💡 Example
+
 ```php
 <?php
 declare(strict_types=1);
@@ -54,6 +59,7 @@ final class UserService
 ---
 
 ## 3. Naming Conventions
+
 | Type | Convention | Example |
 |------|------------|---------|
 | Classes | PascalCase | `UserService`, `OrderRepository` |
@@ -69,6 +75,7 @@ final class UserService
 ---
 
 ## 4. Formatting & Style
+
 - **Indentation:** 4 spaces (no tabs).  
 - **Line length:** 120 chars max.  
 - **Braces:** same line.  
@@ -79,6 +86,7 @@ final class UserService
 - Type all parameters, returns, and properties. Enforce **PSR‑12** with PHP_CodeSniffer/Rector.
 
 ### 💡 Example
+
 ```php
 <?php
 declare(strict_types=1);
@@ -99,11 +107,13 @@ final class MathHelper
 ---
 
 ## 5. Commenting & Documentation
+
 - Document **public** classes/methods/properties with PHPDoc.  
 - Explain **why**, not **what**; keep comments current.  
 - Use PHPDoc for generics and complex types to help static analysis.
 
 ### 💡 Example
+
 ```php
 /**
  * Retrieve a user by ID.
@@ -119,7 +129,8 @@ public function getUser(int $id): ?User
 
 ---
 
-## 6. Security Standards 
+## 6. Security Standards
+
 - Validate & sanitize all inputs; escape HTML outputs with `htmlspecialchars($data, ENT_QUOTES, 'UTF-8')`.
 - Use **prepared statements**/ORM bindings; never concatenate SQL.  
 - Passwords: `password_hash()` + `password_verify()`; use modern algos (Argon2id/Bcrypt).  
@@ -129,6 +140,7 @@ public function getUser(int $id): ?User
 - Validate uploads (MIME/size/ext); store outside `/public` with random names.
 
 ### 💡 Example
+
 ```php
 // ❌ Bad
 $query = "SELECT * FROM users WHERE email = '{$_POST['email']}'";
@@ -143,12 +155,14 @@ $stmt->execute(['email' => $_POST['email']]);
 ---
 
 ## 7. Error Handling & Logging
+
 - Use **Exceptions** and domain‑specific exception types.  
 - Never suppress with `@`.  
 - Log critical errors with **Monolog** (structured JSON preferred).  
 - Don’t expose stack traces in prod.
 
 ### 💡 Example
+
 ```php
 try {
     $orderService->process($orderId);
@@ -165,6 +179,7 @@ try {
 ---
 
 ## 8. Version Control & Branching
+
 - Branches: `main` (prod), `develop` (integration), `feature/*` (work), `hotfix/*` (urgent).  
 - **Conventional Commits**:  
   - `feat: add user login flow`  
@@ -177,11 +192,13 @@ try {
 ---
 
 ## 9. Testing & Quality Assurance
+
 - Minimum **80% coverage**; unit + feature + integration tests (PHPUnit/Pest).  
 - CI must run: PHP_CodeSniffer (PSR‑12), PHPStan (level 8+), Psalm (as applicable), and tests.  
 - Consider **InfectionPHP** for mutation tests on critical modules.
 
 ### 💡 Example
+
 ```bash
 vendor/bin/phpcs --standard=PSR12 app/
 vendor/bin/phpstan analyse app/ --level=8
@@ -193,11 +210,13 @@ vendor/bin/phpunit --coverage-text
 ---
 
 ## 10. AI‑Assisted Development Standards
+
 - Use **Copilot/Cursor/ChatGPT** for scaffolding and refactors, but **always review**.  
 - Never include secrets or proprietary logic in prompts.  
 - Tag AI‑assisted commits `[AI-Assisted]`.
 
 ### 💡 Example
+
 ```bash
 git commit -m "[AI-Assisted] Refactor CartService for SOLID compliance"
 ```
@@ -207,6 +226,7 @@ git commit -m "[AI-Assisted] Refactor CartService for SOLID compliance"
 ---
 
 ## 11. Tooling & PHP Runtime
+
 - PHP **8.3+** required; align local, CI, and production versions.  
 - Composer 2.x; enable OPcache in production.  
 - Use Docker for consistent environments; keep images minimal and pinned.
@@ -214,6 +234,7 @@ git commit -m "[AI-Assisted] Refactor CartService for SOLID compliance"
 ---
 
 ## 12. Summary
+
 - 🧩 **Consistency** across teams  
 - 🔒 **Security** by default  
 - ⚙️ **Scalability** built‑in  
@@ -225,6 +246,5 @@ git commit -m "[AI-Assisted] Refactor CartService for SOLID compliance"
 ---
 
 **Document Owner:** Techversant CoE  
-
 
 > “Code like someone will maintain it after you — because someone always will.”

@@ -7,6 +7,7 @@
 ## Scenario
 
 BlogCFC5 is running slow. Client reports:
+
 - Homepage takes 5+ seconds to load
 - Search is unresponsive
 - Admin panel is sluggish
@@ -83,6 +84,7 @@ Add application-level caching to BlogCFC5:
 Analyze and optimize the search function (`client/search.cfm`):
 
 **Current query:**
+
 ```sql
 SELECT * FROM tblblogentries 
 WHERE body LIKE '%#form.search#%' 
@@ -90,11 +92,13 @@ WHERE body LIKE '%#form.search#%'
 ```
 
 **Issues:**
+
 1. _______________________
 2. _______________________
 3. _______________________
 
 **Optimization:**
+
 ```sql
 -- Your optimized query:
 SELECT * FROM tblblogentries 

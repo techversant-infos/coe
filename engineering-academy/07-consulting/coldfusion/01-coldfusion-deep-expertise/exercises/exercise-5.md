@@ -127,6 +127,7 @@ Implement security measures:
    - Basic auth
 
 2. **Input Validation**:
+
 ```cfml
 private void function validateTask(required struct data) {
     if (not structKeyExists(data, 'title') or not len(trim(data.title))) {
@@ -139,6 +140,7 @@ private void function validateTask(required struct data) {
 ```
 
 3. **Rate Limiting**:
+
 ```cfml
 // Implement rate limiting in onRequestStart
 private boolean function checkRateLimit(required string clientId) {
@@ -165,14 +167,18 @@ Create API documentation:
 
 All requests require an API key in the header:
 ```
+
 X-API-Key: your-api-key
+
 ```
 
 ## Endpoints
 
 ### List Tasks
 ```
+
 GET /api/tasks
+
 ```
 
 **Parameters:**
@@ -190,6 +196,7 @@ GET /api/tasks
 ```
 
 ### Create Task
+
 ```
 POST /api/tasks
 Content-Type: application/json
@@ -201,6 +208,7 @@ Content-Type: application/json
 ```
 
 **Response:** 201 Created
+
 ```
 
 ## Expected Outcome

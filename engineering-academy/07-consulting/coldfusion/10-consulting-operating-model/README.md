@@ -15,6 +15,7 @@ This module defines how the consulting practice operates internally — from qua
 ### 1.1 Qualification Stage
 
 **Entry Criteria:**
+
 - Initial inquiry received
 - Basic fit assessment completed
 - Decision-maker identified
@@ -29,6 +30,7 @@ This module defines how the consulting practice operates internally — from qua
 | Timeline alignment | Sales | Target timeline |
 
 **Exit Criteria:**
+
 - Clear business problem identified
 - Budget confirmed ($15K minimum)
 - Timeline agreed (target)
@@ -47,6 +49,7 @@ This module defines how the consulting practice operates internally — from qua
 ### 1.2 Discovery Stage
 
 **Entry Criteria:**
+
 - SOW signed or verbal commitment
 - Statement of work in development
 
@@ -60,6 +63,7 @@ This module defines how the consulting practice operates internally — from qua
 | Assessment report | Consultant | 1-2 days |
 
 **Deliverables:**
+
 - Discovery workshop notes
 - Technical environment summary
 - Initial findings (verbal)
@@ -68,6 +72,7 @@ This module defines how the consulting practice operates internally — from qua
 ### 1.3 Proposal Stage
 
 **Entry Criteria:**
+
 - Discovery complete
 - Scope defined
 - Estimate approved
@@ -95,6 +100,7 @@ This module defines how the consulting practice operates internally — from qua
 ### 1.4 Delivery Stage
 
 **Entry Criteria:**
+
 - SOW signed
 - Deposit received
 - Access provisioned
@@ -229,6 +235,7 @@ All client-facing documents follow this format:
 Every proposal includes an assumptions section:
 
 **Standard Assumptions:**
+
 - Client will provide timely access to systems and documentation
 - Key stakeholders will be available for required meetings
 - Environment will be available for testing
@@ -262,6 +269,7 @@ Every engagement maintains a risk register:
 5. Final check by Practice Lead
 
 **Review Criteria:**
+
 - Technical accuracy
 - Language and tone
 - Formatting consistency
@@ -271,17 +279,20 @@ Every engagement maintains a risk register:
 ### 4.2 Escalation
 
 **Level 1: Consultant**
+
 - Day-to-day decisions
 - Technical questions
 - Client requests
 
 **Level 2: Practice Lead**
+
 - Scope questions
 - Resource allocation
 - Client escalations
 - Technical blocks
 
 **Level 3: Management**
+
 - Contract issues
 - Major scope changes
 - Client relationship issues

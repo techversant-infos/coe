@@ -2,11 +2,12 @@
 **Version:** 1.0  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
-**Contributers:** Nandu S, Aswathy S, Deepak Jose, Lajin M J  
+**Contributors:** Nandu S, Aswathy S, Deepak Jose, Lajin M J  
 
 # ColdFusion Style Guide (Techversant CoE)
 
 ## 📚 Table of Contents
+
 - [1. Purpose](#1-purpose)
 - [2. File & Directory Structure](#2-file--directory-structure)
 - [3. Code Formatting & Syntax](#3-code-formatting--syntax)
@@ -21,15 +22,18 @@
 - [12. Final Thoughts](#12-final-thoughts)
 
 ## 1. Purpose
+
 Welcome to the **Techversant ColdFusion Style Guide** — the definitive reference for writing clean, efficient, and maintainable CFML code.  
 Following these conventions ensures consistency across projects, improves readability, and supports scalable, secure, high-performing applications.
 
 > 💡 *Consistency reduces friction, improves collaboration, and accelerates delivery.*
 
 ## 2. File & Directory Structure
+
 A well-organized structure is the foundation of a maintainable application.
 
 ### Recommended Layout
+
 ```
 /src
   /controllers
@@ -48,6 +52,7 @@ A well-organized structure is the foundation of a maintainable application.
 ```
 
 ### Naming Rules
+
 | Element | Convention | Example |
 |----------|-------------|----------|
 | **Directories** | lowercase-with-hyphens | `/user-management` |
@@ -59,11 +64,14 @@ A well-organized structure is the foundation of a maintainable application.
 If using **ColdBox**, **FW/1**, or another framework, follow its directory conventions first, then supplement with this guide.
 
 ## 3. Code Formatting & Syntax
+
 ### Indentation
+
 - Use **2 spaces** per level (no tabs).
 - Align related clauses vertically for readability.
 
 ✅ **Good**
+
 ```coldfusion
 <cfif user.isActive 
   AND user.hasPermission("admin")>
@@ -72,6 +80,7 @@ If using **ColdBox**, **FW/1**, or another framework, follow its directory conve
 ```
 
 ❌ **Bad**
+
 ```coldfusion
 <cfif user.isActive AND user.hasPermission("admin")>
 <cfset result = service.process(user)>
@@ -79,10 +88,12 @@ If using **ColdBox**, **FW/1**, or another framework, follow its directory conve
 ```
 
 ### Line Length & Wrapping
+
 - Limit lines to **100–120 characters**.
 - Break at logical boundaries and align continuations.
 
 ## 4. Naming Conventions
+
 | Element | Convention | Example |
 |----------|-------------|----------|
 | **Variables** | camelCase | `userProfile`, `totalCount` |
@@ -93,9 +104,11 @@ If using **ColdBox**, **FW/1**, or another framework, follow its directory conve
 | **Query results** | Prefix with `q` | `qUsers`, `qOrders` |
 
 ## 5. CFScript Best Practices
+
 Use **CFScript** for business logic in all new or refactored modules.
 
 ### Component Template
+
 ```cfscript
 component accessors="true" {
   property name="userService" inject;
@@ -120,12 +133,15 @@ component accessors="true" {
 ```
 
 ### Modern Syntax Tips
+
 - **Null Coalescing:** `var name = user.name ?: "Guest";`
 - **Safe Navigation:** `var name = user?.profile?.name ?: "";`
 - **Arrow Functions:** `activeUsers = users.filter(u => u.isActive);`
 
 ## 6. Database Query Practices
+
 ### Formatting
+
 ```coldfusion
 <cfquery name="qActiveUsers" datasource="appDSN" result="qResult">
   SELECT
@@ -144,6 +160,7 @@ component accessors="true" {
 ```
 
 ### Guidelines
+
 - Always use **`<cfqueryparam>`**.  
 - Avoid `SELECT *` — specify column names.  
 - Use table aliases for clarity.  
@@ -152,7 +169,9 @@ component accessors="true" {
 - Prefer **HQL/ORM** for entity-based logic when possible.
 
 ## 7. Security Practices
+
 ### Input Validation
+
 ```cfscript
 function createUser(required struct userData) {
   param name="userData.email" type="string";
@@ -165,7 +184,9 @@ function createUser(required struct userData) {
   }
 }
 ```
+
 ### Output Encoding
+
 | Context | Function | Example |
 |----------|-----------|----------|
 | **HTML** | `encodeForHTML()` | `<cfoutput>#encodeForHTML(userInput)#</cfoutput>` |
@@ -175,7 +196,9 @@ function createUser(required struct userData) {
 > 🔒 Always validate input, sanitize data, and encode output. Follow **OWASP Top 10** principles.
 
 ## 8. Component Design
+
 ### Service Layer Pattern
+
 ```cfscript
 component singleton accessors="true" {
   property name="userDAO" inject;
@@ -197,7 +220,9 @@ component singleton accessors="true" {
   }
 }
 ```
+
 ### Guidelines
+
 - Follow **Single Responsibility Principle**.  
 - Use **dependency injection** (WireBox/ColdSpring).  
 - Keep components **stateless**.  
@@ -205,7 +230,9 @@ component singleton accessors="true" {
 - Use **interfaces** for major contracts.
 
 ## 9. Error Handling
+
 ### Structured Approach
+
 ```cfscript
 try {
   var result = service.process(data);
@@ -219,7 +246,9 @@ try {
   response.status(500).json({ error: "An unexpected error occurred" });
 }
 ```
+
 **Best Practices**
+
 - Catch **specific exceptions**.  
 - Log every exception (never swallow silently).  
 - Use **custom exception types** for domain logic.  
@@ -227,6 +256,7 @@ try {
 - Include unique **error IDs** for traceability.
 
 ## 10. Performance Considerations
+
 | Area | Recommendation |
 |------|----------------|
 | **Query Caching** | Use `cachedwithin` judiciously for repeated queries. |
@@ -238,14 +268,16 @@ try {
 | **Profiling** | Monitor with **FusionReactor** or **SeeFusion**. |
 
 ## 11. Modern CFML Features
+
 - **Functional Array/Struct Methods:** `users.filter(u => u.isActive).map(u => u.name)`  
 - **Spread Operator:** `var all = [...arr1, ...arr2]`  
 - **Closures & Arrow Functions** for concise callbacks.  
 - **Member Functions:** `array.each(i => process(i))`  
 - **Implicit Structs/Arrays:** `{key: "value"}` and `[1,2,3]`  
+
 > 🎯 Target **Lucee 5+** or **Adobe ColdFusion 2021+** to leverage these capabilities.
 
 ## 12. Final Thoughts
+
 This guide defines the **Techversant ColdFusion Code Standard** — a living reference designed to keep our CFML projects modern, maintainable, and secure.  
 > 🧠 *Code is read far more often than it is written. Write for clarity — for your teammates and your future self.*  
-

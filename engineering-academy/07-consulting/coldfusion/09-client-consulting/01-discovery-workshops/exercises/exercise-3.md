@@ -9,7 +9,7 @@
 **Role A:** Consultant (you)
 **Role B:** Client (peer)
 
-**Scenario:** See [capstone/pinnacle-scenario.md](../../capstone/pinnacle-scenario.md)
+**Scenario:** See [capstone/pinnacle-scenario.md](../../../capstone/pinnacle-scenario.md)
 
 ---
 

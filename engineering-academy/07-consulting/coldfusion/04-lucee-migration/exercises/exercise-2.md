@@ -16,6 +16,7 @@ Learn to migrate ACF-specific features to Lucee equivalents.
 ### Part 1: PDF Replacement
 
 **Adobe CF Code:**
+
 ```cfml
 <cfpdf action="read" source="contract.pdf" name="pdfDoc">
 <cfpdf action="getInfo" source="pdfDoc" info="author">
@@ -32,6 +33,7 @@ Learn to migrate ACF-specific features to Lucee equivalents.
 ```
 
 **ColdFusion Code for PDFtk:**
+
 ```cfml
 // Read PDF info
 cfexecute(name="pdftk", arguments="#sourcePDF# dump_data", variable="pdfInfo");
@@ -58,6 +60,7 @@ _______________________________________________________________
 ### Part 2: Chart Replacement
 
 **Adobe CF Code:**
+
 ```cfml
 <cfchart format="flash" 
          chartwidth="600" 
@@ -119,6 +122,7 @@ _______________________________________________________________
 ### Part 3: Authentication Migration
 
 **Adobe CF Code:**
+
 ```cfml
 <cfapplication name="LegalApp"
                sessionmanagement="true"
@@ -151,10 +155,15 @@ _______________________________________________________________
 **Your Task:** Complete the session configuration:
 
 1. Why is Redis better than MySQL for sessions in Lucee?
+
 _______________________________________________________________
+
 2. What Redis commands does Lucee use for sessions?
+
 _______________________________________________________________
+
 3. How do you configure Redis in Lucee Administrator?
+
 _______________________________________________________________
 
 ### Part 4: Migration Effort Estimation

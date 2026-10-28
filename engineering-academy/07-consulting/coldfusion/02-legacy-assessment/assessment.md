@@ -84,6 +84,7 @@ Total Score: ___/25
 For each code snippet, identify the vulnerability:
 
 **Snippet 1:**
+
 ```cfml
 <cfquery>
     SELECT * FROM users 
@@ -95,6 +96,7 @@ Vulnerability: _______________________________________
 Risk: _______________________________________________
 
 **Snippet 2:**
+
 ```cfml
 <cfoutput>
     #userComment#
@@ -105,6 +107,7 @@ Vulnerability: _______________________________________
 Risk: _______________________________________________
 
 **Snippet 3:**
+
 ```cfml
 <cffile action="upload" 
         destination="#ExpandPath('./uploads/')#">
@@ -188,22 +191,27 @@ _______________________________________________________________
 ## Answer Key
 
 ### Section A
+
 - A1: A = FW/1, B = ColdBox, C = Plain CFM
 - A2: Plain CFM (1), FW/1 (2), ColdBox (3), Fusebox (4), Custom MVC (5)
 
 ### Section B
+
 - B1: Scoring based on evidence provided
 - B2: Any score 16+ = High/Critical, priority items depend on score
 
 ### Section C
+
 - C1: SQL injection, XSS, File upload vulnerability
 - C2: Risk scores calculated as Likelihood × Impact
 
 ### Section D
+
 - D1: Should be specific, quantified, professional
 - D2: Security and EOL typically highest priority
 
 ### Section E
+
 - E1: Score / 25 × 10 = Client scale
 - E2: Business impact, not technical terms
 

@@ -39,8 +39,8 @@ Use these scenarios in Phase 2 onwards:
 | Scenario | Complexity | Best For | Time |
 |----------|-----------|----------|------|
 | [Summit Manufacturing](#scenario-1-summit-manufacturing) | Medium | Discovery, Assessment | 2 hours |
-| [Coastal Insurance](#scenario-2-coastal-insurance) | High | Security focus | 3 hours |
-| [TechStart E-commerce](#scenario-3-techstart-e-commerce) | Low | Quick win | 1 hour |
+| [Coastal Insurance](#scenario-3-coastal-insurance) | High | Security focus | 3 hours |
+| [TechStart E-commerce](#scenario-5-techstart-e-commerce) | Low | Quick win | 1 hour |
 
 ### Healthcare Scenario
 
@@ -63,6 +63,7 @@ For healthcare-specific consulting practice (HIPAA, medical integrations), see t
 ### The Application
 
 **Order Management System (OMS)**
+
 - Built in 2011 on ColdFusion 9
 - 120 CFM files, plain CFM with includes
 - MSSQL database (45 tables)
@@ -104,16 +105,19 @@ Summit is preparing for rapid growth following a recent acquisition. They need t
 ### Discussion Questions for Practice
 
 **Discovery:**
+
 - "Walk me through how an order is processed today."
 - "What does 'manual intervention' mean in practice?"
 - "Which customers are most affected by the slowness?"
 
 **Technical:**
+
 - "Walk me through your integration with SAP."
 - "How is authentication currently handled?"
 - "What's your disaster recovery setup?"
 
 **Business:**
+
 - "What would 'success' look like in 12 months?"
 - "What's the cost of slow order processing to the business?"
 - "Who else should be involved in this decision?"
@@ -135,6 +139,7 @@ Summit is preparing for rapid growth following a recent acquisition. They need t
 ### The Application
 
 **Patient Management System (PMS)**
+
 - Built in 2008 on ColdFusion 8
 - 200+ CFM files, plain CFM with includes
 - MSSQL database (60 tables)
@@ -199,6 +204,7 @@ Metro Regional is facing several pressures:
 ### The Application
 
 **Policy Management System**
+
 - Built in 2013 on ColdFusion 10
 - 80 CFM files, FW/1 framework
 - Oracle database (80 tables)
@@ -255,6 +261,7 @@ Coastal Insurance is preparing for an IPO and needs to:
 ### The Application
 
 **Fleet Management System**
+
 - Built in 2016 on ColdFusion 2016
 - 50 CFM files, custom MVC
 - MSSQL database (25 tables)
@@ -309,6 +316,7 @@ Greenfield is growing fast (30% YoY) and needs to:
 ### The Application
 
 **E-commerce Platform**
+
 - Built in 2019 on Lucee (migrated from Adobe CF)
 - 60 CFM files, FW/1 framework
 - MySQL database (30 tables)
@@ -354,6 +362,7 @@ TechStart Direct sells specialty tech accessories. They're growing but facing:
 > "We've had consultants before. They just gave us a report and left."
 
 **How to respond:**
+
 - "I understand. My goal is to understand your situation deeply first, then recommend practical next steps."
 - "What would be more useful than a report in your experience?"
 
@@ -362,6 +371,7 @@ TechStart Direct sells specialty tech accessories. They're growing but facing:
 > "This sounds great, but we only have $50,000."
 
 **How to respond:**
+
 - "Let's understand what we can accomplish in that budget. What's the most pressing issue right now?"
 - "We can phase the work to deliver value early. What would you consider a quick win?"
 
@@ -370,6 +380,7 @@ TechStart Direct sells specialty tech accessories. They're growing but facing:
 > "We've already evaluated Lucee and it won't work for us."
 
 **How to respond:**
+
 - "I'd love to understand what led to that conclusion. What specific concerns do you have?"
 - "Our experience has found that each situation is unique. What if we looked at this specific constraint together?"
 

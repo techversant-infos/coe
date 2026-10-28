@@ -125,18 +125,22 @@ List 5 security practices for AI integration:
 ## Answer Key
 
 ### Section A
+
 - A1: POST, header (x-api-key, anthropic-version, content-type), body
 - A2: Timeout handling, validation, retry with backoff, JSON validation
 
 ### Section B
+
 - B1: f → e → a → h → c → g → d → b
 - B2: Legal = larger chunks, support = medium, code = function-level
 
 ### Section C
+
 - C1: Pinecone for managed, pgvector for Postgres shops, Chroma for dev/simple, ES for search integration
 - C2: Indexing, quantization, caching, batch queries
 
 ### Section D
+
 - D1: PII never to external APIs, code may need review, internal depends
 - D2: Input validation, output filtering, audit logging, key rotation, least privilege
 

@@ -12,12 +12,14 @@ assignees: ''
 **Finding ID:** F-___-___
 
 **Severity:**
+
 - [ ] Critical
 - [ ] High
 - [ ] Medium
 - [ ] Low
 
 **Area:**
+
 - [ ] Code Quality
 - [ ] Security
 - [ ] PR Process
@@ -27,21 +29,27 @@ assignees: ''
 - [ ] GDPR/ISO Compliance
 
 ## Description
+
 Describe the finding in detail.
 
 ## Evidence
+
 Provide URLs, screenshots, or file references showing the issue.
 
 ## Policy Violated
+
 Which CoE document/section does this violate?
 
 ## Affected Team(s)
+
 Which teams/projects are affected?
 
 ## Recommended Remediation
+
 What should be done to fix this?
 
 ## Owner
+
 Who is responsible for fixing this?
 
 ---

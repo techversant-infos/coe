@@ -18,6 +18,7 @@ Learn to quickly identify ColdFusion frameworks by examining application code an
 Examine these directory structures and identify the framework:
 
 **Application A:**
+
 ```
 /app
   /handlers
@@ -35,6 +36,7 @@ Framework: ___________________________
 Evidence: ___________________________
 
 **Application B:**
+
 ```
 /app
   /model
@@ -47,6 +49,7 @@ Framework: ___________________________
 Evidence: ___________________________
 
 **Application C:**
+
 ```
 /app
   /cfc
@@ -59,6 +62,7 @@ Framework: ___________________________
 Evidence: ___________________________
 
 **Application D:**
+
 ```
 /app
   /modules
@@ -77,6 +81,7 @@ Evidence: ___________________________
 Examine these Application.cfc snippets:
 
 **Snippet A:**
+
 ```cfml
 component {
     variables.framework = {
@@ -93,6 +98,7 @@ Framework: ___________________________
 Evidence: ___________________________
 
 **Snippet B:**
+
 ```cfml
 component extends="coldbox.system.Coldbox" {
     
@@ -106,6 +112,7 @@ Framework: ___________________________
 Evidence: ___________________________
 
 **Snippet C:**
+
 ```cfml
 <cfcomponent>
     <cfset this.name = "MyApp">

@@ -1,34 +1,32 @@
 **Version:** 1.0  
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** November 2025  
-**Contributers:** Nandu S, Aswathy S, Deepak Jose, Lajin M J  
+**Contributors:** Nandu S, Aswathy S, Deepak Jose, Lajin M J  
 
 # ColdFusion Best Practices: The Ultimate Survival Guide  
+
 *How to write ColdFusion code that doesn’t make you want to scream into a pillow.*
 
-
-
 ## 📚 Table of Contents
-- [Intro: Why Bother?](#intro-why-bother)
-- [Application.cfc: Your App’s Control Panel](#applicationcfc-your-apps-control-panel)
-- [Scopes: Where Stuff Lives](#scopes-where-stuff-lives)
-- [Security: Lock the Doors](#security-lock-the-doors)
-- [Database Queries: Don’t Be That Person](#database-queries-dont-be-that-person)
-- [Performance: Need for Speed](#performance-need-for-speed)
-- [Modularization & DI: Lego Mastery](#modularization--dependency-injection)
-- [Error Handling: Expect Chaos](#error-handling-expect-chaos)
-- [Logging: Your App’s Diary](#logging-your-apps-diary)
-- [Debugging: Becoming a Code Detective](#debugging-becoming-a-code-detective)
-- [Documentation & Comments](#documentation--comments)
-- [Testing](#testing)
-- [Environment Management](#environment-management)
-- [Starting a New Project](#starting-a-new-project)
-- [Joining an Existing Project](#joining-an-existing-project)
-- [Deployment & CI/CD](#deployment--cicd)
-- [Quick Wins](#quick-wins)
-- [Conclusion: Be the Hero](#conclusion-be-the-hero)
 
-
+- [Intro: Why Bother?](#-intro-why-bother)
+- [Application.cfc: Your App’s Control Panel](#-applicationcfc-your-apps-control-panel)
+- [Scopes: Where Stuff Lives](#️-scopes-where-stuff-lives)
+- [Security: Lock the Doors](#️-security-lock-the-doors)
+- [Database Queries: Don’t Be That Person](#-database-queries-dont-be-that-person)
+- [Performance: Need for Speed](#-performance-need-for-speed)
+- [Modularization & DI: Lego Mastery](#-modularization--dependency-injection)
+- [Error Handling: Expect Chaos](#-error-handling-expect-chaos)
+- [Logging: Your App’s Diary](#-logging-your-apps-diary)
+- [Debugging: Becoming a Code Detective](#-debugging-becoming-a-code-detective)
+- [Documentation & Comments](#-documentation--comments)
+- [Testing](#-testing)
+- [Environment Management](#-environment-management)
+- [Starting a New Project](#️-starting-a-new-project)
+- [Joining an Existing Project](#-joining-an-existing-project)
+- [Deployment & CI/CD](#-deployment--cicd)
+- [Quick Wins](#-quick-wins)
+- [Conclusion: Be the Hero](#-conclusion-be-the-hero)
 
 ## 🎬 Intro: Why Bother?
 
@@ -38,8 +36,6 @@ Writing good ColdFusion is like following a recipe — skip steps and you’ll e
 
 Good CFML isn’t about being clever; it’s about being **clear, consistent, and maintainable**.  
 Future-you (and your teammates) will thank you.
-
-
 
 ## 🧠 Application.cfc: Your App’s Control Panel
 
@@ -77,8 +73,6 @@ component {
 
 💡 *Use `onMissingTemplate()` to make your 404s user-friendly instead of “File not found!”*
 
-
-
 ## 🗺️ Scopes: Where Stuff Lives
 
 Scopes are like rooms in your house — put things where they belong.
@@ -97,18 +91,18 @@ Scopes are like rooms in your house — put things where they belong.
 | `cgi` | request info | passport | headers/env vars |
 
 🚨 **DON’T:**  
+
 ```coldfusion
 application.tempData = "why is this here?";
 ```
 
 ✅ **DO:**  
+
 ```coldfusion
 cflock(type="exclusive", scope="application") {
   application.cache = {};
 }
 ```
-
-
 
 ## 🛡️ Security: Lock the Doors
 
@@ -132,23 +126,24 @@ if (!arrayContains(["jpg","pdf","png"], fileExt)) {
 ```
 
 ### Security Checklist:
+
 ✅ Use `<cfqueryparam>` in **every** query  
 ✅ Set `secureJSON="true"` in `Application.cfc`  
 ✅ Block direct CFC access via `onRequestStart()`  
 ✅ Escape output with `encodeForHTML()` / `encodeForJavaScript()`
-
-
 
 ## 💾 Database Queries: Don’t Be That Person
 
 Bad queries are like leaving your car running — wasteful and dangerous.
 
 ❌ **Never Do This**
+
 ```coldfusion
 queryExecute("SELECT * FROM users WHERE id = #url.id#");
 ```
 
 ✅ **Do This**
+
 ```coldfusion
 queryExecute(
   "SELECT * FROM users WHERE id = :id",
@@ -157,6 +152,7 @@ queryExecute(
 ```
 
 💡 **Join Instead of Loop**
+
 ```coldfusion
 queryExecute("
   SELECT u.*, o.order_date
@@ -165,8 +161,6 @@ queryExecute("
   WHERE u.id IN (:ids)
 ", { ids: { value: listToArray(userIDs), list: true } });
 ```
-
-
 
 ## ⚡ Performance: Need for Speed
 
@@ -181,16 +175,16 @@ if (isNull(productList)) {
 ```
 
 ### Top Tips:
+
 - Cache expensive queries
 - Avoid `session` bloat
 - Use `cachedWithin` wisely
 - Benchmark regularly
 
-
-
 ## 🧩 Modularization & Dependency Injection
 
 ### ❌ Don’t Write God Objects
+
 ```coldfusion
 component {
   function processOrder() { /* 300 lines */ }
@@ -199,6 +193,7 @@ component {
 ```
 
 ### ✅ Do This
+
 ```
 /services/
   OrderService.cfc
@@ -207,6 +202,7 @@ component {
 ```
 
 ### Dependency Injection
+
 ```coldfusion
 component accessors="true" {
   property name="userService" inject="UserService";
@@ -221,8 +217,6 @@ component accessors="true" {
 ```
 
 💡 *Use WireBox or DI/1 for larger apps.*
-
-
 
 ## 🚨 Error Handling: Expect Chaos
 
@@ -239,11 +233,10 @@ try {
 ```
 
 🔴 Don’t:
+
 - Use empty catch blocks  
 - Hide stack traces  
 - Expose raw error messages
-
-
 
 ## 📓 Logging: Your App’s Diary
 
@@ -256,12 +249,11 @@ cflog(
 ```
 
 ✅ **Good Logs Include:**  
+
 - Who (User/Session ID)  
 - What (Error context)  
 - When (Timestamps)  
 - Where (Page or module)  
-
-
 
 ## 🔍 Debugging: Becoming a Code Detective
 
@@ -271,12 +263,11 @@ logService.search("error", date=now());
 ```
 
 **Pro Tips:**
+
 - Add checkpoints (`writeOutput("Reached X")`)
 - Check logs first
 - Use CF Builder or VS Code debugger
 - Suspect the code you “didn’t touch”
-
-
 
 ## 📝 Documentation & Comments
 
@@ -295,8 +286,6 @@ function calculateDiscount(required numeric userID, required numeric orderTotal)
 }
 ```
 
-
-
 ## 🧪 Testing
 
 ```coldfusion
@@ -312,11 +301,10 @@ component extends="testbox.system.BaseSpec" {
 ```
 
 **Testing Pyramid**
+
 - 70% Unit  
 - 20% Integration  
 - 10% UI  
-
-
 
 ## 🌿 Environment Management
 
@@ -329,19 +317,16 @@ db.url=jdbc:mysql://localhost:3306/dev_db
 this.datasource = configLoader.get("db.url", detectEnvironment());
 ```
 
-
-
 ## 🛠️ Starting a New Project
 
 Checklist:
+
 - ✅ Error handling  
 - ✅ Security (CSRF, CORS)  
 - ✅ Logging setup  
 - ✅ DI configuration  
 - ✅ Environment detection  
 - ✅ Base service layer
-
-
 
 ## 🔍 Joining an Existing Project
 
@@ -351,8 +336,6 @@ Checklist:
 4. Deploy locally  
 5. Identify key services  
 6. Document what you learn  
-
-
 
 ## 🚀 Deployment & CI/CD
 
@@ -407,11 +390,10 @@ jobs:
 ```
 
 ✅ **Checklist**
+
 - Automate deployments  
 - Test before deploy  
 - Support rollbacks  
-
-
 
 ## ⚡ Quick Wins
 
@@ -421,10 +403,10 @@ jobs:
 - Cache static data  
 - Log request times  
 
-
 ## 🎯 Conclusion: Be the Hero
 
 Good ColdFusion isn’t about being flashy — it’s about:
+
 - **Clarity:** Make sense at 3 AM  
 - **Humility:** Assume failure  
 - **Empathy:** For your teammates & future self  

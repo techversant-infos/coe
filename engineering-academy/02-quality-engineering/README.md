@@ -64,7 +64,7 @@ Prefer official documentation first, then use videos/courses to reinforce practi
 | Playwright official docs | [Playwright Getting Started](https://playwright.dev/docs/intro), [Locators](https://playwright.dev/docs/locators), [Trace Viewer](https://playwright.dev/docs/trace-viewer), [API Testing](https://playwright.dev/docs/api-testing), [CI](https://playwright.dev/docs/ci) |
 | Playwright videos | [Playwright YouTube channel](https://www.youtube.com/@Playwrightdev), [Playwright learn videos](https://playwright.dev/docs/intro#learn) |
 | Automation courses | [Test Automation University](https://testautomationu.applitools.com/) |
-| Testing community | [Ministry of Testing YouTube](https://www.youtube.com/@MinistryofTesting), [Ministry of Testing](https://www.ministryoftesting.com/) |
+| Testing community | [Ministry of Testing](https://www.ministryoftesting.com/) |
 | Web accessibility | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/), [Deque axe-core Playwright](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/playwright) |
 | Performance basics | [web.dev Core Web Vitals](https://web.dev/vitals/), [Lighthouse docs](https://developer.chrome.com/docs/lighthouse/overview) |
 | API quality | [REST API Best Practices](../../standards/general/rest-api-best-practices.md), [Google Testing Blog: Test Pyramid](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html) |

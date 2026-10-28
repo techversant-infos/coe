@@ -35,6 +35,7 @@ Housekeeping and system architecture specialist who maintains repository structu
 ## Maintenance Tasks
 
 ### Regular Tasks
+
 - [ ] Run `/update-learning-path-index` to refresh the Academy catalog
 - [ ] Check for duplicate or orphaned files in `engineering-academy/`
 - [ ] Update cross-references between learning paths
@@ -42,6 +43,7 @@ Housekeeping and system architecture specialist who maintains repository structu
 - [ ] Verify Git workflow compliance
 
 ### Quality Assurance
+
 - [ ] Verify all new content uses correct templates
 - [ ] Check cross-references between lessons and exercises
 - [ ] Ensure assessment rubrics are up-to-date
@@ -51,6 +53,7 @@ Housekeeping and system architecture specialist who maintains repository structu
 ## Output Format
 
 Produces maintenance reports including:
+
 - Repository health overview
 - File organization status
 - Quality checks summary

@@ -18,6 +18,7 @@ Create a comprehensive discovery question list for a given client scenario.
 Create questions across these categories:
 
 **Current Environment:**
+
 | Question | Why It Matters |
 |----------|---------------|
 | | |
@@ -25,6 +26,7 @@ Create questions across these categories:
 | | |
 
 **Pain Points:**
+
 | Question | Follow-up to Ask |
 |----------|------------------|
 | | |
@@ -32,6 +34,7 @@ Create questions across these categories:
 | | |
 
 **Usage & Scale:**
+
 | Question | What You'll Learn |
 |----------|------------------|
 | | |
@@ -41,6 +44,7 @@ Create questions across these categories:
 ### Part 2: Business Discovery Questions
 
 **Drivers for Change:**
+
 | Question | Business Context |
 |----------|-----------------|
 | | |
@@ -48,6 +52,7 @@ Create questions across these categories:
 | | |
 
 **Constraints:**
+
 | Question | Constraint Type |
 |----------|-----------------|
 | | |
@@ -57,6 +62,7 @@ Create questions across these categories:
 ### Part 3: Healthcare-Specific Questions
 
 **Compliance (HIPAA):**
+
 | Question | Why Critical |
 |----------|-------------|
 | | |
@@ -64,6 +70,7 @@ Create questions across these categories:
 | | |
 
 **Integration:**
+
 | Question | Integration Partner |
 |----------|-------------------|
 | | |
@@ -91,6 +98,7 @@ Rank your top 10 questions in order of importance:
 Design the order you'll ask questions in a 2-hour workshop:
 
 **Opening (15 min):**
+
 - Welcome and introductions
 - Set agenda
 - Confirm goals
@@ -118,6 +126,7 @@ Next steps: _________________________________
 ## Expected Outcome
 
 A complete discovery guide including:
+
 1. All categorized questions with rationale
 2. Prioritized top 10
 3. Workshop flow design

@@ -102,6 +102,7 @@ ColdFusion runs as a Java application on the JVM:
 **Common causes:**
 
 1. **Unbounded caching**
+
    ```cfm
    <!--- BAD: Cached indefinitely --->
    <cfset application.cache = queryData>
@@ -111,6 +112,7 @@ ColdFusion runs as a Java application on the JVM:
    ```
 
 2. **Session accumulation**
+
    ```cfm
    <!--- BAD: Storing large objects --->
    <cfset session.largeFile = fileRead(fullPath)>
@@ -120,6 +122,7 @@ ColdFusion runs as a Java application on the JVM:
    ```
 
 3. **Circular references**
+
    ```cfm
    <!--- BAD: Circular component references --->
    <cfset this.parent = parentComponent>
@@ -148,6 +151,7 @@ Scheduled Task Threads
 ### Thread-Safe Code Patterns
 
 **Shared scope access:**
+
 ```cfm
 <!--- Use locks for shared resources --->
 <cflock name="application.counter" type="exclusive" timeout="5">
@@ -161,6 +165,7 @@ Scheduled Task Threads
 ```
 
 **cfthread for parallel processing:**
+
 ```cfm
 <!--- Spawn parallel threads --->
 <cfthread name="task1,task2,task3" action="run">
@@ -190,6 +195,7 @@ Scheduled Task Threads
 ### Session Configuration
 
 **In Application.cfc:**
+
 ```cfm
 component {
     this.name = "MyApp_v1";
@@ -367,4 +373,4 @@ ColdFusion manages database connections via connection pools:
 
 - [01-coldfusion-deep-expertise](../01-coldfusion-deep-expertise/) — Full CF expertise module
 - [cf-architecture-review-checklist](./cf-architecture-review-checklist.md) — Architecture review
-- [cf-performance-tuning-guide](./cf-performance-tuning-guide.md) — Performance optimization
+- [08-performance-engineering](../08-performance-engineering/) — Performance optimization module

@@ -148,6 +148,7 @@ Complete the testing checklist:
 ## Expected Outcome
 
 A search feature that:
+
 - Works with form submit (no JS)
 - Enhances with live search (JS enabled)
 - Falls back gracefully on errors

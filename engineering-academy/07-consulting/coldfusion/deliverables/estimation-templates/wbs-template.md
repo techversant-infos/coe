@@ -231,6 +231,7 @@ X.X.X  Work Package Name
 | **Total Assessment** | **4.5 days** | **9 days** | **17 days** |
 
 Apply complexity multipliers:
+
 - **Low complexity:** 0.8x
 - **Medium complexity:** 1.0x
 - **High complexity:** 1.3x

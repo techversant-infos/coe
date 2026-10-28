@@ -72,6 +72,7 @@ Calculate ROI for a Lucee migration:
 | **Annual Benefits** | |
 
 **ROI (3-year):**
+
 ```
 ROI = (Total Benefits - Investment) / Investment × 100 = ___%
 ```
@@ -153,19 +154,23 @@ _______________________________________________________
 ## Answer Key
 
 ### Section A
+
 - A1: Healthcare context favors Lucee (cost) with cloud for compliance/backup
 - A2: Recommendation should address HIPAA, budget, and team capacity
 
 ### Section B
+
 - B1: Total $180k investment, $70k annual benefits
 - B2: Break-even = $180k / $70k = 2.57 years (month 7 of year 3)
 - B3: Expected value = $30k (expected value calculation)
 
 ### Section C
+
 - C1: Typical 4-phase: Assessment → Foundation → Migration → Testing
 - C2: Cloud requires completed migration testing, compliance review
 
 ### Section D
+
 - D1: Should focus on patient data risk, regulatory compliance, liability
 - D2: Should offer phased approach, quick wins, or smaller scope
 

@@ -68,6 +68,7 @@ For the largest work package, provide three estimates:
 ## Deliverable
 
 Complete WBS spreadsheet with:
+
 - Work packages
 - Hour estimates
 - Dependencies

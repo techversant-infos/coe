@@ -129,18 +129,22 @@ _______________________________________________________________
 ## Answer Key
 
 ### Section A
+
 - A1: Most Adobe CF functions have Lucee equivalents or need extensions
 - A2: Medium risk overall; cfpdf/cfchart are main blockers
 
 ### Section B
+
 - B1: Use PDF extension, PDFtk, or external service
 - B2: ChartJS, Highcharts, or FusionCharts
 
 ### Section C
+
 - C1: Multi-stage build, non-root user, secrets via env
 - C2: Redis for distributed sessions
 
 ### Section D
+
 - D1: PDF extension needed, Redis sessions, compile caching, parameter check, image extension
 - D2: Function not defined or misspelled in CFC
 

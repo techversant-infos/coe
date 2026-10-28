@@ -9,6 +9,7 @@ Demonstrate end-to-end migration skills on a small application.
 ## Scenario
 
 **Application:** Simple task management app
+
 - 15 CFM files
 - CF 2018
 - MSSQL database (3 tables)
@@ -41,6 +42,7 @@ Complete before starting:
 ### Part 3: Fix Compatibility Issues
 
 **Replace cfdiv:**
+
 ```cfml
 <!--- OLD: Adobe CF cfdiv --->
 <cfdiv bind="url:taskList.cfm" />
@@ -56,6 +58,7 @@ Complete before starting:
 ```
 
 **Replace cfform:**
+
 ```cfml
 <!--- OLD: Adobe CF cfform --->
 <cfform name="loginForm">
@@ -99,7 +102,7 @@ Complete the summary:
 | Deployment | | |
 
 **Total Issues Found:** ___
-**Critical Blockers:** ___
+**Critical Blockers:**___
 **Resolved Issues:** ___
 
 ## Expected Outcome

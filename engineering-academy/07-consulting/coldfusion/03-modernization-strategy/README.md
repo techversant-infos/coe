@@ -47,22 +47,26 @@ By the end of this phase, you will be able to:
 ### 1. Modernization Options
 
 **Option A: Stay on ColdFusion**
+
 - Upgrading Adobe ColdFusion (CF2018 → CF2021 → CF2023 → CF2025)
 - Continuing Lucee with support
 - When this makes sense
 
 **Option B: Migrate to Lucee**
+
 - Compatibility considerations
 - Effort estimation
 - Risk profile
 
 **Option C: Replace with Modern Stack**
+
 - CFML → Java/Spring Boot
 - CFML → Node.js/Python
 - CFML → .NET
 - When rewriting makes sense
 
 **Option D: Strangler Fig Pattern**
+
 - Gradually replacing CF with modern services
 - API-first architecture
 - Phased migration
@@ -70,6 +74,7 @@ By the end of this phase, you will be able to:
 ### 2. Decision Framework
 
 For each application, evaluate:
+
 - Business value of modernization
 - Technical debt level
 - Complexity and size
@@ -120,7 +125,7 @@ Create a modernization recommendation document using the [CF Modernization Frame
 
 - Planned: General Architecture — Modernization
 - [CF Modernization Framework](../deliverables/cf-modernization-framework.md)
-- [CF2025 Upgrade Guide](https://helpx.adobe.com/coldfusion/upgrading-coldfusion.html)
+- [CF2025 Upgrade Guide](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/installing-the-server-configuration.html) (see "Updating from an earlier version")
 - [Strangler Fig Pattern](https://martinfowler.com/bliki/StranglerFigApplication.html)
 
 ## Time Estimate

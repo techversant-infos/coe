@@ -93,6 +93,7 @@ component {
 ```
 
 **When to use:**
+
 - Simple chat/completion use cases
 - Low volume (< 1000 req/day)
 - No sensitive data
@@ -118,6 +119,7 @@ component {
 **Implementation Steps:**
 
 1. **Document Ingestion:**
+
 ```cfml
 public void function ingestDocuments(required array files) {
     for (local.file in arguments.files) {
@@ -141,6 +143,7 @@ public void function ingestDocuments(required array files) {
 ```
 
 2. **Query Processing:**
+
 ```cfml
 public string function answerQuestion(required string question, string docFilter = "") {
     // Generate query embedding

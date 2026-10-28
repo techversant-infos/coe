@@ -34,6 +34,7 @@ Rate these risk factors (1-5, 5 = highest risk):
 **Base Estimate:** 160 hours
 
 **Complexity Adjustment:**
+
 - Code quality (1-5): 3 → +15%
 - Team experience (1-5): 2 → +20%
 - Documentation (1-5): 1 → +25%
@@ -41,6 +42,7 @@ Rate these risk factors (1-5, 5 = highest risk):
 **Complexity Adjustment Total:** ____________%
 
 **Final Estimate:**
+
 ```
 Base: 160 hours
 + Complexity: 160 × ___% = ___ hours
@@ -61,6 +63,7 @@ Write how you would present this estimate to the client:
 ## Deliverable
 
 Completed estimate document with:
+
 - Base estimate
 - Complexity adjustments
 - Risk buffer
