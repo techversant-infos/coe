@@ -3,9 +3,9 @@
 **Level:** Foundation
 **Next:** [Engineering Communication](./04-communication.md)
 
-The source of truth is the [CoE Security Checklist](../../audit/security-audit-checklist.md) — 10 mandatory items plus
+The source of truth is the [CoE Security Checklist](../../security/audit/security-audit-checklist.md) — 10 mandatory items plus
 six items per OWASP category. When you need the depth behind an item, follow it through to the
-[CoE Security Audit Reference](../../audit/security-audit-reference.md).
+[CoE Security Audit Reference](../../security/audit/security-audit-reference.md).
 
 Pair this with:
 

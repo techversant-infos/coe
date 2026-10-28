@@ -115,4 +115,4 @@ Every automation plan should answer:
 - [Manual Tester to Automation Engineer](../02-automation/playwright/01-manual-to-automation.md)
 - [Automation Engineer to Senior Automation Engineer](../02-automation/playwright/02-senior-automation.md)
 - [REST API Best Practices](../../../standards/general/rest-api-best-practices.md)
-- [Security Audit Checklist](../../../audit/security-audit-checklist.md)
+- [Security Audit Checklist](../../../security/audit/security-audit-checklist.md)

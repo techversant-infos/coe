@@ -233,7 +233,7 @@ Pick one error path in your current codebase. Verify it:
 3. Logs enough context for an on-call engineer to debug
 4. Does NOT log any PII, token, or secret
 
-Fix any of the four that are missing. Open a PR tagged `refactor(clean-code-4): error-handling`. If you find a secret being logged, treat that as a security issue and raise it separately see the [Security Audit Checklist](../../../audit/security-audit-checklist.md).
+Fix any of the four that are missing. Open a PR tagged `refactor(clean-code-4): error-handling`. If you find a secret being logged, treat that as a security issue and raise it separately see the [Security Audit Checklist](../../../security/audit/security-audit-checklist.md).
 
 **Self-check:**
 - [ ] I can choose between an exception and a return code based on whether the condition is *exceptional* or *expected*
@@ -731,7 +731,7 @@ For every PR, the reviewer checks:
 - **Maintainability** would the next person to touch this code thank the author?
 - **SOLID adherence** does each class have one responsibility? Are dependencies injected?
 - **Error handling** does the code fail fast at the cause? Are secrets never logged?
-- **Security** are inputs validated at the boundary? Is the SQL parameterized? Is the user the right user? (See the [Security Audit Checklist](../../../audit/security-audit-checklist.md))
+- **Security** are inputs validated at the boundary? Is the SQL parameterized? Is the user the right user? (See the [Security Audit Checklist](../../../security/audit/security-audit-checklist.md))
 - **Test coverage** is the new behavior tested? Are the tests at the right layer?
 - **Performance** was the change measured, or is it a guess?
 - **Documentation** if the public API changed, does the doc match?
@@ -831,7 +831,7 @@ Find the oldest open TODO in your codebase. Read it. Is it still relevant? If ye
 
 - [REST API Best Practices](../../../standards/general/rest-api-best-practices.md) for Phase 4
 - [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelines.md) for Phase 6 (the two-layer review model)
-- [Security Audit Checklist](../../../audit/security-audit-checklist.md) for the security row in the standardized checklist (Phase 6, Topic 19)
+- [Security Audit Checklist](../../../security/audit/security-audit-checklist.md) for the security row in the standardized checklist (Phase 6, Topic 19)
 - [Techversant Git Workflow](../../../standards/git/git-workflow.md) for the ADR format (Phase 7)
 - [Node.js Code Review Checklist](../../../standards/nodejs/nodejs-typescript-code-review-checklist.md) stack-specific, for the Node.js team
 - [PHP Coding Standards](../../../standards/php/php-coding-standards.md) stack-specific, for the Laravel team

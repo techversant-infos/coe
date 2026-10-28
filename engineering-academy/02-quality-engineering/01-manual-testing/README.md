@@ -142,7 +142,7 @@ By the end of this path, the learner should be able to:
 
 **Mini-task:** Create a regression checklist for one feature area. Mark each item as smoke, critical regression, or optional regression.
 
-**Internal standard:** [Security Audit Checklist](../../../audit/security-audit-checklist.md)
+**Internal standard:** [Security Audit Checklist](../../../security/audit/security-audit-checklist.md)
 
 ---
 

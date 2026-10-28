@@ -64,7 +64,7 @@ by the Security Lead ([CoE Audit Framework §8](./coe-audit-framework.md)).
 ### 1.4 The Minimum Bar
 
 If a team reads nothing else, these are non-negotiable on every change. They mirror the
-[Secure Engineering Minimum Bar](../engineering-academy/00-engineering-foundations/03-secure-engineering.md).
+[Secure Engineering Minimum Bar](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md).
 
 - [ ] **(B)** No secrets in source code, config, CI logs, or commit history
 - [ ] **(B)** Authorization enforced server-side on every protected operation
@@ -139,7 +139,7 @@ team security session.
 3. "We scan dependencies" no longer satisfies A03 — build and distribution integrity are in scope (§5).
 
 A ColdFusion-specific worked example of all ten categories is available at
-[OWASP Top 10:2025 — ColdFusion view](../engineering-academy/cf-consulting/01-coldfusion-deep-expertise/assets/owasp-top-10-2025-coldfusion.svg).
+[OWASP Top 10:2025 — ColdFusion view](../../engineering-academy/cf-consulting/01-coldfusion-deep-expertise/assets/owasp-top-10-2025-coldfusion.svg).
 
 ---
 
@@ -290,7 +290,7 @@ Reference: [Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/chea
 - [ ] Offboarding revokes all access within 24 hours, including tokens and SSH keys
 - [ ] Shared accounts eliminated, or justified with compensating controls and logged usage
 - [ ] Repository branch protection enforced per
-      [Techversant Git Workflow](../standards/git/git-workflow.md)
+      [Techversant Git Workflow](../../standards/git/git-workflow.md)
 
 ---
 
@@ -524,8 +524,8 @@ Reference: [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/chea
 - [ ] Trust boundaries documented — where untrusted data enters and where privilege changes
 - [ ] Security requirements captured in the specification, not retrofitted at review
 - [ ] Security review triggered for changes listed in
-      [Secure Engineering — Security Review Triggers](../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
-- [ ] The [security-engineer skill](../ai/claude/skills/security-engineer/SKILL.md) or an equivalent structured
+      [Secure Engineering — Security Review Triggers](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
+- [ ] The [security-engineer skill](../../ai/claude/skills/security-engineer/SKILL.md) or an equivalent structured
       method is used for the STRIDE pass
 
 ### 8.2 Business logic and abuse cases
@@ -537,7 +537,7 @@ Often missed because each individual request is technically valid.
 - [ ] Quantity, price, and discount fields validated server-side; negative and zero values considered
 - [ ] Time-of-check/time-of-use race conditions considered on balance, stock, and quota operations
 - [ ] Idempotency enforced on financially or legally significant writes
-      ([REST API Best Practices](../standards/general/rest-api-best-practices.md))
+      ([REST API Best Practices](../../standards/general/rest-api-best-practices.md))
 - [ ] Bulk or automated abuse considered (mass signup, scraping, enumeration, coupon farming)
 - [ ] Account enumeration prevented — login, registration, and reset responses do not reveal account existence
 
@@ -787,7 +787,7 @@ Reference: [Error Handling Cheat Sheet](https://cheatsheetseries.owasp.org/cheat
 Cross-cutting. Applies alongside sections 3 to 12.
 Reference: [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
 · [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-· CoE: [REST API Best Practices](../standards/general/rest-api-best-practices.md)
+· CoE: [REST API Best Practices](../../standards/general/rest-api-best-practices.md)
 
 ### 13.1 General API controls
 
@@ -820,9 +820,9 @@ New in v2.0. Techversant uses AI-assisted development across teams, and increasi
 This section is mandatory for any team using AI coding tools; §14.2 and §14.3 apply to any team shipping an
 AI-backed feature.
 
-CoE references: [Neural Security Guidelines](../neural/neural-security-guidelines.md)
-· [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md)
-· [AI Team Best Practices](../ai/ai-team-best-practices.md)
+CoE references: [Neural Security Guidelines](../ai-security/ai-security-guidelines.md)
+· [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
+· [AI Team Best Practices](../../ai/ai-team-best-practices.md)
 External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
 · [LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html)
 
@@ -831,7 +831,7 @@ External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10
 - [ ] **(B)** No secrets, credentials, customer data, or PII pasted into AI prompts or tools
 - [ ] **(B)** AI-generated code covering authentication, authorization, cryptography, or personal data is
       reviewed by a senior engineer (Red Zone rule, per
-      [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md))
+      [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md))
 - [ ] AI usage disclosed on pull requests per the CoE standard
 - [ ] AI-suggested dependencies verified to exist and to be the intended package before installation
       (guards against hallucinated-package typosquatting)
@@ -849,7 +849,7 @@ External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10
 - [ ] Output filtering applied for harmful, leaked, or out-of-scope content
 - [ ] Per-user and per-tenant quotas on inference calls (cost and abuse control, §8.3)
 - [ ] Model and provider inventory maintained, including data residency and retention terms
-- [ ] Training or fine-tuning data governed per [Neural Security Guidelines](../neural/neural-security-guidelines.md)
+- [ ] Training or fine-tuning data governed per [Neural Security Guidelines](../ai-security/ai-security-guidelines.md)
 
 ### 14.3 Agents, tools, and MCP integrations
 
@@ -883,7 +883,7 @@ Reference: [OWASP MASVS](https://owasp.org/www-project-mobile-app-security/)
 ## 16. Privacy and Data Protection
 
 Applies where the system processes personal data. Reference: [GDPR text](https://gdpr-info.eu/)
-· CoE: [Compliance Auditor skill](../ai/claude/skills/compliance-auditor/SKILL.md)
+· CoE: [Compliance Auditor skill](../../ai/claude/skills/compliance-auditor/SKILL.md)
 
 ### 16.1 Lawful basis and consent
 
@@ -1009,8 +1009,8 @@ time**. They are independent, and the tighter one wins:
 |---|---|
 | A vulnerability in any Techversant or client system | **Security Lead, directly.** Never a GitHub issue |
 | An active incident or live exploitation | **Security Lead, immediately** |
-| A gap in these standards documents | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
-| An audit finding against a project | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
+| A gap in these standards documents | [Security Issue template](../../.github/ISSUE_TEMPLATE/security-issue.md) |
+| An audit finding against a project | [Audit Finding template](../../.github/ISSUE_TEMPLATE/audit-finding.md) |
 | External reporter | Published security contact ([security.txt](https://securitytxt.org/)) |
 
 If unsure which row applies, treat it as the first and ask. Over-reporting privately costs a message;
@@ -1117,19 +1117,19 @@ Cache-Control: no-store          (on authenticated responses)
 |---|---|
 | [CoE Security Checklist](./security-audit-checklist.md) | **The short version** — 231 lines, for pull-request and sprint review |
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, schedule, severity, evidence, exception process |
-| [Secure Engineering](../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level minimum bar and review triggers |
-| [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
-| [AI Team Best Practices](../ai/ai-team-best-practices.md) | Team-level AI working agreements |
-| [Neural Security Guidelines](../neural/neural-security-guidelines.md) | Model, training data, and inference security |
-| [REST API Best Practices](../standards/general/rest-api-best-practices.md) | API contract, envelope, and error standards |
-| [PHP Coding Standards](../standards/php/php-coding-standards.md) · [PHP Best Practices](../standards/php/php-best-practices.md) | PHP security patterns |
-| [ColdFusion Style Guide](../standards/coldfusion/coldfusion-style-guide.md) · [CF Code Review Checklist](../standards/coldfusion/coldfusion-code-review-checklist.md) | CFML security practices |
-| [CF Security Review Checklist](../engineering-academy/cf-consulting/DELIVERABLES/cf-security-review-checklist.md) | ColdFusion engagement-level review |
-| [Node.js/TypeScript Best Practices](../standards/nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
-| [Techversant Git Workflow](../standards/git/git-workflow.md) | Branch protection, review, and merge rules |
-| [Security Engineer skill](../ai/claude/skills/security-engineer/SKILL.md) | Threat modeling and secure review method |
-| [Compliance Auditor skill](../ai/claude/skills/compliance-auditor/SKILL.md) | Gap assessment and evidence collection method |
-| [Contributing](../CONTRIBUTING.md) | How to propose a change to this document |
+| [Secure Engineering](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level minimum bar and review triggers |
+| [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
+| [AI Team Best Practices](../../ai/ai-team-best-practices.md) | Team-level AI working agreements |
+| [Neural Security Guidelines](../ai-security/ai-security-guidelines.md) | Model, training data, and inference security |
+| [REST API Best Practices](../../standards/general/rest-api-best-practices.md) | API contract, envelope, and error standards |
+| [PHP Coding Standards](../../standards/php/php-coding-standards.md) · [PHP Best Practices](../../standards/php/php-best-practices.md) | PHP security patterns |
+| [ColdFusion Style Guide](../../standards/coldfusion/coldfusion-style-guide.md) · [CF Code Review Checklist](../../standards/coldfusion/coldfusion-code-review-checklist.md) | CFML security practices |
+| [CF Security Review Checklist](../../engineering-academy/cf-consulting/DELIVERABLES/cf-security-review-checklist.md) | ColdFusion engagement-level review |
+| [Node.js/TypeScript Best Practices](../../standards/nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
+| [Techversant Git Workflow](../../standards/git/git-workflow.md) | Branch protection, review, and merge rules |
+| [Security Engineer skill](../../ai/claude/skills/security-engineer/SKILL.md) | Threat modeling and secure review method |
+| [Compliance Auditor skill](../../ai/claude/skills/compliance-auditor/SKILL.md) | Gap assessment and evidence collection method |
+| [Contributing](../../CONTRIBUTING.md) | How to propose a change to this document |
 
 ### 21.2 External standards and guidance
 
@@ -1168,5 +1168,5 @@ Cache-Control: no-store          (on authenticated responses)
 
 **Document Owner:** CoE Security Team
 **Review Cycle:** Quarterly, and within 30 days of any OWASP Top 10 or regulatory update
-**Change process:** [CONTRIBUTING.md](../CONTRIBUTING.md) — security documents require 2 approvals including the
+**Change process:** [CONTRIBUTING.md](../../CONTRIBUTING.md) — security documents require 2 approvals including the
 Security Lead

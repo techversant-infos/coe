@@ -8,8 +8,8 @@ This repository contains Techversant's engineering standards, learning paths, au
 - [Git Workflow](./standards/git/git-workflow.md) - branching, commits, pull requests, releases, rollback
 - [AI Era Coding Guidelines](./standards/general/ai-era-coding-guidelines.md) - AI delegation levels, Red Zone rules, two-layer review
 - [REST API Best Practices](./standards/general/rest-api-best-practices.md) - API design, naming, error envelope, pagination, filtering
-- [CoE Security Checklist](./audit/security-audit-checklist.md) - OWASP Top 10:2025 checklist for every pull request
-- [CoE Security Audit Reference](./audit/security-audit-reference.md) - full control set for release reviews and audits
+- [CoE Security Checklist](./security/audit/security-audit-checklist.md) - OWASP Top 10:2025 checklist for every pull request
+- [CoE Security Audit Reference](./security/audit/security-audit-reference.md) - full control set for release reviews and audits
 
 ## Repository Areas
 
@@ -18,7 +18,7 @@ This repository contains Techversant's engineering standards, learning paths, au
 | [engineering-academy](./engineering-academy/README.md) | Structured learning paths and career guidance |
 | [general](./standards/general/) | Cross-stack standards |
 | [git](./standards/git/) | Git workflow and governance |
-| [audit](./audit/) | Security and compliance review material |
+| [audit](./security/audit/) | Security and compliance review material |
 | [php](./standards/php/) | PHP / Laravel standards |
 | [nodejs](./standards/nodejs/) | Node.js / TypeScript standards |
 | [cf](./standards/coldfusion/) | ColdFusion / CFML standards |

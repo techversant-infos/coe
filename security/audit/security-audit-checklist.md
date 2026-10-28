@@ -214,8 +214,8 @@ authentication, authorization, session handling, password reset, encryption, key
 PII, payment data, audit logs, production data, file upload, user-controlled URLs, webhooks, or
 tenant isolation boundaries.
 
-See [Secure Engineering — Security Review Triggers](../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
-and the Red Zone rules in [AI Era Coding Guidelines](../standards/general/ai-era-coding-guidelines.md).
+See [Secure Engineering — Security Review Triggers](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
+and the Red Zone rules in [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md).
 
 ## Reporting
 
@@ -225,8 +225,8 @@ and the Red Zone rules in [AI Era Coding Guidelines](../standards/general/ai-era
 |---|---|
 | A vulnerability in **any Techversant or client system** | **Security Lead, directly.** Never a GitHub issue |
 | An active incident or live exploitation | **Security Lead, immediately** |
-| A gap in **these standards documents** | [Security Issue template](../.github/ISSUE_TEMPLATE/security-issue.md) |
-| An audit finding against a project | [Audit Finding template](../.github/ISSUE_TEMPLATE/audit-finding.md) |
+| A gap in **these standards documents** | [Security Issue template](../../.github/ISSUE_TEMPLATE/security-issue.md) |
+| An audit finding against a project | [Audit Finding template](../../.github/ISSUE_TEMPLATE/audit-finding.md) |
 
 When reporting privately, send no exploit detail, reproduction steps, hostnames, or customer data in
 any channel that is not known to be secure. The public templates above are safe for documentation
@@ -245,12 +245,12 @@ privately costs a message; under-reporting publicly cannot be undone.
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, severity, SLAs, exception process |
 | [OWASP Top 10:2025](https://owasp.org/Top10/2025/) | The source taxonomy |
 | [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) | Implementation guidance per control |
-| [Secure Engineering](../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level training |
-| [PHP](../standards/php/php-coding-standards.md) · [ColdFusion](../standards/coldfusion/coldfusion-style-guide.md) · [Node.js](../standards/nodejs/nodejs-typescript-best-practices.md) | Stack-specific standards |
-| [REST API Best Practices](../standards/general/rest-api-best-practices.md) | API contract and error standards |
+| [Secure Engineering](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level training |
+| [PHP](../../standards/php/php-coding-standards.md) · [ColdFusion](../../standards/coldfusion/coldfusion-style-guide.md) · [Node.js](../../standards/nodejs/nodejs-typescript-best-practices.md) | Stack-specific standards |
+| [REST API Best Practices](../../standards/general/rest-api-best-practices.md) | API contract and error standards |
 
 ---
 
 **Document Owner:** CoE Security Team
 **Review Cycle:** Quarterly, and within 30 days of any OWASP Top 10 or regulatory update
-**Change process:** [CONTRIBUTING.md](../CONTRIBUTING.md)
+**Change process:** [CONTRIBUTING.md](../../CONTRIBUTING.md)

@@ -47,7 +47,7 @@ This section is not a replacement for project-specific runbooks. It should teach
 ## Temporary References
 
 - [Git Workflow](../../standards/git/git-workflow.md)
-- [Security Audit Checklist](../../audit/security-audit-checklist.md)
+- [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
 - [Node.js TypeScript Best Practices - Deployment & CI/CD](../../standards/nodejs/nodejs-typescript-best-practices.md#deployment-cicd)
 
 ## Guidance Layers

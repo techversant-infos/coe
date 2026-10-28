@@ -217,7 +217,7 @@ Review 5 PRs in the next week. For each PR, write at least one question (not a c
 
 ## Topic 19 Code Review Checklist (Standardized)
 
-**What changes in this stack:** The master's 9-point checklist applies, with backend-specific rows: **Database access** (parameterized queries, no N+1, proper indexing), **API contract** (the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) standards), **Auth/AuthZ** (the right user is doing the right action see the [Security Audit Checklist](../../../../../audit/security-audit-checklist.md)). Use your framework's static analysis tool (PHPStan, ESLint, etc.) in CI to catch the easy stuff automatically.
+**What changes in this stack:** The master's 9-point checklist applies, with backend-specific rows: **Database access** (parameterized queries, no N+1, proper indexing), **API contract** (the [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md) standards), **Auth/AuthZ** (the right user is doing the right action see the [Security Audit Checklist](../../../../../security/audit/security-audit-checklist.md)). Use your framework's static analysis tool (PHPStan, ESLint, etc.) in CI to catch the easy stuff automatically.
 
 **Mini-task variant:**
 Pick 3 of your open PRs. Self-review them against the 9-point master checklist + the database / API / auth rows. Open follow-up PRs for any gap. Reflect: which points did you consistently miss?
@@ -257,4 +257,4 @@ Write one ADR for a real backend architecture decision in your codebase. Use the
 | Owner | CoE Web Working Group (with cross-team review from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft for pilot-batch review |
-| Related | [01-curriculum.md](../../01-curriculum.md), [frontend.md](./frontend.md), [mobile stacks](../mobile/stacks.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [Security Audit Checklist](../../../../../audit/security-audit-checklist.md) |
+| Related | [01-curriculum.md](../../01-curriculum.md), [frontend.md](./frontend.md), [mobile stacks](../mobile/stacks.md), [REST API Best Practices](../../../../../standards/general/rest-api-best-practices.md), [Security Audit Checklist](../../../../../security/audit/security-audit-checklist.md) |

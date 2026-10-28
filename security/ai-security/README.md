@@ -10,7 +10,7 @@ This folder contains guidelines for securing AI/ML systems, models, and inferenc
 
 ## Quick Links
 
-- [Neural Security Guidelines](neural-security-guidelines.md)
+- [Neural Security Guidelines](ai-security-guidelines.md)
 
 ---
 
