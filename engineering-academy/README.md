@@ -50,7 +50,7 @@ engineering-academy/
 |---|---|
 | [Learning Levels](./learning-levels/01-foundation.md) | Defines demonstrated competence: Foundation, Practitioner, Advanced, Expert |
 | [Career Progression](./career-progression/01-transition-overview.md) | Guides transitions such as Junior to Senior, Senior to Team Lead, and Lead to Architect |
-| [Academy TODO](./academy-todo.md) | Tracks migration status, known gaps, and next priorities |
+| [Academy TODO](../docs/maintainers/academy-todo.md) | Tracks migration status, known gaps, and next priorities |
 
 ## Recommended Starting Points
 

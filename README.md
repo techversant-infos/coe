@@ -28,7 +28,7 @@ This repository contains Techversant's engineering standards, learning paths, au
 
 The academy structure lives under [engineering-academy](./engineering-academy/README.md).
 
-See [engineering-academy/academy-todo.md](./engineering-academy/academy-todo.md) for migration gaps and next priorities.
+See [docs/maintainers/academy-todo.md](./docs/maintainers/academy-todo.md) for migration gaps and next priorities.
 
 ---
 

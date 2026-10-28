@@ -1,7 +1,7 @@
 # How to Teach the Developer Excellence Curriculum
 
 > **Audience:** the *facilitator* the senior developer or tech lead who runs the pilot batch. Not a learner doc.
-> **Read alongside:** [01-curriculum.md](./01-curriculum.md) (the content) + [90-gap-analysis.md](./90-gap-analysis.md) (what's deliberately skipped, for context).
+> **Read alongside:** [01-curriculum.md](./01-curriculum.md) (the content) + [90-gap-analysis.md](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) (what's deliberately skipped, for context).
 
 ---
 
@@ -69,4 +69,4 @@ How to measure: tag the PRs with the topic number from the curriculum (e.g. `ref
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft for pilot-batch review |
-| Related | [01-curriculum.md](./01-curriculum.md), [README.md](./README.md), [90-gap-analysis.md](./90-gap-analysis.md) |
+| Related | [01-curriculum.md](./01-curriculum.md), [README.md](./README.md), [90-gap-analysis.md](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) |

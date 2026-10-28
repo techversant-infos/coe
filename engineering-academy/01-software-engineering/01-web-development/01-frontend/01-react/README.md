@@ -14,7 +14,7 @@ This folder contains the team's React learning resources. Start with the path do
 |---|---|---|
 | [**01-react-learning-path.md**](./01-react-learning-path.md) | The official team learning path 8 phases over 6 weeks | You're starting the React track, planning the pilot, or running a code review against the rubric |
 | [**roadmap.png**](./roadmap.png) | The community [React Developer Roadmap by adam-golab](https://github.com/adam-golab/react-developer-roadmap) (15422949) | You want a visual map of the wider React ecosystem |
-| [**90-roadmap-gap-analysis.md**](./90-roadmap-gap-analysis.md) | Reviewer-only: how our path maps to the full roadmap | You're a tech lead reviewing scope, planning a revision, or auditing pilot feedback |
+| [**90-roadmap-gap-analysis.md**](../../../../../docs/maintainers/gap-analyses/90-roadmap-gap-analysis.md) | Reviewer-only: how our path maps to the full roadmap | You're a tech lead reviewing scope, planning a revision, or auditing pilot feedback |
 
 ---
 
@@ -23,7 +23,7 @@ This folder contains the team's React learning resources. Start with the path do
 1. **New to React on the team?** Open [01-react-learning-path.md](./01-react-learning-path.md) and read the **Architecture call** at the top it sets the "React as a UI library for our Laravel API" frame for everything that follows.
 2. **Planning a pilot batch?** Read the **Suggested 6-Week Plan** and the **Weekly PR Assessment Rubric** those are the two operational artefacts the pilot will run on.
 3. **Coming from the Next.js path?** Read [01-react-learning-path.md](./01-react-learning-path.md) the React path is the **prerequisite foundation** for the [Next.js Learning Path](../02-nextjs/01-nextjs-learning-path.md).
-4. **Reviewing the path's scope?** Open [90-roadmap-gap-analysis.md](./90-roadmap-gap-analysis.md). It maps every branch of the community React roadmap to our path with a covered / partial / not-covered status, and lists what we deliberately skip. Not reader-facing.
+4. **Reviewing the path's scope?** Open [90-roadmap-gap-analysis.md](../../../../../docs/maintainers/gap-analyses/90-roadmap-gap-analysis.md). It maps every branch of the community React roadmap to our path with a covered / partial / not-covered status, and lists what we deliberately skip. Not reader-facing.
 
 ---
 
@@ -60,7 +60,7 @@ For the full model, see [standards/general/ai-era-coding-guidelines.md](../../..
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft pilot batch |
-| Related | [01-react-learning-path.md](./01-react-learning-path.md), [roadmap.png](./roadmap.png), [90-roadmap-gap-analysis.md](./90-roadmap-gap-analysis.md), [Next.js Learning Path](../02-nextjs/01-nextjs-learning-path.md) |
+| Related | [01-react-learning-path.md](./01-react-learning-path.md), [roadmap.png](./roadmap.png), [90-roadmap-gap-analysis.md](../../../../../docs/maintainers/gap-analyses/90-roadmap-gap-analysis.md), [Next.js Learning Path](../02-nextjs/01-nextjs-learning-path.md) |
 
 ---
 

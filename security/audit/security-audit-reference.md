@@ -139,7 +139,7 @@ team security session.
 3. "We scan dependencies" no longer satisfies A03 — build and distribution integrity are in scope (§5).
 
 A ColdFusion-specific worked example of all ten categories is available at
-[OWASP Top 10:2025 — ColdFusion view](../../engineering-academy/cf-consulting/01-coldfusion-deep-expertise/assets/owasp-top-10-2025-coldfusion.svg).
+[OWASP Top 10:2025 — ColdFusion view](../../engineering-academy/07-consulting/coldfusion/01-coldfusion-deep-expertise/assets/owasp-top-10-2025-coldfusion.svg).
 
 ---
 
@@ -1124,7 +1124,7 @@ Cache-Control: no-store          (on authenticated responses)
 | [REST API Best Practices](../../standards/general/rest-api-best-practices.md) | API contract, envelope, and error standards |
 | [PHP Coding Standards](../../standards/php/php-coding-standards.md) · [PHP Best Practices](../../standards/php/php-best-practices.md) | PHP security patterns |
 | [ColdFusion Style Guide](../../standards/coldfusion/coldfusion-style-guide.md) · [CF Code Review Checklist](../../standards/coldfusion/coldfusion-code-review-checklist.md) | CFML security practices |
-| [CF Security Review Checklist](../../engineering-academy/cf-consulting/DELIVERABLES/cf-security-review-checklist.md) | ColdFusion engagement-level review |
+| [CF Security Review Checklist](../../engineering-academy/07-consulting/coldfusion/deliverables/cf-security-review-checklist.md) | ColdFusion engagement-level review |
 | [Node.js/TypeScript Best Practices](../../standards/nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
 | [Techversant Git Workflow](../../standards/git/git-workflow.md) | Branch protection, review, and merge rules |
 | [Security Engineer skill](../../ai/skills-library/security-engineer/SKILL.md) | Threat modeling and secure review method |

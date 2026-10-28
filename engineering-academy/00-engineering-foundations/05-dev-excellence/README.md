@@ -48,14 +48,14 @@ It complements (does not replace) the tech-specific paths. After finishing the R
 | [**03-stack-translations/webdev/frontend.md**](./03-stack-translations/webdev/frontend.md) | Stack-specific translation web frontend | Pair with `01-curriculum.md` for every web frontend developer |
 | [**03-stack-translations/webdev/backend.md**](./03-stack-translations/webdev/backend.md) | Stack-specific translation server-side | Pair with `01-curriculum.md` for every backend developer |
 | [**03-stack-translations/mobile/stacks.md**](./03-stack-translations/mobile/stacks.md) | Stack-specific translation mobile | Pair with `01-curriculum.md` for every mobile developer |
-| [**90-gap-analysis.md**](./90-gap-analysis.md) | Reviewer-only what the curriculum covers, partially covers, and deliberately skips | When you're reviewing scope (tech lead, CoE review) |
+| [**90-gap-analysis.md**](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) | Reviewer-only what the curriculum covers, partially covers, and deliberately skips | When you're reviewing scope (tech lead, CoE review) |
 
 ## Where to start
 
 - ** New joiner (13 months in)** start at [Phase 1](./01-curriculum.md#phase-1-foundational-coding-discipline-beginner). Don't try to read it all at once. Pick *one* topic per week, apply it to your real PRs, and ask for code review on the change.
 - ** Pilot batch planner** start with [02-how-to-teach.md](./02-how-to-teach.md). It defines the format (one evolving codebase, live refactor, before/after). Pick 35 developers, run for 68 weeks, revisit at Week 2.
-- ** Senior developer / tech lead** start at the [gap analysis](./90-gap-analysis.md). Use it to challenge scope ("is *this* in the curriculum? if not, why not?"), and to feed the Week-2 review back into v0.2.
-- ** Reviewer (CoE audit)** start at the [Document Control](./01-curriculum.md#document-control) and the [gap analysis](./90-gap-analysis.md) coverage table. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
+- ** Senior developer / tech lead** start at the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md). Use it to challenge scope ("is *this* in the curriculum? if not, why not?"), and to feed the Week-2 review back into v0.2.
+- ** Reviewer (CoE audit)** start at the [Document Control](./01-curriculum.md#document-control) and the [gap analysis](../../../docs/maintainers/gap-analyses/90-gap-analysis.md) coverage table. This curriculum is human-led; AI-assisted drafting is OK, but the rubric is owned by humans.
 
 ## Related paths
 
@@ -96,7 +96,7 @@ The [AI Era Coding Guidelines](../../../standards/general/ai-era-coding-guidelin
 | Owner | CoE Web Working Group (with cross-team feedback from Mobile + Backend) |
 | Review Cycle | Quarterly |
 | Status | Draft first cross-team review open |
-| Related | [01-curriculum.md](./01-curriculum.md), [03-stack-translations/](./03-stack-translations/), [90-gap-analysis.md](./90-gap-analysis.md), [React Learning Path](../../01-software-engineering/01-web-development/01-frontend/01-react/01-react-learning-path.md), [Next.js Learning Path](../../01-software-engineering/01-web-development/01-frontend/02-nextjs/01-nextjs-learning-path.md) |
+| Related | [01-curriculum.md](./01-curriculum.md), [03-stack-translations/](./03-stack-translations/), [90-gap-analysis.md](../../../docs/maintainers/gap-analyses/90-gap-analysis.md), [React Learning Path](../../01-software-engineering/01-web-development/01-frontend/01-react/01-react-learning-path.md), [Next.js Learning Path](../../01-software-engineering/01-web-development/01-frontend/02-nextjs/01-nextjs-learning-path.md) |
 
 ---
 
