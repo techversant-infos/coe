@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** In progress (Phase 0 complete)
+**Status:** In progress (Phases 0 and 1 complete)
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -36,7 +36,7 @@ coe/
 | Phase | Scope | Status |
 |-------|-------|--------|
 | 0 | Baseline: sync with `origin/main`, park open work, add link checker and inventory | Done |
-| 1 | Safety fixes: untrack `secrets.env`, ignore rules, Claude permissions, file encoding | Not started |
+| 1 | Safety fixes: untrack `secrets.env`, ignore rules, Claude permissions, file encoding | Done |
 | 2 | Move files with `git mv` and kebab-case names. Fix links in the same change | Not started |
 | 3 | De-duplicate: one canonical source per topic, superseded copies to `archive/` | Not started |
 | 4 | Cross-links: fix broken links, add folder indexes, add CI checks | Not started |
