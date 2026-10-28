@@ -106,7 +106,7 @@ These standards apply to all code in this repository:
 | `standards/coldfusion/coldfusion-style-guide.md` | CFML conventions (2-space indent, `q` prefix for queries) |
 | `standards/nodejs/nodejs-typescript-best-practices.md` | Node.js service patterns (Zod, Pino, hexagonal) |
 | `ai/Codex/Codex-dev-cheatsheet.md` | Codex prompts, session controls, delegation levels |
-| `ai/prompts/developer_handbook_Full.md` | AI prompt templates for full development lifecycle |
+| `ai/prompts/developer-handbook-full.md` | AI prompt templates for full development lifecycle |
 
 ## Editor Config
 

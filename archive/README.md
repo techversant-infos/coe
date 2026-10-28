@@ -18,3 +18,4 @@
 |---------------|-------------|--------|-------------|----------|
 | [git/README.md](git/README.md) | 2026-10-28 | Demo leftover ("Git Hygiene Test Repo") | None | No |
 | [git/app.py](git/app.py) | 2026-10-28 | Demo leftover (prints one line) | None | No |
+| [ai/ai-team-best-practices.md](ai/ai-team-best-practices.md) | 2026-10-28 | 95% duplicate of the newer copy | [ai/guides/ai-team-best-practices.md](../ai/guides/ai-team-best-practices.md) | No |

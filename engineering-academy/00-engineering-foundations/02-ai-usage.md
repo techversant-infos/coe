@@ -52,4 +52,4 @@ Residual risk:
 ## Useful References
 
 - [Techversant AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
-- [AI team best practices](../../ai/ai-team-best-practices.md)
+- [AI team best practices](../../ai/guides/ai-team-best-practices.md)

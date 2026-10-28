@@ -525,7 +525,7 @@ Reference: [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/chea
 - [ ] Security requirements captured in the specification, not retrofitted at review
 - [ ] Security review triggered for changes listed in
       [Secure Engineering — Security Review Triggers](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
-- [ ] The [security-engineer skill](../../ai/claude/skills/security-engineer/SKILL.md) or an equivalent structured
+- [ ] The [security-engineer skill](../../ai/skills-library/security-engineer/SKILL.md) or an equivalent structured
       method is used for the STRIDE pass
 
 ### 8.2 Business logic and abuse cases
@@ -822,7 +822,7 @@ AI-backed feature.
 
 CoE references: [Neural Security Guidelines](../ai-security/ai-security-guidelines.md)
 · [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
-· [AI Team Best Practices](../../ai/ai-team-best-practices.md)
+· [AI Team Best Practices](../../ai/guides/ai-team-best-practices.md)
 External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)
 · [LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html)
 
@@ -883,7 +883,7 @@ Reference: [OWASP MASVS](https://owasp.org/www-project-mobile-app-security/)
 ## 16. Privacy and Data Protection
 
 Applies where the system processes personal data. Reference: [GDPR text](https://gdpr-info.eu/)
-· CoE: [Compliance Auditor skill](../../ai/claude/skills/compliance-auditor/SKILL.md)
+· CoE: [Compliance Auditor skill](../../ai/skills-library/compliance-auditor/SKILL.md)
 
 ### 16.1 Lawful basis and consent
 
@@ -1119,7 +1119,7 @@ Cache-Control: no-store          (on authenticated responses)
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, schedule, severity, evidence, exception process |
 | [Secure Engineering](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level minimum bar and review triggers |
 | [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
-| [AI Team Best Practices](../../ai/ai-team-best-practices.md) | Team-level AI working agreements |
+| [AI Team Best Practices](../../ai/guides/ai-team-best-practices.md) | Team-level AI working agreements |
 | [Neural Security Guidelines](../ai-security/ai-security-guidelines.md) | Model, training data, and inference security |
 | [REST API Best Practices](../../standards/general/rest-api-best-practices.md) | API contract, envelope, and error standards |
 | [PHP Coding Standards](../../standards/php/php-coding-standards.md) · [PHP Best Practices](../../standards/php/php-best-practices.md) | PHP security patterns |
@@ -1127,8 +1127,8 @@ Cache-Control: no-store          (on authenticated responses)
 | [CF Security Review Checklist](../../engineering-academy/cf-consulting/DELIVERABLES/cf-security-review-checklist.md) | ColdFusion engagement-level review |
 | [Node.js/TypeScript Best Practices](../../standards/nodejs/nodejs-typescript-best-practices.md) · [Review Checklist](../../standards/nodejs/nodejs-typescript-code-review-checklist.md) | Node.js security patterns |
 | [Techversant Git Workflow](../../standards/git/git-workflow.md) | Branch protection, review, and merge rules |
-| [Security Engineer skill](../../ai/claude/skills/security-engineer/SKILL.md) | Threat modeling and secure review method |
-| [Compliance Auditor skill](../../ai/claude/skills/compliance-auditor/SKILL.md) | Gap assessment and evidence collection method |
+| [Security Engineer skill](../../ai/skills-library/security-engineer/SKILL.md) | Threat modeling and secure review method |
+| [Compliance Auditor skill](../../ai/skills-library/compliance-auditor/SKILL.md) | Gap assessment and evidence collection method |
 | [Contributing](../../CONTRIBUTING.md) | How to propose a change to this document |
 
 ### 21.2 External standards and guidance

@@ -1,3 +1,5 @@
+> **Archived 2026-10-28.** Duplicate (95% identical) of [ai/guides/ai-team-best-practices.md](../../ai/guides/ai-team-best-practices.md), which is the newer and more complete copy. Kept until reviewed. See [archive/README.md](../README.md).
+
 # AI Usage Standards — Techversant Engineering
 **Version:** 1.0
 **Owner:** Engineering CoE

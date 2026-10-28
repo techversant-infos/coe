@@ -22,7 +22,7 @@ This repository contains Techversant's engineering standards, learning paths, au
 | [php](./standards/php/) | PHP / Laravel standards |
 | [nodejs](./standards/nodejs/) | Node.js / TypeScript standards |
 | [cf](./standards/coldfusion/) | ColdFusion / CFML standards |
-| [ai](./ai/) | AI prompts, tools, and productivity material |
+| [ai](./) | AI prompts, tools, and productivity material |
 
 ## Engineering Academy
 
