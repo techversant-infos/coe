@@ -1,5 +1,5 @@
 // cSpell configuration for CoE documents
-// Shared terms go in "words" below; names and one-off product terms go in .cspell/project-words.txt
+// Shared terms go in "words" below; names and one-off product terms go in .github/linters/cspell-words.txt
 
 {
   "version": "0.2",
@@ -191,16 +191,16 @@
   "dictionaryDefinitions": [
     {
       "name": "project-words",
-      "path": "./.cspell/project-words.txt",
+      "path": "./.github/linters/cspell-words.txt",
       "addWords": true
     }
   ],
   "dictionaries": [
     "project-words"
   ],
+  "useGitignore": true,
   "ignorePaths": [
     "**/node_modules/**",
-    "**/.git/**",
-    "archive/**"
+    "**/.git/**"
   ]
 }

@@ -1,6 +1,6 @@
 # Contributing to CoE Standards
 
-**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-10-28 · **Next review:** 2027-04-28
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-10-29 · **Next review:** 2027-04-28
 
 Thank you for helping improve Techversant's engineering standards. This guide explains how to propose changes, update existing documents, and maintain quality across the repository.
 
@@ -150,10 +150,10 @@ Maintain a changelog in each major document for significant updates:
 ## Moving, Renaming or Retiring a Document
 
 - Move or rename with `git mv`, so history follows the file, and fix every link in the same pull request.
-- Do not delete a superseded document. Move it to [archive/](./archive/README.md), add the banner described there,
-  and point its old links at the replacement.
-- If people share the old path outside the repository (chat, email, slides), leave a one-line redirect stub there
-  that starts with `<!-- redirect-stub: delete after the next release -->`.
+- Remove a superseded document in the pull request that adds its replacement, and name the replacement in the pull
+  request description. Git history keeps the old version.
+- Keep maintainer notes, drafts and personal scripts out of the repository. `docs/`, `archive/` and `scripts/` are
+  git-ignored for that purpose.
 
 ---
 
@@ -162,17 +162,17 @@ Maintain a changelog in each major document for significant updates:
 CI runs these on every pull request to `main`. Run them locally first:
 
 ```bash
-python scripts/check-links.py
-npx markdownlint-cli2@0.23.2 "**/*.md"
+python .github/scripts/check-links.py
+npx markdownlint-cli2@0.23.2 --config .github/linters/.markdownlint-cli2.jsonc "**/*.md"
 npx cspell@10.4.0 --no-progress "**/*.md"
 ```
 
 | Check | Finds | Configuration |
 |-------|-------|---------------|
-| `check-links.py` | Broken relative links, links to missing headings, references to removed folders, status dates out of order | `scripts/check-links.py` |
-| markdownlint | Formatting problems | `.markdownlint-cli2.jsonc` |
-| cspell | Spelling mistakes | `cspell.json`; add technical words to `.cspell/project-words.txt` |
-| Lychee (CI only) | Dead external links | `.lycheeignore` for sites that block automated checks |
+| `check-links.py` | Broken relative links, links to missing headings, references to removed folders, status dates out of order, links to git-ignored files | `.github/scripts/check-links.py` |
+| markdownlint | Formatting problems | `.github/linters/.markdownlint-cli2.jsonc` |
+| cspell | Spelling mistakes | `cspell.json`; add technical words to `.github/linters/cspell-words.txt` |
+| Lychee (CI only) | Dead external links | `--exclude` patterns in `.github/workflows/lint-markdown.yml` for sites that block automated checks |
 
 ---
 
