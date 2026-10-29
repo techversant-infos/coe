@@ -15,14 +15,15 @@ coe/
 |-- standards/            general/  git/  php/  nodejs/  coldfusion/
 |-- security/             audit/  ai-security/
 |-- ai/                   guides/  prompts/  skills-library/  presentations/
-|-- engineering-academy/  00-07 disciplines, learning-levels/, career-progression/
-|-- docs/maintainers/     restructure plan, inventory, academy TODO, gap analyses
-|-- archive/              superseded documents, never linked from live content
-`-- scripts/              check-links.py
+`-- engineering-academy/  00-07 disciplines, learning-levels/, career-progression/
 ```
 
-Each top-level folder has a README index. Files at the old paths (`audit/`, `cf/`, `general/`, `git/`, `neural/`,
-`nodejs/`, `php/`) are redirect stubs. Do not edit them or add new files there.
+Each top-level folder has a README index. `.github/` holds CI, the link checker (`.github/scripts/`) and lint
+configuration (`.github/linters/`); `.claude/` holds the agent kit.
+
+`docs/`, `archive/`, `scripts/` and the old root folders (`audit/`, `cf/`, `general/`, `git/`, `neural/`, `nodejs/`,
+`php/`) are git-ignored and exist only on a maintainer's machine. Never link to them, add files there or force-add
+them.
 
 ## Rules for AI-Assisted Work
 
@@ -51,7 +52,7 @@ This repository holds documents, so it skips the `dev` → `staging` promotion t
 - Keep the status line under each document title up to date
   (`**Status:** · **Owner:** · **Last updated:** · **Next review:**`). See [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Use kebab-case file names and relative links.
-- Move a superseded document to `archive/` with a banner. Do not delete it.
+- Remove a superseded document in the pull request that adds its replacement. Git history keeps it.
 - Academy content follows the rules in `.claude/rules/` and the templates in `.claude/templates/`.
 - Files use UTF-8 and LF line endings (`.gitattributes`). Indent with 2 spaces, 4 in PHP code.
 
@@ -60,16 +61,16 @@ This repository holds documents, so it skips the `dev` → `staging` promotion t
 Run these before you open a pull request. CI runs the same checks.
 
 ```bash
-python scripts/check-links.py
-npx markdownlint-cli2@0.23.2 "**/*.md"
+python .github/scripts/check-links.py
+npx markdownlint-cli2@0.23.2 --config .github/linters/.markdownlint-cli2.jsonc "**/*.md"
 npx cspell@10.4.0 --no-progress "**/*.md"
 ```
 
-- `check-links.py` finds broken relative links, links to missing headings, references to removed folders and
-  status lines whose next review comes before their last update.
-- markdownlint rules are in `.markdownlint-cli2.jsonc`. Some rules are off as a backlog; do not turn one on in an
+- `check-links.py` finds broken relative links, links to missing headings, links to git-ignored files,
+  references to removed folders and status lines whose next review comes before their last update.
+- markdownlint rules are in `.github/linters/.markdownlint-cli2.jsonc`. Some rules are off as a backlog; do not turn one on in an
   unrelated change.
-- Add new technical words to `.cspell/project-words.txt`, not to a document.
+- Add new technical words to `.github/linters/cspell-words.txt`, not to a document.
 
 ## Key Files
 
@@ -82,4 +83,3 @@ npx cspell@10.4.0 --no-progress "**/*.md"
 | [security/audit/security-audit-checklist.md](./security/audit/security-audit-checklist.md) | Security checklist for every pull request |
 | [ai/prompts/developer-handbook-full.md](./ai/prompts/developer-handbook-full.md) | Prompt templates for the development lifecycle |
 | [engineering-academy/README.md](./engineering-academy/README.md) | Academy disciplines and starting points |
-| [docs/maintainers/restructure-plan.md](./docs/maintainers/restructure-plan.md) | Current cleanup decisions and open items |

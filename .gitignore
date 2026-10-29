@@ -13,3 +13,19 @@ node_modules/
 
 # Personal Claude Code settings
 .claude/settings.local.json
+
+# Local only: maintainer notes, superseded documents, personal scripts and the old-path redirect stubs.
+# CI's link checker lives in .github/scripts/.
+/archive/
+/docs/
+/scripts/
+/audit/
+/cf/
+/general/
+/git/
+/neural/
+/nodejs/
+/php/
+
+# Internal ColdFusion presentation materials, kept out of the repository
+/engineering-academy/07-consulting/coldfusion/presentation/

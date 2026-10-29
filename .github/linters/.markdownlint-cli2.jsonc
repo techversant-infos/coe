@@ -1,5 +1,7 @@
-// markdownlint-cli2 settings, used by the Lint Markdown workflow and by editors
+// markdownlint-cli2 settings for the Lint Markdown workflow. Run locally with --config pointing at this file.
 {
+  // Skip the local-only folders listed in .gitignore
+  "gitignore": true,
   "config": {
     "MD033": { "allowed_elements": ["details", "summary", "br"] },
 
@@ -8,7 +10,7 @@
     "MD037": false,
 
     // Backlog: existing content breaks these rules. Turn each one back on once its count reaches 0.
-    // Counts as of 2026-10-28. Tracked in docs/maintainers/restructure-plan.md.
+    // Counts as of 2026-10-28.
     "MD001": false, //   7 heading levels skipped
     "MD003": false, //  40 mixed heading styles
     "MD005": false, // 186 inconsistent list indentation
@@ -26,7 +28,6 @@
     "MD060": false  // 4814 table pipe spacing (enforced by markdownlint-cli2 0.23.2, the version CI uses)
   },
   "ignores": [
-    "archive/**",
     ".claude/templates/**",
     "node_modules/**"
   ]

@@ -1,6 +1,6 @@
 # Techversant Engineering Academy
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
@@ -54,7 +54,6 @@ engineering-academy/
 |---|---|
 | [Learning Levels](./learning-levels/01-foundation.md) | Defines demonstrated competence: Foundation, Practitioner, Advanced, Expert |
 | [Career Progression](./career-progression/01-transition-overview.md) | Guides transitions such as Junior to Senior, Senior to Team Lead, and Lead to Architect |
-| [Academy TODO](../docs/maintainers/academy-todo.md) | Tracks migration status, known gaps, and next priorities |
 
 ## Recommended Starting Points
 
