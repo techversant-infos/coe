@@ -1,6 +1,6 @@
 # Module 9-02: Estimation
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 > Learn to size and estimate ColdFusion projects accurately.
 
@@ -41,7 +41,7 @@ By the end of this module, you will be able to:
 | Factor | Low | Medium | High |
 |--------|-----|--------|------|
 | **Framework Age** | Recent (< 5 years) | Mid-age (5-10 years) | Legacy (> 10 years) |
-| **CF Version** | CF2021+ | CF2018 or Lucee | CF10 or earlier |
+| **CF Version** | CF2023+ or Lucee 6.2+ | CF2018–CF2021 or Lucee 5.x | CF2016 or earlier |
 | **Code Quality** | Well-documented, tested | Some documentation | Minimal docs, no tests |
 | **Dependencies** | Standard libs | Some external libs | Many external dependencies |
 | **Deployment** | CI/CD in place | Manual deploys | Complex multi-server |

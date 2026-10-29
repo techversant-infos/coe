@@ -29,8 +29,8 @@
    ```
 
 2. **Set up local environment**
-   - Adobe ColdFusion 10+ or Lucee 5+
-   - SQL Server 2012+
+   - Adobe ColdFusion 2025 (Developer edition) or Lucee 6.2+
+   - SQL Server 2022 or 2025 (Developer or Express edition)
    - See [../README.md](../README.md) for detailed setup
 
 3. **Enable debugging**

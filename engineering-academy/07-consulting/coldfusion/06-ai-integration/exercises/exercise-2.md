@@ -103,9 +103,10 @@ Generate embeddings:
 ```cfml
 public array function generateEmbedding(required string text) {
     
+    // Quoted keys keep their case; Adobe ColdFusion upper-cases unquoted keys in serializeJSON
     local.payload = {
-        input: text,
-        model: "text-embedding-ada-002"
+        "input": text,
+        "model": "text-embedding-3-small"
     };
     
     cfhttp(method="POST",

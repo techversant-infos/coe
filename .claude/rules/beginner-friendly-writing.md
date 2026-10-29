@@ -158,12 +158,13 @@ function add(a, b) {
 
 ### Good Example
 
-```
+````markdown
 Let's learn about JavaScript variables.
 A variable is like a container that stores information.
 Think of it as a labeled box where you can put data.
 
 For example:
+
 ```javascript
 // Create a variable called "name" with the value "Alice"
 let name = "Alice";
@@ -171,16 +172,18 @@ let name = "Alice";
 ```
 
 In this example, "name" is our container, and "Alice" is what's inside.
-
-```
+````
 
 ### Bad Example
-```
 
+````markdown
 Variables store data in JavaScript.
-let name = "Alice";
 
+```javascript
+let name = "Alice";
 ```
+````
+
 (No explanation, no context, assumes prior knowledge)
 
 ## Anti-Patterns to Avoid

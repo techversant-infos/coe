@@ -74,7 +74,7 @@ Put this line directly under the document title:
 
 | Field | Values |
 |-------|--------|
-| Status | `Draft`, `Active`, `Planned`, or `Needs review` once the next review date has passed |
+| Status | `Draft`, `Active`, `Planned`, or `Needs review` once the next review date is reached |
 | Owner | The person or team who answers questions and approves changes |
 | Last updated | The date of the last content change, as `YYYY-MM-DD` |
 | Next review | 6 months after the last review for standards, security and academy content; 3 months for `ai/` |
@@ -169,7 +169,7 @@ npx cspell@10.4.0 --no-progress "**/*.md"
 
 | Check | Finds | Configuration |
 |-------|-------|---------------|
-| `check-links.py` | Broken relative links, links to missing headings, references to removed folders | `scripts/check-links.py` |
+| `check-links.py` | Broken relative links, links to missing headings, references to removed folders, status dates out of order | `scripts/check-links.py` |
 | markdownlint | Formatting problems | `.markdownlint-cli2.jsonc` |
 | cspell | Spelling mistakes | `cspell.json`; add technical words to `.cspell/project-words.txt` |
 | Lychee (CI only) | Dead external links | `.lycheeignore` for sites that block automated checks |

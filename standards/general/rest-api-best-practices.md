@@ -1,12 +1,12 @@
 # REST API Best Practices & Style Guide  
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-20 · **Next review:** 2026-05-20
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 **Version:** 3.0  
 **Audience:** Backend Developers, Architects, QA  
 **Scope:** Company-wide (Framework-agnostic, reusable across all teams)**
 
-# 1. Core Principles
+## 1. Core Principles
 
 - **Resource-oriented:** APIs should expose nouns, not verbs.  
 - **Consistency over cleverness:** Every team should follow the same naming, structure, and behavior patterns.
@@ -14,9 +14,9 @@
 - **Stateless:** Server stores no client-specific session state.
 - **Discoverability:** Endpoints should be guessable by developers.
 
-# 2. URL Design & Naming
+## 2. URL Design & Naming
 
-## 2.1 Versioning Strategy (Mandatory)
+### 2.1 Versioning Strategy (Mandatory)
 
 Use version prefix in every endpoint:
 
@@ -25,7 +25,7 @@ https://api.company.com/v1/
 https://api.company.com/v2/
 ```
 
-## 2.2 Naming Conventions
+### 2.2 Naming Conventions
 
 - **Plural nouns** for resources  
   `/customers`, `/orders`, `/transactions`
@@ -34,7 +34,7 @@ https://api.company.com/v2/
   ❌ `/createCustomer`  
   ✔ `/customers`
 
-## 2.3 Standard Resource Structure
+### 2.3 Standard Resource Structure
 
 ```
 GET    /customers
@@ -44,14 +44,14 @@ PATCH  /customers/{id}
 DELETE /customers/{id}
 ```
 
-## 2.4 Nested Resources (Max Depth = 2)
+### 2.4 Nested Resources (Max Depth = 2)
 
 ```
 GET /customers/{id}/orders
 POST /customers/{id}/addresses
 ```
 
-## 2.5 Action Endpoints (Non-CRUD)
+### 2.5 Action Endpoints (Non-CRUD)
 
 ```
 POST /customers/{id}/activate
@@ -60,7 +60,7 @@ POST /auth/login
 POST /auth/logout
 ```
 
-# 3. HTTP Methods & Idempotency
+## 3. HTTP Methods & Idempotency
 
 | Method | Purpose | Idempotent |
 |--------|---------|------------|
@@ -70,7 +70,7 @@ POST /auth/logout
 | PATCH  | Partial update | Ideally yes |
 | DELETE | Remove resource | Yes |
 
-## 3.1 Idempotency for POST  
+### 3.1 Idempotency for POST  
 
 For payment, loyalty redemption, coupon usage, etc.
 
@@ -80,9 +80,9 @@ Idempotency-Key: <uuid>
 
 If duplicate POST arrives with same key → return **same response**, not duplicate action.
 
-# 4. Request Payload Standards
+## 4. Request Payload Standards
 
-## 4.1 JSON Naming Convention (Strict)
+### 4.1 JSON Naming Convention (Strict)
 
 Use **camelCase** for JSON keys:
 
@@ -95,7 +95,7 @@ phoneNumber
 
 Avoid mixing different conventions.
 
-## 4.2 Boolean Naming Convention (MANDATORY)
+### 4.2 Boolean Naming Convention (MANDATORY)
 
 Booleans MUST use prefixes:
 
@@ -115,7 +115,7 @@ enabled
 verified
 ```
 
-## 4.3 Date Format (ISO 8601 Only)
+### 4.3 Date Format (ISO 8601 Only)
 
 ```
 "birthDate": "1990-12-24"
@@ -123,21 +123,21 @@ verified
 "updatedAt": "2025-01-20T14:30:00+05:30"
 ```
 
-## 4.4 Numeric Format
+### 4.4 Numeric Format
 
 ```
 "salary": 45000.50
 "quantity": 3
 ```
 
-## 4.5 Null vs Missing Fields
+### 4.5 Null vs Missing Fields
 
 - Use `null` only when intentional.
 - Prefer omission for optional fields.
 
-# 5. Success & Error Responses
+## 5. Success & Error Responses
 
-## 5.1 Success Response Format
+### 5.1 Success Response Format
 
 ```json
 {
@@ -153,7 +153,7 @@ verified
 }
 ```
 
-## 5.2 Error Response Format
+### 5.2 Error Response Format
 
 ```json
 {
@@ -167,7 +167,7 @@ verified
 }
 ```
 
-## 5.3 Should we include HTTP Status Code inside JSON?
+### 5.3 Should we include HTTP Status Code inside JSON?
 
 Optional for debugging:
 
@@ -180,7 +180,7 @@ Optional for debugging:
 }
 ```
 
-# 6. HTTP Status Codes (Descriptive)
+## 6. HTTP Status Codes (Descriptive)
 
 ### 2xx Success
 
@@ -210,9 +210,9 @@ Optional for debugging:
 | **500** | Unexpected server failure |
 | **503** | Upstream service unavailable |
 
-# 7. Validation Error Examples
+## 7. Validation Error Examples
 
-## 7.1 Single Error
+### 7.1 Single Error
 
 ```json
 {
@@ -224,7 +224,7 @@ Optional for debugging:
 }
 ```
 
-## 7.2 Multiple Errors
+### 7.2 Multiple Errors
 
 ```json
 {
@@ -240,7 +240,7 @@ Optional for debugging:
 }
 ```
 
-## 7.3 Nested Object Errors
+### 7.3 Nested Object Errors
 
 ```json
 {
@@ -253,7 +253,7 @@ Optional for debugging:
 }
 ```
 
-## 7.4 Array Errors
+### 7.4 Array Errors
 
 ```json
 {
@@ -266,21 +266,21 @@ Optional for debugging:
 }
 ```
 
-# 8. Filtering, Sorting & Pagination
+## 8. Filtering, Sorting & Pagination
 
-## 8.1 Pagination
+### 8.1 Pagination
 
 ```
 GET /customers?page=1&pageSize=20
 ```
 
-## 8.2 Basic Filters
+### 8.2 Basic Filters
 
 ```
 GET /customers?tier=gold&isActive=true
 ```
 
-# 8.3 Advanced Filters (Descriptive)
+### 8.3 Advanced Filters (Descriptive)
 
 We use **suffix-based operator naming**, because it is:
 
@@ -288,7 +288,7 @@ We use **suffix-based operator naming**, because it is:
 ✔ Easy to parse  
 ✔ Matches Stripe, Shopify standards  
 
-### Supported Operators
+#### Supported Operators
 
 | Operator | Meaning | Example |
 |----------|---------|---------|
@@ -300,68 +300,68 @@ We use **suffix-based operator naming**, because it is:
 | `_in` | In list | `filter[tier_in]=gold,silver,platinum` |
 | `_between` | Value in range | `filter[amount_between]=500,5000` |
 
-### Examples
+#### Examples
 
-#### **1. Salary > 2000**
+##### **1. Salary > 2000**
 
 ```
 GET /employees?filter[salary_gt]=2000
 ```
 
-#### **2. Created between 1 Jan and 31 Jan**
+##### **2. Created between 1 Jan and 31 Jan**
 
 ```
 GET /transactions?filter[createdAt_gte]=2025-01-01&filter[createdAt_lte]=2025-01-31
 ```
 
-#### **3. Tier in (Gold, Silver)**
+##### **3. Tier in (Gold, Silver)**
 
 ```
 GET /customers?filter[tier_in]=gold,silver
 ```
 
-#### **4. Discount between 10% and 25%**
+##### **4. Discount between 10% and 25%**
 
 ```
 GET /products?filter[discount_between]=10,25
 ```
 
-#### **5. Multiple filters combined**
+##### **5. Multiple filters combined**
 
 ```
 GET /transactions?filter[amount_gt]=5000&filter[city_in]=Kochi,Bangalore&filter[isActive]=true
 ```
 
-# 8.4 Sorting (Detailed Examples)
+### 8.4 Sorting (Detailed Examples)
 
-### Format:
+#### Format:
 
 ```
 sort=fieldName
 sort=-fieldName  // descending
 ```
 
-### Examples:
+#### Examples:
 
-#### Sort customers by creation date (latest first)
+##### Sort customers by creation date (latest first)
 
 ```
 GET /customers?sort=-createdAt
 ```
 
-#### Sort transactions by amount ASC, then date DESC
+##### Sort transactions by amount ASC, then date DESC
 
 ```
 GET /transactions?sort=amount,-createdAt
 ```
 
-#### Sort employees by salary ASC
+##### Sort employees by salary ASC
 
 ```
 GET /employees?sort=salary
 ```
 
-# 9. Security
+## 9. Security
 
 ### Authorization Header
 
@@ -377,7 +377,7 @@ Authorization: Bearer <token>
 - Tokens  
 - Secrets  
 
-# 10. Rate Limiting
+## 10. Rate Limiting
 
 ### Response Headers
 
@@ -398,7 +398,7 @@ X-RateLimit-Reset: 1737480912
 }
 ```
 
-# 11. Concurrency & ETags
+## 11. Concurrency & ETags
 
 ### Example:
 
@@ -418,7 +418,7 @@ If mismatch:
 409 Conflict
 ```
 
-# 12. Versioning (Detailed)
+## 12. Versioning (Detailed)
 
 ### 12.1 URL Versioning (Preferred)
 
@@ -434,7 +434,7 @@ If mismatch:
 - No branching logic:  
   ❌ `if version == 1`  
 
-# 13. Logging & Observability
+## 13. Logging & Observability
 
 Log:
 
@@ -451,14 +451,14 @@ Never Log:
 - Tokens  
 - Secrets  
 
-# 14. Testing Requirements
+## 14. Testing Requirements
 
 - Unit tests  
 - Integration tests  
 - Contract tests  
 - Smoke tests  
 
-# 15. Deprecation Policy
+## 15. Deprecation Policy
 
 Include:
 
@@ -467,7 +467,7 @@ Deprecation: true
 Sunset: 2026-01-31
 ```
 
-# 16. API Review Checklist
+## 16. API Review Checklist
 
 - [ ] Naming conventions followed  
 - [ ] Boolean naming correct  

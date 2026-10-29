@@ -1,6 +1,6 @@
 # Phase 3: Modernization Strategy
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 > Learn to recommend the right modernization path for each client's situation.
 
@@ -50,7 +50,8 @@ By the end of this phase, you will be able to:
 
 **Option A: Stay on ColdFusion**
 
-- Upgrading Adobe ColdFusion (CF2018 → CF2021 → CF2023 → CF2025)
+- Upgrading Adobe ColdFusion straight to CF2025 (CF2021 support ends on 2026-11-10; CF2023 is supported
+  until 2028-05-16)
 - Continuing Lucee with support
 - When this makes sense
 

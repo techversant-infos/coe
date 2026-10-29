@@ -1,6 +1,6 @@
 # AI Productivity Presentation — Blueprint v3
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-22
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
 
 **Session title:** Don't let AI work for you. Work better with AI.
 **Target:** 15 slides · 35–40 minutes

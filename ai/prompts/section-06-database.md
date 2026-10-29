@@ -1,6 +1,6 @@
 # 🗄️ Section 6 — Prompt for Database Schema, Table & Index Creation
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-04-21 · **Next review:** 2026-07-21
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Generate a complete, production-ready database setup — schema, table, constraints, and indexes — ready to execute on a fresh database.
@@ -35,7 +35,7 @@ You are a senior database architect.
 
 Create a complete database setup script for an Employee Management Module.
 
-Database Engine: [Your DB — e.g., MySQL 8.0 / PostgreSQL 15]
+Database Engine: [Your DB — e.g., MySQL 8.4 / PostgreSQL 17]
 
 Deliver the following in order:
 
@@ -131,7 +131,7 @@ Constraint: Script must run without errors on a fresh database.
 
 ---
 
-> 💡 **Pro Tip:** Replace `[Your DB — e.g., MySQL 8.0 / PostgreSQL 15]` with your actual database engine and version. The generated SQL syntax will differ between engines — always specify.
+> 💡 **Pro Tip:** Replace `[Your DB — e.g., MySQL 8.4 / PostgreSQL 17]` with your actual database engine and version. The generated SQL syntax will differ between engines — always specify.
 
 ---
 

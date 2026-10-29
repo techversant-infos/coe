@@ -1,6 +1,6 @@
 # 🚀 Section 7 — Prompt for Starting Development
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 > **Module:** Employee Management (Create / Update / Delete / Get Employee)
 > **Purpose:** Ask all setup and configuration questions before writing a single line of code — preventing mismatched assumptions and expensive rework.
@@ -83,9 +83,9 @@ Answer each of these clearly before code generation begins:
 
 | Question | Options / Examples |
 |----------|-------------------|
-| **Programming language & version** | Java 17, Node.js 24, Python 3.11 |
-| **Framework & version** | Spring Boot 3.2, Express 4, FastAPI 0.110 |
-| **Database type & version** | MySQL 8.0, PostgreSQL 15, MongoDB 7 |
+| **Programming language & version** | Java 25, Node.js 24, Python 3.14 |
+| **Framework & version** | Spring Boot 4.1, Express 5, Laravel 13 |
+| **Database type & version** | MySQL 8.4, PostgreSQL 17, MongoDB 8.0 |
 | **Authentication** | JWT / OAuth2 / Session / None |
 | **Validation rules** | Email format, name length, salary range, etc. |
 | **API response format** | Standard wrapper `{ status, data, message }` or plain object |
@@ -167,7 +167,7 @@ Sample Unit Test
 
 | Tip | Why It Helps |
 |-----|-------------|
-| Always specify exact versions | `Spring Boot 3.2` behaves differently from `Spring Boot 2.7` |
+| Always specify exact versions | `Spring Boot 4` behaves differently from `Spring Boot 3` |
 | Clarify soft vs hard delete upfront | Changing this after generation is expensive |
 | Define the API response format first | Affects every controller and exception handler |
 | State validation rules per field | Prevents vague or incorrect annotations |

@@ -1,6 +1,6 @@
 # Phase 7: UI/API Modernization
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 > Modernize the front end and APIs of ColdFusion applications without rewriting the back end.
 
@@ -145,7 +145,7 @@ component {
 
 ### 5. Accessibility (A11Y)
 
-- WCAG 2.1 requirements
+- WCAG 2.2 requirements
 - Semantic HTML
 - ARIA attributes
 - Keyboard navigation
@@ -168,7 +168,7 @@ component {
 | [Exercise 2: CF REST API](./exercises/exercise-2.md) | Build API endpoints | Working REST API |
 | [Exercise 3: React + CF](./exercises/exercise-3.md) | Connect React to CF API | Full CRUD SPA |
 | [Exercise 4: Progressive Enhancement](./exercises/exercise-4.md) | Search that works without JavaScript | Progressively enhanced search |
-| [Exercise 5: Accessibility Audit](./exercises/exercise-5.md) | Fix accessibility issues | WCAG 2.1 AA compliant form |
+| [Exercise 5: Accessibility Audit](./exercises/exercise-5.md) | Fix accessibility issues | WCAG 2.2 AA compliant form |
 
 ## Assessment
 
@@ -179,7 +179,7 @@ Complete all exercises and pass the [phase assessment](./assessment.md) with 70%
 - [Bootstrap Documentation](https://getbootstrap.com/)
 - [React Documentation](https://react.dev/)
 - [Vue Documentation](https://vuejs.org/)
-- [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [WCAG 2.2 quick reference](https://www.w3.org/WAI/WCAG22/quickref/)
 
 ## Time Estimate
 

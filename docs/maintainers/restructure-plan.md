@@ -3,7 +3,7 @@
 > Tracks the cleanup of the CoE repository: one obvious folder structure, no duplicate content, working
 > cross-links, and every document marked with its status.
 
-**Status:** Phases 0 to 6 complete. Waiting for review and merge
+**Status:** Phases 0 to 6 and the post-restructure audit fixes complete. Waiting for review and merge
 **Branch:** `chore/COE-repo-restructure`
 
 ## Decisions
@@ -173,6 +173,31 @@ benchmarks (a note says CF2025 benchmarks are missing), and the Ollama model lis
 - **Academy TODO** drops the finished migration items and adds the consulting discipline.
 - Local check commands are pinned to the versions CI uses: markdownlint-cli2 0.23.2 and cspell 10.4.0.
 
+## Audit Fixes (2026-10-29)
+
+An audit after Phase 6 checked structure, links and facts. Lychee found one dead link in CI (OWASP MASVS, now
+`mas.owasp.org/MASVS/`). These findings were fixed in the same pull request:
+
+| Finding | Fix |
+|---------|-----|
+| `AGENTS.md` sent this repo's pull requests to `dev`, but CI runs on pull requests to `main` | Pull requests for this repo go to `main`; product teams keep the `dev` → `staging` → `main` flow |
+| ColdFusion AI module listed GPT-4 and the OpenAI Assistants API, both shut down in 2026 | Responses API, with a link to OpenAI's deprecations page; embeddings example uses `text-embedding-3-small` and quoted keys |
+| Modernization path and estimation risk table treated CF2021 as current | Upgrade straight to CF2025; low risk is CF2023+ or Lucee 6.2+ |
+| 8 status lines had a next review before the last update | Next review set to the update date (review due); `check-links.py` now fails on this |
+| Nested code fences broke rendering in 4 files | Outer fences use four backticks; stray blank lines from the Phase 4 autofix removed |
+| Capstone required ColdFusion 10+, Lucee 5+ and SQL Server 2012+ | ColdFusion 2025 or Lucee 6.2+, SQL Server 2022 or 2025 |
+| Prompt examples named Spring Boot 3.2, MySQL 8.0, PostgreSQL 15, Express 4 | Spring Boot 4.1, MySQL 8.4, PostgreSQL 17, Express 5, Java 25, Python 3.14 |
+| UI modernization required WCAG 2.1 AA | WCAG 2.2 AA |
+| PHP standards described a `develop` branch | Linked to the git standard: `dev`, `staging`, `main` |
+| Security reference table linked NIST SP 800-63B revision 3 | SP 800-63B-4, as the body already did |
+| REST API guide had 19 top-level headings | One title; sections are H2 and sub-sections H3, anchors unchanged |
+
+Still open from the audit: 24 redirecting URLs, partial Red Zone lists in the cheat sheet and audit framework,
+non-kebab-case `QUICKSTART.md` and `CF_Consulting_Practice_Tracker.xlsx`, unreferenced presentation assets,
+missing `docs/` and `scripts/` READMEs, thin learning-level definitions, the consulting phases' lesson layout,
+duplicated date lines beside status lines, the third-party `ai/skills-library` formatting, and 7 non-standard
+status lines.
+
 ## Parked Work
 
 These sit on local branches so they do not mix with the restructure:
@@ -184,11 +209,12 @@ These sit on local branches so they do not mix with the restructure:
 
 ## Open Items
 
-- Push `chore/COE-repo-restructure` and open a pull request to `main`. Nothing is pushed yet.
+- Merge [pull request 14](https://github.com/techversant-infos/coe/pull/14) into `main`.
 - Name an owner for each area. Status lines and the inventory say `TBD`.
-- Run the Lychee external link check in CI. It cannot run locally; every URL changed here was checked by hand.
-- Decide how to reconcile `origin/dev`, which has 8 commits that `main` lacks.
+- Reset or delete `origin/dev`: its 8 extra commits are sync commits with the same content as `main`.
+- Delete `feature/COE-coldfusion-deep-expertise`, which is fully merged.
 - Confirm the Red Zone list (see Phase 3 Results). Branch naming now follows the git standard.
 - Review the 22 documents marked `Needs review`, starting with the stack standards.
+- Work through the open audit items listed under Audit Fixes.
 - Delete the 16 redirect stubs after the next release.
 - Work down the markdownlint backlog in `.markdownlint-cli2.jsonc`, one rule per pull request.

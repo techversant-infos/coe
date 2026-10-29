@@ -37,11 +37,13 @@ The rules live in [AI Era Coding Guidelines](./standards/general/ai-era-coding-g
 
 ## Git
 
-Follow [Git Workflow](./standards/git/git-workflow.md):
+This repository holds documents, so it skips the `dev` → `staging` promotion that product teams follow in
+[Git Workflow](./standards/git/git-workflow.md):
 
 - Branch from `main` as `feature/<type>-<JIRA-ID>-<description>`, for example `feature/fix-AGL-881-rounding`.
 - Write [Conventional Commits](https://www.conventionalcommits.org/): `docs(security): add SSRF checks`.
-- Open pull requests against `dev`. Code moves `dev` → `staging` → `main`, and a tag deploys to production.
+- Open pull requests against `main`. CI runs the checks on every pull request to `main`, and a change takes effect
+  when it merges.
 - Never force-push to a shared branch.
 
 ## Writing and Editing Documents
@@ -63,7 +65,8 @@ npx markdownlint-cli2@0.23.2 "**/*.md"
 npx cspell@10.4.0 --no-progress "**/*.md"
 ```
 
-- `check-links.py` finds broken relative links, links to missing headings and references to removed folders.
+- `check-links.py` finds broken relative links, links to missing headings, references to removed folders and
+  status lines whose next review comes before their last update.
 - markdownlint rules are in `.markdownlint-cli2.jsonc`. Some rules are off as a backlog; do not turn one on in an
   unrelated change.
 - Add new technical words to `.cspell/project-words.txt`, not to a document.

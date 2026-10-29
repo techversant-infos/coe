@@ -1,6 +1,6 @@
 # Phase 6: AI Integration
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 > Add modern AI capabilities to existing ColdFusion systems.
 
@@ -83,7 +83,8 @@ By the end of this phase, you will be able to:
 **API Providers:**
 
 - Claude API (Anthropic)
-- OpenAI API (GPT-4, Assistants)
+- OpenAI API (Responses API; the Assistants API and GPT-4 were shut down in 2026, see
+  [OpenAI deprecations](https://developers.openai.com/api/docs/deprecations))
 - Azure OpenAI
 - Local models (Ollama)
 
@@ -174,7 +175,7 @@ Contribute to the [CF AI Integration Playbook](../deliverables/cf-ai-integration
 
 - Planned: AI fundamentals documentation
 - [Claude API Documentation](https://docs.anthropic.com/)
-- [OpenAI API Documentation](https://platform.openai.com/docs)
+- [OpenAI API Documentation](https://developers.openai.com/api/docs)
 - [RAG Patterns](https://arxiv.org/abs/2005.11401)
 
 ## Time Estimate

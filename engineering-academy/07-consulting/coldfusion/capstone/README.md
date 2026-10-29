@@ -1,6 +1,6 @@
 # Capstone Application: BlogCFC5
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
 
 > A real ColdFusion blogging application used throughout the curriculum.
 
@@ -62,9 +62,13 @@ Real features include:
 
 | Requirement | Version |
 |-------------|---------|
-| ColdFusion | 10+ (Adobe) or Lucee 5+ |
-| SQL Server | 2012+ |
+| ColdFusion | Adobe ColdFusion 2025 (free Developer edition) or Lucee 6.2+ |
+| SQL Server | 2022 or 2025 (free Developer or Express edition) |
 | CommandBox | (optional, for Lucee) |
+
+> **Note:** BlogCFC5 was written for much older engines, and older versions are no longer supported or available to
+> download. Record every compatibility error you hit on a current engine. Those errors are findings for your legacy
+> assessment.
 
 ### Option 1: Adobe ColdFusion
 

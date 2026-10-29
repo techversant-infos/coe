@@ -1,6 +1,6 @@
 # PHP Coding Standards  
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 **Version:** 1.1  
 **Issued by:** Techversant Center of Excellence (CoE)  
@@ -182,7 +182,7 @@ try {
 
 ## 8. Version Control & Branching
 
-- Branches: `main` (prod), `develop` (integration), `feature/*` (work), `hotfix/*` (urgent).  
+- Branches: `main` (production), `staging` (pre-release), `dev` (integration), `feature/<type>-<JIRA-ID>-<description>` for work and `feature/hotfix-<JIRA-ID>-<description>` for urgent fixes. See [Git Workflow](../git/git-workflow.md).  
 - **Conventional Commits**:  
   - `feat: add user login flow`  
   - `fix: correct email validation`  

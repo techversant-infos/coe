@@ -1,6 +1,6 @@
 # Techversant Engineering Coding Standards for the AI Era
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-05-10
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
 
 **Issued by:** Center of Excellence (CoE)  
 **Effective Date:** November 2025  

@@ -1,6 +1,6 @@
 # 🛠️ Developer Prompt Handbook — Employee Module
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 > **A complete reference of AI prompts for every stage of building the Employee Management Module.**
 > Sections 4–9 are summaries here. Each one links to its own file, which holds the full prompt and tips.
@@ -45,7 +45,7 @@ I am starting a new project to build an Employee Management Module.
 
 Tech Stack:
   - Backend  : [Your language & framework — e.g., Java 17 + Spring Boot 3]
-  - Database : [Your DB — e.g., MySQL 8.0]
+  - Database : [Your DB — e.g., MySQL 8.4]
   - Build    : [Your build tool — e.g., Maven / Gradle]
   - Testing  : [Your test framework — e.g., JUnit 5 + Mockito]
 

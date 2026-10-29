@@ -62,7 +62,7 @@ engineering-academy/
 - Use comments to explain key points
 - Show expected output when relevant
 
-```markdown
+````markdown
 ```javascript
 // Example with comments
 function greet(name) {
@@ -70,10 +70,10 @@ function greet(name) {
 }
 // Expected: "Hello, World!"
 ```
-
-```
+````
 
 ### Tables
+
 - Use tables for structured data
 - Keep columns aligned
 - Use consistent formatting

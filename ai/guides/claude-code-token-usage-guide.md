@@ -1,6 +1,6 @@
 # Claude Code — Token Efficiency & Model Routing Guide
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-08-11
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
 
 **Techversant CoE Initiative · Shared API Key Usage Standards**
 

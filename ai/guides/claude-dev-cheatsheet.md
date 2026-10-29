@@ -1,6 +1,6 @@
 # Claude Cheat Sheet — Developer Edition
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
 
 **Techversant Infotech · Engineering CoE**
 *"Don't let AI work for you. Work better with AI."*

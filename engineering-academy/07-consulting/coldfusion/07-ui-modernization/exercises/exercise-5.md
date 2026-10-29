@@ -9,7 +9,7 @@ Learn to implement and verify WCAG accessibility standards.
 ## Scenario
 
 **Application:** Contact form
-**Requirement:** WCAG 2.1 AA compliance
+**Requirement:** WCAG 2.2 AA compliance
 
 ## Instructions
 

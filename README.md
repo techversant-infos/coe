@@ -42,7 +42,7 @@ Every standard, security document, AI guide and academy README starts with a sta
 **Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
 ```
 
-`Needs review` means the review date has passed. Use the document, but check versions and dates before you rely
+`Needs review` means a full review is due or overdue. Use the document, but check versions and dates before you rely
 on them.
 
 ## Contributing

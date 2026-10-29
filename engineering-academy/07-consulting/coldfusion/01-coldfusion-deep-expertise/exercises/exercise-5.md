@@ -160,34 +160,34 @@ private boolean function checkRateLimit(required string clientId) {
 
 Create API documentation:
 
-```markdown
+````markdown
 # Tasks API
 
 ## Authentication
 
 All requests require an API key in the header:
-```
 
+```http
 X-API-Key: your-api-key
-
 ```
 
 ## Endpoints
 
 ### List Tasks
-```
 
+```http
 GET /api/tasks
-
 ```
 
 **Parameters:**
+
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | page | int | No | Page number (default: 1) |
 | perPage | int | No | Items per page (default: 20, max: 100) |
 
 **Response:** 200 OK
+
 ```json
 {
     "data": [...],
@@ -197,7 +197,7 @@ GET /api/tasks
 
 ### Create Task
 
-```
+```http
 POST /api/tasks
 Content-Type: application/json
 
@@ -208,8 +208,7 @@ Content-Type: application/json
 ```
 
 **Response:** 201 Created
-
-```
+````
 
 ## Expected Outcome
 

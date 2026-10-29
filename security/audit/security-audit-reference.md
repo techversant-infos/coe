@@ -1147,7 +1147,7 @@ Cache-Control: no-store          (on authenticated responses)
 | [CVSS v4.0](https://www.first.org/cvss/v4-0/) | Severity scoring |
 | [EPSS](https://www.first.org/epss/) | Exploit-likelihood triage |
 | [CWE Top 25](https://cwe.mitre.org/top25/) | Weakness taxonomy for findings |
-| [NIST SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html) | Authenticator and password guidance (§6.4) |
+| [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html) | Authenticator and password guidance (§6.4) |
 | [NIST SP 800-218 (SSDF)](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure software development framework |
 | [SLSA](https://slsa.dev/) · [Sigstore](https://www.sigstore.dev/) | Build provenance and artifact signing (§5.3) |
 | [CycloneDX](https://cyclonedx.org/) · [SPDX](https://spdx.dev/) | SBOM formats (§5.4) |

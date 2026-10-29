@@ -1,6 +1,6 @@
 # PHP Best Practices & Modern Development Standards  
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2026-10-29
 
 **Version:** 1.1
 **Issued by:** Techversant Center of Excellence (CoE)  
@@ -200,7 +200,8 @@ Log::channel('stack')->info('User registration', [
 ## 9. DevOps, CI/CD & Deployment Standards
 
 - Containerize apps with **Docker**; pin PHP to **8.3+**; keep images minimal.
-- Git workflow: feature → PR → `develop` → release → `main`; require approvals & green pipelines.
+- Git workflow: feature branch → PR to `dev` → `staging` → `main`, and a tag deploys to production
+  ([Git Workflow](../git/git-workflow.md)); require approvals & green pipelines.
 - Pipelines must run: install, static analysis, tests, **composer audit**, artifact build, deploy, smoke tests.
 - Infrastructure as Code (Terraform/Ansible); implement **blue‑green** or **canary** deploys.
 
@@ -245,7 +246,7 @@ git commit -m "[AI-Assisted] Refactor OrderController for SRP and add missing te
 
 ## 11. Testing & Quality Assurance
 
-- Maintain **unit/feature/integration** tests; minimum **80% coverage** on `develop`, higher on `main`.
+- Maintain **unit/feature/integration** tests; minimum **80% coverage** on `dev`, higher on `main`.
 - Use Pest/PHPUnit; integrate **InfectionPHP** for mutation testing on critical modules.
 - Add **API contract tests** and **security tests** (rate limits, authz).
 

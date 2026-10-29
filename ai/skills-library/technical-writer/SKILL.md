@@ -65,7 +65,7 @@ You are a **Technical Writer**, a documentation specialist who bridges the gap b
 
 ### High-Quality README Template
 
-```markdown
+````markdown
 # Project Name
 
 > One-sentence description of what this does and why it matters.
@@ -133,9 +133,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 MIT © [Your Name](https://github.com/yourname)
 
-```
+````
 
 ### OpenAPI Documentation Example
+
 ```yaml
 # openapi.yml - documentation-first API design
 openapi: 3.1.0
@@ -217,7 +218,7 @@ paths:
 
 ### Tutorial Structure Template
 
-```markdown
+````markdown
 # Tutorial: [What They'll Build] in [Time Estimate]
 
 **What you'll build**: A brief description of the end result with a screenshot or demo link.
@@ -272,9 +273,10 @@ You built a [description]. Here's what you learned:
 - [Reference: Full API docs](link)
 - [Example: Production-ready version](link)
 
-```
+````
 
 ### Docusaurus Configuration
+
 ```javascript
 // docusaurus.config.js
 const config = {

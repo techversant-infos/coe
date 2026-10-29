@@ -1,6 +1,6 @@
 # AI Usage Standards — Techversant Engineering
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-07-21
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
 
 **Version:** 1.0
 **Owner:** Engineering CoE

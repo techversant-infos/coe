@@ -9,6 +9,7 @@ Checks:
   - A #fragment on a link to another markdown file names a heading in that file.
     Same-file fragments are checked by markdownlint (MD051).
   - No file references the removed `learning-paths/` folder (docs/maintainers/ is exempt).
+  - A document status line never has a Next review date earlier than its Last updated date.
 Skips code blocks, inline code, archive/ and .claude/templates/ (templates use placeholder links).
 External URLs are checked by the Lychee job in CI, not here.
 """
@@ -31,6 +32,7 @@ LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 FENCE_RE = re.compile(r"```.*?```", re.S)
 INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 LEGACY_RE = re.compile(r"learning-paths/")
+STATUS_DATES_RE = re.compile(r"\*\*Last updated:\*\* (\d{4}-\d{2}-\d{2}) · \*\*Next review:\*\* (\d{4}-\d{2}-\d{2})")
 
 
 def tracked_files():
@@ -72,7 +74,7 @@ def main():
     files = [f for f in tracked_files() if os.path.exists(os.path.join(ROOT, f))]
     markdown = [f for f in files if f.lower().endswith(".md") and not f.startswith(SKIP_PREFIXES)]
 
-    broken, legacy, bad_anchors = [], [], []
+    broken, legacy, bad_anchors, bad_status = [], [], [], []
     inbound = Counter()
     anchor_cache = {}
 
@@ -100,6 +102,10 @@ def main():
                         bad_anchors.append((source, target))
             else:
                 broken.append((source, target))
+        status = STATUS_DATES_RE.search(text)
+        # ISO dates compare correctly as strings
+        if status and status.group(2) < status.group(1):
+            bad_status.append((source, status.group(1), status.group(2)))
         if source.startswith(LEGACY_EXEMPT_PREFIXES):
             continue
         for number, line in enumerate(text.splitlines(), 1):
@@ -116,6 +122,9 @@ def main():
     print(f"\nReferences to removed learning-paths/ folder: {len(legacy)}")
     for source, number, line in legacy:
         print(f"  {source}:{number}: {line}")
+    print(f"\nStatus lines with a Next review date before the Last updated date: {len(bad_status)}")
+    for source, updated, next_review in bad_status:
+        print(f"  {source}: last updated {updated}, next review {next_review}")
 
     if show_orphans:
         index_names = {"README.md", "CLAUDE.md", "AGENTS.md"}
@@ -132,7 +141,7 @@ def main():
         for path in sorted(orphans):
             print(f"  {path}")
 
-    return 1 if broken or legacy or bad_anchors else 0
+    return 1 if broken or legacy or bad_anchors or bad_status else 0
 
 
 if __name__ == "__main__":
