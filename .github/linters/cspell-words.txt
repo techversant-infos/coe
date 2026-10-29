@@ -162,6 +162,7 @@ NTEXT
 NVARCHAR
 Nygard
 Ollama
+oneline
 ormsettings
 ortussolutions
 pdflabs
