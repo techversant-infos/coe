@@ -1,16 +1,16 @@
 """Check relative links and structure rules across the repository's markdown files.
 
 Usage:
-    python scripts/check-links.py            # report problems, exit 1 if any
-    python scripts/check-links.py --orphans  # also list markdown files nothing links to
+    python .github/scripts/check-links.py            # report problems, exit 1 if any
+    python .github/scripts/check-links.py --orphans  # also list markdown files nothing links to
 
 Checks:
   - Relative links and images point to files or folders that exist.
   - A #fragment on a link to another markdown file names a heading in that file.
     Same-file fragments are checked by markdownlint (MD051).
-  - No file references the removed `learning-paths/` folder (docs/maintainers/ is exempt).
+  - No file references the removed `learning-paths/` folder.
   - A document status line never has a Next review date earlier than its Last updated date.
-Skips code blocks, inline code, archive/ and .claude/templates/ (templates use placeholder links).
+Skips code blocks, inline code, git-ignored files and .claude/templates/ (templates use placeholder links).
 External URLs are checked by the Lychee job in CI, not here.
 """
 import os
@@ -21,12 +21,9 @@ import unicodedata
 import urllib.parse
 from collections import Counter
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_PREFIXES = ("archive/", ".claude/templates/")
-# redirect stubs at old paths are meant to have no inbound links
-REDIRECT_STUB_MARKER = "<!-- redirect-stub"
-# maintainer records describe the old layout on purpose, so only their links are checked
-LEGACY_EXEMPT_PREFIXES = ("docs/maintainers/",)
+# this file lives in .github/scripts/
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+SKIP_PREFIXES = (".claude/templates/",)
 
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 FENCE_RE = re.compile(r"```.*?```", re.S)
@@ -73,6 +70,13 @@ def main():
     show_orphans = "--orphans" in sys.argv
     files = [f for f in tracked_files() if os.path.exists(os.path.join(ROOT, f))]
     markdown = [f for f in files if f.lower().endswith(".md") and not f.startswith(SKIP_PREFIXES)]
+    # git-ignored files exist only on a maintainer's machine, so a link to one breaks on GitHub and in CI
+    folders = {os.path.dirname(f) for f in files}
+    for folder in list(folders):
+        while folder:
+            folder = os.path.dirname(folder)
+            folders.add(folder)
+    present = set(files) | folders
 
     broken, legacy, bad_anchors, bad_status = [], [], [], []
     inbound = Counter()
@@ -89,10 +93,9 @@ def main():
             if not path_part:
                 continue
             resolved = os.path.normpath(os.path.join(os.path.dirname(source), path_part)).replace("\\", "/")
-            full = os.path.join(ROOT, resolved)
-            if os.path.exists(full):
+            if resolved in present:
                 inbound[resolved] += 1
-                if os.path.isdir(full):
+                if resolved in folders:
                     inbound[resolved.rstrip("/") + "/README.md"] += 1
                 fragment = urllib.parse.unquote(target.partition("#")[2])
                 if fragment and resolved.lower().endswith(".md") and resolved != source:
@@ -106,8 +109,6 @@ def main():
         # ISO dates compare correctly as strings
         if status and status.group(2) < status.group(1):
             bad_status.append((source, status.group(1), status.group(2)))
-        if source.startswith(LEGACY_EXEMPT_PREFIXES):
-            continue
         for number, line in enumerate(text.splitlines(), 1):
             if LEGACY_RE.search(line):
                 legacy.append((source, number, line.strip()[:100]))
@@ -135,7 +136,6 @@ def main():
             if inbound[f] == 0
             and os.path.basename(f) not in index_names
             and not f.startswith(tooling_prefixes)
-            and not read_markdown(f).lstrip().startswith(REDIRECT_STUB_MARKER)
         ]
         print(f"\nMarkdown files with no inbound links: {len(orphans)}")
         for path in sorted(orphans):

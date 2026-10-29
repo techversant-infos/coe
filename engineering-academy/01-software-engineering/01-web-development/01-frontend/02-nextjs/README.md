@@ -1,8 +1,8 @@
 # Next.js Learning Path — Folder Index
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-02
 
-This folder contains the team's Next.js learning resources. Start with the path document. Use the roadmap image as a visual reference. The gap analysis is reviewer-only and lives in its own file.
+This folder contains the team's Next.js learning resources. Start with the path document. Use the roadmap image as a visual reference.
 
 ![Next.js Learning Path](./nextjs-learning-path.png)
 
@@ -16,7 +16,6 @@ This folder contains the team's Next.js learning resources. Start with the path 
 |---|---|---|
 | [**01-nextjs-learning-path.md**](./01-nextjs-learning-path.md) | The official team learning path 10 phases over 8 weeks | You're starting the Next.js track, planning the pilot, or running a code review against the rubric |
 | [**nextjs-learning-path.png**](./nextjs-learning-path.png) | Visual map of the 10 phases, four foundations, and guiding principles | You want a single-page visual overview of the path |
-| [**90-nextjs-gap-analysis.md**](../../../../../docs/maintainers/gap-analyses/90-nextjs-gap-analysis.md) | Reviewer-only: how our path maps to the full Next.js ecosystem | You're a tech lead reviewing scope, planning a revision, or auditing pilot feedback |
 
 ---
 
@@ -25,7 +24,6 @@ This folder contains the team's Next.js learning resources. Start with the path 
 1. **New to Next.js on the team?** Open [01-nextjs-learning-path.md](./01-nextjs-learning-path.md) and read the **Architecture call** at the top it sets the "Next.js as a frontend for our Laravel API" frame for everything that follows.
 2. **Planning a pilot batch?** Read the **Suggested 8-Week Plan** and the **Weekly PR Assessment Rubric** — those are the two operational artefacts the pilot will run on.
 3. **Coming from the React path?** Read [01-nextjs-learning-path.md](./01-nextjs-learning-path.md) the Next.js path is the **follow-on** to the [React Learning Path](../01-react/01-react-learning-path.md). Phase 2 (React Fundamentals) is a refresher; if your React is fresh, you can skim and move on.
-4. **Reviewing the path's scope?** Open [90-nextjs-gap-analysis.md](../../../../../docs/maintainers/gap-analyses/90-nextjs-gap-analysis.md). It maps the Next.js ecosystem to our path with a covered / partial / not-covered status, and lists what we deliberately skip. Not reader-facing.
 
 ---
 
@@ -62,7 +60,7 @@ For the full model and the Red Zone list, see [AI Era Coding Guidelines, section
 | Owner | CoE Web Working Group |
 | Review Cycle | Quarterly |
 | Status | Draft — pilot batch |
-| Related | [01-nextjs-learning-path.md](./01-nextjs-learning-path.md), [nextjs-learning-path.png](./nextjs-learning-path.png), [90-nextjs-gap-analysis.md](../../../../../docs/maintainers/gap-analyses/90-nextjs-gap-analysis.md), [React Learning Path](../01-react/01-react-learning-path.md) |
+| Related | [01-nextjs-learning-path.md](./01-nextjs-learning-path.md), [nextjs-learning-path.png](./nextjs-learning-path.png), [React Learning Path](../01-react/01-react-learning-path.md) |
 
 ---
 
