@@ -167,7 +167,7 @@ Pick one route handler. Audit the inputs: are they all validated? Is the validat
 **Mini-task variant:**
 Find one N+1 query in your codebase. Eager-load it. Compare the query count before and after. Commit `perf(n+1): <module>` with the before/after numbers in the PR description.
 
-**Watch:** [N+1 Query Problem Explained](https://www.youtube.com/shorts/3w2g50NojVQ)
+**Watch:** [N+1 Query Problem Explained](https://www.youtube.com/watch?v=3w2g50NojVQ)
 
 ---
 
