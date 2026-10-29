@@ -15,9 +15,11 @@ This command runs a comprehensive quality review of a learning phase within `eng
 ## Parameters
 
 ### Required
+
 - **phase-path** - Path to the phase directory (e.g., `engineering-academy/02-quality-engineering/automation/playwright/phase-1`)
 
 ### Optional Flags
+
 - `--depth` - Review depth: quick/full/comprehensive (default: full)
 - `--focus` - Focus area: content/assessments/exercises/all (default: all)
 - `--level` - Verify alignment with competency level (Foundation/Practitioner/Advanced/Expert)
@@ -35,12 +37,14 @@ This command runs a comprehensive quality review of a learning phase within `eng
 ## Review Checklist
 
 ### 1. Academy Alignment
+
 - [ ] Path is in the correct discipline folder
 - [ ] Content aligns with the competency level
 - [ ] Prerequisites link to existing learning paths
 - [ ] Maps to existing standards in `general/`, `php/`, `cf/`, `nodejs/`
 
 ### 2. Content Quality
+
 - [ ] Learning objectives are measurable and specific
 - [ ] Content is accurate and up-to-date
 - [ ] Examples are correct and runnable
@@ -48,24 +52,28 @@ This command runs a comprehensive quality review of a learning phase within `eng
 - [ ] Prerequisites are accurately stated
 
 ### 3. Pedagogy
+
 - [ ] Content progresses logically from simple to complex
 - [ ] Concepts build on each other appropriately
 - [ ] Common misconceptions are addressed
 
 ### 4. Exercises
+
 - [ ] Every concept has a corresponding exercise
 - [ ] Exercise difficulty matches competency level
 - [ ] Hints provide appropriate scaffolding
 
 ### 5. Assessments
+
 - [ ] Assessments align with learning objectives
 - [ ] Rubrics are clear and measurable
 - [ ] Passing criteria are fair and realistic
 
 ### 6. Techversant Standards
+
 - [ ] Code follows the relevant Techversant coding standards
 - [ ] Stack-specific conventions are applied correctly
-- [ ] REST API patterns follow `general/rest-api-best-practices.md`
+- [ ] REST API patterns follow `standards/general/rest-api-best-practices.md`
 
 ## Process Flow
 
@@ -79,6 +87,7 @@ This command runs a comprehensive quality review of a learning phase within `eng
 ## Output Format
 
 ### Quick Review
+
 ```
 Phase Review: engineering-academy/02-quality-engineering/automation/playwright/phase-1
 

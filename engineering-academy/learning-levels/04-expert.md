@@ -1,4 +1,4 @@
-﻿# Expert Level
+# Expert Level
 
 Expert means the engineer can define standards, mentor across teams, and guide architectural direction.
 

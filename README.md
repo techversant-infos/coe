@@ -1,36 +1,57 @@
-﻿# Techversant Center of Excellence (CoE)
+# Techversant Center of Excellence (CoE)
 
-This repository contains Techversant's engineering standards, learning paths, audit references, and AI-assisted development guidance.
+Engineering standards, security checklists, AI guidance and the Engineering Academy for Techversant teams.
 
 ## Start Here
 
-- [Techversant Engineering Academy](./engineering-academy/README.md) - learning paths, learning levels, and career progression guidance
-- [Git Workflow](./git/Techversant_Git_Workflow.md) - branching, commits, pull requests, releases, rollback
-- [AI Era Coding Guidelines](./general/ai-era-coding-guidelines.md) - AI delegation levels, Red Zone rules, two-layer review
-- [REST API Best Practices](./general/rest-api-best-practices.md) - API design, naming, error envelope, pagination, filtering
-- [CoE Security Checklist](./audit/security-audit-checklist.md) - OWASP Top 10:2025 checklist for every pull request
-- [CoE Security Audit Reference](./audit/security-audit-reference.md) - full control set for release reviews and audits
+| You want to | Go to |
+|-------------|-------|
+| Write or review code in your stack | [Engineering Standards](./standards/README.md) |
+| Branch, commit and open a pull request | [Git Workflow](./standards/git/git-workflow.md) |
+| Use AI tools safely (delegation levels, Red Zone) | [AI Era Coding Guidelines](./standards/general/ai-era-coding-guidelines.md) |
+| Check a feature or release for security issues | [CoE Security Checklist](./security/audit/security-audit-checklist.md) |
+| Learn a skill or plan your next career step | [Engineering Academy](./engineering-academy/README.md) |
 
-## Repository Areas
+## Repository Layout
 
-| Area | Purpose |
-|---|---|
-| [engineering-academy](./engineering-academy/README.md) | Structured learning paths and career guidance |
-| [general](./general/) | Cross-stack standards |
-| [git](./git/) | Git workflow and governance |
-| [audit](./audit/) | Security and compliance review material |
-| [php](./php/) | PHP / Laravel standards |
-| [nodejs](./nodejs/) | Node.js / TypeScript standards |
-| [cf](./cf/) | ColdFusion / CFML standards |
-| [ai](./ai/) | AI prompts, tools, and productivity material |
+```text
+coe/
+|-- standards/            coding standards, style guides and review checklists, one folder per stack
+|-- security/             security checklist, audit reference, audit framework, AI security
+|-- ai/                   AI guides, prompt templates, a skills library and presentations
+|-- engineering-academy/  learning paths, learning levels and career progression
+|-- docs/maintainers/     plans, inventory and gap analyses for the people who maintain this repo
+|-- archive/              superseded documents, kept until a person confirms they can go
+`-- scripts/              repository checks
+```
 
-## Engineering Academy
+| Folder | Contents |
+|--------|----------|
+| [standards](./standards/README.md) | General, Git, PHP / Laravel, Node.js / TypeScript, ColdFusion / CFML |
+| [security](./security/README.md) | OWASP Top 10:2025 checklist and reference, CoE audit framework, AI security |
+| [ai](./ai/README.md) | Usage standards, Claude cheat sheet, prompt handbook, skills library |
+| [engineering-academy](./engineering-academy/README.md) | Disciplines 00 to 07, learning levels, career progression |
+| [docs/maintainers](./docs/maintainers/README.md) | Restructure plan, file inventory, academy TODO, gap analyses |
+| [archive](./archive/README.md) | Superseded copies with a link to their replacement |
 
-The academy structure lives under [engineering-academy](./engineering-academy/README.md).
+## Document Status
 
-See [engineering-academy/academy-todo.md](./engineering-academy/academy-todo.md) for migration gaps and next priorities.
+Every standard, security document, AI guide and academy README starts with a status line:
 
----
+```text
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2025-11-13 · **Next review:** 2026-05-13
+```
 
-**Maintained by:** Techversant CoE
-**Last Updated:** June 2026
+`Needs review` means a full review is due or overdue. Use the document, but check versions and dates before you rely
+on them.
+
+## Contributing
+
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) before you open a pull request. Run the link check first:
+
+```bash
+python scripts/check-links.py
+```
+
+Old links to `audit/`, `cf/`, `general/`, `git/`, `neural/`, `nodejs/` and `php/` still work. Each file there is a
+one-line redirect to the new location and will be removed after the next release.

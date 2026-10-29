@@ -1,5 +1,7 @@
 # Software Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This section contains software engineering learning paths and stack-specific guidance.
 
 Start with the shared [Engineering Foundations](../00-engineering-foundations/README.md), then choose the path that matches your role and project stack.

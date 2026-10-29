@@ -1,5 +1,7 @@
 # Manual Testing
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-06-30 · **Next review:** 2026-12-28
+
 This path gives testers the baseline needed before automation. Automation can run checks quickly, but manual testing still provides judgment: risk discovery, exploratory learning, product empathy, and release confidence.
 
 > **Audience:** Junior QA engineers, manual testers, and automation learners who need stronger testing fundamentals.
@@ -142,7 +144,7 @@ By the end of this path, the learner should be able to:
 
 **Mini-task:** Create a regression checklist for one feature area. Mark each item as smoke, critical regression, or optional regression.
 
-**Internal standard:** [Security Audit Checklist](../../../audit/security-audit-checklist.md)
+**Internal standard:** [Security Audit Checklist](../../../security/audit/security-audit-checklist.md)
 
 ---
 

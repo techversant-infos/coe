@@ -11,7 +11,7 @@ This planned path teaches practical prompting for engineering work: explanation,
 - Prompting for migration plans and rollback thinking
 - Evaluating AI output against repository standards
 
-Until this path is written, use the existing [AI Prompt Handbook](../../../ai/prompts/developer_handbook_Full.md).
+Until this path is written, use the existing [AI Prompt Handbook](../../../ai/prompts/developer-handbook-full.md).
 
 ## Status
 

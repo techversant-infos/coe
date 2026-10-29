@@ -6,46 +6,67 @@ on:
     paths:
       - '**.md'
       - '.github/workflows/lint-markdown.yml'
+      - '.markdownlint-cli2.jsonc'
+      - '.lycheeignore'
+      - 'cspell.json'
+      - '.cspell/**'
+      - 'scripts/check-links.py'
   pull_request:
     branches: [main]
     paths:
       - '**.md'
+      - '.github/workflows/lint-markdown.yml'
+      - '.markdownlint-cli2.jsonc'
+      - '.lycheeignore'
+      - 'cspell.json'
+      - '.cspell/**'
+      - 'scripts/check-links.py'
+  workflow_dispatch:
 
 jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
+      # Rules and ignored folders live in .markdownlint-cli2.jsonc
       - name: Markdown Lint
-        uses: DavidAnson/vscode-markdown-lint-action@v2
+        uses: DavidAnson/markdownlint-cli2-action@v24
         with:
-          configuration: >
-            {
-              "MD013": { "line_length": 120, "_tables": false },
-              "MD024": { "siblings_only": true },
-              "MD033": { "allowed_elements": ["details", "summary"] }
-            }
+          globs: '**/*.md'
 
   spell-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Check spelling in Markdown
-        uses: streetsidesoftware/cspell-action@v3
+        uses: streetsidesoftware/cspell-action@v9
         with:
           files: '**/*.md'
           config: './cspell.json'
-          check_only_new_files: ${{ github.event_name == 'pull_request' }}
+          incremental_files_only: true
+
+  relative-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Check relative links and legacy paths
+        run: python3 scripts/check-links.py
 
   links-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
+      # URL exceptions live in .lycheeignore. The technical-writer skill is a page of placeholder templates.
       - name: Lychee Link Check
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress '**/*.md'
+          args: >-
+            --no-progress
+            --exclude-path archive
+            --exclude-path ai/skills-library/technical-writer/SKILL.md
+            '**/*.md'
           fail: true

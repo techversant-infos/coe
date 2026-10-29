@@ -15,6 +15,7 @@ This command scans `engineering-academy/`, aggregates all learning paths across 
 ## Parameters
 
 ### Optional Flags
+
 - `--force` - Force update even if no changes detected (default: false)
 - `--include-pending` - Include paths marked as work-in-progress (default: true)
 - `--output` - Output file (default: `engineering-academy/README.md`)
@@ -157,12 +158,12 @@ For issues with navigation, please run `/update-learning-path-index`.
 
 ## Process Flow
 
-1. **Scan Directory**: Recursively scan `learning-paths/` for all phase directories
+1. **Scan Directory**: Recursively scan `engineering-academy/` for all phase directories
 2. **Collect Metadata**: Parse README.md files for phase information
 3. **Validate Structure**: Check each phase has required files
 4. **Calculate Progress**: Determine completion status based on phase structure
 5. **Generate Index**: Create the master index with navigation
-6. **Generate README** (if requested): Update the learning-paths/README.md
+6. **Generate README** (if requested): Update `engineering-academy/README.md`
 
 ## Quality Controls
 

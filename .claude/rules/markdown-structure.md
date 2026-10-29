@@ -1,10 +1,11 @@
 # Markdown Structure
 
-Techversant CoE standards for markdown file structure and formatting. All content in `engineering-academy/` and `learning-paths/` must follow these conventions.
+Techversant CoE standards for markdown file structure and formatting. All content in `engineering-academy/` must follow these conventions.
 
 ## File Organization
 
 ### Engineering Academy Structure
+
 ```
 engineering-academy/
 └── <NN-discipline>/
@@ -25,12 +26,14 @@ engineering-academy/
 ```
 
 ### Naming Conventions
+
 - Use kebab-case for all file names
 - Prefix files with type: `lesson-`, `exercise-`, `assessment-`
 - Use sequential numbering: `lesson-1.md`, `lesson-2.md`
 - Use descriptive suffixes: `phase-1`, `phase-2`
 
 ### File Paths
+
 - Use relative paths for internal links: `[Lesson 2](./lesson-2.md)`
 - Use forward slashes for cross-path links: `[QA Path](../qa-automation/)`
 - Avoid absolute paths for portability
@@ -38,6 +41,7 @@ engineering-academy/
 ## Markdown Formatting Standards
 
 ### Headings
+
 - `#` - Document title (only one per file)
 - `##` - Major sections
 - `###` - Sub-sections
@@ -45,18 +49,20 @@ engineering-academy/
 - Maintain consistent hierarchy
 
 ### Lists
+
 - Use `-` for unordered lists
 - Use `1.` for ordered lists
 - Use `- [ ]` for checkboxes (learning objectives)
 - Indent sub-items with 2 spaces
 
 ### Code Blocks
+
 - Always specify language for syntax highlighting
 - Include full, runnable examples
 - Use comments to explain key points
 - Show expected output when relevant
 
-```markdown
+````markdown
 ```javascript
 // Example with comments
 function greet(name) {
@@ -64,9 +70,10 @@ function greet(name) {
 }
 // Expected: "Hello, World!"
 ```
-```
+````
 
 ### Tables
+
 - Use tables for structured data
 - Keep columns aligned
 - Use consistent formatting
@@ -79,6 +86,7 @@ function greet(name) {
 ```
 
 ### Blockquotes
+
 - Use for notes, tips, and warnings
 - Use > for blockquotes
 - Keep them concise
@@ -89,6 +97,7 @@ function greet(name) {
 ```
 
 ### Details/Summary
+
 - Use for collapsible content (hints, solutions)
 - Provide clear summary text
 - Include full content inside
@@ -105,6 +114,7 @@ Hidden solution content here
 ## Document Structure Templates
 
 ### README Template
+
 ```markdown
 # Learning Path Title
 
@@ -142,6 +152,7 @@ Hidden solution content here
 ```
 
 ### Phase README Template
+
 ```markdown
 # Phase Title
 
@@ -207,12 +218,14 @@ By the end of this phase, you will be able to:
 ## Common Mistakes
 
 ### ❌ Skipped heading levels
+
 ```markdown
 # Title
 #### Skipped ## and ###
 ```
 
 ### ✅ Correct hierarchy
+
 ```markdown
 # Title
 ## Section
@@ -220,6 +233,7 @@ By the end of this phase, you will be able to:
 ```
 
 ### ❌ Inconsistent list formatting
+
 ```markdown
 - Item 1
 * Item 2  (mixed - and *)
@@ -227,6 +241,7 @@ By the end of this phase, you will be able to:
 ```
 
 ### ✅ Consistent formatting
+
 ```markdown
 - Item 1
 - Item 2
@@ -234,11 +249,13 @@ By the end of this phase, you will be able to:
 ```
 
 ### ❌ Missing language specifier
+
 ```javascript
 const x = 1;
 ```
 
 ### ✅ With language specifier
+
 ```javascript
 const x = 1;
 ```

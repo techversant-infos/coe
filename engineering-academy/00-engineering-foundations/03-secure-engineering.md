@@ -3,14 +3,14 @@
 **Level:** Foundation
 **Next:** [Engineering Communication](./04-communication.md)
 
-The source of truth is the [CoE Security Checklist](../../audit/security-audit-checklist.md) — 10 mandatory items plus
+The source of truth is the [CoE Security Checklist](../../security/audit/security-audit-checklist.md) — 10 mandatory items plus
 six items per OWASP category. When you need the depth behind an item, follow it through to the
-[CoE Security Audit Reference](../../audit/security-audit-reference.md).
+[CoE Security Audit Reference](../../security/audit/security-audit-reference.md).
 
 Pair this with:
 
-- [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md) for Red Zone work
-- [REST API Best Practices](../../general/rest-api-best-practices.md) for API boundary design
+- [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md) for Red Zone work
+- [REST API Best Practices](../../standards/general/rest-api-best-practices.md) for API boundary design
 - Stack-specific standards for parameterized queries, validation, logging, and secrets
 
 ## Minimum Bar

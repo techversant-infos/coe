@@ -1,5 +1,7 @@
 # Engineering Foundations
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This section contains the shared baseline every engineer needs before specializing into software engineering, quality engineering, platform work, architecture, or AI engineering.
 
 The goal is not to duplicate stack-specific guidance. The goal is to make sure every engineer shares the same operating habits: Git workflow, AI usage, secure engineering, communication, documentation, code review, and clean-code discipline.

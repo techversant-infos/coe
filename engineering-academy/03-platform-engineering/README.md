@@ -1,5 +1,7 @@
 # 03. Platform Engineering
 
+**Status:** Planned · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 Platform Engineering is a planned academy discipline for engineers who own delivery infrastructure, cloud platforms, deployment safety, observability, and incident response.
 
 This section is not a replacement for project-specific runbooks. It should teach the shared platform mindset and then link to stack/provider-specific implementation paths.
@@ -46,9 +48,9 @@ This section is not a replacement for project-specific runbooks. It should teach
 
 ## Temporary References
 
-- [Git Workflow](../../git/Techversant_Git_Workflow.md)
-- [Security Audit Checklist](../../audit/security-audit-checklist.md)
-- [Node.js TypeScript Best Practices - Deployment & CI/CD](../../nodejs/nodejs-typescript-best-practices.md#deployment-cicd)
+- [Git Workflow](../../standards/git/git-workflow.md)
+- [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
+- [Node.js TypeScript Best Practices - Deployment & CI/CD](../../standards/nodejs/nodejs-typescript-best-practices.md#deployment--cicd)
 
 ## Guidance Layers
 

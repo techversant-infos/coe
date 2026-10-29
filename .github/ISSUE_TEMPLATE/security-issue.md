@@ -23,6 +23,7 @@ For **active incidents**, contact the Security Lead directly and immediately —
 ---
 
 ## Issue Type
+
 - [ ] Vulnerability in codebase
 - [ ] Missing security control
 - [ ] Compliance gap
@@ -31,6 +32,7 @@ For **active incidents**, contact the Security Lead directly and immediately —
 - [ ] Other: ___________
 
 ## Severity (if known)
+
 - [ ] Critical (CVSS 9-10)
 - [ ] High (CVSS 7-8.9)
 - [ ] Medium (CVSS 4-6.9)
@@ -38,17 +40,21 @@ For **active incidents**, contact the Security Lead directly and immediately —
 - [ ] Not assessed
 
 ## Description
+
 Describe the gap in the standards. Keep it general — no exploit detail, no reproduction steps.
 
 ## Affected Standard
+
 - Document and section:
 - What the guidance says today:
 - Why it is wrong, missing, or out of date:
 
 ## Recommended Change
+
 What should the standard say instead? Link the authoritative source (OWASP, NIST, CWE, vendor advisory).
 
 ## Does this describe a live vulnerability in a running system?
+
 - [ ] **No** — this is about the standards documents. Safe to discuss here.
 - [ ] **Yes** — **stop. Close this issue and contact the Security Lead directly.**
 

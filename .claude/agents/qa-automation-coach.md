@@ -36,6 +36,7 @@ Technical instructor specializing in QA methodologies, test automation tools, an
 ## Output Format
 
 Produces:
+
 - Conceptual lessons with real-world examples
 - Hands-on exercises with step-by-step instructions
 - Assessment rubrics with clear pass criteria

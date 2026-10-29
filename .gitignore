@@ -2,6 +2,14 @@
 *.log
 .env
 .env.*
+*.env
+secrets.*
 __pycache__/
 node_modules/
 .nocommit
+
+# Keep placeholder files that show the expected variable names
+!*.example
+
+# Personal Claude Code settings
+.claude/settings.local.json

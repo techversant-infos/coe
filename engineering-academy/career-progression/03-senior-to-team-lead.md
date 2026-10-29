@@ -57,7 +57,7 @@ Choose one with your manager:
 ## Recommended Academy Links
 
 - [Engineering Communication](../00-engineering-foundations/04-communication.md)
-- [Developer Excellence - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6-code-review-excellence-advanced)
+- [Developer Excellence - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6--code-review-excellence-advanced)
 - [Engineering Leadership](../05-engineering-leadership/README.md)
 - [Expert Learning Level](../learning-levels/04-expert.md)
 

@@ -1,5 +1,7 @@
 # AI Engineering
 
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 This section groups AI-specific learning paths and usage standards.
 
 AI is referenced from every discipline, but it also needs its own space because tools, workflows, and risks change quickly.
@@ -38,6 +40,6 @@ AI is referenced from every discipline, but it also needs its own space because 
 
 ## Source Standards
 
-- [AI Era Coding Guidelines](../../general/ai-era-coding-guidelines.md)
-- [AI Team Best Practices](../../ai/ai-team-best-practices.md)
-- [Prompt Library](../../ai/prompts/developer_handbook_Full.md)
+- [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md)
+- [AI Team Best Practices](../../ai/guides/ai-team-best-practices.md)
+- [Prompt Library](../../ai/prompts/developer-handbook-full.md)

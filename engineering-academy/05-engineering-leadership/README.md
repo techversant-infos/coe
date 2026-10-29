@@ -1,5 +1,7 @@
 # 05. Engineering Leadership
 
+**Status:** Planned · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+
 Engineering Leadership is a planned academy discipline for engineers who lead delivery through people, systems, standards, and communication.
 
 This section should cover technical leadership and people leadership without confusing it with HR policy.
@@ -42,7 +44,7 @@ This section should cover technical leadership and people leadership without con
 ## Temporary References
 
 - [Engineering Communication](../00-engineering-foundations/04-communication.md)
-- [Developer Excellence Curriculum - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6-code-review-excellence-advanced)
+- [Developer Excellence Curriculum - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6--code-review-excellence-advanced)
 - [Senior to Team Lead Progression](../career-progression/03-senior-to-team-lead.md)
 
 ## Guidance Layers

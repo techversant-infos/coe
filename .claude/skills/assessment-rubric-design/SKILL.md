@@ -5,6 +5,7 @@ Standards for creating effective assessments that measure learning outcomes accu
 ## When to Use This Skill
 
 Use this skill when:
+
 - Creating assessments for learning phases
 - Designing evaluation rubrics
 - Planning quizzes, practicals, or projects
@@ -13,7 +14,9 @@ Use this skill when:
 ## Assessment Types
 
 ### Formative Assessments
+
 Purpose: Check understanding during learning
+
 - Quick knowledge checks
 - Mini-quizzes (5-10 questions)
 - Concept mapping
@@ -21,14 +24,18 @@ Purpose: Check understanding during learning
 - Quick practical tasks
 
 ### Summative Assessments
+
 Purpose: Evaluate mastery at phase end
+
 - Practical projects
 - Comprehensive quizzes
 - Code reviews
 - Portfolio submissions
 
 ### Capstone Assessments
+
 Purpose: Validate full-path competency
+
 - Multi-phase project
 - Real-world scenario application
 - Portfolio review
@@ -37,20 +44,26 @@ Purpose: Validate full-path competency
 ## Rubric Design Principles
 
 ### Clear Criteria
+
 Each rubric must have 3-5 specific, measurable criteria.
 Example:
+
 - ✅ "Uses locators with appropriate specificity"
 - ❌ "Good test structure"
 
 ### Measurable Levels
+
 Use consistent scale (typically 3-4 levels):
+
 - **Exemplary**: Exceeds expectations
 - **Proficient**: Meets all requirements
 - **Developing**: Meets some requirements
 - **Beginning**: Meets few requirements
 
 ### Balanced Weighting
+
 Weight criteria by importance:
+
 - Core skills: 30-40%
 - Supporting skills: 15-20% each
 - Process/approach: 10-15%
@@ -58,6 +71,7 @@ Weight criteria by importance:
 ## Rubric Templates
 
 ### Practical Assessment Rubric
+
 ```markdown
 ## Assessment: [Title]
 
@@ -84,6 +98,7 @@ Weight criteria by importance:
 ```
 
 ### Quiz Assessment Rubric
+
 ```markdown
 ## Quiz: [Title]
 
@@ -104,21 +119,25 @@ Weight criteria by importance:
 ## Assessment Best Practices
 
 ### Clear Instructions
+
 - State exactly what is being assessed
 - Provide examples of passing work
 - Specify any allowed resources
 
 ### Fair Evaluation
+
 - Assess only stated objectives
 - Allow reasonable accommodation for skill levels
 - Provide multiple attempts when appropriate
 
 ### Actionable Feedback
+
 - Tell learners what to improve
 - Link to specific lessons/resources
 - Be encouraging but honest
 
 ### Continuous Improvement
+
 - Track assessment results
 - Identify common failure points
 - Update content based on results

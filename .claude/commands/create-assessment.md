@@ -15,10 +15,12 @@ This command generates a comprehensive assessment for a learning phase within `e
 ## Parameters
 
 ### Required
+
 - **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `02-quality-engineering`)
 - **topic** - The learning topic (e.g., `git-workflow`, `playwright-basics`)
 
 ### Optional Flags
+
 - `--subfolder` - Sub-discipline path (e.g., `automation/playwright`, `web-development/frontend`)
 - `--phase` - Phase number (default: 1)
 - `--type` - Assessment type: formative/summative/capstone (default: summative)
@@ -36,24 +38,28 @@ This command generates a comprehensive assessment for a learning phase within `e
 ## Competency Level Guidelines
 
 ### Foundation
+
 - Tests recall and basic application
 - Clear right/wrong answers
 - Passing score: 70%
 - May reference lesson materials
 
 ### Practitioner
+
 - Tests ability to apply skills independently
 - Scenario-based problems
 - Passing score: 75%
 - Limited resources allowed
 
 ### Advanced
+
 - Tests problem-solving and judgment
 - Open-ended challenges
 - Passing score: 80%
 - Restricted resources
 
 ### Expert
+
 - Tests strategy, design, and leadership
 - Portfolio or project-based
 - Passing score: 85%

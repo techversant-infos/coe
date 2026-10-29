@@ -5,6 +5,7 @@ Techversant CoE technical standards for automation engineering content. Covers t
 ## Code Standards
 
 ### Naming Conventions
+
 - Use descriptive, self-documenting names
 - Prefer clarity over brevity
 - Use camelCase for JavaScript/TypeScript
@@ -13,6 +14,7 @@ Techversant CoE technical standards for automation engineering content. Covers t
 - Use UPPER_SNAKE_CASE for constants
 
 ### Examples
+
 ```javascript
 // GOOD: Self-documenting names
 const loginButton = await page.locator('[data-testid="login"]');
@@ -24,6 +26,7 @@ const d = await fetchUserProfile(id);
 ```
 
 ### Function Design
+
 - Single responsibility: One function, one purpose
 - Pure functions when possible: No side effects, same output for same input
 - Small functions: 20-30 lines maximum
@@ -45,6 +48,7 @@ async function loginAndNavigateAndCheck(page, username, password) {
 ```
 
 ### Error Handling
+
 - Always handle errors explicitly
 - Use try/catch for async operations
 - Provide meaningful error messages
@@ -79,6 +83,7 @@ async function login(page, username, password) {
 ## Test Automation Standards
 
 ### Test Structure
+
 - Arrange-Act-Assert (AAA) pattern
 - One assertion per test where possible
 - Descriptive test names (should... when...)
@@ -106,6 +111,7 @@ test('login test', async () => {
 ```
 
 ### Selectors
+
 - Prefer data-testid attributes for stability
 - Avoid CSS classes (change frequently)
 - Avoid XPath when possible
@@ -121,6 +127,7 @@ await page.locator('//button[contains(text(), "Submit")]').click();
 ```
 
 ### Wait Strategies
+
 - Prefer auto-waiting locators
 - Use explicit waits when necessary
 - Avoid hardcoded timeouts
@@ -140,6 +147,7 @@ await page.waitForTimeout(5000);  // Always wait 5 seconds
 ## Documentation Standards
 
 ### Code Comments
+
 - Explain WHY, not WHAT
 - Avoid redundant comments
 - Use TODO comments for known issues
@@ -156,6 +164,7 @@ const token = sessionStorage.getItem('authToken');
 ```
 
 ### README Files
+
 - Include purpose and usage
 - Provide installation/setup instructions
 - List prerequisites
@@ -165,6 +174,7 @@ const token = sessionStorage.getItem('authToken');
 ## Version Control Practices
 
 ### Commit Messages
+
 - Use clear, descriptive messages
 - Follow format: "type: description"
 - Types: feat, fix, refactor, test, docs, chore
@@ -179,19 +189,24 @@ docs: update setup instructions
 ```
 
 ### Branch Naming
-- feature/feature-name
-- fix/bug-description
-- refactor/refactor-description
+
+Follow the [Git Workflow standard](../../standards/git/git-workflow.md#-branching-model):
+
+- `feature/add-<JIRA-ID>-<description>` for new work
+- `feature/fix-<JIRA-ID>-<description>` for bug fixes
+- `feature/refactor-<JIRA-ID>-<description>` for refactoring
 
 ## Security Considerations
 
 ### Sensitive Data
+
 - Never commit credentials or secrets
 - Use environment variables for configuration
 - Never log sensitive information
 - Sanitize test data
 
 ### Input Validation
+
 - Validate all inputs
 - Handle edge cases
 - Use parameterized queries (avoid SQL injection)
@@ -200,16 +215,19 @@ docs: update setup instructions
 ## Performance Standards
 
 ### Efficient Selectors
+
 - Use specific selectors
 - Avoid complex CSS selectors
 - Prefer locators over selectors
 
 ### Parallel Execution
+
 - Run tests in parallel where possible
 - Use worker threads appropriately
 - Monitor resource usage
 
 ### Cleanup
+
 - Always clean up test data
 - Close browser sessions properly
 - Release resources after tests
