@@ -865,7 +865,7 @@ External: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10
 ## 15. Mobile Application Security
 
 Mark the whole section `N/A` with a reason for teams that ship no mobile application.
-Reference: [OWASP MASVS](https://owasp.org/www-project-mobile-app-security/)
+Reference: [OWASP MASVS](https://mas.owasp.org/MASVS/)
 · [Mobile Application Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet.html)
 
 - [ ] **(B)** No secrets, API keys, or credentials embedded in the app binary or bundle
@@ -1141,7 +1141,7 @@ Cache-Control: no-store          (on authenticated responses)
 | [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | Deeper verification requirements when a client asks for a level |
 | [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/) | API-specific risks (§13) |
 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | AI feature risks (§14) |
-| [OWASP MASVS](https://owasp.org/www-project-mobile-app-security/) | Mobile verification standard (§15) |
+| [OWASP MASVS](https://mas.owasp.org/MASVS/) | Mobile verification standard (§15) |
 | [OWASP SAMM](https://owasp.org/www-project-samm/) | Maturing the security programme itself |
 | [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Exploited-in-the-wild prioritization (§18.1) |
 | [CVSS v4.0](https://www.first.org/cvss/v4-0/) | Severity scoring |
