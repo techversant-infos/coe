@@ -27,6 +27,7 @@ FONT = "'DM Sans', Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
 WIDTH = 1120
 CENTER = WIDTH // 2
 STAGE_W, STAGE_H = 300, 52
+STAGE_W_MAX = 360
 TOPIC_W, TOPIC_H = 284, 38
 SIDE_MARGIN = 48
 ROW = 48
@@ -80,14 +81,25 @@ def connector(x1: float, y1: float, x2: float, y2: float, core: bool) -> str:
             f'stroke-width="2"{dash}/>')
 
 
-def stage_node(y: float, stage: dict) -> str:
-    x = CENTER - STAGE_W / 2
+def stage_size(stages: list) -> tuple:
+    """Return one pill width and title font size that fit the longest stage title."""
+    longest = max(len(stage["title"]) for stage in stages)
+    for size in (17, 16, 15):
+        # About 9 px per character at 17 px bold, plus the number badge and the end padding.
+        width = 60 + longest * 9 * size / 17 + 28
+        if width <= STAGE_W_MAX:
+            return max(STAGE_W, round(width)), size
+    return STAGE_W_MAX, 15
+
+
+def stage_node(y: float, stage: dict, width: float, size: float) -> str:
+    x = CENTER - width / 2
     cy = y + STAGE_H / 2
-    return (f'<rect x="{x}" y="{y}" width="{STAGE_W}" height="{STAGE_H}" rx="{STAGE_H / 2}" fill="{NAVY}"/>'
+    return (f'<rect x="{x}" y="{y}" width="{width}" height="{STAGE_H}" rx="{STAGE_H / 2}" fill="{NAVY}"/>'
             f'<circle cx="{x + 30}" cy="{cy}" r="17" fill="{CYAN}"/>'
             f'<text x="{x + 30}" y="{cy + 5}" font-size="14" font-weight="700" fill="{NAVY}" '
             f'text-anchor="middle">{escape(stage["number"])}</text>'
-            f'<text x="{x + 60}" y="{cy + 6}" font-size="17" font-weight="700" fill="#FFFFFF">'
+            f'<text x="{x + 60}" y="{cy + 6}" font-size="{size}" font-weight="700" fill="#FFFFFF">'
             f'{escape(stage["title"])}</text>')
 
 
@@ -114,6 +126,7 @@ def render(data: dict) -> str:
     parts = []
     y = HEADER_H
     spine_top = spine_bottom = None
+    stage_w, stage_font = stage_size(data["stages"])
     for stage in data["stages"]:
         topics = stage["topics"]
         left = topics[: (len(topics) + 1) // 2]
@@ -126,15 +139,15 @@ def render(data: dict) -> str:
         spine_bottom = cy
 
         for column, x_topic, x_from, x_to in (
-            (left, SIDE_MARGIN, CENTER - STAGE_W / 2, SIDE_MARGIN + TOPIC_W),
-            (right, WIDTH - SIDE_MARGIN - TOPIC_W, CENTER + STAGE_W / 2, WIDTH - SIDE_MARGIN - TOPIC_W),
+            (left, SIDE_MARGIN, CENTER - stage_w / 2, SIDE_MARGIN + TOPIC_W),
+            (right, WIDTH - SIDE_MARGIN - TOPIC_W, CENTER + stage_w / 2, WIDTH - SIDE_MARGIN - TOPIC_W),
         ):
             first_y = cy - (len(column) * ROW - (ROW - TOPIC_H)) / 2
             for i, topic in enumerate(column):
                 ty = first_y + i * ROW
                 parts.append(connector(x_from, cy, x_to, ty + TOPIC_H / 2, topic["core"]))
                 parts.append(topic_node(x_topic, ty, topic))
-        parts.append(stage_node(stage_y, stage))
+        parts.append(stage_node(stage_y, stage, stage_w, stage_font))
         y += block_h + STAGE_GAP
 
     height = y - STAGE_GAP + FOOTER_H

@@ -16,7 +16,7 @@ Find the real problem behind the request before building anything.
 - Watching the work being done
 - Asking the questions that change the design, and writing down the answers
 
-**Resources:** [Discovery Workshops](../07-consulting/coldfusion/09-client-consulting/01-discovery-workshops/README.md)
+**Resources:** [Discovery Workshop Questionnaire](../07-consulting/coldfusion/deliverables/discovery-workshop-questionnaire.md)
 
 **Level:** Practitioner · Core
 
@@ -32,7 +32,7 @@ Agree what success looks like and what is out of scope before you start.
 
 **Resources:**
 
-- [Estimation](../07-consulting/coldfusion/09-client-consulting/02-estimation/README.md)
+- [Estimation templates](../07-consulting/coldfusion/deliverables/estimation-templates/README.md)
 - [Estimation prompts](../../ai/prompts/section-04-estimation.md)
 
 **Level:** Practitioner · Core
@@ -47,7 +47,7 @@ Different people at the client want different things. Know who decides, who is a
 - Managing expectations and saying no to extra scope
 - Escalating early when something is at risk
 
-**Resources:** [Client Communication Guide](../07-consulting/coldfusion/09-client-consulting/client-communication-guide.md)
+**Resources:** [Client Communication Guide](../07-consulting/coldfusion/deliverables/client-communication-guide.md)
 
 **Level:** Practitioner · Core
 
@@ -75,7 +75,7 @@ Show progress on the client's terms: their data, their workflow, their success m
 - Reporting results against the agreed measure, including what did not work
 - Adjusting the message for executives, managers and users
 
-**Resources:** [Presentation](../07-consulting/coldfusion/09-client-consulting/03-presentation/README.md)
+**Resources:** [Client Communication Guide: explaining technical findings](../07-consulting/coldfusion/deliverables/client-communication-guide.md#explaining-technical-findings)
 
 **Level:** Practitioner · Core
 

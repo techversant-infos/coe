@@ -1,64 +1,21 @@
-# Deliverables
+# ColdFusion Consulting Deliverables
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-29 · **Next review:** 2027-01-28
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
-> Reusable assets for ColdFusion consulting engagements.
+Templates, checklists and playbooks for ColdFusion client engagements. Copy a template for each engagement, and remove
+anything client-specific before you share it outside the engagement. The
+[Senior ColdFusion Consultant roadmap](../README.md) shows where each one is used.
 
-This folder contains templates, checklists, playbooks, and frameworks that support client engagements.
+## By Engagement Step
 
-## Asset List
-
-| Asset | Type | Purpose |
-|-------|------|---------|
-| [CF Architecture Review Checklist](./cf-architecture-review-checklist.md) | Checklist | Review existing ColdFusion applications |
-| [Legacy Assessment Template](./legacy-assessment-template.md) | Template | Document findings from application assessments |
-| [CF → Lucee Migration Playbook](./cf-lucee-migration-playbook.md) | Playbook | Guide Lucee migrations from start to finish |
-| [CF Modernization Framework](./cf-modernization-framework.md) | Framework | Decision matrix for modernization options |
-| [CF Security Review Checklist](./cf-security-review-checklist.md) | Checklist | Security audit ColdFusion applications |
-| [CF AI Integration Playbook](./cf-ai-integration-playbook.md) | Playbook | Add AI capabilities to existing CF systems |
-| [Discovery Workshop Questionnaire](./discovery-workshop-questionnaire.md) | Template | Guide discovery sessions |
-| [Estimation Templates](./estimation-templates/) | Templates | Size and estimate CF projects |
-| [Proposal Boilerplates](./proposal-boilerplates/) | Templates | Accelerate proposal writing |
-
-## Quick Links
-
-### For Discovery
-
-- [Discovery Workshop Questionnaire](./discovery-workshop-questionnaire.md)
-
-### For Assessment
-
-- [CF Architecture Review Checklist](./cf-architecture-review-checklist.md)
-- [Legacy Assessment Template](./legacy-assessment-template.md)
-- [CF Security Review Checklist](./cf-security-review-checklist.md)
-
-### For Migration
-
-- [CF → Lucee Migration Playbook](./cf-lucee-migration-playbook.md)
-- [Estimation Templates](./estimation-templates/)
-
-### For Modernization
-
-- [CF Modernization Framework](./cf-modernization-framework.md)
-- [Proposal Boilerplates](./proposal-boilerplates/)
-
-### For AI
-
-- [CF AI Integration Playbook](./cf-ai-integration-playbook.md)
-
-## Contribution Guidelines
-
-When adding new deliverables:
-
-1. Follow the naming convention: `cf-<topic>-<type>.md`
-2. Include metadata header (purpose, author, version, date)
-3. Link from this README
-4. Update related checklists if applicable
-5. Keep templates generic enough to apply to multiple clients
-6. Remove any client-specific information
-
-## Version Control
-
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | | | Initial version |
+| Step | Use | Stage |
+|------|-----|-------|
+| Discovery | [Discovery Workshop Questionnaire](./discovery-workshop-questionnaire.md) | [10](../10-client-consulting-and-delivery.md) |
+| Maintenance | No template yet: use the runbook and support agreement guidance in stage 04 | [04](../04-maintaining-legacy-applications.md) |
+| Assessment | [CF Architecture Review Checklist](./cf-architecture-review-checklist.md), [CF Security Review Checklist](./cf-security-review-checklist.md), [Legacy Assessment Template](./legacy-assessment-template.md) | [03](../03-security-and-hardening.md), [05](../05-assessing-legacy-applications.md) |
+| Strategy | [CF Modernization Framework](./cf-modernization-framework.md) | [06](../06-modernization-strategy.md) |
+| Migration | [CF to Lucee Migration Playbook](./cf-lucee-migration-playbook.md) | [07](../07-upgrades-and-migration.md) |
+| AI features | [CF AI Integration Playbook](./cf-ai-integration-playbook.md) | [09](../09-modernizing-the-application.md) |
+| Estimation | [Estimation templates](./estimation-templates/README.md) | [10](../10-client-consulting-and-delivery.md) |
+| Proposal and contract | [Proposal scopes](./proposal-boilerplates/proposal-scopes.md), [SOW template](./sow-template.md) | [10](../10-client-consulting-and-delivery.md) |
+| Running the engagement | [Consulting Operating Model](./consulting-operating-model.md), [Engagement Checklist](./engagement-checklist.md), [Client Communication Guide](./client-communication-guide.md) | [10](../10-client-consulting-and-delivery.md) |

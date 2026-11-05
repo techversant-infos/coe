@@ -1,10 +1,13 @@
 # CF Migration Effort Benchmarks
 
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+
 > Reference data for estimating ColdFusion modernization projects.
 
 ## Purpose
 
-These benchmarks provide baseline estimates for common ColdFusion tasks. Adjust based on specific project context.
+These benchmarks give starting estimates, in hours, for common ColdFusion tasks. They are planning estimates, not
+measured results from past projects. Adjust them for each project, and replace them with your own actuals over time.
 
 ## Complexity Levels
 
@@ -43,16 +46,13 @@ These benchmarks provide baseline estimates for common ColdFusion tasks. Adjust 
 
 | From → To | Low | Medium | High |
 |-----------|-----|--------|------|
-| CF10 → CF2018 | 40 | 64 | 96 |
-| CF10 → CF2021 | 56 | 88 | 128 |
 | CF10 → CF2023 | 72 | 112 | 160 |
-| CF2018 → CF2021 | 24 | 40 | 64 |
 | CF2018 → CF2023 | 40 | 64 | 96 |
 | CF2021 → CF2023 | 16 | 24 | 40 |
 
-> **Note:** CF2018 and CF2021 are no longer valid upgrade targets. CF2018 is out of support and CF2021 extended
-> support ends on 2026-11-10. Use the CF2023 rows as the closest estimate for a CF2025 upgrade until CF2025
-> benchmarks are recorded.
+> **Note:** Only versions in core support are valid upgrade targets: ColdFusion 2023 and 2025. Use the CF2023 rows as
+> the closest estimate for a CF2025 upgrade, and add time for the move to Java 21 and the features ColdFusion 2025
+> removed, until CF2025 benchmarks are recorded.
 
 ### CF → Lucee Migration
 

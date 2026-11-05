@@ -10,9 +10,12 @@ allowcomments
 appdb
 applicationtimeout
 Appts
+APSB
+Arehart
 Aswathy
 automator
 backpressure
+Balakrishnan
 Bengaluru
 BFLA
 Blackfire
@@ -40,6 +43,7 @@ cfdocumentitem
 cfdump
 cfelse
 cfelseif
+cfengine
 cfexchange
 cfexecute
 cffile
@@ -63,6 +67,7 @@ cfoutput
 cfparam
 cfpdf
 cfpdfcrypt
+cfpm
 cfpop
 cfpresentation
 cfquery
@@ -83,6 +88,7 @@ cfthrow
 cftransaction
 cftry
 cfusion
+cfwindow
 chartheight
 chartwidth
 cheatsheet
@@ -121,7 +127,9 @@ fastapi
 FGCT
 findnocase
 Flexbox
+Foundeo
 Freemarker
+Freitag
 fuseactions
 gcutil
 Gergely
@@ -142,9 +150,11 @@ isactive
 isadmin
 isset
 ISTQB
+javax
 jmap
 jstack
 jstat
+Kishore
 Lajin
 learnsphere
 libsodium
@@ -169,6 +179,7 @@ Nygard
 Ollama
 ormsettings
 Orosz
+Ortus
 ortussolutions
 pdflabs
 pdftk
