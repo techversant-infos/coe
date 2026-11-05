@@ -6,7 +6,7 @@ A Forward Deployed Engineer (FDE) works with a client's team and takes a real pr
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
 with the client's people.
 
-- **Who it is for:** developers, QA automation engineers, consultants and AI engineers who want to work directly
+- **Who it is for:** developers, software architects, consultants and AI engineers who want to work directly
   with clients.
 - **Before you start:** some client project experience. Stage 01 is the
   [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
@@ -29,8 +29,8 @@ with the client's people.
 
 - **A clear path, with evidence at each level.** You move from Practitioner to FDE Lead to Expert. Each level lists
   the evidence your lead looks for (see [FDE Levels](#fde-levels)).
-- **Skills beyond your current role.** Developers add AI and client work. QA engineers add building, data and
-  integration. Consultants add hands-on delivery. AI engineers add integration, operations and client work.
+- **Skills beyond your current role.** Developers add AI and client work. Software architects add hands-on
+  building and AI. Consultants add hands-on delivery. AI engineers add integration, operations and client work.
 - **Ownership of a whole engagement.** An FDE Lead owns the scope, the build, production and the handover. Explaining
   risk to non-specialists and tying technical work to business results are also part of the
   [Senior to Team Lead](../career-progression/03-senior-to-team-lead.md) and
@@ -86,16 +86,16 @@ work should show working knowledge of every core topic.
 Everyone completes all nine stages. Your current role decides where you can move quickly and where to plan more
 time.
 
-| Stage | Full-stack developer | QA automation engineer | Consultant | AI engineer |
-|-------|----------------------|------------------------|------------|-------------|
+| Stage | Full-stack developer | Software architect | Consultant | AI engineer |
+|-------|----------------------|--------------------|------------|-------------|
 | [01. Engineering Foundations](./01-engineering-foundations.md) | Already do | Already do | Partly | Already do |
 | [02. Full-Stack Delivery](./02-full-stack-delivery.md) | Already do | Partly | Partly | Partly |
-| [03. Data](./03-data.md) | Partly | New | Partly | Already do |
+| [03. Data](./03-data.md) | Partly | Partly | Partly | Already do |
 | [04. Applied AI](./04-applied-ai.md) | New | New | New | Already do |
-| [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) | Partly | New | New | Already do |
-| [06. Integration Engineering](./06-integration-engineering.md) | Partly | New | Already do | New |
+| [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) | Partly | Partly | New | Already do |
+| [06. Integration Engineering](./06-integration-engineering.md) | Partly | Already do | Already do | New |
 | [07. Cloud and Operations](./07-cloud-and-operations.md) | Partly | Partly | New | Partly |
-| [08. Production and Security](./08-production-and-security.md) | Partly | New | New | Partly |
+| [08. Production and Security](./08-production-and-security.md) | Partly | Partly | New | Partly |
 | [09. Client Delivery](./09-client-delivery.md) | New | Partly | Already do | New |
 
 - **Already do:** you do this in your current role. Show your lead the evidence for the project, then move on.
@@ -106,9 +106,9 @@ What each role brings:
 
 - **Full-stack developer:** you already build and ship. The new parts are AI features and working directly with the
   client.
-- **QA automation engineer:** your test design carries over to evaluations (stages 04 and 08), your automation to
-  CI/CD pipelines (07) and your acceptance testing to handover (09). Building features, working with data and
-  integrating systems are new, so expect a longer path. Agree the order of stages with your lead.
+- **Software architect:** you already design systems, choose integration patterns and weigh trade-offs with
+  stakeholders. The FDE role is hands-on, so the new parts are building features yourself, including AI features,
+  and staying with the work through production and handover.
 - **Consultant:** you already lead client conversations and work with legacy systems. The new parts are building AI
   features and running them in production.
 - **AI engineer:** you already build AI features. The new parts are fitting them into a client's systems, cloud and
