@@ -1,0 +1,130 @@
+{
+  "title": "Forward Deployed Engineer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Engineering Foundations",
+      "page": "01-engineering-foundations.md",
+      "topics": [
+        { "label": "Git Workflow", "core": true, "techversant": true },
+        { "label": "AI Usage", "core": true, "techversant": true },
+        { "label": "Secure Engineering", "core": true, "techversant": true },
+        { "label": "Communication", "core": true, "techversant": true },
+        { "label": "Developer Excellence", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Full-Stack Delivery",
+      "page": "02-full-stack-delivery.md",
+      "topics": [
+        { "label": "TypeScript", "core": true, "techversant": true },
+        { "label": "Python", "core": true, "techversant": false },
+        { "label": "React and Next.js", "core": true, "techversant": true },
+        { "label": "Node.js APIs", "core": true, "techversant": true },
+        { "label": "API design", "core": true, "techversant": true },
+        { "label": "PostgreSQL and migrations", "core": true, "techversant": false },
+        { "label": "Automated testing", "core": true, "techversant": true },
+        { "label": "Code review", "core": true, "techversant": true },
+        { "label": "Data structures and algorithms", "core": false, "techversant": false },
+        { "label": "System design", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Data",
+      "page": "03-data.md",
+      "topics": [
+        { "label": "Reading an unfamiliar schema", "core": true, "techversant": false },
+        { "label": "Checking data quality", "core": true, "techversant": false },
+        { "label": "SQL for analysis", "core": true, "techversant": false },
+        { "label": "Data pipelines and scheduled jobs", "core": false, "techversant": false },
+        { "label": "Data classification", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Applied AI",
+      "page": "04-applied-ai.md",
+      "topics": [
+        { "label": "How LLMs work", "core": true, "techversant": false },
+        { "label": "Prompt and context engineering", "core": true, "techversant": false },
+        { "label": "Retrieval and vector search", "core": true, "techversant": false },
+        { "label": "Tool use and MCP", "core": true, "techversant": false },
+        { "label": "AI agents", "core": true, "techversant": false },
+        { "label": "Choosing models and providers", "core": true, "techversant": false },
+        { "label": "Evaluations", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "AI-Assisted Delivery",
+      "page": "05-ai-assisted-delivery.md",
+      "topics": [
+        { "label": "Coding agents", "core": true, "techversant": true },
+        { "label": "Delegation levels and the Red Zone", "core": true, "techversant": true },
+        { "label": "Agent rules, permissions and CI", "core": true, "techversant": true },
+        { "label": "Reviewing agent output", "core": true, "techversant": true },
+        { "label": "Building prototypes with AI agents", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Integration Engineering",
+      "page": "06-integration-engineering.md",
+      "topics": [
+        { "label": "Working with legacy systems", "core": true, "techversant": true },
+        { "label": "Integration patterns", "core": true, "techversant": false },
+        { "label": "Single sign-on (SSO) integration", "core": true, "techversant": true },
+        { "label": "Email, ticketing and ERP integration", "core": true, "techversant": false },
+        { "label": "Access and release approvals", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Cloud and Operations",
+      "page": "07-cloud-and-operations.md",
+      "topics": [
+        { "label": "Linux and the shell", "core": true, "techversant": false },
+        { "label": "One cloud platform", "core": true, "techversant": false },
+        { "label": "Docker", "core": true, "techversant": false },
+        { "label": "Kubernetes", "core": false, "techversant": false },
+        { "label": "Terraform", "core": false, "techversant": false },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Logs, metrics, traces and alerts", "core": true, "techversant": false },
+        { "label": "Incidents and maintenance", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Production and Security",
+      "page": "08-production-and-security.md",
+      "topics": [
+        { "label": "Evaluation in CI and production", "core": true, "techversant": false },
+        { "label": "Guardrails and fallbacks", "core": true, "techversant": false },
+        { "label": "Tracing AI requests", "core": false, "techversant": false },
+        { "label": "Cost and latency", "core": true, "techversant": false },
+        { "label": "AI security", "core": true, "techversant": true },
+        { "label": "Application security", "core": true, "techversant": true },
+        { "label": "Privacy and data protection law", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Client Delivery",
+      "page": "09-client-delivery.md",
+      "topics": [
+        { "label": "Discovery", "core": true, "techversant": true },
+        { "label": "Scoping and estimation", "core": true, "techversant": true },
+        { "label": "Stakeholder management", "core": true, "techversant": true },
+        { "label": "Status updates and technical writing", "core": true, "techversant": true },
+        { "label": "Demos and executive reporting", "core": true, "techversant": true },
+        { "label": "ROI and time to value", "core": false, "techversant": false },
+        { "label": "User acceptance testing and handover", "core": true, "techversant": false },
+        { "label": "Reusable components and field notes", "core": false, "techversant": false }
+      ]
+    }
+  ]
+}

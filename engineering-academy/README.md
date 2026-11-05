@@ -1,6 +1,6 @@
 # Techversant Engineering Academy
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-10-29 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-11-05 · **Next review:** 2027-01-28
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
@@ -30,6 +30,7 @@ engineering-academy/
 |-- 05-engineering-leadership/
 |-- 06-ai-engineering/
 |-- 07-consulting/
+|-- 08-forward-deployed-engineering/
 |-- learning-levels/
 |-- career-progression/
 `-- README.md
@@ -47,6 +48,7 @@ engineering-academy/
 | [05. Engineering Leadership](./05-engineering-leadership/README.md) | Team lead, engineering manager, technical leadership - planned curriculum |
 | [06. AI Engineering](./06-ai-engineering/README.md) | AI-assisted development, AI-assisted testing, prompt engineering |
 | [07. Consulting: ColdFusion](./07-consulting/coldfusion/README.md) | Legacy assessment, modernization, Lucee and cloud migration, client consulting |
+| [08. Forward Deployed Engineering](./08-forward-deployed-engineering/README.md) | Roadmap for engineers who embed with clients and take AI-enabled solutions to production |
 
 ## Guidance Layers
 
@@ -63,3 +65,4 @@ engineering-academy/
 - Existing automation engineer: [Automation Engineer to Senior Automation Engineer](./02-quality-engineering/02-automation/playwright/02-senior-automation.md)
 - Manager or mentor: [Career Progression](./career-progression/01-transition-overview.md)
 - ColdFusion developer moving into consulting: [ColdFusion Consulting Quick Start](./07-consulting/coldfusion/QUICKSTART.md)
+- Developer, QA automation engineer, consultant or AI engineer moving into client-embedded delivery: [Forward Deployed Engineer Roadmap](./08-forward-deployed-engineering/README.md)

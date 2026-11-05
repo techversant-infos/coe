@@ -13,11 +13,13 @@ Appts
 Aswathy
 automator
 backpressure
+Bengaluru
 BFLA
 Blackfire
 blogcf
 blogname
 blogurl
+Bloomberry
 bypassable
 cachedwithin
 Calibri
@@ -101,8 +103,10 @@ depcruise
 Deque
 distroless
 Divio
+Dockerfiles
 Dockerizing
 docstrings
+DPDP
 EACCES
 Ehcache
 enablecfoutputonly
@@ -120,6 +124,7 @@ Flexbox
 Freemarker
 fuseactions
 gcutil
+Gergely
 golab
 Hazelcast
 HEALTHCHECK
@@ -163,6 +168,7 @@ NVARCHAR
 Nygard
 Ollama
 ormsettings
+Orosz
 ortussolutions
 pdflabs
 pdftk
@@ -192,6 +198,7 @@ restargssource
 restpath
 returnformat
 returntype
+Revealera
 Rohit
 Roleplay
 Sahni

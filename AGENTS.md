@@ -15,7 +15,7 @@ coe/
 |-- standards/            general/  git/  php/  nodejs/  coldfusion/
 |-- security/             audit/  ai-security/
 |-- ai/                   guides/  prompts/  skills-library/  presentations/
-`-- engineering-academy/  00-07 disciplines, learning-levels/, career-progression/
+`-- engineering-academy/  00-08 disciplines, learning-levels/, career-progression/
 ```
 
 Each top-level folder has a README index. `.github/` holds CI, the link checker (`.github/scripts/`) and lint
