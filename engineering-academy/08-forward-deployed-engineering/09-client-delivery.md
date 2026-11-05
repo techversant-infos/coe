@@ -58,7 +58,7 @@ Short, regular, honest writing keeps the client informed and leaves a record for
 **What to learn:**
 
 - Weekly status updates: done, next, risks, decisions needed
-- Decision records and handoff notes
+- Decision records and handover notes
 - Sharing bad news early, with options
 
 **Resources:** [Communication](../00-engineering-foundations/04-communication.md)

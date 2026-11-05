@@ -44,7 +44,8 @@ time.
 - Keeping personal data out of traces
 - Using traces to find whether a failure came from retrieval, the prompt or the model
 
-**Resources:** [OpenTelemetry semantic conventions for generative AI](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
+**Resources:** [OpenTelemetry semantic conventions for generative AI](https://github.com/open-telemetry/semantic-conventions-genai).
+These conventions are still changing, so check the current version before you build.
 
 **Level:** Advanced · Optional
 
@@ -58,7 +59,7 @@ AI costs grow with usage. A feature that is cheap in a demo can be expensive at 
 - Prompt caching, smaller models where they are good enough, batching
 - Measuring response time and setting limits
 
-**Resources:** [Claude prompt caching](https://docs.claude.com/en/docs/build-with-claude/prompt-caching)
+**Resources:** [Claude prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
 
 **Level:** Practitioner · Core
 
@@ -71,6 +72,7 @@ tools, and agents with too much authority.
 
 - Treating all retrieved content and user input as untrusted
 - Limiting what tools can do and to which data
+- Connecting only MCP servers you trust, because they run with your permissions
 - Testing your feature against the common AI attack patterns
 
 **Resources:**
@@ -93,7 +95,7 @@ The normal web security checks still apply to everything you build.
 **Resources:**
 
 - [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [OWASP Top 10:2025](https://top10.owasp.org/2025/)
 
 **Level:** Practitioner · Core
 
@@ -103,14 +105,16 @@ Personal data laws and client contracts decide what you may collect, where it ma
 
 **What to learn:**
 
-- The main obligations under GDPR and India's Digital Personal Data Protection (DPDP) Act
+- The main obligations under GDPR, and under India's Digital Personal Data Protection (DPDP) Act 2023 and DPDP
+  Rules 2025. The Rules were notified on 13 November 2025; most duties, including notice and consent, apply from
+  13 May 2027
 - Data residency and the client's contract terms with AI providers
 - When to involve the client's data protection officer or legal team
 
 **Resources:**
 
 - [GDPR full text](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-- [India data protection framework](https://www.meity.gov.in/data-protection-framework)
+- [DPDP Rules 2025 phased timeline, AZB & Partners](https://www.azbpartners.com/bank/update-indias-digital-personal-data-protection-framework-comes-into-effect/)
 
 **Level:** Advanced · Core
 
@@ -127,12 +131,13 @@ resist attacks and stay within budget.
 - [ ] When the model times out or returns an error, the user sees a clear message and the ticket goes to a person
 - [ ] Ten prompt-injection test cases, with hidden instructions inside documents and tickets: the assistant follows
   none of them and reveals no instructions or data
-- [ ] Traces show the prompt, retrieved passages, tool calls, tokens and response time, and a search of the traces
-  finds no email addresses or names
+- [ ] Traces show the prompt, retrieved passages, tool calls, tokens and response time. Test tickets contain seeded
+  synthetic names and email addresses, and searching the traces for those exact values finds nothing
 - [ ] A cost estimate for 10,000 requests a month, checked against the measured cost of 100 requests
-- [ ] Every item in the [Security Audit Checklist](../../security/audit/security-audit-checklist.md) and the
-  [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) is marked done, not applicable, or open
-  with an owner
+- [ ] Every release-blocking **(B)** item in the [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
+  is done, or not applicable with a written reason. Other items and the
+  [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) are done, not applicable with a reason,
+  or open with an owner
 - [ ] A one-page privacy note: which personal data is processed, where it is stored and which provider processes it
 
 Previous: [07. Cloud and Operations](./07-cloud-and-operations.md) · Next: [09. Client Delivery](./09-client-delivery.md)

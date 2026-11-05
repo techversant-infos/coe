@@ -29,7 +29,8 @@ Check the data before you promise anything that depends on it. A short data audi
 - Checking how far back the history goes and whether it changed shape
 - Writing up what the data can and cannot support
 
-**Resources:** learn on engagements, with a lead. Write the audit up as part of the scope.
+**Resources:** [Great Expectations documentation](https://docs.greatexpectations.io/docs/home/) shows the kinds of
+checks worth automating. Write the audit up as part of the scope, and practise it in the project below.
 
 **Level:** Practitioner · Core
 
@@ -68,32 +69,40 @@ Knowing what counts as personal or confidential data decides what you may store,
 
 **What to learn:**
 
-- Personal, confidential and public data, and the client's own categories
-- What must never go into an AI tool or a prompt
+- Techversant's four classes, Public, Internal, Confidential and Restricted, plus whether data is personal
+- The client's own categories, which may differ
+- What must never go into the AI tools you use to write code
 - Masking and synthetic data for development and testing
 - Code that handles personal data is Red Zone: written by hand and reviewed by a senior engineer
+
+The AI tool rules cover the tools engineers use to write code. An AI feature you build for a client may process
+client data only through the provider and terms agreed in the client's contract.
 
 **Resources:**
 
 - [AI Team Best Practices: data classification](../../ai/guides/ai-team-best-practices.md#data-classification--what-must-not-enter-ai-tools)
+- [Security Audit Reference: data classification](../../security/audit/security-audit-reference.md#62-data-at-rest)
 - [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
 
 **Level:** Practitioner · Core
 
 ## Project: Audit a Real Public Dataset
 
-**Brief:** Download one month of [New York City 311 service requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9),
-a public open dataset, and load it into PostgreSQL. Write a two-page data audit for an imaginary client who wants to
+**Brief:** Download one month of [New York City 311 service requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9),
+a public open dataset, and load it into PostgreSQL with a Python script. Treat the address and location columns as personal data, and
+do not paste rows into AI tools. Write a two-page data audit for an imaginary client who wants to
 predict how long requests take to resolve.
 
 **Size:** 2–3 days
 
 **Verification**, checked by a reviewer:
 
+- [ ] A Python script loads the extract into PostgreSQL and reports how many rows it loaded and rejected
 - [ ] Every number in the audit has the SQL query that produced it, saved in the repository
 - [ ] The audit covers missing values, duplicates, inconsistent formats, the date range and changes over time
 - [ ] At least five analysis queries, including one window function such as weekly request volume
-- [ ] Every column is classified as public, internal, confidential or personal, with a handling rule
+- [ ] Every column is classified as Public, Internal, Confidential or Restricted, marked personal or not, and given a
+  handling rule
 - [ ] A clear verdict: what the data can and cannot support for the client's goal, and why
 - [ ] A second engineer reruns the queries on the same extract and gets the same numbers
 

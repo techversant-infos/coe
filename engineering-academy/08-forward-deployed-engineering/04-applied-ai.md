@@ -20,7 +20,8 @@ You do not need to train models, but you need to know how they behave so you can
 **Resources:**
 
 - [AI Engineering](../06-ai-engineering/README.md) (planned academy paths)
-- [Claude models overview](https://docs.claude.com/en/docs/about-claude/models/overview)
+- [Hugging Face LLM course](https://huggingface.co/learn/llm-course/chapter1/1)
+- [Claude models overview](https://platform.claude.com/docs/en/models/overview)
 
 **Level:** Practitioner · Core
 
@@ -36,8 +37,9 @@ Most quality problems come from giving the model unclear instructions or the wro
 
 **Resources:**
 
-- [Prompt Library](../../ai/prompts/developer-handbook-full.md)
-- [Claude prompt engineering guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
+- [Claude prompt engineering guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
+- Techversant's [Prompt Library](../../ai/prompts/developer-handbook-full.md) holds prompts for development work,
+  not prompts inside a product, but shows the same habits
 
 **Level:** Practitioner · Core
 
@@ -72,8 +74,8 @@ standard way to connect models to tools and data.
 
 ## AI agents
 
-An agent is a model that decides its own next step and calls tools in a loop. Agents are powerful and risky in client
-systems.
+An agent is a model that decides its own next step and calls tools in a loop. Agents can do more on their own,
+which adds risk in client systems.
 
 **What to learn:**
 
@@ -81,10 +83,7 @@ systems.
 - Giving an agent only the authority the task needs
 - Human approval steps before anything irreversible
 
-**Resources:**
-
-- [AI Era Coding Guidelines: delegation levels](../../standards/general/ai-era-coding-guidelines.md#21-delegation-levels)
-- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+**Resources:** [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
 
 **Level:** Advanced · Core
 
@@ -98,7 +97,7 @@ The right model balances quality, speed, cost and where the client allows data t
 - Cost per request and per month at the expected volume
 - Data residency and the client's approved providers
 
-**Resources:** [Claude models overview](https://docs.claude.com/en/docs/about-claude/models/overview).
+**Resources:** [Claude models overview](https://platform.claude.com/docs/en/models/overview).
 Techversant's [AI tool standard](../../ai/guides/ai-team-best-practices.md#2-tool-selection-standards) covers the
 coding tools engineers use, not the models inside client products. Agree the provider with the client in the scope.
 
@@ -115,7 +114,7 @@ feature works, and how you notice when it stops working.
 - Scoring results against the success measure agreed in the scope
 - Reporting failures honestly, with what they mean for the client
 
-**Resources:** [Claude guide: define success and build evaluations](https://docs.claude.com/en/docs/test-and-evaluate/develop-tests)
+**Resources:** [Claude guide: define success and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
 
 **Level:** Practitioner · Core
 
@@ -123,8 +122,8 @@ feature works, and how you notice when it stops working.
 
 **Brief:** Build an assistant that answers questions about Techversant's engineering standards, using the `standards/`
 and `security/` folders of this repository as its knowledge base. It retrieves the relevant passages, answers with
-citations, and says it does not know when the documents do not cover the question. Write the success measure before
-you build anything.
+citations, and says it does not know when the documents do not cover the question. Build it in Python or
+TypeScript. Write the success measure before you build anything.
 
 **Size:** 4–5 days
 
@@ -138,6 +137,7 @@ you build anything.
 - [ ] Every answer cites the document and section it used
 - [ ] A one-page report: the score against the success measure, three failures with their cause (retrieval, prompt or
   model) and the cost per 1,000 questions
-- [ ] Only an approved AI provider is used, and no personal or client data goes into prompts
+- [ ] The AI provider is named in the README and approved by your lead before you build, and no personal or client
+  data goes into prompts
 
 Previous: [03. Data](./03-data.md) · Next: [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md)

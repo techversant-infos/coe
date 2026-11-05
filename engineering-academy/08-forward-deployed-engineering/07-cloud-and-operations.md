@@ -3,8 +3,23 @@
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
 FDEs deploy into whatever the client runs, and keep it running after launch. In a 2026 survey of Indian
-enterprises, 77% said they prioritise production deployment skills, but only 19% said such talent was available
-([Scaler and CMR](https://www.scaler.com/blog/forward-deployed-engineering-indias-next-%E2%82%B91-crore-salary-opportunity-scaler-x-cmr-report/)). Back to the [roadmap](./README.md).
+enterprises, 77% said they prioritise production deployment skills, but the report puts talent availability at
+just 19% ([Scaler and CMR](https://www.scaler.com/blog/forward-deployed-engineering-indias-next-%E2%82%B91-crore-salary-opportunity-scaler-x-cmr-report/)). Back to the [roadmap](./README.md).
+
+## Linux and the shell
+
+Client servers, containers and CI runners are usually Linux. You will often work on machines you do not own, with
+limited access.
+
+**What to learn:**
+
+- Files, permissions, processes and services
+- Reading logs with `grep`, `tail` and `less`
+- SSH, environment variables and small shell scripts
+
+**Resources:** [The Linux Command Line](https://linuxcommand.org/tlcl.php)
+
+**Level:** Practitioner · Core
 
 ## One cloud platform
 
@@ -44,7 +59,7 @@ Many larger clients run Kubernetes. You need enough to deploy, read status and d
 
 **What to learn:**
 
-- Pods, deployments, services and config maps
+- Pods, Deployments, Services, ConfigMaps and Secrets
 - Reading pod logs and events
 - Rolling out and rolling back a deployment
 
@@ -61,6 +76,7 @@ Infrastructure as code lets the client's team see, review and change the infrast
 - Resources, variables, state and modules
 - Plan, review, then apply
 - Handing state and modules over to the client
+- OpenTofu, the open-source fork some clients use instead
 
 **Resources:** [Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials)
 
@@ -78,7 +94,7 @@ Every change should be type-checked, tested and deployed the same way, with a ro
 
 **Resources:**
 
-- [Git Workflow](../../standards/git/git-workflow.md)
+- [Git Workflow](../../standards/git/git-workflow.md): environments, promotion and rollback
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [Feature toggles](https://martinfowler.com/articles/feature-toggles.html)
 
@@ -125,7 +141,8 @@ day": a colleague breaks something on purpose and you restore the service.
 **Verification**, checked by your lead:
 
 - [ ] Each service runs in a container, and CI builds the images
-- [ ] Pushing a version tag deploys through the pipeline with no manual steps
+- [ ] In your practice environment, pushing a version tag deploys through the pipeline with no manual steps. On a
+  client project, the client's approval step comes first.
 - [ ] Logs are structured and carry a request ID; a dashboard shows error rate, response time and AI cost
 - [ ] An alert fires when the error rate passes a threshold, shown during the game day
 - [ ] On the game day you spot the problem from the alert, follow your runbook and roll back to the previous version,

@@ -4,6 +4,40 @@
 
 FDEs deliver whole features, from the database to the screen. Back to the [roadmap](./README.md).
 
+## TypeScript
+
+The main language used in this roadmap's projects: one strictly typed language for the UI, the API and
+background jobs. About 35% of FDE job postings ask for it ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+
+**What to learn:**
+
+- `strict` mode, types for API inputs and outputs, `null` handling
+- Modules, async code and error handling
+- Reading type errors instead of silencing them
+
+**Resources:**
+
+- [Node.js and TypeScript Best Practices](../../standards/nodejs/nodejs-typescript-best-practices.md)
+- [TypeScript documentation](https://www.typescriptlang.org/docs/)
+
+**Level:** Practitioner · Core
+
+## Python
+
+Python is the language FDE job postings ask for most, in about 66% of them ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+Most AI and data tools support it first, and many client teams build in it.
+
+**What to learn:**
+
+- Virtual environments and installing packages
+- Reading and changing client scripts
+- Data scripts and notebooks for quick analysis
+- The Python SDKs of the AI providers you use
+
+**Resources:** [The Python Tutorial](https://docs.python.org/3/tutorial/)
+
+**Level:** Practitioner · Core
+
 ## React and Next.js
 
 Most client-facing work needs a UI: an internal tool, a review screen for AI output, a dashboard.
@@ -57,13 +91,15 @@ handover.
 
 ## PostgreSQL and migrations
 
-The default database for new builds, and the place where retrieval for AI features often lives too.
+A common choice for new builds, and the database used in this roadmap's projects. With the pgvector extension
+it can also hold the vector search behind AI features.
 
 **What to learn:**
 
 - Tables, indexes, constraints and transactions
 - Writing and testing migrations; rolling them back
-- Production database migrations are Red Zone: a person writes and reviews them
+- Production database migrations are Red Zone: write them by hand, without AI generation, and have a senior
+  engineer review them
 
 **Resources:**
 
@@ -104,6 +140,37 @@ On an engagement you review your own agent's output, your colleagues' work and s
 
 **Level:** Practitioner · Core
 
+## Data structures and algorithms
+
+Enough to choose a sensible approach, spot slow code and pass technical interviews.
+
+**What to learn:**
+
+- Arrays, maps, sets, trees and queues, and when to use each
+- Big-O reasoning for loops and queries
+- Sorting, searching and recursion
+
+**Resources:** [MIT 6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+
+**Level:** Practitioner · Optional
+
+## System design
+
+Choosing an architecture that fits the client's size, budget and team, not the most impressive one.
+
+**What to learn:**
+
+- Monolith or services, synchronous or queued, cache or not
+- Designing for failure: timeouts, retries, idempotency
+- Explaining a design and its trade-offs to the client
+
+**Resources:**
+
+- [Architecture](../04-architecture/README.md) (planned academy path)
+- [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+
+**Level:** Advanced · Core
+
 ## Project: Build a Service Request Tracker
 
 **Brief:** Build a small full-stack application: a Next.js UI, a Node.js API in TypeScript and a PostgreSQL
@@ -113,14 +180,15 @@ database. Users create, list, filter (by status and assignee) and close requests
 
 **Verification**, checked by a reviewer:
 
-- [ ] The API follows the [REST API Best Practices](../../standards/general/rest-api-best-practices.md); invalid input
-  returns `400` with a clear error
+- [ ] The API follows the [REST API Best Practices](../../standards/general/rest-api-best-practices.md): malformed
+  JSON returns `400`, invalid fields return `422`, and both use the standard's error format
 - [ ] Every database change is a migration that applies and rolls back cleanly on an empty database
 - [ ] Unit tests cover the business rules, integration tests run against a real test database, and one Playwright test
   creates and closes a request
 - [ ] Breaking a business rule on purpose makes at least one test fail
 - [ ] A reviewer works through the [code review checklist](../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
   and no material issue is left open
+- [ ] A one-page design note explains the architecture and one trade-off you made, and why
 - [ ] A new engineer runs the application locally from the README without asking you anything
 
-Previous: [01. Engineering Baseline](./01-engineering-baseline.md) · Next: [03. Data](./03-data.md)
+Previous: [01. Engineering Foundations](./01-engineering-foundations.md) · Next: [03. Data](./03-data.md)

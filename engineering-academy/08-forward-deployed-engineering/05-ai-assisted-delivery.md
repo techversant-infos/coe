@@ -2,16 +2,16 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
-FDEs work fast because they use coding agents well, and stay safe because they know where agents stop.
+Coding agents help FDEs deliver faster on unfamiliar systems. Using them safely means knowing where they must stop.
 Back to the [roadmap](./README.md).
 
 ## Coding agents
 
-Coding agents such as Claude Code, Codex, Cursor and Copilot read code, make changes and run commands for you.
+Coding agents such as Claude Code, Cursor and Copilot read code, make changes and run commands for you.
 
 **What to learn:**
 
-- Which tool fits which task, and the tools Techversant approves
+- Which tool fits which task, and [the tools Techversant approves](../../ai/guides/ai-team-best-practices.md#2-tool-selection-standards)
 - Giving an agent a clear task, context and a way to check its work
 - Managing sessions, context and cost
 
@@ -52,7 +52,11 @@ branch protection and CI checks are what actually stop a mistake.
 - Limiting what an agent may read, edit and run
 - Branch protection and CI as the real safety net
 
-**Resources:** [AI Team Best Practices: project memory](../../ai/guides/ai-team-best-practices.md#4-project-memory--setup-standard)
+**Resources:**
+
+- [AI Team Best Practices: project memory](../../ai/guides/ai-team-best-practices.md#4-project-memory--setup-standard)
+- [AI Team Best Practices: non-negotiables](../../ai/guides/ai-team-best-practices.md#non-negotiables--no-exceptions),
+  including "no AI agent pushes directly to main"
 
 **Level:** Practitioner · Core
 
@@ -86,8 +90,9 @@ A working prototype in hours lets the client react to something real instead of 
 
 ## Project: Deliver a Feature with a Coding Agent, Safely
 
-**Brief:** Use an approved coding agent to add two features to the service request tracker from stage 02: "assign to
-me" and an "overdue" badge. Set up the guard rails first.
+**Brief:** Use an approved coding agent to add two features to the service request tracker from stage 02: closing
+several requests at once, and an "overdue" filter. Neither needs any sign-in code. If a feature needs a database
+migration, write it yourself: the agent may not touch the migrations folder. Set up the guardrails first.
 
 **Size:** 1–2 days
 
@@ -95,8 +100,10 @@ me" and an "overdue" badge. Set up the guard rails first.
 
 - [ ] The repository has a short instruction file (`AGENTS.md` or `CLAUDE.md`) with commands, conventions and the
   folders the agent must not touch
-- [ ] The agent's permissions deny edits to the authentication code, and your notes show a denied attempt
-- [ ] Branch protection requires CI to pass and one human approval before merging to `main`
+- [ ] The agent's permissions deny edits to the database migrations folder and to `.github/workflows/`, and your notes
+  show a denied attempt
+- [ ] The repository is in the Techversant GitHub organisation, and branch protection requires CI to pass and one
+  human approval before merging to `main`
 - [ ] The pull request states the delegation level you chose for each task
 - [ ] The pull request lists what the agent wrote, what you changed, and at least one suggestion you rejected and why
 - [ ] A reviewer other than you reads every line and approves

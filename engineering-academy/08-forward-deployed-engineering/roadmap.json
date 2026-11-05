@@ -5,16 +5,14 @@
   "stages": [
     {
       "number": "01",
-      "title": "Engineering Baseline",
-      "page": "01-engineering-baseline.md",
+      "title": "Engineering Foundations",
+      "page": "01-engineering-foundations.md",
       "topics": [
-        { "label": "Engineering Foundations", "core": true, "techversant": true },
-        { "label": "Git and pull requests", "core": true, "techversant": true },
-        { "label": "TypeScript", "core": true, "techversant": true },
-        { "label": "Python", "core": true, "techversant": false },
-        { "label": "Linux and the shell", "core": true, "techversant": false },
-        { "label": "Data structures and algorithms", "core": false, "techversant": false },
-        { "label": "System design", "core": true, "techversant": false }
+        { "label": "Git Workflow", "core": true, "techversant": true },
+        { "label": "AI Usage", "core": true, "techversant": true },
+        { "label": "Secure Engineering", "core": true, "techversant": true },
+        { "label": "Communication", "core": true, "techversant": true },
+        { "label": "Developer Excellence", "core": true, "techversant": true }
       ]
     },
     {
@@ -22,12 +20,16 @@
       "title": "Full-Stack Delivery",
       "page": "02-full-stack-delivery.md",
       "topics": [
+        { "label": "TypeScript", "core": true, "techversant": true },
+        { "label": "Python", "core": true, "techversant": false },
         { "label": "React and Next.js", "core": true, "techversant": true },
         { "label": "Node.js APIs", "core": true, "techversant": true },
         { "label": "API design", "core": true, "techversant": true },
         { "label": "PostgreSQL and migrations", "core": true, "techversant": false },
         { "label": "Automated testing", "core": true, "techversant": true },
-        { "label": "Code review", "core": true, "techversant": true }
+        { "label": "Code review", "core": true, "techversant": true },
+        { "label": "Data structures and algorithms", "core": false, "techversant": false },
+        { "label": "System design", "core": true, "techversant": false }
       ]
     },
     {
@@ -48,7 +50,7 @@
       "page": "04-applied-ai.md",
       "topics": [
         { "label": "How LLMs work", "core": true, "techversant": false },
-        { "label": "Prompt and context engineering", "core": true, "techversant": true },
+        { "label": "Prompt and context engineering", "core": true, "techversant": false },
         { "label": "Retrieval and vector search", "core": true, "techversant": false },
         { "label": "Tool use and MCP", "core": true, "techversant": false },
         { "label": "AI agents", "core": true, "techversant": false },
@@ -74,7 +76,7 @@
       "page": "06-integration-engineering.md",
       "topics": [
         { "label": "Working with legacy systems", "core": true, "techversant": true },
-        { "label": "Integration patterns", "core": true, "techversant": true },
+        { "label": "Integration patterns", "core": true, "techversant": false },
         { "label": "Single sign-on (SSO) integration", "core": true, "techversant": true },
         { "label": "Email, ticketing and ERP integration", "core": true, "techversant": false },
         { "label": "Access and release approvals", "core": true, "techversant": false }
@@ -85,6 +87,7 @@
       "title": "Cloud and Operations",
       "page": "07-cloud-and-operations.md",
       "topics": [
+        { "label": "Linux and the shell", "core": true, "techversant": false },
         { "label": "One cloud platform", "core": true, "techversant": false },
         { "label": "Docker", "core": true, "techversant": false },
         { "label": "Kubernetes", "core": false, "techversant": false },

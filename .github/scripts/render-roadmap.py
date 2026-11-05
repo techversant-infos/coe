@@ -155,7 +155,7 @@ def render(data: dict) -> str:
               f'<text x="{SIDE_MARGIN}" y="{footer_y + 4}" font-size="13" fill="{MUTED}">Every topic has a guide '
               f'in the stage pages next to this image.</text>'
               f'<text x="{WIDTH - SIDE_MARGIN}" y="{footer_y + 4}" font-size="13" font-weight="700" fill="{NAVY}" '
-              f'text-anchor="end">Techversant Centre of Excellence</text>')
+              f'text-anchor="end">Techversant Center of Excellence</text>')
     title = escape(f'{data["title"]} roadmap')
     desc = escape("; ".join(f'{s["number"]} {s["title"]}: ' + ", ".join(t["label"] for t in s["topics"])
                             for s in data["stages"]))
