@@ -29,7 +29,7 @@ Use this checklist when conducting technical assessments of legacy ColdFusion ap
 - [ ] **Java Version:** What JVM version?
 - [ ] **Clustered:** Single server or cluster?
 - [ ] **Load Balancer:** In use? Type?
-- [ ] **Monitoring:** What tools? (FusionReactor, SeeFusion, etc.)
+- [ ] **Monitoring:** What tools? (FusionReactor, New Relic, Datadog or other)
 
 ### Hosting
 

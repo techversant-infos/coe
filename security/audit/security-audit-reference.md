@@ -139,7 +139,7 @@ team security session.
 3. "We scan dependencies" no longer satisfies A03 — build and distribution integrity are in scope (§5).
 
 A ColdFusion-specific worked example of all ten categories is available at
-[OWASP Top 10:2025 — ColdFusion view](../../engineering-academy/07-consulting/coldfusion/01-coldfusion-deep-expertise/assets/owasp-top-10-2025-coldfusion.svg).
+[OWASP Top 10:2025 — ColdFusion view](../../engineering-academy/07-consulting/coldfusion/reference/assets/owasp-top-10-2025-coldfusion.svg).
 
 ---
 

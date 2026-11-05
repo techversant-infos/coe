@@ -17,8 +17,8 @@ Most clients run older systems that still matter. Change them carefully, in smal
 
 **Resources:**
 
-- [Legacy Assessment](../07-consulting/coldfusion/02-legacy-assessment/README.md): mapping architecture, technical
-  debt and risks. Written for ColdFusion, but the method applies to any stack.
+- [Assessing Legacy Applications](../07-consulting/coldfusion/05-assessing-legacy-applications.md): mapping
+  architecture, technical debt and risks. Written for ColdFusion, but the method applies to any stack.
 - [Strangler fig application](https://martinfowler.com/bliki/StranglerFigApplication.html)
 
 **Level:** Practitioner · Core

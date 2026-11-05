@@ -1,0 +1,144 @@
+{
+  "title": "Senior ColdFusion Consultant",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "CFML and the Platform",
+      "page": "01-cfml-and-the-platform.md",
+      "topics": [
+        { "label": "Adobe ColdFusion, Lucee and BoxLang", "core": true, "techversant": true },
+        { "label": "Versions and support lifecycle", "core": true, "techversant": false },
+        { "label": "Modern CFML", "core": true, "techversant": true },
+        { "label": "Frameworks", "core": true, "techversant": false },
+        { "label": "CommandBox and CFConfig", "core": true, "techversant": false },
+        { "label": "Testing with TestBox", "core": true, "techversant": false },
+        { "label": "CFML coding standards", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "JVM, Performance and Diagnostics",
+      "page": "02-jvm-performance-and-diagnostics.md",
+      "topics": [
+        { "label": "Request lifecycle", "core": true, "techversant": true },
+        { "label": "JVM memory and garbage collection", "core": true, "techversant": true },
+        { "label": "Thread dumps and heap dumps", "core": true, "techversant": true },
+        { "label": "Application monitoring", "core": true, "techversant": true },
+        { "label": "Database access and connection pools", "core": true, "techversant": true },
+        { "label": "Caching", "core": true, "techversant": true },
+        { "label": "Load testing", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Security and Hardening",
+      "page": "03-security-and-hardening.md",
+      "topics": [
+        { "label": "Security updates and patching", "core": true, "techversant": false },
+        { "label": "Server lockdown", "core": true, "techversant": true },
+        { "label": "Secure CFML coding", "core": true, "techversant": true },
+        { "label": "Secrets and configuration", "core": true, "techversant": false },
+        { "label": "Security review", "core": true, "techversant": true },
+        { "label": "Red Zone work", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Maintaining Legacy Applications",
+      "page": "04-maintaining-legacy-applications.md",
+      "topics": [
+        { "label": "Understanding inherited code", "core": true, "techversant": true },
+        { "label": "Characterization tests", "core": true, "techversant": false },
+        { "label": "Applying updates safely", "core": true, "techversant": false },
+        { "label": "Monitoring and alerting", "core": true, "techversant": false },
+        { "label": "Incident response", "core": true, "techversant": false },
+        { "label": "Runbooks and documentation", "core": true, "techversant": true },
+        { "label": "Support agreements", "core": true, "techversant": true },
+        { "label": "Using AI tools on inherited code", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Assessing Legacy Applications",
+      "page": "05-assessing-legacy-applications.md",
+      "topics": [
+        { "label": "Framework detection", "core": true, "techversant": true },
+        { "label": "Architecture mapping", "core": true, "techversant": true },
+        { "label": "Technical debt scoring", "core": true, "techversant": true },
+        { "label": "Security assessment", "core": true, "techversant": true },
+        { "label": "Performance assessment", "core": true, "techversant": true },
+        { "label": "The assessment report", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Modernization Strategy",
+      "page": "06-modernization-strategy.md",
+      "topics": [
+        { "label": "Modernization options", "core": true, "techversant": true },
+        { "label": "Decision matrix", "core": true, "techversant": true },
+        { "label": "Total cost of ownership", "core": true, "techversant": false },
+        { "label": "Strangler fig pattern", "core": true, "techversant": true },
+        { "label": "Phased roadmap", "core": true, "techversant": true },
+        { "label": "When not to modernize", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Upgrades and Migration",
+      "page": "07-upgrades-and-migration.md",
+      "topics": [
+        { "label": "Adobe ColdFusion upgrades", "core": true, "techversant": false },
+        { "label": "Migrating to Lucee", "core": true, "techversant": true },
+        { "label": "Lucee upgrades", "core": true, "techversant": false },
+        { "label": "Compatibility testing", "core": true, "techversant": true },
+        { "label": "Configuration migration", "core": true, "techversant": true },
+        { "label": "Data, sessions and files", "core": true, "techversant": false },
+        { "label": "Cutover and rollback", "core": true, "techversant": true },
+        { "label": "Evaluating BoxLang", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Cloud, Containers and DevOps",
+      "page": "08-cloud-containers-and-devops.md",
+      "topics": [
+        { "label": "Containers for CFML", "core": true, "techversant": false },
+        { "label": "Licensing in containers and the cloud", "core": true, "techversant": false },
+        { "label": "Sessions and shared state", "core": true, "techversant": true },
+        { "label": "CI/CD for CFML", "core": true, "techversant": false },
+        { "label": "Cloud platforms", "core": true, "techversant": false },
+        { "label": "Infrastructure as code", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Modernizing the Application",
+      "page": "09-modernizing-the-application.md",
+      "topics": [
+        { "label": "REST APIs in CFML", "core": true, "techversant": true },
+        { "label": "Separating the front end", "core": true, "techversant": true },
+        { "label": "Accessibility", "core": false, "techversant": false },
+        { "label": "AI features in CFML", "core": true, "techversant": true },
+        { "label": "Background work", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Client Consulting and Delivery",
+      "page": "10-client-consulting-and-delivery.md",
+      "topics": [
+        { "label": "Discovery workshops", "core": true, "techversant": true },
+        { "label": "Estimation", "core": true, "techversant": true },
+        { "label": "Proposals and statements of work", "core": true, "techversant": true },
+        { "label": "Client communication", "core": true, "techversant": true },
+        { "label": "Presenting to decision makers", "core": true, "techversant": true },
+        { "label": "Running the engagement", "core": true, "techversant": true },
+        { "label": "Handover and knowledge transfer", "core": true, "techversant": true },
+        { "label": "Leading and mentoring", "core": false, "techversant": false }
+      ]
+    }
+  ]
+}
