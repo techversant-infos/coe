@@ -57,8 +57,6 @@ breaks.
 
 **Resources:**
 
-- [Performance validation](../../standards/general/ai-era-coding-guidelines.md#63-performance-validation), in the
-  Techversant AI Era Coding Guidelines
 - [k6 documentation](https://grafana.com/docs/k6/latest/)
 
 **Level:** Practitioner · Core
@@ -117,8 +115,9 @@ system handles failure, and prove you can recover within the brief's limits.
 - [ ] On the running app, a call to an external service has a timeout, retries with backoff and a fallback, and a
   test shows the site still serves articles when that service is down
 - [ ] A disaster recovery strategy is chosen to meet the brief's four-hour RTO and 15-minute RPO, with its cost
-- [ ] A recovery drill restores the database from backup, and the measured recovery time and data loss are within
-  the brief's limits
+- [ ] A recovery drill restores the database using the chosen method, for example point-in-time recovery, counts
+  the writes lost after the last recoverable point, and records the recovery time and data loss against the brief's
+  four-hour RTO and 15-minute RPO
 - [ ] Dashboards or alerts are defined for each SLO
 
 Previous: [04. Data Architecture](./04-data-architecture.md) · Next:

@@ -73,7 +73,7 @@ Standards keep projects consistent where it matters.
 - [CoE standards](../../standards/README.md), Techversant's existing standards
 - [Contributing to CoE Standards](../../CONTRIBUTING.md)
 
-**Level:** Expert · Core
+**Level:** Advanced · Core
 
 ## Mentoring
 

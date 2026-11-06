@@ -33,7 +33,8 @@ why, guides the team through delivery and checks the design as the client's need
 
 - **The next step after lead developer.** The [Lead to Architect](../career-progression/04-lead-to-architect.md)
   career page describes the move; this roadmap gives you the skills and the evidence for it.
-- **A clear path, with evidence at each level.** You move from Practitioner to Solution Architect to Expert. Each
+- **A clear path, with evidence at each level.** You move from Practitioner to Advanced (Solution
+  Architect) to Expert. Each
   level lists the evidence your lead looks for (see [Levels](#levels)).
 - **Wider influence.** You work across teams and projects, and you are in the room for client decisions and
   proposals.
@@ -74,7 +75,7 @@ How a software architect differs from the roles you may hold at Techversant toda
 
 The levels follow the academy's [learning levels](../learning-levels/README.md), where the Architecture path runs
 from Practitioner to Expert. Solution Architect is the target of this roadmap. Each topic's level shows the depth
-expected of a Solution Architect; topics at Expert level are for architects who set standards across projects.
+expected of a Solution Architect. At Expert level, you apply the same topics across many projects and teams.
 
 ## Where You Start
 
@@ -136,7 +137,8 @@ counts.
 | [10. Architecture Practice](./10-architecture-practice.md) | [Review a peer's design and propose a reference](./10-architecture-practice.md#project-review-a-peers-design-and-propose-a-reference) |
 
 The projects build on each other. They all use the same [practice system](./practice-system.md): the open-source
-RealWorld blogging app and a written growth brief from a fictional client. Each project designs one part of the
+RealWorld blogging app, a written growth brief from a fictional client, and the BlogCFC5 legacy blog the client
+must migrate. Each project designs one part of the
 client's next year, and several ask you to prove a design decision on the running app.
 
 ## Capstone
@@ -169,7 +171,7 @@ with the architecture record of a real project, this is the evidence for the Sol
 | C4 model | A way of drawing software architecture at four levels: system context, containers, components and code |
 | Quality attribute | A property the system must have beyond its features, such as availability, performance or security |
 | SLI and SLO | Service level indicator and objective: what you measure about a service, and the target for it |
-| Error budget | How much unreliability an SLO allows over a period, for example 0.1% of requests in 30 days for 99.9% |
+| Error budget | How much unreliability an SLO allows over a period, for example 0.1% of requests, or about 43 minutes of downtime, in 30 days for 99.9% |
 | RTO and RPO | Recovery time objective and recovery point objective: how long recovery may take, and how much data may be lost |
 | Threat model | A structured list of what can go wrong with a system's security, and what you do about each item |
 | Strangler fig | Replacing a system piece by piece while the old one keeps running |

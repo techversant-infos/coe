@@ -34,7 +34,7 @@ measurable.
 - The common attributes, as named in the ISO/IEC 25010 quality model: performance efficiency, compatibility,
   reliability, security and maintainability, among others
 - Turning a vague wish ("it must be fast") into a measurable scenario ("95% of article pages load in under one
-  second at 500 requests a second")
+  second at 50 requests a second")
 - Ranking attributes with the client, because they compete with each other and with cost
 
 **Resources:**
@@ -125,7 +125,7 @@ decisions already built into it.
 **Verification**, checked by an architect or lead:
 
 - [ ] The app runs locally, and the API test results are recorded as the baseline
-- [ ] A system context diagram shows the app, its users and every external system in the brief
+- [ ] A system context diagram shows the app, its users and every external system it uses today
 - [ ] A container diagram shows the front end, back end, database and any other process, with the technology of
   each
 - [ ] The diagrams are stored as code in the repository and render without errors

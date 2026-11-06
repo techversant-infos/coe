@@ -34,7 +34,7 @@
       "page": "03-api-and-integration-architecture.md",
       "topics": [
         { "label": "API contracts and versioning", "core": true, "techversant": true },
-        { "label": "Calls and messages", "core": true, "techversant": false },
+        { "label": "Direct calls or messages", "core": true, "techversant": false },
         { "label": "Messaging and events", "core": true, "techversant": false },
         { "label": "Integration patterns", "core": true, "techversant": true },
         { "label": "Backward compatibility", "core": true, "techversant": true }
@@ -60,7 +60,7 @@
       "topics": [
         { "label": "Service level objectives", "core": true, "techversant": false },
         { "label": "Failure handling", "core": true, "techversant": false },
-        { "label": "Performance and load testing", "core": true, "techversant": true },
+        { "label": "Performance and load testing", "core": true, "techversant": false },
         { "label": "Observability", "core": true, "techversant": true },
         { "label": "Disaster recovery", "core": true, "techversant": false }
       ]

@@ -32,7 +32,7 @@ one depends on the business, not on the technology alone.
 
 - The common options and what each costs, risks and delivers
 - Comparing options with the client on value, risk and total cost of ownership
-- Recognising when the best advice is not to modernize yet
+- Recognizing when the best advice is not to modernize yet
 
 **Resources:**
 
@@ -71,6 +71,8 @@ Moving data is often the riskiest part of a migration. Old data is rarely as cle
 - Mapping old fields to new ones, and deciding what to do with data that does not fit
 - Running the migration repeatedly in rehearsal, with automated checks that compare record counts and samples
 - Moving data that keeps changing while the old system is still live
+- Migration scripts that touch production data or personal data are Red Zone work at Techversant: written by hand,
+  without AI generation, and reviewed by a senior engineer
 
 **Resources:** learn on projects, with an architect.
 
@@ -100,7 +102,9 @@ quickly and without losing data.
 
 **Brief:** Lantern's ten years of articles and comments live in its old ColdFusion blog, the
 [BlogCFC5 practice app](../07-consulting/coldfusion/reference/practice-app-blogcfc5.md). Assess it, plan how its
-content moves into the new system with old links still working, and rehearse the data migration.
+content moves into the new system with old links still working, and rehearse the data migration. A fresh BlogCFC5
+install is empty, so seed it with sample entries first; a script is fine. If engine errors stop the app running,
+work from the database schema in its `install/` folder.
 
 **Size:** 4–5 days
 
@@ -111,8 +115,10 @@ content moves into the new system with old links still working, and rehearse the
 - [ ] An ADR chooses between a one-time move and a strangler fig migration, with at least two options compared
 - [ ] A field mapping shows how BlogCFC5 entries, categories and comments map to RealWorld articles, tags and
   comments, and what happens to data that does not fit
-- [ ] A migration script moves a sample of at least 100 entries with their comments, and automated checks compare
-  counts and spot-check content against the source
+- [ ] BlogCFC5 is seeded with at least 100 entries and their comments, and a migration script moves them, with
+  automated checks that compare counts and spot-check content against the source
+- [ ] The migration script, which handles commenters' names and email addresses, is written by hand without AI
+  generation and reviewed by a senior engineer
 - [ ] The design keeps old BlogCFC5 article links working, for example with permanent redirects, and a test proves it
   for a sample of links
 - [ ] A cutover plan has steps, owners, go or no-go checks and a tested rollback

@@ -18,7 +18,8 @@ easy to answer and wrong data hard to store.
 
 **Resources:**
 
-- [Designing Data-Intensive Applications](https://dataintensive.net/), Martin Kleppmann, chapter 2
+- [Designing Data-Intensive Applications](https://dataintensive.net/), Martin Kleppmann, the chapter on data models and query
+  languages
 
 **Level:** Practitioner · Core
 
@@ -50,6 +51,8 @@ can be deployed and rolled back safely.
 - Expand and contract: add the new structure, move data and code across, then remove the old structure
 - Running migrations in the deployment pipeline, with a tested way back
 - Large data changes that must run in batches to avoid locking tables
+- Production migration scripts are Red Zone work at Techversant: written by hand, without AI generation, and
+  reviewed by a senior engineer
 
 **Resources:**
 
@@ -90,8 +93,8 @@ disasters.
 
 **Resources:**
 
-- [Log protection and retention](../../security/audit/security-audit-reference.md#113-log-protection-and-retention),
-  in the Techversant security audit reference
+- [Handling and retention](../../security/audit/security-audit-reference.md#163-handling-and-retention), in the Techversant
+  security audit reference, for retention periods, backups and data classification
 - [Data at rest](../../security/audit/security-audit-reference.md#62-data-at-rest), in the same reference
 
 **Level:** Practitioner · Core

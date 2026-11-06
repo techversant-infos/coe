@@ -2,7 +2,7 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
 
-Most client systems now run in the cloud, where every design choice has a monthly price. An architect has to design
+Many client systems now run in the cloud, where every design choice has a monthly price. An architect has to design
 for the platform and for the budget. Back to the [roadmap](./README.md).
 
 ## Cloud architecture frameworks
@@ -14,7 +14,8 @@ on any platform.
 
 - The six pillars of the AWS Well-Architected Framework: operational excellence, security, reliability, performance
   efficiency, cost optimization and sustainability
-- The five pillars of the Azure Well-Architected Framework, which cover the same ground without sustainability
+- The five pillars of the Azure Well-Architected Framework, which cover the same ground without a
+  separate sustainability pillar
 - Running a lightweight review of a design against one framework
 
 **Resources:**
@@ -112,10 +113,10 @@ the USD 1,500 monthly budget at the new traffic.
 
 - [ ] A deployment diagram shows every cloud service the design uses, in one region, with how traffic reaches it
 - [ ] An ADR chooses between a managed container service and Kubernetes, with at least two options compared
-- [ ] One environment is described in infrastructure as code, and a plan runs without errors in a pipeline or
-  locally
-- [ ] A line-by-line cost estimate from the provider's pricing calculator covers the brief's traffic, and stays under
-  USD 1,500 a month
+- [ ] One environment is described in infrastructure as code, and a plan runs without errors against a sandbox
+  account agreed with your lead, or `terraform validate` passes if no account is available
+- [ ] A line-by-line cost estimate from the provider's pricing calculator covers the brief's traffic, stays under
+  USD 1,500 a month, and states how much is left for the AI features in stage 08
 - [ ] The estimate shows how cost changes if traffic doubles
 - [ ] A review against one well-architected framework lists at least three risks, each with a decision to fix,
   accept or defer it

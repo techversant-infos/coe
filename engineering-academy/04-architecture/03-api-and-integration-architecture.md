@@ -14,6 +14,8 @@ and plan how it will change.
 
 - Designing resources, methods, status codes and error responses to the Techversant standard
 - Writing the contract first, as an OpenAPI file, and reviewing it before code
+- Extending an existing API that does not follow the standard: keeping its style for compatibility, and recording
+  where and why
 - Versioning rules: what counts as a breaking change, and how long an old version stays
 
 **Resources:**
@@ -24,7 +26,7 @@ and plan how it will change.
 
 **Level:** Advanced · Core
 
-## Calls and messages
+## Direct calls or messages
 
 Parts of a system talk either by calling each other and waiting, or by sending messages and moving on. The choice
 decides how failures spread.
@@ -92,8 +94,8 @@ the clients that have not updated yet.
 
 **Resources:**
 
-- [Versioning strategy](../../standards/general/rest-api-best-practices.md#21-versioning-strategy-mandatory), in the
-  Techversant API standard
+- [The version prefix rule](../../standards/general/rest-api-best-practices.md#21-versioning-strategy-mandatory), in
+  the Techversant API standard
 - [Parallel change](https://martinfowler.com/bliki/ParallelChange.html), Danilo Sato
 
 **Level:** Advanced · Core
@@ -107,8 +109,9 @@ changes and the notification flow, without breaking the existing web front end.
 
 **Verification**, checked by an architect or lead:
 
-- [ ] An OpenAPI file describes every new or changed endpoint, and follows the Techversant REST standard for naming,
-  errors and pagination
+- [ ] An OpenAPI file describes every new or changed endpoint. Where it departs from the Techversant REST standard to
+  stay compatible with the existing RealWorld API, such as its URL prefix, response format or pagination, an ADR
+  records why
 - [ ] The existing RealWorld API tests still pass against a back end that implements at least one new endpoint
 - [ ] A versioning plan states which changes are additive, which would break clients, and how long an old version
   stays supported

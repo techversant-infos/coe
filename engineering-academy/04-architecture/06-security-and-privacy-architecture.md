@@ -5,8 +5,8 @@
 Security flaws in the design cannot be fixed by careful coding later. This stage covers how to find threats early,
 design the protections, and know when to bring in a security specialist. Back to the [roadmap](./README.md).
 
-Authentication, authorization, encryption, key management and handling personal data are Red Zone work at
-Techversant: the code is written by people, without AI generation, and reviewed by a senior engineer. See
+Authentication, authorization, encryption, key management, personal data and payment handling, and production
+database migrations are Red Zone work at Techversant: the code is written by people, without AI generation, and reviewed by a senior engineer. See
 [section 2.2 of the AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only).
 
 ## Threat modelling
@@ -23,7 +23,7 @@ enough job. Done during design, it is the cheapest security work there is.
 
 **Resources:**
 
-- [Threat modeling](../../security/audit/security-audit-reference.md#81-threat-modeling), in the Techversant
+- [Threat modelling](../../security/audit/security-audit-reference.md#81-threat-modeling), in the Techversant
   security audit reference
 - [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html),
   OWASP
@@ -100,15 +100,17 @@ on request.
 
 - Collecting the minimum personal data, and recording why each item is needed
 - Supporting users' rights, such as access and deletion, in the data model
-- The laws that apply to the client's users, such as India's Digital Personal Data Protection Act, 2023, and the EU's
-  GDPR, and when to ask the client's legal team
+- The laws that apply to the client's users, such as India's Digital Personal Data Protection Act, 2023, with the
+  DPDP Rules, 2025, and the EU's GDPR, and when to ask the client's legal team
 
 **Resources:**
 
 - [Privacy by design](../../security/audit/security-audit-reference.md#84-privacy-by-design), in the Techversant
   security audit reference
-- [Digital Personal Data Protection Act, 2023](https://www.meity.gov.in/data-protection-framework), Ministry of
-  Electronics and Information Technology
+- [Privacy and data protection law](../08-forward-deployed-engineering/08-production-and-security.md#privacy-and-data-protection-law),
+  in the Techversant FDE roadmap, which covers GDPR and the DPDP Act and Rules
+- [Digital Personal Data Protection Act, 2023](https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023),
+  PRS Legislative Research
 
 **Level:** Advanced · Core
 
