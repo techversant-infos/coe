@@ -19,7 +19,7 @@ Each back-end path follows the same ten stages, from language fundamentals to de
 
 | Stack | Status |
 |-------|--------|
-| PHP and Laravel | Planned |
+| [PHP and Laravel](./01-backend/laravel/README.md) | Draft |
 | Node.js and TypeScript | Planned |
 | Python and Django | Planned |
 | Java and Spring Boot | Planned |

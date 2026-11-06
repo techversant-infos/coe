@@ -1,0 +1,131 @@
+{
+  "title": "PHP and Laravel Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Language Fundamentals",
+      "page": "01-language-fundamentals.md",
+      "topics": [
+        { "label": "Modern PHP syntax and types", "core": true, "techversant": true },
+        { "label": "Object-oriented PHP", "core": true, "techversant": false },
+        { "label": "Errors and exceptions", "core": true, "techversant": true },
+        { "label": "Composer and autoloading", "core": true, "techversant": true },
+        { "label": "Code style and static analysis", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "The Framework",
+      "page": "02-the-framework.md",
+      "topics": [
+        { "label": "Project structure and Artisan", "core": true, "techversant": true },
+        { "label": "Request lifecycle and the service container", "core": true, "techversant": false },
+        { "label": "Routing and controllers", "core": true, "techversant": false },
+        { "label": "Middleware", "core": true, "techversant": false },
+        { "label": "Configuration and environments", "core": true, "techversant": true },
+        { "label": "Laravel AI SDK", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "HTTP and REST APIs",
+      "page": "03-http-and-rest-apis.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Resource routes and controllers", "core": true, "techversant": false },
+        { "label": "API resources", "core": true, "techversant": false },
+        { "label": "Status codes and headers", "core": true, "techversant": true },
+        { "label": "Filtering and pagination", "core": true, "techversant": true },
+        { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Databases and Data Access",
+      "page": "04-databases-and-data-access.md",
+      "topics": [
+        { "label": "Migrations", "core": true, "techversant": true },
+        { "label": "Eloquent models and relationships", "core": true, "techversant": false },
+        { "label": "Efficient queries", "core": true, "techversant": false },
+        { "label": "Data integrity and transactions", "core": true, "techversant": true },
+        { "label": "Factories and seeders", "core": true, "techversant": false },
+        { "label": "Query builder and raw SQL", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Validation and Error Handling",
+      "page": "05-validation-and-error-handling.md",
+      "topics": [
+        { "label": "Form requests and validation rules", "core": true, "techversant": true },
+        { "label": "Error response format", "core": true, "techversant": true },
+        { "label": "Exception handling", "core": true, "techversant": true },
+        { "label": "Logging", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Authentication and Authorization",
+      "page": "06-authentication-and-authorization.md",
+      "topics": [
+        { "label": "Password storage", "core": true, "techversant": true },
+        { "label": "API tokens with Sanctum", "core": true, "techversant": true },
+        { "label": "Cookie sign-in for single-page apps", "core": true, "techversant": true },
+        { "label": "Policies and gates", "core": true, "techversant": true },
+        { "label": "Rate limiting sign-in", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Background Jobs and Caching",
+      "page": "07-background-jobs-and-caching.md",
+      "topics": [
+        { "label": "Queues and jobs", "core": true, "techversant": false },
+        { "label": "Events, notifications and mail", "core": true, "techversant": false },
+        { "label": "Task scheduling", "core": true, "techversant": false },
+        { "label": "Caching", "core": true, "techversant": true },
+        { "label": "Horizon", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Testing",
+      "page": "08-testing.md",
+      "topics": [
+        { "label": "Feature tests", "core": true, "techversant": false },
+        { "label": "Database testing", "core": true, "techversant": false },
+        { "label": "Fakes and mocks", "core": true, "techversant": false },
+        { "label": "Contract tests and static analysis", "core": true, "techversant": true },
+        { "label": "Mutation testing", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Security and Performance",
+      "page": "09-security-and-performance.md",
+      "topics": [
+        { "label": "Mass assignment and injection", "core": true, "techversant": true },
+        { "label": "CORS and security headers", "core": true, "techversant": true },
+        { "label": "The security audit checklist", "core": true, "techversant": true },
+        { "label": "Query performance and indexes", "core": true, "techversant": false },
+        { "label": "Load testing", "core": true, "techversant": false },
+        { "label": "Octane", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Deployment and Operations",
+      "page": "10-deployment-and-operations.md",
+      "topics": [
+        { "label": "Production configuration", "core": true, "techversant": true },
+        { "label": "Docker images", "core": true, "techversant": true },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Production database migrations", "core": true, "techversant": true },
+        { "label": "Workers and the scheduler in production", "core": true, "techversant": false },
+        { "label": "Health checks and monitoring", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}

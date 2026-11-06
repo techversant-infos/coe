@@ -126,6 +126,7 @@ executability
 explainability
 fastapi
 Favorited
+favourited
 favouriting
 FGCT
 findnocase
@@ -162,10 +163,12 @@ jstat
 Kishore
 ktlint
 Lajin
+Larastan
 learnsphere
 libsodium
 logbox
 lycheeignore
+Mailpit
 maxentriesadmin
 meethi
 metaspace
@@ -180,6 +183,7 @@ Nandu
 negotiables
 nocommit
 NTEXT
+nullsafe
 NVARCHAR
 Nygard
 Ollama
