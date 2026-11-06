@@ -65,4 +65,4 @@ engineering-academy/
 - Existing automation engineer: [Automation Engineer to Senior Automation Engineer](./02-quality-engineering/02-automation/playwright/02-senior-automation.md)
 - Manager or mentor: [Career Progression](./career-progression/01-transition-overview.md)
 - ColdFusion developer moving into consulting: [Senior ColdFusion Consultant Roadmap](./07-consulting/coldfusion/README.md)
-- Developer, software architect, consultant or AI engineer moving into client-embedded delivery: [Forward Deployed Engineer Roadmap](./08-forward-deployed-engineering/README.md)
+- Developer, lead developer, software architect or AI engineer moving into client-embedded delivery: [Forward Deployed Engineer Roadmap](./08-forward-deployed-engineering/README.md)

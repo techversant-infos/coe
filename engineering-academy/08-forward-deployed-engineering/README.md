@@ -6,7 +6,7 @@ A Forward Deployed Engineer (FDE) works with a client's team and takes a real pr
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
 with the client's people.
 
-- **Who it is for:** developers, software architects, consultants and AI engineers who want to work directly
+- **Who it is for:** developers, lead developers, software architects and AI engineers who want to work directly
   with clients.
 - **Before you start:** some client project experience. Stage 01 is the
   [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
@@ -29,8 +29,9 @@ with the client's people.
 
 - **A clear path, with evidence at each level.** You move from Practitioner to FDE Lead to Expert. Each level lists
   the evidence your lead looks for (see [FDE Levels](#fde-levels)).
-- **Skills beyond your current role.** Developers add AI and client work. Software architects add hands-on
-  building and AI. Consultants add hands-on delivery. AI engineers add integration, operations and client work.
+- **Skills beyond your current role.** Developers add AI and client work. Lead developers add AI and direct
+  ownership of the client result. Software architects add hands-on building and AI. AI engineers add integration,
+  operations and client work.
 - **Ownership of a whole engagement.** An FDE Lead owns the scope, the build, production and the handover. Explaining
   risk to non-specialists and tying technical work to business results are also part of the
   [Senior to Team Lead](../career-progression/03-senior-to-team-lead.md) and
@@ -59,8 +60,8 @@ How an FDE differs from the roles you may hold at Techversant today:
 | Your role today | How an FDE differs |
 |-----------------|--------------------|
 | Full-stack developer | Builds features from a backlog that someone else has agreed with the client. An FDE helps the client define that backlog, then builds it. |
+| Lead developer | Leads a team through an agreed scope: plans the work, reviews code and reports progress. An FDE works inside the client's team, agrees the scope and the measure of success with the client, and builds much of the solution personally. |
 | Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
-| Consultant | Looks after a client's existing systems: keeps them running, assesses them and recommends a path, as in the [Senior ColdFusion Consultant roadmap](../07-consulting/coldfusion/README.md). An FDE starts from a business problem and builds a new solution, often with AI, then hands it over. |
 | AI engineer | Builds AI features within one product or project, with its own team and infrastructure. An FDE builds them inside the client's environment, under the client's rules. |
 
 ## FDE Levels
@@ -82,17 +83,17 @@ work should show working knowledge of every core topic.
 Everyone completes all nine stages. Your current role decides where you can move quickly and where to plan more
 time.
 
-| Stage | Full-stack developer | Software architect | Consultant | AI engineer |
-|-------|----------------------|--------------------|------------|-------------|
-| [01. Engineering Foundations](./01-engineering-foundations.md) | Already do | Already do | Partly | Already do |
-| [02. Full-Stack Delivery](./02-full-stack-delivery.md) | Already do | Partly | Partly | Partly |
+| Stage | Full-stack developer | Lead developer | Software architect | AI engineer |
+|-------|----------------------|----------------|--------------------|-------------|
+| [01. Engineering Foundations](./01-engineering-foundations.md) | Already do | Already do | Already do | Already do |
+| [02. Full-Stack Delivery](./02-full-stack-delivery.md) | Already do | Already do | Partly | Partly |
 | [03. Data](./03-data.md) | Partly | Partly | Partly | Already do |
 | [04. Applied AI](./04-applied-ai.md) | New | New | New | Already do |
-| [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) | Partly | Partly | New | Already do |
-| [06. Integration Engineering](./06-integration-engineering.md) | Partly | Already do | Already do | New |
-| [07. Cloud and Operations](./07-cloud-and-operations.md) | Partly | Partly | New | Partly |
-| [08. Production and Security](./08-production-and-security.md) | Partly | Partly | New | Partly |
-| [09. Client Delivery](./09-client-delivery.md) | New | Partly | Already do | New |
+| [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) | Partly | Partly | Partly | Already do |
+| [06. Integration Engineering](./06-integration-engineering.md) | Partly | Partly | Already do | New |
+| [07. Cloud and Operations](./07-cloud-and-operations.md) | Partly | Partly | Partly | Partly |
+| [08. Production and Security](./08-production-and-security.md) | Partly | Partly | Partly | Partly |
+| [09. Client Delivery](./09-client-delivery.md) | New | Partly | Partly | New |
 
 - **Already do:** you do this in your current role. Show your lead the evidence for the project, then move on.
 - **Partly:** you know some of the topics. Read the stage page and learn the rest.
@@ -102,11 +103,11 @@ What each role brings:
 
 - **Full-stack developer:** you already build and ship. The new parts are AI features and working directly with the
   client.
+- **Lead developer:** you already plan delivery, review code, estimate and report to stakeholders. The new parts are
+  AI features and owning the result directly with the client, with a smaller team and more of the building yourself.
 - **Software architect:** you already design systems, choose integration patterns and weigh trade-offs with
   stakeholders. The FDE role is hands-on, so the new parts are building features yourself, including AI features,
   and staying with the work through production and handover.
-- **Consultant:** you already lead client conversations and work with legacy systems. The new parts are building AI
-  features and running them in production.
 - **AI engineer:** you already build AI features. The new parts are fitting them into a client's systems, cloud and
   release process, and working directly with the client.
 
