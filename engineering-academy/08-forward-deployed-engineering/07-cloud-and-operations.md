@@ -2,9 +2,8 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
-FDEs deploy into whatever the client runs, and keep it running after launch. In a 2026 survey of Indian
-enterprises, 77% said they prioritise production deployment skills, but the report puts talent availability at
-just 19% ([Scaler and CMR](https://www.scaler.com/blog/forward-deployed-engineering-indias-next-%E2%82%B91-crore-salary-opportunity-scaler-x-cmr-report/)). Back to the [roadmap](./README.md).
+FDEs deploy into whatever the client runs, and keep it running after launch. This stage is where a working
+prototype becomes something the client can rely on every day. Back to the [roadmap](./README.md).
 
 ## Linux and the shell
 

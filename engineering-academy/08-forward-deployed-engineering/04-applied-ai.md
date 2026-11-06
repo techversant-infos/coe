@@ -3,8 +3,6 @@
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
 The core technical skill for most FDE work: AI features that work on the client's real data, and proof that they do.
-Building and deploying AI systems is the second most common duty in FDE job postings, named in 37% of them
-([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
 Back to the [roadmap](./README.md).
 
 ## How LLMs work

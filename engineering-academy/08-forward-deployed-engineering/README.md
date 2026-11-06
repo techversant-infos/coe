@@ -6,38 +6,43 @@ A Forward Deployed Engineer (FDE) works with a client's team and takes a real pr
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
 with the client's people.
 
-- **Who it is for:** developers, QA automation engineers, consultants and AI engineers who want to work directly
-  with clients.
+- **Who it is for:** senior developers, lead developers, software architects and AI engineers who want to work
+  directly with clients.
 - **Before you start:** some client project experience. Stage 01 is the
   [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
   evidence and move on.
 - **What you do:** nine stages, each with a short guide to every topic and one hands-on project.
 
-## Why It Matters Now
+## Why It Matters
 
-- **The role started at Palantir.** Until around 2016, Palantir had more FDEs than regular software engineers.
-  AI companies such as OpenAI now hire FDEs to get their products working inside customer organisations
-  ([The Pragmatic Engineer, 2025][pragmatic]).
-- **Demand has grown fast.** Job postings titled "forward deployed engineer" rose 1,165% from January to October 2025,
-  compared with the same months of 2024 ([Bloomberry][bloomberry]).
-- **India is following.** FDE postings in India on Indeed rose 1,807% year on year in June 2026, nearly 19 times the
-  June 2025 level, then eased to about 16 times in July and 6 times in August. Roles were listed in Bengaluru,
-  Hyderabad, Chennai, New Delhi, Mumbai and as remote jobs ([Indeed, reported by PTI][indeed]).
-- **Enterprises expect more by 2030.** In a survey of 200 Indian enterprises, 88% expect their demand for FDEs to
-  grow by 2030, while only 1% of the 1,000 engineers surveyed work in an FDE role today ([Scaler and CMR,
-  2026][scaler]).
-- **Deployment is the gap.** In the same survey, 77% of enterprises prioritise production deployment skills, but the
-  report puts talent availability at just 19% ([Scaler and CMR, 2026][scaler]).
+### The Value You Create
 
-> **Read the numbers with care.** Job-posting counts include re-posted and unfilled jobs, and Scaler sells FDE
-> training. We found no forecast from an independent analyst firm. The direction is clear across all the sources;
-> the exact figures are not.
+- **Clients get working software, not a report.** You take a problem from the first conversation to a solution
+  running in production, and you measure the result against what the client agreed.
+- **Clients see results sooner.** You test the riskiest idea first and work in short time boxes, so the client knows
+  early whether the work is paying off.
+- **The client's team can carry on without you.** You hand over a solution they can run, change and roll back.
+- **The next engagement starts faster.** What you learn becomes reusable components and CoE standards that other
+  Techversant teams use.
+
+### How You Grow
+
+- **A clear path, with evidence at each level.** You move from Practitioner to FDE Lead to Expert. Each level lists
+  the evidence your lead looks for (see [FDE Levels](#fde-levels)).
+- **Skills beyond your current role.** Senior developers add AI and client work. Lead developers add AI and direct
+  ownership of the client result. Software architects add hands-on building and AI. AI engineers add integration,
+  operations and client work.
+- **Ownership of a whole engagement.** An FDE Lead owns the scope, the build, production and the handover. Explaining
+  risk to non-specialists and tying technical work to business results are also part of the
+  [Senior to Team Lead](../career-progression/03-senior-to-team-lead.md) and
+  [Lead to Architect](../career-progression/04-lead-to-architect.md) paths.
+- **A say in how Techversant works.** At Expert level, you turn field work into patterns and standards that other
+  engineers follow, and you coach other FDEs.
 
 ## What an FDE Does
 
-The most common duties in FDE job postings are working directly with customers (55%), building and deploying AI
-systems (37%) and integrating systems and APIs (32%) ([Bloomberry][bloomberry]). In practice, an engagement runs like
-this:
+An FDE's work centres on three things: working directly with the client, building AI features, and connecting
+them to the client's systems. At Techversant, an FDE engagement runs like this:
 
 1. Find the real problem behind the client's request.
 2. Agree a measurable result and a short time box.
@@ -50,16 +55,14 @@ this:
 
 ## How the Role Differs
 
-| Role | Difference from an FDE |
-|------|------------------------|
-| Consultant | Gives recommendations, often one-off. An FDE builds and ships, and usually stays with the client for longer. |
-| Solutions architect | At OpenAI, usually builds proofs of concept on anonymised or offline data. An FDE writes production code on the client's own systems. |
-| Feature developer | Works from a defined backlog. An FDE helps define the backlog, then builds it. |
-| AI engineer | Builds AI features, usually for one product. An FDE builds them inside someone else's environment, under their rules. |
+How an FDE differs from the roles you may hold at Techversant today:
 
-The first two rows follow [The Pragmatic Engineer][pragmatic]. The same article notes that FDEs at product companies
-also feed what they learn back into the core product. At Techversant, that means reusable components and CoE
-standards.
+| Your role today | How an FDE differs |
+|-----------------|--------------------|
+| Senior developer | Builds features from a backlog that someone else has agreed with the client. An FDE helps the client define that backlog, then builds it. |
+| Lead developer | Leads a team through an agreed scope: plans the work, reviews code and reports progress. An FDE works inside the client's team, agrees the scope and the measure of success with the client, and builds much of the solution personally. |
+| Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
+| AI engineer | Builds AI features within one product or project, with its own team and infrastructure. An FDE builds them inside the client's environment, under the client's rules. |
 
 ## FDE Levels
 
@@ -69,21 +72,44 @@ standards.
 | Advanced (FDE Lead) | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results, handover, client feedback |
 | Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached |
 
-The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is rarely a first job: of the
-postings that state experience, 60% ask for three to five years and only 12% are entry-level roles asking for two
-years or less ([Bloomberry][bloomberry]).
+The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is not a first role: you start
+once you have delivered on client projects.
 
 Each topic's level is the depth expected of an FDE Lead. For Practitioner, the projects plus your real engagement
 work should show working knowledge of every core topic.
 
-## From Your Role to FDE
+## Where You Start
 
-| You are now | You probably have | Focus on |
-|-------------|-------------------|----------|
-| Full-stack developer | Stage 01 and most of 02 | [03 Data](./03-data.md), [04 Applied AI](./04-applied-ai.md), [09 Client Delivery](./09-client-delivery.md) |
-| Consultant | Stages 06, 09 | [02 Full-Stack Delivery](./02-full-stack-delivery.md), [04 Applied AI](./04-applied-ai.md), [08 Production and Security](./08-production-and-security.md) |
-| AI engineer | Stages 04–05 | [06 Integration Engineering](./06-integration-engineering.md), [07 Cloud and Operations](./07-cloud-and-operations.md), [09 Client Delivery](./09-client-delivery.md) |
-| QA automation engineer | Stage 01, part of 02 | [02 Full-Stack Delivery](./02-full-stack-delivery.md), [04 Applied AI](./04-applied-ai.md), [09 Client Delivery](./09-client-delivery.md) |
+Everyone completes all nine stages. Your current role decides where you can move quickly and where to plan more
+time.
+
+| Stage | Senior developer | Lead developer | Software architect | AI engineer |
+|-------|------------------|----------------|--------------------|-------------|
+| [01. Engineering Foundations](./01-engineering-foundations.md) | Already do | Already do | Already do | Already do |
+| [02. Full-Stack Delivery](./02-full-stack-delivery.md) | Already do | Already do | Partly | Partly |
+| [03. Data](./03-data.md) | Partly | Partly | Partly | Already do |
+| [04. Applied AI](./04-applied-ai.md) | New | New | New | Already do |
+| [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) | Partly | Partly | Partly | Already do |
+| [06. Integration Engineering](./06-integration-engineering.md) | Partly | Partly | Already do | New |
+| [07. Cloud and Operations](./07-cloud-and-operations.md) | Partly | Partly | Partly | Partly |
+| [08. Production and Security](./08-production-and-security.md) | Partly | Partly | Partly | Partly |
+| [09. Client Delivery](./09-client-delivery.md) | New | Partly | Partly | New |
+
+- **Already do:** you do this in your current role. Show your lead the evidence for the project, then move on.
+- **Partly:** you know some of the topics. Read the stage page and learn the rest.
+- **New:** start at the beginning of the stage and plan the most time here.
+
+What each role brings:
+
+- **Senior developer:** you already build and ship. The new parts are AI features and working directly with the
+  client.
+- **Lead developer:** you already plan delivery, review code, estimate and report to stakeholders. The new parts are
+  AI features and owning the result directly with the client, with a smaller team and more of the building yourself.
+- **Software architect:** you already design systems, choose integration patterns and weigh trade-offs with
+  stakeholders. The FDE role is hands-on, so the new parts are building features yourself, including AI features,
+  and staying with the work through production and handover.
+- **AI engineer:** you already build AI features. The new parts are fitting them into a client's systems, cloud and
+  release process, and working directly with the client.
 
 ## The Roadmap
 
@@ -128,7 +154,7 @@ with shipped work on a real engagement, this is the evidence for the Practitione
 
 ## How to Use It
 
-1. Find your row in [From Your Role to FDE](#from-your-role-to-fde).
+1. Find your column in [Where You Start](#where-you-start).
 2. Rate yourself on each topic: 0 not started, 1 aware, 2 can do it with help, 3 can do it alone.
 3. Agree two or three gaps with your lead, and close them on real work where possible.
 4. Complete the projects for the stages you are working on.
@@ -146,19 +172,3 @@ with shipped work on a real engagement, this is the evidence for the Practitione
 | UAT | User acceptance testing: the client's users confirm the solution does the job |
 | Handover | Transferring ownership so the client's team can run, change and roll back the solution |
 | Red Zone | Work Techversant never delegates to AI. See [section 2.2 of the AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only). |
-
-## Sources
-
-- The Pragmatic Engineer, Gergely Orosz, ["What are Forward Deployed Engineers, and why are they so in demand?"][pragmatic],
-  12 August 2025
-- Bloomberry, Henley Wing Chiu, ["What I learned analyzing 1K forward deployed engineer jobs"][bloomberry], last
-  updated 25 January 2026. About 1,000 postings supplied by Revealera, with salaries quoted in US dollars.
-- PTI, reported by People Matters, ["Demand for forward deployed engineers jumps 19-fold in India: Report"][indeed],
-  15 October 2026. Indeed job-posting data for India.
-- Scaler and CyberMedia Research, ["India's FDE Opportunity" report][scaler], October 2026. A survey of 1,000 software
-  engineers and 200 enterprise technology decision-makers in India.
-
-[pragmatic]: https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers
-[bloomberry]: https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/
-[indeed]: https://www.peoplematters.in/news/workforce-planning/demand-for-forward-deployed-engineers-jumps-19-fold-in-india-report-52770
-[scaler]: https://www.scaler.com/blog/forward-deployed-engineering-indias-next-%E2%82%B91-crore-salary-opportunity-scaler-x-cmr-report/
