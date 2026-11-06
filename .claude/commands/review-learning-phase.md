@@ -31,7 +31,7 @@ This command runs a comprehensive quality review of a learning phase within `eng
 ```bash
 /review-learning-phase engineering-academy/02-quality-engineering/automation/playwright/phase-1
 /review-learning-phase engineering-academy/00-engineering-foundations --level Foundation --depth comprehensive
-/review-learning-phase engineering-academy/01-software-engineering/web-development/frontend/react/phase-1 --focus content
+/review-learning-phase engineering-academy/01-software-engineering/02-frontend/react-nextjs/phase-1 --focus content
 ```
 
 ## Review Checklist

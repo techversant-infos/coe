@@ -1,6 +1,6 @@
 # Techversant Engineering Academy
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-11-05 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** TBD · **Last updated:** 2026-11-06 · **Next review:** 2027-01-28
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
@@ -41,7 +41,7 @@ engineering-academy/
 | Area | Use this for |
 |---|---|
 | [00. Engineering Foundations](./00-engineering-foundations/README.md) | Roadmap for every engineer: Git and pull requests, AI tools, clean code, design, APIs, testing, security, code review and communication |
-| [01. Software Engineering](./01-software-engineering/README.md) | Web, mobile, backend, and full-stack engineering paths |
+| [01. Software Engineering](./01-software-engineering/README.md) | Back end, front-end and full-stack paths for each stack Techversant delivers, with mobile planned |
 | [02. Quality Engineering](./02-quality-engineering/README.md) | Manual testing, automation, Playwright, QA strategy |
 | [03. Platform Engineering](./03-platform-engineering/README.md) | DevOps, cloud, Kubernetes, observability - planned curriculum |
 | [04. Architecture](./04-architecture/README.md) | Roadmap for senior and lead developers moving into a software architect role: system design, APIs, data, reliability, security, cloud cost, AI and modernization |
@@ -60,7 +60,7 @@ engineering-academy/
 ## Recommended Starting Points
 
 - New engineer: [Engineering Foundations](./00-engineering-foundations/README.md)
-- Web developer: [React](./01-software-engineering/01-web-development/01-frontend/01-react/01-react-learning-path.md), then [Next.js](./01-software-engineering/01-web-development/01-frontend/02-nextjs/01-nextjs-learning-path.md)
+- Front-end developer: [React and Next.js Developer Roadmap](./01-software-engineering/02-frontend/react-nextjs/README.md)
 - QA engineer: [Manual Tester to Automation Engineer](./02-quality-engineering/02-automation/playwright/01-manual-to-automation.md)
 - Existing automation engineer: [Automation Engineer to Senior Automation Engineer](./02-quality-engineering/02-automation/playwright/02-senior-automation.md)
 - Senior or lead developer moving into architecture: [Software Architect Roadmap](./04-architecture/README.md)

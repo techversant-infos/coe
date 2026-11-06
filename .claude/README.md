@@ -31,7 +31,7 @@ Scaffolds a complete learning phase within `engineering-academy/<NN-discipline>/
 ```bash
 /create-learning-phase 02-quality-engineering playwright-basics --subfolder 02-automation/playwright --level Foundation
 /create-learning-phase 00-engineering-foundations git-workflow
-/create-learning-phase 01-software-engineering react-fundamentals --subfolder web-development/frontend --level Practitioner
+/create-learning-phase 01-software-engineering react-fundamentals --subfolder 02-frontend/react-nextjs --level Practitioner
 ```
 
 **What it creates:**
@@ -65,7 +65,7 @@ Generates hands-on exercises for specific concepts within an academy discipline.
 ```bash
 /create-exercise 00-engineering-foundations git-merge --level Practitioner
 /create-exercise 02-quality-engineering playwright-locators --subfolder 02-automation/playwright
-/create-exercise 01-software-engineering react-state --subfolder web-development/frontend --phase 2
+/create-exercise 01-software-engineering react-state --subfolder 02-frontend/react-nextjs --phase 2
 ```
 
 ---
@@ -129,7 +129,7 @@ Refreshes the master catalog for the Engineering Academy.
 | Code | Discipline | Subfolders |
 |------|------------|------------|
 | `00-engineering-foundations` | Engineering Foundations roadmap | Stage pages at the folder root |
-| `01-software-engineering` | Web, mobile, backend, full-stack | `web-development/frontend`, `web-development/backend`, `mobile-development` |
+| `01-software-engineering` | Web, mobile, backend, full-stack | `01-backend`, `02-frontend`, `03-mobile` |
 | `02-quality-engineering` | Manual testing, automation, Playwright, strategy | `automation/playwright`, `strategy`, `manual-testing` |
 | `03-platform-engineering` | DevOps, cloud, Kubernetes | (content pending) |
 | `04-architecture` | Software Architect roadmap | Stage pages at the folder root |
@@ -220,7 +220,7 @@ Standardized structures for consistent content:
 
 Every learning phase must have:
 
-- `READMEME.md` with learning objectives and overview
+- `README.md` with learning objectives and overview
 - 3–4 lessons with clear, measurable objectives
 - 3–4 hands-on exercises with progressive hints and solutions
 - 1 assessment with a detailed rubric

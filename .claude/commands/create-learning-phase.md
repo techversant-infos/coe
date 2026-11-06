@@ -32,7 +32,7 @@ This command scaffolds a complete learning phase within the Engineering Academy 
 ```bash
 /create-learning-phase 02-quality-engineering playwright-basics --subfolder automation/playwright --level Foundation
 /create-learning-phase 00-engineering-foundations git-workflow --level Foundation
-/create-learning-phase 01-software-engineering react-fundamentals --subfolder web-development/frontend --level Practitioner
+/create-learning-phase 01-software-engineering react-fundamentals --subfolder 02-frontend/react-nextjs --level Practitioner
 /create-learning-phase 00-engineering-foundations clean-code --prerequisites "git-workflow"
 ```
 

@@ -1,0 +1,130 @@
+{
+  "title": "React and Next.js Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "HTML, CSS and Accessibility",
+      "page": "01-html-css-and-accessibility.md",
+      "topics": [
+        { "label": "Semantic HTML", "core": true, "techversant": false },
+        { "label": "CSS layout", "core": true, "techversant": false },
+        { "label": "Responsive design", "core": true, "techversant": false },
+        { "label": "Accessibility basics", "core": true, "techversant": false },
+        { "label": "Styling approaches", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "JavaScript and TypeScript",
+      "page": "02-javascript-and-typescript.md",
+      "topics": [
+        { "label": "Modern JavaScript", "core": true, "techversant": false },
+        { "label": "Asynchronous JavaScript", "core": true, "techversant": false },
+        { "label": "TypeScript essentials", "core": true, "techversant": true },
+        { "label": "Packages and build tools", "core": true, "techversant": false },
+        { "label": "Linting and formatting", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Framework Fundamentals",
+      "page": "03-framework-fundamentals.md",
+      "topics": [
+        { "label": "Components and JSX", "core": true, "techversant": false },
+        { "label": "Props and children", "core": true, "techversant": false },
+        { "label": "State", "core": true, "techversant": false },
+        { "label": "Rendering lists and conditions", "core": true, "techversant": false },
+        { "label": "Handling events", "core": true, "techversant": false },
+        { "label": "React Developer Tools", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "State and Data Flow",
+      "page": "04-state-and-data-flow.md",
+      "topics": [
+        { "label": "Lifting state up", "core": true, "techversant": false },
+        { "label": "Reducers and context", "core": true, "techversant": false },
+        { "label": "Effects and when to avoid them", "core": true, "techversant": false },
+        { "label": "Refs", "core": true, "techversant": false },
+        { "label": "Custom hooks", "core": true, "techversant": false },
+        { "label": "Shared state libraries", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Routing",
+      "page": "05-routing.md",
+      "topics": [
+        { "label": "Client-side routing", "core": true, "techversant": false },
+        { "label": "URL parameters and query strings", "core": true, "techversant": false },
+        { "label": "Layouts and nested routes", "core": true, "techversant": false },
+        { "label": "Guarding routes", "core": true, "techversant": true },
+        { "label": "Code splitting", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Forms and Validation",
+      "page": "06-forms-and-validation.md",
+      "topics": [
+        { "label": "Controlled inputs", "core": true, "techversant": false },
+        { "label": "React Hook Form", "core": true, "techversant": false },
+        { "label": "Schema validation with Zod", "core": true, "techversant": true },
+        { "label": "Accessible error messages", "core": true, "techversant": false },
+        { "label": "Form actions in React 19", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Working with APIs",
+      "page": "07-working-with-apis.md",
+      "topics": [
+        { "label": "Fetching data and loading states", "core": true, "techversant": false },
+        { "label": "Server state with TanStack Query", "core": true, "techversant": false },
+        { "label": "Handling API errors", "core": true, "techversant": true },
+        { "label": "Tokens in the browser", "core": true, "techversant": true },
+        { "label": "CORS", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Rendering and the Meta-Framework",
+      "page": "08-rendering-and-the-meta-framework.md",
+      "topics": [
+        { "label": "App Router", "core": true, "techversant": false },
+        { "label": "Server and Client Components", "core": true, "techversant": false },
+        { "label": "Data fetching and caching", "core": true, "techversant": false },
+        { "label": "Server Actions", "core": true, "techversant": false },
+        { "label": "Proxy and authentication", "core": true, "techversant": true },
+        { "label": "Rendering strategies", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Testing",
+      "page": "09-testing.md",
+      "topics": [
+        { "label": "Component tests", "core": true, "techversant": true },
+        { "label": "Mocking APIs with MSW", "core": true, "techversant": false },
+        { "label": "End-to-end tests with Playwright", "core": true, "techversant": false },
+        { "label": "Accessibility testing", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Performance and Production",
+      "page": "10-performance-and-production.md",
+      "topics": [
+        { "label": "Core Web Vitals", "core": true, "techversant": false },
+        { "label": "Bundle size and code splitting", "core": true, "techversant": false },
+        { "label": "Images and fonts", "core": true, "techversant": false },
+        { "label": "Security headers", "core": true, "techversant": true },
+        { "label": "Error monitoring and logging", "core": true, "techversant": true },
+        { "label": "Deployment", "core": true, "techversant": false }
+      ]
+    }
+  ]
+}

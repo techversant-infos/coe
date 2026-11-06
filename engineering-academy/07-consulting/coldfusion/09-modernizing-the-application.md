@@ -1,6 +1,6 @@
 # 09. Modernizing the Application
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-05
 
 Modernization does not always mean leaving CFML. Adding APIs, a modern interface and AI features can extend an
 application's life for years. Back to the [roadmap](./README.md).
@@ -34,7 +34,7 @@ Moving the interface to a modern framework, one screen at a time, is a lower-ris
 
 **Resources:**
 
-- [React learning path](../../01-software-engineering/01-web-development/01-frontend/01-react/README.md)
+- [React and Next.js Developer roadmap](../../01-software-engineering/02-frontend/react-nextjs/README.md)
 - [React documentation](https://react.dev/learn)
 
 **Level:** Practitioner · Core

@@ -125,6 +125,8 @@ envalid
 executability
 explainability
 fastapi
+Favorited
+favouriting
 FGCT
 findnocase
 Flexbox
@@ -154,6 +156,7 @@ isset
 ISTQB
 javax
 jmap
+johndoe
 jstack
 jstat
 Kishore
