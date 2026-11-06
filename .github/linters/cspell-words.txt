@@ -157,6 +157,7 @@ jmap
 jstack
 jstat
 Kishore
+ktlint
 Lajin
 learnsphere
 libsodium
@@ -203,6 +204,7 @@ realworld
 reauthentication
 refetched
 refetches
+reflog
 remediations
 requesttimeout
 rerere
@@ -266,7 +268,9 @@ unindexed
 urql
 VARCHAR
 Virat
+Vlissides
 vnet
+Vocke
 wala
 wali
 webdev

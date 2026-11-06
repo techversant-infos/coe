@@ -116,7 +116,7 @@ An engagement is finished when the client's team can run, change and roll back t
 **Resources:**
 
 - [Engagement Checklist](./deliverables/engagement-checklist.md)
-- [Communication: handoff note template](../../00-engineering-foundations/04-communication.md#handoff-note)
+- [Handoff note structure](../../00-engineering-foundations/10-communication-and-ownership.md#handoff-notes)
 
 **Level:** Advanced · Core
 

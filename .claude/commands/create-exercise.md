@@ -17,7 +17,7 @@ This command generates a complete exercise within the Engineering Academy struct
 ### Required
 
 - **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `02-quality-engineering`)
-- **concept** - The concept to practice (e.g., `git-commit-messages`, `playwright-locators`, `dev-excellence-review`)
+- **concept** - The concept to practice (e.g., `git-commit-messages`, `playwright-locators`, `code-review-checklist`)
 
 ### Optional Flags
 
@@ -33,7 +33,7 @@ This command generates a complete exercise within the Engineering Academy struct
 ```bash
 /create-exercise 00-engineering-foundations git-commit-messages --duration 20
 /create-exercise 02-quality-engineering playwright-locators --subfolder automation/playwright --phase 1
-/create-exercise 00-engineering-foundations dev-excellence-review --level Practitioner
+/create-exercise 00-engineering-foundations code-review-checklist --level Practitioner
 /create-exercise 01-software-engineering refactor-components --subfolder web-development/frontend
 ```
 

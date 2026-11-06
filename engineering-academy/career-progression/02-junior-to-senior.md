@@ -57,10 +57,10 @@ Choose one with your mentor:
 
 ## Recommended Academy Links
 
-- [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md)
+- [Engineering Foundations](../00-engineering-foundations/README.md)
 - [Advanced Learning Level](../learning-levels/03-advanced.md)
-- [Engineering Communication](../00-engineering-foundations/04-communication.md)
-- [Secure Engineering](../00-engineering-foundations/03-secure-engineering.md)
+- [Communication and Ownership](../00-engineering-foundations/10-communication-and-ownership.md)
+- [Secure Engineering](../00-engineering-foundations/08-secure-engineering.md)
 
 ## Continue Learning
 

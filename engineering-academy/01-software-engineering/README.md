@@ -22,7 +22,7 @@ Start with the shared [Engineering Foundations](../00-engineering-foundations/RE
 
 ## Recommended Web Frontend Order
 
-1. [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md)
+1. [Engineering Foundations](../00-engineering-foundations/README.md)
 2. [React Learning Path](./01-web-development/01-frontend/01-react/01-react-learning-path.md)
 3. [Next.js Learning Path](./01-web-development/01-frontend/02-nextjs/01-nextjs-learning-path.md)
 

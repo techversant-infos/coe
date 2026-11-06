@@ -40,7 +40,7 @@ engineering-academy/
 
 | Area | Use this for |
 |---|---|
-| [00. Engineering Foundations](./00-engineering-foundations/README.md) | Universal skills: Git, AI usage, secure engineering, communication, developer excellence |
+| [00. Engineering Foundations](./00-engineering-foundations/README.md) | Roadmap for every engineer: Git and pull requests, AI tools, clean code, design, APIs, testing, security, code review and communication |
 | [01. Software Engineering](./01-software-engineering/README.md) | Web, mobile, backend, and full-stack engineering paths |
 | [02. Quality Engineering](./02-quality-engineering/README.md) | Manual testing, automation, Playwright, QA strategy |
 | [03. Platform Engineering](./03-platform-engineering/README.md) | DevOps, cloud, Kubernetes, observability - planned curriculum |

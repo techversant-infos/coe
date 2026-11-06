@@ -64,7 +64,7 @@ by the Security Lead ([CoE Audit Framework §8](./coe-audit-framework.md)).
 ### 1.4 The Minimum Bar
 
 If a team reads nothing else, these are non-negotiable on every change. They mirror the
-[Secure Engineering Minimum Bar](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md).
+[Secure Engineering](../../engineering-academy/00-engineering-foundations/08-secure-engineering.md).
 
 - [ ] **(B)** No secrets in source code, config, CI logs, or commit history
 - [ ] **(B)** Authorization enforced server-side on every protected operation
@@ -524,7 +524,7 @@ Reference: [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/chea
 - [ ] Trust boundaries documented — where untrusted data enters and where privilege changes
 - [ ] Security requirements captured in the specification, not retrofitted at review
 - [ ] Security review triggered for changes listed in
-      [Secure Engineering — Security Review Triggers](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
+      [Secure Engineering: when to ask for a security review](../../engineering-academy/00-engineering-foundations/08-secure-engineering.md#when-to-ask-for-a-security-review)
 - [ ] The [security-engineer skill](../../ai/skills-library/security-engineer/SKILL.md) or an equivalent structured
       method is used for the STRIDE pass
 
@@ -1117,7 +1117,7 @@ Cache-Control: no-store          (on authenticated responses)
 |---|---|
 | [CoE Security Checklist](./security-audit-checklist.md) | **The short version** — 231 lines, for pull-request and sprint review |
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, schedule, severity, evidence, exception process |
-| [Secure Engineering](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level minimum bar and review triggers |
+| [Secure Engineering](../../engineering-academy/00-engineering-foundations/08-secure-engineering.md) | Foundation-level training and review triggers |
 | [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md) | Red Zone rules and AI usage disclosure |
 | [AI Team Best Practices](../../ai/guides/ai-team-best-practices.md) | Team-level AI working agreements |
 | [Neural Security Guidelines](../ai-security/ai-security-guidelines.md) | Model, training data, and inference security |

@@ -215,7 +215,7 @@ authentication, authorization, session handling, password reset, encryption, key
 PII, payment data, audit logs, production data, file upload, user-controlled URLs, webhooks, or
 tenant isolation boundaries.
 
-See [Secure Engineering — Security Review Triggers](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md)
+See [Secure Engineering: when to ask for a security review](../../engineering-academy/00-engineering-foundations/08-secure-engineering.md#when-to-ask-for-a-security-review)
 and the Red Zone rules in [AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md).
 
 ## Reporting
@@ -246,7 +246,7 @@ privately costs a message; under-reporting publicly cannot be undone.
 | [CoE Audit Framework](./coe-audit-framework.md) | Audit scope, severity, SLAs, exception process |
 | [OWASP Top 10:2025](https://owasp.org/Top10/2025/) | The source taxonomy |
 | [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) | Implementation guidance per control |
-| [Secure Engineering](../../engineering-academy/00-engineering-foundations/03-secure-engineering.md) | Foundation-level training |
+| [Secure Engineering](../../engineering-academy/00-engineering-foundations/08-secure-engineering.md) | Foundation-level training |
 | [PHP](../../standards/php/php-coding-standards.md) · [ColdFusion](../../standards/coldfusion/coldfusion-style-guide.md) · [Node.js](../../standards/nodejs/nodejs-typescript-best-practices.md) | Stack-specific standards |
 | [REST API Best Practices](../../standards/general/rest-api-best-practices.md) | API contract and error standards |
 

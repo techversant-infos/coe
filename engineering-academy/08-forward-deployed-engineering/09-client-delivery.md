@@ -60,7 +60,7 @@ Short, regular, honest writing keeps the client informed and leaves a record for
 - Decision records and handover notes
 - Sharing bad news early, with options
 
-**Resources:** [Communication](../00-engineering-foundations/04-communication.md)
+**Resources:** [Communication and Ownership](../00-engineering-foundations/10-communication-and-ownership.md)
 
 **Level:** Foundation · Core
 
@@ -102,7 +102,7 @@ The client's users confirm the solution works, then the client's team takes owne
 - Runbooks, training and documentation for the client's team
 - Agreeing when the engagement is finished and what support follows
 
-**Resources:** [Handoff note template](../00-engineering-foundations/04-communication.md#handoff-note).
+**Resources:** [Handoff note structure](../00-engineering-foundations/10-communication-and-ownership.md#handoff-notes).
 Techversant has no user acceptance testing guide yet, so agree the test plan with the client in the scope.
 
 **Level:** Practitioner · Core
