@@ -11,7 +11,7 @@ Back to [Software Engineering](../README.md).
 | Stack | Status |
 |-------|--------|
 | [PHP and Laravel](./laravel/README.md) | Draft |
-| Node.js and TypeScript | Planned |
+| [Node.js and TypeScript](./nodejs/README.md) | Draft |
 | Python and Django | Planned |
 | Java and Spring Boot | Planned |
 | Go | Planned |

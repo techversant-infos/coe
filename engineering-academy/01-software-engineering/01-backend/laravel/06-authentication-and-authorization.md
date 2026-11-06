@@ -122,6 +122,8 @@ who may change them. Write all of this code by hand, and have a senior engineer 
   after a configured time
 - [ ] Error bodies match the tests: `errors.token` `is missing` for 401, `errors.credentials` `invalid` for a
   failed sign-in, and `errors.article` or `errors.comment` `forbidden` for 403
+- [ ] A username or email that is already taken returns 409 with `errors.username` or `errors.email` set to
+  `has already been taken`, and deleting a missing comment returns 404 with `errors.comment` `not found`
 - [ ] Only an article's author may update or delete it, and only a comment's author may delete it, through policies
 - [ ] Sign-in and sign-up are rate limited, the limit returns 429, and a full test run still passes with the limits
   on

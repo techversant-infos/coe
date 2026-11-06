@@ -131,7 +131,7 @@ profiles. Use your stage 01 slug library, backed by the database.
 - [ ] `Model::preventLazyLoading()` is on outside production, and listing 20 articles runs the same number of queries
   as listing 2
 - [ ] A seeder fills a development database with enough data to try every filter
-- [ ] `updatedAt` is stored with fractions of a second, so an update in the same second as the create changes it
+- [ ] Timestamps are stored with fractions of a second
 - [ ] The responses still match the specification exactly
 
 Previous: [03. HTTP and REST APIs](./03-http-and-rest-apis.md) · Next:

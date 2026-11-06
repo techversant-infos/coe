@@ -1,0 +1,132 @@
+{
+  "title": "Node.js and TypeScript Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Language Fundamentals",
+      "page": "01-language-fundamentals.md",
+      "topics": [
+        { "label": "TypeScript for the server", "core": true, "techversant": true },
+        { "label": "The Node.js runtime and the event loop", "core": true, "techversant": false },
+        { "label": "Asynchronous code", "core": true, "techversant": true },
+        { "label": "Modules and packages", "core": true, "techversant": true },
+        { "label": "Linting and formatting", "core": true, "techversant": true },
+        { "label": "Running TypeScript directly", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "The Framework",
+      "page": "02-the-framework.md",
+      "topics": [
+        { "label": "Fastify basics", "core": true, "techversant": false },
+        { "label": "Plugins and encapsulation", "core": true, "techversant": false },
+        { "label": "Project layout and boundaries", "core": true, "techversant": true },
+        { "label": "Hooks and the request lifecycle", "core": true, "techversant": false },
+        { "label": "Configuration and environments", "core": true, "techversant": true },
+        { "label": "NestJS", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "HTTP and REST APIs",
+      "page": "03-http-and-rest-apis.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Route schemas with Zod", "core": true, "techversant": true },
+        { "label": "Response shapes", "core": true, "techversant": false },
+        { "label": "Status codes and headers", "core": true, "techversant": true },
+        { "label": "Filtering and pagination", "core": true, "techversant": true },
+        { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Databases and Data Access",
+      "page": "04-databases-and-data-access.md",
+      "topics": [
+        { "label": "Prisma schema and migrations", "core": true, "techversant": true },
+        { "label": "Relations and queries", "core": true, "techversant": false },
+        { "label": "Efficient queries", "core": true, "techversant": true },
+        { "label": "Data integrity and transactions", "core": true, "techversant": true },
+        { "label": "Repositories", "core": true, "techversant": true },
+        { "label": "Raw SQL and other tools", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Validation and Error Handling",
+      "page": "05-validation-and-error-handling.md",
+      "topics": [
+        { "label": "Validating requests with Zod", "core": true, "techversant": true },
+        { "label": "Error response format", "core": true, "techversant": true },
+        { "label": "Domain errors", "core": true, "techversant": true },
+        { "label": "Logging with Pino", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Authentication and Authorization",
+      "page": "06-authentication-and-authorization.md",
+      "topics": [
+        { "label": "Password storage", "core": true, "techversant": true },
+        { "label": "JSON Web Tokens", "core": true, "techversant": true },
+        { "label": "Cookie sign-in for single-page apps", "core": true, "techversant": true },
+        { "label": "Authorization checks", "core": true, "techversant": true },
+        { "label": "Rate limiting sign-in", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Background Jobs and Caching",
+      "page": "07-background-jobs-and-caching.md",
+      "topics": [
+        { "label": "Queues with BullMQ", "core": true, "techversant": true },
+        { "label": "Events and email", "core": true, "techversant": true },
+        { "label": "Scheduled jobs", "core": true, "techversant": false },
+        { "label": "Caching with Redis", "core": true, "techversant": true },
+        { "label": "Queue dashboards", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Testing",
+      "page": "08-testing.md",
+      "topics": [
+        { "label": "Unit tests with Vitest", "core": true, "techversant": true },
+        { "label": "HTTP tests", "core": true, "techversant": false },
+        { "label": "Integration tests with a real database", "core": true, "techversant": true },
+        { "label": "Contract tests and type checks", "core": true, "techversant": true },
+        { "label": "Mutation testing", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Security and Performance",
+      "page": "09-security-and-performance.md",
+      "topics": [
+        { "label": "Input limits and injection", "core": true, "techversant": true },
+        { "label": "CORS and security headers", "core": true, "techversant": true },
+        { "label": "The security audit checklist", "core": true, "techversant": true },
+        { "label": "Query performance and indexes", "core": true, "techversant": false },
+        { "label": "The event loop under load", "core": true, "techversant": false },
+        { "label": "Profiling", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Deployment and Operations",
+      "page": "10-deployment-and-operations.md",
+      "topics": [
+        { "label": "Production configuration", "core": true, "techversant": true },
+        { "label": "Docker images", "core": true, "techversant": true },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Production database migrations", "core": true, "techversant": true },
+        { "label": "Graceful shutdown", "core": true, "techversant": false },
+        { "label": "Health checks and monitoring", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}
