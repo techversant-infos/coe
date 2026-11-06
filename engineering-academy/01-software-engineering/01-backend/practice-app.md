@@ -86,3 +86,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 ## Paths That Use It
 
 - [PHP and Laravel](./laravel/README.md)
+- [Node.js and TypeScript](./nodejs/README.md)

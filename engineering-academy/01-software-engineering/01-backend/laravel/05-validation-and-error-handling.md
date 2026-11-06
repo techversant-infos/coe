@@ -95,11 +95,12 @@ validation until stage 06, and new articles and comments belong to a seeded user
 **Verification**, checked by a reviewer:
 
 - [ ] Every endpoint that takes input has a form request, and controllers use only validated data
-- [ ] Invalid input returns 422 with `{"errors": {"<field>": ["<message>"]}}`, using the field names and messages in
-  `specs/api/hurl/errors_auth.hurl` and `errors_articles.hurl`
-- [ ] A username or email that is already taken returns 409
-- [ ] A missing article, profile or comment returns 404 with `errors.<name>` set to `not found`, and no response
-  anywhere shows a stack trace
+- [ ] Invalid input returns 422 with `{"errors": {"<field>": ["<message>"]}}`. Your own tests use the field names
+  and messages from `specs/api/hurl/errors_auth.hurl` and `errors_articles.hurl`; the Hurl files themselves run
+  from stage 06, because they sign up first.
+- [ ] A missing article or profile returns 404 with `errors.<name>` set to `not found`, and no response anywhere
+  shows a stack trace
+- [ ] Updating an article in the same second as creating it changes `updatedAt`
 - [ ] Invalid requests without an `Accept` header still get JSON errors, not a redirect
 - [ ] Log lines are JSON with the request ID, and a test shows that a password in a request is never logged
 - [ ] Feature tests cover each error case

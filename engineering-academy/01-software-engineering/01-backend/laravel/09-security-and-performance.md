@@ -68,7 +68,7 @@ Slow APIs are usually slow databases. An index on the right column can turn a qu
 **What to learn:**
 
 - Finding slow queries, and reading `EXPLAIN` output
-- Adding indexes for the columns you filter, join and sort on, such as `slug` and `created_at`
+- Adding indexes for the columns you filter, join and sort on, such as foreign keys and `created_at`
 - Selecting only the columns you need, and paging large result sets
 
 **Resources:** [Database: getting started](https://laravel.com/docs/13.x/database), Laravel documentation
@@ -114,7 +114,8 @@ article list and feed, find the slowest queries, and make them faster.
 - [ ] `composer audit` reports no known vulnerabilities
 - [ ] Every model lists `$fillable`, and a test shows that a request cannot change an article's author
 - [ ] CORS allows only the configured front-end origins, and API and error responses carry the required headers
-- [ ] The pull request shows `EXPLAIN` output before and after for the article list and feed, with the indexes added
+- [ ] The pull request shows `EXPLAIN ANALYZE` output before and after for the article list and feed, on a seed of
+  about 100,000 articles, with the indexes added
 - [ ] A k6 load test of `GET /api/articles` meets the target agreed with your reviewer, and the script and results
   are in the repository
 
