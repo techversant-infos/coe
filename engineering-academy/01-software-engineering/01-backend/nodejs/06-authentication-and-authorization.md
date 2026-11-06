@@ -117,7 +117,8 @@ change them. Write all of this code by hand, and have a senior engineer review i
 
 **Verification**, checked by a reviewer:
 
-- [ ] Passwords are hashed with Argon2id or bcrypt, and no response or log line ever contains a password or token
+- [ ] Passwords are hashed with Argon2id or bcrypt, no log line contains a password or token, and no response
+  contains a password. The user endpoints return the token as the contract requires.
 - [ ] Sign-in returns the same error for an unknown email and a wrong password
 - [ ] The API accepts `Authorization: Token <token>`, and tokens are signed with a secret from configuration and
   expire after a configured time

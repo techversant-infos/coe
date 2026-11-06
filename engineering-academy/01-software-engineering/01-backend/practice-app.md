@@ -87,3 +87,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 
 - [PHP and Laravel](./laravel/README.md)
 - [Node.js and TypeScript](./nodejs/README.md)
+- [Python and Django](./django/README.md)

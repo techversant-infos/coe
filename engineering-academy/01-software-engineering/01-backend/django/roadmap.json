@@ -1,0 +1,132 @@
+{
+  "title": "Python and Django Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Language Fundamentals",
+      "page": "01-language-fundamentals.md",
+      "topics": [
+        { "label": "Modern Python and type hints", "core": true, "techversant": false },
+        { "label": "Classes and data classes", "core": true, "techversant": false },
+        { "label": "Errors and exceptions", "core": true, "techversant": false },
+        { "label": "Packages and environments", "core": true, "techversant": false },
+        { "label": "Code style and linting", "core": true, "techversant": true },
+        { "label": "Async Python", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "The Framework",
+      "page": "02-the-framework.md",
+      "topics": [
+        { "label": "Projects and apps", "core": true, "techversant": false },
+        { "label": "URLs and views", "core": true, "techversant": false },
+        { "label": "Django REST Framework basics", "core": true, "techversant": false },
+        { "label": "Middleware and the request cycle", "core": true, "techversant": false },
+        { "label": "Settings and environments", "core": true, "techversant": false },
+        { "label": "The admin site", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "HTTP and REST APIs",
+      "page": "03-http-and-rest-apis.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Serializers", "core": true, "techversant": false },
+        { "label": "Views, viewsets and routers", "core": true, "techversant": false },
+        { "label": "Status codes and headers", "core": true, "techversant": true },
+        { "label": "Filtering and pagination", "core": true, "techversant": true },
+        { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Databases and Data Access",
+      "page": "04-databases-and-data-access.md",
+      "topics": [
+        { "label": "Models and migrations", "core": true, "techversant": true },
+        { "label": "Relationships and queries", "core": true, "techversant": false },
+        { "label": "Efficient queries", "core": true, "techversant": false },
+        { "label": "Data integrity and transactions", "core": true, "techversant": false },
+        { "label": "Factories and seed data", "core": true, "techversant": false },
+        { "label": "Raw SQL", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Validation and Error Handling",
+      "page": "05-validation-and-error-handling.md",
+      "topics": [
+        { "label": "Validation with serializers", "core": true, "techversant": true },
+        { "label": "Error response format", "core": true, "techversant": true },
+        { "label": "Domain errors", "core": true, "techversant": true },
+        { "label": "Logging", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Authentication and Authorization",
+      "page": "06-authentication-and-authorization.md",
+      "topics": [
+        { "label": "Password storage", "core": true, "techversant": true },
+        { "label": "API tokens", "core": true, "techversant": true },
+        { "label": "Cookie sign-in for single-page apps", "core": true, "techversant": true },
+        { "label": "Permission classes", "core": true, "techversant": true },
+        { "label": "Rate limiting sign-in", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Background Jobs and Caching",
+      "page": "07-background-jobs-and-caching.md",
+      "topics": [
+        { "label": "Tasks with Celery", "core": true, "techversant": false },
+        { "label": "Email", "core": true, "techversant": false },
+        { "label": "Scheduled tasks", "core": true, "techversant": false },
+        { "label": "Caching", "core": true, "techversant": false },
+        { "label": "Django's Tasks framework", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Testing",
+      "page": "08-testing.md",
+      "topics": [
+        { "label": "API tests with pytest", "core": true, "techversant": false },
+        { "label": "Test data and the database", "core": true, "techversant": false },
+        { "label": "Mocks and external services", "core": true, "techversant": false },
+        { "label": "Contract tests and type checks", "core": true, "techversant": true },
+        { "label": "Mutation testing", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Security and Performance",
+      "page": "09-security-and-performance.md",
+      "topics": [
+        { "label": "Django's security settings", "core": true, "techversant": false },
+        { "label": "CORS and security headers", "core": true, "techversant": true },
+        { "label": "The security audit checklist", "core": true, "techversant": true },
+        { "label": "Query performance and indexes", "core": true, "techversant": false },
+        { "label": "Load testing", "core": true, "techversant": false },
+        { "label": "Async views and ASGI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Deployment and Operations",
+      "page": "10-deployment-and-operations.md",
+      "topics": [
+        { "label": "Production configuration", "core": true, "techversant": true },
+        { "label": "Docker images and application servers", "core": true, "techversant": false },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Production database migrations", "core": true, "techversant": true },
+        { "label": "Workers in production", "core": true, "techversant": false },
+        { "label": "Health checks and monitoring", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ Back to [Software Engineering](../README.md).
 |-------|--------|
 | [PHP and Laravel](./laravel/README.md) | Draft |
 | [Node.js and TypeScript](./nodejs/README.md) | Draft |
-| Python and Django | Planned |
+| [Python and Django](./django/README.md) | Draft |
 | Java and Spring Boot | Planned |
 | Go | Planned |
 | .NET | Planned |
