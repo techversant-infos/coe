@@ -35,6 +35,6 @@ Use this section as a capability guide: what to practice, what evidence to colle
 - [Software Engineering](../01-software-engineering/) - web, backend, mobile paths
 - [Quality Engineering](../02-quality-engineering/) - QA and automation paths
 - [Platform Engineering](../03-platform-engineering/) - DevOps, cloud, observability (planned)
-- [Architecture](../04-architecture/) - solution and system design (planned)
+- [Architecture](../04-architecture/README.md) - Software Architect roadmap
 - [Engineering Leadership](../05-engineering-leadership/) - team lead and management (planned)
 - [AI Engineering](../06-ai-engineering/) - AI-assisted development and testing (planned)
