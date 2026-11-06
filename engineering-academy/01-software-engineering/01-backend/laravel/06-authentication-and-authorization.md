@@ -116,7 +116,8 @@ who may change them. Write all of this code by hand, and have a senior engineer 
 
 **Verification**, checked by a reviewer:
 
-- [ ] Passwords are hashed with bcrypt or Argon2id, and no response or log line ever contains a password or token
+- [ ] Passwords are hashed with bcrypt or Argon2id, no log line contains a password or token, and no response
+  contains a password or a stored token hash. `GET` and `PUT /api/user` return the token from the request header.
 - [ ] Sign-in returns the same error for an unknown email and a wrong password
 - [ ] The API accepts `Authorization: Token <token>`, the database stores only hashes of tokens, and tokens expire
   after a configured time

@@ -100,8 +100,8 @@ change. Schedule a nightly job that deletes tags no article uses.
 - [ ] The job has retries with back-off and a timeout, a job that keeps failing is kept for inspection, and running
   it twice sends one email
 - [ ] The job data holds IDs, not email addresses or other personal data
-- [ ] `GET /api/tags` is served from the cache, and creating, updating or deleting an article updates the list
-  straight away
+- [ ] `GET /api/tags` is served from the cache, and creating, updating or deleting an article, or the nightly
+  clean-up, updates the list straight away
 - [ ] The nightly clean-up runs from a BullMQ job scheduler, not from a timer in the API process
 - [ ] Tests check what was queued, without a real Redis server or email
 - [ ] All 13 RealWorld API test files still pass
