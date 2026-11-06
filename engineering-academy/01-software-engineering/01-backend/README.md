@@ -10,7 +10,7 @@ Back to [Software Engineering](../README.md).
 
 | Stack | Status |
 |-------|--------|
-| PHP and Laravel | Planned |
+| [PHP and Laravel](./laravel/README.md) | Draft |
 | Node.js and TypeScript | Planned |
 | Python and Django | Planned |
 | Java and Spring Boot | Planned |
@@ -37,7 +37,13 @@ Every back-end path uses these stages, so you can move between stacks and compar
 9. Security and Performance
 10. Deployment and Operations
 
-Stage 06 is Red Zone work: you write the sign-in and permission code by hand, and a senior engineer reviews it.
+Stage 06, and production database migrations in stage 10, are Red Zone work: you write that code by hand, and a
+senior engineer reviews it.
+
+## The Practice App
+
+Every back-end path builds the same app. See the [practice app](./practice-app.md) page for how to set it up and run
+its tests.
 
 ## Working with Front-End Paths
 
