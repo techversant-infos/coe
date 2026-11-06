@@ -39,8 +39,8 @@ request, within the user's permissions.
 
 - [Retrieval and vector search](../08-forward-deployed-engineering/04-applied-ai.md#retrieval-and-vector-search),
   in the Techversant FDE roadmap
-- [Handling and retention](../../security/audit/security-audit-reference.md#163-handling-and-retention), in the Techversant
-  security audit reference, including where data may be transferred
+- [Handling and retention](../../security/audit/security-audit-reference.md#163-handling-and-retention), in the
+  Techversant security audit reference, including where data may be transferred
 
 **Level:** Advanced · Core
 
@@ -114,12 +114,13 @@ Use an AI provider approved by Techversant, with an API key agreed with your lea
 - [ ] An ADR records the choice of provider and model, with at least two options compared on quality, cost, speed
   and where data is processed
 - [ ] The design states which data is sent to the provider, and confirms no personal data from readers is sent
-- [ ] An evaluation set of at least 30 long articles, public-domain or written by you and loaded into the practice
-  app, each with a checked summary, is run against the prototype, and the results are recorded
+- [ ] An evaluation set of at least 30 long, openly licensed articles, such as public-domain texts or Wikipedia
+  articles loaded into the practice app, each with a checked summary, is run against the prototype, and the results are recorded
 - [ ] The design states what readers see when the provider is slow, fails or returns an unsafe summary
 - [ ] A monthly cost estimate for summaries and suggestions at the brief's volumes fits inside the overall budget
   from stage 07
-- [ ] Each relevant item in the OWASP Top 10 for LLM applications is listed with its mitigation
+- [ ] All ten items in the OWASP Top 10 for LLM applications are listed, each marked relevant or not with a reason,
+  and each relevant item has a mitigation
 
 Previous: [07. Cloud and Cost](./07-cloud-and-cost.md) · Next:
 [09. Modernization and Migration](./09-modernization-and-migration.md)

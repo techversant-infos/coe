@@ -112,12 +112,13 @@ system handles failure, and prove you can recover within the brief's limits.
   30 days
 - [ ] An error budget policy says what the team does when a budget is used up
 - [ ] A failure table lists at least six ways the design can fail, the user impact of each and the response
-- [ ] On the running app, a call to an external service has a timeout, retries with backoff and a fallback, and a
-  test shows the site still serves articles when that service is down
+- [ ] On the running app, a call to an external service, such as a stub email or summary provider you run locally,
+  has a timeout, retries with backoff and a fallback, and a test shows the site still serves articles when that
+  service is down
 - [ ] A disaster recovery strategy is chosen to meet the brief's four-hour RTO and 15-minute RPO, with its cost
 - [ ] A recovery drill restores the database using the chosen method, for example point-in-time recovery, counts
   the writes lost after the last recoverable point, and records the recovery time and data loss against the brief's
-  four-hour RTO and 15-minute RPO
+  four-hour RTO and 15-minute RPO; if either is outside the limit, the gap and a fix are recorded
 - [ ] Dashboards or alerts are defined for each SLO
 
 Previous: [04. Data Architecture](./04-data-architecture.md) · Next:

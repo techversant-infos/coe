@@ -20,8 +20,7 @@ and plan how it will change.
 
 **Resources:**
 
-- [REST API Best Practices](../../standards/general/rest-api-best-practices.md), Techversant's API standard,
-  including [versioning](../../standards/general/rest-api-best-practices.md#21-versioning-strategy-mandatory)
+- [REST API Best Practices](../../standards/general/rest-api-best-practices.md), Techversant's API standard
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 
 **Level:** Advanced · Core
@@ -34,7 +33,7 @@ decides how failures spread.
 **What to learn:**
 
 - When a direct call fits, and when a message fits
-- How one slow service can slow every service that calls it, and how messages stop that
+- How one slow service can slow every service that calls it, and how messages limit that
 - The cost of asynchronous designs: harder debugging and results that arrive later
 
 **Resources:**

@@ -117,8 +117,8 @@ work from the database schema in its `install/` folder.
   comments, and what happens to data that does not fit
 - [ ] BlogCFC5 is seeded with at least 100 entries and their comments, and a migration script moves them, with
   automated checks that compare counts and spot-check content against the source
-- [ ] The migration script, which handles commenters' names and email addresses, is written by hand without AI
-  generation and reviewed by a senior engineer
+- [ ] The author states that the migration script, which handles commenters' names and email addresses, was
+  written by hand without AI generation, and a senior engineer's review is recorded on the pull request
 - [ ] The design keeps old BlogCFC5 article links working, for example with permanent redirects, and a test proves it
   for a sample of links
 - [ ] A cutover plan has steps, owners, go or no-go checks and a tested rollback

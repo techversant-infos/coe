@@ -6,7 +6,8 @@ Security flaws in the design cannot be fixed by careful coding later. This stage
 design the protections, and know when to bring in a security specialist. Back to the [roadmap](./README.md).
 
 Authentication, authorization, encryption, key management, personal data and payment handling, and production
-database migrations are Red Zone work at Techversant: the code is written by people, without AI generation, and reviewed by a senior engineer. See
+database migrations are Red Zone work at Techversant: the code is written by people, without AI generation, and
+reviewed by a senior engineer. See
 [section 2.2 of the AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only).
 
 ## Threat modelling
@@ -109,7 +110,7 @@ on request.
   security audit reference
 - [Privacy and data protection law](../08-forward-deployed-engineering/08-production-and-security.md#privacy-and-data-protection-law),
   in the Techversant FDE roadmap, which covers GDPR and the DPDP Act and Rules
-- [Digital Personal Data Protection Act, 2023](https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023),
+- [The Digital Personal Data Protection Bill, 2023: summary and status](https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023),
   PRS Legislative Research
 
 **Level:** Advanced · Core

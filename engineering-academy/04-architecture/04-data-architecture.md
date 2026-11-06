@@ -13,13 +13,13 @@ easy to answer and wrong data hard to store.
 **What to learn:**
 
 - Entities, relationships and constraints, and letting the database enforce rules where it can
-- Normalising to avoid duplicated data, and when to duplicate on purpose for speed
+- Normalizing to avoid duplicated data, and when to duplicate on purpose for speed
 - Naming tables and fields in the business's own words
 
 **Resources:**
 
-- [Designing Data-Intensive Applications](https://dataintensive.net/), Martin Kleppmann, the chapter on data models and query
-  languages
+- [Designing Data-Intensive Applications](https://dataintensive.net/), Martin Kleppmann, the chapter on data
+  models and query languages
 
 **Level:** Practitioner · Core
 
@@ -93,8 +93,8 @@ disasters.
 
 **Resources:**
 
-- [Handling and retention](../../security/audit/security-audit-reference.md#163-handling-and-retention), in the Techversant
-  security audit reference, for retention periods, backups and data classification
+- [Handling and retention](../../security/audit/security-audit-reference.md#163-handling-and-retention), in the
+  Techversant security audit reference, for retention periods, backups and data classification
 - [Data at rest](../../security/audit/security-audit-reference.md#62-data-at-rest), in the same reference
 
 **Level:** Practitioner · Core

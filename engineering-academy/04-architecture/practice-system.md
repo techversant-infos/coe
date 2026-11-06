@@ -55,9 +55,11 @@ the RealWorld app. Today it has about 5,000 monthly active users, almost all rea
 **Constraints:**
 
 - **Service levels:** reading articles must be available 99.9% of the time in a month; writing and commenting 99.5%.
-- **Budget:** cloud running costs must stay under USD 1,500 a month at the new traffic.
+- **Budget:** running costs, including cloud services and AI provider charges, must stay under USD 1,500 a month at
+  the new traffic.
 - **Data:** readers are mostly in India, with some in the European Union. Their personal data falls under India's
-  Digital Personal Data Protection Act, 2023, and the EU's GDPR.
+  Digital Personal Data Protection Act, 2023, and the DPDP Rules, 2025, whose main duties apply from 13 May 2027, and
+  under the EU's GDPR.
 - **Team:** five developers and one tester, who will build and run whatever you design.
 - **Recovery:** after a disaster, the site must be back within four hours, losing at most 15 minutes of data.
 

@@ -34,8 +34,7 @@ why, guides the team through delivery and checks the design as the client's need
 - **The next step after lead developer.** The [Lead to Architect](../career-progression/04-lead-to-architect.md)
   career page describes the move; this roadmap gives you the skills and the evidence for it.
 - **A clear path, with evidence at each level.** You move from Practitioner to Advanced (Solution
-  Architect) to Expert. Each
-  level lists the evidence your lead looks for (see [Levels](#levels)).
+  Architect) to Expert. Each level lists the evidence your lead looks for (see [Levels](#levels)).
 - **Wider influence.** You work across teams and projects, and you are in the room for client decisions and
   proposals.
 - **A say in how Techversant builds software.** At Expert level, you set standards and reference architectures that
@@ -138,8 +137,8 @@ counts.
 
 The projects build on each other. They all use the same [practice system](./practice-system.md): the open-source
 RealWorld blogging app, a written growth brief from a fictional client, and the BlogCFC5 legacy blog the client
-must migrate. Each project designs one part of the
-client's next year, and several ask you to prove a design decision on the running app.
+must migrate. Each project designs one part of the client's next year, and several ask you to prove a design
+decision on the running app.
 
 ## Capstone
 
@@ -149,7 +148,7 @@ your lead and two peers as a one-hour architecture review:
 1. Walk through the context and container diagrams, and the five decisions that shaped the design most.
 2. Show one decision you proved on the running app, such as a load test, a migration or a recovery drill, with the
    numbers.
-3. Explain how the design meets the brief's service levels, security needs and monthly cloud budget.
+3. Explain how the design meets the brief's service levels, security needs and monthly running budget.
 4. Present the migration plan for the legacy blog, including how you would roll back.
 
 Your lead signs off the capstone when every verification item is checked and all four parts are covered. Together

@@ -14,8 +14,8 @@ on any platform.
 
 - The six pillars of the AWS Well-Architected Framework: operational excellence, security, reliability, performance
   efficiency, cost optimization and sustainability
-- The five pillars of the Azure Well-Architected Framework, which cover the same ground without a
-  separate sustainability pillar
+- The five pillars of the Azure Well-Architected Framework, which cover the same ground without a separate
+  sustainability pillar
 - Running a lightweight review of a design against one framework
 
 **Resources:**
@@ -111,10 +111,13 @@ the USD 1,500 monthly budget at the new traffic.
 
 **Verification**, checked by an architect or lead:
 
-- [ ] A deployment diagram shows every cloud service the design uses, in one region, with how traffic reaches it
-- [ ] An ADR chooses between a managed container service and Kubernetes, with at least two options compared
+- [ ] A deployment diagram shows every cloud service the design uses, in one primary region plus any
+  backup region chosen in stage 05, with how traffic reaches it
+- [ ] An ADR chooses between a managed container service and Kubernetes, with at least two options compared,
+  including what each asks of the brief's five developers and one tester
 - [ ] One environment is described in infrastructure as code, and a plan runs without errors against a sandbox
-  account agreed with your lead, or `terraform validate` passes if no account is available
+  account agreed with your lead, or `terraform validate` or `tofu validate` passes if no
+  account is available
 - [ ] A line-by-line cost estimate from the provider's pricing calculator covers the brief's traffic, stays under
   USD 1,500 a month, and states how much is left for the AI features in stage 08
 - [ ] The estimate shows how cost changes if traffic doubles
