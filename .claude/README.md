@@ -132,7 +132,7 @@ Refreshes the master catalog for the Engineering Academy.
 | `01-software-engineering` | Web, mobile, backend, full-stack | `web-development/frontend`, `web-development/backend`, `mobile-development` |
 | `02-quality-engineering` | Manual testing, automation, Playwright, strategy | `automation/playwright`, `strategy`, `manual-testing` |
 | `03-platform-engineering` | DevOps, cloud, Kubernetes | (content pending) |
-| `04-architecture` | Solution architecture, system design | (content pending) |
+| `04-architecture` | Software Architect roadmap | Stage pages at the folder root |
 | `05-engineering-leadership` | Team lead, engineering manager | (content pending) |
 | `06-ai-engineering` | AI-assisted development, testing, prompt engineering | `ai-assisted-development`, `ai-assisted-testing`, `prompt-engineering` |
 

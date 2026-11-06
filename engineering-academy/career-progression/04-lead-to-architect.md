@@ -57,7 +57,8 @@ Choose one with the architecture group or engineering leadership:
 
 ## Recommended Academy Links
 
-- [Architecture](../04-architecture/README.md)
+- [Software Architect Roadmap](../04-architecture/README.md): ten stages with a project each, and the evidence for
+  the Solution Architect level
 - [Engineering Foundations: Design Thinking](../00-engineering-foundations/05-design-thinking.md)
 - [REST API Best Practices](../../standards/general/rest-api-best-practices.md)
 - [Secure Engineering](../00-engineering-foundations/08-secure-engineering.md)

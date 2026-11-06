@@ -104,6 +104,7 @@ Contentful
 csrfglobalscope
 cursorrules
 customtags
+Danilo
 Deepak
 depcruise
 Deque
@@ -140,6 +141,7 @@ healthz
 Highcharts
 HMAC
 HMACSHA
+Hohpe
 homescreen
 hotfixes
 htmlspecialchars
@@ -231,12 +233,14 @@ sessiontimeout
 setclientcookies
 setex
 shivammathur
+Shostack
 SHOWPLAN
 siteurl
 slowapi
 SSTI
 standups
 stdlib
+Structurizr
 tableprefix
 Tauri
 tblblog
@@ -253,6 +257,7 @@ teamcfadvance
 templatefile
 testbox
 thodi
+Thoughtworks
 TOCTOU
 Tokai
 Traversy

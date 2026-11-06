@@ -2,8 +2,7 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
-These skills decide whether good engineering turns into a result the client values. Working directly with
-customers is the most common duty in FDE job postings, named in 55% of them ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)). Most of the existing Techversant
+These skills decide whether good engineering turns into a result the client values. Most of the existing Techversant
 material sits in the ColdFusion consulting track, but the skills apply to any stack. Back to the [roadmap](./README.md).
 
 ## Discovery

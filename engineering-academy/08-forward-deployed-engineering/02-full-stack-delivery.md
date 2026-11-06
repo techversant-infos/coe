@@ -7,7 +7,7 @@ FDEs deliver whole features, from the database to the screen. Back to the [roadm
 ## TypeScript
 
 The main language used in this roadmap's projects: one strictly typed language for the UI, the API and
-background jobs. About 35% of FDE job postings ask for it ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+background jobs.
 
 **What to learn:**
 
@@ -24,7 +24,7 @@ background jobs. About 35% of FDE job postings ask for it ([Bloomberry](https://
 
 ## Python
 
-Python is the language FDE job postings ask for most, in about 66% of them ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+Python is the second language in this roadmap.
 Most AI and data tools support it first, and many client teams build in it.
 
 **What to learn:**
@@ -121,7 +121,6 @@ Tests are how you prove to the client, and to yourself, that the change works an
 **Resources:**
 
 - [Testing and Refactoring](../00-engineering-foundations/07-testing-and-refactoring.md), in Engineering Foundations
-- [Quality Engineering](../02-quality-engineering/README.md)
 - [Vitest guide](https://vitest.dev/guide/), [Playwright documentation](https://playwright.dev/docs/intro)
 
 **Level:** Practitioner · Core
@@ -166,7 +165,8 @@ Choosing an architecture that fits the client's size, budget and team, not the m
 
 **Resources:**
 
-- [Architecture](../04-architecture/README.md) (planned academy path)
+- [Software Architect Roadmap](../04-architecture/README.md), especially
+  [02. System Design](../04-architecture/02-system-design.md)
 - [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 
 **Level:** Advanced · Core
