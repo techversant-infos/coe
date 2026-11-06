@@ -58,11 +58,11 @@ this:
 | Role | Difference from an FDE |
 |------|------------------------|
 | Consultant | Gives recommendations, often one-off. An FDE builds and ships, and usually stays with the client for longer. |
-| Solutions architect | At OpenAI, usually builds proofs of concept on anonymised or offline data. An FDE writes production code on the client's own systems. |
+| Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
 | Feature developer | Works from a defined backlog. An FDE helps define the backlog, then builds it. |
 | AI engineer | Builds AI features, usually for one product. An FDE builds them inside someone else's environment, under their rules. |
 
-The first two rows follow [The Pragmatic Engineer][pragmatic]. The same article notes that FDEs at product companies
+The consultant row follows [The Pragmatic Engineer][pragmatic]. The same article notes that FDEs at product companies
 also feed what they learn back into the core product. At Techversant, that means reusable components and CoE
 standards.
 
