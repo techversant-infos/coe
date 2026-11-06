@@ -165,7 +165,8 @@ Choosing an architecture that fits the client's size, budget and team, not the m
 
 **Resources:**
 
-- [Architecture](../04-architecture/README.md) (planned academy path)
+- [Software Architect Roadmap](../04-architecture/README.md), especially
+  [02. System Design](../04-architecture/02-system-design.md)
 - [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 
 **Level:** Advanced · Core

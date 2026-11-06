@@ -1,0 +1,131 @@
+{
+  "title": "Software Architect",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Architecture Basics",
+      "page": "01-architecture-basics.md",
+      "topics": [
+        { "label": "The architect's role", "core": true, "techversant": true },
+        { "label": "Quality attributes", "core": true, "techversant": false },
+        { "label": "Trade-off analysis", "core": true, "techversant": true },
+        { "label": "Architecture decision records", "core": true, "techversant": false },
+        { "label": "Diagrams with the C4 model", "core": true, "techversant": false },
+        { "label": "Architecture documentation", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "System Design",
+      "page": "02-system-design.md",
+      "topics": [
+        { "label": "Requirements and capacity estimates", "core": true, "techversant": false },
+        { "label": "Monoliths and microservices", "core": true, "techversant": false },
+        { "label": "Caching", "core": true, "techversant": false },
+        { "label": "Scaling", "core": true, "techversant": false },
+        { "label": "Background jobs and queues", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "API and Integration Architecture",
+      "page": "03-api-and-integration-architecture.md",
+      "topics": [
+        { "label": "API contracts and versioning", "core": true, "techversant": true },
+        { "label": "Direct calls or messages", "core": true, "techversant": false },
+        { "label": "Messaging and events", "core": true, "techversant": false },
+        { "label": "Integration patterns", "core": true, "techversant": true },
+        { "label": "Backward compatibility", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Data Architecture",
+      "page": "04-data-architecture.md",
+      "topics": [
+        { "label": "Data modelling", "core": true, "techversant": false },
+        { "label": "Choosing data stores", "core": true, "techversant": false },
+        { "label": "Schema migrations", "core": true, "techversant": true },
+        { "label": "Transactions and consistency", "core": true, "techversant": false },
+        { "label": "Retention and backups", "core": true, "techversant": true },
+        { "label": "Reporting and analytics", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Reliability and Performance",
+      "page": "05-reliability-and-performance.md",
+      "topics": [
+        { "label": "Service level objectives", "core": true, "techversant": false },
+        { "label": "Failure handling", "core": true, "techversant": false },
+        { "label": "Performance and load testing", "core": true, "techversant": false },
+        { "label": "Observability", "core": true, "techversant": true },
+        { "label": "Disaster recovery", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Security and Privacy Architecture",
+      "page": "06-security-and-privacy-architecture.md",
+      "topics": [
+        { "label": "Threat modelling", "core": true, "techversant": true },
+        { "label": "Identity and access", "core": true, "techversant": true },
+        { "label": "Secrets and key management", "core": true, "techversant": true },
+        { "label": "Secure design review", "core": true, "techversant": true },
+        { "label": "Privacy by design", "core": true, "techversant": true },
+        { "label": "Supply chain security", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Cloud and Cost",
+      "page": "07-cloud-and-cost.md",
+      "topics": [
+        { "label": "Cloud architecture frameworks", "core": true, "techversant": false },
+        { "label": "Containers and orchestration", "core": true, "techversant": true },
+        { "label": "Infrastructure as code", "core": true, "techversant": true },
+        { "label": "Cost estimation", "core": true, "techversant": false },
+        { "label": "Environments and deployment", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "AI-Enabled Systems",
+      "page": "08-ai-enabled-systems.md",
+      "topics": [
+        { "label": "Where AI fits in a system", "core": true, "techversant": true },
+        { "label": "Retrieval and data access", "core": true, "techversant": true },
+        { "label": "Evaluations and guardrails", "core": true, "techversant": true },
+        { "label": "AI cost and latency", "core": true, "techversant": true },
+        { "label": "AI security and governance", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Modernization and Migration",
+      "page": "09-modernization-and-migration.md",
+      "topics": [
+        { "label": "Assessing legacy systems", "core": true, "techversant": true },
+        { "label": "Choosing a modernization path", "core": true, "techversant": true },
+        { "label": "Strangler fig", "core": true, "techversant": false },
+        { "label": "Data migration", "core": true, "techversant": false },
+        { "label": "Cutover and rollback", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Architecture Practice",
+      "page": "10-architecture-practice.md",
+      "topics": [
+        { "label": "Architecture reviews", "core": true, "techversant": true },
+        { "label": "Explaining decisions to stakeholders", "core": true, "techversant": false },
+        { "label": "Estimates and proposals", "core": true, "techversant": true },
+        { "label": "Reference architectures and standards", "core": true, "techversant": true },
+        { "label": "Mentoring", "core": true, "techversant": true },
+        { "label": "Fitness functions", "core": false, "techversant": false }
+      ]
+    }
+  ]
+}
