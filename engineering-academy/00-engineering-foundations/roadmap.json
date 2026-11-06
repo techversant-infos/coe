@@ -80,11 +80,11 @@
       "title": "Testing and Refactoring",
       "page": "07-testing-and-refactoring.md",
       "topics": [
-        { "label": "Test levels", "core": true, "techversant": true },
+        { "label": "Test levels", "core": true, "techversant": false },
         { "label": "Writing clear tests", "core": true, "techversant": true },
         { "label": "Testable code", "core": true, "techversant": false },
         { "label": "Code smells", "core": true, "techversant": false },
-        { "label": "Safe refactoring", "core": true, "techversant": true }
+        { "label": "Safe refactoring", "core": true, "techversant": false }
       ]
     },
     {
@@ -107,7 +107,7 @@
         { "label": "What to review", "core": true, "techversant": false },
         { "label": "Giving feedback", "core": true, "techversant": false },
         { "label": "The review checklist", "core": true, "techversant": true },
-        { "label": "Self-review", "core": true, "techversant": false },
+        { "label": "Self-review", "core": true, "techversant": true },
         { "label": "Reviewing AI-generated code", "core": true, "techversant": true }
       ]
     },

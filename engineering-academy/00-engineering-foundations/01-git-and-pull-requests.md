@@ -36,6 +36,7 @@ catches more problems.
 - Opening a PR with a summary, the reason for the change, how you verified it and any risks
 - Keeping one PR to one purpose, and small enough to review in one sitting
 - Responding to review comments, and resolving each one with a change or an explanation
+- Where PRs merge: on product projects, into `dev` first, then promoted to staging and `main`
 
 **Resources:**
 
@@ -53,7 +54,8 @@ work safe.
 
 **What to learn:**
 
-- Updating your branch from `main` with rebase or merge, as your project prefers
+- Rebasing on `origin/main` before your first push, and merging `main` into your branch after that, because
+  Techversant never rebases a branch that has been pushed
 - Reading a conflict, and combining both changes instead of accepting one side without thinking
 - Never force-pushing to a shared branch
 
@@ -113,6 +115,7 @@ PR. Use a practice ticket ID such as `FND-1` in place of a Jira ID.
 - [ ] The PR description has a summary, the reason, how it was verified and any risks
 - [ ] The PR contains only the one change, and the API tests still pass
 - [ ] Every review comment is resolved with a change or a reply
-- [ ] You updated the branch from `main` at least once before merging, without losing anyone else's work
+- [ ] The reviewer pushes a conflicting commit to `main`, and you resolve the conflict by merging `main` into your
+  branch, keeping both changes
 
 Next: [02. Working with AI Tools](./02-working-with-ai-tools.md)

@@ -85,8 +85,8 @@ Next action:
 
 ## Technical debt
 
-Technical debt is a shortcut taken on purpose that will cost time later. It is not a failure, as long as it is
-visible and tracked.
+Technical debt is a shortcut, usually taken on purpose, that will cost time later. It is not a failure, as long as
+it is visible and tracked.
 
 **What to learn:**
 
@@ -108,6 +108,8 @@ better than you found it.
 - Following your change into production, and fixing your own bugs first
 - Flagging risks and shortcuts when you make them, not when someone else finds them
 - Leaving the codebase easier to understand than you found it
+- Documenting in the cheapest place that works: a clear name in the code, the reason in the commit message, or an
+  ADR for a decision
 
 **Resources:**
 

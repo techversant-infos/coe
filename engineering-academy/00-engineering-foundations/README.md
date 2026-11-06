@@ -54,7 +54,7 @@ Every Techversant engineer, in every stack, should be able to:
 
 | Level | What the engineer does | Evidence |
 |-------|------------------------|----------|
-| Foundation | Follows the habits on their own work, with a reviewer catching gaps | Projects for stages 01–03 and 08 verified |
+| Foundation | Follows the habits on their own work, with a reviewer catching gaps | Projects for stages 01–03 verified, plus a minimum-bar security review of one existing RealWorld endpoint |
 | Practitioner | Follows all the habits without prompting, and reviews others' work with the checklist | All ten projects and the capstone verified |
 
 The levels follow the academy's [learning levels](../learning-levels/README.md). Practitioner is the target of this
@@ -100,8 +100,8 @@ What each role brings:
 - **Solid boxes** are core topics. **Dashed boxes** are optional.
 - A **tick** marks a Techversant guide: a standard, checklist or academy path that covers the topic. The other
   topics link to official documentation or well-known books, or are learned with a reviewer.
-- Most topics end with **In your stack** notes on what the topic looks like in web front end, back end and mobile
-  work.
+- Topics where the stack changes the practice end with **In your stack** notes for web front end, back end and
+  mobile work.
 
 ## Stages and Projects
 
@@ -181,4 +181,4 @@ If you are running a cohort, read the [facilitator guide](./facilitator-guide.md
 | Refactoring | Changing the structure of code without changing what it does |
 | ADR | Architecture decision record: a short document that records one decision, its context and its consequences |
 | OWASP Top 10 | A list of the most critical web application security risks, published by the OWASP Foundation |
-| Technical debt | A shortcut taken on purpose that will cost time later, and needs to be tracked |
+| Technical debt | A shortcut, usually taken on purpose, that will cost time later and needs to be tracked |

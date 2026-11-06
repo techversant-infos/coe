@@ -39,7 +39,8 @@ An AI tool only knows what you tell it. Clear, specific requests with the right 
 **Resources:**
 
 - [Prompt discipline](../../standards/general/ai-era-coding-guidelines.md#71-prompt-discipline), in the Techversant
-  AI Era Coding Guidelines
+  AI Era Coding Guidelines. Its example prompt is for a login API, which is Red Zone work: copy the structure, not
+  the task.
 - [Developer handbook prompts](../../ai/prompts/developer-handbook-full.md), Techversant's prompt templates
 
 **Level:** Foundation · Core
@@ -70,7 +71,9 @@ Your team needs to know where AI helped, and client data must never reach a tool
 **What to learn:**
 
 - Disclosing AI help in your commit messages, in the format your project uses
-- Never pasting secrets, tokens, client data or personal data into an AI tool unless it is approved for that data
+- Using only AI tools Techversant has approved
+- Never pasting secrets or tokens into any AI tool, and pasting client or personal data only into a tool approved
+  for it
 - Checking that generated code does not copy licensed code into the project
 
 **Resources:**

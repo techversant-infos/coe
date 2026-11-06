@@ -107,7 +107,7 @@ your lead. Get your own bookmarks PR reviewed with the same checklist, and respo
 
 - [ ] Before requesting review of your own PR, you ran the checklist on it and fixed what you found
 - [ ] Each of your three reviews covers every item in the review checklist
-- [ ] Every comment you wrote is labelled must fix, should consider or nit
+- [ ] Every comment you wrote that asks for a change is labelled must fix, should consider or nit
 - [ ] Each review includes at least one question rather than an instruction, and at least one specific piece of
   praise
 - [ ] At least one of the PRs you reviewed included AI-generated code, and your review checks it against the AI code

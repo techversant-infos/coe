@@ -2,7 +2,7 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
 
-Most review friction, and many bugs, come from code that is hard to read rather than code that is wrong. Clean code
+Much review friction, and many bugs, come from code that is hard to read rather than code that is wrong. Clean code
 lets another developer understand your work without asking you. Back to the [roadmap](./README.md).
 
 ## Naming
@@ -83,8 +83,8 @@ abstraction, which is harder to undo than duplication.
 
 ## Error handling and logging
 
-Good error handling turns a five-day investigation into a five-minute fix. Users see a helpful message; developers
-see enough context to debug, and never a secret.
+Good error handling makes failures quick to find and fix. Users see a helpful message; developers see enough
+context to debug, and never a secret.
 
 **What to learn:**
 

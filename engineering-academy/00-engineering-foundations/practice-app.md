@@ -31,7 +31,7 @@ Pick the implementation closest to the work you do, and check its licence before
 |-------------|------|
 | Back end (Node.js, PHP, Java, .NET, Python and others) | A back end in your language, plus any working front end to try it in a browser |
 | Web front end (React, Angular, Vue and others) | A front end in your framework, plus any working back end |
-| Mobile | A back end in the language closest to your mobile work, such as Kotlin or Swift. Few RealWorld mobile apps are maintained, so most projects happen on the back end, and the **In your stack** notes on each topic show how it applies to mobile code. |
+| Mobile | A back end in the language closest to your mobile work, such as Kotlin or Swift. Few RealWorld mobile apps are maintained, so most projects happen on the back end, and the **In your stack** notes show how topics apply to mobile code. |
 | Test automation | The back end or front end your team's products are closest to. Your test skills carry over to every project. |
 
 Use the app for practice only. Do not deploy it with real users' data, and do not copy its code into client work.
@@ -52,7 +52,8 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
    Change the port to match your back end.
 4. Record which tests pass. This is your baseline: after every project, the same tests must still pass.
 5. If you work on a front end, run the end-to-end tests in `specs/e2e` as well, following the instructions in the
-   RealWorld repository.
+   RealWorld repository. They need a front end that provides every selector listed in `specs/e2e/SELECTORS.md`, so
+   check this before you pick one.
 
 ## The Feature You Build
 
@@ -60,7 +61,8 @@ From stage 05 onwards, you add one feature to the app: **article bookmarks**. A 
 article to read later, see a list of their bookmarks and remove one. Bookmarks are private to each reader.
 
 The feature is small enough to build in a week, but touches every layer: the data model, an API, validation,
-authorization, tests and, for front-end engineers, the user interface.
+authorization, tests and, for front-end engineers, the user interface. The check that keeps bookmarks private is
+authorization, which is Red Zone work: see [stage 06](./06-apis-and-boundaries.md#project-build-the-bookmarks-api).
 
 ## How the Projects Use It
 

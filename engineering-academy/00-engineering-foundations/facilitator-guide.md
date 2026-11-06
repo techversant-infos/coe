@@ -40,8 +40,9 @@ cohort. Learners do not need it. The eight-week plan is in the roadmap's
 
 - **AI doing the thinking.** If a learner cannot explain a line they committed, ask them to rework it. The rules are
   in [stage 02](./02-working-with-ai-tools.md).
-- **Red Zone work.** No project needs authentication or encryption code. If a learner starts writing some, stop them
-  and point them to a senior engineer.
+- **Red Zone work.** The bookmark ownership check in stages 06–08 is authorization, so it is Red Zone work: make
+  sure it is written by hand and reviewed by a senior engineer. No project needs authentication or encryption code.
+  If a learner starts writing some, stop them and point them to a senior engineer.
 - **Projects growing too large.** Keep each project to its stated size. A smaller, finished project teaches more than
   a large, unfinished one.
 

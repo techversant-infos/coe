@@ -52,7 +52,7 @@ reject bad input.
 
 ## Performance awareness
 
-Most performance problems come from a few common mistakes. Measure before and after a change, instead of guessing.
+Many performance problems come from a few common mistakes. Measure before and after a change, instead of guessing.
 
 **What to learn:**
 
@@ -91,7 +91,11 @@ serve out-of-date data if you are not careful.
 
 **Brief:** Build the article bookmarks endpoints from your stage 05 design. RealWorld's existing API has its own
 style, so match it for compatibility, and note in your ADR where that differs from the Techversant REST standard.
-Front-end engineers also add the bookmark button and the bookmarks list to the user interface.
+Front-end engineers pair with a back-end engineer on the endpoints, or build against a mock API that follows
+the stage 05 design, and own the bookmark button and the bookmarks list in the user interface.
+
+The check that a reader can reach only their own bookmarks is authorization, so it is Red Zone work: write it by
+hand, without AI generation, and have a senior engineer review it.
 
 **Size:** 3–4 days
 
@@ -101,6 +105,7 @@ Front-end engineers also add the bookmark button and the bookmarks list to the u
 - [ ] The bookmarks list is paginated
 - [ ] Every input is validated on the server, and invalid input returns a clear error with the right status code
 - [ ] A reader can never see or change another reader's bookmarks
+- [ ] The ownership check was written without AI generation, and a senior engineer's approval is recorded on the PR
 - [ ] The list endpoint runs a fixed number of queries whatever the number of bookmarks, shown with query counts for
   1 and 50 bookmarks
 - [ ] The ADR notes each place where the endpoints follow RealWorld's style rather than the Techversant standard

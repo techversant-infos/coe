@@ -19,8 +19,6 @@ but prove the whole flow works.
 **Resources:**
 
 - [The practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), Ham Vocke
-- [Test ownership](../../standards/general/ai-era-coding-guidelines.md#61-test-ownership), in the Techversant AI Era
-  Coding Guidelines
 
 **In your stack:** for example Jest or Vitest for JavaScript and TypeScript, PHPUnit or Pest for PHP, JUnit for
 Kotlin and XCTest for Swift. RealWorld's Playwright suite is an example of end-to-end tests.
@@ -41,7 +39,7 @@ the name tells you what broke.
 **Resources:**
 
 - [Test ownership](../../standards/general/ai-era-coding-guidelines.md#61-test-ownership), in the Techversant AI Era
-  Coding Guidelines, which also covers tests written with AI help
+  Coding Guidelines, on why AI-written tests are placeholders until you verify them
 
 **Level:** Practitioner · Core
 
@@ -92,8 +90,6 @@ after each one, it is safe.
 **Resources:**
 
 - [Refactoring catalog](https://refactoring.com/catalog/), Martin Fowler
-- [Refactoring for readability](../../standards/general/ai-era-coding-guidelines.md#33-refactoring-for-readability),
-  in the Techversant AI Era Coding Guidelines
 
 **Level:** Practitioner · Core
 
@@ -108,7 +104,7 @@ practice app and remove it with a named refactoring, in small steps.
 
 - [ ] Unit tests cover the bookmark rules, and integration tests cover the endpoints, including the error cases
 - [ ] Test names describe behaviour, and each test follows arrange, act, assert
-- [ ] For one test, the PR shows you broke the code on purpose and the test failed
+- [ ] For one test, the PR description includes the failing output after you broke the code on purpose
 - [ ] A test proves a reader cannot see another reader's bookmarks
 - [ ] The smell and the refactoring are both named in the PR, using the names from Fowler's catalog
 - [ ] The refactoring is in separate commits from any behaviour change, and the tests pass after each commit

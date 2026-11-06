@@ -80,8 +80,8 @@ more flexible.
 
 **Resources:**
 
-- *Design Patterns*, Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides, which first set out the principle
-  "favour object composition over class inheritance"
+- *Design Patterns*, Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides, which states the principle
+  "Favor object composition over class inheritance."
 
 **In your stack:** React and modern mobile UI frameworks such as Jetpack Compose and SwiftUI build screens by
 composing small components, not by inheriting from them.
