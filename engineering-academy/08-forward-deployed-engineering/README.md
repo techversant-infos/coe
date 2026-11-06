@@ -6,8 +6,8 @@ A Forward Deployed Engineer (FDE) works with a client's team and takes a real pr
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
 with the client's people.
 
-- **Who it is for:** developers, lead developers, software architects and AI engineers who want to work directly
-  with clients.
+- **Who it is for:** senior developers, lead developers, software architects and AI engineers who want to work
+  directly with clients.
 - **Before you start:** some client project experience. Stage 01 is the
   [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
   evidence and move on.
@@ -29,7 +29,7 @@ with the client's people.
 
 - **A clear path, with evidence at each level.** You move from Practitioner to FDE Lead to Expert. Each level lists
   the evidence your lead looks for (see [FDE Levels](#fde-levels)).
-- **Skills beyond your current role.** Developers add AI and client work. Lead developers add AI and direct
+- **Skills beyond your current role.** Senior developers add AI and client work. Lead developers add AI and direct
   ownership of the client result. Software architects add hands-on building and AI. AI engineers add integration,
   operations and client work.
 - **Ownership of a whole engagement.** An FDE Lead owns the scope, the build, production and the handover. Explaining
@@ -59,7 +59,7 @@ How an FDE differs from the roles you may hold at Techversant today:
 
 | Your role today | How an FDE differs |
 |-----------------|--------------------|
-| Full-stack developer | Builds features from a backlog that someone else has agreed with the client. An FDE helps the client define that backlog, then builds it. |
+| Senior developer | Builds features from a backlog that someone else has agreed with the client. An FDE helps the client define that backlog, then builds it. |
 | Lead developer | Leads a team through an agreed scope: plans the work, reviews code and reports progress. An FDE works inside the client's team, agrees the scope and the measure of success with the client, and builds much of the solution personally. |
 | Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
 | AI engineer | Builds AI features within one product or project, with its own team and infrastructure. An FDE builds them inside the client's environment, under the client's rules. |
@@ -83,8 +83,8 @@ work should show working knowledge of every core topic.
 Everyone completes all nine stages. Your current role decides where you can move quickly and where to plan more
 time.
 
-| Stage | Full-stack developer | Lead developer | Software architect | AI engineer |
-|-------|----------------------|----------------|--------------------|-------------|
+| Stage | Senior developer | Lead developer | Software architect | AI engineer |
+|-------|------------------|----------------|--------------------|-------------|
 | [01. Engineering Foundations](./01-engineering-foundations.md) | Already do | Already do | Already do | Already do |
 | [02. Full-Stack Delivery](./02-full-stack-delivery.md) | Already do | Already do | Partly | Partly |
 | [03. Data](./03-data.md) | Partly | Partly | Partly | Already do |
@@ -101,7 +101,7 @@ time.
 
 What each role brings:
 
-- **Full-stack developer:** you already build and ship. The new parts are AI features and working directly with the
+- **Senior developer:** you already build and ship. The new parts are AI features and working directly with the
   client.
 - **Lead developer:** you already plan delivery, review code, estimate and report to stakeholders. The new parts are
   AI features and owning the result directly with the client, with a smaller team and more of the building yourself.
