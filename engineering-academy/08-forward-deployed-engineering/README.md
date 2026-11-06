@@ -40,9 +40,8 @@ with the client's people.
 
 ## What an FDE Does
 
-The most common duties in FDE job postings are working directly with customers (55%), building and deploying AI
-systems (37%) and integrating systems and APIs (32%) ([Bloomberry][bloomberry]). In practice, an engagement runs like
-this:
+An FDE's work centres on three things: working directly with the client, building AI features, and connecting
+them to the client's systems. At Techversant, an FDE engagement runs like this:
 
 1. Find the real problem behind the client's request.
 2. Agree a measurable result and a short time box.
@@ -55,16 +54,14 @@ this:
 
 ## How the Role Differs
 
-| Role | Difference from an FDE |
-|------|------------------------|
-| Consultant | Gives recommendations, often one-off. An FDE builds and ships, and usually stays with the client for longer. |
-| Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
-| Feature developer | Works from a defined backlog. An FDE helps define the backlog, then builds it. |
-| AI engineer | Builds AI features, usually for one product. An FDE builds them inside someone else's environment, under their rules. |
+How an FDE differs from the roles you may hold at Techversant today:
 
-The consultant row follows [The Pragmatic Engineer][pragmatic]. The same article notes that FDEs at product companies
-also feed what they learn back into the core product. At Techversant, that means reusable components and CoE
-standards.
+| Your role today | How an FDE differs |
+|-----------------|--------------------|
+| Full-stack developer | Builds features from a backlog that someone else has agreed with the client. An FDE helps the client define that backlog, then builds it. |
+| Software architect | Designs systems, sets technical direction and reviews other teams' work, often across several projects. An FDE also makes design decisions, but writes and ships the code on one client's systems and stays through production and handover. |
+| Consultant | Looks after a client's existing systems: keeps them running, assesses them and recommends a path, as in the [Senior ColdFusion Consultant roadmap](../07-consulting/coldfusion/README.md). An FDE starts from a business problem and builds a new solution, often with AI, then hands it over. |
+| AI engineer | Builds AI features within one product or project, with its own team and infrastructure. An FDE builds them inside the client's environment, under the client's rules. |
 
 ## FDE Levels
 
@@ -74,9 +71,8 @@ standards.
 | Advanced (FDE Lead) | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results, handover, client feedback |
 | Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached |
 
-The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is rarely a first job: of the
-postings that state experience, 60% ask for three to five years and only 12% are entry-level roles asking for two
-years or less ([Bloomberry][bloomberry]).
+The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is not a first role: you start
+once you have delivered on client projects.
 
 Each topic's level is the depth expected of an FDE Lead. For Practitioner, the projects plus your real engagement
 work should show working knowledge of every core topic.
@@ -175,13 +171,3 @@ with shipped work on a real engagement, this is the evidence for the Practitione
 | UAT | User acceptance testing: the client's users confirm the solution does the job |
 | Handover | Transferring ownership so the client's team can run, change and roll back the solution |
 | Red Zone | Work Techversant never delegates to AI. See [section 2.2 of the AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only). |
-
-## Sources
-
-- The Pragmatic Engineer, Gergely Orosz, ["What are Forward Deployed Engineers, and why are they so in demand?"][pragmatic],
-  12 August 2025
-- Bloomberry, Henley Wing Chiu, ["What I learned analyzing 1K forward deployed engineer jobs"][bloomberry], last
-  updated 25 January 2026. About 1,000 postings supplied by Revealera, with salaries quoted in US dollars.
-
-[pragmatic]: https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers
-[bloomberry]: https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/

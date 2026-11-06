@@ -7,7 +7,7 @@ FDEs deliver whole features, from the database to the screen. Back to the [roadm
 ## TypeScript
 
 The main language used in this roadmap's projects: one strictly typed language for the UI, the API and
-background jobs. About 35% of FDE job postings ask for it ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+background jobs.
 
 **What to learn:**
 
@@ -24,7 +24,7 @@ background jobs. About 35% of FDE job postings ask for it ([Bloomberry](https://
 
 ## Python
 
-Python is the language FDE job postings ask for most, in about 66% of them ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)).
+Python is the second language in this roadmap.
 Most AI and data tools support it first, and many client teams build in it.
 
 **What to learn:**

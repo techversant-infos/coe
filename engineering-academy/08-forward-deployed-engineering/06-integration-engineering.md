@@ -2,8 +2,7 @@
 
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
 
-The solution has to work inside the client's systems, not next to them. Integrating systems and APIs is named in
-32% of FDE job postings ([Bloomberry](https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/)). Back to the [roadmap](./README.md).
+The solution has to work inside the client's systems, not next to them. Back to the [roadmap](./README.md).
 
 ## Working with legacy systems
 
