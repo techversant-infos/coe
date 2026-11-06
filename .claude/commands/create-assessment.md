@@ -32,7 +32,7 @@ This command generates a comprehensive assessment for a learning phase within `e
 ```bash
 /create-assessment 02-quality-engineering playwright-basics --subfolder automation/playwright --phase 1
 /create-assessment 00-engineering-foundations git-workflow --level Foundation
-/create-assessment 01-software-engineering react-fundamentals --subfolder web-development/frontend --type formative
+/create-assessment 01-software-engineering react-fundamentals --subfolder 02-frontend/react-nextjs --type formative
 ```
 
 ## Competency Level Guidelines

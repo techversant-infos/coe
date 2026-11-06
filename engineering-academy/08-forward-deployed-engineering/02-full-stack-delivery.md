@@ -1,6 +1,6 @@
 # 02. Full-Stack Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-05
 
 FDEs deliver whole features, from the database to the screen. Back to the [roadmap](./README.md).
 
@@ -50,8 +50,7 @@ Most client-facing work needs a UI: an internal tool, a review screen for AI out
 
 **Resources:**
 
-- [React learning path](../01-software-engineering/01-web-development/01-frontend/01-react/README.md)
-- [Next.js learning path](../01-software-engineering/01-web-development/01-frontend/02-nextjs/README.md)
+- [React and Next.js Developer roadmap](../01-software-engineering/02-frontend/react-nextjs/README.md)
 - [React documentation](https://react.dev/learn)
 
 **Level:** Practitioner · Core
@@ -68,7 +67,7 @@ APIs connect the UI, the AI features and the client's systems.
 
 **Resources:**
 
-- [Backend path](../01-software-engineering/01-web-development/02-backend/README.md)
+- [Back-end paths](../01-software-engineering/01-backend/README.md)
 - [Node.js and TypeScript Style Guide](../../standards/nodejs/nodejs-typescript-style-guide.md)
 - [Node.js documentation](https://nodejs.org/en/learn)
 

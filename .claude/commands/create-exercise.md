@@ -34,7 +34,7 @@ This command generates a complete exercise within the Engineering Academy struct
 /create-exercise 00-engineering-foundations git-commit-messages --duration 20
 /create-exercise 02-quality-engineering playwright-locators --subfolder automation/playwright --phase 1
 /create-exercise 00-engineering-foundations code-review-checklist --level Practitioner
-/create-exercise 01-software-engineering refactor-components --subfolder web-development/frontend
+/create-exercise 01-software-engineering refactor-components --subfolder 02-frontend/react-nextjs
 ```
 
 ## Exercise Types
