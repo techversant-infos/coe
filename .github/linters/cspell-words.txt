@@ -25,6 +25,7 @@ blogcf
 blogname
 blogurl
 Bloomberry
+Buildpacks
 bypassable
 cachedwithin
 Calibri
@@ -130,6 +131,7 @@ envalid
 executability
 explainability
 fastapi
+fasterxml
 Favorited
 favourited
 favouriting
@@ -148,6 +150,7 @@ Hazelcast
 HEALTHCHECK
 healthz
 Highcharts
+HikariCP
 HMAC
 HMACSHA
 Hohpe
@@ -156,6 +159,7 @@ hotfixes
 htmlspecialchars
 httpmethod
 Indiranagar
+Initializr
 insurtech
 isactive
 isadmin
@@ -163,7 +167,9 @@ isset
 ISTQB
 javax
 jmap
+JobRunr
 johndoe
+JPQL
 jstack
 jstat
 Kishore
@@ -172,6 +178,7 @@ Lajin
 Larastan
 learnsphere
 libsodium
+Logback
 logbox
 lycheeignore
 Mailpit
@@ -183,6 +190,7 @@ mgmt
 microsegmentation
 MTTR
 mutmut
+mvnw
 MVVM
 myapp
 mypy
@@ -257,6 +265,7 @@ Shostack
 SHOWPLAN
 siteurl
 slowapi
+springdoc
 sqlmigrate
 SSTI
 standups
@@ -298,6 +307,7 @@ Vocke
 wala
 wali
 webdev
+webmvc
 webroot
 Wieruch
 wirebox

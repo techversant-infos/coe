@@ -22,7 +22,7 @@ Each back-end path follows the same ten stages, from language fundamentals to de
 | [PHP and Laravel](./01-backend/laravel/README.md) | Draft |
 | [Node.js and TypeScript](./01-backend/nodejs/README.md) | Draft |
 | [Python and Django](./01-backend/django/README.md) | Draft |
-| Java and Spring Boot | Planned |
+| [Java and Spring Boot](./01-backend/spring-boot/README.md) | Draft |
 | Go | Planned |
 | .NET | Planned |
 
