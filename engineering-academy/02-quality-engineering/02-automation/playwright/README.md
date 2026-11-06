@@ -36,10 +36,10 @@ Start with **Automation Engineer to Senior Automation Engineer** if you:
 
 - [Quality Engineering](../../README.md)
 - [Automation Strategy](../../03-strategy/01-automation-strategy.md)
-- [Developer Excellence Curriculum](../../../00-engineering-foundations/05-dev-excellence/01-curriculum.md)
+- [Engineering Foundations](../../../00-engineering-foundations/README.md)
 - [AI Assisted Testing](../../../06-ai-engineering/02-ai-assisted-testing/README.md)
 - [REST API Best Practices](../../../../standards/general/rest-api-best-practices.md)
-- [Git Workflow](../../../00-engineering-foundations/01-git-workflow.md)
+- [Git and Pull Requests](../../../00-engineering-foundations/01-git-and-pull-requests.md)
 
 ---
 

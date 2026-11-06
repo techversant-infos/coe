@@ -1,0 +1,127 @@
+{
+  "title": "Engineering Foundations",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Git and Pull Requests",
+      "page": "01-git-and-pull-requests.md",
+      "topics": [
+        { "label": "Branches and commits", "core": true, "techversant": true },
+        { "label": "Pull requests", "core": true, "techversant": true },
+        { "label": "Resolving conflicts", "core": true, "techversant": true },
+        { "label": "Releases and rollback", "core": true, "techversant": true },
+        { "label": "Cleaning up local history", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Working with AI Tools",
+      "page": "02-working-with-ai-tools.md",
+      "topics": [
+        { "label": "Delegation levels", "core": true, "techversant": true },
+        { "label": "Giving AI context", "core": true, "techversant": true },
+        { "label": "Checking AI output", "core": true, "techversant": true },
+        { "label": "Disclosure and data rules", "core": true, "techversant": true },
+        { "label": "Red Zone work", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Clean Code",
+      "page": "03-clean-code.md",
+      "topics": [
+        { "label": "Naming", "core": true, "techversant": true },
+        { "label": "Small functions", "core": true, "techversant": false },
+        { "label": "Control flow", "core": true, "techversant": false },
+        { "label": "Duplication", "core": true, "techversant": false },
+        { "label": "Error handling and logging", "core": true, "techversant": true },
+        { "label": "Formatters and linters", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Design Principles",
+      "page": "04-design-principles.md",
+      "topics": [
+        { "label": "SOLID", "core": true, "techversant": false },
+        { "label": "Separation of concerns", "core": true, "techversant": false },
+        { "label": "Dependency injection", "core": true, "techversant": false },
+        { "label": "Composition over inheritance", "core": true, "techversant": false },
+        { "label": "Configuration and feature flags", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Design Thinking",
+      "page": "05-design-thinking.md",
+      "topics": [
+        { "label": "Understanding the problem", "core": true, "techversant": false },
+        { "label": "Change scenarios", "core": true, "techversant": false },
+        { "label": "Trade-offs", "core": true, "techversant": true },
+        { "label": "Domain modelling", "core": true, "techversant": false },
+        { "label": "Architecture decision records", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "APIs and Boundaries",
+      "page": "06-apis-and-boundaries.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Validation at boundaries", "core": true, "techversant": true },
+        { "label": "Performance awareness", "core": true, "techversant": true },
+        { "label": "Caching basics", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Testing and Refactoring",
+      "page": "07-testing-and-refactoring.md",
+      "topics": [
+        { "label": "Test levels", "core": true, "techversant": true },
+        { "label": "Writing clear tests", "core": true, "techversant": true },
+        { "label": "Testable code", "core": true, "techversant": false },
+        { "label": "Code smells", "core": true, "techversant": false },
+        { "label": "Safe refactoring", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Secure Engineering",
+      "page": "08-secure-engineering.md",
+      "topics": [
+        { "label": "Secrets", "core": true, "techversant": true },
+        { "label": "Injection and output encoding", "core": true, "techversant": true },
+        { "label": "Authorization", "core": true, "techversant": true },
+        { "label": "When to ask for a security review", "core": true, "techversant": true },
+        { "label": "OWASP Top 10", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Code Review",
+      "page": "09-code-review.md",
+      "topics": [
+        { "label": "What to review", "core": true, "techversant": false },
+        { "label": "Giving feedback", "core": true, "techversant": false },
+        { "label": "The review checklist", "core": true, "techversant": true },
+        { "label": "Self-review", "core": true, "techversant": false },
+        { "label": "Reviewing AI-generated code", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Communication and Ownership",
+      "page": "10-communication-and-ownership.md",
+      "topics": [
+        { "label": "PR descriptions", "core": true, "techversant": false },
+        { "label": "Status and blocker updates", "core": true, "techversant": false },
+        { "label": "Handoff notes", "core": true, "techversant": true },
+        { "label": "Technical debt", "core": true, "techversant": false },
+        { "label": "Ownership", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}

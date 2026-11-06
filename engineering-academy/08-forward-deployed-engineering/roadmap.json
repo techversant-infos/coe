@@ -8,11 +8,12 @@
       "title": "Engineering Foundations",
       "page": "01-engineering-foundations.md",
       "topics": [
-        { "label": "Git Workflow", "core": true, "techversant": true },
-        { "label": "AI Usage", "core": true, "techversant": true },
-        { "label": "Secure Engineering", "core": true, "techversant": true },
-        { "label": "Communication", "core": true, "techversant": true },
-        { "label": "Developer Excellence", "core": true, "techversant": true }
+        { "label": "Git and pull requests", "core": true, "techversant": true },
+        { "label": "Working with AI tools", "core": true, "techversant": true },
+        { "label": "Clean code and design", "core": true, "techversant": true },
+        { "label": "Testing and code review", "core": true, "techversant": true },
+        { "label": "Secure engineering", "core": true, "techversant": true },
+        { "label": "Communication and ownership", "core": true, "techversant": true }
       ]
     },
     {

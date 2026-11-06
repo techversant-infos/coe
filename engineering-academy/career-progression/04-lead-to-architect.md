@@ -58,9 +58,9 @@ Choose one with the architecture group or engineering leadership:
 ## Recommended Academy Links
 
 - [Architecture](../04-architecture/README.md)
-- [Developer Excellence - Design Thinking](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-3--design-thinking-for-developers-intermediate--advanced)
+- [Engineering Foundations: Design Thinking](../00-engineering-foundations/05-design-thinking.md)
 - [REST API Best Practices](../../standards/general/rest-api-best-practices.md)
-- [Secure Engineering](../00-engineering-foundations/03-secure-engineering.md)
+- [Secure Engineering](../00-engineering-foundations/08-secure-engineering.md)
 
 ## Continue Learning
 

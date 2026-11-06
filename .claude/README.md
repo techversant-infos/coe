@@ -109,7 +109,7 @@ Runs a quality review of a learning phase against Techversant standards.
 
 ```bash
 /review-learning-phase engineering-academy/02-quality-engineering/automation/playwright/phase-1
-/review-learning-phase engineering-academy/00-engineering-foundations/git-workflow --level Foundation --generate-report
+/review-learning-phase engineering-academy/00-engineering-foundations --level Foundation --generate-report
 ```
 
 ---
@@ -128,7 +128,7 @@ Refreshes the master catalog for the Engineering Academy.
 
 | Code | Discipline | Subfolders |
 |------|------------|------------|
-| `00-engineering-foundations` | Git, AI usage, secure dev, communication, dev excellence | `dev-excellence` |
+| `00-engineering-foundations` | Engineering Foundations roadmap | Stage pages at the folder root |
 | `01-software-engineering` | Web, mobile, backend, full-stack | `web-development/frontend`, `web-development/backend`, `mobile-development` |
 | `02-quality-engineering` | Manual testing, automation, Playwright, strategy | `automation/playwright`, `strategy`, `manual-testing` |
 | `03-platform-engineering` | DevOps, cloud, Kubernetes | (content pending) |

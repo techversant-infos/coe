@@ -23,7 +23,7 @@ Use this section as a capability guide: what to practice, what evidence to colle
 ## Required Baseline For All Transitions
 
 - [Engineering Foundations](../00-engineering-foundations/README.md) completed or equivalent evidence.
-- [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md) completed or in progress.
+- [Engineering Foundations](../00-engineering-foundations/README.md) completed or in progress.
 - Clear PR history with review participation.
 - Capstone project completed.
 - Mentor or manager sign-off.

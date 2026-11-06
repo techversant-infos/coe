@@ -17,7 +17,7 @@ Coding agents such as Claude Code, Cursor and Copilot read code, make changes an
 
 **Resources:**
 
-- [AI Usage](../00-engineering-foundations/02-ai-usage.md)
+- [Working with AI Tools](../00-engineering-foundations/02-working-with-ai-tools.md), in Engineering Foundations
 - [Claude Developer Cheat Sheet](../../ai/guides/claude-dev-cheatsheet.md)
 - [Claude Code documentation](https://code.claude.com/docs/en/overview)
 

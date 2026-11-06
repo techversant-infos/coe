@@ -91,7 +91,7 @@ Legacy applications often depend on knowledge in one person's head.
 - A one-page system overview: servers, datasources, integrations and owners
 - Keeping documentation next to the code so it changes with it
 
-**Resources:** [Communication: handoff note template](../../00-engineering-foundations/04-communication.md#handoff-note)
+**Resources:** [Handoff note structure](../../00-engineering-foundations/10-communication-and-ownership.md#handoff-notes)
 
 **Level:** Practitioner · Core
 

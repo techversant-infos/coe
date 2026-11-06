@@ -203,7 +203,7 @@ By the end of this path, the engineer should be able to:
 
 **Mini-task:** Use AI to draft or refactor one test, then manually review and improve it. In the PR, include what AI helped with and what you changed.
 
-**Internal standard:** [AI Usage](../../../00-engineering-foundations/02-ai-usage.md)
+**Internal standard:** [Working with AI Tools](../../../00-engineering-foundations/02-working-with-ai-tools.md)
 
 ---
 
@@ -236,5 +236,5 @@ By the end of this path, the engineer should be able to:
 
 - [Manual Tester to Automation Engineer](./01-manual-to-automation.md)
 - [Automation Strategy](../../03-strategy/01-automation-strategy.md)
-- [Developer Excellence Curriculum](../../../00-engineering-foundations/05-dev-excellence/01-curriculum.md)
+- [Engineering Foundations](../../../00-engineering-foundations/README.md)
 - [AI Assisted Testing](../../../06-ai-engineering/02-ai-assisted-testing/README.md)

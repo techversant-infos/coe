@@ -120,7 +120,7 @@ Tests are how you prove to the client, and to yourself, that the change works an
 
 **Resources:**
 
-- [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md)
+- [Testing and Refactoring](../00-engineering-foundations/07-testing-and-refactoring.md), in Engineering Foundations
 - [Quality Engineering](../02-quality-engineering/README.md)
 - [Vitest guide](https://vitest.dev/guide/), [Playwright documentation](https://playwright.dev/docs/intro)
 

@@ -4,9 +4,9 @@
 
 Mobile development learning paths are planned in this academy migration.
 
-For now, use the mobile translation in the Developer Excellence Curriculum:
+For now, use the shared baseline, whose topics include notes for mobile code:
 
-- [Mobile Stack Translation](../../00-engineering-foundations/05-dev-excellence/03-stack-translations/mobile/stacks.md)
+- [Engineering Foundations](../../00-engineering-foundations/README.md)
 
 ## Gaps To Fill
 

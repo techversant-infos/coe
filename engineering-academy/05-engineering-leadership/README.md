@@ -43,8 +43,8 @@ This section should cover technical leadership and people leadership without con
 
 ## Temporary References
 
-- [Engineering Communication](../00-engineering-foundations/04-communication.md)
-- [Developer Excellence Curriculum - Code Review Excellence](../00-engineering-foundations/05-dev-excellence/01-curriculum.md#phase-6--code-review-excellence-advanced)
+- [Communication and Ownership](../00-engineering-foundations/10-communication-and-ownership.md)
+- [Engineering Foundations: Code Review](../00-engineering-foundations/09-code-review.md)
 - [Senior to Team Lead Progression](../career-progression/03-senior-to-team-lead.md)
 
 ## Guidance Layers

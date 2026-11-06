@@ -17,7 +17,7 @@ This command scaffolds a complete learning phase within the Engineering Academy 
 ### Required
 
 - **discipline** - Academy discipline folder (e.g., `00-engineering-foundations`, `01-software-engineering`, `02-quality-engineering`)
-- **topic** - The learning topic (e.g., `git-workflow`, `playwright-basics`, `dev-excellence`)
+- **topic** - The learning topic (e.g., `git-workflow`, `playwright-basics`, `clean-code`)
 
 ### Optional Flags
 
@@ -33,7 +33,7 @@ This command scaffolds a complete learning phase within the Engineering Academy 
 /create-learning-phase 02-quality-engineering playwright-basics --subfolder automation/playwright --level Foundation
 /create-learning-phase 00-engineering-foundations git-workflow --level Foundation
 /create-learning-phase 01-software-engineering react-fundamentals --subfolder web-development/frontend --level Practitioner
-/create-learning-phase 00-engineering-foundations dev-excellence --prerequisites "git-workflow"
+/create-learning-phase 00-engineering-foundations clean-code --prerequisites "git-workflow"
 ```
 
 ## What It Creates
@@ -78,7 +78,7 @@ engineering-academy/<NN-discipline>/<topic>/
 
 | Discipline Code | Area | Agent |
 |-----------------|------|-------|
-| `00-engineering-foundations` | Git, AI usage, communication, dev excellence | javascript-basics-coach |
+| `00-engineering-foundations` | Engineering Foundations roadmap | javascript-basics-coach |
 | `01-software-engineering` | Web, mobile, backend, full-stack | javascript-basics-coach |
 | `02-quality-engineering` | Manual testing, automation, Playwright | qa-automation-coach, playwright-engineer |
 | `03-platform-engineering` | DevOps, cloud, Kubernetes | (pending agent) |

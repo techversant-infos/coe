@@ -31,7 +31,7 @@ The first priority is the Playwright automation path because it gives manual tes
 
 - [Learning Levels](../learning-levels/) - understand Foundation / Practitioner / Advanced / Expert
 - [Career Progression](../career-progression/01-transition-overview.md) - see your upgrade path
-- [Developer Excellence Curriculum](../00-engineering-foundations/05-dev-excellence/01-curriculum.md) - shared engineering discipline, testing fundamentals, and code review
+- [Engineering Foundations](../00-engineering-foundations/README.md) - shared engineering discipline, testing fundamentals, and code review
 - [AI Assisted Testing](../06-ai-engineering/02-ai-assisted-testing/README.md) - planned AI support path for QA work
 
 ## Recommended Order

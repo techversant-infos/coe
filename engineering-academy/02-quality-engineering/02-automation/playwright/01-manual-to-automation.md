@@ -94,7 +94,7 @@ By the end of this path, the learner should be able to:
 
 **Mini-task:** Open a PR that adds one small test or test fixture and includes setup, verification, and screenshots/traces where useful.
 
-**Internal standard:** [Git Workflow](../../../00-engineering-foundations/01-git-workflow.md)
+**Internal standard:** [Git and Pull Requests](../../../00-engineering-foundations/01-git-and-pull-requests.md)
 
 ---
 
