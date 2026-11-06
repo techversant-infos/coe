@@ -102,11 +102,12 @@ practice app and remove it with a named refactoring, in small steps.
 
 **Verification**, checked by a reviewer:
 
-- [ ] Unit tests cover the bookmark rules, and integration tests cover the endpoints, including the error cases
+- [ ] Unit tests cover the bookmark rules, and integration tests cover the endpoints, including the error cases.
+  Front-end engineers using a mock API test the bookmark button and list instead, including error responses
 - [ ] Test names describe behaviour, and each test follows arrange, act, assert
 - [ ] For one test, the PR description includes the failing output after you broke the code on purpose
 - [ ] A test proves a reader cannot see another reader's bookmarks
-- [ ] The smell and the refactoring are both named in the PR, using the names from Fowler's catalog
+- [ ] The PR names the smell as in chapter 3 of *Refactoring*, and the refactoring as in Fowler's catalog
 - [ ] The refactoring is in separate commits from any behaviour change, and the tests pass after each commit
 - [ ] The RealWorld API tests, and the end-to-end tests if you work on a front end, still pass
 

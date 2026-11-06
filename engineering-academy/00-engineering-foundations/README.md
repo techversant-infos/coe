@@ -94,7 +94,7 @@ What each role brings:
 
 ## The Roadmap
 
-![Engineering Foundations roadmap: ten stages from Git and Pull Requests to Communication and Ownership, each with its topics](./roadmap.svg)
+![Engineering Foundations roadmap: ten stages and their topics](./roadmap.svg)
 
 - Work from top to bottom. Each stage page explains every topic and ends with a project.
 - **Solid boxes** are core topics. **Dashed boxes** are optional.

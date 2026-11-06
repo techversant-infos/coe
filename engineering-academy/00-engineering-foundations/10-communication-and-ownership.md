@@ -128,11 +128,10 @@ so they can carry on without you.
 
 - [ ] The bookmarks PR description follows the structure above, and links the design note and ADR
 - [ ] A handoff note covers context, files and links, how to verify, known risks and the next action
-- [ ] Another engineer follows the handoff note alone, runs the feature and its tests, and confirms nothing was
-  missing
+- [ ] First, another engineer follows the handoff note alone, runs the feature and its tests, and confirms nothing
+  was missing
+- [ ] Then you walk them through the note in a short call, and record their questions and answers in the note
 - [ ] At least one piece of technical debt from the feature is recorded as an issue with a reason and a plan
-- [ ] You walked the other engineer through the note in a short call, and recorded their questions and answers in
-  the note
 - [ ] A one-paragraph status update summarizes the feature's state for your lead
 
 Previous: [09. Code Review](./09-code-review.md) · Back to the [roadmap](./README.md#capstone) for the capstone

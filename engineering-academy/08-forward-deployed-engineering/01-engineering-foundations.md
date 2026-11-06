@@ -21,7 +21,7 @@ rollback.
 ## Working with AI tools
 
 Using AI coding assistants such as Claude Code, Cursor and Copilot safely: choosing a delegation level, checking the
-output and keeping Red Zone work and client data out of AI tools.
+output, keeping Red Zone work out of AI generation, and keeping client data out of tools not approved for it.
 
 **What to learn:** the four delegation levels, the delegation test and the Red Zone.
 

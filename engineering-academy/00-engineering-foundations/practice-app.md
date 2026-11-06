@@ -39,21 +39,23 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 ## Setting It Up
 
 1. Create a repository for your practice work, as agreed with your lead, and push the implementation you chose to
-   it. You need your own repository so you can open pull requests and get them reviewed.
+   it, and give your reviewer write access. You need your own repository so you can open pull requests and get
+   them reviewed.
 2. Follow the implementation's README to run it locally.
 3. Clone the [RealWorld repository](https://github.com/realworld-apps/realworld) next to it, install
    [Hurl](https://hurl.dev/), and run the API tests against your back end:
 
    ```bash
    cd realworld/specs/api
-   HOST=http://localhost:3000/api ./run-api-tests-hurl.sh
+   HOST=http://localhost:3000 ./run-api-tests-hurl.sh
    ```
 
-   Change the port to match your back end.
+   Use your back end's address without `/api`, because the tests add it.
 4. Record which tests pass. This is your baseline: after every project, the same tests must still pass.
 5. If you work on a front end, run the end-to-end tests in `specs/e2e` as well, following the instructions in the
    RealWorld repository. They need a front end that provides every selector listed in `specs/e2e/SELECTORS.md`, so
-   check this before you pick one.
+   check this before you pick one. By default the tests call RealWorld's public demo API: set `API_BASE` to your own
+   back end, for example `API_BASE=http://localhost:3000/api`, and keep the default `TEST_MODE=spa`.
 
 ## The Feature You Build
 

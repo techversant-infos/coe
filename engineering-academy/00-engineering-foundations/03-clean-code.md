@@ -18,7 +18,8 @@ A good name says what something holds or does, so the reader does not have to wo
 **Resources:**
 
 - Techversant style guides: [Node.js and TypeScript](../../standards/nodejs/nodejs-typescript-style-guide.md),
-  [PHP](../../standards/php/php-coding-standards.md) and [ColdFusion](../../standards/coldfusion/coldfusion-style-guide.md)
+  [PHP](../../standards/php/php-coding-standards.md) and
+  [ColdFusion](../../standards/coldfusion/coldfusion-style-guide.md)
 - *Clean Code*, Robert C. Martin, the chapter on meaningful names
 
 **In your stack:** in React or Vue, name components after what they show (`ArticleList`) and event handlers after

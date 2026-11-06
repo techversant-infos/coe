@@ -90,9 +90,10 @@ serve out-of-date data if you are not careful.
 ## Project: Build the Bookmarks API
 
 **Brief:** Build the article bookmarks endpoints from your stage 05 design. RealWorld's existing API has its own
-style, so match it for compatibility, and note in your ADR where that differs from the Techversant REST standard.
-Front-end engineers pair with a back-end engineer on the endpoints, or build against a mock API that follows
-the stage 05 design, and own the bookmark button and the bookmarks list in the user interface.
+style, so match it for compatibility, and record that decision in a new ADR, listing each place it differs from the
+Techversant REST standard. Front-end engineers pair with a back-end engineer on the endpoints, or build against a
+mock API that follows the stage 05 design, and own the bookmark button and the bookmarks list in the user interface.
+When you pair, the back-end engineer writes the ownership check.
 
 The check that a reader can reach only their own bookmarks is authorization, so it is Red Zone work: write it by
 hand, without AI generation, and have a senior engineer review it.
@@ -108,8 +109,13 @@ hand, without AI generation, and have a senior engineer review it.
 - [ ] The ownership check was written without AI generation, and a senior engineer's approval is recorded on the PR
 - [ ] The list endpoint runs a fixed number of queries whatever the number of bookmarks, shown with query counts for
   1 and 50 bookmarks
-- [ ] The ADR notes each place where the endpoints follow RealWorld's style rather than the Techversant standard
+- [ ] A new ADR records the decision to follow RealWorld's style, listing each place it differs from the
+  Techversant standard
 - [ ] The existing API tests still pass
+
+Front-end engineers using a mock API: the bookmark button and list work against the mock and handle every error
+response in the stage 05 design, and the end-to-end baseline still passes. The server-only items are checked on
+your pair's PR, or on the back-end engineer's PR you reviewed.
 
 Previous: [05. Design Thinking](./05-design-thinking.md) · Next:
 [07. Testing and Refactoring](./07-testing-and-refactoring.md)

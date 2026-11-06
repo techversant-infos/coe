@@ -58,8 +58,8 @@ A shared checklist means every reviewer checks the same things, whoever they are
 **Resources:**
 
 - [Security Audit Checklist](../../security/audit/security-audit-checklist.md), Techversant
-- Stack checklists that add to this one: [Node.js and TypeScript](../../standards/nodejs/nodejs-typescript-code-review-checklist.md)
-  and [ColdFusion](../../standards/coldfusion/coldfusion-code-review-checklist.md)
+- Stack checklists that add to this one:
+  [Node.js and TypeScript](../../standards/nodejs/nodejs-typescript-code-review-checklist.md) and [ColdFusion](../../standards/coldfusion/coldfusion-code-review-checklist.md)
 
 **Level:** Practitioner · Core
 

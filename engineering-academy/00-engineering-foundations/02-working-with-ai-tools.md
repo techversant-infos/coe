@@ -72,8 +72,8 @@ Your team needs to know where AI helped, and client data must never reach a tool
 
 - Disclosing AI help in your commit messages, in the format your project uses
 - Using only AI tools Techversant has approved
-- Never pasting secrets or tokens into any AI tool, and pasting client or personal data only into a tool approved
-  for it
+- Never pasting secrets or tokens into any AI tool, and pasting client code, client data or personal data only into
+  a tool approved for it
 - Checking that generated code does not copy licensed code into the project
 
 **Resources:**

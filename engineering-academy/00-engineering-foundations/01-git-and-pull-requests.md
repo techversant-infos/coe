@@ -115,7 +115,7 @@ PR. Use a practice ticket ID such as `FND-1` in place of a Jira ID.
 - [ ] The PR description has a summary, the reason, how it was verified and any risks
 - [ ] The PR contains only the one change, and the API tests still pass
 - [ ] Every review comment is resolved with a change or a reply
-- [ ] The reviewer pushes a conflicting commit to `main`, and you resolve the conflict by merging `main` into your
-  branch, keeping both changes
+- [ ] The reviewer merges a conflicting change into `main` through their own PR, and you resolve the conflict by
+  merging `main` into your branch, keeping both changes
 
 Next: [02. Working with AI Tools](./02-working-with-ai-tools.md)

@@ -20,7 +20,8 @@ Passwords, API keys and tokens in code end up in the repository history, where a
 
 - [Keys and secrets management](../../security/audit/security-audit-reference.md#63-keys-and-secrets-management), in
   the Techversant security audit reference
-- [Secrets never in code](../../security/audit/security-audit-reference.md#201-secrets-never-in-code), a quick reference card in the same document
+- [Secrets never in code](../../security/audit/security-audit-reference.md#201-secrets-never-in-code), a quick reference card
+  in the same document
 - [Example secrets file](../../standards/git/secrets.env.example), in the Techversant Git standards
 
 **In your stack:** front-end and mobile code ships to the user's device, so anything in it is public. Keep secret
@@ -123,13 +124,17 @@ building the feature, review one existing RealWorld endpoint against the minimum
 - [ ] The minimum bar items in the security checklist are each marked pass, fail or not applicable, with a reason
 - [ ] No secret is in the repository or its history, and settings come from configuration
 - [ ] Every query in the feature is parameterized or uses the framework's safe query builder
-- [ ] A test proves that changing a bookmark or article ID cannot reach another reader's data
-- [ ] A test proves that an article title containing `<script>` comes back safely from the bookmarks list (back
-  end) or is shown as text (front end). Front-end engineers also run `xss-security.spec.ts` with `EXTERNAL_API` set,
-  and show that it ran rather than being skipped
+- [ ] A test proves that changing a bookmark ID or article slug cannot reach another reader's data
+- [ ] A test proves that an article title containing `<script>` is returned unchanged as JSON data with
+  `Content-Type: application/json`, never as HTML (back end), or is shown as text (front end). Front-end engineers
+  also run `xss-security.spec.ts` with `API_BASE` set to their own back end, and show that it ran rather than being
+  skipped
 - [ ] A short note names the authorization check and anything else that meets the checklist's stop-and-escalate
   triggers, and records the senior engineer who reviewed them
 - [ ] Any finding you could not fix is recorded as an issue with an owner
+
+For the Foundation alternative, the reviewer checks the first, second and last items, plus the query and access
+items applied to the endpoint you chose.
 
 Previous: [07. Testing and Refactoring](./07-testing-and-refactoring.md) · Next:
 [09. Code Review](./09-code-review.md)
