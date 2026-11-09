@@ -103,6 +103,7 @@ cmfcmf
 codegen
 codellama
 Codevolution
+Colada
 coldbox
 collectstatic
 commandbox
@@ -220,6 +221,7 @@ nocommit
 Npgsql
 NTEXT
 nullsafe
+nuxi
 NVARCHAR
 Nygard
 oapi
@@ -238,7 +240,9 @@ phpstan
 phpunit
 Pocock
 Porcello
+prerendered
 Prerendering
+prerenders
 pydantic
 pyproject
 pytest

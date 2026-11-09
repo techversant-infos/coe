@@ -35,7 +35,8 @@ tests check it the same way for everyone.
 2. Clone the [RealWorld repository](https://github.com/realworld-apps/realworld) next to it. You need the
    stylesheet, the templates and the tests from it.
 3. Run the official back end locally, following its README, for day-to-day work. It uses port 3000. Vite apps use
-   port 5173 by default; run Next.js on another port, for example `next dev -p 3001`.
+   port 5173 by default, but Next.js and Nuxt use port 3000 as well, so run them on another port, for example
+   `next dev -p 3001` or `nuxt dev --port 3001`.
 4. Read `specs/e2e/SELECTORS.md` before you write any markup. Every route, field name and class it lists must exist
    in your app, or the tests cannot find your pages.
 5. Override the stylesheet's colour variables, such as `--brand`, `--text-muted` and `--text-light`, so text has a
@@ -81,3 +82,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 ## Paths That Use It
 
 - [React and Next.js](./react-nextjs/README.md)
+- [Vue and Nuxt](./vue-nuxt/README.md)

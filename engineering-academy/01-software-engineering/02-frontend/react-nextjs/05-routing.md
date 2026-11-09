@@ -30,6 +30,8 @@ as `?page=2`.
 - Reading route parameters, such as the slug
 - Keeping filters and page numbers in the query string, so the URL describes the page
 - Updating the query string without losing the other parameters
+- Working out the active feed tab and page from the query string yourself, because the router's active link
+  matching ignores the query
 
 **Resources:** [React Router documentation](https://reactrouter.com/)
 

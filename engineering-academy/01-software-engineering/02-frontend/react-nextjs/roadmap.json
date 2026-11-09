@@ -85,6 +85,7 @@
         { "label": "Fetching data and loading states", "core": true, "techversant": false },
         { "label": "Server state with TanStack Query", "core": true, "techversant": false },
         { "label": "Handling API errors", "core": true, "techversant": true },
+        { "label": "Rendering user content safely", "core": true, "techversant": true },
         { "label": "Tokens in the browser", "core": true, "techversant": true },
         { "label": "CORS", "core": true, "techversant": true }
       ]

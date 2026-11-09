@@ -60,6 +60,24 @@ Techversant REST API best practices
 
 **Level:** Practitioner · Core
 
+## Rendering user content safely
+
+Article bodies are written in Markdown by users, so the HTML made from them can carry a cross-site scripting
+(XSS) attack. The RealWorld tests try several.
+
+**What to learn:**
+
+- Turning Markdown into HTML with a library such as marked, and cleaning it with DOMPurify before
+  `dangerouslySetInnerHTML`
+- Why React escapes text by default, so only HTML you insert yourself is a risk
+- Never inserting HTML that has not been cleaned, even from your own API
+
+**Resources:**
+[Cross-site scripting and output encoding](../../../../security/audit/security-audit-reference.md#73-cross-site-scripting-and-output-encoding),
+in the Techversant security audit reference
+
+**Level:** Practitioner · Core
+
 ## Tokens in the browser
 
 After sign-in, the API gives the app a token to send with every request. Where you keep it decides who else can read
@@ -127,6 +145,12 @@ and token code by hand, and have a senior engineer review it.
 - [ ] The app exposes `window.__conduit_debug__`, as `specs/e2e/helpers/debug.ts` describes, in development and
   test builds only
 - [ ] The edit and delete buttons appear only on the signed-in user's own articles and comments
+- [ ] Sign-in and sign-up go to `/`, the editor and settings save, Update Settings leaves `/settings`, and the
+  settings form opens with the user's current values
+- [ ] Reloading `/settings` while signed in stays on `/settings`, because the guard waits for the current user to
+  load before it redirects
+- [ ] The empty Your Feed says "Your feed is empty", and the article body renders Markdown that is cleaned before
+  it reaches the page, so the RealWorld XSS tests pass
 - [ ] A senior engineer has reviewed the sign-in and token code, and the review is linked in the pull request
 - [ ] The RealWorld end-to-end tests run in `spa` mode against the public demo API, and the pull request records
   how many ran, passed, failed and were skipped

@@ -109,7 +109,8 @@ move the data loading into a custom hook.
 
 **Verification**, checked by a reviewer:
 
-- [ ] Clicking a tag shows only articles with that tag, and the feed tabs show which feed is active
+- [ ] Clicking a tag shows only articles with that tag. The Global Feed, Your Feed and tag tabs are
+  `a.nav-link`, and only the current one has the `active` class.
 - [ ] Pagination shows the right page of articles, and the current page has the `active` class, as the selector
   contract requires
 - [ ] Data loading lives in a custom hook, such as `useArticles`, used by the home page

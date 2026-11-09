@@ -92,8 +92,9 @@ running. Next.js uses the same feature for Server Actions in stage 08.
 ## Project: Build the Forms
 
 **Brief:** Build the four RealWorld forms: sign-in, sign-up, the article editor and settings. Validate each one in
-the browser, and show the errors the API returns. In this stage the forms call the API directly through your
-stage 02 client; stage 07 adds signing in properly.
+the browser, and show the errors the API returns. In this stage, sign-up and sign-in call the API directly
+through your stage 02 client, extended with POST calls. The editor and settings need a token, so stage 07 checks
+that they save.
 
 **Size:** 3 days
 
@@ -105,7 +106,7 @@ stage 02 client; stage 07 adds signing in properly.
 - [ ] Errors from the API, such as an email address that is already taken, appear in the `.error-messages` list
 - [ ] Each message is linked to its field, and focus moves to the first problem after a failed submit
 - [ ] The submit button is disabled while the form is being sent
-- [ ] Pressing Enter in the editor's tag input adds the tag to the list without submitting the form, and the
-  settings form opens with the user's current values
+- [ ] Pressing Enter in the editor's tag input adds the tag to the list without submitting the form
+- [ ] Every submit button has `type="submit"`, as the RealWorld test helpers expect
 
 Previous: [05. Routing](./05-routing.md) · Next: [07. Working with APIs](./07-working-with-apis.md)
