@@ -1,0 +1,134 @@
+{
+  "title": "AI Engineering",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Product Fit and Requirements",
+      "page": "01-product-fit-and-requirements.md",
+      "topics": [
+        { "label": "Problem framing", "core": true, "techversant": false },
+        { "label": "Choosing between AI and simpler solutions", "core": true, "techversant": false },
+        { "label": "Error costs and human oversight", "core": true, "techversant": false },
+        { "label": "Success and guardrail measures", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "How LLMs Work",
+      "page": "02-how-llms-work.md",
+      "topics": [
+        { "label": "Tokens", "core": true, "techversant": false },
+        { "label": "Context windows", "core": true, "techversant": false },
+        { "label": "Sampling and variability", "core": true, "techversant": false },
+        { "label": "Common failure modes", "core": true, "techversant": false },
+        { "label": "Reasoning models", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Model Selection and Integration",
+      "page": "03-model-selection-and-integration.md",
+      "topics": [
+        { "label": "Hosted and open-weight models", "core": true, "techversant": false },
+        { "label": "Comparing models on your own cases", "core": true, "techversant": false },
+        { "label": "The provider boundary", "core": true, "techversant": false },
+        { "label": "Handling provider errors", "core": true, "techversant": false },
+        { "label": "Model versions and retirement", "core": true, "techversant": false },
+        { "label": "When to fine-tune", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Prompt, Context and Interaction Design",
+      "page": "04-prompt-context-and-interaction-design.md",
+      "topics": [
+        { "label": "Instructions and prompt structure", "core": true, "techversant": false },
+        { "label": "Structured output", "core": true, "techversant": false },
+        { "label": "Managing conversation context", "core": true, "techversant": false },
+        { "label": "Interaction design", "core": true, "techversant": false },
+        { "label": "User feedback", "core": true, "techversant": false },
+        { "label": "Images and documents as input", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Knowledge and Retrieval",
+      "page": "05-knowledge-and-retrieval.md",
+      "topics": [
+        { "label": "Preparing the knowledge base", "core": true, "techversant": false },
+        { "label": "Chunking", "core": true, "techversant": false },
+        { "label": "Embeddings and vector search", "core": true, "techversant": false },
+        { "label": "Keyword and hybrid search", "core": true, "techversant": false },
+        { "label": "Grounding and citations", "core": true, "techversant": false },
+        { "label": "Reranking", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Tools and Workflows",
+      "page": "06-tools-and-workflows.md",
+      "topics": [
+        { "label": "Tool calling", "core": true, "techversant": false },
+        { "label": "Validating tool inputs and authority", "core": true, "techversant": true },
+        { "label": "Fixed workflows", "core": true, "techversant": false },
+        { "label": "Agent loops", "core": true, "techversant": false },
+        { "label": "Human approval", "core": true, "techversant": true },
+        { "label": "Model Context Protocol", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Evaluation and Experimentation",
+      "page": "07-evaluation-and-experimentation.md",
+      "topics": [
+        { "label": "Building an evaluation set", "core": true, "techversant": false },
+        { "label": "Measuring each part", "core": true, "techversant": false },
+        { "label": "Model-graded evaluation", "core": true, "techversant": false },
+        { "label": "Regression testing", "core": true, "techversant": false },
+        { "label": "Online experiments", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Data Privacy and Governance",
+      "page": "08-data-privacy-and-governance.md",
+      "topics": [
+        { "label": "Mapping data flows", "core": true, "techversant": true },
+        { "label": "Data minimisation and redaction", "core": true, "techversant": false },
+        { "label": "Provider terms, retention and region", "core": true, "techversant": false },
+        { "label": "The Red Zone boundary", "core": true, "techversant": true },
+        { "label": "Logging and retention", "core": true, "techversant": true },
+        { "label": "AI governance and documentation", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "AI Security and Safety",
+      "page": "09-ai-security-and-safety.md",
+      "topics": [
+        { "label": "Threat modelling an AI feature", "core": true, "techversant": false },
+        { "label": "Prompt injection", "core": true, "techversant": true },
+        { "label": "Handling model output", "core": true, "techversant": true },
+        { "label": "Tool and data authority", "core": true, "techversant": false },
+        { "label": "Red teaming and security tests", "core": true, "techversant": true },
+        { "label": "Guardrail libraries", "core": false, "techversant": false },
+        { "label": "Model and dependency supply chain", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Cost, Performance and Operations",
+      "page": "10-cost-performance-and-operations.md",
+      "topics": [
+        { "label": "Cost per request and budgets", "core": true, "techversant": false },
+        { "label": "Latency", "core": true, "techversant": false },
+        { "label": "Caching and batch processing", "core": true, "techversant": false },
+        { "label": "Reliability and fallbacks", "core": true, "techversant": false },
+        { "label": "Observability", "core": true, "techversant": false },
+        { "label": "Releasing changes safely", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}

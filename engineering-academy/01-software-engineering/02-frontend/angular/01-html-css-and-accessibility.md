@@ -1,6 +1,6 @@
 # 01. HTML, CSS and Accessibility
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 Every Angular component ends up as HTML and CSS in the browser. Getting the markup right makes pages usable by
 everyone, including people using a keyboard or a screen reader, and makes everything later easier. Back to the
@@ -20,8 +20,7 @@ navigation menus, headings in order. Browsers, search engines and assistive tech
 **Resources:**
 
 - [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements), MDN
--
-  [Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content),
+- [Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content),
   MDN
 
 **Level:** Practitioner · Core

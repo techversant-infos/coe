@@ -134,6 +134,7 @@ entryidfk
 envalid
 errcheck
 errgroup
+evals
 executability
 explainability
 fastapi
@@ -206,6 +207,7 @@ meethi
 metaspace
 mgmt
 microsegmentation
+MTEB
 MTTR
 mutmut
 mvnw
@@ -218,13 +220,13 @@ Nandu
 narg
 negotiables
 nocommit
+Northstar
 Npgsql
 NTEXT
 nullsafe
 nuxi
 NVARCHAR
 Nygard
-Northstar
 oapi
 Ollama
 ormsettings
@@ -234,6 +236,7 @@ ortussolutions
 pdflabs
 pdftk
 pdftotext
+PEFT
 pgvector
 pgxpool
 phpcs
@@ -245,6 +248,7 @@ prerender
 prerendered
 Prerendering
 prerenders
+promptfoo
 pydantic
 pyproject
 pytest
@@ -261,8 +265,9 @@ refetched
 refetches
 reflog
 remediations
-reranking
 requesttimeout
+reranker
+reranking
 rerere
 Respawn
 restarg
@@ -274,6 +279,7 @@ returntype
 Revealera
 Rohit
 Roleplay
+safetensors
 Sahni
 Saurabh
 screenshottable
@@ -321,6 +327,7 @@ templatefile
 testbox
 thodi
 Thoughtworks
+tiktoken
 TOCTOU
 Tokai
 Traversy
