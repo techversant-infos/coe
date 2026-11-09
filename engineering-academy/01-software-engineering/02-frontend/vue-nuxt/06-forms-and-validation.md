@@ -98,5 +98,7 @@ that they save.
 - [ ] The submit button is disabled while the form is being sent
 - [ ] Pressing Enter in the editor's tag input adds the tag to the list without submitting the form
 - [ ] Every submit button has `type="submit"`, as the RealWorld test helpers expect
+- [ ] The settings page's sign-out button has `type="button"` and sits outside the settings form, because the tests
+  click the first submit button on the page
 
 Previous: [05. Routing](./05-routing.md) · Next: [07. Working with APIs](./07-working-with-apis.md)

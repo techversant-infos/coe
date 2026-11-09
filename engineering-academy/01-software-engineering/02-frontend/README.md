@@ -12,7 +12,7 @@ RealWorld blogging app. Back to [Software Engineering](../README.md).
 |-----------|--------|
 | [React and Next.js](./react-nextjs/README.md) | Draft |
 | [Vue and Nuxt](./vue-nuxt/README.md) | Draft |
-| Angular | Planned |
+| [Angular](./angular/README.md) | Draft |
 
 ## The Ten Stages
 
