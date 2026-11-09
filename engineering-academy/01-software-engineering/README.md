@@ -24,7 +24,7 @@ Each back-end path follows the same ten stages, from language fundamentals to de
 | [Python and Django](./01-backend/django/README.md) | Draft |
 | [Java and Spring Boot](./01-backend/spring-boot/README.md) | Draft |
 | [Go](./01-backend/go/README.md) | Draft |
-| .NET | Planned |
+| [.NET](./01-backend/dotnet/README.md) | Draft |
 
 ## Front-End Paths
 

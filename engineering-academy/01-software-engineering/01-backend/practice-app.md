@@ -63,6 +63,9 @@ The tests check some details that are easy to miss. Read `openapi.yml` and the H
 | Request headers | The tests send JSON but no `Accept` header, so the API must answer in JSON for every `/api` path regardless |
 | Status codes | Sign-up, creating an article and adding a comment return 201. Sign-in, follow, unfollow, favourite and unfavourite return 200 with a body. Deleting an article or comment returns 204. |
 | `/api/articles/feed` | Must not be read as an article slug. Signed out, it returns 401. |
+| Article lists | Items in `GET /api/articles` and the feed have no `body` field, not even `null`, while `bio` and `image` stay `null` when empty |
+| Partial updates | An article updated without `tagList` keeps its tags, `"tagList": []` removes them and `"tagList": null` returns 422. `PUT /api/user` rejects `null` for `email`, `username` and `password`, saves `"image": null` and keeps fields that were not sent. |
+| `createdAt` | Must be identical in the create, get and update responses, so the value you return must match what the database stores, to the microsecond |
 | `updatedAt` | Must change when an article is updated, even within the same second as its creation, so store timestamps with fractions of a second |
 | Sign-up volume | One run signs up 22 users from one address within seconds, so rate limits must allow a full run |
 
@@ -90,3 +93,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 - [Python and Django](./django/README.md)
 - [Java and Spring Boot](./spring-boot/README.md)
 - [Go](./go/README.md)
+- [.NET](./dotnet/README.md)
