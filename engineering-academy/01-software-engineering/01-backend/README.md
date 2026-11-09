@@ -14,7 +14,7 @@ Back to [Software Engineering](../README.md).
 | [Node.js and TypeScript](./nodejs/README.md) | Draft |
 | [Python and Django](./django/README.md) | Draft |
 | [Java and Spring Boot](./spring-boot/README.md) | Draft |
-| Go | Planned |
+| [Go](./go/README.md) | Draft |
 | .NET | Planned |
 
 For ColdFusion and CFML, see the [Senior ColdFusion Consultant](../../07-consulting/coldfusion/README.md) roadmap.

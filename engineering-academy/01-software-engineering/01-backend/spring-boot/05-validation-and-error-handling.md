@@ -102,6 +102,9 @@ validation until stage 06, and new articles and comments belong to a seeded user
 - [ ] Invalid input returns 422 with `{"errors": {"<field>": ["<message>"]}}`. Your own tests use the field names
   and messages from `specs/api/hurl/errors_auth.hurl` and `errors_articles.hurl`; the Hurl files themselves run
   from stage 06, because they sign up first.
+- [ ] Updates follow the tests: an article updated without `tagList` keeps its tags, `"tagList": []` removes
+  them and `"tagList": null` returns 422; `PUT /api/user` rejects `null` for `email` and `username` and a
+  password under 8 characters, saves `"image": null` and keeps fields that were not sent
 - [ ] A missing article or profile returns 404 with `errors.<name>` set to `not found`, and no response anywhere
   shows a stack trace
 - [ ] Updating an article in the same second as creating it changes `updatedAt`

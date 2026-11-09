@@ -89,3 +89,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 - [Node.js and TypeScript](./nodejs/README.md)
 - [Python and Django](./django/README.md)
 - [Java and Spring Boot](./spring-boot/README.md)
+- [Go](./go/README.md)
