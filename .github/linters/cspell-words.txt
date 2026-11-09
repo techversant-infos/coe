@@ -98,6 +98,7 @@ cheatsheet
 Chunker
 classmethod
 cmfcmf
+codegen
 codellama
 Codevolution
 coldbox
@@ -128,6 +129,8 @@ endoflife
 ENOENT
 entryidfk
 envalid
+errcheck
+errgroup
 executability
 explainability
 fastapi
@@ -144,7 +147,17 @@ Freitag
 fuseactions
 gcutil
 Gergely
+gofmt
+GOGC
 golab
+golangci
+GOMAXPROCS
+GOMEMLIMIT
+GORM
+goroutine
+goroutines
+gosec
+govulncheck
 Gunicorn
 Hazelcast
 HEALTHCHECK
@@ -158,6 +171,7 @@ homescreen
 hotfixes
 htmlspecialchars
 httpmethod
+httptest
 Indiranagar
 Initializr
 insurtech
@@ -197,12 +211,14 @@ mypy
 mysqladmin
 NACLs
 Nandu
+narg
 negotiables
 nocommit
 NTEXT
 nullsafe
 NVARCHAR
 Nygard
+oapi
 Ollama
 ormsettings
 Orosz
@@ -212,6 +228,7 @@ pdflabs
 pdftk
 pdftotext
 pgvector
+pgxpool
 phpcs
 phpstan
 phpunit
@@ -266,10 +283,13 @@ SHOWPLAN
 siteurl
 slowapi
 springdoc
+sqlc
 sqlmigrate
 SSTI
 standups
+staticcheck
 stdlib
+strconv
 structlog
 Structurizr
 tableprefix
@@ -296,6 +316,7 @@ treemap
 Typesense
 Udemy
 unindexed
+Unmarshal
 urql
 Uvicorn
 VARCHAR
