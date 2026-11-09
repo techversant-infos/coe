@@ -141,6 +141,7 @@ cookie. Write the sign-in, cookie and Proxy code by hand, and have a senior engi
 - [ ] A senior engineer has reviewed the sign-in, cookie and Proxy code, and the review is linked in the pull request
 - [ ] The `jwtToken` key and the debug interface are gone, because `ssr` mode does not use them
 - [ ] The RealWorld end-to-end tests run with `TEST_MODE=ssr` against the public demo API, and the pull request
-  records how many ran, passed, failed and were skipped. Every skipped test is one the suite marks as SPA-only.
+  records how many ran, passed, failed and were skipped. Every skipped test is one the suite marks as SPA-only
+  (single-page app only).
 
 Previous: [07. Working with APIs](./07-working-with-apis.md) · Next: [09. Testing](./09-testing.md)

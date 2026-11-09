@@ -95,7 +95,7 @@ suite skips in `ssr` mode, such as API errors, with your own tests.
   set up through the API
 - [ ] axe checks in Playwright report no serious or critical issues on the home, article, editor and sign-in pages
 - [ ] The RealWorld suite runs with `TEST_MODE=ssr` against the public demo API with no failures, and every skipped
-  test is one the suite marks as SPA-only
+  test is one the suite marks as SPA-only (single-page app only)
 - [ ] All tests run in continuous integration on every pull request, and a failing test blocks the merge
 
 Previous: [08. Rendering and the Meta-Framework](./08-rendering-and-the-meta-framework.md) · Next:

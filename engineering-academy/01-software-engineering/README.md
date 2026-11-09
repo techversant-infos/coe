@@ -34,7 +34,7 @@ Each front-end path follows the same ten stages, from HTML and accessibility to 
 | Framework | Status |
 |-----------|--------|
 | [React and Next.js](./02-frontend/react-nextjs/README.md) | Draft |
-| Vue and Nuxt | Planned |
+| [Vue and Nuxt](./02-frontend/vue-nuxt/README.md) | Draft |
 | Angular | Planned |
 
 ## Mobile Paths
