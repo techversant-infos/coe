@@ -1,0 +1,134 @@
+{
+  "title": ".NET Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Language Fundamentals",
+      "page": "01-language-fundamentals.md",
+      "topics": [
+        { "label": "Modern C# features", "core": true, "techversant": false },
+        { "label": "Types and object-oriented design", "core": true, "techversant": false },
+        { "label": "Exceptions", "core": true, "techversant": false },
+        { "label": "Async and await", "core": true, "techversant": false },
+        { "label": "The .NET CLI and NuGet", "core": true, "techversant": true },
+        { "label": "Code style and static analysis", "core": true, "techversant": true },
+        { "label": "Parallel programming", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "The Framework",
+      "page": "02-the-framework.md",
+      "topics": [
+        { "label": "Minimal APIs and controllers", "core": true, "techversant": false },
+        { "label": "Dependency injection", "core": true, "techversant": false },
+        { "label": "Middleware and the request pipeline", "core": true, "techversant": false },
+        { "label": "Routing", "core": true, "techversant": false },
+        { "label": "Configuration and options", "core": true, "techversant": false },
+        { "label": "AI features with Microsoft.Extensions.AI", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "HTTP and REST APIs",
+      "page": "03-http-and-rest-apis.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Request and response DTOs", "core": true, "techversant": false },
+        { "label": "Route and query parameters", "core": true, "techversant": false },
+        { "label": "Status codes and headers", "core": true, "techversant": true },
+        { "label": "Filtering and pagination", "core": true, "techversant": true },
+        { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Databases and Data Access",
+      "page": "04-databases-and-data-access.md",
+      "topics": [
+        { "label": "Migrations with EF Core", "core": true, "techversant": true },
+        { "label": "Entities and relationships", "core": true, "techversant": false },
+        { "label": "Querying with LINQ", "core": true, "techversant": true },
+        { "label": "Efficient queries", "core": true, "techversant": false },
+        { "label": "Data integrity and transactions", "core": true, "techversant": false },
+        { "label": "SQL with Dapper", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Validation and Error Handling",
+      "page": "05-validation-and-error-handling.md",
+      "topics": [
+        { "label": "Validating requests", "core": true, "techversant": true },
+        { "label": "Error response format", "core": true, "techversant": true },
+        { "label": "Exception handling", "core": true, "techversant": true },
+        { "label": "Logging", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Authentication and Authorization",
+      "page": "06-authentication-and-authorization.md",
+      "topics": [
+        { "label": "Password storage", "core": true, "techversant": true },
+        { "label": "JWT bearer authentication", "core": true, "techversant": true },
+        { "label": "Cookie sign-in for single-page apps", "core": true, "techversant": true },
+        { "label": "Authorization rules", "core": true, "techversant": true },
+        { "label": "Rate limiting sign-in", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Background Jobs and Caching",
+      "page": "07-background-jobs-and-caching.md",
+      "topics": [
+        { "label": "Background services", "core": true, "techversant": false },
+        { "label": "Job queues with Hangfire", "core": true, "techversant": false },
+        { "label": "Events and email", "core": true, "techversant": false },
+        { "label": "Scheduled jobs", "core": true, "techversant": false },
+        { "label": "Caching", "core": true, "techversant": false },
+        { "label": "Message brokers", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Testing",
+      "page": "08-testing.md",
+      "topics": [
+        { "label": "Unit tests", "core": true, "techversant": false },
+        { "label": "Endpoint tests with WebApplicationFactory", "core": true, "techversant": false },
+        { "label": "Database tests with Testcontainers", "core": true, "techversant": false },
+        { "label": "Contract tests and static analysis", "core": true, "techversant": true },
+        { "label": "Mutation testing", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Security and Performance",
+      "page": "09-security-and-performance.md",
+      "topics": [
+        { "label": "Input handling and injection", "core": true, "techversant": true },
+        { "label": "CORS and security headers", "core": true, "techversant": true },
+        { "label": "The security audit checklist", "core": true, "techversant": true },
+        { "label": "Query performance and indexes", "core": true, "techversant": false },
+        { "label": "Profiling and load testing", "core": true, "techversant": false },
+        { "label": "Native AOT", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Deployment and Operations",
+      "page": "10-deployment-and-operations.md",
+      "topics": [
+        { "label": "Production configuration", "core": true, "techversant": true },
+        { "label": "Container images", "core": true, "techversant": true },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Production database migrations", "core": true, "techversant": true },
+        { "label": "Graceful shutdown", "core": true, "techversant": false },
+        { "label": "Health checks and monitoring", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}

@@ -7,8 +7,10 @@ Adyen
 afterend
 alertmanagers
 allowcomments
+antiforgery
 appdb
 applicationtimeout
+appsettings
 Appts
 APSB
 Arehart
@@ -192,6 +194,7 @@ Lajin
 Larastan
 learnsphere
 libsodium
+LINQ
 Logback
 logbox
 lycheeignore
@@ -214,6 +217,7 @@ Nandu
 narg
 negotiables
 nocommit
+Npgsql
 NTEXT
 nullsafe
 NVARCHAR
@@ -253,6 +257,7 @@ reflog
 remediations
 requesttimeout
 rerere
+Respawn
 restarg
 restargsource
 restargssource

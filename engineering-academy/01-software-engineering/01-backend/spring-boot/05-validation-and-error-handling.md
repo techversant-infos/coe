@@ -92,7 +92,7 @@ and personal data.
 
 **Brief:** Add validation for every endpoint that takes input: sign-up, sign-in, updating the user, creating and
 updating articles, and adding comments. Return errors in the RealWorld format. Sign-up and sign-in stop after
-validation until stage 06, and new articles and comments belong to a seeded user.
+validation until stage 06, and new articles and comments belong to, and `PUT /api/user` updates, a seeded user.
 
 **Size:** 2–3 days
 
