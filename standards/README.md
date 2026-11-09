@@ -9,6 +9,7 @@ guide and a code review checklist.
 
 | Document | Use it for |
 |----------|------------|
+| [AI Acceptable Use Standard](./general/ai-acceptable-use.md) | Approved AI tools, data handling, client requirements, accountability, and incident reporting |
 | [AI Era Coding Guidelines](./general/ai-era-coding-guidelines.md) | Human review of AI output, delegation levels, Red Zone rules |
 | [REST API Best Practices](./general/rest-api-best-practices.md) | Resource naming, status codes, versioning, error format |
 
