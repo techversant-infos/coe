@@ -83,3 +83,4 @@ Use the app for practice only. Do not deploy it with real users' data, and do no
 
 - [React and Next.js](./react-nextjs/README.md)
 - [Vue and Nuxt](./vue-nuxt/README.md)
+- [Angular](./angular/README.md)

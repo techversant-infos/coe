@@ -240,6 +240,7 @@ phpstan
 phpunit
 Pocock
 Porcello
+prerender
 prerendered
 Prerendering
 prerenders

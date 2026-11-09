@@ -145,8 +145,12 @@ and token code by hand, and have a senior engineer review it.
 - [ ] The app exposes `window.__conduit_debug__`, as `specs/e2e/helpers/debug.ts` describes, in development and
   test builds only
 - [ ] The edit and delete buttons appear only on the signed-in user's own articles and comments
-- [ ] Sign-in and sign-up go to `/`, the editor and settings save, Update Settings leaves `/settings`, and the
+- [ ] Sign-in and sign-up go to `/`, the editor and settings save, Update Settings goes to `/profile/:username`, and the
   settings form opens with the user's current values
+- [ ] A failed form submit stays on the form and shows `.error-messages`: a 400 or 401 shows the API's errors without
+  signing the user out, and a network failure shows "Unable to connect"
+- [ ] A 404, a 500 or a network failure on an article or profile still renders `.article-page` or `.profile-page`, with
+  an error message
 - [ ] Reloading `/settings` while signed in stays on `/settings`, because the guard waits for the current user to
   load before it redirects
 - [ ] The empty Your Feed says "Your feed is empty", and the article body renders Markdown that is cleaned before
