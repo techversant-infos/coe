@@ -1,6 +1,6 @@
 # Forward Deployed Engineer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 A Forward Deployed Engineer (FDE) works with a client's team and takes a real problem all the way to working
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
@@ -8,7 +8,8 @@ with the client's people.
 
 - **Who it is for:** senior developers, lead developers, software architects and AI engineers who want to work
   directly with clients.
-- **Before you start:** some client project experience. Stage 01 is the
+- **Before you start:** working software engineering skills and some client project experience. Use the
+  [entry diagnostic](#entry-diagnostic) to choose your starting point. Stage 01 is the
   [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
   evidence and move on.
 - **What you do:** nine stages, each with a short guide to every topic and one hands-on project.
@@ -68,15 +69,37 @@ How an FDE differs from the roles you may hold at Techversant today:
 
 | Level | What the FDE does | Evidence |
 |-------|-------------------|----------|
-| Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | All stage projects verified, plus shipped work on a real engagement |
-| Advanced (FDE Lead) | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results, handover, client feedback |
-| Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached |
+| Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | All stage projects verified, plus shipped work on a real engagement; can explain the domain and workflow learned |
+| Advanced (FDE Lead) | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results including post-launch follow-up, handover, client feedback and domain-specific trade-offs |
+| Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached; field evidence informs reusable practices and future delivery |
 
 The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is not a first role: you start
 once you have delivered on client projects.
 
 Each topic's level is the depth expected of an FDE Lead. For Practitioner, the projects plus your real engagement
 work should show working knowledge of every core topic.
+
+Progression is based on demonstrated scope and independence, not time served. Practitioners deliver assigned parts
+with review; FDE Leads make and explain end-to-end engagement decisions; Experts show that their learning improves
+more than one engagement. Use the evidence in each stage project to support the level discussion with your lead.
+
+## Entry Diagnostic
+
+This roadmap is designed for engineers moving into customer-facing delivery, not as a first programming course.
+Before starting, rate each capability from 0 to 3: 0 not started, 1 can follow a tutorial, 2 can build independently,
+3 can debug and explain trade-offs. Link one piece of evidence for every score of 2 or 3.
+
+| Capability | Ready-to-start evidence | If not ready |
+|------------|-------------------------|--------------|
+| Programming and debugging | Can make and explain a small change without following a walkthrough | Complete the relevant language path in [Engineering Foundations](../00-engineering-foundations/README.md) or the software engineering academy |
+| Git, tests and code review | Can submit a tested change and respond to review | Complete the Git, testing and review foundations first |
+| APIs and data | Can build or extend an API and query a relational database | Complete the relevant backend and data foundations first |
+| Production delivery | Has contributed to a deployed service or can show equivalent cloud and operations work | Start with stages 07 and 08 alongside a lead before owning a client deployment |
+| Client work | Has participated in a client project or can demonstrate stakeholder communication and delivery evidence | Pair with an experienced FDE on an engagement before taking independent client ownership |
+
+You do not need to score 3 in every area. Agree gaps and a starting stage with your lead; use verified work evidence
+to test out of topics you already know. A learner without software engineering foundations should complete those
+first, then return to this roadmap.
 
 ## Where You Start
 
@@ -159,6 +182,7 @@ with shipped work on a real engagement, this is the evidence for the Practitione
 3. Agree two or three gaps with your lead, and close them on real work where possible.
 4. Complete the projects for the stages you are working on.
 5. Review your ratings with your lead every quarter.
+6. Revisit the entry diagnostic when your responsibilities change; ratings should reflect new evidence, not elapsed time.
 
 ## Glossary
 

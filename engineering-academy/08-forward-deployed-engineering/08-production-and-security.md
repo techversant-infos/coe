@@ -1,6 +1,6 @@
 # 08. Production and Security
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 The FDE has to show the client that an AI feature will not break, leak data or act beyond its authority.
 Back to the [roadmap](./README.md).
@@ -12,8 +12,11 @@ Run your evaluation set on every change, and sample live results, so a drop in q
 **What to learn:**
 
 - Running evaluations in CI and failing the build on a drop in quality
-- Sampling live results for human review
-- Re-running evaluations when the model or provider changes
+- Sampling live results for human review, using an approved and privacy-safe process
+- Watching for changes in quality, latency, cost and failure patterns after launch
+- Re-running evaluations when the model, provider, prompt, tools, data or workflow changes
+- Updating the evaluation set with reviewed production failures and representative edge cases
+- Agreeing release thresholds and who can pause, roll back or route work to a person
 
 **Resources:** builds on [Evaluations](./04-applied-ai.md#evaluations).
 
@@ -128,6 +131,10 @@ resist attacks and stay within budget.
 **Verification**, checked by a senior engineer:
 
 - [ ] The evaluation runs in CI, and weakening the prompt on purpose makes the build fail
+- [ ] Written release thresholds cover quality, safety, latency and cost; a reviewer can identify who approves a release and who can pause or roll it back
+- [ ] A post-launch review uses a small stream of synthetic or approved, privacy-safe cases to find failures; each finding is triaged, and at least one reviewed failure or edge case is added to the evaluation set
+- [ ] A model, provider, prompt, tool, data or workflow change triggers the evaluation; the report records what
+  changed and the decision to release, hold or roll back
 - [ ] When the model times out or returns an error, the user sees a clear message and the ticket goes to a person
 - [ ] Ten prompt-injection test cases, with hidden instructions inside documents and tickets: the assistant follows
   none of them and reveals no instructions or data

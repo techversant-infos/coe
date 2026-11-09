@@ -1,6 +1,6 @@
 # 09. Client Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 These skills decide whether good engineering turns into a result the client values. Most of the existing Techversant
 material sits in the ColdFusion consulting track, but the skills apply to any stack. Back to the [roadmap](./README.md).
@@ -16,6 +16,23 @@ Find the real problem behind the request before building anything.
 - Asking the questions that change the design, and writing down the answers
 
 **Resources:** [Discovery Workshop Questionnaire](../07-consulting/coldfusion/deliverables/discovery-workshop-questionnaire.md)
+
+**Level:** Practitioner · Core
+
+## Domain learning
+
+Learn enough about the client's industry and workflow to make sound delivery decisions. The client remains the source
+of truth for domain rules; confirm assumptions with the people who do and govern the work.
+
+**What to learn:**
+
+- Mapping the workflow, roles, terminology, exceptions and systems involved
+- Identifying domain rules, regulations and consequences of errors that affect design or rollout
+- Recording which assumptions were confirmed, which remain uncertain and who can resolve them
+- Explaining how domain learning changed a requirement, evaluation case or technical decision
+
+**Resources:** learn on engagements, with a lead and the client's domain experts. Use the relevant security, privacy
+and architecture standards for the client's sector.
 
 **Level:** Practitioner · Core
 
@@ -131,6 +148,8 @@ part-time engagement using what you built in the earlier projects.
 **Verification**, checked by the colleague playing the client and your lead:
 
 - [ ] Discovery notes from at least two stakeholder interviews, with the real problem stated in one sentence
+- [ ] A domain brief records the workflow, roles, key terms, exceptions, governing constraints and open assumptions; a client-side domain expert reviews it
+- [ ] The brief identifies one design or evaluation decision changed by domain learning, with the evidence and reviewer recorded
 - [ ] A one-page scope: a measurable result with a baseline, an out-of-scope list and an estimate as a range, agreed
   in writing by the "client"
 - [ ] Weekly status updates covering done, next, risks and decisions needed
