@@ -224,6 +224,7 @@ nullsafe
 nuxi
 NVARCHAR
 Nygard
+Northstar
 oapi
 Ollama
 ormsettings
@@ -260,6 +261,7 @@ refetched
 refetches
 reflog
 remediations
+reranking
 requesttimeout
 rerere
 Respawn

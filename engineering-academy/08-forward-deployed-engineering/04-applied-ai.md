@@ -1,6 +1,6 @@
 # 04. Applied AI
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 The core technical skill for most FDE work: AI features that work on the client's real data, and proof that they do.
 Back to the [roadmap](./README.md).
@@ -17,7 +17,7 @@ You do not need to train models, but you need to know how they behave so you can
 
 **Resources:**
 
-- [AI Engineering](../06-ai-engineering/README.md) (planned academy paths)
+- [AI Engineering Roadmap](../06-ai-engineering/README.md) for deeper practice in retrieval, evaluation, safety and operations
 - [Hugging Face LLM course](https://huggingface.co/learn/llm-course/chapter1/1)
 - [Claude models overview](https://platform.claude.com/docs/en/models/overview)
 

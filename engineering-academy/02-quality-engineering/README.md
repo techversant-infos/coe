@@ -1,6 +1,6 @@
 # Quality Engineering
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 This section contains QA and test automation learning paths.
 
@@ -14,9 +14,9 @@ The first priority is the Playwright automation path because it gives manual tes
 | Playwright automation | Strongest area; split tracks for manual-to-automation and senior automation are ready for pilot review | 8/10 |
 | Automation strategy | Good starter guidance; needs project examples, metrics templates, and quality gate examples | 7/10 |
 | API, accessibility, performance | Covered in automation path, but still needs deeper standalone references for advanced QA engineers | 6/10 |
-| AI-assisted testing | Planned and linked, but still TODO | 4/10 |
+| AI-assisted testing | Practice guide added; pilot feedback pending | — |
 
-**Overall rating:** 7/10 draft. The section is useful for a pilot batch, especially for Playwright automation, but it is not yet a complete QA academy. The biggest missing pieces are deeper manual testing practice, quality metrics, contract testing, visual regression, mobile/device testing, and AI-assisted testing examples.
+**Overall rating:** 7/10 draft. The section is useful for a pilot batch, especially for Playwright automation, but it is not yet a complete QA academy. The biggest missing pieces are deeper manual testing practice, quality metrics, contract testing, visual regression and mobile/device testing.
 
 ## Paths
 
@@ -26,13 +26,14 @@ The first priority is the Playwright automation path because it gives manual tes
 | Automation | [Playwright Automation](./02-automation/playwright/README.md) | Pilot-ready draft |
 | Strategy | [Automation Strategy](./03-strategy/01-automation-strategy.md) | Draft |
 | Assessment | [QA Capstone Rubric](./04-capstone-qa-rubric.md) | Draft |
+| AI-assisted testing | [AI-Assisted Testing Practice Guide](./05-ai-assisted-testing.md) | Ready for pilot |
 
 ## Guidance Layers
 
 - [Learning Levels](../learning-levels/) - understand Foundation / Practitioner / Advanced / Expert
 - [Career Progression](../career-progression/01-transition-overview.md) - see your upgrade path
 - [Engineering Foundations](../00-engineering-foundations/README.md) - shared engineering discipline, testing fundamentals, and code review
-- [AI Assisted Testing](../06-ai-engineering/02-ai-assisted-testing/README.md) - planned AI support path for QA work
+- [AI-Assisted Testing Practice Guide](./05-ai-assisted-testing.md) - safe use of AI in test design and automation
 
 ## Recommended Order
 
@@ -55,7 +56,7 @@ The first priority is the Playwright automation path because it gives manual tes
 | Visual regression | Mentioned in gap analysis | Add a focused Playwright `toHaveScreenshot()` topic if product teams need it |
 | Mobile/device testing | Covered lightly | Link to mobile testing path when available |
 | Quality metrics | Strategy draft | Add dashboard template after pilot |
-| AI-assisted testing | TODO path | Add prompt examples and review guardrails |
+| AI-assisted testing | Practice guide | Pilot with QA engineers and add examples from reviewed work |
 
 ## Useful Tutorials and References
 

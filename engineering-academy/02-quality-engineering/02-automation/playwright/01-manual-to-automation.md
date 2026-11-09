@@ -1,5 +1,7 @@
 # Manual Tester to Automation Engineer
 
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+
 > **Audience:** Manual testers with little or no automation experience.
 > **Length:** 8-10 weeks, around 5 hours/week.
 > **Goal:** Become productive writing and maintaining Playwright automation with support from a senior reviewer.
@@ -234,4 +236,4 @@ By the end of this path, the learner should be able to:
 
 - [Automation Strategy](../../03-strategy/01-automation-strategy.md)
 - [Automation Engineer to Senior Automation Engineer](./02-senior-automation.md)
-- [AI Assisted Testing](../../../06-ai-engineering/02-ai-assisted-testing/README.md)
+- [AI-Assisted Testing Practice Guide](../../05-ai-assisted-testing.md)

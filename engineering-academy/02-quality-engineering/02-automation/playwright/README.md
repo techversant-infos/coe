@@ -1,7 +1,8 @@
 # Playwright Automation Learning Paths
 
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+
 > **Objective:** Build automation engineers who can write, maintain, and improve Playwright automation with good test design.
-> **Status:** Draft for pilot batch review - v0.2.
 
 ---
 
@@ -37,7 +38,7 @@ Start with **Automation Engineer to Senior Automation Engineer** if you:
 - [Quality Engineering](../../README.md)
 - [Automation Strategy](../../03-strategy/01-automation-strategy.md)
 - [Engineering Foundations](../../../00-engineering-foundations/README.md)
-- [AI Assisted Testing](../../../06-ai-engineering/02-ai-assisted-testing/README.md)
+- [AI-Assisted Testing Practice Guide](../../05-ai-assisted-testing.md)
 - [REST API Best Practices](../../../../standards/general/rest-api-best-practices.md)
 - [Git and Pull Requests](../../../00-engineering-foundations/01-git-and-pull-requests.md)
 

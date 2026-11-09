@@ -1,0 +1,56 @@
+[
+  {
+    "article_id": "KB-001",
+    "title": "Reset a password",
+    "revision": "2026-10-01",
+    "body": "From the sign-in page, choose Forgot password and enter the account email address. The reset link expires 30 minutes after it is sent. If the message is missing, check the spam folder and confirm that the address is correct. Support cannot send a password or reuse an expired link."
+  },
+  {
+    "article_id": "KB-002",
+    "title": "Continue after a trial",
+    "revision": "2026-09-15",
+    "body": "A workspace owner can choose a paid plan from Workspace settings before the trial ends. If no plan is selected, new paid features are unavailable after the trial; existing workspace data is retained for 30 days. Contact support if the workspace owner cannot access billing settings."
+  },
+  {
+    "article_id": "KB-003",
+    "title": "Download an invoice",
+    "revision": "2026-10-10",
+    "body": "Workspace owners can open Settings, then Billing, then Invoices to download a PDF. If a new invoice is not visible, refresh the billing page and check that the correct workspace is selected. If the error continues, open a support case and include the invoice month, not payment-card details."
+  },
+  {
+    "article_id": "KB-004",
+    "title": "Refund request window",
+    "revision": "2026-08-20",
+    "body": "A workspace owner may submit a refund request within 14 calendar days of a new subscription purchase. A request is reviewed by the billing team; eligibility is not guaranteed. The assistant cannot approve or issue a refund."
+  },
+  {
+    "article_id": "KB-005",
+    "title": "Cancel a subscription",
+    "revision": "2026-09-21",
+    "body": "A workspace owner can turn off renewal in Settings, then Billing. The paid plan remains available until the end of the current billing period. Cancellation stops the next renewal; it does not immediately delete workspace data."
+  },
+  {
+    "article_id": "KB-006",
+    "title": "Export workspace data",
+    "revision": "2026-10-03",
+    "body": "Workspace owners can request an export from Settings, then Data. A download link is available for 72 hours after the export is ready. Exports may take up to one business day. Contact support if the status has not changed after that time."
+  },
+  {
+    "article_id": "KB-007",
+    "title": "Invite a teammate",
+    "revision": "2026-09-30",
+    "body": "Workspace owners and admins can invite a teammate from Workspace settings. Select the role before sending the invitation. An invitation expires after seven days; an admin can resend it from the Members page."
+  },
+  {
+    "article_id": "KB-008",
+    "title": "Update billing details",
+    "revision": "2026-10-12",
+    "body": "A workspace owner can update the billing address and invoice contact in Settings, then Billing details. Changes apply to future invoices. Do not send payment-card numbers or security codes to support."
+  },
+  {
+    "article_id": "KB-009",
+    "title": "Service guarantees and availability",
+    "revision": "2026-07-01",
+    "body": "Northstar Desk publishes current service availability on its status page. This help center does not promise uninterrupted service or provide a contractual uptime guarantee. For contractual commitments, ask the account team to review the signed agreement."
+  }
+]
