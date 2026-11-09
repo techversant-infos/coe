@@ -1,5 +1,7 @@
 # Automation Engineer to Senior Automation Engineer
 
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+
 > **Audience:** Automation engineers with 6+ months of automation experience.
 > **Length:** 8-10 weeks, around 4-5 hours/week.
 > **Goal:** Own automation quality across a project: framework design, API strategy, CI, reporting, flake control, accessibility, performance, AI-assisted workflows, and mentoring.
@@ -237,4 +239,4 @@ By the end of this path, the engineer should be able to:
 - [Manual Tester to Automation Engineer](./01-manual-to-automation.md)
 - [Automation Strategy](../../03-strategy/01-automation-strategy.md)
 - [Engineering Foundations](../../../00-engineering-foundations/README.md)
-- [AI Assisted Testing](../../../06-ai-engineering/02-ai-assisted-testing/README.md)
+- [AI-Assisted Testing Practice Guide](../../05-ai-assisted-testing.md)

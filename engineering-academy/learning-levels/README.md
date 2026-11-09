@@ -25,9 +25,10 @@ The Techversant Engineering Academy uses four levels to describe demonstrated co
 
 - **Software Engineering:** Foundation -> Practitioner -> Advanced -> Expert
 - **Quality Engineering:** Foundation -> Practitioner -> Advanced -> Expert
-- **Consulting:** Practitioner -> Advanced -> Expert
-- **Forward Deployed Engineering:** Practitioner -> Advanced -> Expert (Foundation is the entry prerequisite)
 - **Architecture:** Practitioner -> Advanced -> Expert
 - **Engineering Leadership:** Advanced -> Expert
+- **AI Engineering:** Practitioner -> Advanced -> Expert (Foundation is the entry prerequisite)
+- **Consulting:** Practitioner -> Advanced -> Expert
+- **Forward Deployed Engineering:** Practitioner -> Advanced -> Expert (Foundation is the entry prerequisite)
 
 Each discipline has its own progression timeline. See [Career Progression](../career-progression/01-transition-overview.md) for transition guides.

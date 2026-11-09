@@ -44,7 +44,7 @@ engineering-academy/
 | [02. Quality Engineering](./02-quality-engineering/README.md) | Manual testing, automation, Playwright, QA strategy |
 | [04. Architecture](./04-architecture/README.md) | Roadmap for senior and lead developers moving into a software architect role: system design, APIs, data, reliability, security, cloud cost, AI and modernization |
 | [05. Engineering Leadership](./05-engineering-leadership/README.md) | Team lead, engineering manager, technical leadership - planned curriculum |
-| [06. AI Engineering](./06-ai-engineering/README.md) | AI-assisted development, AI-assisted testing, prompt engineering |
+| [06. AI Engineering](./06-ai-engineering/README.md) | Designing, building, evaluating and operating AI-enabled products |
 | [07. Consulting: ColdFusion](./07-consulting/coldfusion/README.md) | Roadmap for senior ColdFusion consultants: maintaining, assessing, modernizing and migrating CFML applications, and managing clients |
 | [08. Forward Deployed Engineering](./08-forward-deployed-engineering/README.md) | Roadmap for engineers who embed with clients and take AI-enabled solutions to production |
 

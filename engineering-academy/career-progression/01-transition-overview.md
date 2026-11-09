@@ -44,4 +44,4 @@ academy-wide Practitioner, Advanced and Expert learning levels.
 - [Quality Engineering](../02-quality-engineering/) - QA and automation paths
 - [Architecture](../04-architecture/README.md) - Software Architect roadmap
 - [Engineering Leadership](../05-engineering-leadership/) - team lead and management (planned)
-- [AI Engineering](../06-ai-engineering/) - AI-assisted development and testing (planned)
+- [AI Engineering](../06-ai-engineering/README.md) - building and operating AI-enabled products

@@ -83,7 +83,7 @@ engineering-academy/<NN-discipline>/<topic>/
 | `02-quality-engineering` | Manual testing, automation, Playwright | qa-automation-coach, playwright-engineer |
 | `04-architecture` | Solution architecture, system design | (pending agent) |
 | `05-engineering-leadership` | Team lead, engineering manager | (pending agent) |
-| `06-ai-engineering` | AI-assisted development, prompt engineering | (pending agent) |
+| `06-ai-engineering` | AI product engineering: design, retrieval, evaluation, safety, operations | Stage pages at the folder root |
 
 ## Competency Levels
 
