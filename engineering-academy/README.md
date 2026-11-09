@@ -25,7 +25,6 @@ engineering-academy/
 |-- 00-engineering-foundations/
 |-- 01-software-engineering/
 |-- 02-quality-engineering/
-|-- 03-platform-engineering/
 |-- 04-architecture/
 |-- 05-engineering-leadership/
 |-- 06-ai-engineering/
@@ -43,7 +42,6 @@ engineering-academy/
 | [00. Engineering Foundations](./00-engineering-foundations/README.md) | Roadmap for every engineer: Git and pull requests, AI tools, clean code, design, APIs, testing, security, code review and communication |
 | [01. Software Engineering](./01-software-engineering/README.md) | Back end, front-end and full-stack paths for each stack Techversant delivers, with mobile planned |
 | [02. Quality Engineering](./02-quality-engineering/README.md) | Manual testing, automation, Playwright, QA strategy |
-| [03. Platform Engineering](./03-platform-engineering/README.md) | DevOps, cloud, Kubernetes, observability - planned curriculum |
 | [04. Architecture](./04-architecture/README.md) | Roadmap for senior and lead developers moving into a software architect role: system design, APIs, data, reliability, security, cloud cost, AI and modernization |
 | [05. Engineering Leadership](./05-engineering-leadership/README.md) | Team lead, engineering manager, technical leadership - planned curriculum |
 | [06. AI Engineering](./06-ai-engineering/README.md) | AI-assisted development, AI-assisted testing, prompt engineering |
@@ -55,7 +53,7 @@ engineering-academy/
 | Layer | Purpose |
 |---|---|
 | [Learning Levels](./learning-levels/01-foundation.md) | Defines demonstrated competence: Foundation, Practitioner, Advanced, Expert |
-| [Career Progression](./career-progression/01-transition-overview.md) | Guides transitions such as Junior to Senior, Senior to Team Lead, and Lead to Architect |
+| [Career Progression](./career-progression/01-transition-overview.md) | Guides role transitions and specialist growth paths, including FDE |
 
 ## Recommended Starting Points
 

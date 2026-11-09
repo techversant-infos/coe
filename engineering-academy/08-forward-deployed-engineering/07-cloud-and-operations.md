@@ -32,7 +32,6 @@ Know one cloud well rather than three a little: whichever most of your clients u
 
 **Resources:**
 
-- [Platform Engineering](../03-platform-engineering/README.md) (planned academy path)
 - [AWS documentation](https://docs.aws.amazon.com/), [Azure documentation](https://learn.microsoft.com/en-us/azure/),
   [Google Cloud documentation](https://cloud.google.com/docs)
 
