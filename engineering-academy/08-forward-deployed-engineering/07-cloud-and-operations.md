@@ -1,6 +1,6 @@
 # 07. Cloud and Operations
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 FDEs deploy into whatever the client runs, and keep it running after launch. This stage is where a working
 prototype becomes something the client can rely on every day. Back to the [roadmap](./README.md).
@@ -32,7 +32,6 @@ Know one cloud well rather than three a little: whichever most of your clients u
 
 **Resources:**
 
-- [Platform Engineering](../03-platform-engineering/README.md) (planned academy path)
 - [AWS documentation](https://docs.aws.amazon.com/), [Azure documentation](https://learn.microsoft.com/en-us/azure/),
   [Google Cloud documentation](https://cloud.google.com/docs)
 

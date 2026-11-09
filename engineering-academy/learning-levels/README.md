@@ -1,6 +1,6 @@
 # Learning Levels
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-07-02 · **Next review:** 2027-01-02
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 The Techversant Engineering Academy uses four levels to describe demonstrated competence, not just time served.
 
@@ -25,7 +25,8 @@ The Techversant Engineering Academy uses four levels to describe demonstrated co
 
 - **Software Engineering:** Foundation -> Practitioner -> Advanced -> Expert
 - **Quality Engineering:** Foundation -> Practitioner -> Advanced -> Expert
-- **Platform Engineering:** Foundation -> Practitioner -> Advanced
+- **Consulting:** Practitioner -> Advanced -> Expert
+- **Forward Deployed Engineering:** Practitioner -> Advanced -> Expert (Foundation is the entry prerequisite)
 - **Architecture:** Practitioner -> Advanced -> Expert
 - **Engineering Leadership:** Advanced -> Expert
 

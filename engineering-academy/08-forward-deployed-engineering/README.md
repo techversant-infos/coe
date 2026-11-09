@@ -67,14 +67,15 @@ How an FDE differs from the roles you may hold at Techversant today:
 
 ## FDE Levels
 
-| Level | What the FDE does | Evidence |
-|-------|-------------------|----------|
-| Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | All stage projects verified, plus shipped work on a real engagement; can explain the domain and workflow learned |
-| Advanced (FDE Lead) | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results including post-launch follow-up, handover, client feedback and domain-specific trade-offs |
-| Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached; field evidence informs reusable practices and future delivery |
+| FDE role label | Academy learning level | What the FDE does | Evidence |
+|----------------|------------------------|-------------------|----------|
+| FDE Practitioner | Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | All stage projects verified, plus shipped work on a real engagement; can explain the domain and workflow learned |
+| FDE Lead | Advanced | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results including post-launch follow-up, handover, client feedback and domain-specific trade-offs |
+| FDE Expert | Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached; field evidence informs reusable practices and future delivery |
 
-The levels follow the academy's [learning levels](../learning-levels/README.md). FDE is not a first role: you start
-once you have delivered on client projects.
+This is a specialist application of the academy-wide [learning levels](../learning-levels/README.md). Foundation is
+the entry prerequisite: complete the entry diagnostic and show evidence of client delivery. FDE Practitioner, FDE
+Lead and FDE Expert correspond to Practitioner, Advanced and Expert. FDE is not a first role.
 
 Each topic's level is the depth expected of an FDE Lead. For Practitioner, the projects plus your real engagement
 work should show working knowledge of every core topic.
