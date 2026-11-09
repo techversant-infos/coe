@@ -1,6 +1,6 @@
 # 08. Rendering and the Meta-Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 In React and Vue, a separate meta-framework adds server rendering. Angular builds it in: the Angular command-line
 interface (CLI) and `@angular/ssr` render pages on a Node.js server, prerender them at build time, or leave them to the
@@ -57,6 +57,26 @@ documentation
 
 **Level:** Advanced · Core
 
+## Caching personalized responses
+
+Server-rendered HTML can contain the signed-in user's name or private data. Treat cache behavior as part of the
+authorization boundary: a response generated for one user must never be served to another user by a browser cache,
+reverse proxy or CDN.
+
+**What to learn:**
+
+- Classifying rendered pages and API responses as public or personalized before enabling caching
+- Applying `Cache-Control: no-store` to personalized HTML and authenticated API or proxy responses, and checking that
+  deployment infrastructure respects it
+- Keeping authenticated responses out of shared or application-managed caches unless a reviewed design proves the
+  cache is correctly isolated by user and tenant
+- Testing the same route with two separate sessions after warming any configured cache
+
+**Resources:** [OWASP Web Cache Security](https://cheatsheetseries.owasp.org/cheatsheets/Web_Cache_Security_Cheat_Sheet.html)
+and [HTTP Security Response Headers](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html).
+
+**Level:** Advanced · Core
+
 ## Render modes
 
 Each route can be rendered on every request, prerendered at build time, or rendered only in the browser. Server
@@ -93,8 +113,10 @@ hand, and have a senior engineer review it.
 - Passing the signed-in user, without the token, to the browser in `TransferState`, so the browser's first render and
   its guards match the server
 - Setting the cookie's `Secure`, `SameSite` and `Path` attributes, and protecting requests that change data from
-  cross-site request forgery (CSRF): the server sets an `XSRF-TOKEN` cookie and checks the `X-XSRF-TOKEN` header, which
-  `HttpClient` sends on changing requests to relative URLs such as `/api`
+  cross-site request forgery (CSRF). The `XSRF-TOKEN` cookie and `X-XSRF-TOKEN` header are only a sketch, not a complete
+  security design: agree the approach with a senior engineer and follow the security audit reference and OWASP CSRF
+  guidance. Cover how protection is established before sign-in, sign-in and sign-up requests, session changes, and
+  every state-changing request; do not copy a naive double-submit design.
 - On client projects with a Laravel back end, using Laravel Sanctum's cookie-based sessions, where Laravel owns the
   session
 
@@ -102,6 +124,8 @@ hand, and have a senior engineer review it.
 
 - [Security](https://angular.dev/best-practices/security), Angular documentation, which covers CSRF protection in the
   HTTP client
+- [Cross-Site Request Forgery Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html),
+  OWASP
 - [Session management](../../../../security/audit/security-audit-reference.md#93-session-management) and
   [CSRF](../../../../security/audit/security-audit-reference.md#35-cross-site-request-forgery-csrf), in the
   Techversant security audit reference
@@ -139,8 +163,12 @@ cookie, proxy, interceptor and guard code by hand, and have a senior engineer re
 - [ ] Every request that needs the token, including favourite, follow, comment and delete, goes through the `/api` proxy
   on the SSR server, which adds the token from the cookie and checks the XSRF header on changes, and every sign-in and
   sign-up endpoint validates its input with the same Zod schema as the browser
+- [ ] A senior engineer reviews and records the CSRF design, including pre-authentication, sign-in, sign-up and
+  session changes; tests show that requests without valid protection are rejected
 - [ ] The token is in an httpOnly, `Secure`, `SameSite` cookie, and no browser script can read it: no response from the
   SSR server and no transfer state in the page contains it
+- [ ] Personalized SSR pages and authenticated API or proxy responses use `Cache-Control: no-store`; after warming
+  the route as one user, a second session never receives the first user's content
 - [ ] Reloading `/settings` while signed in shows the settings page with the signed-in header and no redirect, because
   the browser receives the user in `TransferState`
 - [ ] Guards redirect signed-out users from `/editor`, `/settings` and `/?feed=following`, and the server checks the
