@@ -1,5 +1,7 @@
 # Engineering Career Progression
 
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+
 Career progression explains how engineers grow into the next responsibility level. It does not replace HR policy, manager judgment, or project staffing decisions.
 
 Use this section as a capability guide: what to practice, what evidence to collect, what capstone to complete, and what mentor feedback to seek.
@@ -15,9 +17,8 @@ Use this section as a capability guide: what to practice, what evidence to colle
 ### Specialist Path
 
 The [Forward Deployed Engineer roadmap](../08-forward-deployed-engineering/README.md) is a specialist path for
-experienced engineers moving into client-embedded delivery. It maps FDE Practitioner, FDE Lead and FDE Expert to the
-academy-wide Practitioner, Advanced and Expert learning levels. It complements the role-transition guides above;
-it does not define a separate company-wide level system.
+experienced engineers moving into client-embedded delivery. FDE Practitioner, FDE Lead and FDE Expert use the
+academy-wide Practitioner, Advanced and Expert learning levels.
 
 ## How To Use This Guide
 

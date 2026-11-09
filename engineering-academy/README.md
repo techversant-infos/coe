@@ -1,6 +1,6 @@
 # Techversant Engineering Academy
 
-**Status:** Active · **Owner:** TBD · **Last updated:** 2026-11-06 · **Next review:** 2027-01-28
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 

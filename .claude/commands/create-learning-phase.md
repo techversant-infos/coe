@@ -81,7 +81,6 @@ engineering-academy/<NN-discipline>/<topic>/
 | `00-engineering-foundations` | Engineering Foundations roadmap | javascript-basics-coach |
 | `01-software-engineering` | Web, mobile, backend, full-stack | javascript-basics-coach |
 | `02-quality-engineering` | Manual testing, automation, Playwright | qa-automation-coach, playwright-engineer |
-| `03-platform-engineering` | DevOps, cloud, Kubernetes | (pending agent) |
 | `04-architecture` | Solution architecture, system design | (pending agent) |
 | `05-engineering-leadership` | Team lead, engineering manager | (pending agent) |
 | `06-ai-engineering` | AI-assisted development, prompt engineering | (pending agent) |
