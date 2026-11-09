@@ -134,6 +134,7 @@ entryidfk
 envalid
 errcheck
 errgroup
+Engyne
 evals
 executability
 explainability

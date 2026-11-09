@@ -1,6 +1,6 @@
 # Techversant Engineering Coding Standards for the AI Era
 
-**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-10-28 · **Next review:** 2026-10-28
+**Status:** Needs review · **Owner:** TBD · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 **Issued by:** Center of Excellence (CoE)  
 **Effective Date:** November 2025  
@@ -221,9 +221,8 @@ Check AI-suggested packages:
 
 ### 5.3 Data & IP Compliance
 
-- Use only **Techversant-approved AI tools**.  
-- Don’t paste proprietary code into public models.  
-- Validate AI-suggested snippets for potential license conflicts.
+Follow the [AI Acceptable Use Standard](./ai-acceptable-use.md) for approved tools, data handling, client
+requirements, and prohibited uses. Validate AI-suggested snippets for potential license conflicts.
 
 ## 6. Testing & Quality Assurance
 
@@ -329,7 +328,7 @@ Teams must conduct quarterly “AI Wins & Fails” sessions — share:
 
 The CoE maintains:
 
-- Approved AI tools list
+- The [approved-tools register in the AI Acceptable Use Standard](./ai-acceptable-use.md#2-approved-tools-register)
 - AI usage best practices
 - Security & compliance checklist
 
