@@ -12,6 +12,13 @@ Use this section as a capability guide: what to practice, what evidence to colle
 | Senior Engineer to Team Lead | [03-senior-to-team-lead.md](./03-senior-to-team-lead.md) |
 | Team Lead to Architect | [04-lead-to-architect.md](./04-lead-to-architect.md) |
 
+### Specialist Path
+
+The [Forward Deployed Engineer roadmap](../08-forward-deployed-engineering/README.md) is a specialist path for
+experienced engineers moving into client-embedded delivery. It maps FDE Practitioner, FDE Lead and FDE Expert to the
+academy-wide Practitioner, Advanced and Expert learning levels. It complements the role-transition guides above;
+it does not define a separate company-wide level system.
+
 ## How To Use This Guide
 
 1. Read the guide for your next transition.
@@ -34,7 +41,6 @@ Use this section as a capability guide: what to practice, what evidence to colle
 - [Engineering Foundations](../00-engineering-foundations/) - shared baseline for all disciplines
 - [Software Engineering](../01-software-engineering/) - web, backend, mobile paths
 - [Quality Engineering](../02-quality-engineering/) - QA and automation paths
-- [Platform Engineering](../03-platform-engineering/) - DevOps, cloud, observability (planned)
 - [Architecture](../04-architecture/README.md) - Software Architect roadmap
 - [Engineering Leadership](../05-engineering-leadership/) - team lead and management (planned)
 - [AI Engineering](../06-ai-engineering/) - AI-assisted development and testing (planned)
