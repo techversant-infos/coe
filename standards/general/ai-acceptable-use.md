@@ -1,11 +1,12 @@
 # AI Acceptable Use Standard
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-10 · **Next review:** 2027-05-10
 
-**Version:** 0.1 (draft)  
+**Version:** 0.2 (draft)
+
 **Issued by:** Techversant Center of Excellence (CoE)  
 **Effective Date:** TBD — Leadership approval  
-**Contributors:** CoE Team; Leadership, Legal, and Security reviewers TBD
+**Contributors:** CoE Team; Leadership, Legal, and Security approvals pending
 
 > **Draft for Leadership, Legal, and Security review. This standard is not effective until approved.**
 
@@ -33,43 +34,66 @@ approval-dependent rules must be completed before the standard is marked Active.
 
 ## 2. Approved tools register
 
-Approval applies to the specific product, plan, tenant, and configuration listed below. A vendor name alone does
-not establish approval. A blank or TBD entry means the tool is not approved for that data class.
+Approval applies to the exact product, plan, tenant, configuration, and model route. A vendor name or a
+Techversant-provided API key alone does not establish approval. The entries below record current practice and
+proposed scope; they do not approve a tool for non-public data.
 
-| Tool and plan | Tenant/configuration | Data classes allowed | Training on Techversant/client data | Retention | Evidence/source | Approved by and date |
-|--------------|----------------------|----------------------|--------------------------------------|-----------|-----------------|----------------------|
-| TBD — Leadership/Legal | TBD — Security | TBD — Leadership/Legal | TBD — Legal | TBD — Legal | TBD — Legal/Security | TBD — approver |
+| Tool/account route | Draft permitted scope | Training and retention evidence | Required before approval |
+|--------------------|-----------------------|--------------------------------|--------------------------|
+| Personal Claude (including Claude Code under a personal plan) | Public, open-source, or synthetic data only (proposed) | Consumer account settings govern model improvement; personal account retention applies. See [Anthropic consumer policy](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training). | Confirm the interim restriction and whether Techversant-managed access will replace personal use. |
+| Personal Codex (personal ChatGPT account) | Public, open-source, or synthetic data only (proposed) | Personal account settings govern model improvement; personal-plan retention applies. Verify the account's data controls and retention before use. | Confirm the interim restriction and whether Techversant-managed access will replace personal use. |
+| OpusMax, provided through Techversant | Public only until route review (proposed) | Published policy says prompts/responses are not retained; usage metadata is kept while the API key exists. Requests are forwarded to upstream model providers. | Identify the contracting/operator entity, exact upstream model routes, regions, upstream terms, data-processing agreement, and settings. |
+| CodeMax, provided through Techversant | Public only until route review (proposed) | Published policy says prompts/responses are not retained and usage logs are retained up to 90 days. The reviewed policy does not specify model-training or upstream retention terms. | Identify the contracting/operator entity, exact upstream model routes, regions, upstream terms, data-processing agreement, and settings. |
+| Cursor, GitHub Copilot, local LLM deployments, and other routes | TBD — Leadership/Security/Legal | TBD — by plan, model, deployment, and configuration | Complete a separate evidence review for each exact route before assigning data classes. |
 
-Before an entry is approved, record the service terms and settings that establish whether submitted data is used
-for model training, how long prompts and outputs are retained, and relevant processing or data location
-constraints. Legal and Security review the evidence; Leadership approves the business use and permitted data
-classes. Do not infer these properties from a product name or marketing statement.
+The OpusMax and CodeMax statements above summarize their published [privacy policies](https://www.opusmax.pro/privacy)
+and [terms](https://www.opusmax.pro/terms), and [CodeMax privacy policy](https://www.codemax.pro/privacy)
+and [terms](https://www.codemax.pro/terms). These are provider statements, not independent verification of the
+Techversant account, upstream provider, or contract. Upstream model providers may apply separate terms and
+retention. Record those terms before approving any non-public data.
+
+The current practice reported for personal Claude and Codex is broader than this draft's proposed scope. Personal
+accounts should be limited to Public, open-source, or synthetic data unless Leadership, Security, and Legal
+approve a documented alternative. Turning off model-improvement settings does not by itself establish business
+contract terms, retention controls, or client authorization.
+
+Before any entry is approved, record evidence for training use, prompt/output retention, usage metadata, data
+location, sub-processors/upstream providers, access controls, and applicable terms. Legal and Security review the
+evidence; Leadership approves the business use and permitted data classes.
 
 ## 3. Data classification and permitted use
 
-The following working categories are used for this draft. Security must confirm that they align with Techversant's
-authoritative classification scheme before approval. A dataset may belong to more than one category; apply the
-most restrictive applicable rule.
+Use Techversant's supplied classification categories below. **External Origin** describes where information came
+from; it is not a sensitivity level. Apply the source's handling instructions, then classify the information under
+the internal categories. If the source gives no instructions or the classification is unclear, pause and ask the
+data owner or Security to classify it before use. Apply the strictest applicable handling rule.
 
-| Data class | Meaning in this draft | AI use |
-|------------|----------------------|--------|
-| Public | Information approved for public release | May be used only with a tool approved for Public data. |
-| Internal | Non-public Techversant information that is not client confidential or sensitive/regulated | May be used only with a tool approved for Internal data. |
-| Client confidential | Client-provided or client-derived information subject to confidentiality obligations | Do not submit until the engagement's contract/consent requirements are met and the tool is approved for this class. |
-| PII | Information that identifies or can reasonably identify a person | Do not submit unless the tool is explicitly approved for PII and the engagement, privacy, and legal requirements permit it. |
-| Regulated or restricted | Information subject to legal, regulatory, contractual, or heightened security controls, including payment data | Do not submit unless the tool and use are explicitly approved for the specific data type and applicable obligations. |
+| Classification | Examples and handling | AI use under this draft |
+|---------------|-----------------------|-------------------------|
+| Public Information | Approved for unrestricted access and distribution, such as published reports and marketing materials. | Use only with an AI route that is approved for Public Information. Do not include secrets or unpublished context. |
+| Internal Use Information | Internal memos, procedures, and non-sensitive project documentation; accessible to employees and stored in internal systems, with encryption where specified by the classification guidance. | Use only with a route explicitly approved for Internal Use Information. The fact that personal accounts are currently used does not make them approved for Internal data. |
+| Confidential Information | Financial records, employee personal information, strategic plans, and proprietary research; access restricted to authorized personnel, with encrypted storage and transmission and secure physical storage. | Do not submit to a route unless it is explicitly approved for Confidential Information and the applicable data owner, privacy, legal, and client requirements are met. |
+| External Origin Information | Client data, partner agreements, and vendor documentation. Follow external handling instructions; if none exist, classify under internal guidelines. | Follow the source terms and internal classification. Client data must also meet the contract and client-authorization rules in §4. |
 
-No client data may be entered into a tool unless the register explicitly approves that tool configuration for the
-applicable data class. Unknown, unlisted, or unverified approval means the data must not be submitted. Follow the
-Red Zone restrictions in [AI Era Coding Guidelines §2.2](./ai-era-coding-guidelines.md#22-red-zone-manual-only).
+Personal data and regulated information require additional privacy and legal review even when their internal
+classification is known. Client ownership, personal data, and regulatory obligations may overlap with any
+classification above; apply the strictest rule. Unknown, unlisted, or unverified tool approval means the data must
+not be submitted. Follow the Red Zone restrictions in
+[AI Era Coding Guidelines §2.2](./ai-era-coding-guidelines.md#22-red-zone-manual-only).
+
+These category names and handling summaries reflect the classification-guideline excerpt supplied for this draft.
+Security must confirm the canonical policy source and link before approval.
 
 ## 4. Client engagements and consent
 
 Before using AI with client data, check the engagement contract and applicable client instructions for AI-related
-terms. If the contract is silent or unclear, do not submit client data until Legal confirms the default and the
-client's required approval is obtained. The delivery lead is responsible for obtaining and recording written
-client consent when required; the record location is **TBD — Legal/Leadership**. Link the record from the engagement's
-approved client records or decision log once the authoritative location is set.
+terms. **Proposed default, pending Legal approval:** if the contract is silent or unclear, treat that as no
+authorization to submit client data to an external AI route. Use synthetic or properly redacted data while the
+delivery lead raises the question with Legal and the client account owner. Resume only after Legal confirms the
+contract position and any required written client authorization is obtained. Do not treat client authorization as
+a substitute for a separate legal basis where privacy law requires one. The delivery lead records the approval in
+the official contract repository and links it from the engagement's AI/tool register; the system-of-record location
+is **TBD — Legal/Leadership**.
 
 The contract-silent default and consent-record location remain pending Legal and Leadership approval. This draft
 does not provide legal advice or amend client contract terms.
@@ -100,11 +124,20 @@ client information, or secrets in the disclosure.
 An AI data incident includes, for example, client or restricted data submitted to a tool not approved for that
 class, a secret included in a prompt, or suspected unauthorized retention or disclosure of submitted data.
 
-Report a suspected incident to the Security Lead immediately using the established security incident process.
-**Reporting channel/contact details:** TBD — Security. **Formal reporting deadline:** TBD — Leadership/Security.
-Until those details are approved and published, do not wait for confirmation before notifying the Security Lead.
-Follow [AI Security Guidelines §9](../../security/ai-security/ai-security-guidelines.md#9-incident-response) for
-incident response steps.
+Report a suspected incident to **IT Security immediately** through the internal security incident channel or
+contact directory. Notify the **Privacy Officer** at the same time if personal data may be involved. Escalate
+significant, ongoing, or unclear incidents to the **Chief Information Security Officer**. The current role holders'
+names and direct contact details are maintained in the internal directory and are not published in this public
+repository. **Canonical reporting channel or role-based contact route:** TBD — Security; publish it in the internal
+directory before this standard becomes Active.
+
+The proposed internal reporting target is immediately, and no later than one hour after discovery; **Leadership and
+Security must approve this target**. This is an internal reporting target, not a statutory GDPR notification period.
+The Privacy Officer and Legal assess applicable duties: under GDPR, a controller notifies the supervisory authority
+without undue delay and, where feasible, within 72 hours when required; a processor notifies its controller without
+undue delay. Employees must not make client, regulator, or data-subject notifications unless authorized. Follow
+[AI Security Guidelines §9](../../security/ai-security/ai-security-guidelines.md#9-incident-response) for response
+steps and the [GDPR, Article 33](https://eur-lex.europa.eu/eli/reg/2016/679/ojv).
 
 ## 8. Exceptions
 
@@ -123,9 +156,12 @@ conditions no longer hold.
 - **AI Scaffold:** reminds engineers to follow this standard and links to this source.
 - **CoE:** maintains the standard and audits adherence.
 
-Leadership approves the standard; Legal approves the client-data and contract provisions; Security reviews the
-security and data-handling provisions. **Named Leadership approver:** TBD — Leadership. The standard owner reviews
-it every six months and updates the next review date. Material changes require the same approval roles.
+The CoE maintains the standard. The **Privacy Officer** reviews privacy provisions; **IT Security and the Chief
+Information Security Officer** review incident handling, security controls, and security exceptions; Legal approves
+client-data and contract provisions. Leadership approves the standard and accepts any residual business risk.
+**Named Leadership approver:** TBD — Leadership. A second independent security approval is required under the
+repository's security-document review process. The standard owner reviews it every six months and updates the next
+review date. Material changes require the same approval roles.
 
 ## 10. Related documents
 
