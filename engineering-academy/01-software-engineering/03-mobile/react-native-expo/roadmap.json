@@ -1,0 +1,132 @@
+{
+  "title": "React Native and Expo Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Mobile Platforms and Design",
+      "page": "01-mobile-platforms-and-design.md",
+      "topics": [
+        { "label": "iOS and Android", "core": true, "techversant": false },
+        { "label": "The app lifecycle", "core": true, "techversant": false },
+        { "label": "Mobile accessibility", "core": true, "techversant": false },
+        { "label": "Permissions and privacy", "core": true, "techversant": false },
+        { "label": "Mobile security basics", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "JavaScript and TypeScript",
+      "page": "02-javascript-and-typescript.md",
+      "topics": [
+        { "label": "Modern JavaScript", "core": true, "techversant": false },
+        { "label": "Asynchronous JavaScript", "core": true, "techversant": false },
+        { "label": "TypeScript essentials", "core": true, "techversant": true },
+        { "label": "Packages and tools", "core": true, "techversant": false },
+        { "label": "Linting and formatting", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "React Native Fundamentals",
+      "page": "03-react-native-fundamentals.md",
+      "topics": [
+        { "label": "Expo projects and development builds", "core": true, "techversant": false },
+        { "label": "Components and JSX", "core": true, "techversant": false },
+        { "label": "Styling and layout", "core": true, "techversant": false },
+        { "label": "Lists", "core": true, "techversant": false },
+        { "label": "Images, themes and dark mode", "core": true, "techversant": false },
+        { "label": "Platform-specific code", "core": true, "techversant": false },
+        { "label": "React Native DevTools", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "State and Data Flow",
+      "page": "04-state-and-data-flow.md",
+      "topics": [
+        { "label": "Component state", "core": true, "techversant": false },
+        { "label": "Sharing state between components", "core": true, "techversant": false },
+        { "label": "Server state", "core": true, "techversant": false },
+        { "label": "Effects and when to avoid them", "core": true, "techversant": false },
+        { "label": "Shared state libraries", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Navigation",
+      "page": "05-navigation.md",
+      "topics": [
+        { "label": "File-based routing", "core": true, "techversant": false },
+        { "label": "Stacks and tabs", "core": true, "techversant": false },
+        { "label": "Route parameters", "core": true, "techversant": false },
+        { "label": "Protected routes", "core": true, "techversant": false },
+        { "label": "Deep links", "core": true, "techversant": false },
+        { "label": "Universal links and app links", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Forms and Input",
+      "page": "06-forms-and-input.md",
+      "topics": [
+        { "label": "Text input", "core": true, "techversant": false },
+        { "label": "The keyboard", "core": true, "techversant": false },
+        { "label": "Form libraries", "core": true, "techversant": false },
+        { "label": "Schema validation with Zod", "core": true, "techversant": false },
+        { "label": "Accessible forms", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Working with APIs",
+      "page": "07-working-with-apis.md",
+      "topics": [
+        { "label": "Changing data", "core": true, "techversant": false },
+        { "label": "Handling API errors", "core": true, "techversant": false },
+        { "label": "Poor and missing networks", "core": true, "techversant": false },
+        { "label": "Tokens on the device", "core": true, "techversant": true },
+        { "label": "Rendering user content safely", "core": true, "techversant": true },
+        { "label": "Configuration and environments", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Device Features",
+      "page": "08-device-features.md",
+      "topics": [
+        { "label": "Expo modules and native code", "core": true, "techversant": false },
+        { "label": "Sharing and opening links", "core": true, "techversant": false },
+        { "label": "Offline reading", "core": true, "techversant": false },
+        { "label": "Notifications", "core": true, "techversant": false },
+        { "label": "Camera and photos", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Testing",
+      "page": "09-testing.md",
+      "topics": [
+        { "label": "Component tests", "core": true, "techversant": true },
+        { "label": "Testing API calls", "core": true, "techversant": false },
+        { "label": "End-to-end flows with Maestro", "core": true, "techversant": false },
+        { "label": "Accessibility testing", "core": true, "techversant": false },
+        { "label": "Testing in continuous integration", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Performance and Release",
+      "page": "10-performance-and-release.md",
+      "topics": [
+        { "label": "Measuring performance", "core": true, "techversant": false },
+        { "label": "App size", "core": true, "techversant": false },
+        { "label": "Builds and signing", "core": true, "techversant": true },
+        { "label": "Store requirements", "core": true, "techversant": false },
+        { "label": "Over-the-air updates", "core": true, "techversant": false },
+        { "label": "Crash reporting and security checks", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}
