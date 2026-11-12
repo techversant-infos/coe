@@ -68,8 +68,7 @@ documentation
 ## Shared state libraries
 
 Some apps need app-wide state that is not server data and changes too often to keep in context, such as a multi-step
-form.
-Libraries such as Zustand handle this with less code.
+form. Libraries such as Zustand handle this with less code.
 
 **What to learn:**
 
