@@ -27,9 +27,9 @@ your own debug app with exactly the native libraries your project needs.
 
 ## Components and JSX
 
-A screen is built from small components, written in JSX (JavaScript XML), an HTML-like syntax that describes what
-to show. React Native has its own core components, such as `View`, `Text`,
-`Image` and `Pressable`, instead of HTML elements.
+A screen is built from small components, written in JSX (JavaScript XML), an HTML-like syntax that describes what to
+show. React Native has its own core components, such as `View`, `Text`, `Image` and `Pressable`, instead of HTML
+elements.
 
 **What to learn:**
 
@@ -131,8 +131,7 @@ documentation
 ## Project: Build the Home Screen
 
 **Brief:** Start an Expo SDK (software development kit) 58 app in TypeScript and build the home screen from your stage
-01 sketches. Load the
-articles and tags with your stage 02 API client.
+01 sketches. Load the articles and tags with your stage 02 API client.
 
 **Size:** 2–3 days
 

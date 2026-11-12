@@ -1,6 +1,6 @@
 # 07. Working with APIs
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
 
 A mobile app is usually the front end for an API, used over networks that are slow, change between Wi-Fi and
 mobile data, or disappear. This stage connects the whole app to the API, safely. Back to the
@@ -37,7 +37,7 @@ The API returns errors in a fixed shape, and each kind of error needs a differen
 
 **Resources:**
 
-- [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status), MDN
+- [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status), MDN Web Docs
 - [Error handling](https://docs.expo.dev/router/error-handling/), Expo Router documentation
 
 **Level:** Practitioner · Core

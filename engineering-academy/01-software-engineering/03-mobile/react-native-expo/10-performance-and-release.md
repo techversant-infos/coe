@@ -90,8 +90,7 @@ Apple and Google set rules for what apps may do and how they are built, and both
 ## Over-the-air updates
 
 Expo Update, formerly called EAS Update, sends JavaScript and asset changes to installed apps without a store release.
-It is fast, but it must not
-change what the app does in ways the store reviewed.
+It is fast, but it must not change what the app does in ways the store reviewed.
 
 **What to learn:**
 
