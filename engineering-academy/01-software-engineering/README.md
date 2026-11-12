@@ -1,16 +1,16 @@
 # Software Engineering
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
 
 Software engineering paths teach you to build client applications in the stacks Techversant delivers. Each path is a
 roadmap of ten stages, with a short guide to every topic and one hands-on project per stage.
 
 - **Who it is for:** developers learning a new stack, and new joiners after
   [Engineering Foundations](../00-engineering-foundations/README.md).
-- **How to choose:** pick the back-end or front-end path that matches your project. To work full-stack, complete one
-  of each.
-- **How the paths link:** every back-end path builds the same RealWorld blogging API, and every front-end path builds
-  a front end for it. Any front end you build works with any back end you build.
+- **How to choose:** pick the back-end, front-end or mobile path that matches your project. To work full-stack,
+  complete a back-end path and a front-end or mobile path.
+- **How the paths link:** every back-end path builds the same RealWorld blogging API, and every front-end and
+  mobile path builds a client for it. Any client you build works with any back end you build.
 
 ## Back-End Paths
 
@@ -39,13 +39,22 @@ Each front-end path follows the same ten stages, from HTML and accessibility to 
 
 ## Mobile Paths
 
-Mobile paths are planned. See the [mobile](./03-mobile/README.md) page.
+Each mobile path follows the same ten stages, from platform design to store release. See the
+[mobile paths](./03-mobile/README.md) page.
+
+| Path | Status |
+|------|--------|
+| [React Native and Expo](./03-mobile/react-native-expo/README.md) | Draft |
+| Flutter | Planned |
+| iOS: Swift and SwiftUI | Planned |
+| Android: Kotlin and Jetpack Compose | Planned |
 
 ## Becoming Full-Stack
 
 A full-stack developer at Techversant completes one back-end path and one front-end path, usually the pair their
 project uses, such as Laravel with React and Next.js. Because both paths build the same RealWorld app, your capstone
-can be one working product: your front end running against your own API.
+can be one working product: your front end running against your own API. A mobile path can take the place of the
+front-end path when your project is a mobile app.
 
 ## Related Roadmaps
 

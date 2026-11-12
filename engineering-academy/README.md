@@ -1,6 +1,6 @@
 # Techversant Engineering Academy
 
-**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
 
 The Techversant Engineering Academy organizes CoE learning into disciplines, shared foundations, learning levels, and career progression guidance.
 
@@ -40,7 +40,7 @@ engineering-academy/
 | Area | Use this for |
 |---|---|
 | [00. Engineering Foundations](./00-engineering-foundations/README.md) | Roadmap for every engineer: Git and pull requests, AI tools, clean code, design, APIs, testing, security, code review and communication |
-| [01. Software Engineering](./01-software-engineering/README.md) | Back end, front-end and full-stack paths for each stack Techversant delivers, with mobile planned |
+| [01. Software Engineering](./01-software-engineering/README.md) | Back-end, front-end, mobile and full-stack paths for each stack Techversant delivers |
 | [02. Quality Engineering](./02-quality-engineering/README.md) | Manual testing, automation, Playwright, QA strategy |
 | [04. Architecture](./04-architecture/README.md) | Roadmap for senior and lead developers moving into a software architect role: system design, APIs, data, reliability, security, cloud cost, AI and modernization |
 | [05. Engineering Leadership](./05-engineering-leadership/README.md) | Team lead, engineering manager, technical leadership - planned curriculum |
