@@ -85,12 +85,11 @@ Screen reader users need to know what each field is for and what went wrong.
 
 ## Project: Build the Forms
 
-**Brief:** Build the four RealWorld forms: sign-in, sign-up, the article editor and settings. Validate each in the
-app and show the errors the API returns. In this stage, sign-up and sign-in call the API through your stage 02
-client, extended with POST calls. Keep the returned token in memory only and never store it; stage 07 adds secure
-storage. The sign-in and sign-up
-submit code is Red Zone work, so write it by hand. The editor and settings need a token, so stage 07 checks that
-they save.
+**Brief:** Build the four RealWorld forms: sign-in, sign-up, the article editor and settings. Validate each in the app
+and show the errors the API returns. In this stage, sign-up and sign-in call the API through your stage 02 client,
+extended with POST calls. Keep the returned token in memory only and never store it; stage 07 adds secure storage. The
+sign-in and sign-up submit code is Red Zone work, so write it by hand. The editor and settings need a token, so stage 07
+checks that they save.
 
 **Size:** 3 days
 

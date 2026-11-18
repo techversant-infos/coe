@@ -105,9 +105,7 @@ flow listed on the [practice app](../practice-app.md#test-flows) page in Maestro
 - [ ] Each flow creates its own test user with generated data, and flows pass in any order
 - [ ] Flows find elements by accessibility label or text, and the pull request explains every test ID used
 - [ ] Accessibility Inspector and Accessibility Scanner report no unresolved issues on the home, article and sign-in
-  screens, the pull
-  request explains any that remain,
-  and VoiceOver and TalkBack can complete the sign-in flow
+  screens, the pull request explains any that remain, and VoiceOver and TalkBack can complete the sign-in flow
 - [ ] Type checks, linting and component tests run in continuous integration, and a failing test blocks the merge
 
 Previous: [08. Device Features](./08-device-features.md) · Next:
