@@ -112,7 +112,7 @@
         { "label": "Testing API calls", "core": true, "techversant": false },
         { "label": "End-to-end flows with Maestro", "core": true, "techversant": false },
         { "label": "Accessibility testing", "core": true, "techversant": false },
-        { "label": "Testing in continuous integration", "core": false, "techversant": false }
+        { "label": "Testing in continuous integration", "core": true, "techversant": false }
       ]
     },
     {

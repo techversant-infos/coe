@@ -1,6 +1,6 @@
 # Practice App: A RealWorld Mobile Client
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
 
 Every mobile path in the academy builds the same app: a mobile client for **RealWorld**, an open-source Medium-style
 blogging app also called Conduit. The web paths build the same app in the browser, so the API, the data and the
@@ -108,9 +108,10 @@ framework. Each flow creates its own test user with generated data, so flows can
 6. Open an article from a deep link, and open `conduit://editor` signed out, sign in, and land on the editor
 7. Turn the network off and check the "Unable to connect" and retry states
 
-Flow 7 needs a device that can go offline from the test. Maestro can turn on aeroplane mode only on Android, so on an
-iOS simulator cover the offline states with component or widget tests instead, check them by hand once, and say how in
-the pull request.
+Flow 7 needs a device that can go offline from the test. Maestro can turn on aeroplane mode only on Android, and iOS UI
+tests cannot turn off the Simulator's network. On an iOS simulator, cover the offline states with lower-level tests
+instead, such as component, widget or unit tests, or with a launch argument that makes the network layer fail; check
+them by hand once, and say how in the pull request.
 
 Find elements by their accessibility label or visible text where possible. Use test IDs only for elements with no
 label, so the flows also check that the app is accessible.
@@ -138,3 +139,4 @@ The public demo API is the simplest choice. To use the local back end instead:
 
 - [React Native and Expo](./react-native-expo/README.md)
 - [Flutter](./flutter/README.md)
+- [iOS: Swift and SwiftUI](./ios-swiftui/README.md)

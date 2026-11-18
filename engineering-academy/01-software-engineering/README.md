@@ -1,6 +1,6 @@
 # Software Engineering
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
 
 Software engineering paths teach you to build client applications in the stacks Techversant delivers. Each path is a
 roadmap of ten stages, with a short guide to every topic and one hands-on project per stage.
@@ -46,7 +46,7 @@ Each mobile path follows the same ten stages, from platform design to store rele
 |------|--------|
 | [React Native and Expo](./03-mobile/react-native-expo/README.md) | Draft |
 | [Flutter](./03-mobile/flutter/README.md) | Draft |
-| iOS: Swift and SwiftUI | Planned |
+| [iOS: Swift and SwiftUI](./03-mobile/ios-swiftui/README.md) | Draft |
 | Android: Kotlin and Jetpack Compose | Planned |
 
 ## Becoming Full-Stack
