@@ -20,7 +20,7 @@ on any platform.
 
 **Resources:**
 
-- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html)
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/pillars.html)
 - [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/pillars)
 - [Google Cloud Well-Architected Framework](https://cloud.google.com/architecture/framework)
 
