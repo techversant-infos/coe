@@ -1,6 +1,6 @@
 # 07. Cloud and Cost
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Many client systems now run in the cloud, where every design choice has a monthly price. An architect has to design
 for the platform and for the budget. Back to the [roadmap](./README.md).

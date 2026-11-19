@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Django is Python, and modern Python code uses type hints, clear classes and good tooling. Solid Python makes every
 Django feature easier to understand. Current Django releases need Python 3.12 or later. Back to the

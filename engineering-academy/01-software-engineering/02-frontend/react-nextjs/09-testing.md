@@ -1,6 +1,6 @@
 # 09. Testing
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Tests let you change a front end without fear of breaking it. A good mix has many fast component tests, some tests
 against a mocked API, and a few end-to-end tests that drive a real browser. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 08. Secure Engineering
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Many security flaws come from a few common mistakes in everyday code. This stage covers how to avoid them, and when
 to stop and ask for a security review. Back to the [roadmap](./README.md).

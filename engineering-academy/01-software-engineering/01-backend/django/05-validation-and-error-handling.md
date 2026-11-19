@@ -1,6 +1,6 @@
 # 05. Validation and Error Handling
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 An API must check every request, because anyone can send anything to it. When something goes wrong, the client needs
 a clear, predictable error, and the team needs a log entry that explains it. Back to the [roadmap](./README.md).

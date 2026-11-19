@@ -1,6 +1,6 @@
 # 01. Architecture Basics
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Architecture is the set of decisions that are expensive to change later. This stage covers how to find those
 decisions, weigh them and write them down so others can follow them. Back to the [roadmap](./README.md).

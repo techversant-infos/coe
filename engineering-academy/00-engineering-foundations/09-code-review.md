@@ -1,6 +1,6 @@
 # 09. Code Review
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Code review catches defects, spreads knowledge and keeps a codebase consistent. A good review checks the things that
 matter, objectively and kindly. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 10. Cost, Performance and Operations
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 A production AI feature has a predictable cost, acceptable speed, visible failures and a safe way to change or roll
 back. Measure the whole request path, including retrieval and tools. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 05. Navigation
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 Mobile apps move between screens with stacks, tabs and the system back gesture, not with page loads. Expo Router
 builds navigation from your files, much like routing in a web framework. Back to the [roadmap](./README.md).

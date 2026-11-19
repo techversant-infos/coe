@@ -1,6 +1,6 @@
 # 09. AI Security and Safety
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Treat the user's message, retrieved documents and tool results as untrusted. A prompt is not a security control.
 Design the application so that a model mistake cannot grant extra access. Back to the [roadmap](./README.md).

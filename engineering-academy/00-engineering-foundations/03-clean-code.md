@@ -1,6 +1,6 @@
 # 03. Clean Code
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Much review friction, and many bugs, come from code that is hard to read rather than code that is wrong. Clean code
 lets another developer understand your work without asking you. Back to the [roadmap](./README.md).

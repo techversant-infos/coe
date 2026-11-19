@@ -1,6 +1,6 @@
 # 08. Data Privacy and Governance
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Every model request can move data across a boundary. Decide which data is allowed before you connect a model, and
 keep the practice project entirely synthetic. This stage applies the Techversant AI Era Coding Guidelines and does

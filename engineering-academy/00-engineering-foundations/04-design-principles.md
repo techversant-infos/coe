@@ -1,6 +1,6 @@
 # 04. Design Principles
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Working code is the start. Well-designed code is easy to test, change and reuse, because each part has one job and
 depends on as little as possible. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 08. Device Features
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 Mobile apps can share content, work offline, send notifications and use the camera. Each feature adds permissions,
 native code and new ways to fail. This stage adds a few of them to the practice app. Back to the

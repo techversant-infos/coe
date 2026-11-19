@@ -1,6 +1,6 @@
 # 02. How LLMs Work
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 You do not need to train a large language model (LLM), but you need to know how one behaves, so you can predict its
 limits, measure its inputs and outputs, and plan for failure. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 01. iOS Platform and Design
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 An iPhone app runs on a small screen, on a battery, on a network that comes and goes, inside rules set by Apple. This
 stage covers how iOS works and how iPhone users expect apps to behave, before you write any code. Back to the

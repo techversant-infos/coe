@@ -1,6 +1,6 @@
 # Practice App: A RealWorld Mobile Client
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 Every mobile path in the academy builds the same app: a mobile client for **RealWorld**, an open-source Medium-style
 blogging app also called Conduit. The web paths build the same app in the browser, so the API, the data and the

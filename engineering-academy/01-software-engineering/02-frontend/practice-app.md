@@ -1,6 +1,6 @@
 # Practice App: A RealWorld Front End
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Every front-end path in the academy builds the same app: a front end for **RealWorld**, an open-source
 Medium-style blogging app also called Conduit. You build it stage by stage in your framework, and RealWorld's own

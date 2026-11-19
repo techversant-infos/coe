@@ -1,6 +1,6 @@
 # 02. The Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Go teams rarely use one large framework. A Go API is built on the standard library's `net/http` package, with small
 libraries added where they help, and together they do the framework's job on this path. This stage covers how a Go

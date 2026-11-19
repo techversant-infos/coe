@@ -1,6 +1,6 @@
 # Facilitator Guide
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 This guide is for the senior engineer or lead who runs the [Engineering Foundations roadmap](./README.md) for a
 cohort. Learners do not need it. The eight-week plan is in the roadmap's

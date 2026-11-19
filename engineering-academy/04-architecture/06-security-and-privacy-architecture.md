@@ -1,6 +1,6 @@
 # 06. Security and Privacy Architecture
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Security flaws in the design cannot be fixed by careful coding later. This stage covers how to find threats early,
 design the protections, and know when to bring in a security specialist. Back to the [roadmap](./README.md).

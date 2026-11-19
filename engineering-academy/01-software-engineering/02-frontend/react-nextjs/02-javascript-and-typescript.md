@@ -1,6 +1,6 @@
 # 02. JavaScript and TypeScript
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 React is JavaScript, and Techversant writes it in TypeScript. Solid language skills make every later stage easier,
 and types catch many mistakes before the code runs. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 10. Performance and Release
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-05-12
 
 A mobile app is finished when it starts quickly, scrolls smoothly, and reaches users through the stores with a safe
 way to fix problems. This stage covers performance, builds, store rules, updates and crash reporting. Back to the

@@ -1,6 +1,6 @@
 # 07. Upgrades and Migration
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Moving an application to a supported Adobe ColdFusion version, or from Adobe ColdFusion to Lucee, is the most common
 CFML project. The work is mostly finding and fixing incompatibilities, then switching over safely.

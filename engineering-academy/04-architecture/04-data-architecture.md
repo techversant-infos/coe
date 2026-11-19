@@ -1,6 +1,6 @@
 # 04. Data Architecture
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Data usually outlives the code that writes it. Decisions about how data is modelled, stored, changed and kept are
 some of the hardest to reverse. Back to the [roadmap](./README.md).

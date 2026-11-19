@@ -1,6 +1,6 @@
 # iOS Developer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 An iOS developer at Techversant builds native apps for iPhone and iPad in Swift, using Apple's own frameworks and
 tools. Native apps get every new iOS feature first and feel at home on the platform. On most projects the app is the

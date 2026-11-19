@@ -1,6 +1,6 @@
 # 08. Rendering and the Meta-Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 In React and Vue, a separate meta-framework adds server rendering. Angular builds it in: the Angular command-line
 interface (CLI) and `@angular/ssr` render pages on a Node.js server, prerender them at build time, or leave them to the

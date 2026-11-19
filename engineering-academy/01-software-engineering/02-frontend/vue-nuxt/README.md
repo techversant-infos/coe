@@ -1,6 +1,6 @@
 # Vue and Nuxt Developer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A Vue and Nuxt developer at Techversant builds the front end of client web applications: the pages, forms and
 interactions people use every day. On most projects, Vue and Nuxt are the front end for an API built by the

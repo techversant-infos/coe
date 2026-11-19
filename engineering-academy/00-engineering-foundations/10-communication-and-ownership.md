@@ -1,6 +1,6 @@
 # 10. Communication and Ownership
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A correct change can still fail if nobody understands its purpose, risks or next steps. This stage covers writing
 about your work and owning it after it ships. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 10. Architecture Practice
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Good designs only matter if people understand them, trust them and keep following them. This stage covers the
 working habits of an architect: reviews, communication, estimates, standards and mentoring. Back to the

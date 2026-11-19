@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Laravel is PHP, and modern PHP is a typed, object-oriented language. Solid PHP makes every Laravel feature easier
 to understand, and Techversant projects require PHP 8.3 or later. Back to the [roadmap](./README.md).

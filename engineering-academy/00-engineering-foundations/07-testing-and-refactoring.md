@@ -1,6 +1,6 @@
 # 07. Testing and Refactoring
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Tests prove that your change works and keeps working. With good tests in place, you can improve code safely through
 refactoring. Back to the [roadmap](./README.md).

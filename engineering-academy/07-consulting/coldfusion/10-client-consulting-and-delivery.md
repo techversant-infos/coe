@@ -1,6 +1,6 @@
 # 10. Client Consulting and Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Technical skill wins the work; consulting skill keeps it. A senior consultant runs discovery, estimates honestly,
 writes proposals, presents to decision makers and manages the engagement through to handover.

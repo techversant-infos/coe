@@ -1,6 +1,6 @@
 # AI-Assisted Testing Practice Guide
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Use AI to help draft and investigate tests while keeping test intent, risk selection and final acceptance with the
 engineer. This guide covers AI used in QA work; building AI-enabled products is in the

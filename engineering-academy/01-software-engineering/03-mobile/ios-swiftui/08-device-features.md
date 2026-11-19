@@ -1,6 +1,6 @@
 # 08. Device Features
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 iPhone apps can share content, work offline, send notifications and use the camera. Each feature adds permissions,
 settings and new ways to fail. This stage adds a few of them to the practice app. Back to the

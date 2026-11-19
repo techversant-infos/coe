@@ -1,6 +1,6 @@
 # Flutter Developer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-05-12
 
 A Flutter developer at Techversant builds mobile apps for iOS and Android from one code base, written in Dart.
 Flutter draws every pixel of the interface itself, so the app looks the same on both platforms unless you choose

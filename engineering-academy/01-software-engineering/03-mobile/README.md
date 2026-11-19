@@ -1,6 +1,6 @@
 # Mobile Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 A mobile developer builds the iOS and Android apps clients put in their users' hands. Each mobile path teaches one
 stack through the same ten stages, and the projects build a complete mobile client for the RealWorld blogging app.

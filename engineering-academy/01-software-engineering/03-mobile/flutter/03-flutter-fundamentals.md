@@ -1,6 +1,6 @@
 # 03. Flutter Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-05-12
 
 Flutter builds the screen from widgets: small objects that describe part of the interface. Flutter draws them itself
 with its Impeller engine, instead of using the platform's own views. This stage covers the core ideas you use in every

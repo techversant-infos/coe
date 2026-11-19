@@ -1,6 +1,6 @@
 # Learning Levels
 
-**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 The Techversant Engineering Academy uses four levels to describe demonstrated competence, not just time served.
 

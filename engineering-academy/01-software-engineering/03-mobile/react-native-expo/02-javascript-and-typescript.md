@@ -1,6 +1,6 @@
 # 02. JavaScript and TypeScript
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 React Native apps are written in JavaScript, and Techversant writes them in TypeScript. Solid language skills make
 every later stage easier, and types catch many mistakes before the app runs. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # React Native and Expo Developer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 A React Native developer at Techversant builds mobile apps for iOS and Android from one TypeScript code base. On most
 projects the app is the mobile front end for an API built by the back-end team, often alongside a web front end in

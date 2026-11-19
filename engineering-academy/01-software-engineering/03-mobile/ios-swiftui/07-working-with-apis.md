@@ -1,6 +1,6 @@
 # 07. Working with APIs
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 An iPhone app is usually the front end for an API, used over networks that are slow, change between Wi-Fi and mobile
 data, or disappear. This stage connects the whole app to the API, safely. Back to the [roadmap](./README.md).

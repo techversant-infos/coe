@@ -1,6 +1,6 @@
 # 10. Performance and Production
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A front end is finished when it is fast, secure and running where users can reach it. This stage covers measuring
 speed, sending less code, protecting the page with security headers, and knowing when something breaks in

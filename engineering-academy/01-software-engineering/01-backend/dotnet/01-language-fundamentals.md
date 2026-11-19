@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 ASP.NET Core is written in C#, and modern C# is short, safe and expressive. Solid C# makes every later stage easier.
 Projects use the current long-term support (LTS) release, .NET 10, with C# 14. Back to the [roadmap](./README.md).

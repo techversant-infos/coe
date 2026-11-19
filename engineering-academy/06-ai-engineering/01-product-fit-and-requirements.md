@@ -1,6 +1,6 @@
 # 01. Product Fit and Requirements
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Start with the user's problem and the cost of getting it wrong. A large language model (LLM) is one possible way to
 solve a problem, not a requirement in itself. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # Practice App: Synthetic Support Assistant
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Every stage extends the same small assistant for a fictional service called Northstar Desk. The data is synthetic and
 fixed so learners can practise retrieval, tool use, privacy and evaluation without real customer information. Back

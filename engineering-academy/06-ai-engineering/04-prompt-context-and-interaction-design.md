@@ -1,6 +1,6 @@
 # 04. Prompt, Context and Interaction Design
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Prompts and the way the interface behaves are part of the product. The user needs to understand what the assistant
 knows, what it does not know and what happens next. Back to the [roadmap](./README.md).

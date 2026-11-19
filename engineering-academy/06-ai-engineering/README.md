@@ -1,6 +1,6 @@
 # AI Engineering Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 AI Engineering at Techversant means building and operating software features that use AI, most often a large
 language model (LLM). This path covers product fit, model integration, retrieval, tool workflows, evaluation,

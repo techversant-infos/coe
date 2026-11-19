@@ -1,6 +1,6 @@
 # 07. Background Jobs and Caching
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Slow work, such as sending email or calling another system, should not make users wait. A job queue moves it to the
 background, and caching avoids doing the same expensive work twice. This path uses Hangfire, which keeps its jobs in

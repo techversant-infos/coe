@@ -1,6 +1,6 @@
 # 08. Rendering and the Meta-Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Vue shows the interface; a meta-framework adds file-based routing, server rendering, data loading and a production
 server around it. Nuxt is the meta-framework for Vue. This stage covers Nuxt 4. Back to the [roadmap](./README.md).

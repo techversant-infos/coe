@@ -1,6 +1,6 @@
 # 05. Reliability and Performance
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Every system fails sometimes. Reliability design decides how often, how badly and how fast it recovers, and sets
 targets the team and the client agree on. Back to the [roadmap](./README.md).

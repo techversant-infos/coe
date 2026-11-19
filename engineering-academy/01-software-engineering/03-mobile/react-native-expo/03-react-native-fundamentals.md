@@ -1,6 +1,6 @@
 # 03. React Native Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 React Native builds the screen from components, like React on the web, but the components become real iOS and
 Android views instead of HTML. This stage covers the core ideas you use in every screen. Back to the
