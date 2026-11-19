@@ -1,6 +1,6 @@
 # Forward Deployed Engineer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-05-19
 
 A Forward Deployed Engineer (FDE) works with a client's team and takes a real problem all the way to working
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly

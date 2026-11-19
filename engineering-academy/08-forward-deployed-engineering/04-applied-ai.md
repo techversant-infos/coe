@@ -1,6 +1,6 @@
 # 04. Applied AI
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-05-19
 
 The core technical skill for most FDE work: AI features that work on the client's real data, and proof that they do.
 Back to the [roadmap](./README.md).

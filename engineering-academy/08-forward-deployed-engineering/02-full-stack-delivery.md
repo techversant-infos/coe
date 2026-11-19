@@ -1,6 +1,6 @@
 # 02. Full-Stack Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 FDEs deliver whole features, from the database to the screen. Back to the [roadmap](./README.md).
 

@@ -1,6 +1,6 @@
 # 05. AI-Assisted Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-05-19
 
 Coding agents help FDEs deliver faster on unfamiliar systems. Using them safely means knowing where they must stop.
 Back to the [roadmap](./README.md).

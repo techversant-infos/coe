@@ -1,6 +1,6 @@
 # FDE Readiness Assessment
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-05-19
 
 Use this assessment with the [Forward Deployed Engineer (FDE) roadmap](./README.md) to answer three questions:
 

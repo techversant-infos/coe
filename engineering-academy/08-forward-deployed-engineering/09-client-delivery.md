@@ -1,6 +1,6 @@
 # 09. Client Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 These skills decide whether good engineering turns into a result the client values. Most of the existing Techversant
 material sits in the ColdFusion consulting track, but the skills apply to any stack. Back to the [roadmap](./README.md).

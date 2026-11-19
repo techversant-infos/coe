@@ -1,6 +1,6 @@
 # 08. Production and Security
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-05-19
 
 The FDE has to show the client that an AI feature will not break, leak data or act beyond its authority.
 Back to the [roadmap](./README.md).
