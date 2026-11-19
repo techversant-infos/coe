@@ -1,6 +1,6 @@
 # Mobile Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
 
 A mobile developer builds the iOS and Android apps clients put in their users' hands. Each mobile path teaches one
 stack through the same ten stages, and the projects build a complete mobile client for the RealWorld blogging app.
@@ -12,7 +12,7 @@ Back to [Software Engineering](../README.md).
 |------|--------|
 | [React Native and Expo](./react-native-expo/README.md) | Draft |
 | [Flutter](./flutter/README.md) | Draft |
-| iOS: Swift and SwiftUI | Planned |
+| [iOS: Swift and SwiftUI](./ios-swiftui/README.md) | Draft |
 | Android: Kotlin and Jetpack Compose | Planned |
 
 ## Choosing a Path

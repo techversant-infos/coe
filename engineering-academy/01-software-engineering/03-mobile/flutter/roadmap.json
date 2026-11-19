@@ -113,7 +113,7 @@
         { "label": "Testing API calls", "core": true, "techversant": false },
         { "label": "Integration tests", "core": true, "techversant": false },
         { "label": "Accessibility testing", "core": true, "techversant": false },
-        { "label": "Testing in continuous integration", "core": false, "techversant": false }
+        { "label": "Testing in continuous integration", "core": true, "techversant": false }
       ]
     },
     {

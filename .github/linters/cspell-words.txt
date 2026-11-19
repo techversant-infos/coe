@@ -231,6 +231,7 @@ NVARCHAR
 Nygard
 oapi
 Ollama
+openurl
 ormsettings
 Orosz
 Ortus
@@ -303,6 +304,7 @@ setex
 shivammathur
 Shostack
 SHOWPLAN
+simctl
 siteurl
 slowapi
 springdoc
@@ -358,6 +360,9 @@ Wieruch
 wirebox
 workstreams
 WSGI
+xcconfig
+xcrun
+XCUI
 xlarge
 Xlog
 YGCT

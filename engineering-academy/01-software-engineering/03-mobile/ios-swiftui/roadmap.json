@@ -1,0 +1,133 @@
+{
+  "title": "iOS Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "iOS Platform and Design",
+      "page": "01-ios-platform-and-design.md",
+      "topics": [
+        { "label": "Apple's design rules", "core": true, "techversant": false },
+        { "label": "The app lifecycle", "core": true, "techversant": false },
+        { "label": "Mobile accessibility", "core": true, "techversant": false },
+        { "label": "Permissions and privacy", "core": true, "techversant": false },
+        { "label": "Mobile security basics", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Swift",
+      "page": "02-swift.md",
+      "topics": [
+        { "label": "Swift basics", "core": true, "techversant": false },
+        { "label": "Optionals", "core": true, "techversant": false },
+        { "label": "Error handling", "core": true, "techversant": false },
+        { "label": "Swift concurrency", "core": true, "techversant": false },
+        { "label": "Codable and JSON", "core": true, "techversant": false },
+        { "label": "Packages, testing and formatting", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "SwiftUI Fundamentals",
+      "page": "03-swiftui-fundamentals.md",
+      "topics": [
+        { "label": "Xcode, the Simulator and previews", "core": true, "techversant": false },
+        { "label": "Views and modifiers", "core": true, "techversant": false },
+        { "label": "Layout", "core": true, "techversant": false },
+        { "label": "Lists and loading data", "core": true, "techversant": false },
+        { "label": "Images, colours and dark mode", "core": true, "techversant": false },
+        { "label": "UIKit and existing apps", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "State and Data Flow",
+      "page": "04-state-and-data-flow.md",
+      "topics": [
+        { "label": "View state", "core": true, "techversant": false },
+        { "label": "Observable models", "core": true, "techversant": false },
+        { "label": "App architecture", "core": true, "techversant": false },
+        { "label": "Server data and caching", "core": true, "techversant": false },
+        { "label": "Other state approaches", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Navigation",
+      "page": "05-navigation.md",
+      "topics": [
+        { "label": "Navigation stacks", "core": true, "techversant": false },
+        { "label": "Tabs", "core": true, "techversant": false },
+        { "label": "Sheets and confirmation", "core": true, "techversant": false },
+        { "label": "Signed-in screens", "core": true, "techversant": false },
+        { "label": "Deep links", "core": true, "techversant": false },
+        { "label": "Universal links", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Forms and Input",
+      "page": "06-forms-and-input.md",
+      "topics": [
+        { "label": "Text fields", "core": true, "techversant": false },
+        { "label": "The keyboard and focus", "core": true, "techversant": false },
+        { "label": "Validation", "core": true, "techversant": false },
+        { "label": "Password AutoFill", "core": true, "techversant": false },
+        { "label": "Accessible forms", "core": true, "techversant": false },
+        { "label": "Pickers and other controls", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Working with APIs",
+      "page": "07-working-with-apis.md",
+      "topics": [
+        { "label": "Changing data", "core": true, "techversant": false },
+        { "label": "Handling API errors", "core": true, "techversant": false },
+        { "label": "Poor and missing networks", "core": true, "techversant": false },
+        { "label": "Tokens on the device", "core": true, "techversant": true },
+        { "label": "Rendering user content safely", "core": true, "techversant": true },
+        { "label": "Configuration and environments", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Device Features",
+      "page": "08-device-features.md",
+      "topics": [
+        { "label": "Apple frameworks and capabilities", "core": true, "techversant": false },
+        { "label": "Sharing and opening links", "core": true, "techversant": false },
+        { "label": "Offline reading", "core": true, "techversant": false },
+        { "label": "Notifications", "core": true, "techversant": false },
+        { "label": "Camera and photos", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Testing",
+      "page": "09-testing.md",
+      "topics": [
+        { "label": "Unit tests", "core": true, "techversant": true },
+        { "label": "Testing API calls", "core": true, "techversant": false },
+        { "label": "UI tests", "core": true, "techversant": false },
+        { "label": "Accessibility testing", "core": true, "techversant": false },
+        { "label": "Testing in continuous integration", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Performance and Release",
+      "page": "10-performance-and-release.md",
+      "topics": [
+        { "label": "Measuring performance", "core": true, "techversant": false },
+        { "label": "App size", "core": true, "techversant": false },
+        { "label": "Builds, schemes and signing", "core": true, "techversant": true },
+        { "label": "App Store requirements", "core": true, "techversant": false },
+        { "label": "Releasing updates", "core": true, "techversant": false },
+        { "label": "Crash reporting and security checks", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}
