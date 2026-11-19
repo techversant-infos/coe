@@ -4,7 +4,7 @@ Hard rules for Techversant Engineering Academy learning content. All content acr
 
 ## Techversant Alignment
 
-- All content maps to a discipline folder in `engineering-academy/` (`00-engineering-foundations` through `06-ai-engineering`)
+- All content maps to a discipline folder in `engineering-academy/` (`00-engineering-foundations` through `08-forward-deployed-engineering`)
 - Content is tagged with a competency level: **Foundation**, **Practitioner**, **Advanced**, or **Expert** (see `learning-levels/`)
 - Code examples must follow the relevant Techversant stack standard in `general/`, `php/`, `cf/`, `nodejs/`
 - Prerequisites must reference existing learning paths, not hypothetical ones

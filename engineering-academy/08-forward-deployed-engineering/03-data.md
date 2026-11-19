@@ -1,6 +1,6 @@
 # 03. Data
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Much FDE work starts with the client's data. If you cannot understand it and judge its quality, you cannot build on
 it or promise results. Back to the [roadmap](./README.md).

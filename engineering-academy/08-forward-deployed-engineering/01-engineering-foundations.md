@@ -1,6 +1,6 @@
 # 01. Engineering Foundations
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 This stage is the academy's [Engineering Foundations roadmap](../00-engineering-foundations/README.md), the shared
 baseline for every Techversant engineer. If you have already completed it, show the evidence in the project below
