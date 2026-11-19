@@ -1,6 +1,6 @@
 # 02. The Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Django gives you a structure, an object-relational mapper (ORM), an admin site and a way of doing common jobs. Django
 REST Framework (DRF) adds the tools for building APIs. This stage covers how a request travels through Django 6 and

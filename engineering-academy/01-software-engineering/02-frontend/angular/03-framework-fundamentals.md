@@ -1,6 +1,6 @@
 # 03. Framework Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Angular builds a page from components: TypeScript classes with a template that shows one part of the interface.
 This stage covers the core ideas you use in every Angular file, in Angular 22. Back to the [roadmap](./README.md).

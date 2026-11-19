@@ -1,6 +1,6 @@
 # 03. HTTP and REST APIs
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 An API is a contract: front ends, mobile apps and other systems rely on its URLs, fields and status codes staying
 the same. This stage covers designing endpoints well and returning exactly the shape the contract promises. Back to

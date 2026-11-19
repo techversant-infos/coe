@@ -1,6 +1,6 @@
 # 05. Navigation
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-05-12
 
 Mobile apps move between screens with stacks, tabs and the system back gesture. The `go_router` package, maintained by
 the Flutter team, gives every screen a path, which also makes deep links work. Back to the [roadmap](./README.md).

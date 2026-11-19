@@ -1,6 +1,6 @@
 # Practice System: RealWorld and the Growth Brief
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 The projects in the [Software Architect roadmap](./README.md) all design the same system: the open-source RealWorld
 blogging app, run for a fictional client with a year of growth ahead. Using one system means each project builds on

@@ -1,6 +1,6 @@
 # 02. Swift
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 Swift is the language of every Apple platform. It is safe by design: the compiler catches missing values, unhandled
 errors and data shared unsafely between tasks before the app runs. Back to the [roadmap](./README.md).

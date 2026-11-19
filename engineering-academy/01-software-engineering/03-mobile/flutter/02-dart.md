@@ -1,6 +1,6 @@
 # 02. Dart
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-02-12
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-12 · **Next review:** 2027-05-12
 
 Flutter apps are written in Dart, a typed language from Google with sound null safety. Solid Dart skills make every
 later stage easier, and the type system catches many mistakes before the app runs. Back to the

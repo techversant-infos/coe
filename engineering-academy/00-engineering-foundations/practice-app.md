@@ -1,6 +1,6 @@
 # Practice App: RealWorld
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 All the projects in the [Engineering Foundations roadmap](./README.md) use the same open-source app. You work in a
 stack close to your own, and the app's test suites check every change the same way for everyone.

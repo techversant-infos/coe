@@ -1,6 +1,6 @@
 # 03. Model Selection and Integration
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Choose a model and where it runs from the product's quality, privacy, latency and cost needs. Keep provider-specific
 code behind a small boundary, so the rest of the service does not change when the model does. Back to the

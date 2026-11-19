@@ -1,6 +1,6 @@
 # 06. APIs and Boundaries
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 APIs are where your code meets other code, other teams and the outside world. A consistent design makes them easy
 to use, and checking every input at the boundary keeps bad data out. Back to the [roadmap](./README.md).

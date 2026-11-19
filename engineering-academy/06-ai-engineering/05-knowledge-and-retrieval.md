@@ -1,6 +1,6 @@
 # 05. Knowledge and Retrieval
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Retrieval-augmented generation (RAG) means finding relevant passages in your own documents and giving them to the
 model as evidence. Treat preparing, searching and answering as separate parts, because each can fail on its own.

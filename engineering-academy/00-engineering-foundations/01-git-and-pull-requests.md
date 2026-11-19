@@ -1,6 +1,6 @@
 # 01. Git and Pull Requests
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Every change at Techversant moves through a branch and a reviewed pull request. Following one workflow means anyone
 can review, release or roll back your work. Back to the [roadmap](./README.md).

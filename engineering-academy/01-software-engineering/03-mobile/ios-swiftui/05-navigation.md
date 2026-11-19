@@ -1,6 +1,6 @@
 # 05. Navigation
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 iPhone apps move between screens with stacks, tabs and sheets, and users go back with a swipe from the left edge.
 SwiftUI drives navigation from data, which also makes deep links work. Back to the [roadmap](./README.md).

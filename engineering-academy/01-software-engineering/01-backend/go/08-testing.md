@@ -1,6 +1,6 @@
 # 08. Testing
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Tests let you change an API without fear of breaking the clients that depend on it. Go has testing built in: the
 `testing` package and `go test` cover unit tests, handler tests, benchmarks and fuzzing. Back to the

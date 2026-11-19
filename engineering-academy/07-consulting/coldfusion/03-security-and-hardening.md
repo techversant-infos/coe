@@ -1,6 +1,6 @@
 # 03. Security and Hardening
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 ColdFusion servers are a regular target. In July 2026, CVE-2026-48282, a ColdFusion path traversal flaw rated 10.0,
 the highest score, was added to CISA's Known Exploited Vulnerabilities catalog, the US government's list of flaws

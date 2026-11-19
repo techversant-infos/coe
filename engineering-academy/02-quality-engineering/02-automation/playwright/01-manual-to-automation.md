@@ -1,6 +1,6 @@
 # Manual Tester to Automation Engineer
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 > **Audience:** Manual testers with little or no automation experience.
 > **Length:** 8-10 weeks, around 5 hours/week.

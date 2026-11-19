@@ -1,6 +1,6 @@
 # 02. The Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Laravel gives you a structure, a set of tools and a way of doing common jobs, so every Techversant Laravel project
 feels familiar. This stage covers how a request travels through Laravel 13 and where your code fits. Back to the

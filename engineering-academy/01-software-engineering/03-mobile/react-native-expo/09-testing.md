@@ -1,6 +1,6 @@
 # 09. Testing
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 Tests let you change an app without fear of breaking it on a phone you do not own. A good mix has many fast
 component tests, some tests against a mocked API, and a few end-to-end flows that drive the real app. Back to the

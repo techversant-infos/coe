@@ -1,6 +1,6 @@
 # React and Next.js Developer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A React and Next.js developer at Techversant builds the front end of client web applications: the pages, forms and
 interactions people use every day. On most projects, React and Next.js are the front end for an API built by the

@@ -1,6 +1,6 @@
 # 10. Deployment and Operations
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 An API is finished when it runs reliably where clients can reach it, and the team knows when something goes wrong.
 This stage covers building, deploying and running a Spring Boot service in production. Back to the

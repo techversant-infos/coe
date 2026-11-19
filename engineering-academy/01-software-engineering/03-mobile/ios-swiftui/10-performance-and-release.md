@@ -1,6 +1,6 @@
 # 10. Performance and Release
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 An iPhone app is finished when it starts quickly, scrolls smoothly, and reaches users through the App Store with a
 safe way to fix problems. This stage covers performance, builds, App Store rules, updates and crash reporting. Back

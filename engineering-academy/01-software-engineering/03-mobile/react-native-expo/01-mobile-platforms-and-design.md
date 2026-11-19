@@ -1,6 +1,6 @@
 # 01. Mobile Platforms and Design
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 A mobile app runs on a small screen, on a battery, on a network that comes and goes, inside rules set by Apple and
 Google. This stage covers how the platforms work and how users expect apps to behave, before you write any code.

@@ -1,6 +1,6 @@
 # 04. State and Data Flow
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 As an app grows, deciding where each piece of state lives, and how it flows between components, becomes the main
 design question. Getting it right keeps components simple and bugs rare. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 09. Modernizing the Application
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Modernization does not always mean leaving CFML. Adding APIs, a modern interface and AI features can extend an
 application's life for years. Back to the [roadmap](./README.md).

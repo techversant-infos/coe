@@ -1,6 +1,6 @@
 # Practice App: BlogCFC5
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 BlogCFC5 is a real, older ColdFusion blogging application. The projects in the
 [Senior ColdFusion Consultant roadmap](../README.md) use it as a stand-in for a client system: you run it, assess it,

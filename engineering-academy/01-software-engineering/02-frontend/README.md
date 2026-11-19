@@ -1,6 +1,6 @@
 # Front-End Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A front-end developer builds the pages, forms and interactions people use in client applications. Each front-end
 path teaches one framework through the same ten stages, and the projects build a complete front end for the

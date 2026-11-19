@@ -1,6 +1,6 @@
 # 01. HTML, CSS and Accessibility
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Every Vue component ends up as HTML and CSS in the browser. Getting the markup right makes pages usable by
 everyone, including people using a keyboard or a screen reader, and makes everything later easier. Back to the

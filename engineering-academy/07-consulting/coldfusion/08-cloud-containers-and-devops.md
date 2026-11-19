@@ -1,6 +1,6 @@
 # 08. Cloud, Containers and DevOps
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Many CFML applications still run on hand-built Windows servers. Containers, automated pipelines and cloud hosting make
 them repeatable and easier to support. Back to the [roadmap](./README.md).

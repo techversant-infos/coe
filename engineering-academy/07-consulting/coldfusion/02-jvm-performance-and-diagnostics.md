@@ -1,6 +1,6 @@
 # 02. JVM, Performance and Diagnostics
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Every CFML engine runs on the Java Virtual Machine (JVM). Slow pages, crashes and memory problems are usually solved
 by reading JVM and database evidence, not by guessing at settings. Back to the [roadmap](./README.md).

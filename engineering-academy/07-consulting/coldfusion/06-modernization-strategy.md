@@ -1,6 +1,6 @@
 # 06. Modernization Strategy
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Every client eventually asks "should we migrate?" The right answer depends on their business, budget and team, not on
 what is fashionable. Back to the [roadmap](./README.md).

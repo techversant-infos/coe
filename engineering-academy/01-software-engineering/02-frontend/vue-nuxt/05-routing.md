@@ -1,6 +1,6 @@
 # 05. Routing
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Routing decides which page to show for each URL. Good URLs can be bookmarked, shared and opened in a new tab, and
 the browser's back button works as people expect. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 03. API and Integration Architecture
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 APIs and integrations are the contracts between parts of a system and between systems. Once other teams and clients
 depend on them, they are the hardest part to change. Back to the [roadmap](./README.md).

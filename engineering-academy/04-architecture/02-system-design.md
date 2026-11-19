@@ -1,6 +1,6 @@
 # 02. System Design
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 System design turns requirements and quality attributes into a structure: which parts the system has, how they
 talk, and how it grows. Back to the [roadmap](./README.md).

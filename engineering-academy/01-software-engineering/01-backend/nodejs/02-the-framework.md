@@ -1,6 +1,6 @@
 # 02. The Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Fastify gives a Node.js service its routing, request handling, validation and logging. This stage covers how a
 request travels through Fastify and how Techversant lays out a service around it. Back to the

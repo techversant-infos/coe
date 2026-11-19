@@ -1,6 +1,6 @@
 # 02. The Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 ASP.NET Core is the web framework of .NET. This stage covers how an ASP.NET Core 10 app starts, handles a request and
 wires your classes together. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 03. Framework Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Vue builds a page from components: single files that each hold the template, logic and styles for one part of the
 interface. This stage covers the core ideas you use in every Vue file. Back to the [roadmap](./README.md).

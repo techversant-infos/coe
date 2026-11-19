@@ -1,6 +1,6 @@
 # 03. Framework Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 React builds a page from components: small functions that each show one part of the interface. This stage covers
 the core ideas you use in every React file. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # Playwright Automation Learning Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 > **Objective:** Build automation engineers who can write, maintain, and improve Playwright automation with good test design.
 

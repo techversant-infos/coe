@@ -1,6 +1,6 @@
 # 06. Tools and Workflows
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 Give the model tools only when the product needs information or actions the model cannot provide itself. Application
 code stays in charge of checking, authorising and running every call. Back to the [roadmap](./README.md).

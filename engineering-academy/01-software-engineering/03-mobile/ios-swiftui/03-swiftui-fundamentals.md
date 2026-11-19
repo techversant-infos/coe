@@ -1,6 +1,6 @@
 # 03. SwiftUI Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-02-18
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-18 · **Next review:** 2027-05-18
 
 SwiftUI is Apple's framework for building interfaces in Swift. You describe what each screen shows for the current
 data, and SwiftUI updates the screen when the data changes. Back to the [roadmap](./README.md).

@@ -1,6 +1,6 @@
 # 05. Assessing Legacy Applications
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Most modernization engagements start with an assessment: a short, paid piece of work that tells the client what they
 have, what it costs them and what to do next. Back to the [roadmap](./README.md).

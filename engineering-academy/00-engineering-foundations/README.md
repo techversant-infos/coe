@@ -1,6 +1,6 @@
 # Engineering Foundations Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Engineering Foundations is the shared baseline for every Techversant engineer, in any stack. It covers the habits
 that make your work easy to review, safe to ship and easy for someone else to pick up: Git and pull requests, using

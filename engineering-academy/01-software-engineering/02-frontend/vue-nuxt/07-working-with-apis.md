@@ -1,6 +1,6 @@
 # 07. Working with APIs
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Almost every screen in a client project shows data from an API, or sends data to one. This stage covers loading
 data well, handling every error the API returns, and keeping the sign-in token safe. Back to the

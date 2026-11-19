@@ -1,6 +1,6 @@
 # 06. Authentication and Authorization
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Authentication checks who is calling the API. Authorization checks what they may do. Mistakes here expose client
 data, so this whole stage is Red Zone work: write the code by hand, and have a senior engineer review it. Back to the

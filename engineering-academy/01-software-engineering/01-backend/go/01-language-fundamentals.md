@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Go is a small language with a large standard library, and Go teams build most of a service with the standard library
 alone. Solid Go makes every later stage easier. Projects use the current release, Go 1.27; each Go release gets

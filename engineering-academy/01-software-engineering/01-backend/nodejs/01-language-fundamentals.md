@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Techversant writes Node.js services in TypeScript, with strict compiler settings. Solid TypeScript and a clear
 picture of how Node.js runs your code make every later stage easier. Projects use the current Node.js long-term

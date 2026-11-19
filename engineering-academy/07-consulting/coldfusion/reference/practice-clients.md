@@ -1,6 +1,6 @@
 # Practice Clients
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 Fictional clients for practicing consulting work. The projects in stages 06 and 10 of the
 [Senior ColdFusion Consultant roadmap](../README.md) use them. The companies, people and numbers are invented.

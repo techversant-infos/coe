@@ -1,6 +1,6 @@
 # ColdFusion Deep Expertise: Detailed Guide
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
 
 > A practical companion to the [Senior ColdFusion Consultant roadmap](../README.md), mainly stages 02, 03, 08 and 09.
 > It uses one e-learning application to explain what each ColdFusion feature does, why it exists, and which problem

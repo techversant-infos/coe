@@ -1,6 +1,6 @@
 # 08. AI-Enabled Systems
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 More client systems now include features built on large language models (LLMs). An architect decides where AI fits,
 how it is fed data, how its quality is measured and what it costs. Back to the [roadmap](./README.md).

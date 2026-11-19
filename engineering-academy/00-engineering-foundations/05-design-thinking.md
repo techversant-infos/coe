@@ -1,6 +1,6 @@
 # 05. Design Thinking
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 The most expensive mistakes happen before any code is written: solving the wrong problem, or picking a design
 without knowing what it gives up. This stage covers thinking a change through first. Back to the

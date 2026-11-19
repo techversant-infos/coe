@@ -1,6 +1,6 @@
 # 02. Working with AI Tools
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 AI coding assistants such as Claude Code, Codex, Cursor and Copilot can save hours, but you stay accountable for
 every line you commit. This stage covers Techversant's rules for using them well and safely. Back to the

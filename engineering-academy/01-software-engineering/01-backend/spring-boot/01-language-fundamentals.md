@@ -1,6 +1,6 @@
 # 01. Language Fundamentals
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Spring Boot is Java, and modern Java is far shorter and clearer than the Java many people remember. Solid Java makes
 every Spring feature easier to understand. Projects use the current long-term support (LTS) release, Java 25. Back to

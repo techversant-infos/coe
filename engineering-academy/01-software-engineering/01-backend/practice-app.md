@@ -1,6 +1,6 @@
 # Practice App: A RealWorld API
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 Every back-end path in the academy builds the same app: the API for **RealWorld**, an open-source Medium-style
 blogging app also called Conduit. You build it stage by stage in your stack, and RealWorld's own API tests check it

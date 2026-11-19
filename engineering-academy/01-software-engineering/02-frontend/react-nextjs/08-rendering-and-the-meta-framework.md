@@ -1,6 +1,6 @@
 # 08. Rendering and the Meta-Framework
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 React shows the interface; a meta-framework adds routing, server rendering, data loading and a production server
 around it. React's documentation recommends starting new apps with a framework, and Next.js is the one Techversant

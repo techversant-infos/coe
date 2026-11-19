@@ -1,6 +1,6 @@
 # Back-End Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A back-end developer builds the APIs, data and background work behind client applications. Each back-end path
 teaches one stack through the same ten stages, and the projects build a complete API for the RealWorld blogging app.

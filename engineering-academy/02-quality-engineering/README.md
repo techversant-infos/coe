@@ -1,6 +1,6 @@
 # Quality Engineering
 
-**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Active · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 This section contains QA and test automation learning paths.
 

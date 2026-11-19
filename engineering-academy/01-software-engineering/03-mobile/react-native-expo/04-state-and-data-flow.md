@@ -1,6 +1,6 @@
 # 04. State and Data Flow
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-02-11
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-11 · **Next review:** 2027-05-11
 
 State is the data an app remembers, such as the selected feed or the signed-in user. Deciding where each piece of
 state lives keeps an app simple to change. Back to the [roadmap](./README.md).

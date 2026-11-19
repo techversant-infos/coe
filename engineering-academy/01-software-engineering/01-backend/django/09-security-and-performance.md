@@ -1,6 +1,6 @@
 # 09. Security and Performance
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-02-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
 
 A working API is not finished until it is safe and fast under real use. This stage covers the security checks every
 Techversant API passes, and finding and fixing what makes it slow. Back to the [roadmap](./README.md).

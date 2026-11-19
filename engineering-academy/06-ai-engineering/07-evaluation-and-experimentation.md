@@ -1,6 +1,6 @@
 # 07. Evaluation and Experimentation
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-05-09
 
 An AI feature needs a repeatable way to notice when its behaviour changes. Evaluate each part and the whole task, and
 use human review to interpret failures. No single score proves a system is correct or safe. Back to the
