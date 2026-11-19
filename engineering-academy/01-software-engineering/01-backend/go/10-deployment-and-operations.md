@@ -33,7 +33,7 @@ Go builds a single binary, so a Go image can hold little more than the program i
 
 **Resources:**
 
-- [Go language guide](https://docs.docker.com/guides/golang/), Docker documentation
+- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/), Docker documentation
 - [Distroless images](https://github.com/GoogleContainerTools/distroless)
 - [Containers and orchestration](../../../../security/audit/security-audit-reference.md#45-containers-and-orchestration),
   in the Techversant security audit reference
