@@ -1,6 +1,6 @@
 # 05. AI-Assisted Delivery
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 Coding agents help FDEs deliver faster on unfamiliar systems. Using them safely means knowing where they must stop.
 Back to the [roadmap](./README.md).
@@ -11,7 +11,8 @@ Coding agents such as Claude Code, Cursor and Copilot read code, make changes an
 
 **What to learn:**
 
-- Which tool fits which task, and [the tools Techversant approves](../../ai/guides/ai-team-best-practices.md#2-tool-selection-standards)
+- Which tool fits which task, and
+  [the tools Techversant approves](../../ai/guides/ai-team-best-practices.md#2-tool-selection-standards)
 - Giving an agent a clear task, context and a way to check its work
 - Managing sessions, context and cost
 
@@ -92,7 +93,8 @@ A working prototype in hours lets the client react to something real instead of 
 
 **Brief:** Use an approved coding agent to add two features to the service request tracker from stage 02: closing
 several requests at once, and an "overdue" filter. Neither needs any sign-in code. If a feature needs a database
-migration, write it yourself: the agent may not touch the migrations folder. Set up the guardrails first.
+migration, write it yourself: the agent may not touch the migrations folder. Set up the guardrails first. Use the
+[practice environment](./README.md#practice-environment) your lead arranged.
 
 **Size:** 1–2 days
 

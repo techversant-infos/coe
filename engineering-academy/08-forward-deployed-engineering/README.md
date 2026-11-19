@@ -1,6 +1,6 @@
 # Forward Deployed Engineer Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 A Forward Deployed Engineer (FDE) works with a client's team and takes a real problem all the way to working
 software in production. FDEs write code, build AI features, connect systems they did not build, and work directly
@@ -8,10 +8,10 @@ with the client's people.
 
 - **Who it is for:** senior developers, lead developers, software architects and AI engineers who want to work
   directly with clients.
-- **Before you start:** working software engineering skills and some client project experience. Use the
-  [entry diagnostic](#entry-diagnostic) to choose your starting point. Stage 01 is the
-  [Engineering Foundations](../00-engineering-foundations/README.md) course; if you have completed it, show the
-  evidence and move on.
+- **Before you start:** working software engineering skills and some client project experience. Use the [FDE readiness
+  assessment](./readiness-assessment.md) to check whether you are ready, choose your starting point and estimate how
+  long the path will take. Stage 01 is the [Engineering Foundations](../00-engineering-foundations/README.md) course; if
+  you have completed it, show the evidence and move on.
 - **What you do:** nine stages, each with a short guide to every topic and one hands-on project.
 
 ## Why It Matters
@@ -69,7 +69,7 @@ How an FDE differs from the roles you may hold at Techversant today:
 
 | FDE role label | Academy learning level | What the FDE does | Evidence |
 |----------------|------------------------|-------------------|----------|
-| FDE Practitioner | Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | All stage projects verified, plus shipped work on a real engagement; can explain the domain and workflow learned |
+| FDE Practitioner | Practitioner | Delivers parts of an engagement, with a lead reviewing the key decisions | The three milestones in [Reaching FDE Practitioner](#reaching-fde-practitioner): coursework, a supervised placement with shipped work and an adoption measure, and level sign-off; can explain the domain and workflow learned |
 | FDE Lead | Advanced | Leads an engagement end to end: scope, build, production, handover | An engagement record: scope, evaluation results including post-launch follow-up, handover, client feedback and domain-specific trade-offs |
 | FDE Expert | Expert | Turns field work into reusable patterns and standards, and coaches other FDEs | Patterns used by other engagements; people coached; field evidence informs reusable practices and future delivery |
 
@@ -84,23 +84,41 @@ Progression is based on demonstrated scope and independence, not time served. Pr
 with review; FDE Leads make and explain end-to-end engagement decisions; Experts show that their learning improves
 more than one engagement. Use the evidence in each stage project to support the level discussion with your lead.
 
+## Reaching FDE Practitioner
+
+FDE Practitioner has three separate milestones. Track each one on its own, because only the first depends on you
+alone.
+
+1. **Coursework:** all nine stage projects verified, and the [capstone](#capstone) signed off by your lead.
+2. **Supervised placement:** your lead is the placement owner and agrees a place on a real engagement with that
+   engagement's FDE Lead. You deliver assigned parts, and the FDE Lead reviews the key decisions. The placement counts
+   when work you built is running in the client's production, with a named client owner, and you report one
+   adoption measure a month after launch, such as how many people use it or how many tickets it handles.
+3. **Level sign-off:** your manager and mentor sign off the level, as the
+   [learning levels](../learning-levels/README.md) describe. The FDE Lead from your placement confirms the shipped
+   work and the adoption measure in writing.
+
+While you wait for a placement, keep your project results running, support an engagement in a role without direct
+client ownership, and apply the stage topics on your current project. Your lead reviews placement options with you
+every month.
+
 ## Entry Diagnostic
 
 This roadmap is designed for engineers moving into customer-facing delivery, not as a first programming course.
-Before starting, rate each capability from 0 to 3: 0 not started, 1 can follow a tutorial, 2 can build independently,
-3 can debug and explain trade-offs. Link one piece of evidence for every score of 2 or 3.
+Before starting, check the five entry checks below with evidence. The
+[FDE readiness assessment](./readiness-assessment.md) uses the same checks, lists the accepted equivalents, and gives
+one readiness result for every combination.
 
-| Capability | Ready-to-start evidence | If not ready |
-|------------|-------------------------|--------------|
-| Programming and debugging | Can make and explain a small change without following a walkthrough | Complete the relevant language path in [Engineering Foundations](../00-engineering-foundations/README.md) or the software engineering academy |
-| Git, tests and code review | Can submit a tested change and respond to review | Complete the Git, testing and review foundations first |
-| APIs and data | Can build or extend an API and query a relational database | Complete the relevant backend and data foundations first |
-| Production delivery | Has contributed to a deployed service or can show equivalent cloud and operations work | Start with stages 07 and 08 alongside a lead before owning a client deployment |
-| Client work | Has participated in a client project or can demonstrate stakeholder communication and delivery evidence | Pair with an experienced FDE on an engagement before taking independent client ownership |
+| Entry check | Ready-to-start evidence | If not ready |
+|-------------|-------------------------|--------------|
+| Programming and debugging | Can make and explain a small change in an unfamiliar code base without a walkthrough | Complete the relevant language path in [Engineering Foundations](../00-engineering-foundations/README.md) or the software engineering academy |
+| Git, tests and code review | Has submitted tested changes through pull requests and acted on review comments | Complete the Git, testing and review foundations first |
+| APIs and data | Has built or extended an API and written SQL against a relational database | Complete the relevant back-end and data foundations first |
+| Production delivery | Has helped deploy, monitor or fix a service that real users depend on | Take the stages in order, and shadow a production release and an incident review during stages 07 and 08 before owning a client deployment |
+| Client work | Has taken part in a client project, or an internal project with a stakeholder outside the team | Pair with an experienced FDE on an engagement before taking independent client ownership |
 
-You do not need to score 3 in every area. Agree gaps and a starting stage with your lead; use verified work evidence
-to test out of topics you already know. A learner without software engineering foundations should complete those
-first, then return to this roadmap.
+A learner without software engineering foundations should complete those first, then return to this roadmap. Agree
+gaps and a starting stage with your lead; use verified work evidence to test out of topics you already know.
 
 ## Where You Start
 
@@ -119,7 +137,8 @@ time.
 | [08. Production and Security](./08-production-and-security.md) | Partly | Partly | Partly | Partly |
 | [09. Client Delivery](./09-client-delivery.md) | New | Partly | Partly | New |
 
-- **Already do:** you do this in your current role. Show your lead the evidence for the project, then move on.
+- **Already do:** you do this in your current role. Show your lead the evidence for the project, then move on. If a
+  later stage builds on the project, you still need its result; see [Project Dependencies](#project-dependencies).
 - **Partly:** you know some of the topics. Read the stage page and learn the rest.
 - **New:** start at the beginning of the stage and plan the most time here.
 
@@ -137,7 +156,8 @@ What each role brings:
 
 ## The Roadmap
 
-![Forward Deployed Engineer roadmap: nine stages from Engineering Foundations to Client Delivery, each with its topics](./roadmap.svg)
+![Forward Deployed Engineer roadmap: nine stages from Engineering Foundations to Client Delivery, each with its
+topics](./roadmap.svg)
 
 - Work from top to bottom. Each stage page explains every topic and ends with a project.
 - **Solid boxes** are core topics. **Dashed boxes** are optional and depend on the client.
@@ -161,8 +181,35 @@ counts.
 | [08. Production and Security](./08-production-and-security.md) | [Harden the assistant for production](./08-production-and-security.md#project-harden-the-assistant-for-production) |
 | [09. Client Delivery](./09-client-delivery.md) | [Run a mock engagement](./09-client-delivery.md#project-run-a-mock-engagement) |
 
-The projects build on each other. The tracker from stage 02 is extended in stages 05 and 06 and deployed in stage 07. The
-assistant from stage 04 is connected, deployed and hardened in stages 06–08. Both are used in the mock engagement.
+## Project Dependencies
+
+The projects build on each other. If you test out of a stage, you still need the result a later stage builds on. Get
+it in one of two ways: complete the stage project, or bring an equivalent your lead approves in writing before the
+later stage starts.
+
+| Project result | Built in | Used in | An approved equivalent must have |
+|----------------|----------|---------|----------------------------------|
+| Service request tracker | 02 | 05, 06, 07, 09 | A web front end, an API with tests, a relational database with migrations, and requests that can be created, filtered and closed. Stage 02 uses Next.js, Node.js with TypeScript and PostgreSQL; another stack needs your lead's approval |
+| Standards assistant and its evaluation set | 04 | 06, 07, 08, 09 | Retrieval over documents, cited answers, declines for questions the documents do not cover, and an evaluation set with a one-command run |
+| Ticketing integration | 06 | 07, 08, 09 | Webhook intake, an approval step before anything is posted, sign-in through an identity provider, and a read-only tool for ticket history |
+| Deployed services and runbook | 07 | 08, 09 | Both services running in the practice environment through a pipeline, with logs, an alert and a runbook someone else has used |
+
+Evidence for an earlier stage, such as an API in Python, can show the skill without being the result a later stage
+needs. Agree with your lead which you are showing.
+
+## Practice Environment
+
+The projects need real tools, but never real client or personal data. Before you start stage 05, your lead arranges
+the following and names who provides each one:
+
+- A repository in the Techversant GitHub organisation, with branch protection, for stages 05 to 09
+- An approved AI provider account and an approved coding agent, each with a monthly spend limit
+- A sandbox cloud account for stages 07 to 09, with a monthly spend limit and a budget alert
+- Keycloak in Docker and a mock ticketing service, or an approved vendor sandbox, for stage 06
+- A named senior engineer to review the Red Zone work in stage 06 and the release set-up in stage 08
+
+Use only synthetic test data, such as generated names, email addresses and tickets. If an exercise needs anything
+beyond this list, agree it with your lead first.
 
 ## Capstone
 
@@ -173,17 +220,19 @@ The nine verified projects form your capstone portfolio. Present it to your lead
 3. Walk through the mock engagement: the scope, the result against the agreed measure and the handover.
 4. Explain one thing you rejected from an AI tool and why.
 
-Your lead signs off the capstone when every verification item is checked and all four parts are covered. Together
-with shipped work on a real engagement, this is the evidence for the Practitioner level.
+Your lead signs off the capstone when every verification item is checked and all four parts are covered. This
+completes the coursework milestone in [Reaching FDE Practitioner](#reaching-fde-practitioner).
 
 ## How to Use It
 
 1. Find your column in [Where You Start](#where-you-start).
-2. Rate yourself on each topic: 0 not started, 1 aware, 2 can do it with help, 3 can do it alone.
+2. Complete the [FDE readiness assessment](./readiness-assessment.md), which rates each stage from 0 to 3: 0 not
+   started, 1 aware, 2 can do it with help, 3 can do it alone.
 3. Agree two or three gaps with your lead, and close them on real work where possible.
 4. Complete the projects for the stages you are working on.
 5. Review your ratings with your lead every quarter.
-6. Revisit the entry diagnostic when your responsibilities change; ratings should reflect new evidence, not elapsed time.
+6. Retake the readiness assessment when your responsibilities change; ratings should reflect new evidence, not
+   elapsed time.
 
 ## Glossary
 
@@ -196,4 +245,5 @@ with shipped work on a real engagement, this is the evidence for the Practitione
 | Day 2 operations | Industry term for running a system after launch. See [Incidents and maintenance](./07-cloud-and-operations.md#incidents-and-maintenance). |
 | UAT | User acceptance testing: the client's users confirm the solution does the job |
 | Handover | Transferring ownership so the client's team can run, change and roll back the solution |
+| Placement | Time on a real engagement, supervised by an FDE Lead, that provides the shipped work for FDE Practitioner |
 | Red Zone | Work Techversant never delegates to AI. See [section 2.2 of the AI Era Coding Guidelines](../../standards/general/ai-era-coding-guidelines.md#22-red-zone-manual-only). |

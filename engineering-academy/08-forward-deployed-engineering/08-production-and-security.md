@@ -1,6 +1,6 @@
 # 08. Production and Security
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 The FDE has to show the client that an AI feature will not break, leak data or act beyond its authority.
 Back to the [roadmap](./README.md).
@@ -38,19 +38,23 @@ Plan for the model being wrong, slow or unavailable.
 
 ## Tracing AI requests
 
-Record each AI request so you can explain a bad answer: the prompt, the retrieved context, the tool calls, tokens and
-time.
+Record each AI request so you can explain a bad answer. Record metadata by default: the model, the prompt version,
+which passages were retrieved, the tool calls, tokens and time. Capture the full prompt and response text only when
+an approved exercise needs it.
 
 **What to learn:**
 
 - Tracing model and tool calls alongside normal application traces
-- Keeping personal data out of traces
+- Recording metadata by default, and capturing prompt and response text only with approval, synthetic data,
+  restricted access and a set retention period
+- Keeping personal data out of traces and logs
 - Using traces to find whether a failure came from retrieval, the prompt or the model
 
-**Resources:** [OpenTelemetry semantic conventions for generative AI](https://github.com/open-telemetry/semantic-conventions-genai).
+**Resources:**
+[OpenTelemetry semantic conventions for generative AI](https://github.com/open-telemetry/semantic-conventions-genai).
 These conventions are still changing, so check the current version before you build.
 
-**Level:** Advanced · Optional
+**Level:** Practitioner · Core
 
 ## Cost and latency
 
@@ -131,20 +135,30 @@ resist attacks and stay within budget.
 **Verification**, checked by a senior engineer:
 
 - [ ] The evaluation runs in CI, and weakening the prompt on purpose makes the build fail
-- [ ] Written release thresholds cover quality, safety, latency and cost; a reviewer can identify who approves a release and who can pause or roll it back
-- [ ] A post-launch review uses a small stream of synthetic or approved, privacy-safe cases to find failures; each finding is triaged, and at least one reviewed failure or edge case is added to the evaluation set
+- [ ] Written release thresholds cover quality, safety, latency and cost, using the stage 04 scoring rules; a
+  reviewer can identify who approves a release and who can pause or roll it back
+- [ ] Quality is measured on a release set of at least 20 questions written by someone else and never used while
+  building or tuning; a result below any threshold holds the release until a fix passes a rerun
+- [ ] A post-launch review uses a small stream of synthetic or approved, privacy-safe cases to find failures; each
+  finding is triaged, and at least one reviewed failure or edge case is added to the evaluation set
 - [ ] A model, provider, prompt, tool, data or workflow change triggers the evaluation; the report records what
   changed and the decision to release, hold or roll back
 - [ ] When the model times out or returns an error, the user sees a clear message and the ticket goes to a person
 - [ ] Ten prompt-injection test cases, with hidden instructions inside documents and tickets: the assistant follows
   none of them and reveals no instructions or data
-- [ ] Traces show the prompt, retrieved passages, tool calls, tokens and response time. Test tickets contain seeded
-  synthetic names and email addresses, and searching the traces for those exact values finds nothing
+- [ ] Traces record metadata by default: the model, prompt version, retrieved passage IDs, tool calls, tokens and
+  response time. Prompt and response text is captured only in the practice environment, with synthetic data,
+  restricted access and a set retention period
+- [ ] Test tickets contain seeded synthetic names, email addresses and phone numbers, and searching the metadata traces
+  and logs for those values finds nothing; the privacy note lists other personal data that could still leak and how
+  it is handled
 - [ ] A cost estimate for 10,000 requests a month, checked against the measured cost of 100 requests
-- [ ] Every release-blocking **(B)** item in the [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
+- [ ] Every release-blocking **(B)** item in the
+  [Security Audit Checklist](../../security/audit/security-audit-checklist.md)
   is done, or not applicable with a written reason. Other items and the
   [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) are done, not applicable with a reason,
   or open with an owner
 - [ ] A one-page privacy note: which personal data is processed, where it is stored and which provider processes it
 
-Previous: [07. Cloud and Operations](./07-cloud-and-operations.md) · Next: [09. Client Delivery](./09-client-delivery.md)
+Previous: [07. Cloud and Operations](./07-cloud-and-operations.md) · Next:
+[09. Client Delivery](./09-client-delivery.md)

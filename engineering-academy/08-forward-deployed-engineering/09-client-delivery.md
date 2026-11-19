@@ -15,7 +15,8 @@ Find the real problem behind the request before building anything.
 - Watching the work being done
 - Asking the questions that change the design, and writing down the answers
 
-**Resources:** [Discovery Workshop Questionnaire](../07-consulting/coldfusion/deliverables/discovery-workshop-questionnaire.md)
+**Resources:**
+[Discovery Workshop Questionnaire](../07-consulting/coldfusion/deliverables/discovery-workshop-questionnaire.md)
 
 **Level:** Practitioner · Core
 
@@ -91,7 +92,8 @@ Show progress on the client's terms: their data, their workflow, their success m
 - Reporting results against the agreed measure, including what did not work
 - Adjusting the message for executives, managers and users
 
-**Resources:** [Client Communication Guide: explaining technical findings](../07-consulting/coldfusion/deliverables/client-communication-guide.md#explaining-technical-findings)
+**Resources:**
+[Client Communication Guide: explaining technical findings](../07-consulting/coldfusion/deliverables/client-communication-guide.md#explaining-technical-findings)
 
 **Level:** Practitioner · Core
 
@@ -148,8 +150,10 @@ part-time engagement using what you built in the earlier projects.
 **Verification**, checked by the colleague playing the client and your lead:
 
 - [ ] Discovery notes from at least two stakeholder interviews, with the real problem stated in one sentence
-- [ ] A domain brief records the workflow, roles, key terms, exceptions, governing constraints and open assumptions; a client-side domain expert reviews it
-- [ ] The brief identifies one design or evaluation decision changed by domain learning, with the evidence and reviewer recorded
+- [ ] A domain brief records the workflow, roles, key terms, exceptions, governing constraints and open assumptions; a
+  client-side domain expert reviews it
+- [ ] The brief identifies one design or evaluation decision changed by domain learning, with the evidence and reviewer
+  recorded
 - [ ] A one-page scope: a measurable result with a baseline, an out-of-scope list and an estimate as a range, agreed
   in writing by the "client"
 - [ ] Weekly status updates covering done, next, risks and decisions needed

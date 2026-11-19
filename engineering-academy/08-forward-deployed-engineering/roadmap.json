@@ -105,7 +105,7 @@
       "topics": [
         { "label": "Evaluation in CI and production", "core": true, "techversant": false },
         { "label": "Guardrails and fallbacks", "core": true, "techversant": false },
-        { "label": "Tracing AI requests", "core": false, "techversant": false },
+        { "label": "Tracing AI requests", "core": true, "techversant": false },
         { "label": "Cost and latency", "core": true, "techversant": false },
         { "label": "AI security", "core": true, "techversant": true },
         { "label": "Application security", "core": true, "techversant": true },
@@ -118,6 +118,7 @@
       "page": "09-client-delivery.md",
       "topics": [
         { "label": "Discovery", "core": true, "techversant": true },
+        { "label": "Domain learning", "core": true, "techversant": false },
         { "label": "Scoping and estimation", "core": true, "techversant": true },
         { "label": "Stakeholder management", "core": true, "techversant": true },
         { "label": "Status updates and technical writing", "core": true, "techversant": true },

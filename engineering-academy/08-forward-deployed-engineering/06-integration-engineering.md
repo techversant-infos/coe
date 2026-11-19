@@ -1,6 +1,6 @@
 # 06. Integration Engineering
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-02-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 The solution has to work inside the client's systems, not next to them. Back to the [roadmap](./README.md).
 
@@ -98,6 +98,7 @@ ticket history through a read-only MCP tool you build. Users sign in with OpenID
 [Keycloak running in Docker](https://www.keycloak.org/getting-started/getting-started-docker), standing in for the
 client's identity provider.
 
+Use the [practice environment](./README.md#practice-environment) your lead arranged, with synthetic tickets only.
 Sign-in and the approval permission check are Red Zone work: use a well-known OpenID Connect library, write both by
 hand without AI generation, and have a senior engineer review them.
 
@@ -115,4 +116,5 @@ hand without AI generation, and have a senior engineer review them.
   lead before you connect anything
 - [ ] Integration tests cover the duplicate, outage and rejected-draft cases
 
-Previous: [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) · Next: [07. Cloud and Operations](./07-cloud-and-operations.md)
+Previous: [05. AI-Assisted Delivery](./05-ai-assisted-delivery.md) · Next:
+[07. Cloud and Operations](./07-cloud-and-operations.md)

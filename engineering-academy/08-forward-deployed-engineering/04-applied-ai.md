@@ -1,6 +1,6 @@
 # 04. Applied AI
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 The core technical skill for most FDE work: AI features that work on the client's real data, and proof that they do.
 Back to the [roadmap](./README.md).
@@ -17,7 +17,8 @@ You do not need to train models, but you need to know how they behave so you can
 
 **Resources:**
 
-- [AI Engineering Roadmap](../06-ai-engineering/README.md) for deeper practice in retrieval, evaluation, safety and operations
+- [AI Engineering Roadmap](../06-ai-engineering/README.md) for deeper practice in retrieval, evaluation, safety and
+  operations
 - [Hugging Face LLM course](https://huggingface.co/learn/llm-course/chapter1/1)
 - [Claude models overview](https://platform.claude.com/docs/en/models/overview)
 
@@ -112,7 +113,8 @@ feature works, and how you notice when it stops working.
 - Scoring results against the success measure agreed in the scope
 - Reporting failures honestly, with what they mean for the client
 
-**Resources:** [Claude guide: define success and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
+**Resources:**
+[Claude guide: define success and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
 
 **Level:** Practitioner · Core
 
@@ -127,14 +129,18 @@ TypeScript. Write the success measure before you build anything.
 
 **Verification**, checked by your lead:
 
-- [ ] A success measure agreed with your lead before building, for example "80% of answers correct and every
-  out-of-scope question declined"
+- [ ] A success measure agreed with your lead before building, for example "80% of covered questions answered
+  correctly with a supporting citation, and every out-of-scope question declined"
 - [ ] An evaluation set of at least 30 questions with expected answers, including 5 the documents do not cover and 5
   hard questions written by someone else
-- [ ] One command runs the evaluation and prints the score
-- [ ] Every answer cites the document and section it used
+- [ ] One command runs the evaluation and prints the score, using written scoring rules: an answer is correct only
+  when it is right and its citation supports it; declining a question the documents do not cover is correct;
+  answering it, or declining a covered question, is wrong
+- [ ] Every answered question cites the document and section it used; a decline cites nothing
 - [ ] A one-page report: the score against the success measure, three failures with their cause (retrieval, prompt or
   model) and the cost per 1,000 questions
+- [ ] If the score misses the success measure, the report names the change you made and shows a rerun; this set is
+  for development, and stage 08 adds a separate release set
 - [ ] The AI provider is named in the README and approved by your lead before you build, and no personal or client
   data goes into prompts
 

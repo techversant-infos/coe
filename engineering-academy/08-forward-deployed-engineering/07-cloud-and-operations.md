@@ -1,6 +1,6 @@
 # 07. Cloud and Operations
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-09 · **Next review:** 2027-02-09
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-19 · **Next review:** 2027-02-19
 
 FDEs deploy into whatever the client runs, and keep it running after launch. This stage is where a working
 prototype becomes something the client can rely on every day. Back to the [roadmap](./README.md).
@@ -132,7 +132,8 @@ The work of running a system after launch, for as long as it exists.
 ## Project: Deploy, Break and Recover
 
 **Brief:** Deploy the service request tracker and the standards assistant to one cloud platform, then run a "game
-day": a colleague breaks something on purpose and you restore the service.
+day": a colleague breaks something on purpose and you restore the service. Use the sandbox cloud account in the
+[practice environment](./README.md#practice-environment), and stay within its spend limit.
 
 **Size:** 3–4 days
 
@@ -149,4 +150,5 @@ day": a colleague breaks something on purpose and you restore the service.
 - [ ] You write a blameless incident review within one working day
 - [ ] Optional: the infrastructure is defined in Terraform, and `terraform plan` shows no changes after `apply`
 
-Previous: [06. Integration Engineering](./06-integration-engineering.md) · Next: [08. Production and Security](./08-production-and-security.md)
+Previous: [06. Integration Engineering](./06-integration-engineering.md) · Next:
+[08. Production and Security](./08-production-and-security.md)
