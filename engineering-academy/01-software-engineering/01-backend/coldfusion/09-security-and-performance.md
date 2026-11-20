@@ -44,8 +44,7 @@ down before the application faces the internet.
 **Resources:**
 
 - [Lockdown guide](https://docs.lucee.org/guides/deploying-lucee-server-apps/lockdown-guide.html), Lucee documentation
-- [ColdFusion 2025 lockdown guide](https://www.adobe.com/cc-shared/assets/pdf/products/coldfusion-family/coldfusion-2025-lockdown-guide-1-1.pdf),
-  Adobe
+- [CFDocs security page](https://cfdocs.org/security), which links the Adobe ColdFusion lockdown guide for each version
 - [Server lockdown](../../../07-consulting/coldfusion/03-security-and-hardening.md#server-lockdown), in the Senior
   ColdFusion Consultant roadmap
 - [Application and server hardening](../../../../security/audit/security-audit-reference.md#41-application-and-server-hardening),
