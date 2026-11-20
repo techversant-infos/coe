@@ -100,11 +100,13 @@ when your change alters behaviour you did not mean to touch.
 ## Project: Pass the Full Test Suite
 
 **Brief:** Get every RealWorld API test passing, add your own TestBox tests for every endpoint, and run everything in
-continuous integration on each pull request. Then take over the older archive page below, written before the API
-straight against the same database. Run it from its own folder with its own `Application.cfc` and datasource, and
-change the table and column names to match your schema. Write characterisation tests for what it does today, then
-make the change the client asked for: an optional `tag` filter. Fix the injection and encoding problems you find on
-the way, without changing the output for valid input.
+continuous integration on each pull request. Then take over the older archive page below, which queries the article
+database directly. Use a separate local practice folder outside the API checkout, web root and build context. Give it
+its own `Application.cfc` and a datasource that points to a disposable copy of the schema with synthetic records.
+Keep both versions of `archive.cfm` out of the API repository and its deployment image.
+
+Match the table and column names to your local schema. Write characterisation tests before adding the optional
+`tag` filter. Fix the injection and encoding problems while preserving the output for valid input.
 
 ```cfm
 <!--- archive.cfm: lists the articles for one month --->
@@ -147,6 +149,8 @@ the way, without changing the output for valid input.
 - [ ] `?tag=` limits the archive to that tag, and the page works as before without it
 - [ ] The month and tag are checked and bound as parameters, every value on the page is encoded, and the pull
   request lists each problem found and how it was fixed
+- [ ] The archive runs only in the isolated local setup. The pull request records the test results without adding
+  either version of `archive.cfm` to the API repository.
 
 Previous: [07. Background Jobs and Caching](./07-background-jobs-and-caching.md) · Next:
 [09. Security and Performance](./09-security-and-performance.md)

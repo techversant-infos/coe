@@ -129,6 +129,7 @@ Divio
 djangorestframework
 Dockerfiles
 Dockerizing
+dotenv
 docstrings
 DPDP
 EACCES

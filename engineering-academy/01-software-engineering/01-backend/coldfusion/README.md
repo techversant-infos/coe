@@ -5,7 +5,7 @@
 A ColdFusion developer at Techversant builds and maintains the back end of client applications written in CFML
 (ColdFusion Markup Language). Some projects are new APIs built with the ColdBox framework; many are long-running
 applications that need careful changes, upgrades and fixes. Practice uses Lucee 7.1, the long-term support release, and
-ColdBox 8; stage 10 checks the result on Adobe ColdFusion 2025.
+ColdBox 8.2 or later in the 8.x series. Stage 10 checks the result on Adobe ColdFusion 2025.
 
 - **Who it is for:** new joiners, front-end developers moving to the back end, back-end developers coming from
   another stack, and developers who already maintain CFML code but want modern practice.

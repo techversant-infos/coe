@@ -15,8 +15,8 @@ plain text and never a fast hash such as SHA-256.
 
 - bcrypt and Argon2id, and why a slow hash protects passwords
 - Hashing that works on both engines, such as the BCrypt module from ForgeBox. Lucee has no bcrypt function built
-  in. Adobe ColdFusion 2025 Update 8 and later have `PasswordHashGenerate()` and `PasswordHashVerify()`, which
-  replace `generateBCryptHash()`, available since ColdFusion 2021
+  in. Adobe introduced `PasswordHashGenerate()` and `PasswordHashVerify()` in ColdFusion 2025 Update 8 and
+  deprecated `GenerateBCryptHash()` and `VerifyBCryptHash()` in the same update
 - Comparing a password only through the hash library's verify function
 
 **Resources:**
@@ -25,6 +25,8 @@ plain text and never a fast hash such as SHA-256.
   in the Techversant security audit reference
 - [BCrypt module](https://github.com/coldbox-modules/bcrypt), ColdBox modules
 - [Hash and verify passwords](https://guides.adobe.com/coldfusion/en/docs/introduction-to-coldfusion/__references__/hash-and-verify-passwords-in-coldfusion.html),
+  Adobe ColdFusion documentation
+- [Deprecated features](https://guides.adobe.com/coldfusion/en/docs/introduction-to-coldfusion/deprecated-features.html),
   Adobe ColdFusion documentation
 - [Password storage cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html),
   OWASP (Open Worldwide Application Security Project)

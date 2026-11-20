@@ -3,8 +3,8 @@
 **Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 ColdBox gives a ColdFusion Markup Language (CFML) application a structure, a set of tools and a way of doing common
-jobs, so every new Techversant ColdFusion API feels familiar. This stage covers how a request travels through
-`Application.cfc` and ColdBox 8, and where your code fits. Back to the [roadmap](./README.md).
+jobs, so every new Techversant ColdFusion API feels familiar. Trace a request through `Application.cfc` and ColdBox
+to see where your code fits. This stage uses ColdBox 8.2 or later in the 8.x series. Back to the [roadmap](./README.md).
 
 ## Application.cfc and the request lifecycle
 
@@ -150,7 +150,8 @@ Settings that change between your machine, staging and production live in enviro
   `"jvm": {"javaVersion": "openjdk21_jre"}`, and CommandBox downloads both on the first start
 - `config/ColdBox.cfc`, the environment settings in it, and reading environment variables with
   `getSystemSetting()`
-- A `.env` file for local settings, loaded by CommandBox, and why `.env` is never committed while `.env.example` is
+- Installing the CommandBox `commandbox-dotenv` module to load local settings from `.env`. Commit
+  `.env.example` with example values and keep your local `.env` out of Git.
 - Turning off debug output outside your own machine, and protecting the framework's restart URL with a password
 
 **Resources:**
@@ -158,6 +159,7 @@ Settings that change between your machine, staging and production live in enviro
 - [Configuration](https://coldbox.ortusbooks.com/getting-started/configuration) and
   [Configuration directives](https://coldbox.ortusbooks.com/getting-started/configuration/coldbox.cfc/configuration-directives),
   ColdBox documentation
+- [CommandBox dotenv module](https://www.forgebox.io/view/commandbox-dotenv), ForgeBox
 - [Keys and secrets management](../../../../security/audit/security-audit-reference.md#63-keys-and-secrets-management),
   in the Techversant security audit reference
 
@@ -187,7 +189,7 @@ request starts and which file does the work before you change anything.
 
 ## Project: Start the API
 
-**Brief:** Create a ColdBox 8 project for your RealWorld API on Lucee 7.1, and add the first endpoint,
+**Brief:** Create a ColdBox 8.x project for your RealWorld API on Lucee 7.1, and add the first endpoint,
 `GET /api/tags`, returning `{"tags": []}` for now. Add a home page at `/` that shows the same tags, rendered on the
 server; stage 03 adds browser code to it.
 
@@ -195,9 +197,12 @@ server; stage 03 adds browser code to it.
 
 **Verification**, checked by a reviewer:
 
-- [ ] `box.json` and `server.json` pin ColdBox 8, Lucee 7.1 and the Java version
-- [ ] On a machine with only CommandBox and Git, the reviewer follows the README: clones the repository, copies
-  `.env.example` to `.env`, runs `box install` and `box server start`, and the app starts
+- [ ] `box.json` pins the exact ColdBox 8.x version used for the project. Use at least 8.2.0 for route middleware.
+  `server.json` pins Lucee 7.1 and the Java version.
+- [ ] Starting with CommandBox and Git, the reviewer installs the CLI module with `box install commandbox-dotenv`,
+  clones the project, and copies `.env.example` to `.env` in the project folder. The reviewer fills in the local
+  values documented in the README, runs `box install` and `box server start` there, and verifies that the app starts
+  and uses its local settings
 - [ ] `GET /api/tags` returns status 200 and exactly `{"tags": []}`, with the key in lower case and no `data`
   envelope
 - [ ] The home page uses a layout and a view, links a stylesheet, shows "No tags yet" while the list is empty, and
@@ -206,7 +211,7 @@ server; stage 03 adds browser code to it.
 - [ ] An interceptor adds a request ID to every response header and log line, and has a simple TestBox spec;
   stage 08 covers testing in depth
 - [ ] `Application.cfc` sets `this.scopeCascading = "strict"` and `this.searchImplicitScopes = false`
-- [ ] `.env` is not committed, `.env.example` lists every setting, and code reads settings through the ColdBox
+- [ ] Git ignores `.env`, `.env.example` lists every setting, and code reads settings through the ColdBox
   configuration
 - [ ] The README explains how to install, run and test the project
 

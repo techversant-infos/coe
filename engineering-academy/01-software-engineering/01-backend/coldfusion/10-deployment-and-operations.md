@@ -37,6 +37,8 @@ A container image packages the engine, your code and its settings, so the API ru
 **What to learn:**
 
 - Building on the `ortussolutions/commandbox` image, and warming up the engine at build time so containers start fast
+- Keeping the [Stage 08 archive lab](./08-testing.md#project-pass-the-full-test-suite) outside the Docker build
+  context. Copy only the files the API needs to run into the image.
 - Running as a user that is not root, with no secrets in the image
 - Licensing: Lucee is free to run in containers; Adobe ColdFusion needs the client's licence
 - Adobe ColdFusion 2021 and later install features such as database drivers and mail as packages with its package
@@ -142,6 +144,8 @@ every difference. Write a production migration plan for one schema change, and h
 **Verification**, checked by a reviewer:
 
 - [ ] The image pins the engine and Java versions, runs as a user that is not root, and contains no secrets
+- [ ] The build context excludes the Stage 08 archive lab. The reviewer inspects the built image and verifies that
+  neither version of `archive.cfm` is present.
 - [ ] Engine settings come from CFConfig and environment variables, with debugging output and the Robust Exception
   Information setting off
 - [ ] The pipeline runs the format check, the TestBox tests and the RealWorld Hurl tests, then builds and
