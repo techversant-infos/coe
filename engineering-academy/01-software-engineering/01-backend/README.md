@@ -1,6 +1,6 @@
 # Back-End Paths
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-06 · **Next review:** 2027-05-06
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 A back-end developer builds the APIs, data and background work behind client applications. Each back-end path
 teaches one stack through the same ten stages, and the projects build a complete API for the RealWorld blogging app.
@@ -16,8 +16,10 @@ Back to [Software Engineering](../README.md).
 | [Java and Spring Boot](./spring-boot/README.md) | Draft |
 | [Go](./go/README.md) | Draft |
 | [.NET](./dotnet/README.md) | Draft |
+| [ColdFusion and CFML](./coldfusion/README.md) | Draft |
 
-For ColdFusion and CFML, see the [Senior ColdFusion Consultant](../../07-consulting/coldfusion/README.md) roadmap.
+Experienced ColdFusion developers can continue to the
+[Senior ColdFusion Consultant](../../07-consulting/coldfusion/README.md) roadmap.
 
 Until your stack's path is ready, use the Techversant standards for it, listed in the
 [standards index](../../../standards/README.md).

@@ -1,6 +1,6 @@
 # 07. Upgrades and Migration
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 Moving an application to a supported Adobe ColdFusion version, or from Adobe ColdFusion to Lucee, is the most common
 CFML project. The work is mostly finding and fixing incompatibilities, then switching over safely.
@@ -52,7 +52,7 @@ change than earlier versions.
 
 **What to learn:**
 
-- Moving from Lucee 5.4 to the 6.2 long-term support release or the 7.1 stable release
+- Moving from Lucee 5.4 or 6.2 to the 7.1 long-term support release
 - Lucee 7's switch from the `javax` to the `jakarta` Java namespace, which needs Tomcat 10.1 or later, a fresh install
   and Jakarta versions of extensions
 - Checking every extension and container image the application uses before you upgrade

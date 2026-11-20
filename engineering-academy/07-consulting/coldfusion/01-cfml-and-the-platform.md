@@ -1,6 +1,6 @@
 # 01. CFML and the Platform
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 The engines, versions, tools and coding habits a senior ColdFusion consultant works with every day. Back to the
 [roadmap](./README.md).
@@ -44,7 +44,7 @@ conversation.
 | Adobe ColdFusion 2025 | 26 February 2030 | None announced |
 
 Adobe's extended support is best-effort migration help and does not include security patches. Lucee 5.4 reached end of
-life on 31 December 2025; Lucee 6.2 is the long-term support release and 7.1 is the current stable release.
+life on 31 December 2025; Lucee 7.1 is the long-term support release and 8.0 is the current stable release.
 
 **What to learn:**
 
@@ -138,9 +138,9 @@ Techversant's own CFML standards apply to every change you make on a client proj
 
 ## Project: Run the Practice App on Two Engines
 
-**Brief:** Get the [practice app, BlogCFC5](./reference/practice-app-blogcfc5.md), running locally on Lucee 6.2 or 7.1
-and on the free Adobe ColdFusion 2025 Developer edition, both started with CommandBox. Record every compatibility error
-you hit; later projects use the list.
+**Brief:** Get the [practice app, BlogCFC5](./reference/practice-app-blogcfc5.md), running locally on Lucee 7.1, the
+long-term support release, and on the free Adobe ColdFusion 2025 Developer edition, both started with CommandBox. Record
+every compatibility error you hit; later projects use the list.
 
 **Size:** 1–2 days
 

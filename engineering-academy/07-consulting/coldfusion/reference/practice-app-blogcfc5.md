@@ -1,6 +1,6 @@
 # Practice App: BlogCFC5
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 BlogCFC5 is a real, older ColdFusion blogging application. The projects in the
 [Senior ColdFusion Consultant roadmap](../README.md) use it as a stand-in for a client system: you run it, assess it,
@@ -61,7 +61,7 @@ both free for local use.
 
    ```bash
    # Lucee
-   box server start cfengine=lucee@6.2 port=8500
+   box server start cfengine=lucee@7.1 port=8500
 
    # Adobe ColdFusion 2025 (free Developer edition for local use)
    box server start cfengine=adobe@2025 port=8501
