@@ -62,7 +62,8 @@ controller.
 **What to learn:**
 
 - Routes in `config/Router.cfc`: route parameters, HTTP methods, route groups and the `/api` prefix
-- Handlers that extend `coldbox.system.RestHandler`, which returns JSON and turns errors into JSON responses
+- Handlers that extend `coldbox.system.RestHandler`, which returns JSON and turns errors into JSON responses, and
+  its default response envelope, which stage 03 replaces with the RealWorld shape
 - The request context `event` and the response object `event.getResponse()`, and keeping business logic out of
   handlers
 
@@ -115,12 +116,38 @@ small and models can be tested on their own.
 
 **Level:** Practitioner · Core
 
+## Views, layouts and HTML
+
+Many CFML applications build their pages on the server. ColdBox renders a view inside a layout, the same job older
+applications do with header and footer includes.
+
+**What to learn:**
+
+- A page handler that extends `coldbox.system.EventHandler`, setting a view with `event.setView()` and passing data
+  to it in `prc`
+- Layouts in `layouts` and views in `views`, and semantic HTML: headings, lists, links and forms with labels
+- A stylesheet file instead of inline styles, and a layout that works on a phone screen
+- Encoding every value in a view with `encodeForHTML()`
+
+**Resources:**
+
+- [Layouts and views](https://coldbox.ortusbooks.com/the-basics/layouts-and-views), ColdBox documentation
+- [Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content)
+  and [CSS styling basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics), MDN Web
+  Docs
+- [Semantic HTML](../../02-frontend/react-nextjs/01-html-css-and-accessibility.md#semantic-html), in the React and
+  Next.js roadmap
+
+**Level:** Practitioner · Core
+
 ## Configuration and environments
 
 Settings that change between your machine, staging and production live in environment variables, never in code.
 
 **What to learn:**
 
+- What a new machine needs: CommandBox and Git. `server.json` sets the engine and the Java version, such as
+  `"jvm": {"javaVersion": "openjdk21_jre"}`, and CommandBox downloads both on the first start
 - `config/ColdBox.cfc`, the environment settings in it, and reading environment variables with
   `getSystemSetting()`
 - A `.env` file for local settings, loaded by CommandBox, and why `.env` is never committed while `.env.example` is
@@ -161,15 +188,20 @@ request starts and which file does the work before you change anything.
 ## Project: Start the API
 
 **Brief:** Create a ColdBox 8 project for your RealWorld API on Lucee 7.1, and add the first endpoint,
-`GET /api/tags`, returning `{"tags": []}` for now.
+`GET /api/tags`, returning `{"tags": []}` for now. Add a home page at `/` that shows the same tags, rendered on the
+server; stage 03 adds browser code to it.
 
 **Size:** 1–2 days
 
 **Verification**, checked by a reviewer:
 
-- [ ] `box.json` and `server.json` pin ColdBox 8 and Lucee 7.1, and `box install` followed by `box server start` runs
-  the project on a clean machine
-- [ ] `GET /api/tags` returns status 200 and `{"tags": []}`, with the key in lower case
+- [ ] `box.json` and `server.json` pin ColdBox 8, Lucee 7.1 and the Java version
+- [ ] On a machine with only CommandBox and Git, the reviewer follows the README: clones the repository, copies
+  `.env.example` to `.env`, runs `box install` and `box server start`, and the app starts
+- [ ] `GET /api/tags` returns status 200 and exactly `{"tags": []}`, with the key in lower case and no `data`
+  envelope
+- [ ] The home page uses a layout and a view, links a stylesheet, shows "No tags yet" while the list is empty, and
+  encodes every value it outputs
 - [ ] An unknown path under `/api` returns a JSON 404, not an HTML page
 - [ ] An interceptor adds a request ID to every response header and log line, and has a simple TestBox spec;
   stage 08 covers testing in depth

@@ -117,7 +117,8 @@ RealWorld front end works with your API, including one you build in a [front-end
 The ten verified projects form your capstone: a complete, production-ready RealWorld API in ColdBox. Present it to
 your lead in one hour:
 
-1. Demo the API with a RealWorld front end: sign up, write an article, comment, follow and favourite.
+1. Demo the API with a RealWorld front end: sign up, write an article, comment, follow and favourite. Then show your
+   server-rendered home page and its browser code.
 2. Show the RealWorld API tests passing, and your own TestBox tests.
 3. Walk through the data model, and how you kept queries fast and parameterised.
 4. Walk through sign-in and permissions: how passwords and tokens are handled, and who reviewed the code.

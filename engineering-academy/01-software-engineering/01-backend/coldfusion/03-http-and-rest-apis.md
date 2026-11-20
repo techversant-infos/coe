@@ -42,9 +42,31 @@ ColdBox can register all the routes for a resource in one line, and you add the 
 
 **Level:** Practitioner · Core
 
+## The response shape
+
+RealWorld fixes the outer shape of every request and response. `RestHandler` has its own shape, so you decide where
+one ends and the other begins.
+
+**What to learn:**
+
+- RealWorld's root keys: one resource inside its name, such as `{"article": {...}}`, a list with a count, such as
+  `{"articles": [], "articlesCount": 0}`, and request bodies wrapped the same way, such as `{"user": {...}}`
+- `RestHandler`'s default envelope, `{"error", "messages", "data", "pagination"}`, and replacing it with a custom
+  response object whose `getDataPacket()` returns your data as it is, set in a `preProcess` interceptor
+- Sending error responses, such as 401, 403, 404 and 422, in the RealWorld error shape instead of the envelope
+- Leaving `body` out of list items, as the contract requires
+
+**Resources:**
+
+- [RestHandler](https://coldbox.ortusbooks.com/digging-deeper/rest-handler), ColdBox documentation: the response
+  format section
+- [Details the tests check](../practice-app.md#details-the-tests-check), on the practice app page
+
+**Level:** Practitioner · Core
+
 ## JSON in CFML
 
-CFML turns structs and arrays into JSON with `serializeJSON()`, and ColdBox does it for you in `RestHandler`. The
+CFML turns structs and arrays into JSON with `serializeJSON()`, and ColdBox calls it for you when it renders JSON. The
 engines make choices you must check, or the response will not match the contract.
 
 **What to learn:**
@@ -108,24 +130,29 @@ in the Techversant REST API best practices
 
 **Level:** Practitioner · Core
 
-## Browser clients and AJAX
+## Browser clients: Fetch and jQuery
 
-Many CFML applications serve their own pages and call the server from the browser with AJAX (asynchronous JavaScript and
-XML) requests. You need to read and maintain that code as well as write APIs.
+Many CFML applications serve their own pages and call the server from the browser with AJAX (asynchronous
+JavaScript and XML) requests. You write new browser code with the Fetch API and maintain older jQuery code.
 
 **What to learn:**
 
-- Calling an API with the browser's Fetch API, sending JSON and handling error responses
-- Reading and maintaining jQuery `$.ajax()` calls in older pages, and not adding jQuery to new code
-- Encoding values before they go into HTML, and sending forms with a cross-site request forgery (CSRF) token
+- Calling an API with the browser's Fetch API, reading JSON, and showing loading, empty and error states
+- Reading and maintaining jQuery `$.ajax()` calls in older pages: `.done()` and `.fail()`, and not adding jQuery to
+  new code
+- Putting API text on the page with `textContent` or jQuery's `.text()`, never by joining it into HTML
+- Sending forms with a cross-site request forgery (CSRF) token
 
 **Resources:**
 
-- [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch), MDN Web Docs
+- [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) and
+  [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent), MDN Web Docs
+- [jQuery.ajax()](https://api.jquery.com/jQuery.ajax/) and [.text()](https://api.jquery.com/text/), jQuery
+  documentation
 - [Cross-site scripting and output encoding](../../../../security/audit/security-audit-reference.md#73-cross-site-scripting-and-output-encoding),
   in the Techversant security audit reference
 
-**Level:** Practitioner · Optional
+**Level:** Practitioner · Core
 
 ## API documentation with OpenAPI
 
@@ -146,7 +173,21 @@ An OpenAPI document describes every endpoint, so front-end teams can build again
 ## Project: Shape Every Endpoint
 
 **Brief:** Add a route and handler action for every endpoint in the RealWorld `openapi.yml`. Return sample data that
-matches the specification exactly; stage 04 replaces it with the database.
+matches the specification exactly; stage 04 replaces it with the database. Then add browser code to your stage 02
+home page: a Fetch call for articles by tag, and the older jQuery script below, added as it is and then fixed.
+
+```javascript
+// popular-tags.js: written years ago, before the API had error handling
+$(function () {
+  $.ajax({ url: "/api/tags", dataType: "json" }).done(function (data) {
+    var html = "";
+    for (var i = 0; i < data.tags.length; i++) {
+      html += "<li><a href='#' class='tag'>" + data.tags[i] + "</a></li>";
+    }
+    $("#popular-tags").html(html);
+  });
+});
+```
 
 **Size:** 2–3 days
 
@@ -162,6 +203,11 @@ matches the specification exactly; stage 04 replaces it with the database.
 - [ ] `GET /api/articles` reads `tag`, `author`, `favorited`, `limit` and `offset`, and caps `limit` at a safe
   maximum
 - [ ] Each resource has one function that builds its response shape, and handlers do no other formatting
+- [ ] No response, including errors, contains `RestHandler`'s `data`, `error`, `messages` or `pagination` keys
+- [ ] Choosing a tag on the home page loads its articles with Fetch, without reloading the page, and shows a
+  loading state, an empty state and an error state
+- [ ] The jQuery script shows a tag such as `<b>x</b>` as text, shows a message when the request fails, and the
+  pull request explains each change
 
 Previous: [02. The Framework](./02-the-framework.md) · Next:
 [04. Databases and Data Access](./04-databases-and-data-access.md)

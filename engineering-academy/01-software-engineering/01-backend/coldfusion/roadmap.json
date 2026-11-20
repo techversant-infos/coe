@@ -27,6 +27,7 @@
         { "label": "Routing and handlers", "core": true, "techversant": false },
         { "label": "Interceptors", "core": true, "techversant": false },
         { "label": "WireBox and models", "core": true, "techversant": true },
+        { "label": "Views, layouts and HTML", "core": true, "techversant": false },
         { "label": "Configuration and environments", "core": true, "techversant": true },
         { "label": "Reading older CFML applications", "core": false, "techversant": true }
       ]
@@ -38,10 +39,11 @@
       "topics": [
         { "label": "REST API design", "core": true, "techversant": true },
         { "label": "Resource routes", "core": true, "techversant": false },
+        { "label": "The response shape", "core": true, "techversant": false },
         { "label": "JSON in CFML", "core": true, "techversant": false },
         { "label": "Status codes and headers", "core": true, "techversant": true },
         { "label": "Filtering and pagination", "core": true, "techversant": true },
-        { "label": "Browser clients and AJAX", "core": false, "techversant": true },
+        { "label": "Browser clients: Fetch and jQuery", "core": true, "techversant": true },
         { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
       ]
     },

@@ -100,9 +100,34 @@ when your change alters behaviour you did not mean to touch.
 ## Project: Pass the Full Test Suite
 
 **Brief:** Get every RealWorld API test passing, add your own TestBox tests for every endpoint, and run everything in
-continuous integration on each pull request. Then copy your stage 01 pages and component into the project, such as under
-`tests/legacy/`, and write characterisation tests for `legacy.cfm` before you refactor it to use `RequestService.cfc`
-only.
+continuous integration on each pull request. Then take over the older archive page below, written before the API
+straight against the same database. Run it from its own folder with its own `Application.cfc` and datasource, and
+change the table and column names to match your schema. Write characterisation tests for what it does today, then
+make the change the client asked for: an optional `tag` filter. Fix the injection and encoding problems you find on
+the way, without changing the output for valid input.
+
+```cfm
+<!--- archive.cfm: lists the articles for one month --->
+<cfparam name="url.month" default="#dateFormat(now(), 'yyyy-mm')#">
+<cfquery name="qArticles">
+  SELECT a.slug, a.title, a.created_at, u.username
+  FROM articles a
+  JOIN users u ON u.id = a.author_id
+  WHERE to_char(a.created_at, 'YYYY-MM') = '#url.month#'
+  ORDER BY a.created_at DESC
+</cfquery>
+<cfoutput>
+  <h1>Articles for #url.month#</h1>
+  <cfif qArticles.recordCount EQ 0>
+    <p>No articles this month.</p>
+  </cfif>
+  <ul>
+    <cfloop query="qArticles">
+      <li><a href="/articles/#slug#">#title#</a> by #username# on #dateFormat(created_at, "d mmm yyyy")#</li>
+    </cfloop>
+  </ul>
+</cfoutput>
+```
 
 **Size:** 3–4 days
 
@@ -112,12 +137,16 @@ only.
   shows the result
 - [ ] Every endpoint has integration tests for success and for each error case it can return
 - [ ] Permission tests show that users cannot change other users' articles and comments
-- [ ] Every public function in handlers and models has at least one test, and line coverage is at least 80% where
-  the project has a FusionReactor licence; without one, the pull request lists any untested functions
+- [ ] Every public function in handlers and models has at least one test, and, where the project has a
+  FusionReactor licence, line coverage is at least 80%
 - [ ] `cfformat check` reports no issues
 - [ ] Continuous integration runs the format check, the TestBox tests and the Hurl tests on every pull
   request, and a failure blocks the merge
-- [ ] Characterisation tests for `legacy.cfm` pass before and after the refactor
+- [ ] Characterisation tests, written before any change, record the archive page's output for a month with
+  articles and a month with none, and still pass after the change
+- [ ] `?tag=` limits the archive to that tag, and the page works as before without it
+- [ ] The month and tag are checked and bound as parameters, every value on the page is encoded, and the pull
+  request lists each problem found and how it was fixed
 
 Previous: [07. Background Jobs and Caching](./07-background-jobs-and-caching.md) · Next:
 [09. Security and Performance](./09-security-and-performance.md)

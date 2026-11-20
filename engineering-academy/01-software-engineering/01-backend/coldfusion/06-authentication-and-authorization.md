@@ -15,8 +15,8 @@ plain text and never a fast hash such as SHA-256.
 
 - bcrypt and Argon2id, and why a slow hash protects passwords
 - Hashing that works on both engines, such as the BCrypt module from ForgeBox. Lucee has no bcrypt function built
-  in; Adobe ColdFusion 2025 has `PasswordHashGenerate()` and `PasswordHashVerify()`, which replace the older
-  `generateBCryptHash()`
+  in. Adobe ColdFusion 2025 Update 8 and later have `PasswordHashGenerate()` and `PasswordHashVerify()`, which
+  replace `generateBCryptHash()`, available since ColdFusion 2021
 - Comparing a password only through the hash library's verify function
 
 **Resources:**
@@ -43,7 +43,8 @@ projects use `Authorization: Bearer <token>`.
 - Reading the token in one place, such as an interceptor, and loading the signed-in user for the request
 - Returning 401 when the token is missing, wrong or expired, and the same answer for each
 - JSON Web Tokens (JWT) with cbsecurity's JWT services, and why a signed token is hard to revoke before it expires;
-  cbsecurity reads `Bearer` tokens, so RealWorld's `Token` prefix needs your own code
+  cbsecurity's JWT services read `Bearer` tokens by default; this project uses an opaque token with RealWorld's
+  `Token` prefix, so the token check is your own code
 
 **Resources:**
 
