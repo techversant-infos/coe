@@ -1,6 +1,6 @@
 # Senior ColdFusion Consultant Roadmap
 
-**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-05 · **Next review:** 2027-05-05
+**Status:** Draft · **Owner:** CoE Team · **Last updated:** 2026-11-20 · **Next review:** 2027-05-20
 
 A senior ColdFusion consultant looks after clients' CFML (ColdFusion Markup Language) applications and helps the
 clients decide what to do with them. The consultant keeps the applications running and secure, assesses them,
@@ -10,7 +10,7 @@ meeting to handover.
 - **Who it is for:** ColdFusion developers who want to lead client work, and senior developers or consultants who
   are taking over ColdFusion clients.
 - **Before you start:** working CFML experience on at least one real application. If you are new to CFML, start with
-  the [ColdFusion standards](../../../standards/coldfusion/) and a lead's guidance.
+  the [ColdFusion and CFML Developer](../../01-software-engineering/01-backend/coldfusion/README.md) roadmap.
 - **What you do:** ten stages, each with a short guide to every topic and one hands-on project.
 
 ## Why It Matters Now

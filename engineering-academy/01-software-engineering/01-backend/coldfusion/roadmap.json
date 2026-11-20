@@ -1,0 +1,140 @@
+{
+  "title": "ColdFusion and CFML Developer",
+  "subtitle": "Techversant Engineering Academy roadmap",
+  "output": "roadmap.svg",
+  "stages": [
+    {
+      "number": "01",
+      "title": "Language Fundamentals",
+      "page": "01-language-fundamentals.md",
+      "topics": [
+        { "label": "Running CFML with CommandBox", "core": true, "techversant": false },
+        { "label": "Tags, script and variables", "core": true, "techversant": true },
+        { "label": "Arrays, structs, lists and queries", "core": true, "techversant": false },
+        { "label": "Decisions and loops", "core": true, "techversant": false },
+        { "label": "Scopes and request input", "core": true, "techversant": true },
+        { "label": "Functions and components", "core": true, "techversant": true },
+        { "label": "Code style and naming", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "The Framework",
+      "page": "02-the-framework.md",
+      "topics": [
+        { "label": "Application.cfc and the request lifecycle", "core": true, "techversant": true },
+        { "label": "ColdBox projects and CommandBox", "core": true, "techversant": false },
+        { "label": "Routing and handlers", "core": true, "techversant": false },
+        { "label": "Interceptors", "core": true, "techversant": false },
+        { "label": "WireBox and models", "core": true, "techversant": true },
+        { "label": "Views, layouts and HTML", "core": true, "techversant": false },
+        { "label": "Configuration and environments", "core": true, "techversant": true },
+        { "label": "Reading older CFML applications", "core": false, "techversant": true }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "HTTP and REST APIs",
+      "page": "03-http-and-rest-apis.md",
+      "topics": [
+        { "label": "REST API design", "core": true, "techversant": true },
+        { "label": "Resource routes", "core": true, "techversant": false },
+        { "label": "The response shape", "core": true, "techversant": false },
+        { "label": "JSON in CFML", "core": true, "techversant": false },
+        { "label": "Status codes and headers", "core": true, "techversant": true },
+        { "label": "Filtering and pagination", "core": true, "techversant": true },
+        { "label": "Browser clients: Fetch and jQuery", "core": true, "techversant": true },
+        { "label": "API documentation with OpenAPI", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Databases and Data Access",
+      "page": "04-databases-and-data-access.md",
+      "topics": [
+        { "label": "SQL foundations", "core": true, "techversant": false },
+        { "label": "Datasources and bound parameters", "core": true, "techversant": true },
+        { "label": "Migrations", "core": true, "techversant": false },
+        { "label": "Query builder", "core": true, "techversant": false },
+        { "label": "Data integrity and transactions", "core": true, "techversant": false },
+        { "label": "Efficient queries", "core": true, "techversant": true },
+        { "label": "Quick ORM", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Validation and Error Handling",
+      "page": "05-validation-and-error-handling.md",
+      "topics": [
+        { "label": "Validation with cbvalidation", "core": true, "techversant": true },
+        { "label": "Error response format", "core": true, "techversant": true },
+        { "label": "Exception handling", "core": true, "techversant": true },
+        { "label": "Logging with LogBox", "core": true, "techversant": true },
+        { "label": "Debugging a request across layers", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Authentication and Authorization",
+      "page": "06-authentication-and-authorization.md",
+      "topics": [
+        { "label": "Password storage", "core": true, "techversant": true },
+        { "label": "API tokens", "core": true, "techversant": true },
+        { "label": "Rules and permissions with cbsecurity", "core": true, "techversant": true },
+        { "label": "Sessions and cookies", "core": false, "techversant": true },
+        { "label": "Rate limiting sign-in", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Background Jobs and Caching",
+      "page": "07-background-jobs-and-caching.md",
+      "topics": [
+        { "label": "Scheduled tasks", "core": true, "techversant": false },
+        { "label": "Background jobs and idempotency", "core": true, "techversant": false },
+        { "label": "Sending email", "core": true, "techversant": false },
+        { "label": "Caching with CacheBox", "core": true, "techversant": false },
+        { "label": "Locking and shared state", "core": true, "techversant": false }
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Testing",
+      "page": "08-testing.md",
+      "topics": [
+        { "label": "Unit tests with TestBox", "core": true, "techversant": true },
+        { "label": "Integration tests for ColdBox", "core": true, "techversant": false },
+        { "label": "Mocks and test doubles", "core": true, "techversant": false },
+        { "label": "Contract tests and coverage", "core": true, "techversant": false },
+        { "label": "Characterising older code", "core": true, "techversant": true }
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Security and Performance",
+      "page": "09-security-and-performance.md",
+      "topics": [
+        { "label": "Injection and output encoding", "core": true, "techversant": true },
+        { "label": "Engine and server hardening", "core": true, "techversant": true },
+        { "label": "CORS and security headers", "core": true, "techversant": true },
+        { "label": "The security and code review checklists", "core": true, "techversant": true },
+        { "label": "Query performance and indexes", "core": true, "techversant": false },
+        { "label": "File uploads", "core": false, "techversant": true },
+        { "label": "Load testing", "core": false, "techversant": false }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Deployment and Operations",
+      "page": "10-deployment-and-operations.md",
+      "topics": [
+        { "label": "Reproducible server set-up", "core": true, "techversant": true },
+        { "label": "Docker images", "core": true, "techversant": false },
+        { "label": "CI/CD pipelines", "core": true, "techversant": true },
+        { "label": "Production database migrations", "core": true, "techversant": true },
+        { "label": "Lucee and Adobe ColdFusion compatibility", "core": true, "techversant": false },
+        { "label": "Health checks and monitoring", "core": true, "techversant": true }
+      ]
+    }
+  ]
+}
